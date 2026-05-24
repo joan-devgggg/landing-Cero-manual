@@ -12,7 +12,7 @@ interface Message {
 const WELCOME: Message = {
   role: "assistant",
   content:
-    "¡Hola! 👋 Soy el asistente de Cero Manual.\nPuedo mostrarte cómo funciona un agente de IA para tu clínica estética. Pregúntame lo que quieras: tratamientos, precios, cómo agendar...\n¿Por dónde empezamos?",
+    "¡Hola! Soy Sara, tu asistente de la clínica. Esta es una demo para que veas cómo funcionaría un agente real. Pregúntame sobre tratamientos, precios o reserva una cita de prueba. ¿En qué te puedo ayudar?",
 }
 
 const SUGGESTIONS = [
@@ -65,11 +65,13 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
       })
 
       const data = await res.json()
+      const stripMarkdown = (text: string) =>
+        text.replace(/\*\*(.*?)\*\*/g, '$1').replace(/\*(.*?)\*/g, '$1').replace(/`(.*?)`/g, '$1')
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
-          content: data.message || data.error || "Error al responder.",
+          content: stripMarkdown(data.message || data.error || "Error al responder."),
         },
       ])
     } catch {
@@ -123,7 +125,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
             className="text-sm font-semibold text-cream truncate"
             style={{ fontFamily: "var(--font-dm-sans)" }}
           >
-            Asistente de Cero Manual
+            Sara — Asistente de Clínica
           </p>
           <div className="flex items-center gap-1.5 mt-0.5">
             <span
