@@ -9,7 +9,7 @@ const steps = [
     icon: Megaphone,
     num: "01",
     title: "Lead llega",
-    desc: "Anuncio en Meta, DM de Instagram o búsqueda en Google. El interés existe, solo necesita respuesta inmediata.",
+    desc: "Anuncio en Meta, DM de Instagram, búsqueda en Google o mensaje directo por WhatsApp. El interés existe, solo necesita respuesta inmediata.",
   },
   {
     icon: Zap,
@@ -36,10 +36,10 @@ export default function TimelineSection() {
   const inView = useInView(ref, { once: true, margin: "-60px" })
 
   return (
-    <section id="como-funciona" className="py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
+    <section id="como-funciona" className="py-14 md:py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
       <div className="max-w-4xl mx-auto">
         {/* Divider */}
-        <div className="w-full h-px mb-28" style={{ backgroundColor: "#E0DBD4" }} />
+        <div className="w-full h-px mb-10 md:mb-20" style={{ backgroundColor: "#E0DBD4" }} />
 
         {/* Title */}
         <motion.div

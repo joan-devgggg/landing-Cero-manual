@@ -111,38 +111,44 @@ export default function HeroSection() {
           </button>
         </motion.div>
 
-        {/* Metrics */}
+        {/* Metrics — 3-col compact grid on all screen sizes */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.45 }}
-          className="flex flex-col sm:flex-row gap-8 sm:gap-0 pt-8"
+          className="pt-6"
           style={{ borderTop: "1px solid #E0DBD4" }}
         >
-          {metrics.map((m, i) => (
-            <div
-              key={i}
-              className="flex flex-col gap-1 sm:flex-1"
-              style={{
-                paddingRight: i < metrics.length - 1 ? "2rem" : 0,
-                paddingLeft: i > 0 ? "2rem" : 0,
-                borderRight: i < metrics.length - 1 ? "1px solid #E0DBD4" : "none",
-              }}
-            >
-              <span
-                className="text-2xl md:text-3xl font-semibold"
-                style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
+          <div
+            className="rounded-2xl grid grid-cols-3"
+            style={{
+              backgroundColor: "#FFFFFF",
+              border: "1px solid #E0DBD4",
+            }}
+          >
+            {metrics.map((m, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center text-center px-2 py-4 md:px-6 md:py-5"
+                style={{
+                  borderRight: i < metrics.length - 1 ? "1px solid #E0DBD4" : "none",
+                }}
               >
-                {m.value}
-              </span>
-              <span
-                className="text-sm"
-                style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
-              >
-                {m.label}
-              </span>
-            </div>
-          ))}
+                <span
+                  className="text-xl md:text-3xl font-semibold leading-none mb-1"
+                  style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
+                >
+                  {m.value}
+                </span>
+                <span
+                  className="text-xs md:text-sm leading-snug"
+                  style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
+                >
+                  {m.label}
+                </span>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

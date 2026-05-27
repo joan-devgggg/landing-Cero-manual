@@ -6,6 +6,13 @@ import { motion, useInView } from "framer-motion"
 const testimonials = [
   {
     quote:
+      "Mis clientes me dicen que el trato es muy bueno por WhatsApp. Lo que no saben es que a las 11 de la noche soy yo durmiendo y es el agente.",
+    author: "Dra. P.R.",
+    role: "Clínica estética · Barcelona",
+    initials: "PR",
+  },
+  {
+    quote:
       "Antes perdíamos leads todas las noches porque nadie podía responder. Ahora el agente agenda directamente y nosotros revisamos el calendario por la mañana con las citas ya confirmadas.",
     author: "Dra. M.G.",
     role: "Clínica de medicina estética · Madrid",
@@ -18,13 +25,6 @@ const testimonials = [
     role: "Centro estético · Valencia",
     initials: "CE",
   },
-  {
-    quote:
-      "Mis clientes me dicen que el trato es muy bueno por WhatsApp. Lo que no saben es que a las 11 de la noche soy yo durmiendo y es el agente.",
-    author: "Dra. P.R.",
-    role: "Clínica estética · Barcelona",
-    initials: "PR",
-  },
 ]
 
 export default function TestimonialsSection() {
@@ -32,10 +32,10 @@ export default function TestimonialsSection() {
   const inView = useInView(ref, { once: true, margin: "-60px" })
 
   return (
-    <section className="py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
+    <section className="py-14 md:py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
       <div className="max-w-6xl mx-auto">
         {/* Divider */}
-        <div className="w-full h-px mb-28" style={{ backgroundColor: "#E0DBD4" }} />
+        <div className="w-full h-px mb-10 md:mb-20" style={{ backgroundColor: "#E0DBD4" }} />
 
         {/* Title */}
         <motion.div

@@ -31,11 +31,13 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
   const [input, setInput] = useState("")
   const [loading, setLoading] = useState(false)
   const [userHasTyped, setUserHasTyped] = useState(false)
-  const bottomRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
   const scrollToBottom = () => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" })
+    if (containerRef.current) {
+      containerRef.current.scrollTop = containerRef.current.scrollHeight
+    }
   }
 
   useEffect(() => {
@@ -141,8 +143,9 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
 
       {/* Messages */}
       <div
+        ref={containerRef}
         className="flex flex-col gap-3 overflow-y-auto px-4 py-4"
-        style={{ maxHeight: maxH, minHeight: compact ? "220px" : "320px", backgroundColor: "#FAFAF8" }}
+        style={{ height: maxH, minHeight: compact ? "220px" : "320px", backgroundColor: "#FAFAF8" }}
       >
         <AnimatePresence initial={false}>
           {messages.map((msg, i) => (
@@ -202,7 +205,6 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
             </motion.div>
           )}
         </AnimatePresence>
-        <div ref={bottomRef} />
       </div>
 
       {/* Suggestion chips */}

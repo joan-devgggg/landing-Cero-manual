@@ -48,17 +48,17 @@ export default function ServicesSection() {
   const inView = useInView(ref, { once: true, margin: "-60px" })
 
   return (
-    <section id="servicios" className="py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
+    <section id="servicios" className="py-14 md:py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
       <div className="max-w-6xl mx-auto">
         {/* Divider */}
-        <div className="w-full h-px mb-28" style={{ backgroundColor: "#E0DBD4" }} />
+        <div className="w-full h-px mb-10 md:mb-20" style={{ backgroundColor: "#E0DBD4" }} />
 
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-10 md:mb-16"
         >
           <p
             className="text-xs font-medium mb-4 tracking-widest uppercase"
@@ -89,9 +89,9 @@ export default function ServicesSection() {
                 className={i === 0 ? "md:col-span-2" : ""}
               >
                 <div
-                  className="relative flex flex-col gap-5 p-7 rounded-2xl h-full transition-all duration-200"
+                  className="flex flex-col gap-5 p-6 md:p-7 rounded-2xl h-full transition-all duration-200"
                   style={{
-                    backgroundColor: svc.highlight ? "#FFFFFF" : "#FFFFFF",
+                    backgroundColor: "#FFFFFF",
                     border: svc.highlight ? "1.5px solid #7D9B76" : "1px solid #E0DBD4",
                     boxShadow: svc.highlight
                       ? "0 4px 24px rgba(125,155,118,0.15)"
@@ -110,62 +110,68 @@ export default function ServicesSection() {
                     e.currentTarget.style.borderColor = svc.highlight ? "#7D9B76" : "#E0DBD4"
                   }}
                 >
-                  {/* Badge */}
-                  {svc.badge && (
-                    <div className="absolute top-5 right-5">
+                  {/* Icon row + badge */}
+                  <div className="flex items-start justify-between gap-3">
+                    <div
+                      className="flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center"
+                      style={{
+                        backgroundColor: svc.highlight ? "rgba(125,155,118,0.14)" : "#F5F2EE",
+                        border: `1.5px solid ${svc.highlight ? "rgba(125,155,118,0.35)" : "#E0DBD4"}`,
+                      }}
+                    >
+                      <Icon size={24} color={svc.highlight ? "#7D9B76" : "#8A8580"} strokeWidth={1.75} />
+                    </div>
+
+                    {/* Badge — inline next to icon, no overlap with title */}
+                    {svc.badge && (
                       <span
-                        className="text-xs font-medium px-3 py-1 rounded-full"
+                        className="flex-shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full self-start"
                         style={{
                           backgroundColor: "#7D9B76",
                           color: "#ffffff",
                           fontFamily: "var(--font-dm-sans)",
+                          letterSpacing: "0.01em",
                         }}
                       >
                         {svc.badge}
                       </span>
-                    </div>
-                  )}
-
-                  <div className="flex items-start gap-4">
-                    {/* Icon */}
-                    <div
-                      className="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center"
-                      style={{
-                        backgroundColor: svc.highlight ? "rgba(125,155,118,0.12)" : "#F5F2EE",
-                        border: `1px solid ${svc.highlight ? "rgba(125,155,118,0.3)" : "#E0DBD4"}`,
-                      }}
-                    >
-                      <Icon size={20} color={svc.highlight ? "#7D9B76" : "#8A8580"} />
-                    </div>
-
-                    <div className="flex-1 min-w-0">
-                      <h3
-                        className="text-lg font-semibold mb-2"
-                        style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
-                      >
-                        {svc.name}
-                      </h3>
-                      <p
-                        className="text-sm leading-relaxed"
-                        style={{ color: "#5A5450", fontFamily: "var(--font-dm-sans)" }}
-                      >
-                        {svc.desc}
-                      </p>
-                    </div>
+                    )}
                   </div>
 
-                  {/* Benefit */}
+                  {/* Text content */}
+                  <div className="flex flex-col gap-2">
+                    <h3
+                      className="text-xl md:text-2xl font-bold leading-snug"
+                      style={{
+                        fontFamily: "var(--font-playfair)",
+                        color: "#1A1A1A",
+                      }}
+                    >
+                      {svc.name}
+                    </h3>
+                    <p
+                      className="text-sm leading-relaxed"
+                      style={{ color: "#5A5450", fontFamily: "var(--font-dm-sans)" }}
+                    >
+                      {svc.desc}
+                    </p>
+                  </div>
+
+                  {/* Benefit pill */}
                   <div
-                    className="flex items-center gap-2 pt-4 mt-auto"
-                    style={{ borderTop: "1px solid #E0DBD4" }}
+                    className="flex items-center gap-2 px-4 py-2.5 rounded-xl mt-auto"
+                    style={{
+                      backgroundColor: "rgba(125,155,118,0.09)",
+                      border: "1px solid rgba(125,155,118,0.2)",
+                    }}
                   >
                     <span
-                      className="inline-block w-1.5 h-1.5 rounded-full flex-shrink-0"
+                      className="inline-block w-2 h-2 rounded-full flex-shrink-0"
                       style={{ backgroundColor: "#7D9B76" }}
                     />
                     <span
-                      className="text-sm font-medium"
-                      style={{ color: "#7D9B76", fontFamily: "var(--font-dm-sans)" }}
+                      className="text-sm font-semibold"
+                      style={{ color: "#5A8050", fontFamily: "var(--font-dm-sans)" }}
                     >
                       {svc.benefit}
                     </span>

@@ -8,10 +8,10 @@ export default function ResultsSection() {
   const inView = useInView(ref, { once: true, margin: "-60px" })
 
   return (
-    <section id="resultados" className="py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
+    <section id="resultados" className="py-14 md:py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
       <div className="max-w-4xl mx-auto">
         {/* Divider */}
-        <div className="w-full h-px mb-28" style={{ backgroundColor: "#E0DBD4" }} />
+        <div className="w-full h-px mb-10 md:mb-20" style={{ backgroundColor: "#E0DBD4" }} />
 
         <div className="text-center">
           {/* Label */}

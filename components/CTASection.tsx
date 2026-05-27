@@ -4,20 +4,6 @@ import { useRef, useState } from "react"
 import { motion, useInView } from "framer-motion"
 import { ArrowRight, CheckCircle } from "lucide-react"
 
-const citasOptions = [
-  "Menos de 20",
-  "20-50",
-  "50-100",
-  "Más de 100",
-]
-
-const problemaOptions = [
-  "No-shows",
-  "Leads que no contestan",
-  "Falta de tiempo",
-  "Gestión manual",
-]
-
 export default function CTASection() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: "-60px" })
@@ -25,13 +11,10 @@ export default function CTASection() {
   const [loading, setLoading] = useState(false)
   const [form, setForm] = useState({
     nombre: "",
-    email: "",
     telefono: "",
-    citas: "",
-    problema: "",
   })
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
@@ -39,12 +22,10 @@ export default function CTASection() {
     e.preventDefault()
     setLoading(true)
 
-    // Fire Meta Pixel Lead event if available
     if (typeof window !== "undefined" && typeof (window as { fbq?: Function }).fbq === "function") {
       (window as { fbq?: Function }).fbq?.("track", "Lead")
     }
 
-    // Simulate brief processing
     await new Promise((r) => setTimeout(r, 800))
     setSubmitted(true)
     setLoading(false)
@@ -64,7 +45,7 @@ export default function CTASection() {
   }
 
   return (
-    <section id="cta" className="py-28 px-6" ref={ref}>
+    <section id="cta" className="py-14 md:py-28 px-6" ref={ref}>
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -142,46 +123,25 @@ export default function CTASection() {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                {/* Row 1 */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label
-                      className="block text-xs font-medium mb-1.5"
-                      style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
-                    >
-                      Nombre *
-                    </label>
-                    <input
-                      type="text"
-                      name="nombre"
-                      required
-                      value={form.nombre}
-                      onChange={handleChange}
-                      placeholder="Tu nombre"
-                      style={inputStyle}
-                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
-                      onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
-                    />
-                  </div>
-                  <div>
-                    <label
-                      className="block text-xs font-medium mb-1.5"
-                      style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
-                    >
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      value={form.email}
-                      onChange={handleChange}
-                      placeholder="tu@clinica.es"
-                      style={inputStyle}
-                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
-                      onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
-                    />
-                  </div>
+                {/* Nombre */}
+                <div>
+                  <label
+                    className="block text-xs font-medium mb-1.5"
+                    style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
+                  >
+                    Nombre *
+                  </label>
+                  <input
+                    type="text"
+                    name="nombre"
+                    required
+                    value={form.nombre}
+                    onChange={handleChange}
+                    placeholder="Tu nombre"
+                    style={inputStyle}
+                    onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
+                    onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
+                  />
                 </div>
 
                 {/* Teléfono */}
@@ -203,52 +163,6 @@ export default function CTASection() {
                     onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
                     onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
                   />
-                </div>
-
-                {/* Row 2 */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label
-                      className="block text-xs font-medium mb-1.5"
-                      style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
-                    >
-                      ¿Cuántas citas nuevas gestionáis al mes?
-                    </label>
-                    <select
-                      name="citas"
-                      value={form.citas}
-                      onChange={handleChange}
-                      style={{ ...inputStyle, cursor: "pointer" }}
-                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
-                      onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
-                    >
-                      <option value="" style={{ color: "#1A1A1A" }}>Selecciona una opción</option>
-                      {citasOptions.map((o) => (
-                        <option key={o} value={o} style={{ color: "#1A1A1A" }}>{o}</option>
-                      ))}
-                    </select>
-                  </div>
-                  <div>
-                    <label
-                      className="block text-xs font-medium mb-1.5"
-                      style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
-                    >
-                      ¿Cuál es tu mayor problema ahora mismo?
-                    </label>
-                    <select
-                      name="problema"
-                      value={form.problema}
-                      onChange={handleChange}
-                      style={{ ...inputStyle, cursor: "pointer" }}
-                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
-                      onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
-                    >
-                      <option value="" style={{ color: "#1A1A1A" }}>Selecciona una opción</option>
-                      {problemaOptions.map((o) => (
-                        <option key={o} value={o} style={{ color: "#1A1A1A" }}>{o}</option>
-                      ))}
-                    </select>
-                  </div>
                 </div>
 
                 {/* Submit */}

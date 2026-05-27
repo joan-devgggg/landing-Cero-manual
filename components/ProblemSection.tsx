@@ -10,6 +10,7 @@ const problems = [
   "Los leads de Meta se enfrían porque tardas en contestar",
   "Tu equipo no puede estar en todo a la vez",
   "Tienes pacientes inactivos que no han vuelto en meses",
+  "Recibes una reseña negativa y no sabes cómo responder, o no tienes tiempo",
 ]
 
 export default function ProblemSection() {
@@ -17,17 +18,17 @@ export default function ProblemSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" })
 
   return (
-    <section id="problemas" className="py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
+    <section id="problemas" className="py-14 md:py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
       <div className="max-w-4xl mx-auto">
         {/* Divider */}
-        <div className="w-full h-px mb-28" style={{ backgroundColor: "#E0DBD4" }} />
+        <div className="w-full h-px mb-10 md:mb-20" style={{ backgroundColor: "#E0DBD4" }} />
 
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-10 md:mb-16"
         >
           <p
             className="text-xs font-medium mb-4 tracking-widest uppercase"
