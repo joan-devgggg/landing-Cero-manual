@@ -1,12 +1,13 @@
 import type { Metadata } from "next"
-import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google"
+import { Playfair_Display, DM_Sans } from "next/font/google"
 import "./globals.css"
-import CustomCursor from "@/components/CustomCursor"
+import CookieBanner from "@/components/CookieBanner"
+import MetaPixel from "@/components/MetaPixel"
 
-const syne = Syne({
-  variable: "--font-syne",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 })
 
@@ -17,29 +18,28 @@ const dmSans = DM_Sans({
   display: "swap",
 })
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  display: "swap",
-})
-
 export const metadata: Metadata = {
-  title: "Cero Manual — Automatizaciones con IA para Clínicas Estéticas",
+  title: "Cero Manual — Tu clínica estética, trabajando sola",
   description:
-    "Un agente de IA que responde por WhatsApp, agenda citas y reactiva pacientes mientras tú te dedicas a lo que sabes hacer. Para clínicas estéticas en España.",
+    "Instalamos agentes de IA en WhatsApp que responden, cualifican y agendan citas automáticamente. Reduce no-shows, recupera leads y atiende 24/7 sin contratar a nadie más.",
   keywords: [
     "automatización clínica estética",
-    "chatbot WhatsApp clínica",
-    "agente IA medicina estética",
-    "agenda automática clínica",
-    "cero manual",
+    "agente IA WhatsApp clínica",
+    "chatbot WhatsApp clínica estética",
+    "agenda automática citas clínica",
+    "reducir no-shows clínica",
+    "cero manual automatización",
   ],
   openGraph: {
-    title: "Cero Manual — Tu clínica atendida 24/7 con IA",
+    title: "Cero Manual — Tu clínica estética, trabajando sola",
     description:
-      "Responde WhatsApp, agenda citas y reactiva pacientes en automático. Sin contratar a nadie más.",
+      "Agente de IA en WhatsApp que responde, cualifica y agenda citas en menos de 5 minutos. Sin contratar a nadie más.",
     type: "website",
+    url: "https://ceromanual.es",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 
@@ -49,13 +49,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html
-      lang="es"
-      className={`${syne.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}
-    >
+    <html lang="es" className={`${playfair.variable} ${dmSans.variable}`}>
       <body>
-        <CustomCursor />
+        <MetaPixel />
         {children}
+        <CookieBanner />
       </body>
     </html>
   )

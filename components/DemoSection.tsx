@@ -9,9 +9,11 @@ export default function DemoSection() {
   const inView = useInView(ref, { once: true, margin: "-60px" })
 
   return (
-    <section id="demo" className="py-28 px-6" ref={ref}>
-      <div className="section-divider mb-28" />
+    <section id="demo" className="py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
       <div className="max-w-3xl mx-auto">
+        {/* Divider */}
+        <div className="w-full h-px mb-28" style={{ backgroundColor: "#E0DBD4" }} />
+
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -20,18 +22,18 @@ export default function DemoSection() {
           className="text-center mb-4"
         >
           <p
-            className="text-xs font-mono mb-4 tracking-widest uppercase"
-            style={{ color: "#BEFF00", fontFamily: "var(--font-jetbrains-mono)" }}
+            className="text-xs font-medium mb-4 tracking-widest uppercase"
+            style={{ color: "#7D9B76", fontFamily: "var(--font-dm-sans)" }}
           >
             Demo interactiva
           </p>
           <h2
-            className="text-4xl md:text-5xl font-bold leading-tight"
-            style={{ fontFamily: "var(--font-syne)" }}
+            className="text-4xl md:text-5xl font-semibold leading-tight"
+            style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
           >
             Prueba cómo hablaría
             <br />
-            <span style={{ color: "#BEFF00" }}>el agente de tu clínica</span>
+            <span style={{ fontStyle: "italic", color: "#7D9B76" }}>el agente de tu clínica</span>
           </h2>
         </motion.div>
 
@@ -40,11 +42,10 @@ export default function DemoSection() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.15 }}
           className="text-center text-base leading-relaxed mb-12"
-          style={{ color: "#666666", fontFamily: "var(--font-dm-sans)" }}
+          style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
         >
           Este es un ejemplo real de cómo funciona. Pregúntale por tratamientos,
-          precios, disponibilidad o pide una cita — responde como lo haría en tu
-          clínica.
+          precios, disponibilidad o pide una cita.
         </motion.p>
 
         {/* Chat */}
@@ -65,7 +66,7 @@ export default function DemoSection() {
         >
           <p
             className="text-sm mb-4"
-            style={{ color: "#555555", fontFamily: "var(--font-dm-sans)" }}
+            style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
             Este agente está configurado para Cero Manual. El tuyo hablaría con
             la voz de tu clínica, tus tratamientos y tus precios.
@@ -74,15 +75,10 @@ export default function DemoSection() {
             href="https://wa.me/34644786952?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20Cero%20Manual"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-semibold transition-all duration-200"
-            style={{
-              color: "#BEFF00",
-              fontFamily: "var(--font-dm-sans)",
-            }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.color = "#CEFF33")
-            }
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#BEFF00")}
+            className="inline-flex items-center gap-1 text-sm font-semibold transition-colors duration-200"
+            style={{ color: "#7D9B76", fontFamily: "var(--font-dm-sans)" }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#6A8564")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "#7D9B76")}
           >
             Quiero uno para mi clínica →
           </a>

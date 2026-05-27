@@ -4,11 +4,10 @@ import ProblemSection from "@/components/ProblemSection"
 import ServicesSection from "@/components/ServicesSection"
 import TimelineSection from "@/components/TimelineSection"
 import DemoSection from "@/components/DemoSection"
-import PricingSection from "@/components/PricingSection"
-import UrgencySection from "@/components/UrgencySection"
+import ResultsSection from "@/components/ResultsSection"
 import TestimonialsSection from "@/components/TestimonialsSection"
-import FAQSection from "@/components/FAQSection"
 import CTASection from "@/components/CTASection"
+import FAQSection from "@/components/FAQSection"
 import Footer from "@/components/Footer"
 
 export default function Home() {
@@ -21,11 +20,10 @@ export default function Home() {
         <ServicesSection />
         <TimelineSection />
         <DemoSection />
-        <PricingSection />
-        <UrgencySection />
+        <ResultsSection />
         <TestimonialsSection />
-        <FAQSection />
         <CTASection />
+        <FAQSection />
       </main>
       <Footer />
     </>

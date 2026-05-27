@@ -1,92 +1,305 @@
 "use client"
 
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import { motion, useInView } from "framer-motion"
+import { ArrowRight, CheckCircle } from "lucide-react"
+
+const citasOptions = [
+  "Menos de 20",
+  "20-50",
+  "50-100",
+  "Más de 100",
+]
+
+const problemaOptions = [
+  "No-shows",
+  "Leads que no contestan",
+  "Falta de tiempo",
+  "Gestión manual",
+]
 
 export default function CTASection() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: "-60px" })
+  const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [form, setForm] = useState({
+    nombre: "",
+    email: "",
+    telefono: "",
+    citas: "",
+    problema: "",
+  })
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+
+    // Fire Meta Pixel Lead event if available
+    if (typeof window !== "undefined" && typeof (window as { fbq?: Function }).fbq === "function") {
+      (window as { fbq?: Function }).fbq?.("track", "Lead")
+    }
+
+    // Simulate brief processing
+    await new Promise((r) => setTimeout(r, 800))
+    setSubmitted(true)
+    setLoading(false)
+  }
+
+  const inputStyle: React.CSSProperties = {
+    backgroundColor: "rgba(255,255,255,0.15)",
+    border: "1px solid rgba(255,255,255,0.25)",
+    borderRadius: "12px",
+    color: "#ffffff",
+    fontFamily: "var(--font-dm-sans)",
+    padding: "12px 16px",
+    width: "100%",
+    fontSize: "14px",
+    outline: "none",
+    transition: "border-color 0.15s ease",
+  }
 
   return (
-    <section id="cta" className="py-4 px-6" ref={ref}>
-      <div className="max-w-6xl mx-auto">
+    <section id="cta" className="py-28 px-6" ref={ref}>
+      <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="relative rounded-3xl overflow-hidden px-8 py-20 text-center"
-          style={{ backgroundColor: "#BEFF00" }}
+          className="relative rounded-3xl overflow-hidden px-8 py-16"
+          style={{ backgroundColor: "#7D9B76" }}
         >
-          {/* Subtle texture / noise on the green */}
+          {/* Subtle texture */}
           <div
-            className="absolute inset-0 pointer-events-none opacity-[0.04]"
+            className="absolute inset-0 pointer-events-none"
             style={{
-              backgroundImage:
-                "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E\")",
-              backgroundRepeat: "repeat",
-              backgroundSize: "200px 200px",
-            }}
-          />
-
-          {/* Decorative grid lines */}
-          <div
-            className="absolute inset-0 pointer-events-none opacity-[0.06]"
-            style={{
-              backgroundImage:
-                "linear-gradient(0deg, transparent 24%, rgba(0,0,0,0.08) 25%, rgba(0,0,0,0.08) 26%, transparent 27%, transparent 74%, rgba(0,0,0,0.08) 75%, rgba(0,0,0,0.08) 76%, transparent 77%), linear-gradient(90deg, transparent 24%, rgba(0,0,0,0.08) 25%, rgba(0,0,0,0.08) 26%, transparent 27%)",
-              backgroundSize: "60px 60px",
+              backgroundImage: "radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 60%)",
             }}
           />
 
           <div className="relative">
-            <h2
-              className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
-              style={{ fontFamily: "var(--font-syne)", color: "#0A0A0A" }}
+            {/* Header */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-center mb-10"
             >
-              ¿Lista para que tu clínica
-              <br />
-              trabaje mientras tú duermes?
-            </h2>
-
-            <p
-              className="text-base md:text-lg mb-10 max-w-md mx-auto"
-              style={{ color: "#1A1A1A", fontFamily: "var(--font-dm-sans)", opacity: 0.7 }}
-            >
-              Llamada de 20 minutos. Sin compromiso.
-              <br />
-              Te explicamos exactamente cómo lo implementaríamos en tu caso.
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="https://wa.me/34644786952?text=Hola%2C%20quiero%20agendar%20una%20llamada%20de%2020%20minutos%20con%20Cero%20Manual"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-4 rounded-full text-base font-bold transition-all duration-200"
-                style={{
-                  backgroundColor: "#0A0A0A",
-                  color: "#BEFF00",
-                  fontFamily: "var(--font-syne)",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = "#111111"
-                  e.currentTarget.style.color = "#FFFFFF"
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = "#0A0A0A"
-                  e.currentTarget.style.color = "#BEFF00"
-                }}
+              <h2
+                className="text-3xl md:text-4xl font-semibold leading-tight mb-4"
+                style={{ fontFamily: "var(--font-playfair)", color: "#ffffff" }}
               >
-                Agendar llamada gratuita →
-              </a>
-            </div>
+                Agenda tu diagnóstico gratuito
+              </h2>
+              <p
+                className="text-base leading-relaxed"
+                style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
+              >
+                20 minutos con un experto. Sin compromiso.
+                <br />
+                Te explicamos exactamente cómo lo implementaríamos en tu clínica.
+              </p>
+            </motion.div>
 
-            <p
-              className="mt-6 text-sm"
-              style={{ color: "#0A0A0A", fontFamily: "var(--font-dm-sans)", opacity: 0.5 }}
-            >
-              +34 644 786 952 · @cero.manual
-            </p>
+            {submitted ? (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="text-center py-10"
+              >
+                <div className="flex justify-center mb-4">
+                  <CheckCircle size={48} color="#ffffff" />
+                </div>
+                <h3
+                  className="text-xl font-semibold mb-2"
+                  style={{ fontFamily: "var(--font-playfair)", color: "#ffffff" }}
+                >
+                  ¡Recibido! Nos ponemos en contacto hoy mismo.
+                </h3>
+                <p
+                  className="text-sm mb-6"
+                  style={{ color: "rgba(255,255,255,0.75)", fontFamily: "var(--font-dm-sans)" }}
+                >
+                  ¿Prefieres elegir tú el horario?
+                </p>
+                <a
+                  href="https://cal.com/heduar-6u5ktu/reunion-1-cero.manual"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-200"
+                  style={{
+                    backgroundColor: "#ffffff",
+                    color: "#7D9B76",
+                    fontFamily: "var(--font-dm-sans)",
+                  }}
+                >
+                  Elegir horario en el calendario →
+                </a>
+              </motion.div>
+            ) : (
+              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                {/* Row 1 */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      className="block text-xs font-medium mb-1.5"
+                      style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
+                    >
+                      Nombre *
+                    </label>
+                    <input
+                      type="text"
+                      name="nombre"
+                      required
+                      value={form.nombre}
+                      onChange={handleChange}
+                      placeholder="Tu nombre"
+                      style={inputStyle}
+                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
+                      onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
+                    />
+                  </div>
+                  <div>
+                    <label
+                      className="block text-xs font-medium mb-1.5"
+                      style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
+                    >
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      value={form.email}
+                      onChange={handleChange}
+                      placeholder="tu@clinica.es"
+                      style={inputStyle}
+                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
+                      onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
+                    />
+                  </div>
+                </div>
+
+                {/* Teléfono */}
+                <div>
+                  <label
+                    className="block text-xs font-medium mb-1.5"
+                    style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
+                  >
+                    Teléfono *
+                  </label>
+                  <input
+                    type="tel"
+                    name="telefono"
+                    required
+                    value={form.telefono}
+                    onChange={handleChange}
+                    placeholder="+34 600 000 000"
+                    style={inputStyle}
+                    onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
+                    onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
+                  />
+                </div>
+
+                {/* Row 2 */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      className="block text-xs font-medium mb-1.5"
+                      style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
+                    >
+                      ¿Cuántas citas nuevas gestionáis al mes?
+                    </label>
+                    <select
+                      name="citas"
+                      value={form.citas}
+                      onChange={handleChange}
+                      style={{ ...inputStyle, cursor: "pointer" }}
+                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
+                      onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
+                    >
+                      <option value="" style={{ color: "#1A1A1A" }}>Selecciona una opción</option>
+                      {citasOptions.map((o) => (
+                        <option key={o} value={o} style={{ color: "#1A1A1A" }}>{o}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      className="block text-xs font-medium mb-1.5"
+                      style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
+                    >
+                      ¿Cuál es tu mayor problema ahora mismo?
+                    </label>
+                    <select
+                      name="problema"
+                      value={form.problema}
+                      onChange={handleChange}
+                      style={{ ...inputStyle, cursor: "pointer" }}
+                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
+                      onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
+                    >
+                      <option value="" style={{ color: "#1A1A1A" }}>Selecciona una opción</option>
+                      {problemaOptions.map((o) => (
+                        <option key={o} value={o} style={{ color: "#1A1A1A" }}>{o}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                {/* Submit */}
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="mt-2 flex items-center justify-center gap-2 w-full py-4 rounded-full text-sm font-semibold transition-all duration-200 disabled:opacity-70"
+                  style={{
+                    backgroundColor: "#ffffff",
+                    color: "#7D9B76",
+                    fontFamily: "var(--font-dm-sans)",
+                  }}
+                  onMouseEnter={(e) => {
+                    if (!loading) {
+                      e.currentTarget.style.backgroundColor = "#F5F2EE"
+                      e.currentTarget.style.boxShadow = "0 4px 20px rgba(0,0,0,0.12)"
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = "#ffffff"
+                    e.currentTarget.style.boxShadow = "none"
+                  }}
+                >
+                  {loading ? "Enviando..." : (
+                    <>
+                      Agendar diagnóstico gratuito
+                      <ArrowRight size={16} />
+                    </>
+                  )}
+                </button>
+
+                {/* Cal.com alternative */}
+                <p
+                  className="text-center text-sm mt-1"
+                  style={{ color: "rgba(255,255,255,0.7)", fontFamily: "var(--font-dm-sans)" }}
+                >
+                  ¿Prefieres elegir tú el horario?{" "}
+                  <a
+                    href="https://cal.com/heduar-6u5ktu/reunion-1-cero.manual"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline font-medium transition-opacity duration-150"
+                    style={{ color: "#ffffff" }}
+                    onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.8")}
+                    onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+                  >
+                    Accede al calendario →
+                  </a>
+                </p>
+              </form>
+            )}
           </div>
         </motion.div>
       </div>

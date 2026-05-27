@@ -7,10 +7,10 @@ import { Plus, Minus } from "lucide-react"
 const faqs = [
   {
     q: "¿Cuánto tarda en estar funcionando?",
-    a: "El chatbot está operativo en menos de 14 días desde que firmamos. El onboarding incluye configurar la base de conocimiento con tu información, tratamientos y precios.",
+    a: "El agente está operativo en menos de 14 días desde que firmamos. El onboarding incluye configurar la base de conocimiento con tu información, tratamientos y precios.",
   },
   {
-    q: "¿Mis datos y los de mis pacientes están seguros?",
+    q: "¿Los datos de mis contactos están seguros?",
     a: "Sí. Todo cumple con el RGPD. Los datos se almacenan en servidores europeos y nunca se comparten con terceros. Gestionamos los consentimientos digitales necesarios.",
   },
   {
@@ -18,55 +18,51 @@ const faqs = [
     a: "Trabajamos con los principales: Flowww, Klinikare, Treatwell, Koibox. Si usas otro, lo evaluamos en la llamada.",
   },
   {
-    q: "¿Puedo desactivar el bot y atender yo manualmente?",
-    a: "Sí. Tienes un switch on/off desde el Panel de Control. Puedes tomar el hilo en cualquier momento y el bot para.",
+    q: "¿Puedo desactivar el agente y atender yo manualmente?",
+    a: "Sí. Tienes un switch on/off desde el Panel de Control. Puedes tomar el hilo en cualquier momento y el agente para.",
   },
   {
     q: "¿Hay permanencia?",
     a: "No. Mes a mes. Cancelas con 30 días de aviso.",
   },
   {
-    q: "¿El bot suena robótico?",
+    q: "¿El agente suena robótico?",
     a: "No. Lo configuramos con la voz y el tono de tu clínica. Pruébalo en la demo de arriba — ese es el nivel de conversación que entregamos.",
   },
 ]
 
 function FAQItem({
   faq,
-  idx,
   open,
   onToggle,
 }: {
   faq: (typeof faqs)[0]
-  idx: number
   open: boolean
   onToggle: () => void
 }) {
   return (
-    <div
-      style={{ borderBottom: "1px solid #1E1E1E" }}
-    >
+    <div style={{ borderBottom: "1px solid #E0DBD4" }}>
       <button
         className="w-full flex items-center justify-between py-5 text-left gap-4"
         onClick={onToggle}
       >
         <span
           className="text-base font-medium"
-          style={{ color: "#F5F5F5", fontFamily: "var(--font-dm-sans)" }}
+          style={{ color: "#1A1A1A", fontFamily: "var(--font-dm-sans)" }}
         >
           {faq.q}
         </span>
         <div
-          className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-all duration-200"
+          className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-200"
           style={{
-            backgroundColor: open ? "#BEFF00" : "#1A1A1A",
-            border: open ? "none" : "1px solid #2A2A2A",
+            backgroundColor: open ? "#7D9B76" : "transparent",
+            border: open ? "none" : "1px solid #E0DBD4",
           }}
         >
           {open ? (
-            <Minus size={12} color="#0A0A0A" strokeWidth={2.5} />
+            <Minus size={12} color="#ffffff" strokeWidth={2.5} />
           ) : (
-            <Plus size={12} color="#BEFF00" strokeWidth={2.5} />
+            <Plus size={12} color="#8A8580" strokeWidth={2.5} />
           )}
         </div>
       </button>
@@ -83,7 +79,7 @@ function FAQItem({
           >
             <p
               className="text-sm leading-relaxed pb-5"
-              style={{ color: "#777777", fontFamily: "var(--font-dm-sans)" }}
+              style={{ color: "#5A5450", fontFamily: "var(--font-dm-sans)" }}
             >
               {faq.a}
             </p>
@@ -100,9 +96,11 @@ export default function FAQSection() {
   const [openIdx, setOpenIdx] = useState<number | null>(null)
 
   return (
-    <section className="py-28 px-6" ref={ref}>
-      <div className="section-divider mb-28" />
+    <section id="faq" className="py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
       <div className="max-w-3xl mx-auto">
+        {/* Divider */}
+        <div className="w-full h-px mb-28" style={{ backgroundColor: "#E0DBD4" }} />
+
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -111,18 +109,18 @@ export default function FAQSection() {
           className="mb-12"
         >
           <p
-            className="text-xs font-mono mb-4 tracking-widest uppercase"
-            style={{ color: "#BEFF00", fontFamily: "var(--font-jetbrains-mono)" }}
+            className="text-xs font-medium mb-4 tracking-widest uppercase"
+            style={{ color: "#7D9B76", fontFamily: "var(--font-dm-sans)" }}
           >
             FAQ
           </p>
           <h2
-            className="text-4xl md:text-5xl font-bold leading-tight"
-            style={{ fontFamily: "var(--font-syne)" }}
+            className="text-4xl md:text-5xl font-semibold leading-tight"
+            style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
           >
             Preguntas
             <br />
-            <span style={{ color: "#BEFF00" }}>frecuentes</span>
+            <span style={{ fontStyle: "italic", color: "#7D9B76" }}>frecuentes</span>
           </h2>
         </motion.div>
 
@@ -131,13 +129,12 @@ export default function FAQSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.15 }}
-          style={{ borderTop: "1px solid #1E1E1E" }}
+          style={{ borderTop: "1px solid #E0DBD4" }}
         >
           {faqs.map((faq, i) => (
             <FAQItem
               key={i}
               faq={faq}
-              idx={i}
               open={openIdx === i}
               onToggle={() => setOpenIdx(openIdx === i ? null : i)}
             />

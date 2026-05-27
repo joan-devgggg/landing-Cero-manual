@@ -3,11 +3,10 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 
-// PLACEHOLDER testimonials — replace with real client data when available
 const testimonials = [
   {
     quote:
-      "Antes perdíamos leads todas las noches porque nadie podía responder. Ahora el bot agenda directamente y nosotros revisamos el calendario por la mañana con las citas ya confirmadas.",
+      "Antes perdíamos leads todas las noches porque nadie podía responder. Ahora el agente agenda directamente y nosotros revisamos el calendario por la mañana con las citas ya confirmadas.",
     author: "Dra. M.G.",
     role: "Clínica de medicina estética · Madrid",
     initials: "MG",
@@ -21,7 +20,7 @@ const testimonials = [
   },
   {
     quote:
-      "Mis pacientes me dicen que el trato es muy bueno por WhatsApp. Lo que no saben es que a las 11 de la noche soy yo durmiendo y es el bot.",
+      "Mis clientes me dicen que el trato es muy bueno por WhatsApp. Lo que no saben es que a las 11 de la noche soy yo durmiendo y es el agente.",
     author: "Dra. P.R.",
     role: "Clínica estética · Barcelona",
     initials: "PR",
@@ -33,9 +32,11 @@ export default function TestimonialsSection() {
   const inView = useInView(ref, { once: true, margin: "-60px" })
 
   return (
-    <section className="py-28 px-6" ref={ref}>
-      <div className="section-divider mb-28" />
+    <section className="py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
       <div className="max-w-6xl mx-auto">
+        {/* Divider */}
+        <div className="w-full h-px mb-28" style={{ backgroundColor: "#E0DBD4" }} />
+
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -44,23 +45,23 @@ export default function TestimonialsSection() {
           className="mb-16"
         >
           <p
-            className="text-xs font-mono mb-4 tracking-widest uppercase"
-            style={{ color: "#BEFF00", fontFamily: "var(--font-jetbrains-mono)" }}
+            className="text-xs font-medium mb-4 tracking-widest uppercase"
+            style={{ color: "#7D9B76", fontFamily: "var(--font-dm-sans)" }}
           >
             Clientes
           </p>
           <h2
-            className="text-4xl md:text-5xl font-bold leading-tight"
-            style={{ fontFamily: "var(--font-syne)" }}
+            className="text-4xl md:text-5xl font-semibold leading-tight"
+            style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
           >
             Clínicas que ya trabajan
             <br />
-            <span style={{ color: "#BEFF00" }}>con Cero Manual</span>
+            <span style={{ fontStyle: "italic", color: "#7D9B76" }}>con Cero Manual</span>
           </h2>
         </motion.div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {testimonials.map((t, i) => (
             <motion.div
               key={i}
@@ -69,23 +70,24 @@ export default function TestimonialsSection() {
               transition={{ duration: 0.55, delay: 0.15 + i * 0.1 }}
             >
               <div
-                className="flex flex-col gap-4 p-6 rounded-2xl h-full"
+                className="flex flex-col gap-5 p-7 rounded-2xl h-full"
                 style={{
-                  backgroundColor: "#111111",
-                  border: "1px solid #1E1E1E",
+                  backgroundColor: "#FFFFFF",
+                  border: "1px solid #E0DBD4",
+                  boxShadow: "0 2px 12px rgba(0,0,0,0.04)",
                 }}
               >
-                {/* Quote marks */}
+                {/* Quote mark */}
                 <div
-                  className="text-4xl leading-none font-bold"
-                  style={{ color: "#BEFF00", fontFamily: "var(--font-syne)", opacity: 0.4 }}
+                  className="text-4xl leading-none font-semibold"
+                  style={{ fontFamily: "var(--font-playfair)", color: "#7D9B76", opacity: 0.4 }}
                 >
                   "
                 </div>
 
                 <p
                   className="text-base leading-relaxed flex-1"
-                  style={{ color: "#C0C0C0", fontFamily: "var(--font-dm-sans)" }}
+                  style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
                 >
                   {t.quote}
                 </p>
@@ -93,15 +95,15 @@ export default function TestimonialsSection() {
                 {/* Author */}
                 <div
                   className="flex items-center gap-3 pt-4"
-                  style={{ borderTop: "1px solid #1E1E1E" }}
+                  style={{ borderTop: "1px solid #E0DBD4" }}
                 >
                   <div
-                    className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold"
+                    className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-xs font-semibold"
                     style={{
-                      backgroundColor: "#1A1A1A",
-                      border: "1px solid #2A2A2A",
-                      color: "#BEFF00",
-                      fontFamily: "var(--font-syne)",
+                      backgroundColor: "rgba(125,155,118,0.12)",
+                      border: "1px solid rgba(125,155,118,0.25)",
+                      color: "#7D9B76",
+                      fontFamily: "var(--font-dm-sans)",
                     }}
                   >
                     {t.initials}
@@ -109,13 +111,13 @@ export default function TestimonialsSection() {
                   <div>
                     <p
                       className="text-sm font-semibold"
-                      style={{ color: "#F5F5F5", fontFamily: "var(--font-dm-sans)" }}
+                      style={{ color: "#1A1A1A", fontFamily: "var(--font-dm-sans)" }}
                     >
                       {t.author}
                     </p>
                     <p
                       className="text-xs"
-                      style={{ color: "#555555", fontFamily: "var(--font-dm-sans)" }}
+                      style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
                     >
                       {t.role}
                     </p>

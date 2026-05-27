@@ -66,7 +66,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
 
       const data = await res.json()
       const stripMarkdown = (text: string) =>
-        text.replace(/\*\*(.*?)\*\*/g, '$1').replace(/\*(.*?)\*/g, '$1').replace(/`(.*?)`/g, '$1')
+        text.replace(/\*\*(.*?)\*\*/g, "$1").replace(/\*(.*?)\*/g, "$1").replace(/`(.*?)`/g, "$1")
       setMessages((prev) => [
         ...prev,
         {
@@ -77,10 +77,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
     } catch {
       setMessages((prev) => [
         ...prev,
-        {
-          role: "assistant",
-          content: "Ups, algo salió mal. Inténtalo de nuevo.",
-        },
+        { role: "assistant", content: "Ups, algo salió mal. Inténtalo de nuevo." },
       ])
     } finally {
       setLoading(false)
@@ -100,41 +97,41 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
     <div
       className="flex flex-col rounded-2xl overflow-hidden"
       style={{
-        backgroundColor: "#111111",
-        border: "1px solid #1E1E1E",
-        boxShadow: "0 0 40px rgba(190,255,0,0.06), 0 20px 60px rgba(0,0,0,0.5)",
+        backgroundColor: "#FFFFFF",
+        border: "1px solid #E0DBD4",
+        boxShadow: "0 8px 40px rgba(0,0,0,0.08)",
       }}
     >
       {/* Header */}
       <div
         className="flex items-center gap-3 px-4 py-3"
-        style={{ borderBottom: "1px solid #1E1E1E" }}
+        style={{ borderBottom: "1px solid #E0DBD4", backgroundColor: "#FAFAF8" }}
       >
         <div
-          className="flex items-center justify-center w-9 h-9 rounded-full text-xs font-bold flex-shrink-0"
+          className="flex items-center justify-center w-9 h-9 rounded-full text-xs font-semibold flex-shrink-0"
           style={{
-            backgroundColor: "#BEFF00",
-            color: "#0A0A0A",
-            fontFamily: "var(--font-syne)",
+            backgroundColor: "#7D9B76",
+            color: "#ffffff",
+            fontFamily: "var(--font-playfair)",
           }}
         >
-          CM
+          S
         </div>
         <div className="flex-1 min-w-0">
           <p
-            className="text-sm font-semibold text-cream truncate"
-            style={{ fontFamily: "var(--font-dm-sans)" }}
+            className="text-sm font-semibold truncate"
+            style={{ fontFamily: "var(--font-dm-sans)", color: "#1A1A1A" }}
           >
             Sara — Asistente de Clínica
           </p>
           <div className="flex items-center gap-1.5 mt-0.5">
             <span
               className="inline-block w-2 h-2 rounded-full"
-              style={{ backgroundColor: "#BEFF00" }}
+              style={{ backgroundColor: "#7D9B76" }}
             />
             <span
               className="text-xs"
-              style={{ color: "#BEFF00", fontFamily: "var(--font-dm-sans)" }}
+              style={{ color: "#7D9B76", fontFamily: "var(--font-dm-sans)" }}
             >
               En línea
             </span>
@@ -145,7 +142,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
       {/* Messages */}
       <div
         className="flex flex-col gap-3 overflow-y-auto px-4 py-4"
-        style={{ maxHeight: maxH, minHeight: compact ? "220px" : "320px" }}
+        style={{ maxHeight: maxH, minHeight: compact ? "220px" : "320px", backgroundColor: "#FAFAF8" }}
       >
         <AnimatePresence initial={false}>
           {messages.map((msg, i) => (
@@ -161,17 +158,17 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
                 style={
                   msg.role === "user"
                     ? {
-                        backgroundColor: "#BEFF00",
-                        color: "#0A0A0A",
+                        backgroundColor: "#7D9B76",
+                        color: "#ffffff",
                         borderRadius: "18px 18px 4px 18px",
                         fontFamily: "var(--font-dm-sans)",
                         fontWeight: 500,
                       }
                     : {
-                        backgroundColor: "#1A1A1A",
-                        color: "#F5F5F5",
+                        backgroundColor: "#FFFFFF",
+                        color: "#1A1A1A",
                         borderRadius: "18px 18px 18px 4px",
-                        border: "1px solid #2A2A2A",
+                        border: "1px solid #E0DBD4",
                         fontFamily: "var(--font-dm-sans)",
                       }
                 }
@@ -193,23 +190,14 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
               <div
                 className="flex items-center gap-1.5 px-4 py-3"
                 style={{
-                  backgroundColor: "#1A1A1A",
-                  border: "1px solid #2A2A2A",
+                  backgroundColor: "#FFFFFF",
+                  border: "1px solid #E0DBD4",
                   borderRadius: "18px 18px 18px 4px",
                 }}
               >
-                <span
-                  className="typing-dot w-2 h-2 rounded-full"
-                  style={{ backgroundColor: "#BEFF00" }}
-                />
-                <span
-                  className="typing-dot w-2 h-2 rounded-full"
-                  style={{ backgroundColor: "#BEFF00" }}
-                />
-                <span
-                  className="typing-dot w-2 h-2 rounded-full"
-                  style={{ backgroundColor: "#BEFF00" }}
-                />
+                <span className="typing-dot w-2 h-2 rounded-full" style={{ backgroundColor: "#7D9B76" }} />
+                <span className="typing-dot w-2 h-2 rounded-full" style={{ backgroundColor: "#7D9B76" }} />
+                <span className="typing-dot w-2 h-2 rounded-full" style={{ backgroundColor: "#7D9B76" }} />
               </div>
             </motion.div>
           )}
@@ -225,6 +213,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
             className="flex flex-wrap gap-2 px-4 pb-3"
+            style={{ backgroundColor: "#FAFAF8" }}
           >
             {SUGGESTIONS.map((s) => (
               <button
@@ -233,19 +222,19 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
                 className="text-xs px-3 py-1.5 rounded-full transition-all duration-150"
                 style={{
                   backgroundColor: "transparent",
-                  border: "1px solid #2A2A2A",
-                  color: "#BEFF00",
+                  border: "1px solid #E0DBD4",
+                  color: "#5A5450",
                   fontFamily: "var(--font-dm-sans)",
                 }}
                 onMouseEnter={(e) => {
-                  const t = e.currentTarget
-                  t.style.backgroundColor = "rgba(190,255,0,0.08)"
-                  t.style.borderColor = "#BEFF00"
+                  e.currentTarget.style.backgroundColor = "rgba(125,155,118,0.08)"
+                  e.currentTarget.style.borderColor = "#7D9B76"
+                  e.currentTarget.style.color = "#7D9B76"
                 }}
                 onMouseLeave={(e) => {
-                  const t = e.currentTarget
-                  t.style.backgroundColor = "transparent"
-                  t.style.borderColor = "#2A2A2A"
+                  e.currentTarget.style.backgroundColor = "transparent"
+                  e.currentTarget.style.borderColor = "#E0DBD4"
+                  e.currentTarget.style.color = "#5A5450"
                 }}
               >
                 {s}
@@ -258,7 +247,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
       {/* Input */}
       <div
         className="flex items-center gap-2 px-3 py-3"
-        style={{ borderTop: "1px solid #1E1E1E" }}
+        style={{ borderTop: "1px solid #E0DBD4", backgroundColor: "#FFFFFF" }}
       >
         <input
           ref={inputRef}
@@ -270,27 +259,24 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
           disabled={loading}
           className="flex-1 px-4 py-2.5 text-sm rounded-xl outline-none disabled:opacity-50"
           style={{
-            backgroundColor: "#0A0A0A",
-            border: "1px solid #2A2A2A",
-            color: "#F5F5F5",
+            backgroundColor: "#F5F2EE",
+            border: "1px solid #E0DBD4",
+            color: "#1A1A1A",
             fontFamily: "var(--font-dm-sans)",
             transition: "border-color 0.15s ease",
           }}
-          onFocus={(e) => (e.currentTarget.style.borderColor = "#BEFF00")}
-          onBlur={(e) => (e.currentTarget.style.borderColor = "#2A2A2A")}
+          onFocus={(e) => (e.currentTarget.style.borderColor = "#7D9B76")}
+          onBlur={(e) => (e.currentTarget.style.borderColor = "#E0DBD4")}
         />
         <button
           onClick={() => sendMessage(input)}
           disabled={!input.trim() || loading}
           className="w-10 h-10 flex items-center justify-center rounded-xl flex-shrink-0 transition-all duration-150 disabled:opacity-40"
-          style={{ backgroundColor: "#BEFF00" }}
-          onMouseEnter={(e) =>
-            (e.currentTarget.style.boxShadow =
-              "0 0 20px rgba(190,255,0,0.35)")
-          }
-          onMouseLeave={(e) => (e.currentTarget.style.boxShadow = "none")}
+          style={{ backgroundColor: "#7D9B76" }}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#6A8564")}
+          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#7D9B76")}
         >
-          <Send size={16} color="#0A0A0A" />
+          <Send size={16} color="#ffffff" />
         </button>
       </div>
     </div>
