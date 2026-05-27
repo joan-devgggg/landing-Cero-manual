@@ -3,7 +3,7 @@
 import Script from "next/script"
 import { useState, useEffect } from "react"
 
-const PIXEL_ID = "PIXEL_ID_AQUI"
+const PIXEL_ID = "26874382005546596"
 
 export default function MetaPixel() {
   const [accepted, setAccepted] = useState(false)
