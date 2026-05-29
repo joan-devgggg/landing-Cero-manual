@@ -9,9 +9,11 @@ export default function CTASection() {
   const inView = useInView(ref, { once: true, margin: "-60px" })
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const [form, setForm] = useState({
     nombre: "",
     telefono: "",
+    email: "",
   })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -21,14 +23,29 @@ export default function CTASection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
+    setError(null)
 
-    if (typeof window !== "undefined" && typeof (window as { fbq?: Function }).fbq === "function") {
-      (window as { fbq?: Function }).fbq?.("track", "Lead")
+    try {
+      const res = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      })
+
+      if (!res.ok) {
+        throw new Error("Error al enviar el formulario.")
+      }
+
+      if (typeof window !== "undefined" && typeof (window as { fbq?: Function }).fbq === "function") {
+        (window as { fbq?: Function }).fbq?.("track", "Lead")
+      }
+
+      setSubmitted(true)
+    } catch {
+      setError("Algo ha ido mal. Por favor, inténtalo de nuevo.")
+    } finally {
+      setLoading(false)
     }
-
-    await new Promise((r) => setTimeout(r, 800))
-    setSubmitted(true)
-    setLoading(false)
   }
 
   const inputStyle: React.CSSProperties = {
@@ -164,6 +181,37 @@ export default function CTASection() {
                     onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
                   />
                 </div>
+
+                {/* Email */}
+                <div>
+                  <label
+                    className="block text-xs font-medium mb-1.5"
+                    style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-dm-sans)" }}
+                  >
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    value={form.email}
+                    onChange={handleChange}
+                    placeholder="tu@email.com"
+                    style={inputStyle}
+                    onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)")}
+                    onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)")}
+                  />
+                </div>
+
+                {/* Error message */}
+                {error && (
+                  <p
+                    className="text-sm text-center"
+                    style={{ color: "rgba(255, 200, 200, 0.95)", fontFamily: "var(--font-dm-sans)" }}
+                  >
+                    {error}
+                  </p>
+                )}
 
                 {/* Submit */}
                 <button
