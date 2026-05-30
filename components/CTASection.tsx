@@ -64,6 +64,17 @@ export default function CTASection() {
   return (
     <section id="cta" className="py-14 md:py-28 px-6" ref={ref}>
       <div className="max-w-3xl mx-auto">
+        {/* Geo urgency line */}
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5 }}
+          className="text-center text-sm mb-8"
+          style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
+        >
+          Ya hay clínicas en Madrid, Barcelona y Valencia usando este sistema. Las primeras en adoptarlo en su ciudad tienen ventaja real.
+        </motion.p>
+
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}

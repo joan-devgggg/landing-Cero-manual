@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "¿Se integra con mi software de gestión?",
-    a: "Trabajamos con los principales: Flowww, Klinikare, Treatwell, Koibox. Si usas otro, lo evaluamos en la llamada.",
+    a: "Sí. Nos integramos con los principales software del sector como Flowww y Klinikare. Si usas otro sistema, lo valoramos juntos en la llamada de diagnóstico.",
   },
   {
     q: "¿Puedo desactivar el agente y atender yo manualmente?",

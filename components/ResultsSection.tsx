@@ -65,7 +65,7 @@ export default function ResultsSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="max-w-2xl mx-auto p-8 rounded-2xl text-left"
+            className="max-w-2xl mx-auto p-8 rounded-2xl text-left mb-20"
             style={{ backgroundColor: "#FFFFFF", border: "1px solid #E0DBD4" }}
           >
             <p
@@ -76,6 +76,46 @@ export default function ResultsSection() {
               <strong style={{ color: "#1A1A1A" }}>
                 La pregunta es quién los recoge primero.
               </strong>
+            </p>
+          </motion.div>
+
+          {/* Second stat — ROI español */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, delay: 0.55 }}
+            className="mb-6"
+          >
+            <span
+              className="text-[80px] md:text-[140px] font-semibold leading-none"
+              style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A", display: "block" }}
+            >
+              3.000 €
+            </span>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.7 }}
+          >
+            <p
+              className="text-xl md:text-2xl font-semibold mb-4 max-w-2xl mx-auto leading-snug"
+              style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
+            >
+              es el LTV medio de un paciente recurrente en clínica estética en España
+            </p>
+            <p
+              className="text-base mb-4 max-w-xl mx-auto"
+              style={{ color: "#5A5450", fontFamily: "var(--font-dm-sans)" }}
+            >
+              Recuperar 3 pacientes inactivos al mes con automatización = 9.000 €/mes adicionales.
+            </p>
+            <p
+              className="text-sm"
+              style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
+            >
+              Fuente: SEME (Sociedad Española de Medicina Estética)
             </p>
           </motion.div>
         </div>

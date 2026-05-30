@@ -110,6 +110,17 @@ export default function HeroSection() {
           </button>
         </motion.div>
 
+        {/* Secondary line under CTAs */}
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.38 }}
+          className="text-sm mb-12 -mt-14"
+          style={{ color: "#7D9B76", fontFamily: "var(--font-dm-sans)" }}
+        >
+          También reactiva pacientes inactivos que llevan meses sin volver.
+        </motion.p>
+
         {/* Metrics — 3-col compact grid on all screen sizes */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
