@@ -115,6 +115,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
   const [loading, setLoading] = useState(false)
   const [userHasTyped, setUserHasTyped] = useState(false)
   const [isRecording, setIsRecording] = useState(false)
+  const [isProcessing, setIsProcessing] = useState(false)
   const [recordingSeconds, setRecordingSeconds] = useState(0)
   const [pendingImage, setPendingImage] = useState<PendingImage | null>(null)
 
@@ -122,6 +123,8 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
   const inputRef = useRef<HTMLInputElement>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
   const recognitionRef = useRef<ISpeechRecognition | null>(null)
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null)
+  const mediaStreamRef = useRef<MediaStream | null>(null)
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const transcriptRef = useRef("")
   const durationRef = useRef(0)
@@ -130,6 +133,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
     return () => {
       if (timerRef.current) clearInterval(timerRef.current)
       if (recognitionRef.current) recognitionRef.current.abort()
+      if (mediaStreamRef.current) mediaStreamRef.current.getTracks().forEach(t => t.stop())
     }
   }, [])
 
@@ -237,63 +241,82 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
     }
   }
 
-  const startRecording = () => {
-    const SpeechRec =
-      typeof window !== "undefined" &&
-      (window.SpeechRecognition || window.webkitSpeechRecognition)
-    if (!SpeechRec) return
+  const startRecording = async () => {
+    let stream: MediaStream
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+    } catch {
+      setMessages(prev => [
+        ...prev,
+        { role: "assistant", content: "Necesitamos acceso al micrófono para esta función." },
+      ])
+      return
+    }
 
     transcriptRef.current = ""
     durationRef.current = 0
     setRecordingSeconds(0)
+    setIsRecording(true)
+    mediaStreamRef.current = stream
 
-    const recognition = new SpeechRec()
-    recognition.lang = "es-ES"
-    recognition.continuous = false
-    recognition.interimResults = false
-    recognitionRef.current = recognition
+    const mr = new MediaRecorder(stream)
+    mediaRecorderRef.current = mr
 
-    recognition.onresult = (e: ISpeechRecognitionEvent) => {
-      for (let i = e.resultIndex; i < e.results.length; i++) {
-        if (e.results[i].isFinal) {
-          transcriptRef.current += e.results[i][0].transcript
+    mr.ondataavailable = () => { /* audio chunks captured */ }
+
+    mr.onstop = () => {
+      stream.getTracks().forEach(t => t.stop())
+      if (timerRef.current) {
+        clearInterval(timerRef.current)
+        timerRef.current = null
+      }
+      setIsRecording(false)
+      // Small delay so SpeechRecognition can finish firing onresult
+      setTimeout(() => {
+        const text = transcriptRef.current.trim()
+        const duration = durationRef.current
+        if (text) sendMessage(text, { isAudio: true, audioDuration: duration })
+        setIsProcessing(false)
+      }, 350)
+    }
+
+    mr.start()
+
+    // Web Speech API runs in parallel for transcription
+    const SpeechRec =
+      typeof window !== "undefined" &&
+      (window.SpeechRecognition || window.webkitSpeechRecognition)
+    if (SpeechRec) {
+      const recognition = new SpeechRec()
+      recognition.lang = "es-ES"
+      recognition.continuous = false
+      recognition.interimResults = false
+      recognitionRef.current = recognition
+
+      recognition.onresult = (e: ISpeechRecognitionEvent) => {
+        for (let i = e.resultIndex; i < e.results.length; i++) {
+          if (e.results[i].isFinal) {
+            transcriptRef.current += e.results[i][0].transcript
+          }
         }
       }
-    }
+      recognition.onerror = () => { /* silent — MediaRecorder still captures */ }
+      recognition.onend = () => { /* transcript already saved to ref */ }
 
-    recognition.onend = () => {
-      if (timerRef.current) {
-        clearInterval(timerRef.current)
-        timerRef.current = null
-      }
-      setIsRecording(false)
-      const text = transcriptRef.current.trim()
-      const duration = durationRef.current
-      if (text) sendMessage(text, { isAudio: true, audioDuration: duration })
+      try { recognition.start() } catch { /* ignore if already started */ }
     }
-
-    recognition.onerror = () => {
-      if (timerRef.current) {
-        clearInterval(timerRef.current)
-        timerRef.current = null
-      }
-      setIsRecording(false)
-    }
-
-    recognition.start()
-    setIsRecording(true)
 
     timerRef.current = setInterval(() => {
       durationRef.current += 1
-      setRecordingSeconds((s) => s + 1)
+      setRecordingSeconds(s => s + 1)
     }, 1000)
   }
 
   const stopRecording = () => {
+    setIsProcessing(true)
     if (recognitionRef.current) recognitionRef.current.stop()
-    if (timerRef.current) {
-      clearInterval(timerRef.current)
-      timerRef.current = null
+    if (mediaRecorderRef.current?.state === "recording") {
+      mediaRecorderRef.current.stop()
     }
   }
 
@@ -315,7 +338,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
     setPendingImage(null)
   }
 
-  const showMic = !input.trim() && !pendingImage && !isRecording
+  const showMic = !input.trim() && !pendingImage && !isRecording && !isProcessing
   const maxH = compact ? "280px" : "350px"
 
   return (
@@ -599,8 +622,24 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
           onChange={handleImageSelect}
         />
 
-        {/* Recording indicator or text input */}
-        {isRecording ? (
+        {/* Recording indicator, processing state, or text input */}
+        {isProcessing ? (
+          <div
+            className="flex-1 flex items-center gap-2 px-4 py-2.5 rounded-xl"
+            style={{ backgroundColor: "#F5F2EE", border: "1px solid #E0DBD4" }}
+          >
+            <span
+              className="w-4 h-4 rounded-full border-2 flex-shrink-0 animate-spin"
+              style={{ borderColor: "#7D9B76", borderTopColor: "transparent" }}
+            />
+            <span
+              className="text-sm"
+              style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
+            >
+              Procesando…
+            </span>
+          </div>
+        ) : isRecording ? (
           <div
             className="flex-1 flex items-center gap-2 px-4 py-2.5 rounded-xl"
             style={{ backgroundColor: "#F5F2EE", border: "1px solid #E0DBD4" }}
@@ -643,7 +682,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
         {/* Mic · Stop · Send */}
         <button
           onClick={isRecording ? stopRecording : showMic ? startRecording : handleSend}
-          disabled={loading && !isRecording}
+          disabled={(loading || isProcessing) && !isRecording}
           className="w-10 h-10 flex items-center justify-center rounded-xl flex-shrink-0 transition-all duration-150 disabled:opacity-40"
           style={{ backgroundColor: isRecording ? "#E53E3E" : "#7D9B76" }}
         >
