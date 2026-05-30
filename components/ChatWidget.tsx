@@ -44,6 +44,7 @@ interface Message {
   isCta?: boolean
   isAudio?: boolean
   audioDuration?: number
+  audioTranscript?: string
   imageObjectUrl?: string
   imageBase64?: string
   imageMimeType?: string
@@ -149,9 +150,9 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
 
   const sendMessage = async (
     text: string,
-    opts?: { imageData?: PendingImage; isAudio?: boolean; audioDuration?: number }
+    opts?: { imageData?: PendingImage; isAudio?: boolean; audioDuration?: number; audioTranscript?: string }
   ) => {
-    const { imageData, isAudio, audioDuration } = opts || {}
+    const { imageData, isAudio, audioDuration, audioTranscript } = opts || {}
     if (!text.trim() && !imageData) return
     if (loading) return
 
@@ -162,6 +163,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
       content: text,
       isAudio,
       audioDuration,
+      audioTranscript,
       imageObjectUrl: imageData?.objectUrl,
       imageBase64: imageData?.base64,
       imageMimeType: imageData?.mimeType,
@@ -245,7 +247,8 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
     let stream: MediaStream
     try {
       stream = await navigator.mediaDevices.getUserMedia({ audio: true })
-    } catch {
+    } catch (err) {
+      console.error("[Audio] Microphone permission denied:", err)
       setMessages(prev => [
         ...prev,
         { role: "assistant", content: "Necesitamos acceso al micrófono para esta función." },
@@ -259,51 +262,52 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
     setIsRecording(true)
     mediaStreamRef.current = stream
 
+    // MediaRecorder captures audio bytes for size logging
+    const chunks: BlobPart[] = []
     const mr = new MediaRecorder(stream)
     mediaRecorderRef.current = mr
 
-    mr.ondataavailable = () => { /* audio chunks captured */ }
+    mr.ondataavailable = (e) => {
+      if (e.data.size > 0) chunks.push(e.data)
+    }
 
     mr.onstop = () => {
+      const blob = new Blob(chunks, { type: mr.mimeType || "audio/webm" })
+      console.log(`[Audio] Audio grabado, tamaño: ${blob.size} bytes`)
       stream.getTracks().forEach(t => t.stop())
-      if (timerRef.current) {
-        clearInterval(timerRef.current)
-        timerRef.current = null
-      }
-      setIsRecording(false)
-      // Small delay so SpeechRecognition can finish firing onresult
-      setTimeout(() => {
-        const text = transcriptRef.current.trim()
-        const duration = durationRef.current
-        if (text) sendMessage(text, { isAudio: true, audioDuration: duration })
-        setIsProcessing(false)
-      }, 350)
     }
 
     mr.start()
 
-    // Web Speech API runs in parallel for transcription
+    // SpeechRecognition for real-time transcription — continuous so it
+    // keeps accumulating until we call stop(), not just the first pause
     const SpeechRec =
       typeof window !== "undefined" &&
       (window.SpeechRecognition || window.webkitSpeechRecognition)
+
     if (SpeechRec) {
+      console.log("[Audio] Iniciando transcripción...")
       const recognition = new SpeechRec()
       recognition.lang = "es-ES"
-      recognition.continuous = false
-      recognition.interimResults = false
+      recognition.continuous = true   // keep running until stop() is called
+      recognition.interimResults = true  // fire onresult for partials too, accumulate finals
       recognitionRef.current = recognition
 
       recognition.onresult = (e: ISpeechRecognitionEvent) => {
         for (let i = e.resultIndex; i < e.results.length; i++) {
           if (e.results[i].isFinal) {
-            transcriptRef.current += e.results[i][0].transcript
+            transcriptRef.current += e.results[i][0].transcript + " "
           }
         }
       }
-      recognition.onerror = () => { /* silent — MediaRecorder still captures */ }
-      recognition.onend = () => { /* transcript already saved to ref */ }
+      recognition.onerror = (e: Event) => {
+        console.error("[Audio] SpeechRecognition error:", e)
+      }
+      recognition.onend = () => { /* overridden by stopRecording */ }
 
-      try { recognition.start() } catch { /* ignore if already started */ }
+      try { recognition.start() } catch (e) {
+        console.error("[Audio] recognition.start failed:", e)
+      }
     }
 
     timerRef.current = setInterval(() => {
@@ -313,10 +317,43 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
   }
 
   const stopRecording = () => {
+    // Stop timer and flip UI state immediately
+    if (timerRef.current) {
+      clearInterval(timerRef.current)
+      timerRef.current = null
+    }
+    setIsRecording(false)
     setIsProcessing(true)
-    if (recognitionRef.current) recognitionRef.current.stop()
-    if (mediaRecorderRef.current?.state === "recording") {
-      mediaRecorderRef.current.stop()
+
+    const duration = durationRef.current
+
+    const finish = () => {
+      // Stop MediaRecorder (fires onstop which logs size)
+      if (mediaRecorderRef.current?.state === "recording") {
+        mediaRecorderRef.current.stop()
+      }
+
+      const text = transcriptRef.current.trim()
+      console.log(`[Audio] Transcript obtenido: "${text}"`)
+
+      if (text) {
+        sendMessage(text, { isAudio: true, audioDuration: duration, audioTranscript: text })
+      } else {
+        // Fallback: no transcript — send a proxy prompt so Sara still responds
+        sendMessage(
+          "[El usuario ha enviado un mensaje de voz. Responde como si hubieras entendido una consulta típica sobre tratamientos o citas.]",
+          { isAudio: true, audioDuration: duration }
+        )
+      }
+      setIsProcessing(false)
+    }
+
+    if (recognitionRef.current) {
+      // Override onend so finish() runs after all pending onresult events flush
+      recognitionRef.current.onend = finish
+      recognitionRef.current.stop()
+    } else {
+      finish()
     }
   }
 
@@ -398,29 +435,37 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
             >
               {/* Audio bubble */}
               {msg.role === "user" && msg.isAudio ? (
-                <div
-                  className="max-w-[85%] px-3 py-2.5 flex items-center gap-2 flex-shrink-0"
-                  style={{ backgroundColor: "#7D9B76", borderRadius: "18px 18px 4px 18px" }}
-                >
-                  <Mic size={14} color="rgba(255,255,255,0.9)" />
-                  <div className="flex items-end gap-px" style={{ height: "16px" }}>
-                    {WAVEFORM.map((h, idx) => (
-                      <div
-                        key={idx}
-                        style={{
-                          width: "2px",
-                          height: `${h}px`,
-                          borderRadius: "1px",
-                          backgroundColor: "rgba(255,255,255,0.75)",
-                        }}
-                      />
-                    ))}
+                <div className="max-w-[85%] flex flex-col items-end gap-1 flex-shrink-0">
+                  <div
+                    className="px-3 py-2.5 flex items-center gap-2"
+                    style={{ backgroundColor: "#7D9B76", borderRadius: "18px 18px 4px 18px" }}
+                  >
+                    <Mic size={14} color="rgba(255,255,255,0.9)" />
+                    <div className="flex items-end gap-px" style={{ height: "16px" }}>
+                      {WAVEFORM.map((h, idx) => (
+                        <div
+                          key={idx}
+                          style={{
+                            width: "2px",
+                            height: `${h}px`,
+                            borderRadius: "1px",
+                            backgroundColor: "rgba(255,255,255,0.75)",
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <span
+                      className="text-xs"
+                      style={{ color: "rgba(255,255,255,0.85)", fontFamily: "var(--font-dm-sans)" }}
+                    >
+                      {formatDuration(msg.audioDuration || 0)}
+                    </span>
                   </div>
                   <span
-                    className="text-xs"
-                    style={{ color: "rgba(255,255,255,0.85)", fontFamily: "var(--font-dm-sans)" }}
+                    className="text-xs px-1"
+                    style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
                   >
-                    {formatDuration(msg.audioDuration || 0)}
+                    {msg.audioTranscript || "Mensaje de voz"}
                   </span>
                 </div>
               ) : /* Image bubble */
