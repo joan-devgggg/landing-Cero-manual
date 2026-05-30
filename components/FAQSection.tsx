@@ -10,6 +10,18 @@ const faqs = [
     a: "Depende del plan y los canales que actives. En la llamada de diagnóstico te hacemos una propuesta personalizada sin sorpresas ni letra pequeña.",
   },
   {
+    q: "¿El agente suena robótico?",
+    a: "No. Lo configuramos con la voz y el tono de tu clínica. Pruébalo en la demo de arriba — ese es el nivel de conversación que entregamos.",
+  },
+  {
+    q: "¿Qué pasa si el agente comete un error con un paciente?",
+    a: "Tú siempre puedes tomar el control en cualquier momento. El agente está entrenado para escalar al humano cuando detecta una situación delicada, y tú recibes aviso inmediato.",
+  },
+  {
+    q: "¿Funciona si no tengo muchos seguidores ni anuncios activos?",
+    a: "Sí. El agente funciona con cualquier fuente de contacto — WhatsApp directo, Google, recomendaciones, o tu base de pacientes existente. No necesitas anuncios para empezar a ver resultados.",
+  },
+  {
     q: "¿Cuánto tarda en estar funcionando?",
     a: "El agente está operativo en menos de 14 días desde que firmamos. El onboarding incluye configurar la base de conocimiento con tu información, tratamientos y precios.",
   },
@@ -28,10 +40,6 @@ const faqs = [
   {
     q: "¿Hay permanencia?",
     a: "No. Mes a mes. Cancelas con 30 días de aviso.",
-  },
-  {
-    q: "¿El agente suena robótico?",
-    a: "No. Lo configuramos con la voz y el tono de tu clínica. Pruébalo en la demo de arriba — ese es el nivel de conversación que entregamos.",
   },
 ]
 
