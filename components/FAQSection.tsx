@@ -6,6 +6,10 @@ import { Plus, Minus } from "lucide-react"
 
 const faqs = [
   {
+    q: "¿Cuánto cuesta?",
+    a: "Depende del plan y los canales que actives. En la llamada de diagnóstico te hacemos una propuesta personalizada sin sorpresas ni letra pequeña.",
+  },
+  {
     q: "¿Cuánto tarda en estar funcionando?",
     a: "El agente está operativo en menos de 14 días desde que firmamos. El onboarding incluye configurar la base de conocimiento con tu información, tratamientos y precios.",
   },

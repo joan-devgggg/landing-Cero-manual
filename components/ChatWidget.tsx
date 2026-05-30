@@ -7,6 +7,7 @@ import { Send } from "lucide-react"
 interface Message {
   role: "user" | "assistant"
   content: string
+  isCta?: boolean
 }
 
 const WELCOME: Message = {
@@ -50,6 +51,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
 
     const userMsg: Message = { role: "user", content: text }
     const newMessages = [...messages, userMsg]
+    const userCount = newMessages.filter((m) => m.role === "user").length
     setMessages(newMessages)
     setInput("")
     setLoading(true)
@@ -69,13 +71,24 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
       const data = await res.json()
       const stripMarkdown = (text: string) =>
         text.replace(/\*\*(.*?)\*\*/g, "$1").replace(/\*(.*?)\*/g, "$1").replace(/`(.*?)`/g, "$1")
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "assistant",
-          content: stripMarkdown(data.message || data.error || "Error al responder."),
-        },
-      ])
+      setMessages((prev) => {
+        const updated: Message[] = [
+          ...prev,
+          {
+            role: "assistant",
+            content: stripMarkdown(data.message || data.error || "Error al responder."),
+          },
+        ]
+        if (userCount === 2) {
+          updated.push({
+            role: "assistant",
+            content:
+              "¿Quieres ver cómo quedaría esto configurado con el nombre de tu clínica y tus tratamientos reales? Te lo muestro en 20 minutos.",
+            isCta: true,
+          })
+        }
+        return updated
+      })
     } catch {
       setMessages((prev) => [
         ...prev,
@@ -154,7 +167,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.25 }}
-              className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
+              className={msg.isCta ? "flex flex-col items-start gap-2" : `flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
                 className="max-w-[85%] px-4 py-2.5 text-sm leading-relaxed whitespace-pre-wrap"
@@ -178,6 +191,26 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
               >
                 {msg.content}
               </div>
+              {msg.isCta && (
+                <a
+                  href="#cta"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    document.querySelector("#cta")?.scrollIntoView({ behavior: "smooth" })
+                  }}
+                  className="px-4 py-2 text-xs font-semibold rounded-full transition-all duration-150"
+                  style={{
+                    backgroundColor: "#7D9B76",
+                    color: "#ffffff",
+                    fontFamily: "var(--font-dm-sans)",
+                    textDecoration: "none",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#6A8564")}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#7D9B76")}
+                >
+                  Agendar llamada gratuita →
+                </a>
+              )}
             </motion.div>
           ))}
 

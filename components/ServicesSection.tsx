@@ -15,9 +15,9 @@ const services = [
   },
   {
     icon: LayoutDashboard,
-    name: "Panel de Control",
-    desc: "Gestiona todo desde un solo lugar. Activa o desactiva el agente cuando quieras tomar el hilo tú directamente.",
-    benefit: "Control total sin complejidad técnica",
+    name: "Tú siempre al mando",
+    desc: "Activa o desactiva el agente cuando quieras. Si prefieres atender tú en un momento concreto, lo haces con un clic desde el panel.",
+    benefit: "Control total sin tecnicismos",
     highlight: false,
   },
   {

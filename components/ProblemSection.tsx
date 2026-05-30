@@ -40,9 +40,8 @@ export default function ProblemSection() {
             className="text-4xl md:text-5xl font-semibold leading-tight"
             style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
           >
-            Lo que está pasando en
-            <br />
-            tu clínica <span style={{ fontStyle: "italic", color: "#7D9B76" }}>ahora mismo</span>
+            Lo que está pasando en tu clínica,{" "}
+            <span style={{ fontStyle: "italic", color: "#7D9B76" }}>ahora mismo</span>
           </h2>
         </motion.div>
 
@@ -76,6 +75,24 @@ export default function ProblemSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Inline CTA after pain points */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.75 }}
+          className="flex justify-center mb-8"
+        >
+          <a
+            href="#cta"
+            className="text-sm font-medium transition-opacity duration-200"
+            style={{ color: "#7D9B76", fontFamily: "var(--font-dm-sans)" }}
+            onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.7")}
+            onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+          >
+            Quiero que esto no me pase más →
+          </a>
+        </motion.div>
 
         {/* Closing */}
         <motion.div

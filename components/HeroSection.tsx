@@ -68,8 +68,7 @@ export default function HeroSection() {
           className="text-lg md:text-xl max-w-2xl mb-12 leading-relaxed"
           style={{ color: "#5A5450", fontFamily: "var(--font-dm-sans)" }}
         >
-          Instalamos agentes de IA en WhatsApp que responden, cualifican y agendan citas
-          automáticamente — mientras tú te dedicas a lo que sabes hacer.
+          Agentes de IA en WhatsApp que responden, cualifican y agendan citas — mientras tú te dedicas a lo que sabes hacer.
         </motion.p>
 
         {/* CTAs */}

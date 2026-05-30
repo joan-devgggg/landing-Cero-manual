@@ -236,7 +236,7 @@ export default function CTASection() {
                 >
                   {loading ? "Enviando..." : (
                     <>
-                      Agendar diagnóstico gratuito
+                      Quiero mi diagnóstico gratuito
                       <ArrowRight size={16} />
                     </>
                   )}
