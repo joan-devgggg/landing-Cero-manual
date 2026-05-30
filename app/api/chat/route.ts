@@ -17,11 +17,31 @@ function isRateLimited(ip: string): boolean {
   return false
 }
 
+function validateContent(content: unknown): boolean {
+  if (typeof content === "string") return content.length <= 2000
+  if (!Array.isArray(content)) return false
+  for (const part of content) {
+    if (typeof part !== "object" || !part || typeof (part as Record<string, unknown>).type !== "string") return false
+    const p = part as Record<string, unknown>
+    if (p.type === "text") {
+      if (typeof p.text !== "string" || (p.text as string).length > 2000) return false
+    } else if (p.type === "image_url") {
+      const iu = p.image_url as Record<string, unknown> | undefined
+      if (!iu || typeof iu.url !== "string" || !(iu.url as string).startsWith("data:image/")) return false
+    } else {
+      return false
+    }
+  }
+  return true
+}
+
 const SYSTEM_PROMPT = `Eres Sara, la asistente virtual de una clínica estética. Estás en modo demo para que los visitantes de Cero Manual vean cómo funcionaría un agente real en su clínica.
 
 Habla de forma cálida, cercana y profesional — como una recepcionista real, no como un bot ni como una agencia. Nunca uses markdown, asteriscos, negritas ni formato especial. Escribe en texto plano siempre.
 
 Puedes responder preguntas sobre tratamientos típicos de estética (bótox, ácido hialurónico, láser, depilación, hidratación facial...), dar precios orientativos, consultar disponibilidad ficticia y agendar citas de prueba.
+
+Si te envían una imagen, descríbela o comenta lo que ves en el contexto de una clínica estética — por ejemplo si es una foto de piel, cara, zona corporal, etc. — y ofrece información de tratamientos relacionados.
 
 Si alguien pregunta por los servicios o precios de Cero Manual, explícales brevemente que Cero Manual es la agencia que ha creado este agente, y que pueden agendar una llamada en el +34 644 786 952 o escribir a @cero.manual en Instagram.
 
@@ -46,10 +66,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Formato incorrecto." }, { status: 400 })
     }
     if (messages.length > 30) {
-      return NextResponse.json(
-        { error: "Conversación demasiado larga." },
-        { status: 400 }
-      )
+      return NextResponse.json({ error: "Conversación demasiado larga." }, { status: 400 })
     }
 
     const validRoles = new Set(["user", "assistant"])
@@ -58,8 +75,7 @@ export async function POST(req: NextRequest) {
         typeof msg !== "object" ||
         msg === null ||
         !validRoles.has(msg.role) ||
-        typeof msg.content !== "string" ||
-        msg.content.length > 2000
+        !validateContent(msg.content)
       ) {
         return NextResponse.json({ error: "Formato incorrecto." }, { status: 400 })
       }
@@ -68,16 +84,13 @@ export async function POST(req: NextRequest) {
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
+        Authorization: `Bearer ${OPENROUTER_API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         model: "anthropic/claude-haiku-4.5",
         max_tokens: 400,
-        messages: [
-          { role: "system", content: SYSTEM_PROMPT },
-          ...messages,
-        ],
+        messages: [{ role: "system", content: SYSTEM_PROMPT }, ...messages],
       }),
     })
 
