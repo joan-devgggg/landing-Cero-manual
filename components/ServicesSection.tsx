@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { MessageSquare, LayoutDashboard, Bell, Smartphone, Globe } from "lucide-react"
+import { MessageSquare, LayoutDashboard, Bell, Smartphone, Globe, UserCheck } from "lucide-react"
 
 const services = [
   {
@@ -14,17 +14,17 @@ const services = [
     highlight: true,
   },
   {
-    icon: LayoutDashboard,
-    name: "Tú siempre al mando",
-    desc: "Activa o desactiva el agente cuando quieras. Si prefieres atender tú en un momento concreto, lo haces con un clic desde el panel.",
-    benefit: "Control total sin tecnicismos",
-    highlight: false,
-  },
-  {
     icon: Bell,
     name: "Recordatorios y Seguimiento",
     desc: "Recordatorios automáticos 24h y 2h antes de cada cita. Reactiva contactos inactivos. Pide reseñas en el momento exacto.",
     benefit: "Hasta −40% de no-shows desde el primer mes",
+    highlight: false,
+  },
+  {
+    icon: UserCheck,
+    name: "Reactivación de Pacientes",
+    desc: "Detectamos pacientes que llevan meses sin volver y les enviamos el mensaje exacto en el momento exacto. Sin spam. Solo el recordatorio que necesitaban para reservar.",
+    benefit: "Recupera ingresos que ya creías perdidos",
     highlight: false,
   },
   {
@@ -39,6 +39,13 @@ const services = [
     name: "Agente FAQ Web",
     desc: "Widget de chat en tu web que responde preguntas sobre tratamientos y convierte visitas frías en leads calientes.",
     benefit: "Más leads del tráfico que ya tienes",
+    highlight: false,
+  },
+  {
+    icon: LayoutDashboard,
+    name: "Tú siempre al mando",
+    desc: "Activa o desactiva el agente cuando quieras. Si prefieres atender tú en un momento concreto, lo haces con un clic desde el panel.",
+    benefit: "Control total sin tecnicismos",
     highlight: false,
   },
 ]
@@ -77,7 +84,7 @@ export default function ServicesSection() {
         </motion.div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {services.map((svc, i) => {
             const Icon = svc.icon
             return (
@@ -89,7 +96,7 @@ export default function ServicesSection() {
                 className={i === 0 ? "md:col-span-2" : ""}
               >
                 <div
-                  className="flex flex-col gap-5 p-6 md:p-7 rounded-2xl h-full transition-all duration-200"
+                  className="flex flex-col gap-3 p-4 md:p-5 rounded-2xl h-full transition-all duration-200"
                   style={{
                     backgroundColor: "#FFFFFF",
                     border: svc.highlight ? "1.5px solid #7D9B76" : "1px solid #E0DBD4",
@@ -113,16 +120,15 @@ export default function ServicesSection() {
                   {/* Icon row + badge */}
                   <div className="flex items-start justify-between gap-3">
                     <div
-                      className="flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center"
+                      className="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center"
                       style={{
                         backgroundColor: svc.highlight ? "rgba(125,155,118,0.14)" : "#F5F2EE",
                         border: `1.5px solid ${svc.highlight ? "rgba(125,155,118,0.35)" : "#E0DBD4"}`,
                       }}
                     >
-                      <Icon size={24} color={svc.highlight ? "#7D9B76" : "#8A8580"} strokeWidth={1.75} />
+                      <Icon size={20} color={svc.highlight ? "#7D9B76" : "#8A8580"} strokeWidth={1.75} />
                     </div>
 
-                    {/* Badge — inline next to icon, no overlap with title */}
                     {svc.badge && (
                       <span
                         className="flex-shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full self-start"
@@ -139,13 +145,10 @@ export default function ServicesSection() {
                   </div>
 
                   {/* Text content */}
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-1.5">
                     <h3
                       className="text-xl md:text-2xl font-bold leading-snug"
-                      style={{
-                        fontFamily: "var(--font-playfair)",
-                        color: "#1A1A1A",
-                      }}
+                      style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
                     >
                       {svc.name}
                     </h3>
@@ -155,26 +158,12 @@ export default function ServicesSection() {
                     >
                       {svc.desc}
                     </p>
-                  </div>
-
-                  {/* Benefit pill */}
-                  <div
-                    className="flex items-center gap-2 px-4 py-2.5 rounded-xl mt-auto"
-                    style={{
-                      backgroundColor: "rgba(125,155,118,0.09)",
-                      border: "1px solid rgba(125,155,118,0.2)",
-                    }}
-                  >
-                    <span
-                      className="inline-block w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: "#7D9B76" }}
-                    />
-                    <span
+                    <p
                       className="text-sm font-semibold"
-                      style={{ color: "#5A8050", fontFamily: "var(--font-dm-sans)" }}
+                      style={{ color: "#7D9B76", fontFamily: "var(--font-dm-sans)" }}
                     >
                       {svc.benefit}
-                    </span>
+                    </p>
                   </div>
                 </div>
               </motion.div>
