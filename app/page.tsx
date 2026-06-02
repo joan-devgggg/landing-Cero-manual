@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar"
 import HeroSection from "@/components/HeroSection"
 import ProblemSection from "@/components/ProblemSection"
 import ServicesSection from "@/components/ServicesSection"
+import IntegrationsTicker from "@/components/IntegrationsTicker"
 import TimelineSection from "@/components/TimelineSection"
 import DemoSection from "@/components/DemoSection"
 import ResultsSection from "@/components/ResultsSection"
@@ -19,6 +20,7 @@ export default function Home() {
         <HeroSection />
         <ProblemSection />
         <ServicesSection />
+        <IntegrationsTicker />
         <TimelineSection />
         <DemoSection />
         <ResultsSection />
