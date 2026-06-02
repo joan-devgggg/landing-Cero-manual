@@ -1,31 +1,48 @@
 import type { ElementType } from "react"
-import { CalendarDays, Stethoscope, CreditCard, Building2 } from "lucide-react"
+import { CalendarDays, Building2, Star, CreditCard, Mail } from "lucide-react"
 
 type Integration =
   | { name: string; type: "simpleicons"; slug: string }
   | { name: string; type: "lucide"; icon: ElementType; color: string }
 
 const integrations: Integration[] = [
+  // Redes sociales y mensajería
   { name: "WhatsApp Business", type: "simpleicons", slug: "whatsapp" },
   { name: "Instagram", type: "simpleicons", slug: "instagram" },
   { name: "Facebook", type: "simpleicons", slug: "facebook" },
-  { name: "Booksy", type: "simpleicons", slug: "booksy" },
-  { name: "Vagaro", type: "simpleicons", slug: "vagaro" },
-  { name: "Treatwell", type: "lucide", icon: CalendarDays, color: "#00B67A" },
-  { name: "Flowww", type: "lucide", icon: Building2, color: "#7D9B76" },
-  { name: "Klinikare", type: "lucide", icon: Stethoscope, color: "#3B82F6" },
-  { name: "Doctoralia", type: "lucide", icon: Stethoscope, color: "#00A3E0" },
-  { name: "Top Doctors", type: "simpleicons", slug: "topdoctors" },
+  { name: "TikTok", type: "simpleicons", slug: "tiktok" },
+  { name: "Telegram", type: "simpleicons", slug: "telegram" },
+  // Calendarios y reservas
   { name: "Google Calendar", type: "simpleicons", slug: "googlecalendar" },
-  { name: "Google Sheets", type: "simpleicons", slug: "googlesheets" },
-  { name: "Google My Business", type: "simpleicons", slug: "googlemybusiness" },
   { name: "Calendly", type: "simpleicons", slug: "calendly" },
-  { name: "Zoom", type: "simpleicons", slug: "zoom" },
+  { name: "Booksy", type: "simpleicons", slug: "booksy" },
+  { name: "Treatwell", type: "lucide", icon: CalendarDays, color: "#00B67A" },
+  { name: "Vagaro", type: "lucide", icon: CalendarDays, color: "#C0392B" },
+  // CRMs y software de clínica
+  { name: "Flowww", type: "lucide", icon: Building2, color: "#7D9B76" },
+  { name: "Klinikare", type: "lucide", icon: Building2, color: "#3B82F6" },
+  { name: "HubSpot", type: "simpleicons", slug: "hubspot" },
+  { name: "Pipedrive", type: "simpleicons", slug: "pipedrive" },
+  { name: "Salesforce", type: "simpleicons", slug: "salesforce" },
+  // Email marketing
   { name: "Mailchimp", type: "simpleicons", slug: "mailchimp" },
   { name: "Brevo", type: "simpleicons", slug: "brevo" },
+  { name: "ActiveCampaign", type: "lucide", icon: Mail, color: "#356AE6" },
+  // Reseñas y directorios
+  { name: "Google My Business", type: "simpleicons", slug: "googlemybusiness" },
+  { name: "Doctoralia", type: "lucide", icon: Star, color: "#00A3E0" },
+  { name: "Top Doctors", type: "lucide", icon: Star, color: "#E87722" },
+  // Pagos
   { name: "Stripe", type: "simpleicons", slug: "stripe" },
   { name: "Redsys", type: "lucide", icon: CreditCard, color: "#E63946" },
-  { name: "Manychat", type: "simpleicons", slug: "manychat" },
+  { name: "PayPal", type: "simpleicons", slug: "paypal" },
+  // Automatización
+  { name: "n8n", type: "simpleicons", slug: "n8n" },
+  { name: "Make", type: "simpleicons", slug: "make" },
+  { name: "Zapier", type: "simpleicons", slug: "zapier" },
+  { name: "Notion", type: "simpleicons", slug: "notion" },
+  { name: "Google Sheets", type: "simpleicons", slug: "googlesheets" },
+  { name: "Airtable", type: "simpleicons", slug: "airtable" },
 ]
 
 function Pill({ integration }: { integration: Integration }) {
