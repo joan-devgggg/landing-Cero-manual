@@ -54,7 +54,9 @@ export async function POST(req: NextRequest) {
   if (clientIpAddress) userData.client_ip_address = clientIpAddress
   if (clientUserAgent) userData.client_user_agent = clientUserAgent
 
-  const payload = {
+  const testEventCode = process.env.META_CAPI_TEST_EVENT_CODE
+
+  const payload: Record<string, unknown> = {
     data: [
       {
         event_name: eventName,
@@ -65,6 +67,7 @@ export async function POST(req: NextRequest) {
         user_data: userData,
       },
     ],
+    ...(testEventCode ? { test_event_code: testEventCode } : {}),
   }
 
   try {
