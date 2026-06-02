@@ -3,6 +3,7 @@
 import { useRef, useState } from "react"
 import { motion, useInView } from "framer-motion"
 import { ArrowRight, CheckCircle } from "lucide-react"
+import { sendLeadEvent } from "@/lib/meta-capi"
 
 export default function CTASection() {
   const ref = useRef(null)
@@ -36,9 +37,11 @@ export default function CTASection() {
         throw new Error("Error al enviar el formulario.")
       }
 
-      if (typeof window !== "undefined" && typeof (window as { fbq?: Function }).fbq === "function") {
-        (window as { fbq?: Function }).fbq?.("track", "Lead")
-      }
+      await sendLeadEvent({
+        email: form.email,
+        phone: form.telefono,
+        eventSourceUrl: window.location.href,
+      })
 
       setSubmitted(true)
     } catch {

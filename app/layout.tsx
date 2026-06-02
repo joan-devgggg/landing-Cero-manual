@@ -3,6 +3,7 @@ import { Playfair_Display, DM_Sans } from "next/font/google"
 import "./globals.css"
 import CookieBanner from "@/components/CookieBanner"
 import MetaPixel from "@/components/MetaPixel"
+import MetaPageView from "@/components/MetaPageView"
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -52,6 +53,7 @@ export default function RootLayout({
     <html lang="es" className={`${playfair.variable} ${dmSans.variable}`}>
       <body>
         <MetaPixel />
+        <MetaPageView />
         {children}
         <CookieBanner />
       </body>
