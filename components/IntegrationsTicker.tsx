@@ -1,32 +1,34 @@
-const integrations = [
-  { name: "WhatsApp", slug: "whatsapp" },
-  { name: "n8n", slug: "n8n" },
-  { name: "Make", slug: "make" },
-  { name: "Zapier", slug: "zapier" },
-  { name: "HubSpot", slug: "hubspot" },
-  { name: "Notion", slug: "notion" },
-  { name: "Slack", slug: "slack" },
-  { name: "Google Sheets", slug: "googlesheets" },
-  { name: "Airtable", slug: "airtable" },
-  { name: "Calendly", slug: "calendly" },
-  { name: "Stripe", slug: "stripe" },
-  { name: "Twilio", slug: "twilio" },
-  { name: "Pipedrive", slug: "pipedrive" },
-  { name: "ActiveCampaign", slug: "activecampaign" },
-  { name: "Typeform", slug: "typeform" },
-  { name: "Tally", slug: "tally" },
-  { name: "Monday.com", slug: "monday" },
-  { name: "ClickUp", slug: "clickup" },
-  { name: "Intercom", slug: "intercom" },
-  { name: "Crisp", slug: "crisp" },
-  { name: "Manychat", slug: "manychat" },
-  { name: "Instagram", slug: "instagram" },
-  { name: "Facebook", slug: "facebook" },
-  { name: "Google Analytics", slug: "googleanalytics" },
-  { name: "Mailchimp", slug: "mailchimp" },
+import type { ElementType } from "react"
+import { CalendarDays, Stethoscope, CreditCard, Building2 } from "lucide-react"
+
+type Integration =
+  | { name: string; type: "simpleicons"; slug: string }
+  | { name: string; type: "lucide"; icon: ElementType; color: string }
+
+const integrations: Integration[] = [
+  { name: "WhatsApp Business", type: "simpleicons", slug: "whatsapp" },
+  { name: "Instagram", type: "simpleicons", slug: "instagram" },
+  { name: "Facebook", type: "simpleicons", slug: "facebook" },
+  { name: "Booksy", type: "simpleicons", slug: "booksy" },
+  { name: "Vagaro", type: "simpleicons", slug: "vagaro" },
+  { name: "Treatwell", type: "lucide", icon: CalendarDays, color: "#00B67A" },
+  { name: "Flowww", type: "lucide", icon: Building2, color: "#7D9B76" },
+  { name: "Klinikare", type: "lucide", icon: Stethoscope, color: "#3B82F6" },
+  { name: "Doctoralia", type: "lucide", icon: Stethoscope, color: "#00A3E0" },
+  { name: "Top Doctors", type: "simpleicons", slug: "topdoctors" },
+  { name: "Google Calendar", type: "simpleicons", slug: "googlecalendar" },
+  { name: "Google Sheets", type: "simpleicons", slug: "googlesheets" },
+  { name: "Google My Business", type: "simpleicons", slug: "googlemybusiness" },
+  { name: "Calendly", type: "simpleicons", slug: "calendly" },
+  { name: "Zoom", type: "simpleicons", slug: "zoom" },
+  { name: "Mailchimp", type: "simpleicons", slug: "mailchimp" },
+  { name: "Brevo", type: "simpleicons", slug: "brevo" },
+  { name: "Stripe", type: "simpleicons", slug: "stripe" },
+  { name: "Redsys", type: "lucide", icon: CreditCard, color: "#E63946" },
+  { name: "Manychat", type: "simpleicons", slug: "manychat" },
 ]
 
-function Pill({ name, slug }: { name: string; slug: string }) {
+function Pill({ integration }: { integration: Integration }) {
   return (
     <div
       className="flex-shrink-0 flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white"
@@ -35,19 +37,28 @@ function Pill({ name, slug }: { name: string; slug: string }) {
         boxShadow: "0 1px 3px rgba(0,0,0,0.06), 0 0 0 0.5px rgba(0,0,0,0.04)",
       }}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={`https://cdn.simpleicons.org/${slug}`}
-        alt=""
-        width={16}
-        height={16}
-        className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0"
-      />
+      {integration.type === "simpleicons" ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={`https://cdn.simpleicons.org/${integration.slug}`}
+          alt=""
+          width={16}
+          height={16}
+          className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0"
+        />
+      ) : (
+        <integration.icon
+          size={16}
+          color={integration.color}
+          strokeWidth={1.75}
+          className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0"
+        />
+      )}
       <span
         className="text-xs md:text-sm font-medium whitespace-nowrap"
         style={{ color: "#1A1A1A", fontFamily: "var(--font-dm-sans)" }}
       >
-        {name}
+        {integration.name}
       </span>
     </div>
   )
@@ -76,10 +87,10 @@ export default function IntegrationsTicker() {
       >
         <div className="flex gap-3 ticker-track" style={{ width: "max-content" }}>
           {integrations.map((t) => (
-            <Pill key={t.slug} name={t.name} slug={t.slug} />
+            <Pill key={t.name} integration={t} />
           ))}
           {integrations.map((t) => (
-            <Pill key={`dup-${t.slug}`} name={t.name} slug={t.slug} />
+            <Pill key={`dup-${t.name}`} integration={t} />
           ))}
         </div>
       </div>
