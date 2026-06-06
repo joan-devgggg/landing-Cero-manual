@@ -4,6 +4,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Política de Privacidad — Cero Manual",
   description: "Política de privacidad y protección de datos de Cero Manual conforme al RGPD.",
+  alternates: {
+    canonical: "/privacidad",
+  },
 }
 
 export default function PrivacidadPage() {

@@ -20,7 +20,11 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Cero Manual — Tu clínica estética, trabajando sola",
+  metadataBase: new URL("https://ceromanual.es"),
+  title: {
+    default: "Cero Manual — Tu clínica estética, trabajando sola",
+    template: "%s · Cero Manual",
+  },
   description:
     "Instalamos agentes de IA en WhatsApp que responden, cualifican y agendan citas automáticamente. Reduce no-shows, recupera leads y atiende 24/7 sin contratar a nadie más.",
   keywords: [
@@ -38,12 +42,23 @@ export const metadata: Metadata = {
     ],
     apple: { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
   },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Cero Manual — Tu clínica estética, trabajando sola",
     description:
       "Agente de IA en WhatsApp que responde, cualifica y agenda citas en menos de 5 minutos. Sin contratar a nadie más.",
     type: "website",
     url: "https://ceromanual.es",
+    siteName: "Cero Manual",
+    locale: "es_ES",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cero Manual — Tu clínica estética, trabajando sola",
+    description:
+      "Agente de IA en WhatsApp que responde, cualifica y agenda citas en menos de 5 minutos. Sin contratar a nadie más.",
   },
   robots: {
     index: true,
@@ -51,6 +66,33 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "qpT14TQnIxBT00o2rGjfPj9wopLpbGKCPxRWuO0Ik8U",
+  },
+}
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Cero Manual",
+  url: "https://ceromanual.es",
+  logo: "https://ceromanual.es/logo.png",
+  image: "https://ceromanual.es/logo.png",
+  description:
+    "Instalamos agentes de IA en WhatsApp que responden, cualifican y agendan citas automáticamente para clínicas estéticas.",
+  email: "joan@ceromanual.es",
+  telephone: "+34644786952",
+  areaServed: "ES",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "ES",
+  },
+  sameAs: ["https://instagram.com/cero.manual"],
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+34644786952",
+    email: "joan@ceromanual.es",
+    contactType: "customer service",
+    areaServed: "ES",
+    availableLanguage: ["Spanish"],
   },
 }
 
@@ -62,6 +104,10 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${playfair.variable} ${dmSans.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <MetaPixel />
         <MetaPageView />
         {children}

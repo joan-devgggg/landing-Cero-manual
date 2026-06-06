@@ -4,6 +4,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Aviso Legal — Cero Manual",
   description: "Aviso legal e información corporativa de Cero Manual.",
+  alternates: {
+    canonical: "/aviso-legal",
+  },
 }
 
 export default function AvisoLegalPage() {
