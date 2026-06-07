@@ -1,0 +1,128 @@
+"use client"
+
+import { useRef } from "react"
+import { motion, useInView } from "framer-motion"
+import { X } from "lucide-react"
+
+export interface ServiceProblemProps {
+  eyebrow?: string
+  title: string
+  /** Tramo final del título en cursiva sage. */
+  titleAccent?: string
+  painPoints: string[]
+  inlineCtaLabel?: string
+  closing: React.ReactNode
+}
+
+export default function ServiceProblem({
+  eyebrow = "El problema",
+  title,
+  titleAccent,
+  painPoints,
+  inlineCtaLabel = "Quiero que esto no me pase más →",
+  closing,
+}: ServiceProblemProps) {
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true, margin: "-80px" })
+
+  return (
+    <section className="py-14 md:py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
+      <div className="max-w-4xl mx-auto">
+        {/* Divider */}
+        <div className="w-full h-px mb-10 md:mb-20" style={{ backgroundColor: "#E0DBD4" }} />
+
+        {/* Title */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="mb-10 md:mb-16"
+        >
+          <p
+            className="text-xs font-medium mb-4 tracking-widest uppercase"
+            style={{ color: "#7D9B76", fontFamily: "var(--font-dm-sans)" }}
+          >
+            {eyebrow}
+          </p>
+          <h2
+            className="text-4xl md:text-5xl font-semibold leading-tight"
+            style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
+          >
+            {title}
+            {titleAccent && (
+              <>
+                {" "}
+                <span style={{ fontStyle: "italic", color: "#7D9B76" }}>{titleAccent}</span>
+              </>
+            )}
+          </h2>
+        </motion.div>
+
+        {/* Problem items */}
+        <div className="flex flex-col gap-3 mb-12">
+          {painPoints.map((p, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, x: -20 }}
+              animate={inView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.15 + i * 0.1 }}
+              className="flex items-start gap-4 p-5 rounded-2xl"
+              style={{
+                backgroundColor: "#FFFFFF",
+                border: "1px solid #E0DBD4",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+              }}
+            >
+              <div
+                className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5"
+                style={{ backgroundColor: "rgba(217,100,100,0.1)" }}
+              >
+                <X size={12} color="#D96464" strokeWidth={2.5} />
+              </div>
+              <p
+                className="text-base leading-relaxed"
+                style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
+              >
+                {p}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Inline CTA after pain points */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.75 }}
+          className="flex justify-center mb-8"
+        >
+          <a
+            href="#cta"
+            className="text-sm font-medium transition-opacity duration-200"
+            style={{ color: "#7D9B76", fontFamily: "var(--font-dm-sans)" }}
+            onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.7")}
+            onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+          >
+            {inlineCtaLabel}
+          </a>
+        </motion.div>
+
+        {/* Closing */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="text-center py-8 px-6 rounded-2xl"
+          style={{ backgroundColor: "#EDE9E3" }}
+        >
+          <p
+            className="text-base md:text-lg"
+            style={{ color: "#5A5450", fontFamily: "var(--font-dm-sans)" }}
+          >
+            {closing}
+          </p>
+        </motion.div>
+      </div>
+    </section>
+  )
+}

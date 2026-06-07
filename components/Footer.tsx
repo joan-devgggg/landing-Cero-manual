@@ -16,6 +16,10 @@ function InstagramIcon({ size = 18 }: { size?: number }) {
 const navLinks = [
   { label: "Servicios", href: "#servicios" },
   { label: "Demo", href: "#demo" },
+  { label: "Agente WhatsApp", href: "/agente-whatsapp-clinicas-esteticas" },
+  { label: "Agente de voz", href: "/agente-voz-ia-clinicas" },
+  { label: "Recordatorios", href: "/recordatorios-automaticos-citas" },
+  { label: "Reactivación de clientes", href: "/reactivacion-pacientes-inactivos" },
   { label: "Privacidad", href: "/privacidad" },
   { label: "Aviso Legal", href: "/aviso-legal" },
 ]
