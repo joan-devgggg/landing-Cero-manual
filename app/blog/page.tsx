@@ -41,6 +41,22 @@ const posts = [
     date: "2026-06-07",
     readingTime: "8 min de lectura",
   },
+  {
+    slug: "chatbot-whatsapp-para-clinicas-esteticas",
+    title: "Chatbot de WhatsApp para clínicas estéticas: qué es y por qué tu competencia ya lo tiene",
+    excerpt:
+      "Los mensajes de WhatsApp se leen entre un 95% y un 98% de las veces, frente al 20-25% del email. Te explicamos qué es un chatbot de WhatsApp para clínicas estéticas y cómo responde, agenda y cualifica leads las 24 horas.",
+    date: "2026-06-07",
+    readingTime: "7 min de lectura",
+  },
+  {
+    slug: "como-reactivar-pacientes-inactivos-clinica",
+    title: "Cómo reactivar pacientes inactivos en tu clínica (sin llamar uno por uno)",
+    excerpt:
+      "Tienes pacientes que dejaron de venir y representan ingresos dormidos — con un valor medio de unos 3.000€ cada uno. Te contamos cómo reactivarlos con mensajes automáticos por WhatsApp, el canal que de verdad se lee.",
+    date: "2026-06-07",
+    readingTime: "7 min de lectura",
+  },
 ]
 
 function formatDate(iso: string) {
