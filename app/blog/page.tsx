@@ -33,6 +33,14 @@ const posts = [
     date: "2026-06-07",
     readingTime: "8 min de lectura",
   },
+  {
+    slug: "que-es-un-agente-de-voz-ia-para-clinicas",
+    title: "Qué es un agente de voz con IA y cómo puede transformar tu clínica",
+    excerpt:
+      "Casi un 40% de las consultas de una clínica llegan fuera de horario. Te explicamos qué es un agente de voz con IA, en qué se diferencia de un contestador y cómo puede contestar cada llamada por ti.",
+    date: "2026-06-07",
+    readingTime: "8 min de lectura",
+  },
 ]
 
 function formatDate(iso: string) {

@@ -47,6 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/blog/que-es-un-agente-de-voz-ia-para-clinicas`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/privacidad`,
       lastModified: new Date(),
       changeFrequency: "yearly",
