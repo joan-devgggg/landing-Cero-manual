@@ -73,6 +73,22 @@ const posts = [
     date: "2026-06-09",
     readingTime: "8 min de lectura",
   },
+  {
+    slug: "como-conseguir-resenas-google-clinica-estetica",
+    title: "Cómo conseguir más reseñas en Google para tu clínica estética (sin pedirlas una por una)",
+    excerpt:
+      "El 70% de los nuevos pacientes decide su clínica mirando reseñas de Google. Te contamos cómo conseguirlas de forma automática, en el momento exacto, sin pedirlas a mano.",
+    date: "2026-06-09",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "crm-para-clinicas-esteticas",
+    title: "CRM para clínicas estéticas: qué es, para qué sirve y cuándo lo necesitas",
+    excerpt:
+      "Muchas clínicas gestionan leads por WhatsApp, email y agenda sin orden — y pierden oportunidades sin saberlo. Te explicamos qué es un CRM, en qué se diferencia del software de citas y cuándo necesitas uno.",
+    date: "2026-06-09",
+    readingTime: "7 min de lectura",
+  },
 ]
 
 function formatDate(iso: string) {
