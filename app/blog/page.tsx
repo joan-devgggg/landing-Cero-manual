@@ -57,6 +57,22 @@ const posts = [
     date: "2026-06-07",
     readingTime: "7 min de lectura",
   },
+  {
+    slug: "recordatorios-automaticos-citas-clinica",
+    title: "Recordatorios automáticos de citas: cómo reducir no-shows sin llamar uno por uno",
+    excerpt:
+      "El 12-19% de las citas no se presentan: hasta 7.500€/mes perdidos. Te explicamos cómo los recordatorios automáticos por WhatsApp reducen los no-shows un 40% desde el primer mes.",
+    date: "2026-06-09",
+    readingTime: "7 min de lectura",
+  },
+  {
+    slug: "meta-ads-para-clinicas-esteticas",
+    title: "Meta Ads para clínicas estéticas: cómo conseguir leads sin que Meta te bloquee",
+    excerpt:
+      "Meta Ads es el canal más rentable para clínicas estéticas con presupuesto ajustado — si sabes qué copy está prohibido. Guía completa: segmentación, presupuesto mínimo y CPL realista.",
+    date: "2026-06-09",
+    readingTime: "8 min de lectura",
+  },
 ]
 
 function formatDate(iso: string) {
