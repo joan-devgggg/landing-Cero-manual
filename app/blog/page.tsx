@@ -89,6 +89,22 @@ const posts = [
     date: "2026-06-09",
     readingTime: "7 min de lectura",
   },
+  {
+    slug: "como-reducir-cancelaciones-clinica-estetica",
+    title: "Cómo reducir las cancelaciones de última hora en tu clínica estética",
+    excerpt:
+      "Las cancelaciones de última hora vacían tu agenda. Te explicamos cómo reducirlas con confirmación activa y listas de espera, sin llamar a cada paciente.",
+    date: "2026-06-11",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "como-captar-clientes-clinica-estetica-sin-presupuesto",
+    title: "Cómo captar más clientes para tu clínica estética sin aumentar el presupuesto",
+    excerpt:
+      "Antes de gastar más en publicidad, recupera los clientes que ya tienes. 5 estrategias para captar más sin invertir más: reactivación, reseñas, upsell, WhatsApp y referidos.",
+    date: "2026-06-12",
+    readingTime: "7 min de lectura",
+  },
 ]
 
 function formatDate(iso: string) {
