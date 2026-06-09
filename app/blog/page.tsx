@@ -105,6 +105,22 @@ const posts = [
     date: "2026-06-12",
     readingTime: "7 min de lectura",
   },
+  {
+    slug: "como-gestionar-ausencias-clinica-estetica",
+    title: "Cómo gestionar las ausencias en tu clínica estética sin perder ingresos",
+    excerpt:
+      "Las ausencias vacían tu agenda y bloquean huecos que nadie ocupa. Te explicamos cómo gestionarlas con confirmación activa y listas de espera para no perder ni un euro de ingresos.",
+    date: "2026-06-10",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "inteligencia-artificial-clinicas-esteticas",
+    title: "Inteligencia artificial para clínicas estéticas: qué puedes automatizar hoy",
+    excerpt:
+      "La IA ya está transformando cómo las clínicas estéticas gestionan leads, citas y pacientes. Descubre qué puedes automatizar hoy y por dónde empezar.",
+    date: "2026-06-10",
+    readingTime: "8 min de lectura",
+  },
 ]
 
 function formatDate(iso: string) {
