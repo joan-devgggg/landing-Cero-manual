@@ -137,6 +137,23 @@ const posts = [
     date: "2026-06-10",
     readingTime: "7 min de lectura",
   },
+  {
+    slug: "como-mejorar-atencion-cliente-clinica-estetica",
+    title:
+      "Cómo mejorar la atención al cliente en tu clínica estética (y que los pacientes no se vayan a la competencia)",
+    excerpt:
+      "La atención al cliente es el factor que más influye en que un paciente vuelva o no. Te explicamos cómo mejorarla sin contratar más personal.",
+    date: "2026-06-10",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "como-aumentar-facturacion-clinica-dental",
+    title: "Cómo aumentar la facturación de tu clínica dental sin necesidad de más pacientes",
+    excerpt:
+      "Antes de buscar más pacientes, aprovecha los que ya tienes. Te explicamos cómo aumentar la facturación de tu clínica dental recuperando ingresos perdidos.",
+    date: "2026-06-10",
+    readingTime: "7 min de lectura",
+  },
 ]
 
 function formatDate(iso: string) {
