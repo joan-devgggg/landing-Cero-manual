@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "gestionar-citas-clinica-estetica-whatsapp",
+    title: "Cómo gestionar las citas de tu clínica estética desde WhatsApp (sin que nadie esté pendiente del móvil)",
+    excerpt:
+      "Gestionar citas por WhatsApp es posible sin que el equipo esté pendiente del móvil. Te explicamos cómo automatizarlo para que funcione solo.",
+    date: "2026-06-10",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "software-gestion-clinicas-esteticas",
+    title: "Software de gestión para clínicas estéticas: qué necesitas realmente y por dónde empezar",
+    excerpt:
+      "Hay miles de opciones de software para clínicas estéticas. Te explicamos qué necesitas realmente según el tamaño y momento de tu clínica.",
+    date: "2026-06-10",
+    readingTime: "7 min de lectura",
+  },
+  {
     slug: "marketing-digital-clinicas-esteticas",
     title: "Marketing digital para clínicas estéticas: qué funciona realmente y qué es perder el tiempo",
     excerpt:
