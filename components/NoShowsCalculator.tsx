@@ -131,6 +131,14 @@ export default function NoShowsCalculator() {
           Calculamos los no-shows estimados aplicando una tasa media del sector
           del 15% sobre el total de citas mensuales.
         </p>
+        <p
+          className="text-xs leading-relaxed"
+          style={{ color: "#B5B0AA", fontFamily: "var(--font-dm-sans)" }}
+        >
+          Fuente: tasa media de no-shows del 12-19% en clínicas privadas españolas
+          según datos de Klinikare y Elsevier España (2024). Usamos el 15% como
+          estimación conservadora.
+        </p>
       </div>
 
       {/* Resultados */}
