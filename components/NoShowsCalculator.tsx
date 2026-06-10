@@ -70,13 +70,12 @@ export default function NoShowsCalculator() {
           </label>
           <input
             id="ticketMedio"
-            type="number"
-            min={50}
-            max={500}
-            step={1}
+            type="text"
+            inputMode="numeric"
+            pattern="[0-9]*"
             value={ticketMedio}
             onChange={(e) => {
-              const raw = e.target.value
+              const raw = e.target.value.replace(/[^0-9]/g, "")
               setTicketMedio(raw === "" ? "" : Number(raw))
             }}
             className="w-full rounded-xl px-4 py-3 text-base outline-none transition-colors duration-200"
@@ -103,13 +102,12 @@ export default function NoShowsCalculator() {
           </label>
           <input
             id="diasLaborables"
-            type="number"
-            min={1}
-            max={31}
-            step={1}
+            type="text"
+            inputMode="numeric"
+            pattern="[0-9]*"
             value={diasLaborables}
             onChange={(e) => {
-              const raw = e.target.value
+              const raw = e.target.value.replace(/[^0-9]/g, "")
               setDiasLaborables(raw === "" ? "" : Number(raw))
             }}
             className="w-full rounded-xl px-4 py-3 text-base outline-none transition-colors duration-200"
