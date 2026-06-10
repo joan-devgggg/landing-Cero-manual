@@ -6,7 +6,6 @@ import ServiceHero from "@/components/ServiceHero"
 import ServiceProblem from "@/components/ServiceProblem"
 import ServiceHowItWorks from "@/components/ServiceHowItWorks"
 import ServiceBenefits from "@/components/ServiceBenefits"
-import ServiceSocialProof from "@/components/ServiceSocialProof"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import ServiceCTA from "@/components/ServiceCTA"
 import { localBusinessProvider, spainAreaServed } from "@/lib/schema"
@@ -167,21 +166,6 @@ export default function RecordatoriosPage() {
               title: "Más reseñas, sin pedirlas a mano",
               desc: "El seguimiento automático pide la opinión justo después de la cita, cuando es más probable que la persona la deje — y la deje buena.",
             },
-          ]}
-        />
-
-        <ServiceSocialProof
-          title="Clínicas que ya casi"
-          titleAccent="no tienen no-shows"
-          proofMetric={{
-            value: "12-19%",
-            desc: "es el porcentaje medio de citas que no se presentan en una clínica estética — hasta 7.500 € al mes en tiempo, sala y producto reservados para nadie.",
-            source: "Fuente: estudios sectoriales sobre absentismo en clínicas estéticas en España",
-          }}
-          testimonials={[
-            { placeholder: "[Testimonio real próximamente — clínica que vio caer sus no-shows el primer mes con los recordatorios automáticos]", role: "Clínica estética · Madrid", initials: "CE" },
-            { placeholder: "[Testimonio real próximamente — centro que dejó de perder horas llamando para confirmar citas]", role: "Centro estético · Málaga", initials: "CM" },
-            { placeholder: "[Testimonio real próximamente — clínica sobre cómo los recordatorios le llenaron la agenda]", role: "Medicina estética · Valencia", initials: "ME" },
           ]}
         />
 

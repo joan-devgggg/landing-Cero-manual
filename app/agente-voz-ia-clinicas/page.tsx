@@ -6,7 +6,6 @@ import ServiceHero from "@/components/ServiceHero"
 import ServiceProblem from "@/components/ServiceProblem"
 import ServiceHowItWorks from "@/components/ServiceHowItWorks"
 import ServiceBenefits from "@/components/ServiceBenefits"
-import ServiceSocialProof from "@/components/ServiceSocialProof"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import ServiceCTA from "@/components/ServiceCTA"
 import { localBusinessProvider, spainAreaServed } from "@/lib/schema"
@@ -166,21 +165,6 @@ export default function AgenteVozPage() {
               title: "Suena natural, no a contestador",
               desc: "Configuramos la voz, el tono y las respuestas con la información real de tu clínica. La experiencia se siente humana de principio a fin.",
             },
-          ]}
-        />
-
-        <ServiceSocialProof
-          title="Clínicas que ya no dejan"
-          titleAccent="ninguna llamada en el aire"
-          proofMetric={{
-            value: "40%",
-            desc: "de las consultas de clínicas estéticas llegan fuera del horario habitual de atención: entre las 19:00 y las 23:00, o en fin de semana. Si nadie contesta entonces, esas llamadas se las queda otra clínica.",
-            source: "Fuente: análisis de patrones de contacto en clínicas estéticas en España",
-          }}
-          testimonials={[
-            { placeholder: "[Testimonio real próximamente — clínica que dejó de perder llamadas en hora punta gracias al agente de voz]", role: "Clínica estética · Madrid", initials: "CE" },
-            { placeholder: "[Testimonio real próximamente — centro de medicina estética sobre las llamadas atendidas fuera de horario]", role: "Medicina estética · Sevilla", initials: "ME" },
-            { placeholder: "[Testimonio real próximamente — clínica que recupera citas que antes se perdían por teléfono]", role: "Clínica estética · Valencia", initials: "CV" },
           ]}
         />
 

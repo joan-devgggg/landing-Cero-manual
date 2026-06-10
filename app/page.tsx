@@ -1,3 +1,6 @@
+"use client"
+
+import { useEffect } from "react"
 import Navbar from "@/components/Navbar"
 import HeroSection from "@/components/HeroSection"
 import ProblemSection from "@/components/ProblemSection"
@@ -6,13 +9,19 @@ import IntegrationsTicker from "@/components/IntegrationsTicker"
 import TimelineSection from "@/components/TimelineSection"
 import DemoSection from "@/components/DemoSection"
 import ResultsSection from "@/components/ResultsSection"
-import TestimonialsSection from "@/components/TestimonialsSection"
 import CTASection from "@/components/CTASection"
 import FAQSection from "@/components/FAQSection"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 
 export default function Home() {
+  useEffect(() => {
+    if (window.location.hash) {
+      const el = document.querySelector(window.location.hash)
+      if (el) el.scrollIntoView({ behavior: "smooth" })
+    }
+  }, [])
+
   return (
     <>
       <Navbar />
@@ -24,7 +33,6 @@ export default function Home() {
         <TimelineSection />
         <DemoSection />
         <ResultsSection />
-        <TestimonialsSection />
         <CTASection />
         <FAQSection />
       </main>

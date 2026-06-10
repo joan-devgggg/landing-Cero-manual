@@ -6,7 +6,6 @@ import ServiceHero from "@/components/ServiceHero"
 import ServiceProblem from "@/components/ServiceProblem"
 import ServiceHowItWorks from "@/components/ServiceHowItWorks"
 import ServiceBenefits from "@/components/ServiceBenefits"
-import ServiceSocialProof from "@/components/ServiceSocialProof"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import ServiceCTA from "@/components/ServiceCTA"
 import { localBusinessProvider, spainAreaServed } from "@/lib/schema"
@@ -165,21 +164,6 @@ export default function AgenteWhatsAppPage() {
               title: "Tú decides cuándo entra y cuándo no",
               desc: "Un interruptor desde el panel de control. Si quieres atender tú un caso concreto, lo haces con un clic — y el agente se aparta.",
             },
-          ]}
-        />
-
-        <ServiceSocialProof
-          title="Clínicas que ya no pierden leads"
-          titleAccent="por las noches"
-          proofMetric={{
-            value: "95-98%",
-            desc: "es la tasa de apertura de los mensajes de WhatsApp, frente al 20-25% del email. Es el canal donde tus clientes ya están — y donde de verdad te leen.",
-            source: "Fuente: datos de adopción de WhatsApp Business en clínicas y centros de salud en España",
-          }}
-          testimonials={[
-            { placeholder: "[Testimonio real próximamente — clínica estética de Madrid contando cómo el agente le llena la agenda fuera de horario]", role: "Clínica estética · Madrid", initials: "CE" },
-            { placeholder: "[Testimonio real próximamente — centro de medicina estética sobre la respuesta inmediata por WhatsApp]", role: "Medicina estética · Barcelona", initials: "ME" },
-            { placeholder: "[Testimonio real próximamente — clínica que recuperó leads que antes se perdían de noche]", role: "Clínica estética · Valencia", initials: "CV" },
           ]}
         />
 

@@ -6,7 +6,6 @@ import ServiceHero from "@/components/ServiceHero"
 import ServiceProblem from "@/components/ServiceProblem"
 import ServiceHowItWorks from "@/components/ServiceHowItWorks"
 import ServiceBenefits from "@/components/ServiceBenefits"
-import ServiceSocialProof from "@/components/ServiceSocialProof"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import ServiceCTA from "@/components/ServiceCTA"
 import { localBusinessProvider, spainAreaServed } from "@/lib/schema"
@@ -168,21 +167,6 @@ export default function ReactivacionPage() {
               title: "Más reservas sin gastar en anuncios",
               desc: "Recuperas clientes que ya te conocían y confiaban en ti — sin pagar por cada nuevo contacto que llega frío desde una campaña.",
             },
-          ]}
-        />
-
-        <ServiceSocialProof
-          title="Clínicas que ya están"
-          titleAccent="recuperando ingresos dormidos"
-          proofMetric={{
-            value: "≈ 3.000 €",
-            desc: "es el LTV medio de un cliente recurrente en clínica estética en España. Recuperar solo 3 clientes inactivos al mes puede suponer unos 9.000 € adicionales — cada mes.",
-            source: "Fuente: SEME (Sociedad Española de Medicina Estética)",
-          }}
-          testimonials={[
-            { placeholder: "[Testimonio real próximamente — clínica que recuperó clientes que llevaban más de un año sin volver]", role: "Clínica estética · Madrid", initials: "CE" },
-            { placeholder: "[Testimonio real próximamente — centro que reactivó su base de datos sin lanzar ninguna campaña]", role: "Centro estético · Bilbao", initials: "CB" },
-            { placeholder: "[Testimonio real próximamente — clínica sobre los ingresos recuperados el primer trimestre]", role: "Medicina estética · Valencia", initials: "ME" },
           ]}
         />
 
