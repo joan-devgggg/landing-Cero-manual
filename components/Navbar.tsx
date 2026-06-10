@@ -1,6 +1,8 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, type MouseEvent } from "react"
+import { useRouter, usePathname } from "next/navigation"
+import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 
@@ -14,6 +16,9 @@ const links = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
+  const isHome = pathname === "/"
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -21,10 +26,13 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
-  const handleNav = (href: string) => {
+  const handleNav = (href: string) => (e: MouseEvent) => {
     setOpen(false)
-    const el = document.querySelector(href)
-    if (el) el.scrollIntoView({ behavior: "smooth" })
+    if (isHome) {
+      e.preventDefault()
+      const el = document.querySelector(href)
+      if (el) el.scrollIntoView({ behavior: "smooth" })
+    }
   }
 
   return (
@@ -44,8 +52,15 @@ export default function Navbar() {
         <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo */}
           <a
-            href="#"
-            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }) }}
+            href="/"
+            onClick={(e) => {
+              e.preventDefault()
+              if (isHome) {
+                window.scrollTo({ top: 0, behavior: "smooth" })
+              } else {
+                router.push("/")
+              }
+            }}
             className="font-serif font-semibold text-lg tracking-tight text-charcoal"
             style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
           >
@@ -55,23 +70,25 @@ export default function Navbar() {
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
             {links.map((l) => (
-              <button
+              <Link
                 key={l.href}
-                onClick={() => handleNav(l.href)}
+                href={isHome ? l.href : `/${l.href}`}
+                onClick={handleNav(l.href)}
                 className="text-sm font-medium transition-colors duration-200"
                 style={{ fontFamily: "var(--font-dm-sans)", color: "#8A8580" }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#1A1A1A")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "#8A8580")}
               >
                 {l.label}
-              </button>
+              </Link>
             ))}
           </div>
 
           {/* CTA */}
           <div className="hidden md:flex">
-            <button
-              onClick={() => handleNav("#cta")}
+            <Link
+              href={isHome ? "#cta" : "/#cta"}
+              onClick={handleNav("#cta")}
               className="px-5 py-2.5 text-sm font-semibold rounded-full transition-all duration-200"
               style={{
                 fontFamily: "var(--font-dm-sans)",
@@ -82,7 +99,7 @@ export default function Navbar() {
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#7D9B76")}
             >
               Agendar diagnóstico gratuito
-            </button>
+            </Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -110,36 +127,44 @@ export default function Navbar() {
           >
             <div className="flex flex-col gap-1 p-6">
               {links.map((l, i) => (
-                <motion.button
+                <motion.div
                   key={l.href}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.07 }}
-                  onClick={() => handleNav(l.href)}
-                  className="text-left py-4 text-2xl font-semibold border-b"
-                  style={{
-                    fontFamily: "var(--font-playfair)",
-                    color: "#1A1A1A",
-                    borderColor: "#E0DBD4",
-                  }}
                 >
-                  {l.label}
-                </motion.button>
+                  <Link
+                    href={isHome ? l.href : `/${l.href}`}
+                    onClick={handleNav(l.href)}
+                    className="block text-left py-4 text-2xl font-semibold border-b"
+                    style={{
+                      fontFamily: "var(--font-playfair)",
+                      color: "#1A1A1A",
+                      borderColor: "#E0DBD4",
+                    }}
+                  >
+                    {l.label}
+                  </Link>
+                </motion.div>
               ))}
-              <motion.button
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                onClick={() => handleNav("#cta")}
-                className="mt-8 w-full py-4 text-base font-semibold rounded-2xl"
-                style={{
-                  fontFamily: "var(--font-dm-sans)",
-                  backgroundColor: "#7D9B76",
-                  color: "#ffffff",
-                }}
               >
-                Agendar diagnóstico gratuito →
-              </motion.button>
+                <Link
+                  href={isHome ? "#cta" : "/#cta"}
+                  onClick={handleNav("#cta")}
+                  className="mt-8 block w-full py-4 text-base font-semibold rounded-2xl text-center"
+                  style={{
+                    fontFamily: "var(--font-dm-sans)",
+                    backgroundColor: "#7D9B76",
+                    color: "#ffffff",
+                  }}
+                >
+                  Agendar diagnóstico gratuito →
+                </Link>
+              </motion.div>
             </div>
           </motion.div>
         )}
