@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "marketing-digital-clinicas-esteticas",
+    title: "Marketing digital para clínicas estéticas: qué funciona realmente y qué es perder el tiempo",
+    excerpt:
+      "El marketing digital para clínicas estéticas va más allá de Instagram. Te explicamos los canales que realmente funcionan y por dónde empezar.",
+    date: "2026-06-10",
+    readingTime: "8 min de lectura",
+  },
+  {
+    slug: "como-conseguir-mas-citas-clinica-estetica",
+    title: "Cómo conseguir más citas en tu clínica estética sin aumentar el presupuesto publicitario",
+    excerpt:
+      "Conseguir más citas no siempre significa más publicidad. Te explicamos 5 estrategias para llenar tu agenda aprovechando lo que ya tienes.",
+    date: "2026-06-10",
+    readingTime: "7 min de lectura",
+  },
+  {
     slug: "como-reducir-no-shows-clinica-dental",
     title:
       "Cómo reducir los no-shows en tu clínica dental (y dejar de perder hasta 7.500€ al mes)",
