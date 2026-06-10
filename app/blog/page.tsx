@@ -121,6 +121,22 @@ const posts = [
     date: "2026-06-10",
     readingTime: "8 min de lectura",
   },
+  {
+    slug: "como-fidelizar-pacientes-clinica-estetica",
+    title: "Cómo fidelizar pacientes en tu clínica estética (y que vuelvan sin que tengas que llamarles)",
+    excerpt:
+      "Conseguir un paciente nuevo cuesta 5 veces más que mantener uno. Te explicamos cómo fidelizar a tus pacientes con seguimiento post-cita y WhatsApp automatizado.",
+    date: "2026-06-10",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "automatizar-whatsapp-clinica-dental",
+    title: "Cómo automatizar WhatsApp en tu clínica dental y dejar de perder leads",
+    excerpt:
+      "El 40% de las consultas llegan fuera de horario y los no-shows rondan el 12-19%. Te contamos cómo automatizar WhatsApp para responder, confirmar citas y reducir cancelaciones.",
+    date: "2026-06-10",
+    readingTime: "7 min de lectura",
+  },
 ]
 
 function formatDate(iso: string) {
