@@ -8,11 +8,11 @@ const NO_SHOW_RATE = 0.15
 
 export default function NoShowsCalculator() {
   const [citasDia, setCitasDia] = useState(20)
-  const [ticketMedio, setTicketMedio] = useState(100)
-  const [diasLaborables, setDiasLaborables] = useState(22)
+  const [ticketMedio, setTicketMedio] = useState<number | "">(100)
+  const [diasLaborables, setDiasLaborables] = useState<number | "">(22)
 
-  const noShowsMes = Math.round(citasDia * diasLaborables * NO_SHOW_RATE)
-  const perdidaMensual = noShowsMes * ticketMedio
+  const noShowsMes = Math.round(citasDia * (Number(diasLaborables) || 0) * NO_SHOW_RATE)
+  const perdidaMensual = noShowsMes * (Number(ticketMedio) || 0)
   const perdidaAnual = perdidaMensual * 12
 
   const formatEuro = (value: number) =>
@@ -76,8 +76,8 @@ export default function NoShowsCalculator() {
             step={1}
             value={ticketMedio}
             onChange={(e) => {
-              const value = Number(e.target.value)
-              setTicketMedio(Math.min(500, Math.max(50, value || 0)))
+              const raw = e.target.value
+              setTicketMedio(raw === "" ? "" : Number(raw))
             }}
             className="w-full rounded-xl px-4 py-3 text-base outline-none transition-colors duration-200"
             style={{
@@ -86,7 +86,10 @@ export default function NoShowsCalculator() {
               color: "#1A1A1A",
             }}
             onFocus={(e) => (e.currentTarget.style.borderColor = "#7D9B76")}
-            onBlur={(e) => (e.currentTarget.style.borderColor = "#E0DBD4")}
+            onBlur={(e) => {
+              e.currentTarget.style.borderColor = "#E0DBD4"
+              setTicketMedio((prev) => Math.min(500, Math.max(50, Number(prev) || 50)))
+            }}
           />
         </div>
 
@@ -106,8 +109,8 @@ export default function NoShowsCalculator() {
             step={1}
             value={diasLaborables}
             onChange={(e) => {
-              const value = Number(e.target.value)
-              setDiasLaborables(Math.min(31, Math.max(1, value || 0)))
+              const raw = e.target.value
+              setDiasLaborables(raw === "" ? "" : Number(raw))
             }}
             className="w-full rounded-xl px-4 py-3 text-base outline-none transition-colors duration-200"
             style={{
@@ -116,7 +119,10 @@ export default function NoShowsCalculator() {
               color: "#1A1A1A",
             }}
             onFocus={(e) => (e.currentTarget.style.borderColor = "#7D9B76")}
-            onBlur={(e) => (e.currentTarget.style.borderColor = "#E0DBD4")}
+            onBlur={(e) => {
+              e.currentTarget.style.borderColor = "#E0DBD4"
+              setDiasLaborables((prev) => Math.min(31, Math.max(1, Number(prev) || 1)))
+            }}
           />
         </div>
 
