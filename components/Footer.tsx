@@ -120,7 +120,7 @@ export default function Footer() {
           style={{ borderTop: "1px solid #E0DBD4" }}
         >
           <p className="text-xs" style={{ color: "#C0BAB3", fontFamily: "var(--font-dm-sans)" }}>
-            © 2025 Cero Manual · Automatizaciones con IA para clínicas estéticas
+            © 2026 Cero Manual · Automatizaciones con IA para clínicas estéticas
           </p>
           <p className="text-xs" style={{ color: "#C0BAB3", fontFamily: "var(--font-dm-sans)" }}>
             @cero.manual
