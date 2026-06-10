@@ -278,7 +278,16 @@ export default function RecordatoriosArticlePage() {
             La cuenta es sencilla de hacer con tus propios números. Si tu clínica tiene una
             tasa de no-shows del 12-19% y eso representa hasta 7.500€ al mes en ingresos
             perdidos, reducir esa tasa incluso a la mitad supone recuperar varios miles de
-            euros cada mes — sin captar ni un solo paciente nuevo.
+            euros cada mes — sin captar ni un solo paciente nuevo. Calcula tu caso con
+            nuestra{" "}
+            <Link
+              href="/calculadora-no-shows"
+              className="underline font-semibold"
+              style={{ color: "#7D9B76" }}
+            >
+              calculadora de pérdidas por no-shows
+            </Link>
+            .
           </P>
           <P>
             Clínicas que antes gestionaban los recordatorios a mano — o no los gestionaban —

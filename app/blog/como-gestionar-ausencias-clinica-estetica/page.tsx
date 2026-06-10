@@ -198,7 +198,16 @@ export default function AusenciasArticlePage() {
             Sumando todo eso, una clínica estética media puede estar perdiendo hasta
             7.500€ al mes solo por ausencias. No por falta de pacientes, ni por mala
             fama, ni por precios poco competitivos — sino por huecos en la agenda que
-            nadie ocupa porque nadie se entera a tiempo de que están libres.
+            nadie ocupa porque nadie se entera a tiempo de que están libres. Averigua
+            cuánto supone en tu clínica con nuestra{" "}
+            <Link
+              href="/calculadora-no-shows"
+              className="underline font-semibold"
+              style={{ color: "#7D9B76" }}
+            >
+              calculadora de pérdidas por no-shows
+            </Link>
+            .
           </P>
 
           <H2>Por qué los métodos tradicionales no funcionan</H2>

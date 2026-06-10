@@ -163,7 +163,16 @@ export default function CancelacionesArticlePage() {
             vacío en la agenda es tiempo del profesional que no genera ingresos, con un coste
             que puede llegar a los 7.500€ al mes en clínicas con volumen medio. Y a diferencia
             de los no-shows, las cancelaciones de última hora tienen algo especialmente frustrante:
-            el paciente avisó, pero demasiado tarde para hacer algo.
+            el paciente avisó, pero demasiado tarde para hacer algo. Descubre cuánto te
+            está costando con nuestra{" "}
+            <Link
+              href="/calculadora-no-shows"
+              className="underline font-semibold"
+              style={{ color: "#7D9B76" }}
+            >
+              calculadora de pérdidas por no-shows
+            </Link>
+            .
           </P>
           <P>
             La mayor parte de esas cancelaciones no son malintencionadas. Son el resultado de

@@ -191,7 +191,16 @@ export default function NoShowsArticlePage() {
             Si lo multiplicas por una semana completa — y luego por un mes — la cifra sube
             rápido. Las clínicas que no gestionan este problema pueden llegar a perder
             hasta 7.500€ al mes: dinero que ya habían dado por hecho que iba a entrar, y
-            que se queda simplemente sobre la mesa.
+            que se queda simplemente sobre la mesa. Si quieres ver cuánto supone en tu
+            caso, prueba nuestra{" "}
+            <Link
+              href="/calculadora-no-shows"
+              className="underline font-semibold"
+              style={{ color: "#7D9B76" }}
+            >
+              calculadora de pérdidas por no-shows
+            </Link>
+            .
           </P>
           <P>
             Y no es solo el coste directo. Tu equipo también pierde horas cada semana
