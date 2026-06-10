@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import ChatWidget from "./ChatWidget"
+import VoiceAgentCard from "./VoiceAgentCard"
 
 export default function DemoSection() {
   const ref = useRef(null)
@@ -10,7 +11,7 @@ export default function DemoSection() {
 
   return (
     <section id="demo" className="py-14 md:py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {/* Divider */}
         <div className="w-full h-px mb-10 md:mb-20" style={{ backgroundColor: "#E0DBD4" }} />
 
@@ -48,13 +49,19 @@ export default function DemoSection() {
           precios, disponibilidad o pide una cita.
         </motion.p>
 
-        {/* Chat */}
+        {/* Chat + Voice agent */}
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col md:flex-row gap-6 items-stretch"
         >
-          <ChatWidget />
+          <div className="flex-1">
+            <ChatWidget />
+          </div>
+          <div className="flex-1">
+            <VoiceAgentCard />
+          </div>
         </motion.div>
 
         {/* Footer note */}
