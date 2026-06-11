@@ -403,7 +403,7 @@ export default function ChatWidget({ compact = false }: ChatWidgetProps) {
             className="text-sm font-semibold truncate"
             style={{ fontFamily: "var(--font-dm-sans)", color: "#1A1A1A" }}
           >
-            Sara — Asistente de Clínica
+            Agente de WhatsApp
           </p>
           <div className="flex items-center gap-1.5 mt-0.5">
             <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: "#7D9B76" }} />
