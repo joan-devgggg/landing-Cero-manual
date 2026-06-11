@@ -25,6 +25,38 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "como-reducir-no-shows-clinica-estetica",
+    title: "Cómo reducir los no-shows en tu clínica estética y dejar de perder ingresos",
+    excerpt:
+      "Los no-shows cuestan hasta 7.500€/mes a clínicas estéticas. Te explicamos cómo reducirlos con recordatorios automáticos desde el primer mes.",
+    date: "2026-06-11",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "agente-ia-recepcion-clinica",
+    title: "Agente IA para la recepción de tu clínica: qué es, qué hace y cuánto cuesta",
+    excerpt:
+      "Un agente IA en la recepción de tu clínica responde llamadas, agenda citas y atiende WhatsApp 24/7 sin contratar más personal.",
+    date: "2026-06-11",
+    readingTime: "7 min de lectura",
+  },
+  {
+    slug: "automatizacion-clinicas-dentales",
+    title: "Automatización para clínicas dentales: qué puedes automatizar hoy y por dónde empezar",
+    excerpt:
+      "La automatización en clínicas dentales reduce no-shows, recupera pacientes inactivos y responde leads 24/7. Descubre por dónde empezar.",
+    date: "2026-06-11",
+    readingTime: "7 min de lectura",
+  },
+  {
+    slug: "recordatorios-citas-whatsapp-clinica",
+    title: "Recordatorios de citas por WhatsApp para clínicas: cómo configurarlos para que funcionen solos",
+    excerpt:
+      "Los recordatorios por WhatsApp reducen los no-shows un 40%. Te explicamos cómo configurarlos para que funcionen solos en tu clínica.",
+    date: "2026-06-11",
+    readingTime: "6 min de lectura",
+  },
+  {
     slug: "experiencia-paciente-clinica-estetica",
     title: "Cómo mejorar la experiencia del paciente en tu clínica estética (y que vuelvan solos)",
     excerpt:
