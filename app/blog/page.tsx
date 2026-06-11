@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "experiencia-paciente-clinica-estetica",
+    title: "Cómo mejorar la experiencia del paciente en tu clínica estética (y que vuelvan solos)",
+    excerpt:
+      "La experiencia del paciente decide si vuelve o no. Te explicamos cómo mejorarla en cada punto de contacto sin añadir más trabajo al equipo.",
+    date: "2026-06-11",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "captacion-pacientes-clinica-estetica",
+    title: "Captación de pacientes para clínicas estéticas: qué funciona realmente en 2026",
+    excerpt:
+      "Captar pacientes para tu clínica estética es más fácil cuando tienes el proceso automatizado. Te explicamos las estrategias que mejor funcionan.",
+    date: "2026-06-11",
+    readingTime: "7 min de lectura",
+  },
+  {
     slug: "gestionar-citas-clinica-estetica-whatsapp",
     title: "Cómo gestionar las citas de tu clínica estética desde WhatsApp (sin que nadie esté pendiente del móvil)",
     excerpt:
@@ -185,6 +201,22 @@ const posts = [
       "Antes de buscar más pacientes, aprovecha los que ya tienes. Te explicamos cómo aumentar la facturación de tu clínica dental recuperando ingresos perdidos.",
     date: "2026-06-10",
     readingTime: "7 min de lectura",
+  },
+  {
+    slug: "agenda-clinica-estetica-online",
+    title: "Agenda online para clínicas estéticas: cómo gestionarla sin que sea un caos",
+    excerpt:
+      "Una agenda online bien gestionada llena tu clínica y reduce los huecos vacíos. Te explicamos cómo organizarla para que funcione sola.",
+    date: "2026-06-11",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "whatsapp-business-clinicas-esteticas",
+    title: "WhatsApp Business para clínicas estéticas: cómo configurarlo y cuándo automatizarlo",
+    excerpt:
+      "WhatsApp Business es la herramienta más usada en clínicas estéticas. Te explicamos cómo configurarlo bien y cuándo automatizarlo.",
+    date: "2026-06-11",
+    readingTime: "6 min de lectura",
   },
 ]
 
