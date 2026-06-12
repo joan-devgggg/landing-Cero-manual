@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "inteligencia-artificial-clinicas-dentales",
+    title: "Inteligencia artificial para clínicas dentales: qué puedes automatizar hoy",
+    excerpt:
+      "La IA ya está transformando cómo las clínicas dentales gestionan citas, leads y pacientes. Descubre qué puedes automatizar hoy.",
+    date: "2026-06-11",
+    readingTime: "7 min de lectura",
+  },
+  {
+    slug: "como-conseguir-pacientes-clinica-dental",
+    title: "Cómo conseguir más pacientes para tu clínica dental en 2026",
+    excerpt:
+      "Conseguir pacientes para tu clínica dental requiere más que publicidad. Te explicamos las estrategias que mejor funcionan en 2026.",
+    date: "2026-06-11",
+    readingTime: "7 min de lectura",
+  },
+  {
     slug: "como-reducir-no-shows-clinica-estetica",
     title: "Cómo reducir los no-shows en tu clínica estética y dejar de perder ingresos",
     excerpt:
