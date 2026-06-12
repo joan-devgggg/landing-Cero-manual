@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "marketing-clinica-dental",
+    title: "Marketing para clínicas dentales: qué funciona realmente en 2026",
+    excerpt:
+      "El marketing para clínicas dentales ha cambiado. Te explicamos qué canales funcionan realmente y cómo automatizar la captación de pacientes.",
+    date: "2026-06-11",
+    readingTime: "7 min de lectura",
+  },
+  {
+    slug: "whatsapp-para-clinicas-dentales",
+    title: "WhatsApp para clínicas dentales: cómo usarlo para captar y retener más pacientes",
+    excerpt:
+      "WhatsApp es el canal más usado por los pacientes dentales. Te explicamos cómo usarlo para captar, confirmar citas y reactivar pacientes inactivos.",
+    date: "2026-06-11",
+    readingTime: "6 min de lectura",
+  },
+  {
     slug: "inteligencia-artificial-clinicas-dentales",
     title: "Inteligencia artificial para clínicas dentales: qué puedes automatizar hoy",
     excerpt:
