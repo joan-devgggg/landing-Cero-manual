@@ -53,11 +53,11 @@ export default function HeroSection() {
           className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight mb-8"
           style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
         >
-          Tu clínica
+          Agentes de IA para
           <br />
-          estética,
+          clínicas estéticas
           <br />
-          <span style={{ color: "#7D9B76", fontStyle: "italic" }}>trabajando sola.</span>
+          <span style={{ color: "#7D9B76", fontStyle: "italic" }}>tu clínica trabajando sola.</span>
         </motion.h1>
 
         {/* Subheadline */}

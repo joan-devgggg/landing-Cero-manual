@@ -22,11 +22,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ceromanual.es"),
   title: {
-    default: "Cero Manual — Tu clínica estética, trabajando sola",
+    default: "Agentes de IA para Clínicas Estéticas | Cero Manual",
     template: "%s · Cero Manual",
   },
   description:
-    "Instalamos agentes de IA en WhatsApp que responden, cualifican y agendan citas automáticamente. Reduce no-shows, recupera leads y atiende 24/7 sin contratar a nadie más.",
+    "Automatiza tu clínica estética con agentes de IA: WhatsApp, voz, recordatorios y reactivación de pacientes. Pide tu diagnóstico gratuito.",
   keywords: [
     "automatización clínica estética",
     "agente IA WhatsApp clínica",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Cero Manual — Tu clínica estética, trabajando sola",
+    title: "Agentes de IA para Clínicas Estéticas | Cero Manual",
     description:
       "Agente de IA en WhatsApp que responde, cualifica y agenda citas en menos de 5 minutos. Sin contratar a nadie más.",
     type: "website",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cero Manual — Tu clínica estética, trabajando sola",
+    title: "Agentes de IA para Clínicas Estéticas | Cero Manual",
     description:
       "Agente de IA en WhatsApp que responde, cualifica y agenda citas en menos de 5 minutos. Sin contratar a nadie más.",
   },
@@ -70,7 +70,7 @@ const organizationJsonLd = {
   logo: "https://ceromanual.es/logo.png",
   image: "https://ceromanual.es/logo.png",
   description:
-    "Instalamos agentes de IA en WhatsApp que responden, cualifican y agendan citas automáticamente para clínicas estéticas.",
+    "Instalamos agentes de IA para clínicas estéticas y clínicas dentales: chatbot WhatsApp, automatización, recordatorios automáticos y reactivación de pacientes.",
   email: "joan@ceromanual.es",
   telephone: "+34644786952",
   areaServed: "ES",
