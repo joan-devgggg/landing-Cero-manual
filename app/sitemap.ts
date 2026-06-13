@@ -95,6 +95,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/blog/mejor-crm-clinicas-dentales`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/crm-clinicas-esteticas-pequenas`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/blog/como-reducir-cancelaciones-clinica-estetica`,
       lastModified: new Date(),
       changeFrequency: "weekly",

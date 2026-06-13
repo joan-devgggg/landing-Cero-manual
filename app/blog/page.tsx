@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "mejor-crm-clinicas-dentales",
+    title: "Mejor CRM para clínicas dentales: qué buscar y cómo elegir en 2026",
+    excerpt:
+      "¿Buscas el mejor CRM para tu clínica dental? Te explicamos qué funcionalidades necesitas y cómo elegir el que mejor se adapta a tu clínica.",
+    date: "2026-06-12",
+    readingTime: "7 min de lectura",
+  },
+  {
+    slug: "crm-clinicas-esteticas-pequenas",
+    title: "CRM para clínicas estéticas pequeñas: qué necesitas realmente y por dónde empezar",
+    excerpt:
+      "Una clínica estética pequeña no necesita un CRM complejo. Te explicamos qué funcionalidades son imprescindibles y cuál es el punto de entrada más fácil.",
+    date: "2026-06-12",
+    readingTime: "6 min de lectura",
+  },
+  {
     slug: "marketing-clinica-dental",
     title: "Marketing para clínicas dentales: qué funciona realmente en 2026",
     excerpt:
