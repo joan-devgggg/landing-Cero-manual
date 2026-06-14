@@ -25,6 +25,38 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "chatbot-whatsapp-vs-recepcionista-clinica",
+    title: "Chatbot de WhatsApp vs recepcionista en tu clínica: comparativa honesta",
+    excerpt:
+      "¿Chatbot de WhatsApp o recepcionista? Te explicamos en qué se complementan, cuándo tiene sentido automatizar y qué no puede hacer una IA.",
+    date: "2026-06-13",
+    readingTime: "7 min de lectura",
+  },
+  {
+    slug: "mejor-chatbot-whatsapp-clinica-estetica",
+    title: "Cómo elegir el mejor chatbot de WhatsApp para tu clínica estética",
+    excerpt:
+      "No todos los chatbots de WhatsApp son iguales. Te explicamos qué criterios usar para elegir el mejor para tu clínica estética y qué preguntar antes de contratar.",
+    date: "2026-06-13",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "plantillas-recordatorio-cita-clinica",
+    title: "Plantillas de recordatorio de cita para clínicas: ejemplos listos para usar",
+    excerpt:
+      "Los recordatorios de cita por WhatsApp reducen los no-shows un 40%. Aquí tienes plantillas reales que puedes copiar y adaptar a tu clínica.",
+    date: "2026-06-13",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "lista-espera-clinica-dental",
+    title: "Cómo crear una lista de espera efectiva en tu clínica dental",
+    excerpt:
+      "Una lista de espera bien gestionada convierte cancelaciones en citas nuevas automáticamente. Te explicamos cómo crearla y gestionarla sin esfuerzo.",
+    date: "2026-06-13",
+    readingTime: "6 min de lectura",
+  },
+  {
     slug: "cuanto-cuesta-chatbot-whatsapp-clinica",
     title: "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? Guía de precios 2026",
     excerpt:
