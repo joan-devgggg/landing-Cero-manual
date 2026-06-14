@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "agente-whatsapp-clinica-dental",
+    title: "Agente de WhatsApp para clínicas dentales: qué es, qué hace y cómo implementarlo",
+    excerpt:
+      "Un agente de WhatsApp para clínicas dentales responde consultas, confirma citas y reduce no-shows 24/7. Descubre cómo funciona y cuánto cuesta.",
+    date: "2026-06-13",
+    readingTime: "7 min de lectura",
+  },
+  {
+    slug: "reducir-lista-espera-clinica-estetica",
+    title: "Cómo reducir la lista de espera en tu clínica estética sin perder pacientes",
+    excerpt:
+      "Una lista de espera larga hace perder pacientes. Te explicamos cómo gestionarla mejor y convertir cancelaciones en citas nuevas automáticamente.",
+    date: "2026-06-13",
+    readingTime: "6 min de lectura",
+  },
+  {
     slug: "tecnologia-para-clinicas-esteticas",
     title: "Tecnología para clínicas estéticas: qué herramientas usar en 2026",
     excerpt:

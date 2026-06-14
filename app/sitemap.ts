@@ -251,6 +251,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/blog/agente-whatsapp-clinica-dental`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/reducir-lista-espera-clinica-estetica`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/blog/software-gestion-clinica-estetica`,
       lastModified: new Date(),
       changeFrequency: "weekly",
