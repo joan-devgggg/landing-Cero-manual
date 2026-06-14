@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "tecnologia-para-clinicas-esteticas",
+    title: "Tecnología para clínicas estéticas: qué herramientas usar en 2026",
+    excerpt:
+      "La tecnología está transformando cómo las clínicas estéticas captan y retienen pacientes. Te explicamos qué herramientas usar y por dónde empezar.",
+    date: "2026-06-13",
+    readingTime: "7 min de lectura",
+  },
+  {
+    slug: "software-gestion-clinica-estetica",
+    title: "Software de gestión para clínicas estéticas: guía completa",
+    excerpt:
+      "¿Buscas software de gestión para tu clínica estética? Te explicamos qué necesitas realmente y cuándo tiene sentido automatizar con IA.",
+    date: "2026-06-13",
+    readingTime: "7 min de lectura",
+  },
+  {
     slug: "mejor-crm-clinicas-dentales",
     title: "Mejor CRM para clínicas dentales: qué buscar y cómo elegir en 2026",
     excerpt:
