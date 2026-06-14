@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "cuanto-cuesta-chatbot-whatsapp-clinica",
+    title: "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? Guía de precios 2026",
+    excerpt:
+      "El precio de un chatbot de WhatsApp para clínicas varía según funcionalidades. Te explicamos qué factores influyen en el coste y cuándo se amortiza.",
+    date: "2026-06-13",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "chatbot-whatsapp-clinicas-rgpd",
+    title: "Chatbot de WhatsApp para clínicas y RGPD: cómo cumplir la ley sin complicaciones",
+    excerpt:
+      "¿Es legal usar un chatbot de WhatsApp en tu clínica? Te explicamos cómo cumplir el RGPD con un agente IA y qué debes tener en cuenta.",
+    date: "2026-06-13",
+    readingTime: "7 min de lectura",
+  },
+  {
     slug: "agente-whatsapp-clinica-dental",
     title: "Agente de WhatsApp para clínicas dentales: qué es, qué hace y cómo implementarlo",
     excerpt:
@@ -328,6 +344,22 @@ const posts = [
     excerpt:
       "WhatsApp Business es la herramienta más usada en clínicas estéticas. Te explicamos cómo configurarlo bien y cuándo automatizarlo.",
     date: "2026-06-11",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "coste-real-no-shows-clinica-dental",
+    title: "El coste real de los no-shows en tu clínica dental (y cómo calcularlo con tus propios números)",
+    excerpt:
+      "Los no-shows en clínicas dentales cuestan más de lo que parece. Te explicamos cómo calcular tu pérdida real y qué puedes hacer para reducirla.",
+    date: "2026-06-13",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "resenas-google-clinicas-dentales",
+    title: "Cómo conseguir más reseñas en Google para tu clínica dental (y que los nuevos pacientes te elijan)",
+    excerpt:
+      "Las reseñas de Google son clave para que nuevos pacientes elijan tu clínica dental. Te explicamos cómo conseguirlas de forma automática.",
+    date: "2026-06-13",
     readingTime: "6 min de lectura",
   },
 ]
