@@ -25,6 +25,38 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "aumentar-ticket-medio-clinica-dental",
+    title: "Cómo aumentar el ticket medio en tu clínica dental (sin presionar a tus pacientes)",
+    excerpt:
+      "Aumentar el ticket medio es más rentable que captar nuevos pacientes. Te explicamos cómo hacerlo con seguimiento post-cita y WhatsApp.",
+    date: "2026-06-14",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "aumentar-ingresos-clinica-dental-sin-pacientes",
+    title: "Cómo aumentar los ingresos de tu clínica dental sin necesitar más pacientes nuevos",
+    excerpt:
+      "Antes de buscar más pacientes, aprovecha los que ya tienes. Reactivación, reducción de no-shows y upsell automatizado.",
+    date: "2026-06-14",
+    readingTime: "7 min de lectura",
+  },
+  {
+    slug: "responder-consultas-clinica-estetica-whatsapp",
+    title: "Cómo responder las consultas de tu clínica estética por WhatsApp más rápido",
+    excerpt:
+      "El 80% de los leads se pierden si no respondes en 5 minutos. Te explicamos cómo responder consultas por WhatsApp más rápido sin añadir personal.",
+    date: "2026-06-14",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "clinica-estetica-por-whatsapp",
+    title: "Clínica estética por WhatsApp: cómo gestionar consultas y citas sin volverte loco",
+    excerpt:
+      "Cada vez más pacientes contactan con clínicas estéticas por WhatsApp. Te explicamos cómo gestionarlo sin que el equipo esté pendiente del móvil todo el día.",
+    date: "2026-06-14",
+    readingTime: "6 min de lectura",
+  },
+  {
     slug: "chatbot-whatsapp-vs-recepcionista-clinica",
     title: "Chatbot de WhatsApp vs recepcionista en tu clínica: comparativa honesta",
     excerpt:
