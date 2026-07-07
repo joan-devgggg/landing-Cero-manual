@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "emails-recordatorio-pacientes-clinica",
+    title: "Emails de recordatorio para pacientes: plantillas, consejos y cuándo usar WhatsApp en su lugar",
+    excerpt:
+      "Los emails de recordatorio para pacientes reducen las ausencias en tu clínica. Te damos plantillas listas para usar y te explicamos cuándo WhatsApp funciona mejor.",
+    date: "2026-07-07",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "mejor-software-gestion-clinica-estetica",
+    title: "Mejor software de gestión para clínicas estéticas: cómo elegir en 2026",
+    excerpt:
+      "¿Cuál es el mejor software de gestión para tu clínica estética? Te explicamos qué criterios usar y cuándo tiene sentido añadir automatización con IA.",
+    date: "2026-07-07",
+    readingTime: "7 min de lectura",
+  },
+  {
     slug: "aumentar-ticket-medio-clinica-dental",
     title: "Cómo aumentar el ticket medio en tu clínica dental (sin presionar a tus pacientes)",
     excerpt:
