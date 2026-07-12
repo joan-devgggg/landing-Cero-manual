@@ -6,9 +6,9 @@ import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
 
 const PATH = "/blog/resenas-google-clinicas-dentales"
-const TITLE = "Cómo conseguir más reseñas en Google para tu clínica dental | Cero Manual"
+const TITLE = "Reseñas Google clínica dental: cómo conseguirlas sin pedirlas una a una | Cero Manual"
 const DESCRIPTION =
-  "Las reseñas de Google son clave para que nuevos pacientes elijan tu clínica dental. Te explicamos cómo conseguirlas de forma automática."
+  "Las reseñas de Google son clave para captar nuevos pacientes. Te explicamos cómo conseguirlas de forma automática tras cada cita."
 const HEADLINE =
   "Cómo conseguir más reseñas en Google para tu clínica dental (y que los nuevos pacientes te elijan)"
 

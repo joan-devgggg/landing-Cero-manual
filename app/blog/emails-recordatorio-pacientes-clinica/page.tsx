@@ -6,9 +6,9 @@ import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
 
 const PATH = "/blog/emails-recordatorio-pacientes-clinica"
-const TITLE = "Emails de recordatorio para pacientes: plantillas y consejos | Cero Manual"
+const TITLE = "Emails recordatorio pacientes: plantillas listas + por qué WhatsApp funciona mejor | Cero Manual"
 const DESCRIPTION =
-  "Los emails de recordatorio para pacientes reducen las ausencias en tu clínica. Te damos plantillas listas para usar y te explicamos cuándo WhatsApp funciona mejor."
+  "Plantillas de email de recordatorio para clínicas listas para copiar. Y por qué el 95% de tus pacientes prefiere recibir el recordatorio por WhatsApp."
 const HEADLINE =
   "Emails de recordatorio para pacientes: plantillas, consejos y cuándo usar WhatsApp en su lugar"
 

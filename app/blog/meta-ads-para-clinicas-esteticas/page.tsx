@@ -6,9 +6,9 @@ import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
 
 const PATH = "/blog/meta-ads-para-clinicas-esteticas"
-const TITLE = "Meta Ads para clínicas estéticas: guía completa | Cero Manual"
+const TITLE = "Meta Ads para clínicas estéticas: consigue leads sin que te bloqueen | Cero Manual"
 const DESCRIPTION =
-  "Aprende a hacer Meta Ads para clínicas estéticas sin que Meta te bloquee. Copy permitido, segmentación, presupuesto y errores a evitar."
+  "Aprende a hacer Meta Ads para clínicas estéticas sin errores. Copy permitido, segmentación, presupuesto y cómo evitar que Meta te bloquee."
 const HEADLINE =
   "Meta Ads para clínicas estéticas: cómo conseguir leads sin que Meta te bloquee"
 

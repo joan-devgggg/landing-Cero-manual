@@ -6,9 +6,9 @@ import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
 
 const PATH = "/blog/como-aumentar-facturacion-clinica-dental"
-const TITLE = "Cómo aumentar la facturación de tu clínica dental sin más pacientes | Cero Manual"
+const TITLE = "Aumentar facturación clínica dental: 5 estrategias sin más pacientes | Cero Manual"
 const DESCRIPTION =
-  "Antes de buscar más pacientes, aprovecha los que ya tienes. Te explicamos cómo aumentar la facturación de tu clínica dental recuperando ingresos perdidos."
+  "Aumenta la facturación de tu clínica dental sin gastar más en publicidad. 5 estrategias probadas que puedes aplicar esta semana."
 const HEADLINE =
   "Cómo aumentar la facturación de tu clínica dental sin necesidad de más pacientes"
 
