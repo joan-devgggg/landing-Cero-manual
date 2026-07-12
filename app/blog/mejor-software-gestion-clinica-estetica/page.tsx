@@ -39,11 +39,11 @@ const faqs = [
   },
   {
     q: "¿Cuánto debería costar el software de gestión de mi clínica?",
-    a: "Los precios varían mucho según funcionalidades y número de usuarios, pero lo importante no es el coste en sí, sino lo que te ahorra o te hace ganar. Si una herramienta reduce no-shows o recupera consultas que hoy se pierden fuera de horario, con un valor por paciente de alrededor de 3.000€ de LTV, se amortiza con muy pocas citas recuperadas al mes.",
+    a: "Los precios varían mucho según funcionalidades y número de usuarios: hay herramientas de agenda ligeras desde 10-20€ al mes y software de gestión más completo que puede superar los 100-150€ mensuales por clínica según los módulos que actives. Pero lo importante no es el coste en sí, sino lo que te ahorra o te hace ganar. Si una herramienta reduce no-shows o recupera consultas que hoy se pierden fuera de horario, con un valor por paciente de alrededor de 3.000€ de LTV, se amortiza con muy pocas citas recuperadas al mes. Por eso conviene mirar el precio como una inversión frente al problema que resuelve, y no como un gasto fijo más que comparar en frío entre proveedores.",
   },
   {
     q: "¿El software de gestión ya incluye automatización con IA?",
-    a: "La mayoría de softwares de gestión incluyen automatizaciones básicas (recordatorios programados, plantillas), pero eso no es lo mismo que un agente con IA capaz de responder conversaciones fuera de horario y agendar citas por su cuenta. Esa capa suele añadirse por encima del software que ya usas, conectándose con él en lugar de sustituirlo.",
+    a: "La mayoría de softwares de gestión incluyen automatizaciones básicas — recordatorios programados, plantillas de mensajes, algún flujo sencillo — pero eso no es lo mismo que un agente con IA capaz de mantener una conversación real, resolver dudas y agendar la cita por su cuenta sin que nadie intervenga. La diferencia se nota sobre todo fuera del horario de atención, que es cuando más consultas se pierden y donde el software por sí solo no responde. Esa capa de automatización con IA suele añadirse por encima del software que ya usas, conectándose con tu calendario y tu WhatsApp en lugar de sustituir la herramienta de gestión.",
   },
 ]
 
@@ -213,10 +213,10 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
           <H2>Los más usados en clínicas estéticas en España</H2>
           <P>
             En el mercado español conviven varios tipos de soluciones. Por un lado están los
-            softwares de gestión específicos del sector salud y estética, que integran agenda,
-            ficha de paciente, facturación y, en algunos casos, tienda o gestión de bonos.
-            Suelen ser la opción de referencia para clínicas que quieren tenerlo todo en una
-            sola plataforma.
+            softwares de gestión específicos del sector salud y estética, como Flowww o
+            Koibox, que integran agenda, ficha de paciente, facturación y, en algunos casos,
+            tienda o gestión de bonos. Suelen ser la opción de referencia para clínicas que
+            quieren tenerlo todo en una sola plataforma.
           </P>
           <P>
             Por otro lado están las herramientas de agenda y reserva online más ligeras,
@@ -225,10 +225,100 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
             genéricos, que algunas clínicas adaptan a su forma de trabajar cuando necesitan
             sobre todo seguimiento comercial y de pacientes.
           </P>
+
+          <div className="overflow-x-auto rounded-xl mb-6" style={{ border: "1px solid #E0DBD4" }}>
+            <table
+              className="w-full text-left border-collapse"
+              style={{ fontFamily: "var(--font-dm-sans)", minWidth: "640px" }}
+            >
+              <thead>
+                <tr style={{ backgroundColor: "#F0F4EF" }}>
+                  <th
+                    className="px-4 py-3 text-xs font-semibold uppercase tracking-wide"
+                    style={{ color: "#1A1A1A" }}
+                  >
+                    Tipo de solución
+                  </th>
+                  <th
+                    className="px-4 py-3 text-xs font-semibold uppercase tracking-wide"
+                    style={{ color: "#1A1A1A" }}
+                  >
+                    Para qué clínica
+                  </th>
+                  <th
+                    className="px-4 py-3 text-xs font-semibold uppercase tracking-wide"
+                    style={{ color: "#1A1A1A" }}
+                  >
+                    Qué incluye
+                  </th>
+                  <th
+                    className="px-4 py-3 text-xs font-semibold uppercase tracking-wide"
+                    style={{ color: "#1A1A1A" }}
+                  >
+                    Rango de precio orientativo
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderTop: "1px solid #E0DBD4" }}>
+                  <td className="px-4 py-4 text-sm font-medium align-top" style={{ color: "#1A1A1A" }}>
+                    Software específico de gestión sanitaria/estética
+                  </td>
+                  <td className="px-4 py-4 text-sm align-top" style={{ color: "#3A3A3A" }}>
+                    Clínicas que quieren centralizar agenda, ficha de paciente y facturación en
+                    una sola plataforma
+                  </td>
+                  <td className="px-4 py-4 text-sm align-top" style={{ color: "#3A3A3A" }}>
+                    Agenda, ficha de tratamientos, fotos de seguimiento, consentimientos,
+                    facturación y, a veces, gestión de bonos
+                  </td>
+                  <td className="px-4 py-4 text-sm align-top" style={{ color: "#3A3A3A" }}>
+                    Desde ~30-40€/mes por usuario hasta 150€/mes según módulos
+                  </td>
+                </tr>
+                <tr style={{ borderTop: "1px solid #E0DBD4" }}>
+                  <td className="px-4 py-4 text-sm font-medium align-top" style={{ color: "#1A1A1A" }}>
+                    Agenda y reserva online ligera
+                  </td>
+                  <td className="px-4 py-4 text-sm align-top" style={{ color: "#3A3A3A" }}>
+                    Clínicas pequeñas o de un solo profesional que priorizan la reserva por
+                    cuenta propia del paciente
+                  </td>
+                  <td className="px-4 py-4 text-sm align-top" style={{ color: "#3A3A3A" }}>
+                    Calendario online, recordatorios automáticos y sincronización básica, sin
+                    módulos clínicos avanzados
+                  </td>
+                  <td className="px-4 py-4 text-sm align-top" style={{ color: "#3A3A3A" }}>
+                    Entre 10-30€/mes, a veces con plan gratuito limitado
+                  </td>
+                </tr>
+                <tr style={{ borderTop: "1px solid #E0DBD4" }}>
+                  <td className="px-4 py-4 text-sm font-medium align-top" style={{ color: "#1A1A1A" }}>
+                    CRM genérico adaptado
+                  </td>
+                  <td className="px-4 py-4 text-sm align-top" style={{ color: "#3A3A3A" }}>
+                    Clínicas con varios centros que necesitan sobre todo seguimiento comercial
+                    y de pacientes
+                  </td>
+                  <td className="px-4 py-4 text-sm align-top" style={{ color: "#3A3A3A" }}>
+                    Gestión de contactos, pipeline y automatizaciones de marketing, adaptadas
+                    manualmente al sector estético
+                  </td>
+                  <td className="px-4 py-4 text-sm align-top" style={{ color: "#3A3A3A" }}>
+                    Muy variable: desde 20€/mes hasta varios cientos según usuarios y funciones
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <P>
             Más que quedarte con un nombre concreto, lo útil es entender en qué categoría
-            encaja lo que necesitas. Si quieres una comparativa más detallada de qué necesita
-            realmente una clínica estética y por dónde empezar, la tienes en nuestra guía de{" "}
+            encaja lo que necesitas. Plataformas como ClinicCloud, por ejemplo, combinan
+            varios de estos bloques en una sola herramienta, mientras que otras clínicas
+            prefieren mantener piezas más independientes. Si quieres una comparativa más
+            detallada de qué necesita realmente una clínica estética y por dónde empezar, la
+            tienes en nuestra guía de{" "}
             <InternalLink href="/blog/software-gestion-clinica-estetica">
               software de gestión para clínicas estéticas
             </InternalLink>
