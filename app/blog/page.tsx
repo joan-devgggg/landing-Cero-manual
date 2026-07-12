@@ -25,6 +25,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "programa-gestion-clinica-estetica",
+    title: "Programa de gestión para clínicas estéticas: cómo elegir el mejor y no arrepentirte",
+    excerpt:
+      "Un buen programa de gestión para tu clínica estética ahorra horas de trabajo cada semana. Te explicamos cómo elegir y qué evitar.",
+    date: "2026-07-12",
+    readingTime: "6 min de lectura",
+  },
+  {
+    slug: "software-gestion-citas-clinica-estetica",
+    title: "Software de gestión de citas para clínicas estéticas: qué necesitas realmente",
+    excerpt:
+      "¿Buscas un software de gestión de citas para tu clínica estética? Te explicamos qué necesitas, qué opciones existen y cuándo automatizar con IA.",
+    date: "2026-07-12",
+    readingTime: "6 min de lectura",
+  },
+  {
     slug: "emails-recordatorio-pacientes-clinica",
     title: "Emails de recordatorio para pacientes: plantillas, consejos y cuándo usar WhatsApp en su lugar",
     excerpt:
