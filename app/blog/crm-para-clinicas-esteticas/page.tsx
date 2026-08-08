@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
+import BlogTable from "@/components/BlogTable"
+import BlogSource from "@/components/BlogSource"
 
 const PATH = "/blog/crm-para-clinicas-esteticas"
 const TITLE = "CRM para clínicas estéticas: qué es y cuál necesitas | Cero Manual"
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     url: `https://ceromanual.es${PATH}`,
     type: "article",
     publishedTime: "2026-06-09T00:00:00.000Z",
-    modifiedTime: "2026-06-09T00:00:00.000Z",
+    modifiedTime: "2026-08-08T00:00:00.000Z",
   },
 }
 
@@ -57,7 +59,7 @@ const articleJsonLd = {
     name: "Joan - Cero Manual",
   },
   datePublished: "2026-06-09",
-  dateModified: "2026-06-09",
+  dateModified: "2026-08-08",
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",
@@ -71,6 +73,19 @@ const articleJsonLd = {
     "@type": "WebPage",
     "@id": `https://ceromanual.es${PATH}`,
   },
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
 }
 
 function InternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -125,6 +140,10 @@ export default function CrmClinicasArticlePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Navbar />
       <main className="px-6 py-28" style={{ backgroundColor: "#F5F2EE" }}>
         <article className="max-w-3xl mx-auto">
@@ -154,7 +173,7 @@ export default function CrmClinicasArticlePage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            9 de junio de 2026 · 7 min de lectura
+            9 de junio de 2026 · 8 min de lectura
           </p>
 
           {/* Intro */}
@@ -170,9 +189,10 @@ export default function CrmClinicasArticlePage() {
             El problema no es que el equipo trabaje mal — es que sin una herramienta que
             centralice esa información, perder leads es inevitable. El 80% de los leads que
             no reciben respuesta en los primeros cinco minutos acaban eligiendo otra clínica.
-            Y eso ocurre especialmente de noche, cuando el 40% de las consultas llegan fuera
-            del horario de atención y nadie está disponible para contestar.
+            Y eso ocurre especialmente de noche, cuando buena parte de las consultas llega
+            fuera del horario de atención y nadie está disponible para contestar.
           </P>
+          <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
             En este artículo vas a entender qué es exactamente un CRM, en qué se diferencia
             de un software de gestión de citas, qué señales indican que tu clínica ya lo
@@ -182,11 +202,16 @@ export default function CrmClinicasArticlePage() {
 
           <H2>¿Qué es un CRM y para qué sirve en una clínica estética?</H2>
           <P>
-            CRM son las siglas de Customer Relationship Management, pero en la práctica es
-            más sencillo que el nombre: es una herramienta que centraliza toda la información
-            sobre tus leads y clientes en un único lugar. Quién ha contactado, desde qué
-            canal, qué tratamiento le interesaba, cuándo fue su última cita, si alguien ha
-            hecho seguimiento — y cuál es el estado actual de cada contacto.
+            Un CRM es una herramienta que centraliza en un único lugar toda la información
+            sobre tus leads y pacientes, y que en una clínica estética sirve para dos cosas:
+            convertir consultas en primeras citas y conseguir que quien ya ha venido vuelva.
+            Las siglas son de Customer Relationship Management, pero en la práctica es más
+            sencillo que el nombre.
+          </P>
+          <P>
+            Lo que guarda es quién ha contactado, desde qué canal, qué tratamiento le
+            interesaba, cuándo fue su última cita, si alguien ha hecho seguimiento — y cuál es
+            el estado actual de cada contacto.
           </P>
           <P>
             En una clínica estética, el CRM actúa principalmente en dos momentos. El primero
@@ -203,8 +228,15 @@ export default function CrmClinicasArticlePage() {
 
           <H2>Señales de que tu clínica necesita un CRM</H2>
           <P>
-            No todas las clínicas necesitan un CRM desde el primer día. Pero hay señales
-            claras que indican que ya es el momento de implantarlo.
+            Hay tres señales que indican que ya toca: recibes más consultas de las que puedes
+            seguir a mano, no sabes qué porcentaje de leads acaba en cita, y el seguimiento
+            depende de que una persona concreta se acuerde. Si reconoces dos de las tres, el
+            CRM ya no es una mejora opcional.
+          </P>
+          <P>
+            No todas las clínicas lo necesitan desde el primer día — una consulta de un solo
+            profesional con diez pacientes nuevos al mes se apaña con la agenda. El problema
+            aparece cuando el volumen supera lo que cabe en la cabeza de alguien.
           </P>
 
           <H3>Recibes más consultas de las que puedes gestionar manualmente</H3>
@@ -234,8 +266,16 @@ export default function CrmClinicasArticlePage() {
 
           <H2>Qué debe tener un CRM para clínicas estéticas</H2>
           <P>
-            No todos los CRM están pensados para clínicas. Un CRM genérico puede funcionar,
-            pero hay funcionalidades específicas que marcan la diferencia en este sector.
+            Tres funcionalidades son innegociables en este sector: integración con WhatsApp,
+            pipelines diferenciados por tipo de tratamiento y automatización del seguimiento.
+            Un CRM genérico puede funcionar, pero si le falta alguna de las tres acabarás
+            cubriendo el hueco a mano.
+          </P>
+          <P>
+            Aquí es donde se nota la diferencia entre un CRM sectorial y uno adaptado. Las
+            plataformas españolas pensadas para clínicas — Flowww o Klinikare, por ejemplo —
+            traen la ficha de paciente, el histórico de tratamientos y los consentimientos de
+            serie; en un CRM genérico eso hay que construirlo con campos personalizados.
           </P>
           <P>
             La primera es la integración con WhatsApp. El canal principal de comunicación
@@ -258,44 +298,79 @@ export default function CrmClinicasArticlePage() {
 
           <H2>CRM vs software de gestión de citas: cuál es la diferencia</H2>
           <P>
-            Esta es la confusión más habitual. Muchas clínicas creen que su software de
-            citas — Acuity, Calendly, o cualquier herramienta sectorial de agenda — ya
-            cumple la función de un CRM. No es así.
+            La diferencia es el momento en que actúa cada uno: el software de citas resuelve lo
+            que pasa <strong>después</strong> de que alguien ha reservado, y el CRM lo que pasa
+            <strong> antes</strong>. Es la confusión más habitual — muchas clínicas creen que su
+            herramienta de agenda ya cumple la función de un CRM, y no es así.
           </P>
           <P>
-            El software de gestión de citas resuelve lo que ocurre después de que el cliente
-            ha reservado: confirmaciones automáticas, recordatorios de cita, gestión del
-            calendario, historial de visitas. Es una herramienta de operaciones, no de
+            El software de gestión de citas — Acuity, Calendly o una herramienta sectorial como
+            ClinicCloud — se ocupa de confirmaciones automáticas, recordatorios, gestión del
+            calendario e historial de visitas. Es una herramienta de operaciones, no de
             captación.
           </P>
           <P>
-            El CRM resuelve lo que ocurre antes: capturar el lead desde el canal en que
-            llegó, cualificarlo, hacer seguimiento si no ha respondido, moverlo por el
-            embudo hasta que reserva. Y después de la primera visita, gestionar la relación
-            a largo plazo para que vuelva.
+            El CRM captura el lead desde el canal en que llegó, lo cualifica, hace seguimiento
+            si no ha respondido y lo mueve por el embudo hasta que reserva. Y después de la
+            primera visita, gestiona la relación a largo plazo para que vuelva.
           </P>
+
+          <BlogTable
+            headers={[
+              "",
+              "Software de citas",
+              "CRM",
+              "Agente de IA en WhatsApp",
+            ]}
+            rows={[
+              [
+                "Qué resuelve",
+                "La agenda: reservar, confirmar, recordar",
+                "El embudo: captar, cualificar, hacer seguimiento y fidelizar",
+                "La conversación: responder al instante y convertir la consulta en cita",
+              ],
+              [
+                "Cuándo actúa",
+                "Después de la reserva",
+                "Antes de la reserva y después de la primera visita",
+                "En el primer contacto, a cualquier hora",
+              ],
+              [
+                "Fuera de horario",
+                "Permite reservar online, pero no responde dudas",
+                "Registra el lead, no lo atiende",
+                "Responde y agenda sin que intervenga nadie",
+              ],
+              [
+                "Precio orientativo",
+                "10-30€/mes las opciones ligeras",
+                "Desde 30-50€/mes los genéricos; más de 200€/mes los sectoriales",
+                "Cuota mensual según volumen de conversaciones",
+              ],
+            ]}
+          />
+
           <P>
-            Las dos herramientas son complementarias, no excluyentes. La combinación ideal
-            es un CRM que gestione leads y seguimiento conectado con un software de agenda
-            que gestione las citas — de forma que cuando un lead pasa a cliente, la
-            información fluye entre los dos sistemas sin tener que introducirla dos veces.
+            Las tres piezas son complementarias, no excluyentes. La combinación que mejor
+            funciona es un CRM que gestione leads y seguimiento, conectado con un software de
+            agenda que gestione las citas — de forma que cuando un lead pasa a paciente, la
+            información fluya entre los dos sistemas sin tener que introducirla dos veces.
           </P>
 
           <H2>Cómo un CRM conectado con IA multiplica sus resultados</H2>
           <P>
-            Un CRM sin automatización es mejor que nada, pero sigue dependiendo de que
-            alguien ejecute las acciones manualmente. La diferencia real llega cuando el
-            CRM se conecta con un sistema de IA que actúa en los momentos críticos sin
-            esperar a que nadie lo recuerde.
+            La IA convierte el CRM de registro pasivo en sistema que actúa: responde al lead en
+            segundos, lo cualifica y deja la conversación anotada, sin esperar a que nadie se
+            acuerde. Un CRM sin automatización es mejor que nada, pero sigue dependiendo de que
+            una persona ejecute cada acción a mano.
           </P>
           <P>
-            El caso más claro es el primer contacto. Cuando un lead llega fuera del horario
-            de atención — que ocurre en el 40% de los casos — un agente con IA puede
-            responder en segundos, hacer las preguntas de cualificación básicas y registrar
-            la conversación en el CRM para que el equipo lo encuentre todo listo cuando
-            llegue por la mañana. Sin IA, ese lead espera hasta el día siguiente — y la
-            probabilidad de que siga disponible cae un 80% en los primeros cinco minutos
-            sin respuesta.
+            El caso más claro es el primer contacto. Cuando un lead llega fuera del horario de
+            atención, un agente con IA puede responder en segundos, hacer las preguntas de
+            cualificación básicas y registrar la conversación en el CRM para que el equipo lo
+            encuentre todo listo cuando llegue por la mañana. Sin IA, ese lead espera hasta el
+            día siguiente — y la probabilidad de perderlo llega al 80% pasados los primeros
+            cinco minutos sin respuesta.
           </P>
           <P>
             El segundo momento crítico es el seguimiento. Un lead que no ha respondido al
@@ -314,6 +389,7 @@ export default function CrmClinicasArticlePage() {
             LTV medio de unos 3.000€ — y evitar perder incluso dos leads al mes por falta
             de respuesta rápida cambia los números de forma significativa.
           </P>
+          <BlogSource>SEME (Sociedad Española de Medicina Estética)</BlogSource>
         </article>
 
         <div className="mt-4">

@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
+import BlogTable from "@/components/BlogTable"
+import BlogSource from "@/components/BlogSource"
 
 const PATH = "/blog/como-reducir-no-shows-clinica-dental"
 const TITLE = "Cómo reducir no-shows en tu clínica dental | Cero Manual"
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     url: `https://ceromanual.es${PATH}`,
     type: "article",
     publishedTime: "2026-06-07T00:00:00.000Z",
-    modifiedTime: "2026-06-07T00:00:00.000Z",
+    modifiedTime: "2026-08-08T00:00:00.000Z",
   },
 }
 
@@ -35,7 +37,7 @@ const faqs = [
   },
   {
     q: "¿Los SMS o los emails de recordatorio no son suficientes?",
-    a: "Pueden ayudar, pero por sí solos se quedan cortos: el email tiene una tasa de apertura de apenas el 20-25%, frente al 95-98% de WhatsApp. Si tu recordatorio no se llega a leer, da igual lo bien redactado que esté.",
+    a: "Pueden ayudar, pero por sí solos se quedan cortos: el email tiene una tasa de apertura de apenas el 20-25%, frente al 95-98% de WhatsApp. Si tu recordatorio no se llega a leer, da igual lo bien redactado que esté. Y hay un segundo problema, independiente del canal: la mayoría de esos avisos solo informan de la fecha y la hora, sin pedir nada de vuelta, y un mensaje que no exige respuesta se olvida en cuanto llega el siguiente. Lo que de verdad mueve la aguja es combinar el canal que sí se lee con una confirmación activa que el paciente tenga que responder.",
   },
   {
     q: "¿Qué hago si un paciente no contesta al recordatorio?",
@@ -43,7 +45,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto cuesta poner en marcha un sistema de recordatorios automáticos?",
-    a: "Depende del volumen de tu clínica y de cómo gestionas hoy la agenda. Lo habitual es que el ahorro en huecos vacíos cubra la inversión en pocas semanas — por eso lo más sencillo es empezar con una auditoría gratuita que te diga, con tus propios números, cuánto podrías recuperar.",
+    a: "Depende del volumen de tu clínica y de cómo gestionas hoy la agenda. Lo habitual es que el ahorro en huecos vacíos cubra la inversión en pocas semanas: con una tasa de no-shows del 12-19% y un ticket medio dental, basta con recuperar unas pocas citas al mes para amortizarlo. La cuenta es fácil de hacer antes de contratar nada — multiplica tus no-shows mensuales por tu ticket medio y compáralo con la cuota. Por eso lo más sencillo es empezar con una auditoría gratuita que te dé esa cifra con tus propios números en lugar de con una media del sector.",
   },
 ]
 
@@ -57,7 +59,7 @@ const articleJsonLd = {
     name: "Joan - Cero Manual",
   },
   datePublished: "2026-06-07",
-  dateModified: "2026-06-07",
+  dateModified: "2026-08-08",
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",
@@ -71,6 +73,19 @@ const articleJsonLd = {
     "@type": "WebPage",
     "@id": `https://ceromanual.es${PATH}`,
   },
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
 }
 
 function InternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -125,6 +140,10 @@ export default function NoShowsArticlePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Navbar />
       <main className="px-6 py-28" style={{ backgroundColor: "#F5F2EE" }}>
         <article className="max-w-3xl mx-auto">
@@ -154,7 +173,7 @@ export default function NoShowsArticlePage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            7 de junio de 2026 · 8 min de lectura
+            7 de junio de 2026 · 9 min de lectura
           </p>
 
           {/* Intro */}
@@ -178,10 +197,14 @@ export default function NoShowsArticlePage() {
 
           <H2>¿Qué es un no-show y cuánto te está costando realmente?</H2>
           <P>
-            Un no-show es una cita que alguien reserva y a la que, después, no se presenta
-            — y tampoco avisa. En una clínica dental, entre el 12% y el 19% de las citas
-            programadas terminan así, según los estudios sobre absentismo en el sector.
+            Un no-show es una cita que alguien reserva y a la que, después, no se presenta — y
+            tampoco avisa. En una clínica dental, entre el 12% y el 19% de las citas programadas
+            terminan así, lo que para una clínica media supone varios miles de euros al mes en
+            tiempo de sillón que ya estaba reservado.
           </P>
+          <BlogSource>
+            tasa media de no-shows del 12-19% en clínicas privadas españolas.
+          </BlogSource>
           <P>
             Eso no es solo «un hueco en la agenda». Es un sillón, un higienista o un
             dentista, y el material que ya tenías preparado: todo reservado para una
@@ -189,10 +212,12 @@ export default function NoShowsArticlePage() {
           </P>
           <P>
             Si lo multiplicas por una semana completa — y luego por un mes — la cifra sube
-            rápido. Las clínicas que no gestionan este problema pueden llegar a perder
-            hasta 7.500€ al mes: dinero que ya habían dado por hecho que iba a entrar, y
-            que se queda simplemente sobre la mesa. Si quieres ver cuánto supone en tu
-            caso, prueba nuestra{" "}
+            rápido. Las clínicas que no gestionan este problema pueden llegar a perder hasta
+            7.500€ al mes: dinero que ya habían dado por hecho que iba a entrar, y que se queda
+            simplemente sobre la mesa. Sale de una cuenta sencilla — 20 citas al día × 22 días
+            laborables × 15% de no-shows × un ticket medio de unos 115€ — así que cambia mucho
+            según el tamaño y el tipo de tratamiento de cada clínica. Si quieres ver cuánto
+            supone en tu caso, prueba nuestra{" "}
             <Link
               href="/calculadora-no-shows"
               className="underline font-semibold"
@@ -225,6 +250,44 @@ export default function NoShowsArticlePage() {
             equivocado, es prácticamente como si no lo hubieras enviado — solo que a ti te
             ha costado tiempo redactarlo y enviarlo.
           </P>
+          <BlogSource>
+            tasas de apertura de referencia del sector para WhatsApp y email marketing.
+          </BlogSource>
+
+          <BlogTable
+            headers={[
+              "Canal",
+              "Tasa de apertura",
+              "Carga para el equipo",
+              "¿Permite confirmar?",
+            ]}
+            rows={[
+              [
+                "Llamada telefónica",
+                "Alta si se descuelga, pero muchas no se cogen",
+                "Muy alta: varios minutos por paciente",
+                "Sí, pero solo si contesta en ese momento",
+              ],
+              [
+                "SMS",
+                "Se recibe casi siempre, se lee a medias",
+                "Baja si está automatizado",
+                "Limitado: sin conversación, solo texto plano",
+              ],
+              [
+                "Email",
+                "20-25%",
+                "Baja",
+                "Poco práctico: obliga a abrir un enlace",
+              ],
+              [
+                "WhatsApp",
+                "95-98%",
+                "Nula si está automatizado",
+                "Sí, con respuesta directa en el mismo chat",
+              ],
+            ]}
+          />
           <P>
             Y hay un segundo problema, todavía más importante: la mayoría de recordatorios
             solo «avisan». Informan de la fecha y la hora, y ya está. No piden ninguna
@@ -238,10 +301,15 @@ export default function NoShowsArticlePage() {
 
           <H2>5 estrategias para reducir no-shows en tu clínica dental</H2>
           <P>
-            La buena noticia es que reducir los no-shows no depende de tener más personal
-            ni de llamar más veces. Depende de cambiar cómo, cuándo y por qué canal
-            recuerdas la cita — y de automatizar lo que hoy haces a mano. Estas son las
-            cinco estrategias que más impacto tienen:
+            Son cinco: recordatorios automáticos por WhatsApp, confirmación activa en lugar de
+            aviso pasivo, lista de espera para cubrir huecos, política de cancelación
+            comunicada desde la reserva y seguimiento inmediato tras cada no-show. Ninguna
+            depende de tener más personal ni de llamar más veces.
+          </P>
+          <P>
+            Lo que cambian todas es lo mismo: cómo, cuándo y por qué canal recuerdas la cita —
+            y cuánto de eso ocurre solo, sin que nadie tenga que acordarse. Estas son las cinco,
+            por orden de impacto:
           </P>
 
           <H3>1. Recordatorios automáticos por WhatsApp</H3>
@@ -260,6 +328,11 @@ export default function NoShowsArticlePage() {
             Automatizado, este envío deja de depender de que alguien de tu equipo se
             acuerde de hacerlo cada mañana entre paciente y paciente. Sale solo, a la hora
             exacta, con el tono de tu clínica — no con el de una centralita genérica.
+          </P>
+          <P>
+            Y no hace falta cambiar de sistema de gestión para conseguirlo: el envío se conecta
+            con la agenda que ya usas — ClinicCloud o Klinikare, por ejemplo — y lee de ahí qué
+            citas hay mañana. Tu equipo sigue trabajando en la misma pantalla de siempre.
           </P>
 
           <H3>2. Confirmación activa (no solo aviso)</H3>
@@ -288,9 +361,9 @@ export default function NoShowsArticlePage() {
           </P>
           <P>
             Una lista de espera con pacientes que ya han mostrado interés es la solución
-            más sencilla. Por ejemplo, el 40% de las consultas de una clínica llegan fuera
-            de su horario de atención: esas personas que escriben a las diez de la noche
-            son candidatas perfectas para entrar en esa lista.
+            más sencilla. Buena parte de las consultas de una clínica llegan fuera de su
+            horario de atención: esas personas que escriben a las diez de la noche son
+            candidatas perfectas para entrar en esa lista.
           </P>
           <P>
             Cuando se libera un hueco, basta con avisar a quien ya estaba esperando — en
@@ -330,6 +403,7 @@ export default function NoShowsArticlePage() {
             margen de tiempo, tienes hasta un 80% de probabilidades de perderlo para
             siempre. Con un no-show pasa algo muy parecido.
           </P>
+          <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
             Cuanto antes le ofrezcas una nueva hora — el mismo día, si es posible — más
             probable es que la acepte, en lugar de olvidarse del todo o de buscar otra
@@ -338,10 +412,15 @@ export default function NoShowsArticlePage() {
 
           <H2>Cuánto puedes recuperar automatizando los recordatorios</H2>
           <P>
-            La cuenta es sencilla de hacer con tus propios números. Si tu clínica pierde
-            hasta 7.500€ al mes por una tasa de no-shows del 12-19%, reducir esa tasa
-            incluso a la mitad ya supone recuperar varios miles de euros cada mes — sin
-            captar ni un solo paciente nuevo.
+            Reducir la tasa de no-shows a la mitad supone recuperar varios miles de euros al
+            mes sin captar ni un solo paciente nuevo. Con la cuenta anterior — hasta 7.500€
+            mensuales perdidos con una tasa del 12-19% — hablamos de unos 3.500€ que hoy se
+            quedan en la agenda vacía.
+          </P>
+          <P>
+            Y la cuenta puedes rehacerla con tus propios números en cualquier momento: tus
+            no-shows reales al mes multiplicados por tu ticket medio. Ese es el techo de lo que
+            puedes recuperar.
           </P>
           <P>
             Eso es exactamente lo que hacen los{" "}

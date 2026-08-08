@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
+import BlogTable from "@/components/BlogTable"
+import BlogSource from "@/components/BlogSource"
 
 const PATH = "/blog/chatbot-whatsapp-para-clinicas-esteticas"
 const TITLE = "Chatbot WhatsApp clínicas estéticas: qué es | Cero Manual"
@@ -24,18 +26,18 @@ export const metadata: Metadata = {
     url: `https://ceromanual.es${PATH}`,
     type: "article",
     publishedTime: "2026-06-07T00:00:00.000Z",
-    modifiedTime: "2026-06-07T00:00:00.000Z",
+    modifiedTime: "2026-08-08T00:00:00.000Z",
   },
 }
 
 const faqs = [
   {
     q: "¿El chatbot puede agendar citas directamente, o solo responde preguntas?",
-    a: "Puede hacer ambas cosas. Responde dudas sobre tratamientos, precios y disponibilidad — y, cuando la persona ya está decidida, agenda la cita directamente en tu calendario, con el hueco real disponible. No se queda en un «te confirmamos en breve»: la persona termina la conversación con la cita ya puesta.",
+    a: "Puede hacer ambas cosas. Responde dudas sobre tratamientos, precios y disponibilidad — y, cuando la persona ya está decidida, agenda la cita directamente en tu calendario, con el hueco real disponible. No se queda en un «te confirmamos en breve»: la persona termina la conversación con la cita ya puesta. Para eso se conecta con la agenda que ya usa tu clínica, sea Flowww, Koibox o el calendario que tengas montado, y escribe la cita ahí mismo, así que tu equipo la ve en el sitio de siempre sin tener que copiar nada a mano. Y si el hueco que pide no está libre, propone alternativas cercanas en lugar de cerrar la conversación.",
   },
   {
     q: "¿Mis pacientes notarán que están hablando con un bot?",
-    a: "Si está bien configurado, la mayoría no lo nota — o, si lo nota, no le importa porque ha recibido lo que necesitaba: una respuesta clara, al momento, sin esperas. Se entrena con el tono y la información real de tu clínica, así que la conversación suena cercana y natural, no a contestador automático.",
+    a: "Si está bien configurado, la mayoría no lo nota — o, si lo nota, no le importa porque ha recibido lo que necesitaba: una respuesta clara, al momento, sin esperas. Se entrena con el tono y la información real de tu clínica, así que la conversación suena cercana y natural, no a contestador automático. La diferencia con un chatbot de menús de hace unos años es justo esa: no obliga a elegir entre opciones numeradas, entiende lo que le escriben con sus propias palabras y responde en consecuencia. Y en el momento en que la consulta se sale de lo previsible o pide criterio clínico, pasa la conversación a una persona de tu equipo en lugar de improvisar.",
   },
   {
     q: "¿Tengo que estar pendiente del WhatsApp para que funcione?",
@@ -43,7 +45,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tarda en estar funcionando en mi clínica?",
-    a: "Días, no meses. Se conecta al número de WhatsApp que ya usas y se configura con la información que ya tienes sobre tratamientos, precios y horarios. No necesitas cambiar de herramientas ni preparar nada especial: en poco tiempo está respondiendo por ti, también a las tres de la mañana.",
+    a: "Días, no meses. Se conecta al número de WhatsApp que ya usas y se configura con la información que ya tienes sobre tratamientos, precios y horarios. No necesitas cambiar de herramientas ni preparar nada especial: en poco tiempo está respondiendo por ti, también a las tres de la mañana. Lo que más suele condicionar el plazo no es la parte técnica, sino tener ordenada la información de partida — qué tratamientos ofreces, con qué precios orientativos y qué se responde a las dudas que más se repiten. Después de arrancar conviene revisar las primeras conversaciones reales y ajustar lo que haga falta, que es cuando el agente termina de sonar como tu clínica.",
   },
 ]
 
@@ -57,7 +59,7 @@ const articleJsonLd = {
     name: "Joan - Cero Manual",
   },
   datePublished: "2026-06-07",
-  dateModified: "2026-06-07",
+  dateModified: "2026-08-08",
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",
@@ -71,6 +73,19 @@ const articleJsonLd = {
     "@type": "WebPage",
     "@id": `https://ceromanual.es${PATH}`,
   },
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
 }
 
 function InternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -125,6 +140,10 @@ export default function ChatbotWhatsappArticlePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Navbar />
       <main className="px-6 py-28" style={{ backgroundColor: "#F5F2EE" }}>
         <article className="max-w-3xl mx-auto">
@@ -154,16 +173,16 @@ export default function ChatbotWhatsappArticlePage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            7 de junio de 2026 · 7 min de lectura
+            7 de junio de 2026 · 9 min de lectura
           </p>
 
           {/* Intro */}
           <P>
-            Casi un 40% de las consultas que recibe una clínica estética llegan fuera de
-            su horario de atención — por la noche, en fin de semana, o en esos huecos del
-            día en los que nadie del equipo puede mirar el móvil. Son personas que han
-            decidido, justo en ese momento, escribir para preguntar por un tratamiento... y
-            se encuentran con un mensaje que tardará horas — o días — en tener respuesta.
+            Buena parte de las consultas que recibe una clínica estética llegan fuera de su
+            horario de atención — por la noche, en fin de semana, o en esos huecos del día en
+            los que nadie del equipo puede mirar el móvil. Son personas que han decidido, justo
+            en ese momento, escribir para preguntar por un tratamiento... y se encuentran con
+            un mensaje que tardará horas — o días — en tener respuesta.
           </P>
           <P>
             Y la cosa tiene truco: WhatsApp es, con diferencia, el canal que más abren tus
@@ -171,6 +190,9 @@ export default function ChatbotWhatsappArticlePage() {
             un email. El problema no es el canal. El problema es que, al otro lado, no
             siempre hay alguien disponible para responder a tiempo.
           </P>
+          <BlogSource>
+            tasas de apertura de referencia del sector para WhatsApp y email marketing.
+          </BlogSource>
           <P>
             En este artículo vas a entender qué es exactamente un chatbot de WhatsApp para
             clínicas estéticas, en qué se diferencia de responder tú mismo desde WhatsApp
@@ -180,11 +202,16 @@ export default function ChatbotWhatsappArticlePage() {
 
           <H2>¿Qué es un chatbot de WhatsApp para clínicas estéticas?</H2>
           <P>
-            Es un sistema que mantiene una conversación natural por WhatsApp con quien te
-            escribe — no un menú rígido de «responde 1 para precios, 2 para citas».
-            Entiende lo que pregunta la persona y responde en consecuencia, igual que lo
-            haría alguien de tu equipo si tuviera el móvil en la mano en ese mismo
-            instante.
+            Un chatbot de WhatsApp para clínicas estéticas es un sistema que mantiene una
+            conversación natural con quien escribe a tu clínica, resuelve sus dudas sobre
+            tratamientos y precios, y agenda la cita — a cualquier hora y sin que intervenga
+            nadie de tu equipo. No es un menú rígido de «responde 1 para precios, 2 para
+            citas»: entiende lo que pregunta la persona y responde en consecuencia.
+          </P>
+          <P>
+            En la práctica, hace lo que haría alguien de tu recepción si tuviera el móvil en la
+            mano en ese mismo instante — con la diferencia de que no descansa, no se olvida de
+            ningún mensaje y atiende varias conversaciones a la vez.
           </P>
           <P>
             Se configura con la información real de tu clínica: tratamientos, precios
@@ -200,10 +227,11 @@ export default function ChatbotWhatsappArticlePage() {
 
           <H2>¿En qué se diferencia de responder manualmente por WhatsApp Business?</H2>
           <P>
-            WhatsApp Business es una herramienta estupenda — pero sigue dependiendo de que
-            alguien del equipo esté disponible, con el móvil a mano, en el momento exacto
-            en que llega el mensaje. Fuera de horario, en fin de semana, o simplemente en
-            mitad de un tratamiento con un paciente delante, los mensajes se acumulan.
+            La diferencia está en quién responde y cuándo. WhatsApp Business depende de que
+            alguien de tu equipo esté disponible, con el móvil a mano, en el momento exacto en
+            que llega el mensaje; el chatbot responde solo, al instante y las 24 horas. Fuera
+            de horario, en fin de semana, o simplemente en mitad de un tratamiento con un
+            paciente delante, los mensajes se acumulan.
           </P>
           <P>
             Y aquí entra en juego la regla de los cinco minutos: un lead que no recibe
@@ -211,18 +239,66 @@ export default function ChatbotWhatsappArticlePage() {
             siempre. No porque haya dejado de interesarle — sino porque, mientras esperaba,
             ha encontrado otra clínica que sí le ha contestado.
           </P>
+          <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
-            El chatbot responde al instante, las 24 horas, sin que nadie de tu equipo tenga
-            que interrumpir lo que está haciendo para mirar el móvil. La diferencia no es
-            solo de velocidad: es la diferencia entre captar ese lead en caliente o dejar
-            que se enfríe mientras decide escribir a la clínica de al lado.
+            Conviene además no confundir tres cosas que a menudo se meten en el mismo saco:
+            responder a mano, un chatbot de menús y un agente con IA. Esta es la diferencia
+            práctica:
+          </P>
+
+          <BlogTable
+            headers={[
+              "",
+              "WhatsApp Business (manual)",
+              "Chatbot de menús",
+              "Agente con IA",
+            ]}
+            rows={[
+              [
+                "Quién responde",
+                "Una persona de tu equipo",
+                "Un árbol de opciones fijo",
+                "Un agente entrenado con la información de tu clínica",
+              ],
+              [
+                "Horario",
+                "Solo cuando hay alguien disponible",
+                "24/7, pero solo dentro del guion previsto",
+                "24/7, también fines de semana y festivos",
+              ],
+              [
+                "Preguntas abiertas",
+                "Sí, sin límite",
+                "No: obliga a elegir entre opciones numeradas",
+                "Sí, entiende la consulta escrita con palabras propias",
+              ],
+              [
+                "¿Agenda la cita?",
+                "Sí, a mano y en horario de recepción",
+                "Normalmente no: deriva a un formulario o a una llamada",
+                "Sí, sobre huecos reales de la agenda",
+              ],
+              [
+                "Coste",
+                "Horas de tu equipo",
+                "Suscripción baja, entre 30-60€/mes",
+                "Cuota mensual, mayor que un bot de menús",
+              ],
+            ]}
+          />
+
+          <P>
+            La diferencia no es solo de velocidad: es la diferencia entre captar ese lead en
+            caliente o dejar que se enfríe mientras decide escribir a la clínica de al lado.
           </P>
 
           <H2>Qué puede hacer el chatbot por tu clínica: casos reales</H2>
           <P>
-            En el día a día, no se limita a contestar «hola, ¿en qué puedo ayudarte?». Esto
-            es lo que resuelve, conversación tras conversación, sin que nadie tenga que
-            estar pendiente.
+            Cuatro cosas, en concreto: resolver dudas sobre tratamientos, agendar la primera
+            visita, cualificar al lead antes de pasarlo a tu equipo y escalar a una persona
+            cuando la consulta lo pide. No se limita a contestar «hola, ¿en qué puedo
+            ayudarte?»: esto es lo que resuelve conversación tras conversación, sin que nadie
+            tenga que estar pendiente.
           </P>
 
           <H3>Responde dudas sobre tratamientos al momento</H3>
@@ -240,12 +316,21 @@ export default function ChatbotWhatsappArticlePage() {
             que tantas veces hace que el interesado acabe reservando en otro sitio mientras
             espera.
           </P>
+          <P>
+            Para eso se conecta con el software que ya usa tu clínica — Flowww o Koibox, por
+            ejemplo — y escribe la cita directamente ahí, en el mismo sitio donde tu equipo la
+            consulta cada mañana. No hay una segunda agenda paralela que alguien tenga que
+            cuadrar después a mano.
+          </P>
 
           <H3>Cualifica al lead antes de pasarlo a tu equipo</H3>
           <P>
             Recoge qué tratamiento le interesa, qué busca conseguir y desde cuándo lo está
             pensando — para que, cuando alguien de tu equipo retome la conversación, lo
-            haga con todo el contexto y no tenga que empezar preguntando desde cero. Si
+            haga con todo el contexto y no tenga que empezar preguntando desde cero. Eso
+            importa especialmente cuando el lead no viene de tu web, sino de un anuncio de
+            Meta o de un perfil en un marketplace como Booksy: llega sin contexto, y quien lo
+            atiende necesita saber en dos líneas qué quiere esa persona. Si
             quieres ver cómo se aplicaría esto a tu clínica en concreto, en{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
@@ -262,10 +347,10 @@ export default function ChatbotWhatsappArticlePage() {
 
           <H2>¿Es complicado de configurar?</H2>
           <P>
-            No. Y esta es, probablemente, la sorpresa más habitual de quien nunca ha
-            probado uno: se monta en cuestión de días, no de meses. Se conecta al número de
-            WhatsApp que ya usa tu clínica y se entrena con la información que ya tienes —
-            tratamientos, precios, horarios — sin que tengas que crear nada desde cero.
+            No: se monta en cuestión de días, no de meses. Se conecta al número de WhatsApp
+            que ya usa tu clínica y se entrena con la información que ya tienes —
+            tratamientos, precios, horarios — sin que tengas que crear nada desde cero. Es,
+            probablemente, la sorpresa más habitual de quien nunca ha probado uno.
           </P>
           <P>
             No hace falta cambiar de herramientas, ni migrar tu agenda, ni formar a tu
@@ -276,23 +361,28 @@ export default function ChatbotWhatsappArticlePage() {
 
           <H2>Cuánto cuesta y qué retorno puedes esperar</H2>
           <P>
-            La pregunta que de verdad importa no es «¿cuánto cuesta tener un chatbot?»,
-            sino «¿cuánto me está costando ya no tenerlo?». Cada consulta que tarda horas
-            en recibir respuesta es, probablemente, una persona que ha encontrado — y
-            reservado — en otra clínica mientras esperaba la tuya.
+            Un agente con IA en WhatsApp se mueve en una cuota mensual claramente por encima de
+            un bot de menús, y se amortiza con muy pocos pacientes nuevos al mes. Con un LTV
+            medio de unos 3.000€ por paciente recurrente en clínica estética en España, basta
+            recuperar una sola consulta que hoy se pierde para cubrir varios meses de servicio.
+          </P>
+          <BlogSource>SEME (Sociedad Española de Medicina Estética)</BlogSource>
+          <P>
+            Por eso la pregunta que de verdad importa no es «¿cuánto cuesta tener un chatbot?»,
+            sino «¿cuánto me está costando ya no tenerlo?». Cada consulta que tarda horas en
+            recibir respuesta es, probablemente, una persona que ha encontrado — y reservado —
+            en otra clínica mientras esperaba la tuya.
           </P>
           <P>
             Recuerda ese dato: un lead sin respuesta en cinco minutos tiene hasta un 80% de
-            probabilidades de perderse. Multiplica eso por todas las consultas que te
-            llegan fuera de horario — ese 40% — y empieza a verse con claridad cuánto se
-            está quedando, cada mes, sin convertirse en cita.
+            probabilidades de perderse. Multiplica eso por todas las consultas que te llegan
+            fuera de horario y empieza a verse con claridad cuánto se está quedando, cada mes,
+            sin convertirse en cita.
           </P>
           <P>
-            La inversión en un chatbot de WhatsApp suele amortizarse con muy pocos
-            pacientes nuevos al mes — y, a partir de ahí, sigue generando reservas de
-            fondo, sin que nadie tenga que estar pendiente del móvil a las once de la
-            noche. Si quieres ver esa cuenta aplicada a tu clínica, con tus propios
-            números, en{" "}
+            Una vez cubierta esa inversión, el sistema sigue generando reservas de fondo, sin
+            que nadie tenga que estar pendiente del móvil a las once de la noche. Si quieres ver
+            esa cuenta aplicada a tu clínica, con tus propios números, en{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
