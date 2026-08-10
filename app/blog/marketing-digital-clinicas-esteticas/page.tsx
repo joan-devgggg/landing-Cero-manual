@@ -325,14 +325,12 @@ export default function MarketingDigitalClinicasArticlePage() {
           <H2>WhatsApp: el canal que más convierte</H2>
           <P>
             WhatsApp es el canal que más convierte porque es donde el paciente pregunta
-            precio, dudas y disponibilidad justo antes de decidirse — y porque sus mensajes
-            se leen entre un 95% y un 98% de las veces, frente al 20-25% del email. Da igual
-            cuánto inviertas en Instagram o en Google Ads: si el lead que generan esos
-            canales no recibe respuesta rápida, esa inversión se pierde.
+            precio, dudas y disponibilidad justo antes de decidirse — y porque se lee mucho
+            más que cualquier otro canal: en el sector se manejan tasas de apertura de
+            referencia del 95-98%, frente al 20-25% del email. Da igual cuánto inviertas en
+            Instagram o en Google Ads: si el lead que generan esos canales no recibe
+            respuesta rápida, esa inversión se pierde.
           </P>
-          <BlogSource>
-            tasas de apertura de referencia del sector para WhatsApp y email marketing.
-          </BlogSource>
           <P>
             Eso significa que, si el primer contacto de un lead llega por WhatsApp, es
             prácticamente seguro que lo va a leer — la pregunta es si va a recibir respuesta

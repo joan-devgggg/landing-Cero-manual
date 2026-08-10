@@ -277,14 +277,12 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
           <H2>Reduce los no-shows que vacían tu agenda</H2>
           <P>
             Los no-shows se reducen con recordatorios automáticos y confirmación activa en
-            los días previos a la cita. Es la palanca más rentable de todas porque entre el
-            12% y el 19% de las citas de una clínica dental terminan sin que el paciente
-            aparezca — y cada uno de esos huecos es tiempo de gabinete y de personal que no
-            genera ingreso pero sí tiene un coste fijo asociado.
+            los días previos a la cita. Es la palanca más rentable de todas porque, como
+            referencia del sector, entre un 12% y un 19% de las citas de una clínica dental
+            terminan sin que el paciente aparezca — y cada uno de esos huecos es tiempo de
+            gabinete y de personal que no genera ingreso pero sí tiene un coste fijo
+            asociado.
           </P>
-          <BlogSource>
-            tasa media de no-shows del 12-19% en clínicas privadas españolas.
-          </BlogSource>
           <P>
             En clínicas con buen volumen de citas, esto puede suponer pérdidas de hasta
             7.500€ al mes. Sale de una cuenta sencilla — 20 citas al día × 22 días
@@ -336,15 +334,12 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             siempre gana.
           </P>
           <P>
-            El canal importa tanto como la automatización: en WhatsApp se lee entre el 95% y
-            el 98% de los mensajes, frente al 20-25% de un email. Una vez configurado el
-            sistema, los mensajes de recuperación, recordatorios y seguimientos se envían
-            solos, según el historial y la situación de cada paciente, y el equipo solo entra
-            en juego cuando alguien responde para reservar.
+            El canal importa tanto como la automatización: en el sector se manejan tasas de
+            apertura de referencia del 95-98% en WhatsApp, frente al 20-25% de un email. Una
+            vez configurado el sistema, los mensajes de recuperación, recordatorios y
+            seguimientos se envían solos, según el historial y la situación de cada paciente,
+            y el equipo solo entra en juego cuando alguien responde para reservar.
           </P>
-          <BlogSource>
-            tasas de apertura de referencia del sector para WhatsApp y email marketing.
-          </BlogSource>
           <P>
             El resultado es una clínica que aprovecha al máximo la base de pacientes que ya
             tiene, sin necesidad de aumentar el presupuesto de publicidad ni de sumar carga de

@@ -186,13 +186,10 @@ export default function ChatbotWhatsappArticlePage() {
           </P>
           <P>
             Y la cosa tiene truco: WhatsApp es, con diferencia, el canal que más abren tus
-            pacientes — entre un 95% y un 98% de los mensajes se leen, frente al 20-25% de
-            un email. El problema no es el canal. El problema es que, al otro lado, no
-            siempre hay alguien disponible para responder a tiempo.
+            pacientes — en el sector se manejan tasas de apertura de referencia del 95-98%,
+            frente al 20-25% de un email. El problema no es el canal. El problema es que, al
+            otro lado, no siempre hay alguien disponible para responder a tiempo.
           </P>
-          <BlogSource>
-            tasas de apertura de referencia del sector para WhatsApp y email marketing.
-          </BlogSource>
           <P>
             En este artículo vas a entender qué es exactamente un chatbot de WhatsApp para
             clínicas estéticas, en qué se diferencia de responder tú mismo desde WhatsApp

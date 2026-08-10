@@ -299,13 +299,10 @@ export default function SoftwareGestionClinicaEsteticaPage() {
           <P>
             Imprescindibles son cuatro: agenda online con disponibilidad en tiempo real,
             recordatorios automáticos de citas, ficha de paciente con historial de
-            tratamientos y un canal de comunicación centralizado — normalmente WhatsApp, por
-            su tasa de apertura del 95-98%. Todo lo demás es opcional hasta que esas cuatro
-            estén resueltas.
+            tratamientos y un canal de comunicación centralizado — normalmente WhatsApp, que
+            en el sector se maneja con tasas de apertura de referencia del 95-98%. Todo lo
+            demás es opcional hasta que esas cuatro estén resueltas.
           </P>
-          <BlogSource>
-            tasas de apertura de referencia del sector para WhatsApp y email marketing.
-          </BlogSource>
           <P>
             Por otro lado, hay funcionalidades que son interesantes pero no urgentes al
             principio: informes avanzados de facturación, integraciones con marketing,

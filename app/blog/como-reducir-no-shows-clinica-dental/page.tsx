@@ -198,13 +198,11 @@ export default function NoShowsArticlePage() {
           <H2>¿Qué es un no-show y cuánto te está costando realmente?</H2>
           <P>
             Un no-show es una cita que alguien reserva y a la que, después, no se presenta — y
-            tampoco avisa. En una clínica dental, entre el 12% y el 19% de las citas programadas
-            terminan así, lo que para una clínica media supone varios miles de euros al mes en
-            tiempo de sillón que ya estaba reservado.
+            tampoco avisa. En clínicas dentales privadas, la horquilla que se maneja como
+            referencia va del 12% al 19% de las citas programadas, lo que para una clínica
+            media supone varios miles de euros al mes en tiempo de sillón que ya estaba
+            reservado.
           </P>
-          <BlogSource>
-            tasa media de no-shows del 12-19% en clínicas privadas españolas.
-          </BlogSource>
           <P>
             Eso no es solo «un hueco en la agenda». Es un sillón, un higienista o un
             dentista, y el material que ya tenías preparado: todo reservado para una
@@ -245,14 +243,11 @@ export default function NoShowsArticlePage() {
             pierde entre decenas de notificaciones que nadie abre.
           </P>
           <P>
-            El dato lo confirma: los mensajes de WhatsApp tienen una tasa de apertura del
-            95-98%, frente al 20-25% del email. Si tu recordatorio va por el canal
-            equivocado, es prácticamente como si no lo hubieras enviado — solo que a ti te
-            ha costado tiempo redactarlo y enviarlo.
+            La diferencia entre canales es enorme: como referencia del sector, en WhatsApp
+            se manejan tasas de apertura del 95-98%, frente al 20-25% del email. Si tu
+            recordatorio va por el canal equivocado, es prácticamente como si no lo hubieras
+            enviado — solo que a ti te ha costado tiempo redactarlo y enviarlo.
           </P>
-          <BlogSource>
-            tasas de apertura de referencia del sector para WhatsApp y email marketing.
-          </BlogSource>
 
           <BlogTable
             headers={[

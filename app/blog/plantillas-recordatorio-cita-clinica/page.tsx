@@ -5,7 +5,6 @@ import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import BlogTable from "@/components/BlogTable"
-import BlogSource from "@/components/BlogSource"
 
 const PATH = "/blog/plantillas-recordatorio-cita-clinica"
 const TITLE = "Plantillas de recordatorio de cita para clínicas: ejemplos listos para usar | Cero Manual"
@@ -189,15 +188,12 @@ export default function PlantillasRecordatorioPage() {
             simplemente lo lea por encima y se olvide cinco minutos después.
           </P>
           <P>
-            Los recordatorios por WhatsApp tienen una tasa de apertura del 95-98%, frente al
-            20-25% del email o el SMS. Y cuando están bien planteados, recortan de forma
-            notable los no-shows — algo que importa si tenemos en cuenta que entre el 12% y
-            el 19% de las citas de una clínica terminan sin que el paciente aparezca.
+            Los recordatorios por WhatsApp se apoyan en las tasas de apertura de referencia
+            del sector — del 95-98%, frente al 20-25% del email o el SMS. Y cuando están
+            bien planteados, recortan de forma notable los no-shows, que en clínicas
+            privadas suelen moverse en una horquilla de entre el 12% y el 19% de las citas
+            programadas.
           </P>
-          <BlogSource>
-            tasa media de no-shows del 12-19% en clínicas privadas españolas, y tasas de
-            apertura de referencia del sector para WhatsApp y email marketing.
-          </BlogSource>
           <P>
             En este artículo vas a encontrar plantillas reales, listas para copiar y
             adaptar: recordatorios 24h antes, recordatorios 2h antes y mensajes de
