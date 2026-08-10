@@ -369,13 +369,14 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
           </P>
           <P>
             El resultado es una caída notable de los no-shows — es decir, recuperar buena
-            parte de ese 12-19% de citas que hoy se quedan vacías. Si quieres ver paso a
-            paso cómo se monta este sistema, en{" "}
-            <InternalLink href="/blog/como-reducir-no-shows-clinica-dental">
-              este artículo
-            </InternalLink>{" "}
-            tienes las cinco estrategias completas, con ejemplos aplicados a clínicas
-            dentales.
+            parte de ese 12-19% de citas que hoy se quedan vacías. Montar ese circuito sobre
+            tu agenda es justo lo que resolvemos con los{" "}
+            <InternalLink href="/recordatorios-automaticos-citas">
+              recordatorios automáticos de citas por WhatsApp
+            </InternalLink>
+            : las plantillas de arriba salen solas en el momento exacto, con el tono de tu
+            clínica, y las confirmaciones se gestionan sin que nadie tenga que estar
+            pendiente del móvil.
           </P>
         </article>
 
@@ -403,14 +404,14 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
               reducir los no-shows de tu clínica desde el primer mes.
             </p>
             <Link
-              href="/blog/como-reducir-no-shows-clinica-dental"
+              href="/recordatorios-automaticos-citas"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Ver cómo reducir los no-shows →
+              Ver cómo automatizar los recordatorios →
             </Link>
           </div>
         </div>
