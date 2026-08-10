@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
+import BlogTable from "@/components/BlogTable"
+import BlogSource from "@/components/BlogSource"
 
 const PATH = "/blog/marketing-digital-clinicas-esteticas"
 const TITLE = "Marketing digital para clínicas estéticas: guía completa | Cero Manual"
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     url: `https://ceromanual.es${PATH}`,
     type: "article",
     publishedTime: "2026-06-10T00:00:00.000Z",
-    modifiedTime: "2026-06-10T00:00:00.000Z",
+    modifiedTime: "2026-08-11T00:00:00.000Z",
   },
 }
 
@@ -57,7 +59,7 @@ const articleJsonLd = {
     name: "Joan - Cero Manual",
   },
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-08-11",
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",
@@ -71,6 +73,19 @@ const articleJsonLd = {
     "@type": "WebPage",
     "@id": `https://ceromanual.es${PATH}`,
   },
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
 }
 
 function InternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -125,6 +140,10 @@ export default function MarketingDigitalClinicasArticlePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Navbar />
       <main className="px-6 py-28" style={{ backgroundColor: "#F5F2EE" }}>
         <article className="max-w-3xl mx-auto">
@@ -154,7 +173,7 @@ export default function MarketingDigitalClinicasArticlePage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            10 de junio de 2026 · 8 min de lectura
+            10 de junio de 2026 · 9 min de lectura
           </p>
 
           {/* Intro */}
@@ -180,9 +199,11 @@ export default function MarketingDigitalClinicasArticlePage() {
 
           <H2>Los canales de marketing que realmente funcionan para clínicas estéticas</H2>
           <P>
-            No todos los canales cumplen la misma función, y ese es precisamente el error
-            más común: tratar Instagram, Google y WhatsApp como si fueran intercambiables.
-            En realidad cada uno cubre una fase distinta del recorrido del paciente.
+            Los canales que funcionan de verdad para una clínica estética son tres:
+            Instagram, Google y WhatsApp. Cada uno cubre una fase distinta del recorrido del
+            paciente — Instagram genera confianza, Google capta la demanda que ya existe y
+            WhatsApp cierra la cita — y el error más común es tratarlos como si fueran
+            intercambiables.
           </P>
           <P>
             Instagram construye marca y confianza — es el canal donde un paciente potencial
@@ -191,6 +212,42 @@ export default function MarketingDigitalClinicasArticlePage() {
             tratamiento, solo falta elegir dónde. Y WhatsApp es donde ocurre la conversión
             real: la conversación que termina (o no) en una cita reservada.
           </P>
+
+          <BlogTable
+            headers={[
+              "Canal",
+              "Qué aporta",
+              "Intención de compra",
+              "Por qué no basta solo",
+            ]}
+            rows={[
+              [
+                "Instagram",
+                "Confianza y reconocimiento: resultados, equipo, día a día de la clínica",
+                "Baja: la mayoría no busca tratamiento en ese momento",
+                "Genera seguidores y guardados, pero rara vez una cita directa",
+              ],
+              [
+                "Google (Ads y ficha de Business)",
+                "Visibilidad justo cuando alguien busca tu tratamiento en tu ciudad",
+                "Alta: la necesidad ya existe, solo falta elegir clínica",
+                "Trae el clic, pero la conversación se va a otro canal",
+              ],
+              [
+                "Portales de reserva (Booksy, Treatwell)",
+                "Escaparate con reserva directa y reseñas verificadas",
+                "Media-alta: el usuario compara clínicas cercanas",
+                "Comisión por reserva y poco control sobre la relación con el paciente",
+              ],
+              [
+                "WhatsApp",
+                "La conversación donde se resuelven dudas y se cierra la cita",
+                "Muy alta: ya te ha escrito",
+                "Depende por completo de que alguien responda a tiempo",
+              ],
+            ]}
+          />
+
           <P>
             Una estrategia de marketing digital para clínicas estéticas que funcione no
             elige uno de estos canales — los combina, entendiendo qué papel cumple cada
@@ -199,11 +256,17 @@ export default function MarketingDigitalClinicasArticlePage() {
 
           <H2>Instagram: imprescindible pero insuficiente</H2>
           <P>
-            Instagram sigue siendo el escaparate de cualquier clínica estética. Antes y
-            después de tratamientos, testimonios de pacientes, contenido del día a día del
-            equipo: todo eso construye la confianza que un paciente necesita antes de dar
-            el paso de contactar. Sin presencia en Instagram, una clínica pierde gran parte
-            de su credibilidad frente a la competencia que sí la tiene.
+            Instagram es imprescindible porque es donde el paciente comprueba que tu clínica
+            existe, tiene equipo y obtiene resultados — sin ese escaparate, pierdes
+            credibilidad frente a la competencia que sí lo tiene. Y es insuficiente porque
+            quien ve tu contenido casi nunca está buscando tratamiento en ese momento, así
+            que la audiencia crece sin que la agenda lo note.
+          </P>
+          <P>
+            Antes y después de tratamientos, testimonios de pacientes, contenido del día a
+            día del equipo: todo eso construye la confianza que un paciente necesita antes
+            de dar el paso de contactar. Es un trabajo que rinde, pero rinde a plazo y de
+            forma indirecta.
           </P>
           <P>
             Pero Instagram tiene un límite claro: la mayoría de personas que ven tu
@@ -222,10 +285,16 @@ export default function MarketingDigitalClinicasArticlePage() {
 
           <H2>Google: el canal que más intención de compra tiene</H2>
           <P>
-            Cuando alguien escribe «clínica estética [tu ciudad]» o «depilación láser
-            precio» en Google, no está navegando por curiosidad: está a un paso de tomar
-            una decisión. Esa es la diferencia clave frente a Instagram — la intención de
-            compra ya existe, solo falta capturarla.
+            Google es el canal con más intención de compra porque el usuario llega buscando
+            exactamente lo que tú vendes. Cuando alguien escribe «clínica estética [tu
+            ciudad]» o «depilación láser precio» no está navegando por curiosidad: está a un
+            paso de tomar una decisión.
+          </P>
+          <P>
+            Esa es la diferencia clave frente a Instagram — la intención de compra ya
+            existe, solo falta capturarla antes que la clínica de al lado. Y se captura por
+            dos vías que conviene no confundir: la publicidad de pago y la presencia
+            orgánica en el mapa.
           </P>
           <H3>Google Ads para captar demanda inmediata</H3>
           <P>
@@ -244,18 +313,30 @@ export default function MarketingDigitalClinicasArticlePage() {
             gratuita en las búsquedas locales y en Google Maps, justo donde la gente busca
             cuando ya está decidida.
           </P>
+          <P>
+            En la misma línea juegan los portales de reserva como Booksy o Treatwell:
+            funcionan como un segundo escaparate local, con reseñas y reserva directa, y
+            captan búsquedas que de otra forma irían a la competencia. La contrapartida es
+            que cobran comisión por reserva captada y la relación con el paciente queda a
+            medias dentro de su plataforma — sirven bien para llenar huecos, no como canal
+            principal.
+          </P>
 
           <H2>WhatsApp: el canal que más convierte</H2>
           <P>
-            Da igual cuánto inviertas en Instagram o en Google Ads: si el lead que generan
-            esos canales no recibe respuesta rápida, esa inversión se pierde. Y aquí es
-            donde WhatsApp se convierte en la pieza más importante de todo el embudo.
+            WhatsApp es el canal que más convierte porque es donde el paciente pregunta
+            precio, dudas y disponibilidad justo antes de decidirse — y porque sus mensajes
+            se leen entre un 95% y un 98% de las veces, frente al 20-25% del email. Da igual
+            cuánto inviertas en Instagram o en Google Ads: si el lead que generan esos
+            canales no recibe respuesta rápida, esa inversión se pierde.
           </P>
+          <BlogSource>
+            tasas de apertura de referencia del sector para WhatsApp y email marketing.
+          </BlogSource>
           <P>
-            Los mensajes de WhatsApp se leen entre un 95% y un 98% de las veces, frente al
-            20-25% del email. Eso significa que, si el primer contacto de un lead llega por
-            WhatsApp, es prácticamente seguro que lo va a leer — la pregunta es si va a
-            recibir respuesta a tiempo.
+            Eso significa que, si el primer contacto de un lead llega por WhatsApp, es
+            prácticamente seguro que lo va a leer — la pregunta es si va a recibir respuesta
+            a tiempo.
           </P>
           <P>
             Y el tiempo es crítico: la probabilidad de perder un lead que no recibe
@@ -270,21 +351,29 @@ export default function MarketingDigitalClinicasArticlePage() {
             puede agendar la cita directamente, sin que nadie del equipo tenga que estar
             pendiente del móvil.
           </P>
+          <BlogSource>MIT Lead Response Management Study</BlogSource>
 
           <H2>Cómo combinar todos los canales sin volverse loco</H2>
           <P>
-            La forma más sencilla de pensar en estos tres canales es como un embudo:
-            Instagram construye confianza, Google capta la demanda activa, y WhatsApp cierra
+            Se combinan pensándolos como un embudo, no como cuatro cuentas que alimentar:
+            Instagram construye confianza, Google capta la demanda activa y WhatsApp cierra
             la conversación. El error habitual es invertir tiempo y dinero en los dos
-            primeros sin haber resuelto el tercero — y ahí es donde se pierde la mayor
-            parte del retorno.
+            primeros sin haber resuelto el tercero — y ahí es donde se pierde la mayor parte
+            del retorno.
           </P>
           <P>
-            Casi un 40% de las consultas de una clínica llegan fuera del horario de
-            atención: por la noche, los fines de semana, durante una comida. Si tu
-            estrategia de marketing está generando tráfico hacia WhatsApp pero nadie
-            responde en esos momentos, estás pagando por leads que se enfrían antes de que
-            alguien pueda atenderlos.
+            Buena parte de las consultas de una clínica llega fuera del horario de atención:
+            por la noche, los fines de semana, durante una comida. Si tu estrategia de
+            marketing está generando tráfico hacia WhatsApp pero nadie responde en esos
+            momentos, estás pagando por leads que se enfrían antes de que alguien pueda
+            atenderlos.
+          </P>
+          <P>
+            El otro punto donde se rompe la cadena es el registro: si cada canal vive en un
+            sitio distinto, nadie sabe de dónde vino cada paciente ni a quién toca hacer
+            seguimiento. Tener la ficha centralizada en el software de gestión que ya uses —
+            Flowww, Koibox o el que sea — es lo que permite saber qué canal te trae pacientes
+            de verdad y cuál solo te trae likes.
           </P>
           <P>
             La forma más eficiente de combinar los canales sin que la gestión se convierta

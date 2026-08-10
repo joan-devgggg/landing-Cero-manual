@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
+import BlogTable from "@/components/BlogTable"
+import BlogSource from "@/components/BlogSource"
 
 const PATH = "/blog/como-aumentar-facturacion-clinica-dental"
 const TITLE = "Aumentar facturación clínica dental: 5 estrategias sin más pacientes | Cero Manual"
@@ -24,22 +26,22 @@ export const metadata: Metadata = {
     url: `https://ceromanual.es${PATH}`,
     type: "article",
     publishedTime: "2026-06-10T00:00:00.000Z",
-    modifiedTime: "2026-06-10T00:00:00.000Z",
+    modifiedTime: "2026-08-11T00:00:00.000Z",
   },
 }
 
 const faqs = [
   {
     q: "¿De verdad puedo aumentar la facturación sin captar pacientes nuevos?",
-    a: "Sí, en la mayoría de clínicas dentales hay ingresos dormidos en su propia base de datos: pacientes que dejaron de venir, citas que se cancelan sin recolocar y revisiones que nunca se llegan a programar. Recuperar esos ingresos no requiere presupuesto de publicidad, solo un sistema que se encargue de contactar a esos pacientes en el momento adecuado.",
+    a: "Sí, en la mayoría de clínicas dentales hay ingresos dormidos en su propia base de datos: pacientes que dejaron de venir, citas que se cancelan sin recolocar y revisiones que nunca se llegan a programar. Recuperar esos ingresos no requiere presupuesto de publicidad, solo un sistema que se encargue de contactar a esos pacientes en el momento adecuado. La ventaja frente a la captación es doble: son personas que ya confiaron en la clínica una vez, así que la conversación empieza mucho más adelantada, y el coste de contactarlas es prácticamente cero. Antes de subir la inversión en anuncios, merece la pena mirar cuántos pacientes llevan más de un año sin aparecer.",
   },
   {
     q: "¿Cuánto representa un paciente que deja de venir?",
-    a: "Un paciente recurrente puede generar a lo largo de su relación con la clínica un valor aproximado de unos 3.000€, entre revisiones, limpiezas, tratamientos y posibles derivaciones a especialistas. Cuando ese paciente deja de venir sin que nadie lo note, ese valor se queda sobre la mesa, y recuperarlo es mucho más barato que conseguir un paciente nuevo desde cero.",
+    a: "Un paciente recurrente puede generar a lo largo de su relación con la clínica un valor aproximado de unos 3.000€, entre revisiones, limpiezas, tratamientos y posibles derivaciones a especialistas. Cuando ese paciente deja de venir sin que nadie lo note, ese valor se queda sobre la mesa, y recuperarlo es mucho más barato que conseguir un paciente nuevo desde cero. El problema es que esa pérdida no aparece en ningún informe: nadie da de baja a un paciente, simplemente deja de aparecer en la agenda. Por eso conviene revisar cada cierto tiempo el listado de última visita, que cualquier software de gestión dental permite sacar en unos clics.",
   },
   {
     q: "¿Cómo afectan los no-shows a la facturación?",
-    a: "Entre el 12% y el 19% de las citas de una clínica dental terminan en no-show. Cada hueco que se queda vacío sin que se pueda recolocar es tiempo del equipo y del gabinete que no genera ingresos pero sí tiene un coste. En clínicas con bastante volumen de citas, esto puede suponer pérdidas de hasta 7.500€ al mes.",
+    a: "Entre el 12% y el 19% de las citas de una clínica dental terminan en no-show. Cada hueco que se queda vacío sin que se pueda recolocar es tiempo del equipo y del gabinete que no genera ingresos pero sí tiene un coste. En clínicas con bastante volumen de citas, esto puede suponer pérdidas de hasta 7.500€ al mes: la cuenta sale de 20 citas diarias × 22 días laborables × un 15% de no-shows × un ticket medio de unos 115€, así que conviene rehacerla con tus propios números. Es la pérdida más fácil de corregir de todas, porque no depende de captar a nadie nuevo — solo de que el paciente que ya reservó confirme o avise a tiempo.",
   },
   {
     q: "¿Necesito contratar a alguien para gestionar todo esto?",
@@ -57,7 +59,7 @@ const articleJsonLd = {
     name: "Joan - Cero Manual",
   },
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-08-11",
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",
@@ -71,6 +73,19 @@ const articleJsonLd = {
     "@type": "WebPage",
     "@id": `https://ceromanual.es${PATH}`,
   },
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
 }
 
 function InternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -114,6 +129,10 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Navbar />
       <main className="px-6 py-28" style={{ backgroundColor: "#F5F2EE" }}>
         <article className="max-w-3xl mx-auto">
@@ -143,7 +162,7 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            10 de junio de 2026 · 7 min de lectura
+            10 de junio de 2026 · 8 min de lectura
           </p>
 
           {/* Intro */}
@@ -170,10 +189,11 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
 
           <H2>Por qué buscar nuevos pacientes no siempre es la solución</H2>
           <P>
-            Captar un paciente nuevo tiene un coste: publicidad, promociones de bienvenida y
-            tiempo del equipo respondiendo consultas que muchas veces no llegan a convertirse
-            en cita. Es una inversión necesaria, pero no es la única palanca disponible — y
-            muchas veces ni siquiera es la más rentable a corto plazo.
+            Buscar pacientes nuevos no siempre es la solución porque es la palanca más cara
+            y la más lenta de las cuatro que tienes disponibles. Captar a alguien de cero
+            cuesta publicidad, promociones de bienvenida y tiempo del equipo respondiendo
+            consultas que muchas veces no acaban en cita — mientras que recuperar a quien ya
+            confió en la clínica no cuesta prácticamente nada.
           </P>
           <P>
             Mientras tanto, en la propia base de datos de la clínica suele haber cientos de
@@ -184,22 +204,66 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
           </P>
           <P>
             Por eso, antes de aumentar el presupuesto de captación, tiene sentido preguntarse:
-            ¿estoy aprovechando al máximo a los pacientes que ya tengo?
+            ¿estoy aprovechando al máximo a los pacientes que ya tengo? Esta es la comparación
+            entre las cuatro palancas, ordenadas por lo que cuesta activarlas:
           </P>
+
+          <BlogTable
+            headers={[
+              "Palanca",
+              "De dónde sale el ingreso",
+              "Qué hace falta",
+              "En cuánto se nota",
+            ]}
+            rows={[
+              [
+                "Reactivar pacientes inactivos",
+                "Pacientes de tu base que llevan meses sin volver",
+                "Un listado filtrado por última visita y un mensaje de recuperación",
+                "Semanas: la respuesta llega en los primeros días de envío",
+              ],
+              [
+                "Reducir no-shows",
+                "Huecos de agenda ya vendidos que hoy se quedan vacíos",
+                "Recordatorios automáticos y confirmación activa antes de la cita",
+                "Inmediato: afecta a las citas de la semana que viene",
+              ],
+              [
+                "Subir el ticket medio",
+                "Tratamientos pendientes que nunca se llegan a proponer",
+                "Seguimiento post-cita y presupuestos que no se quedan sin respuesta",
+                "Meses: depende del ciclo de decisión de cada tratamiento",
+              ],
+              [
+                "Captar pacientes nuevos",
+                "Inversión en publicidad y visibilidad",
+                "Presupuesto continuado y alguien que atienda cada consulta",
+                "Meses, y el coste no para mientras quieras mantenerlo",
+              ],
+            ]}
+          />
 
           <H2>Recupera los pacientes que dejaron de venir</H2>
           <P>
-            Un paciente recurrente —que viene a sus revisiones, limpiezas y tratamientos a lo
-            largo de los años— puede llegar a representar un valor de vida de alrededor de
-            3.000€ para la clínica. Cuando ese paciente deja de venir sin que nadie lo note,
-            ese valor se queda congelado, esperando a que alguien retome el contacto.
+            Se recuperan filtrando tu base por fecha de última visita y contactando a quien
+            lleve más de doce meses sin aparecer. Merece la pena porque un paciente
+            recurrente —que viene a sus revisiones, limpiezas y tratamientos a lo largo de
+            los años— puede llegar a representar un valor de vida de alrededor de 3.000€
+            para la clínica.
+          </P>
+          <BlogSource>SEME (Sociedad Española de Medicina Estética)</BlogSource>
+          <P>
+            Cuando ese paciente deja de venir sin que nadie lo note, ese valor se queda
+            congelado, esperando a que alguien retome el contacto.
           </P>
           <P>
-            El problema es que, hecho a mano, identificar quién lleva tiempo sin venir y
-            contactar con cada persona es una tarea que requiere tiempo que el equipo casi
-            nunca tiene. Con un sistema automático que detecta estos patrones y envía mensajes
-            de recuperación por WhatsApp, ese trabajo se hace solo, sin que nadie tenga que
-            revisar la agenda manualmente.
+            Ese filtro lo puede sacar cualquier software de gestión dental —ClinicCloud o
+            Klinikare, por ejemplo, permiten listar pacientes por última cita en un par de
+            clics—, así que el dato ya lo tienes. El problema es el paso siguiente:
+            contactar con cada persona a mano es una tarea que requiere tiempo que el equipo
+            casi nunca tiene. Con un sistema automático que detecta estos patrones y envía
+            mensajes de recuperación por WhatsApp, ese trabajo se hace solo, sin que nadie
+            tenga que revisar la agenda manualmente.
           </P>
           <P>
             Si quieres ver cómo funciona este proceso paso a paso, en{" "}
@@ -212,10 +276,20 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
 
           <H2>Reduce los no-shows que vacían tu agenda</H2>
           <P>
-            Entre el 12% y el 19% de las citas de una clínica dental terminan en no-show. Cada
-            uno de esos huecos representa tiempo de gabinete y de personal que no genera
-            ningún ingreso, pero que sí tiene un coste fijo asociado. En clínicas con buen
-            volumen de citas, esto puede suponer pérdidas de hasta 7.500€ al mes.
+            Los no-shows se reducen con recordatorios automáticos y confirmación activa en
+            los días previos a la cita. Es la palanca más rentable de todas porque entre el
+            12% y el 19% de las citas de una clínica dental terminan sin que el paciente
+            aparezca — y cada uno de esos huecos es tiempo de gabinete y de personal que no
+            genera ingreso pero sí tiene un coste fijo asociado.
+          </P>
+          <BlogSource>
+            tasa media de no-shows del 12-19% en clínicas privadas españolas.
+          </BlogSource>
+          <P>
+            En clínicas con buen volumen de citas, esto puede suponer pérdidas de hasta
+            7.500€ al mes. Sale de una cuenta sencilla — 20 citas al día × 22 días
+            laborables × 15% de no-shows × un ticket medio de unos 115€ — así que la cifra
+            cambia bastante según el tamaño de la clínica y el tipo de tratamiento.
           </P>
           <P>
             Reducir los no-shows no requiere más pacientes, solo mejor gestión de los que ya
@@ -231,11 +305,11 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
 
           <H2>Aumenta el ticket medio con seguimiento post-cita</H2>
           <P>
-            Otra fuente de facturación que muchas clínicas dejan pasar es el seguimiento
-            después de una cita. Un paciente que viene a una revisión puede tener necesidades
-            adicionales — un tratamiento pendiente, una consulta estética, una recomendación
-            de un especialista — que nunca se llegan a plantear porque no hay un seguimiento
-            estructurado.
+            El ticket medio sube cuando cada visita termina con un mensaje de seguimiento
+            que recuerda lo que quedó pendiente. Un paciente que viene a una revisión suele
+            tener necesidades adicionales — un tratamiento aplazado, un presupuesto que
+            nunca contestó, una siguiente fase que se quedó a medias — que no se plantean
+            simplemente porque nadie vuelve sobre ellas.
           </P>
           <P>
             Un mensaje de seguimiento tras la cita, preguntando cómo se encuentra el paciente
@@ -255,18 +329,22 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
 
           <H2>Automatiza para que funcione sin esfuerzo del equipo</H2>
           <P>
-            Todas estas estrategias —recuperar pacientes inactivos, reducir no-shows, hacer
-            seguimiento post-cita— tienen algo en común: si dependen de que alguien del
-            equipo se acuerde de hacerlas cada día, casi nunca se llevan a cabo de forma
-            constante. La agenda diaria siempre gana.
+            Se automatiza conectando tu software de gestión con WhatsApp, de forma que los
+            mensajes salgan solos según el historial de cada paciente. Es la única manera de
+            que estas estrategias se sostengan: si dependen de que alguien del equipo se
+            acuerde cada día, casi nunca se ejecutan de forma constante — la agenda diaria
+            siempre gana.
           </P>
           <P>
-            La solución es automatizarlas a través de WhatsApp, el canal donde se lee entre el
-            95% y el 98% de los mensajes, frente al 20-25% de un email. Una vez configurado el
+            El canal importa tanto como la automatización: en WhatsApp se lee entre el 95% y
+            el 98% de los mensajes, frente al 20-25% de un email. Una vez configurado el
             sistema, los mensajes de recuperación, recordatorios y seguimientos se envían
             solos, según el historial y la situación de cada paciente, y el equipo solo entra
             en juego cuando alguien responde para reservar.
           </P>
+          <BlogSource>
+            tasas de apertura de referencia del sector para WhatsApp y email marketing.
+          </BlogSource>
           <P>
             El resultado es una clínica que aprovecha al máximo la base de pacientes que ya
             tiene, sin necesidad de aumentar el presupuesto de publicidad ni de sumar carga de

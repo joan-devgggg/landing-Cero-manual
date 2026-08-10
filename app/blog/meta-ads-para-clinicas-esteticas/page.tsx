@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
+import BlogTable from "@/components/BlogTable"
+import BlogSource from "@/components/BlogSource"
 
 const PATH = "/blog/meta-ads-para-clinicas-esteticas"
 const TITLE = "Meta Ads para clínicas estéticas: consigue leads sin que te bloqueen | Cero Manual"
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     url: `https://ceromanual.es${PATH}`,
     type: "article",
     publishedTime: "2026-06-09T00:00:00.000Z",
-    modifiedTime: "2026-06-09T00:00:00.000Z",
+    modifiedTime: "2026-08-11T00:00:00.000Z",
   },
 }
 
@@ -43,7 +45,7 @@ const faqs = [
   },
   {
     q: "¿Necesito una landing page especial para mis anuncios?",
-    a: "No es imprescindible tener una landing elaborada, pero sí necesitas algo que responda al lead en segundos. El 40% de las consultas de una clínica llegan fuera de horario — si tu anuncio funciona a las 10 de la noche y nadie contesta hasta el día siguiente, ese lead ya se ha enfriado. Un agente de WhatsApp que responda y cualifique de forma inmediata marca una diferencia enorme en la tasa de conversión.",
+    a: "No es imprescindible tener una landing elaborada, pero sí necesitas algo que responda al lead en segundos. Los anuncios se entregan a todas horas, así que buena parte de las consultas llega fuera de horario — si tu anuncio funciona a las 10 de la noche y nadie contesta hasta el día siguiente, ese lead ya se ha enfriado. De hecho, para la mayoría de clínicas es más rentable enviar el tráfico directamente a WhatsApp que a una web: el paciente pregunta precio y disponibilidad en el mismo chat, sin rellenar un formulario. Un agente de WhatsApp que responda y cualifique de forma inmediata marca una diferencia enorme en la tasa de conversión.",
   },
 ]
 
@@ -57,7 +59,7 @@ const articleJsonLd = {
     name: "Joan - Cero Manual",
   },
   datePublished: "2026-06-09",
-  dateModified: "2026-06-09",
+  dateModified: "2026-08-11",
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",
@@ -71,6 +73,19 @@ const articleJsonLd = {
     "@type": "WebPage",
     "@id": `https://ceromanual.es${PATH}`,
   },
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
 }
 
 function InternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -125,6 +140,10 @@ export default function MetaAdsArticlePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Navbar />
       <main className="px-6 py-28" style={{ backgroundColor: "#F5F2EE" }}>
         <article className="max-w-3xl mx-auto">
@@ -154,7 +173,7 @@ export default function MetaAdsArticlePage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            9 de junio de 2026 · 8 min de lectura
+            9 de junio de 2026 · 9 min de lectura
           </p>
 
           {/* Intro */}
@@ -169,10 +188,11 @@ export default function MetaAdsArticlePage() {
             El problema es que la mayoría de clínicas llegan a Meta Ads, invierten el primer
             presupuesto y obtienen uno de estos dos resultados: les bloquean el anuncio antes
             de que empiece a rodar, o lo lanzan y los leads no convierten porque nadie
-            responde a tiempo. El 40% de las consultas llegan fuera del horario de atención
-            — y un lead que espera más de cinco minutos tiene un 80% de probabilidades de no
-            contestar cuando alguien le llame al día siguiente.
+            responde a tiempo. Buena parte de las consultas llega fuera del horario de
+            atención — y un lead que espera más de cinco minutos tiene un 80% de
+            probabilidades de no contestar cuando alguien le llame al día siguiente.
           </P>
+          <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
             En esta guía vas a ver por qué Meta Ads funciona especialmente bien para clínicas
             estéticas, cuál es el error que bloquea casi todos los anuncios, qué copy está
@@ -182,11 +202,16 @@ export default function MetaAdsArticlePage() {
 
           <H2>Por qué Meta Ads funciona especialmente bien para clínicas estéticas</H2>
           <P>
-            La razón principal es la combinación de segmentación por interés y segmentación
-            geográfica. Puedes llegar exactamente a personas que han mostrado interés en
-            tratamientos estéticos, bienestar o cuidado personal — y limitarlo a quienes
-            viven o trabajan a menos de diez kilómetros de tu clínica. Ningún buscador te
-            da esa precisión geográfica con ese volumen de audiencia.
+            Meta Ads funciona especialmente bien para clínicas estéticas por tres motivos:
+            permite cruzar interés con geolocalización fina, el formato visual encaja con
+            cómo se vende un tratamiento, y no necesita que el usuario esté buscando nada
+            para que el anuncio funcione. Ninguno de los tres lo da un buscador con el mismo
+            volumen de audiencia.
+          </P>
+          <P>
+            La razón principal es la primera: puedes llegar exactamente a personas que han
+            mostrado interés en tratamientos estéticos, bienestar o cuidado personal — y
+            limitarlo a quienes viven o trabajan a menos de diez kilómetros de tu clínica.
           </P>
           <P>
             El segundo motivo es el formato visual. Los tratamientos estéticos se venden con
@@ -204,10 +229,15 @@ export default function MetaAdsArticlePage() {
 
           <H2>El error que bloquea a casi todas las clínicas: el copy prohibido</H2>
           <P>
-            Meta tiene políticas estrictas sobre publicidad de salud, belleza y bienestar.
-            Concretamente, prohíbe cualquier anuncio que implique — aunque sea de forma
-            indirecta — que el usuario tiene un problema físico que el producto o servicio
-            puede resolver.
+            El error que bloquea casi todos los anuncios es escribir el copy dirigiéndose al
+            problema del usuario en lugar de al servicio que ofreces. Meta prohíbe cualquier
+            anuncio que implique — aunque sea de forma indirecta — que la persona que lo lee
+            tiene un problema físico que tu tratamiento puede resolver.
+          </P>
+          <P>
+            Sus políticas sobre publicidad de salud, belleza y bienestar son estrictas y se
+            aplican de forma automática, así que no hay margen para interpretaciones: si el
+            sistema detecta el patrón, para el anuncio.
           </P>
           <P>
             El problema es que muchas clínicas escriben el copy de sus anuncios exactamente
@@ -230,10 +260,15 @@ export default function MetaAdsArticlePage() {
 
           <H2>Qué copy SÍ está permitido (y qué no)</H2>
           <P>
-            La regla general es hablar de la experiencia y del cuidado personal, no del
-            problema ni del resultado garantizado. El copy que funciona — y que Meta aprueba
-            — describe lo que ofreces en términos de servicio, bienestar y atención, no en
-            términos de corrección de un defecto.
+            Está permitido todo copy que hable de la experiencia, el servicio y el cuidado
+            personal; no lo está el que menciona un problema del usuario, promete un
+            resultado concreto o usa vocabulario médico. La frontera es esa: describes lo
+            que ofreces, no el defecto que corriges.
+          </P>
+          <P>
+            Dicho de otra forma, el copy que Meta aprueba habla en términos de servicio,
+            bienestar y atención — y el que rechaza habla en términos de diagnóstico y
+            promesa.
           </P>
 
           <H3>Copy que Meta aprueba</H3>
@@ -257,14 +292,47 @@ export default function MetaAdsArticlePage() {
           <P>
             La transición más sencilla es reescribir cada frase en positivo y en tercera
             persona del servicio, no en segunda persona del problema. En lugar de «¿tienes
-            X?», di «ofrecemos Y».
+            X?», di «ofrecemos Y». Esta tabla resume los cuatro casos que más bloqueos
+            provocan y cómo reformularlos:
           </P>
+
+          <BlogTable
+            headers={[
+              "Copy que Meta rechaza",
+              "Por qué lo rechaza",
+              "Cómo reescribirlo",
+            ]}
+            rows={[
+              [
+                "«¿Cansada de tus manchas? Tenemos la solución»",
+                "Señala un problema físico del usuario e implica diagnóstico",
+                "«Tratamientos faciales personalizados para el cuidado de tu piel»",
+              ],
+              [
+                "«Elimina la flacidez en 3 sesiones»",
+                "Promete un resultado concreto y medible",
+                "«Descubre nuestros tratamientos de firmeza corporal»",
+              ],
+              [
+                "«Antes y después reales de nuestros tratamientos»",
+                "Las imágenes de antes/después están explícitamente prohibidas",
+                "Testimonio en vídeo sobre la experiencia, sin comparativa visual",
+              ],
+              [
+                "«Para pacientes con piel sensible»",
+                "«Pacientes» activa los filtros de publicidad médica",
+                "«Para quienes buscan una rutina facial más suave»",
+              ],
+            ]}
+          />
 
           <H2>Cómo segmentar para llegar a tu cliente ideal</H2>
           <P>
-            Una buena segmentación reduce el coste por lead y aumenta la calidad de los
-            contactos que recibes. Para clínicas estéticas, hay tres capas que funcionan bien
-            en combinación:
+            Para llegar a tu cliente ideal hay que combinar tres capas de segmentación:
+            geográfica (5-15 km alrededor de la clínica), por interés (belleza, cuidado
+            personal, bienestar) y lookalike a partir de tus propios pacientes. Aplicadas
+            juntas bajan el coste por lead y suben la calidad de los contactos; por separado
+            rinden bastante menos.
           </P>
           <P>
             La primera es la segmentación geográfica. Limita la entrega a un radio de 5-15 km
@@ -286,13 +354,21 @@ export default function MetaAdsArticlePage() {
             similares. El CPL suele ser más bajo y la tasa de conversión, más alta, porque
             estás llegando a personas que se parecen a quienes ya te han elegido.
           </P>
+          <P>
+            Para construirla necesitas exportar tu base de pacientes, y ahí es donde se nota
+            tener la ficha ordenada: desde Flowww, Koibox o Booksy puedes sacar el listado de
+            clientes reales y subirlo como audiencia de origen. Si vas a hacerlo, filtra por
+            quienes ya han pagado un tratamiento — una lista de curiosos que solo pidieron
+            precio genera un lookalike igual de tibio que ellos.
+          </P>
 
           <H2>Presupuesto mínimo y qué esperar los primeros 30 días</H2>
           <P>
-            Meta necesita datos para optimizar la entrega. Con menos de 300-500€ al mes los
-            primeros treinta días, el volumen de impresiones es demasiado bajo para que el
-            algoritmo aprenda qué tipo de usuario convierte mejor — y los resultados que ves
-            no son representativos de lo que podrías conseguir a pleno rendimiento.
+            El presupuesto mínimo razonable es de 300-500€ al mes, y lo que debes esperar
+            los primeros treinta días es aprendizaje, no rentabilidad. Con menos de esa
+            cifra el volumen de impresiones es demasiado bajo para que el algoritmo aprenda
+            qué tipo de usuario convierte mejor — y los resultados que ves no son
+            representativos de lo que podrías conseguir a pleno rendimiento.
           </P>
           <P>
             Los primeros días son los más caros: Meta está explorando la audiencia, todavía
@@ -308,8 +384,9 @@ export default function MetaAdsArticlePage() {
           </P>
           <P>
             Y aquí entra el punto más crítico que pocas clínicas tienen resuelto: captar el
-            lead es solo la mitad del trabajo. El 40% de los leads que llegan fuera de
-            horario necesitan respuesta inmediata — en segundos, no en horas. Un{" "}
+            lead es solo la mitad del trabajo. Los anuncios rinden a todas horas, así que
+            una parte importante de los leads entra de noche o en fin de semana y necesita
+            respuesta inmediata — en segundos, no en horas. Un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}

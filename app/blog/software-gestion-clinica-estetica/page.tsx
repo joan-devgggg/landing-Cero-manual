@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
+import BlogTable from "@/components/BlogTable"
+import BlogSource from "@/components/BlogSource"
 
 const PATH = "/blog/software-gestion-clinica-estetica"
 const TITLE = "Software de gestión para clínicas estéticas: guía completa | Cero Manual"
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     url: `https://ceromanual.es${PATH}`,
     type: "article",
     publishedTime: "2026-06-13T00:00:00.000Z",
-    modifiedTime: "2026-06-13T00:00:00.000Z",
+    modifiedTime: "2026-08-11T00:00:00.000Z",
   },
 }
 
@@ -35,7 +37,7 @@ const faqs = [
   },
   {
     q: "¿Cuál es el software de gestión más importante para empezar?",
-    a: "Si solo puedes empezar por uno, que sea un sistema de agenda y citas online. Es la base sobre la que luego se conecta todo lo demás — recordatorios, CRM, automatización — y es lo que más impacto tiene de forma inmediata en reducir llamadas y no-shows.",
+    a: "Si solo puedes empezar por uno, que sea un sistema de agenda y citas online. Es la base sobre la que luego se conecta todo lo demás — recordatorios, CRM, automatización — y es lo que más impacto tiene de forma inmediata en reducir llamadas y no-shows. Además es la capa más barata y la más rápida de poner en marcha: herramientas ligeras como Booksy o Treatwell se configuran en días, y plataformas más completas como Flowww o Koibox incluyen la agenda dentro del paquete. Lo que no conviene es empezar por el CRM sin tener la agenda ordenada, porque acabas con una base de datos que nadie actualiza.",
   },
   {
     q: "¿Cuántas herramientas distintas necesita una clínica estética?",
@@ -57,7 +59,7 @@ const articleJsonLd = {
     name: "Joan - Cero Manual",
   },
   datePublished: "2026-06-13",
-  dateModified: "2026-06-13",
+  dateModified: "2026-08-11",
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",
@@ -71,6 +73,19 @@ const articleJsonLd = {
     "@type": "WebPage",
     "@id": `https://ceromanual.es${PATH}`,
   },
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
 }
 
 function InternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -114,6 +129,10 @@ export default function SoftwareGestionClinicaEsteticaPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Navbar />
       <main className="px-6 py-28" style={{ backgroundColor: "#F5F2EE" }}>
         <article className="max-w-3xl mx-auto">
@@ -143,7 +162,7 @@ export default function SoftwareGestionClinicaEsteticaPage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            13 de junio de 2026 · 7 min de lectura
+            13 de junio de 2026 · 8 min de lectura
           </p>
 
           {/* Intro */}
@@ -168,10 +187,14 @@ export default function SoftwareGestionClinicaEsteticaPage() {
 
           <H2>Qué tipos de software necesita una clínica estética</H2>
           <P>
-            En general, el software que usa una clínica estética se puede agrupar en tres
-            grandes bloques. El primero es la gestión de citas y agenda: el calendario
-            donde se organiza el día a día, las salas, los profesionales y los
-            tratamientos.
+            Una clínica estética necesita software de tres tipos: gestión de citas, CRM o
+            ficha de paciente, y automatización. No hacen falta los tres desde el primer
+            día, pero sí conviene saber que son capas distintas antes de contratar nada.
+          </P>
+          <P>
+            El primero es la gestión de citas y agenda: el calendario donde se organiza el
+            día a día, las salas, los profesionales y los tratamientos. Es la capa que casi
+            ninguna clínica puede saltarse.
           </P>
           <P>
             El segundo bloque es el CRM, o gestión de pacientes: el histórico de cada
@@ -184,13 +207,25 @@ export default function SoftwareGestionClinicaEsteticaPage() {
             responder mensajes, hacer seguimiento de pacientes — sin que nadie tenga que
             ejecutarlas manualmente cada vez.
           </P>
+          <P>
+            En el mercado español estas capas no siempre vienen separadas: plataformas como
+            Flowww o Koibox integran agenda y ficha de paciente en una sola herramienta,
+            mientras que opciones más ligeras como Booksy o Treatwell cubren sobre todo la
+            reserva online. Lo importante no es el nombre, sino saber qué capa estás
+            comprando.
+          </P>
 
           <H2>Software de citas vs CRM vs automatización: las diferencias clave</H2>
           <P>
-            Es habitual confundir estos tres tipos de software porque, vistos desde fuera,
-            todos "organizan" algo. Pero cada uno resuelve un problema distinto. El
-            software de citas responde a la pregunta "¿qué hay que hacer hoy y a qué
-            hora": gestiona el calendario y la disponibilidad.
+            La diferencia clave es la pregunta que responde cada uno: el software de citas
+            responde "¿qué hay que hacer hoy y a qué hora", el CRM responde "¿quién es este
+            paciente y qué sabemos de él", y la automatización responde "¿quién se encarga
+            de esto si no hay nadie disponible". Se confunden porque, vistos desde fuera,
+            los tres "organizan" algo — pero cada uno resuelve un problema distinto.
+          </P>
+          <P>
+            El software de citas gestiona el calendario y la disponibilidad: salas,
+            profesionales, duración de cada tratamiento.
           </P>
           <P>
             El CRM responde a "¿quién es este paciente y qué sabemos de él": guarda el
@@ -205,12 +240,46 @@ export default function SoftwareGestionClinicaEsteticaPage() {
             pero no son intercambiables.
           </P>
 
+          <BlogTable
+            headers={[
+              "Tipo",
+              "Pregunta que responde",
+              "Qué NO hace",
+              "Ejemplo de herramienta",
+            ]}
+            rows={[
+              [
+                "Software de citas y agenda",
+                "«¿Qué hay que hacer hoy y a qué hora?»",
+                "No sabe quién dejó de venir ni por qué",
+                "Booksy, Treatwell",
+              ],
+              [
+                "CRM o ficha de paciente",
+                "«¿Quién es este paciente y qué sabemos de él?»",
+                "Guarda el dato, pero no contacta a nadie por su cuenta",
+                "Flowww, Koibox",
+              ],
+              [
+                "Automatización con IA",
+                "«¿Quién se encarga de esto si no hay nadie disponible?»",
+                "No sustituye a la agenda ni a la ficha: se apoya en ellas",
+                "Agente de WhatsApp conectado a tu calendario",
+              ],
+            ]}
+          />
+
           <H2>Los errores más comunes al elegir software para tu clínica</H2>
           <P>
-            El error más frecuente es elegir software por la lista de funciones en lugar
-            de por el problema que se quiere resolver. Una plataforma puede tener
-            decenas de funcionalidades y, aun así, no resolver el problema concreto que
-            tiene tu clínica — por ejemplo, los huecos de agenda de última hora.
+            Los tres errores más comunes son elegir por lista de funciones en lugar de por
+            problema, ignorar cuánto cuesta poner la herramienta en marcha, y acumular
+            aplicaciones sin revisar las que ya se tienen. Los tres acaban en lo mismo:
+            pagar por software que nadie usa del todo.
+          </P>
+          <P>
+            El más frecuente es el primero. Una plataforma puede tener decenas de
+            funcionalidades y, aun así, no resolver el problema concreto que tiene tu
+            clínica — por ejemplo, los huecos de agenda de última hora.
           </P>
           <P>
             El segundo error es no tener en cuenta cuánto tiempo cuesta poner en marcha
@@ -220,7 +289,7 @@ export default function SoftwareGestionClinicaEsteticaPage() {
           </P>
           <P>
             Y el tercer error, muy habitual, es acumular herramientas sin revisar las que
-            ya se tienen. Hasta un 40% de las consultas de una clínica llegan fuera del
+            ya se tienen. Buena parte de las consultas de una clínica llega fuera del
             horario de atención, y muchas clínicas contratan una nueva herramienta para
             ese problema sin haber aprovechado lo que ya tenían configurado en la que
             usaban antes.
@@ -228,12 +297,15 @@ export default function SoftwareGestionClinicaEsteticaPage() {
 
           <H2>Qué funcionalidades son imprescindibles y cuáles opcionales</H2>
           <P>
-            Hay un núcleo de funcionalidades que sí o sí debería tener cualquier software
-            de gestión de clínica estética: agenda online con disponibilidad en tiempo
-            real, recordatorios automáticos de citas, ficha de paciente con historial de
-            tratamientos y un canal de comunicación centralizado — normalmente WhatsApp,
-            por su tasa de apertura del 95-98%.
+            Imprescindibles son cuatro: agenda online con disponibilidad en tiempo real,
+            recordatorios automáticos de citas, ficha de paciente con historial de
+            tratamientos y un canal de comunicación centralizado — normalmente WhatsApp, por
+            su tasa de apertura del 95-98%. Todo lo demás es opcional hasta que esas cuatro
+            estén resueltas.
           </P>
+          <BlogSource>
+            tasas de apertura de referencia del sector para WhatsApp y email marketing.
+          </BlogSource>
           <P>
             Por otro lado, hay funcionalidades que son interesantes pero no urgentes al
             principio: informes avanzados de facturación, integraciones con marketing,
@@ -250,17 +322,24 @@ export default function SoftwareGestionClinicaEsteticaPage() {
 
           <H2>Cuándo añadir automatización con IA a tu stack</H2>
           <P>
-            La automatización con IA no sustituye a la agenda ni al CRM — se construye
-            encima de ellos. Tiene sentido añadirla cuando ya tienes la base organizada
-            pero sigues perdiendo oportunidades por falta de tiempo del equipo, no por
-            falta de herramientas.
+            Tiene sentido añadirla cuando ya tienes la agenda y la ficha de paciente
+            organizadas pero sigues perdiendo oportunidades por falta de tiempo del equipo,
+            no por falta de herramientas. La automatización con IA no sustituye a la agenda
+            ni al CRM — se construye encima de ellos, así que llega tarde si la base todavía
+            está a medias.
           </P>
           <P>
             El ejemplo más claro es el de los mensajes fuera de horario. Si un lead no
             recibe respuesta en los primeros 5 minutos, la probabilidad de perderlo puede
-            llegar al 80% — y con un valor medio por paciente (LTV) de alrededor de
-            3.000€, cada consulta que se queda sin respuesta tiene un coste real.
+            llegar al 80%.
           </P>
+          <BlogSource>MIT Lead Response Management Study</BlogSource>
+          <P>
+            Y con un valor medio por paciente (LTV) de alrededor de 3.000€ en clínica
+            estética, cada consulta que se queda sin respuesta tiene un coste real y
+            medible: no hacen falta muchas al mes para que la cuenta salga.
+          </P>
+          <BlogSource>SEME (Sociedad Española de Medicina Estética)</BlogSource>
           <P>
             En ese punto, un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
@@ -273,11 +352,15 @@ export default function SoftwareGestionClinicaEsteticaPage() {
 
           <H2>Cómo elegir sin que sea un quebradero de cabeza</H2>
           <P>
-            La forma más sencilla de elegir software de gestión es empezar por el final:
-            define qué problema quieres resolver — agenda desorganizada, no-shows,
-            mensajes sin responder, pacientes que no vuelven — y busca la herramienta que
-            resuelve ese problema concreto, sin dejarte llevar por la lista completa de
-            funciones.
+            Se elige empezando por el final: define primero qué problema quieres resolver —
+            agenda desorganizada, no-shows, mensajes sin responder, pacientes que no vuelven
+            — y busca después la herramienta que resuelve ese problema concreto. Ese orden
+            te ahorra el 90% de las demos, porque descarta de entrada casi todo el mercado.
+          </P>
+          <P>
+            El resto es no dejarse llevar por la lista completa de funciones: casi todas las
+            plataformas del sector prometen lo mismo en su web, y la diferencia real está en
+            lo que tu equipo va a usar cada día.
           </P>
           <P>
             Después, prioriza la base: agenda y CRM bien configurados son el cimiento

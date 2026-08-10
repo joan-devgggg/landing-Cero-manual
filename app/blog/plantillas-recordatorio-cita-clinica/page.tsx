@@ -4,11 +4,13 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
+import BlogTable from "@/components/BlogTable"
+import BlogSource from "@/components/BlogSource"
 
 const PATH = "/blog/plantillas-recordatorio-cita-clinica"
 const TITLE = "Plantillas de recordatorio de cita para clínicas: ejemplos listos para usar | Cero Manual"
 const DESCRIPTION =
-  "Los recordatorios de cita por WhatsApp reducen los no-shows un 40%. Aquí tienes plantillas reales que puedes copiar y adaptar a tu clínica."
+  "Los recordatorios de cita por WhatsApp son la forma más directa de reducir los no-shows. Aquí tienes plantillas reales que puedes copiar y adaptar a tu clínica."
 const HEADLINE = "Plantillas de recordatorio de cita para clínicas: ejemplos listos para copiar"
 
 export const metadata: Metadata = {
@@ -23,26 +25,26 @@ export const metadata: Metadata = {
     url: `https://ceromanual.es${PATH}`,
     type: "article",
     publishedTime: "2026-06-13T00:00:00.000Z",
-    modifiedTime: "2026-06-13T00:00:00.000Z",
+    modifiedTime: "2026-08-11T00:00:00.000Z",
   },
 }
 
 const faqs = [
   {
     q: "¿Cuántos recordatorios debo enviar por cita?",
-    a: "Lo más habitual y efectivo es enviar dos: uno 24 horas antes, para que el paciente pueda organizarse con margen, y otro 2 horas antes, para evitar olvidos de última hora. Enviar más de dos suele resultar molesto y no mejora los resultados.",
+    a: "Lo más habitual y efectivo es enviar dos: uno 24 horas antes, para que el paciente pueda organizarse con margen, y otro 2 horas antes, para evitar olvidos de última hora. Enviar más de dos suele resultar molesto y no mejora los resultados — a partir del tercero el paciente empieza a leer los mensajes en diagonal, que es justo lo contrario de lo que buscas. Si la cita se reservó con mucha antelación, una alternativa mejor que añadir un tercer aviso es adelantar el primero a 48 o 72 horas antes, para tener margen de recolocar el hueco si cancela.",
   },
   {
     q: "¿Es mejor pedir confirmación o solo avisar?",
-    a: "Pedir confirmación activa funciona mejor. Un recordatorio que solo informa («te recordamos tu cita») se puede ignorar sin consecuencias. Uno que pide una respuesta concreta — un «sí», un emoji, un botón — convierte el recordatorio en un pequeño compromiso, mucho más difícil de romper.",
+    a: "Pedir confirmación activa funciona mejor. Un recordatorio que solo informa («te recordamos tu cita») se puede ignorar sin consecuencias. Uno que pide una respuesta concreta — un «sí», un emoji, un botón — convierte el recordatorio en un pequeño compromiso, mucho más difícil de romper. Además te da información accionable: quien responde que no puede venir te está liberando el hueco con horas de antelación, tiempo suficiente para ofrecérselo a otro paciente en lugar de descubrir el vacío cuando ya ha pasado la hora.",
   },
   {
     q: "¿Puedo usar estas plantillas tal cual o tengo que adaptarlas?",
-    a: "Puedes usarlas como base, pero te recomendamos adaptar el tono y el nombre de la clínica para que suenen naturales y coherentes con el resto de tu comunicación. Cambiar cuatro palabras marca la diferencia entre un mensaje que parece de una centralita y uno que parece de tu equipo.",
+    a: "Puedes usarlas como base, pero te recomendamos adaptar el tono y el nombre de la clínica para que suenen naturales y coherentes con el resto de tu comunicación. Cambiar cuatro palabras marca la diferencia entre un mensaje que parece de una centralita y uno que parece de tu equipo. Como referencia, escribe el recordatorio como lo diría por teléfono la persona de recepción que mejor trato tiene, y quita todo lo que no diría en voz alta. Ten en cuenta también que, si envías por la API de WhatsApp Business, las plantillas hay que darlas de alta y que Meta las apruebe antes de usarlas.",
   },
   {
     q: "¿Qué pasa si el paciente no responde al recordatorio?",
-    a: "Si no responde al primer recordatorio, el segundo aviso (2h antes) suele resolver la mayoría de los casos. Si tampoco contesta, lo ideal es tener un seguimiento breve después de la franja de la cita, igual que harías con cualquier lead que tarda en responder.",
+    a: "Si no responde al primer recordatorio, el segundo aviso (2h antes) suele resolver la mayoría de los casos. Si tampoco contesta, lo ideal es tener un seguimiento breve después de la franja de la cita, igual que harías con cualquier lead que tarda en responder. Ese mensaje posterior cumple dos funciones: recupera al paciente que simplemente se despistó y te dice cuáles son los huecos que de verdad se han perdido. Y en agendas con lista de espera, un no-show sin respuesta a dos horas vista es señal suficiente para empezar a ofrecer ese hueco a otro paciente.",
   },
 ]
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
     name: "Joan - Cero Manual",
   },
   datePublished: "2026-06-13",
-  dateModified: "2026-06-13",
+  dateModified: "2026-08-11",
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",
@@ -70,6 +72,19 @@ const articleJsonLd = {
     "@type": "WebPage",
     "@id": `https://ceromanual.es${PATH}`,
   },
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
 }
 
 function InternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -129,6 +144,10 @@ export default function PlantillasRecordatorioPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Navbar />
       <main className="px-6 py-28" style={{ backgroundColor: "#F5F2EE" }}>
         <article className="max-w-3xl mx-auto">
@@ -158,7 +177,7 @@ export default function PlantillasRecordatorioPage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            13 de junio de 2026 · 6 min de lectura
+            13 de junio de 2026 · 7 min de lectura
           </p>
 
           {/* Intro */}
@@ -171,10 +190,14 @@ export default function PlantillasRecordatorioPage() {
           </P>
           <P>
             Los recordatorios por WhatsApp tienen una tasa de apertura del 95-98%, frente al
-            20-25% del email o el SMS. Y cuando están bien planteados, reducen los no-shows
-            hasta un 40% — un porcentaje nada despreciable si tenemos en cuenta que entre el
-            12% y el 19% de las citas de una clínica terminan sin que el paciente aparezca.
+            20-25% del email o el SMS. Y cuando están bien planteados, recortan de forma
+            notable los no-shows — algo que importa si tenemos en cuenta que entre el 12% y
+            el 19% de las citas de una clínica terminan sin que el paciente aparezca.
           </P>
+          <BlogSource>
+            tasa media de no-shows del 12-19% en clínicas privadas españolas, y tasas de
+            apertura de referencia del sector para WhatsApp y email marketing.
+          </BlogSource>
           <P>
             En este artículo vas a encontrar plantillas reales, listas para copiar y
             adaptar: recordatorios 24h antes, recordatorios 2h antes y mensajes de
@@ -184,8 +207,14 @@ export default function PlantillasRecordatorioPage() {
 
           <H2>Qué debe incluir un buen recordatorio de cita</H2>
           <P>
-            Antes de entrar en las plantillas, conviene tener claro qué elementos no pueden
-            faltar en ningún recordatorio, sea cual sea el momento en que se envíe:
+            Un buen recordatorio incluye cinco elementos: nombre de la clínica, fecha y hora
+            exactas, profesional o tipo de cita, una acción clara que el paciente pueda
+            hacer en un toque, y un tono cercano. Si falta alguno, el mensaje se lee por
+            encima y no provoca ninguna reacción.
+          </P>
+          <P>
+            Antes de entrar en las plantillas, conviene ver qué aporta cada uno de esos
+            elementos, sea cual sea el momento en que se envíe el mensaje:
           </P>
           <P>
             <strong>Nombre de la clínica.</strong> El paciente recibe decenas de mensajes al
@@ -212,11 +241,47 @@ export default function PlantillasRecordatorioPage() {
             se lee distinto a uno que suena a tu equipo. Pequeños detalles — un emoji
             puntual, el nombre del paciente, una despedida cordial — marcan la diferencia.
           </P>
+          <P>
+            Con esos elementos fijos, lo que cambia entre una plantilla y otra es el momento
+            del envío — y cada momento persigue un objetivo distinto:
+          </P>
+
+          <BlogTable
+            headers={[
+              "Momento del envío",
+              "Objetivo",
+              "Qué le pides al paciente",
+              "Cuándo usarlo",
+            ]}
+            rows={[
+              [
+                "24 horas antes",
+                "Dar margen para reorganizar el día sin perder la cita",
+                "Nada, salvo que necesite cambiarla",
+                "Siempre: es el recordatorio base de cualquier clínica",
+              ],
+              [
+                "2 horas antes",
+                "Evitar el olvido de última hora",
+                "Nada: solo refrescar la hora y el sitio",
+                "En citas cortas o de mucha rotación, donde el hueco es difícil de recolocar",
+              ],
+              [
+                "Confirmación activa",
+                "Convertir el aviso en un compromiso y liberar huecos con antelación",
+                "Una respuesta concreta: «sí», un número o un botón",
+                "En tratamientos largos o de ticket alto, y en agendas con lista de espera",
+              ],
+            ]}
+          />
 
           <H2>Plantillas de recordatorio 24h antes</H2>
           <P>
-            El recordatorio del día anterior tiene un objetivo principal: dar margen. Si el
-            paciente tiene que reorganizar su día, todavía puede hacerlo sin problema.
+            El recordatorio de 24 horas antes debe informar sin exigir nada: fecha, hora,
+            profesional y una puerta abierta por si el paciente necesita cambiarla. Su
+            objetivo es dar margen — si tiene que reorganizar su día, todavía está a tiempo
+            de hacerlo sin dejarte el hueco vacío. Estas dos plantillas cubren los dos tonos
+            más habituales, uno conversacional y otro más formal.
           </P>
           <Template>
             {`Hola [Nombre] 👋 Te escribimos de [Clínica] para recordarte que tienes cita mañana [día] a las [hora] con [profesional/tratamiento].
@@ -233,9 +298,11 @@ Si todo sigue igual no necesitas hacer nada. Si no puedes venir, escríbenos cua
 
           <H2>Plantillas de recordatorio 2h antes</H2>
           <P>
-            El segundo aviso, más cercano a la hora de la cita, es el que evita los olvidos
-            de última hora — esos que ocurren no porque el paciente no quiera venir, sino
-            porque el día se complica y la cita se le pasa por alto.
+            El recordatorio de 2 horas antes tiene que ser corto y directo: hora, sitio y
+            poco más. Es el que evita los olvidos de última hora — esos que ocurren no
+            porque el paciente no quiera venir, sino porque el día se complica y la cita se
+            le pasa por alto. A esta distancia ya no tiene sentido pedir confirmación: si no
+            puede venir, lo que necesitas es que te lo diga cuanto antes.
           </P>
           <Template>
             {`¡Hola [Nombre]! Solo un aviso rápido: tu cita en [Clínica] es hoy a las [hora], dentro de un par de horas. 🦷
@@ -250,9 +317,11 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
 
           <H2>Plantillas de confirmación activa (pide respuesta)</H2>
           <P>
-            Aquí está el cambio que más impacto tiene: pasar de «te avisamos» a «confírmanos».
-            Pedir una respuesta concreta convierte el recordatorio en un compromiso activo,
-            mucho más difícil de ignorar que un simple aviso.
+            Una plantilla de confirmación activa es la que pide una respuesta concreta —un
+            «sí», un número, un botón— en lugar de limitarse a informar. Es el cambio que
+            más impacto tiene sobre los no-shows, porque convierte el recordatorio en un
+            pequeño compromiso: mucho más difícil de ignorar que un aviso que no exige nada
+            de vuelta.
           </P>
           <Template>
             {`Hola [Nombre] 😊 Tienes cita en [Clínica] el [día] a las [hora].
@@ -273,13 +342,22 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
 
           <H2>Cómo automatizar el envío de estas plantillas</H2>
           <P>
-            Tener buenas plantillas es solo la mitad del trabajo. La otra mitad es que se
-            envíen solas, en el momento exacto, sin que nadie de tu equipo tenga que
-            acordarse de hacerlo cita tras cita.
+            El envío se automatiza conectando la agenda de tu software de gestión con
+            WhatsApp, de forma que cada cita dispare sus mensajes sola. Tener buenas
+            plantillas es solo la mitad del trabajo: la otra mitad es que salgan en el
+            momento exacto, sin que nadie de tu equipo tenga que acordarse cita tras cita.
           </P>
           <P>
-            Automatizar el envío significa que cada paciente recibe su recordatorio de 24h y
-            su recordatorio de 2h sin intervención manual, con el tono de tu clínica — no
+            La mayoría de plataformas del sector ya traen recordatorios básicos —ClinicCloud
+            o Klinikare en dental, Booksy o Koibox en estética—, y para muchas clínicas eso
+            cubre el aviso de 24 horas. El límite aparece con la confirmación activa: envían
+            el mensaje, pero no gestionan la respuesta, así que si el paciente contesta «no
+            puedo, ¿lo movemos al jueves?» alguien tiene que leerlo y recolocar el hueco a
+            mano.
+          </P>
+          <P>
+            Automatizar de verdad significa que cada paciente recibe su recordatorio de 24h
+            y su recordatorio de 2h sin intervención manual, con el tono de tu clínica — no
             con el de una centralita genérica. Y si el sistema detecta que alguien no
             confirma, puede activar un seguimiento adicional antes de que ese hueco se quede
             vacío.
@@ -294,9 +372,9 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
             esto ocurra sin esfuerzo añadido para tu equipo.
           </P>
           <P>
-            El resultado, según los datos del sector, es una reducción de hasta un 40% en
-            los no-shows — es decir, recuperar buena parte de ese 12-19% de citas que hoy se
-            quedan vacías. Si quieres ver paso a paso cómo se monta este sistema, en{" "}
+            El resultado es una caída notable de los no-shows — es decir, recuperar buena
+            parte de ese 12-19% de citas que hoy se quedan vacías. Si quieres ver paso a
+            paso cómo se monta este sistema, en{" "}
             <InternalLink href="/blog/como-reducir-no-shows-clinica-dental">
               este artículo
             </InternalLink>{" "}
@@ -326,7 +404,7 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
               Te explicamos cómo automatizar el envío de recordatorios por WhatsApp y
-              reducir los no-shows de tu clínica hasta un 40% desde el primer mes.
+              reducir los no-shows de tu clínica desde el primer mes.
             </p>
             <Link
               href="/blog/como-reducir-no-shows-clinica-dental"
