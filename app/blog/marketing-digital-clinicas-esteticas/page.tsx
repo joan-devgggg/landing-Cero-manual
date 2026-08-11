@@ -6,6 +6,10 @@ import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import BlogTable from "@/components/BlogTable"
 import BlogSource from "@/components/BlogSource"
+import P from "@/components/blog/P"
+import H2 from "@/components/blog/H2"
+import H3 from "@/components/blog/H3"
+import InternalLink from "@/components/blog/InternalLink"
 
 const PATH = "/blog/marketing-digital-clinicas-esteticas"
 const TITLE = "Marketing digital para clínicas estéticas: guía completa | Cero Manual"
@@ -73,51 +77,6 @@ const articleJsonLd = {
     "@type": "WebPage",
     "@id": `https://ceromanual.es${PATH}`,
   },
-}
-
-function InternalLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <Link
-      href={href}
-      className="underline decoration-1 underline-offset-2 transition-colors duration-150"
-      style={{ color: "#7D9B76" }}
-    >
-      {children}
-    </Link>
-  )
-}
-
-function P({ children }: { children: React.ReactNode }) {
-  return (
-    <p
-      className="text-base leading-relaxed mb-4"
-      style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
-    >
-      {children}
-    </p>
-  )
-}
-
-function H2({ children }: { children: React.ReactNode }) {
-  return (
-    <h2
-      className="text-2xl md:text-3xl font-semibold leading-snug mt-16 mb-5"
-      style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
-    >
-      {children}
-    </h2>
-  )
-}
-
-function H3({ children }: { children: React.ReactNode }) {
-  return (
-    <h3
-      className="text-lg md:text-xl font-semibold leading-snug mt-10 mb-3"
-      style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
-    >
-      {children}
-    </h3>
-  )
 }
 
 export default function MarketingDigitalClinicasArticlePage() {
