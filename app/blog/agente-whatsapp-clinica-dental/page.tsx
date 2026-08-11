@@ -297,25 +297,25 @@ export default function AgenteWhatsappClinicaDentalArticlePage() {
               className="text-2xl md:text-3xl font-semibold leading-snug mb-4"
               style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
             >
-              ¿Quieres que tu clínica dental responda en WhatsApp 24/7?
+              ¿Quieres que tu clínica dental confirme las citas sola?
             </h2>
             <p
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Descubre cómo un agente de WhatsApp puede atender a tus pacientes, confirmar
-              citas y reducir los no-shows sin que tu equipo tenga que estar pendiente
-              todo el día.
+              Es la parte del agente que antes recupera lo invertido: recordatorios por
+              WhatsApp que salen solos antes de cada cita, piden confirmación y liberan el
+              hueco cuando el paciente no puede venir.
             </p>
             <Link
-              href="/agente-whatsapp-clinicas-esteticas"
+              href="/recordatorios-automaticos-citas"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Ver el agente de WhatsApp →
+              Ver los recordatorios automáticos →
             </Link>
           </div>
         </div>

@@ -309,22 +309,22 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Descubre cómo el{" "}
-              <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-                agente de WhatsApp para clínicas
+              Empieza por la confirmación de citas, que es la que menos cuesta montar y la
+              primera que se nota en la agenda. Los{" "}
+              <InternalLink href="/recordatorios-automaticos-citas">
+                recordatorios automáticos por WhatsApp
               </InternalLink>{" "}
-              puede responder a tus pacientes y leads las 24 horas, sin que nadie de tu
-              equipo tenga que estar pendiente del móvil.
+              salen solos y gestionan la respuesta del paciente.
             </p>
             <Link
-              href="/agente-whatsapp-clinicas-esteticas"
+              href="/recordatorios-automaticos-citas"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Quiero automatizar mi clínica →
+              Ver los recordatorios automáticos →
             </Link>
           </div>
         </div>

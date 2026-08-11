@@ -8,7 +8,7 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 const PATH = "/blog/recordatorios-citas-whatsapp-clinica"
 const TITLE = "Recordatorios de citas por WhatsApp para clínicas: guía completa | Cero Manual"
 const DESCRIPTION =
-  "Los recordatorios por WhatsApp reducen los no-shows un 40%. Te explicamos cómo configurarlos para que funcionen solos en tu clínica."
+  "WhatsApp es el canal que mejor funciona para recordar citas. Te explicamos qué debe incluir el mensaje, cuándo enviarlo y cómo automatizarlo en tu clínica."
 const HEADLINE =
   "Recordatorios de citas por WhatsApp para clínicas: cómo configurarlos para que funcionen solos"
 

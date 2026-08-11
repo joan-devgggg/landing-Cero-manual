@@ -272,18 +272,19 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Te explicamos qué debe tener el software base de tu clínica estética y cuándo tiene
-              sentido añadir automatización con IA por encima de lo que ya usas.
+              Casi todos los software de citas envían un aviso, pero ninguno gestiona la
+              respuesta del paciente. Los recordatorios automáticos por WhatsApp se conectan
+              a la agenda que ya usas, piden confirmación y liberan el hueco si no puede venir.
             </p>
             <Link
-              href="/blog/mejor-software-gestion-clinica-estetica"
+              href="/recordatorios-automaticos-citas"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Ver la guía de software de gestión →
+              Ver los recordatorios automáticos →
             </Link>
           </div>
         </div>

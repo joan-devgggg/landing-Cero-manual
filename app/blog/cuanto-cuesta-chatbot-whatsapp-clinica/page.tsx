@@ -345,18 +345,18 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
               Te mostramos, con tus propios números, cuántas consultas se enfrían cada mes
-              por falta de respuesta — y qué precio y qué retorno tendría un chatbot de
-              WhatsApp para tu clínica.
+              por falta de respuesta — y qué presupuesto concreto tendría el agente de
+              WhatsApp en tu clínica, sin letra pequeña ni permanencia.
             </p>
             <Link
-              href="/blog/chatbot-whatsapp-para-clinicas-esteticas"
+              href="/agente-whatsapp-clinicas-esteticas"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Quiero saber cuánto puedo recuperar →
+              Pedir presupuesto para mi clínica →
             </Link>
           </div>
         </div>

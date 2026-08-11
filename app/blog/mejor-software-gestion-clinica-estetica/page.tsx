@@ -75,19 +75,6 @@ const articleJsonLd = {
   },
 }
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.a,
-    },
-  })),
-}
-
 function InternalLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <Link
@@ -128,10 +115,6 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Navbar />
       <main className="px-6 py-28" style={{ backgroundColor: "#F5F2EE" }}>
@@ -378,18 +361,19 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Te explicamos qué debe tener el software base de tu clínica estética y cuándo
-              tiene sentido añadir automatización con IA por encima de lo que ya usas.
+              Ningún software de gestión responde por ti cuando llega una consulta fuera de
+              horario. El agente de WhatsApp se conecta por encima del que ya usas y atiende
+              esa parte, sin que tengas que cambiar de herramienta.
             </p>
             <Link
-              href="/blog/software-gestion-clinica-estetica"
+              href="/agente-whatsapp-clinicas-esteticas"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Ver la guía de software de gestión →
+              Ver el agente de WhatsApp →
             </Link>
           </div>
         </div>

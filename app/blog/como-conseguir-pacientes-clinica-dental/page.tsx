@@ -264,24 +264,25 @@ export default function ComoConseguirPacientesClinicaDentalArticlePage() {
               className="text-2xl md:text-3xl font-semibold leading-snug mb-4"
               style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
             >
-              ¿Quieres dejar de perder leads que ya llegan a tu clínica?
+              ¿Y si los pacientes que buscas ya están en tu base de datos?
             </h2>
             <p
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Te ayudamos a montar un sistema que responde por WhatsApp al instante,
-              las 24 horas, para que ningún paciente potencial se vaya a otra clínica.
+              Antes de gastar más en captación, la vía más barata es recuperar a los
+              pacientes que dejaron de venir. La reactivación automática los identifica y
+              les escribe por WhatsApp, uno a uno, sin trabajo para tu equipo.
             </p>
             <Link
-              href="/agente-whatsapp-clinicas-esteticas"
+              href="/reactivacion-pacientes-inactivos"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Quiero conseguir más pacientes →
+              Ver la reactivación de pacientes →
             </Link>
           </div>
         </div>

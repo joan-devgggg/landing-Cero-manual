@@ -304,26 +304,25 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
               className="text-2xl md:text-3xl font-semibold leading-snug mb-4"
               style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
             >
-              ¿Listo para que tu clínica dental responda cada mensaje al instante?
+              ¿Listo para dejar de perder citas por cancelaciones?
             </h2>
             <p
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Te enseñamos, con tus propios números, cuántos leads y citas se te están
-              escapando cada mes por falta de respuesta a tiempo — y cómo automatizar
-              WhatsApp puede responder, confirmar citas y reducir no-shows sin que tu equipo
-              esté pendiente del móvil.
+              De todo lo que se puede automatizar en WhatsApp, la confirmación de citas es
+              lo que antes se nota: recordatorios que salen solos antes de cada cita, piden
+              respuesta al paciente y liberan el hueco cuando avisa de que no viene.
             </p>
             <Link
-              href="/agente-whatsapp-clinicas-esteticas"
+              href="/recordatorios-automaticos-citas"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Quiero automatizar mi WhatsApp →
+              Ver los recordatorios automáticos →
             </Link>
           </div>
         </div>

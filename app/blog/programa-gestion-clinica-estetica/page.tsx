@@ -268,18 +268,19 @@ export default function ProgramaGestionClinicaEsteticaPage() {
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Te explicamos qué debe tener el software base de tu clínica estética y cuándo tiene
-              sentido añadir automatización con IA por encima de lo que ya usas.
+              Es el hueco que ningún programa de gestión cubre: nadie contesta cuando la
+              consulta llega fuera de horario. El agente de WhatsApp se conecta por encima
+              del programa que ya usas y atiende esa parte.
             </p>
             <Link
-              href="/blog/mejor-software-gestion-clinica-estetica"
+              href="/agente-whatsapp-clinicas-esteticas"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Ver la guía de software de gestión →
+              Ver el agente de WhatsApp →
             </Link>
           </div>
         </div>

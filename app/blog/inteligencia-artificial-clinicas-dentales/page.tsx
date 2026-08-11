@@ -271,24 +271,25 @@ export default function InteligenciaArtificialClinicasDentalesArticlePage() {
               className="text-2xl md:text-3xl font-semibold leading-snug mb-4"
               style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
             >
-              ¿Quieres ver qué puede automatizar la IA en tu clínica dental?
+              ¿Por dónde empezar con la IA en tu clínica dental?
             </h2>
             <p
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Te ayudamos a montar un agente de WhatsApp con IA que responde, confirma
-              citas y recupera pacientes inactivos, sin añadir trabajo a tu equipo.
+              Por los pacientes que ya tienes. La reactivación automática detecta a quienes
+              dejaron de venir y les escribe por WhatsApp uno a uno, sin que nadie de tu
+              equipo tenga que repasar la base de datos.
             </p>
             <Link
-              href="/agente-whatsapp-clinicas-esteticas"
+              href="/reactivacion-pacientes-inactivos"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Quiero automatizar mi clínica →
+              Ver la reactivación de pacientes →
             </Link>
           </div>
         </div>

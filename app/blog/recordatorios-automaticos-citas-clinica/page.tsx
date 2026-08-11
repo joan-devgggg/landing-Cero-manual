@@ -8,7 +8,7 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 const PATH = "/blog/recordatorios-automaticos-citas-clinica"
 const TITLE = "Recordatorios automáticos de citas para clínicas | Cero Manual"
 const DESCRIPTION =
-  "Los recordatorios automáticos por WhatsApp reducen los no-shows un 40%. Descubre cómo funcionan y cuánto puedes recuperar desde el primer mes."
+  "Qué es un recordatorio automático de citas, qué canal funciona mejor, cuándo enviarlo y por qué pedir confirmación cambia el resultado en tu clínica."
 const HEADLINE =
   "Recordatorios automáticos de citas: cómo reducir no-shows sin llamar uno por uno"
 

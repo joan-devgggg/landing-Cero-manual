@@ -284,24 +284,24 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
               className="text-2xl md:text-3xl font-semibold leading-snug mb-4"
               style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
             >
-              ¿Quieres dejar de perder dinero por no-shows?
+              Haz el cálculo con los números de tu clínica
             </h2>
             <p
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Descubre cómo reducir los no-shows de tu clínica dental hasta un 40% con
-              recordatorios automáticos por WhatsApp.
+              Introduce tus citas al día, tu ticket medio y tus días de trabajo al mes, y verás
+              en segundos cuánto te cuestan los no-shows de tu clínica.
             </p>
             <Link
-              href="/blog/como-reducir-no-shows-clinica-dental"
+              href="/calculadora-no-shows"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Ver cómo reducir no-shows →
+              Calcular mi pérdida por no-shows →
             </Link>
           </div>
         </div>

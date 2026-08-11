@@ -280,28 +280,28 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
               className="text-2xl md:text-3xl font-semibold leading-snug mb-4"
               style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
             >
-              ¿Listo para que WhatsApp trabaje para tu clínica?
+              ¿Listo para que las confirmaciones se envíen solas?
             </h2>
             <p
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Descubre cómo el{" "}
-              <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-                agente de WhatsApp para clínicas
+              Los{" "}
+              <InternalLink href="/recordatorios-automaticos-citas">
+                recordatorios automáticos por WhatsApp
               </InternalLink>{" "}
-              responde, confirma citas y reactiva pacientes por WhatsApp, sin que nadie de tu
-              equipo tenga que estar pendiente del móvil.
+              salen de tu agenda en el momento exacto y gestionan la respuesta del paciente,
+              sin que nadie de tu equipo tenga que estar pendiente del móvil.
             </p>
             <Link
-              href="/agente-whatsapp-clinicas-esteticas"
+              href="/recordatorios-automaticos-citas"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Quiero automatizar mi WhatsApp →
+              Ver los recordatorios automáticos →
             </Link>
           </div>
         </div>

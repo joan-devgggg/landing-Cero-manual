@@ -344,28 +344,25 @@ export default function MejorCrmClinicasDentalesArticlePage() {
               className="text-2xl md:text-3xl font-semibold leading-snug mb-4"
               style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
             >
-              ¿No sabes por dónde empezar a elegir tu CRM?
+              ¿Y si el CRM que necesitas es el que ya tienes?
             </h2>
             <p
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              En el artículo sobre{" "}
-              <InternalLink href="/blog/crm-para-clinicas-esteticas">
-                CRM para clínicas estéticas
-              </InternalLink>{" "}
-              explicamos qué es, cuándo lo necesitas y cómo combinarlo con automatización para
-              que ningún lead se quede sin respuesta.
+              Antes de cambiar de herramienta, mira qué hay dormido en tu base de datos
+              actual. La reactivación automática detecta a los pacientes que dejaron de venir
+              y les escribe por WhatsApp, sin migrar nada.
             </p>
             <Link
-              href="/blog/crm-para-clinicas-esteticas"
+              href="/reactivacion-pacientes-inactivos"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Ver el CRM para clínicas →
+              Ver la reactivación de pacientes →
             </Link>
           </div>
         </div>
