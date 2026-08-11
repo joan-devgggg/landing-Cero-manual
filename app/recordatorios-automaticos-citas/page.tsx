@@ -13,7 +13,7 @@ import { localBusinessProvider, spainAreaServed } from "@/lib/schema"
 const PATH = "/recordatorios-automaticos-citas"
 const TITLE = "Recordatorios automáticos citas clínica | Cero Manual"
 const DESCRIPTION =
-  "Recordatorios automáticos por WhatsApp que reducen tus no-shows hasta un 40% desde el primer mes. Reserva tu auditoría gratuita."
+  "Recordatorios automáticos por WhatsApp que reducen los no-shows de tu clínica desde el primer mes, sin trabajo para tu equipo. Reserva tu auditoría gratuita."
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto bajan realmente los no-shows?",
-    a: "De media, las clínicas que activan los recordatorios automáticos ven una reducción de hasta un 40% desde el primer mes, y siguen bajando a medida que el sistema aprende los patrones de tus clientes.",
+    a: "Las clínicas que activan los recordatorios automáticos suelen ver una caída notable ya desde el primer mes, que sigue bajando a medida que el sistema aprende los patrones de tus clientes. La referencia del sector sitúa los no-shows entre el 12% y el 19% de las citas programadas, así que el margen de mejora es amplio. En la auditoría gratuita calculamos la cifra con tus propios números en lugar de con una media.",
   },
 ]
 
@@ -75,10 +75,10 @@ export default function RecordatoriosPage() {
         <ServiceHero
           label="Para clínicas que pierden ingresos por citas vacías"
           headlineLines={["Recordatorios automáticos que reducen tus no-shows"]}
-          accent="un 40% desde el primer mes"
+          accent="desde el primer mes"
           subheadline="Para clínicas que ven huecos en la agenda cada semana porque alguien se olvida — o decide no avisar — de que tenía cita. Cada hueco vacío es tiempo, sala y producto que ya estaban reservados para nadie."
           metrics={[
-            { value: "−40%", label: "no-shows desde el primer mes" },
+            { value: "95-98%", label: "tasa de apertura en WhatsApp" },
             { value: "Hasta 7.500 €/mes", label: "en pérdidas que se pueden evitar" },
             { value: "12-19%", label: "es la tasa media de no-shows del sector" },
           ]}

@@ -110,7 +110,7 @@ const posts = [
     excerpt:
       "Los recordatorios de cita por WhatsApp reducen los no-shows un 40%. Aquí tienes plantillas reales que puedes copiar y adaptar a tu clínica.",
     date: "2026-06-13",
-    readingTime: "6 min de lectura",
+    readingTime: "7 min de lectura",
   },
   {
     slug: "lista-espera-clinica-dental",
@@ -166,7 +166,7 @@ const posts = [
     excerpt:
       "¿Buscas software de gestión para tu clínica estética? Te explicamos qué necesitas realmente y cuándo tiene sentido automatizar con IA.",
     date: "2026-06-13",
-    readingTime: "7 min de lectura",
+    readingTime: "8 min de lectura",
   },
   {
     slug: "mejor-crm-clinicas-dentales",
@@ -278,7 +278,7 @@ const posts = [
     excerpt:
       "Hay miles de opciones de software para clínicas estéticas. Te explicamos qué necesitas realmente según el tamaño y momento de tu clínica.",
     date: "2026-06-10",
-    readingTime: "7 min de lectura",
+    readingTime: "8 min de lectura",
   },
   {
     slug: "marketing-digital-clinicas-esteticas",
@@ -286,7 +286,7 @@ const posts = [
     excerpt:
       "El marketing digital para clínicas estéticas va más allá de Instagram. Te explicamos los canales que realmente funcionan y por dónde empezar.",
     date: "2026-06-10",
-    readingTime: "8 min de lectura",
+    readingTime: "9 min de lectura",
   },
   {
     slug: "como-conseguir-mas-citas-clinica-estetica",
@@ -303,7 +303,7 @@ const posts = [
     excerpt:
       "Entre el 12% y el 19% de las citas de una clínica dental terminan en no-show. Te contamos 5 estrategias para reducirlos sin volverte loco con llamadas de recordatorio.",
     date: "2026-06-07",
-    readingTime: "8 min de lectura",
+    readingTime: "9 min de lectura",
   },
   {
     slug: "que-es-un-agente-de-voz-ia-para-clinicas",
@@ -319,7 +319,7 @@ const posts = [
     excerpt:
       "Los mensajes de WhatsApp se leen entre un 95% y un 98% de las veces, frente al 20-25% del email. Te explicamos qué es un chatbot de WhatsApp para clínicas estéticas y cómo responde, agenda y cualifica leads las 24 horas.",
     date: "2026-06-07",
-    readingTime: "7 min de lectura",
+    readingTime: "9 min de lectura",
   },
   {
     slug: "como-reactivar-pacientes-inactivos-clinica",
@@ -343,7 +343,7 @@ const posts = [
     excerpt:
       "Meta Ads es el canal más rentable para clínicas estéticas con presupuesto ajustado — si sabes qué copy está prohibido. Guía completa: segmentación, presupuesto mínimo y CPL realista.",
     date: "2026-06-09",
-    readingTime: "8 min de lectura",
+    readingTime: "9 min de lectura",
   },
   {
     slug: "como-conseguir-resenas-google-clinica-estetica",
@@ -359,7 +359,7 @@ const posts = [
     excerpt:
       "Muchas clínicas gestionan leads por WhatsApp, email y agenda sin orden — y pierden oportunidades sin saberlo. Te explicamos qué es un CRM, en qué se diferencia del software de citas y cuándo necesitas uno.",
     date: "2026-06-09",
-    readingTime: "7 min de lectura",
+    readingTime: "8 min de lectura",
   },
   {
     slug: "como-reducir-cancelaciones-clinica-estetica",
@@ -424,7 +424,7 @@ const posts = [
     excerpt:
       "Antes de buscar más pacientes, aprovecha los que ya tienes. Te explicamos cómo aumentar la facturación de tu clínica dental recuperando ingresos perdidos.",
     date: "2026-06-10",
-    readingTime: "7 min de lectura",
+    readingTime: "8 min de lectura",
   },
   {
     slug: "agenda-clinica-estetica-online",
