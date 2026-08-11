@@ -218,8 +218,8 @@ export default function MarketingClinicaDentalArticlePage() {
           </P>
           <P>
             Aquí es donde un{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp para clínicas dentales
             </InternalLink>{" "}
             marca la diferencia: responde al instante, resuelve las preguntas más habituales
             sobre precios, tratamientos y disponibilidad, y deja la conversación lista para
@@ -244,8 +244,8 @@ export default function MarketingClinicaDentalArticlePage() {
             El resultado es que el presupuesto que ya inviertes en Google, SEO o redes
             sociales rinde más, porque deja de perderse en el último paso del embudo: la
             respuesta. El{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp con IA para clínicas dentales
             </InternalLink>{" "}
             está pensado precisamente para cubrir ese último paso, las 24 horas del día.
           </P>

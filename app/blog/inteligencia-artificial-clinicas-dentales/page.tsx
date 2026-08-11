@@ -166,9 +166,9 @@ export default function InteligenciaArtificialClinicasDentalesArticlePage() {
             en no-show — pacientes que no avisan y simplemente no aparecen. Con
             confirmación activa por WhatsApp, ese porcentaje baja de forma notable, porque
             el paciente tiene una forma fácil de avisar y la clínica tiene tiempo de
-            reaccionar. Puedes ver cómo funciona este sistema aplicado a una clínica en{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
+            reaccionar. Puedes ver cómo funciona este sistema en el{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp para clínicas dentales
             </InternalLink>
             .
           </P>
@@ -202,9 +202,9 @@ export default function InteligenciaArtificialClinicasDentalesArticlePage() {
             mensaje personalizado por WhatsApp invitándoles a agendar una revisión. No
             hace falta que nadie del equipo revise listas ni escriba uno por uno: el
             sistema lo hace solo, de forma recurrente. Para ver cómo se monta este tipo de
-            flujo, puedes consultar{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
+            flujo, puedes consultar el{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp para clínicas dentales
             </InternalLink>
             .
           </P>

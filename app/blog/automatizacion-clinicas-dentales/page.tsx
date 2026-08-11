@@ -205,9 +205,9 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
           <P>
             La diferencia no es solo de imagen. Es la diferencia entre captar ese lead o
             perderlo frente a la clínica que sí contestó en cinco minutos. Si quieres ver cómo
-            funciona esto en la práctica, el{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
+            funciona en la práctica, el{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp para clínicas dentales
             </InternalLink>{" "}
             está pensado exactamente para esto.
           </P>
@@ -243,8 +243,8 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             confirmación de citas. Si lo que más te frustra son los leads que se pierden por
             la noche o el fin de semana, empieza por la respuesta automática a esas consultas
             con el{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp para clínicas dentales
             </InternalLink>
             . En ambos casos, el sistema se conecta a lo que ya usas — no hace falta cambiar
             de software de gestión ni formar a tu equipo en una herramienta nueva.

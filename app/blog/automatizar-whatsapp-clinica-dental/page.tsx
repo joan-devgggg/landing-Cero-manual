@@ -183,11 +183,11 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
             Recoge qué necesita el paciente, qué tratamiento le interesa o qué urgencia tiene,
             para que cuando alguien del equipo retome la conversación lo haga con todo el
             contexto, sin tener que empezar de cero. Si quieres ver cómo se aplicaría esto a
-            tu clínica en concreto, en{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
-            </InternalLink>{" "}
-            lo explicamos con ejemplos reales.
+            tu clínica en concreto, lo detallamos en el{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp para clínicas dentales
+            </InternalLink>
+            .
           </P>
 
           <H2>Cómo funciona la automatización de WhatsApp paso a paso</H2>
@@ -241,9 +241,9 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
             inversión en automatizar WhatsApp suele amortizarse con muy pocas citas
             recuperadas al mes. A partir de ahí, el sistema sigue funcionando solo, mes tras
             mes, sin que nadie de tu equipo tenga que dedicarle tiempo extra. Si quieres ver
-            esa cuenta aplicada a tu clínica, con tus propios números, en{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
+            esa cuenta aplicada a tu clínica, con tus propios números, en el{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp para clínicas dentales
             </InternalLink>{" "}
             te explicamos cómo funciona el sistema y qué necesitas para ponerlo en marcha.
           </P>

@@ -175,9 +175,9 @@ export default function ComoConseguirPacientesClinicaDentalArticlePage() {
             los anuncios, en las redes — y respondes con agilidad, tienes muchas más
             probabilidades de convertir ese contacto en una cita que si dependes de que
             alguien rellene un formulario y espere a que le llamen. Puedes ver cómo
-            montar este tipo de atención en{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
+            montar este tipo de atención en el{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp para clínicas dentales
             </InternalLink>
             .
           </P>
@@ -196,9 +196,9 @@ export default function ComoConseguirPacientesClinicaDentalArticlePage() {
             siguiente, una parte importante de esos leads ya se ha ido a otra clínica. Por
             eso, antes de invertir en traer más leads, merece la pena asegurarse de que
             los que ya llegan reciben respuesta inmediata, a cualquier hora. Te explicamos
-            cómo conseguirlo en{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
+            cómo conseguirlo en el{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp con IA para clínicas dentales
             </InternalLink>
             .
           </P>

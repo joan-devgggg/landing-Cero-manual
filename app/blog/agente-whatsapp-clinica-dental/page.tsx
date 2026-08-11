@@ -211,11 +211,11 @@ export default function AgenteWhatsappClinicaDentalArticlePage() {
           </P>
           <P>
             Si tu clínica todavía no tiene un sistema claro para gestionar las citas que llegan
-            por WhatsApp, puede ser útil revisar primero el artículo sobre{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agentes de WhatsApp para clínicas
+            por WhatsApp, puede ser útil ver antes cómo funciona el{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp con IA para clínicas dentales
             </InternalLink>
-            , donde se explica con más detalle el proceso de puesta en marcha.
+            , donde se detalla el proceso de puesta en marcha.
           </P>
 
           <H2>Cuánto cuesta y cuándo se amortiza</H2>
@@ -233,10 +233,11 @@ export default function AgenteWhatsappClinicaDentalArticlePage() {
             cubre el coste de la herramienta.
           </P>
           <P>
-            Para ver en detalle cómo se aplica este mismo enfoque en el sector estético, puedes
-            consultar el artículo sobre{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agentes de WhatsApp para clínicas
+            Para ver el desglose completo —qué hace el agente con las urgencias fuera de
+            horario, con los presupuestos que siguen abiertos y con el recall de revisiones—
+            puedes consultar el{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp para clínicas dentales
             </InternalLink>
             .
           </P>

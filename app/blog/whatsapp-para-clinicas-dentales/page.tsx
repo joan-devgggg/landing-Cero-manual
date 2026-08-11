@@ -171,8 +171,8 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
             El problema es que, si esa primera respuesta tarda en llegar, la probabilidad de
             perder ese lead crece muy rápido —hasta un 80% si pasan más de 5 minutos sin
             respuesta—. Por eso un{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp para clínicas dentales
             </InternalLink>{" "}
             que responda al instante, a cualquier hora, puede marcar la diferencia entre captar
             ese paciente o que escriba a la siguiente clínica de la lista.
@@ -225,8 +225,8 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
           <P>
             En ese punto, automatizar la primera respuesta, las confirmaciones de cita y la
             reactivación de pacientes con un{" "}
-            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
-              agente de WhatsApp para clínicas
+            <InternalLink href="/agente-whatsapp-clinicas-dentales">
+              agente de WhatsApp para clínicas dentales
             </InternalLink>{" "}
             no sustituye a tu equipo: libera su tiempo de las tareas repetitivas para que se
             dedique a lo que realmente necesita trato humano, mientras WhatsApp deja de ser una
