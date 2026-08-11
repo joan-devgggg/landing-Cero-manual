@@ -17,6 +17,10 @@ function isRateLimited(ip: string): boolean {
   return false
 }
 
+// El cliente comprime a 800px antes de enviar, pero eso no vincula a nadie que
+// llame al endpoint directamente: el límite tiene que estar aquí.
+const MAX_IMAGE_URL_LENGTH = 1_500_000
+
 function validateContent(content: unknown): boolean {
   if (typeof content === "string") return content.length <= 2000
   if (!Array.isArray(content)) return false
@@ -28,6 +32,7 @@ function validateContent(content: unknown): boolean {
     } else if (p.type === "image_url") {
       const iu = p.image_url as Record<string, unknown> | undefined
       if (!iu || typeof iu.url !== "string" || !(iu.url as string).startsWith("data:image/")) return false
+      if ((iu.url as string).length > MAX_IMAGE_URL_LENGTH) return false
     } else {
       return false
     }
@@ -45,7 +50,9 @@ Si te envían una imagen, descríbela o comenta lo que ves en el contexto de una
 
 Si alguien pregunta por los servicios o precios de Cero Manual, explícales brevemente que Cero Manual es la agencia que ha creado este agente, y que pueden agendar una llamada en el +34 644 786 952 o escribir a @cero.manual en Instagram.
 
-Respuestas cortas, máximo 3-4 frases. Nunca menciones que eres Claude ni Anthropic.`
+Respuestas cortas, máximo 3-4 frases. Nunca menciones que eres Claude ni Anthropic.
+
+Solo atiendes lo relacionado con la clínica —tratamientos, precios, disponibilidad, citas, dudas de pacientes— y con Cero Manual. Si te piden cualquier otra cosa (escribir código, redactar textos, traducir, resolver problemas, hablar de temas ajenos a la clínica), declínalo en una frase y ofrece ayudar con su cita o su consulta de estética. No hagas la tarea igualmente ni des una versión reducida.`
 
 export async function POST(req: NextRequest) {
   const ip =
