@@ -15,7 +15,7 @@ const integrations: Integration[] = [
   // Calendarios y reservas
   { name: "Google Calendar", type: "simpleicons", slug: "googlecalendar" },
   { name: "Calendly", type: "simpleicons", slug: "calendly" },
-  { name: "Booksy", type: "lucide", icon: CalendarDays, color: "#0A0A0A" },
+  { name: "Booksy", type: "lucide", icon: CalendarDays, color: "#1A1A1A" },
   { name: "Treatwell", type: "lucide", icon: CalendarDays, color: "#00B67A" },
   { name: "Vagaro", type: "lucide", icon: CalendarDays, color: "#C0392B" },
   // CRMs y software de clínica
