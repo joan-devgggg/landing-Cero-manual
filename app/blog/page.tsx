@@ -108,7 +108,7 @@ const posts = [
     slug: "plantillas-recordatorio-cita-clinica",
     title: "Plantillas de recordatorio de cita para clínicas: ejemplos listos para usar",
     excerpt:
-      "Los recordatorios de cita por WhatsApp reducen los no-shows un 40%. Aquí tienes plantillas reales que puedes copiar y adaptar a tu clínica.",
+      "Los recordatorios de cita por WhatsApp son la forma más directa de reducir los no-shows. Aquí tienes plantillas reales que puedes copiar y adaptar a tu clínica.",
     date: "2026-06-13",
     readingTime: "7 min de lectura",
   },
@@ -244,7 +244,7 @@ const posts = [
     slug: "recordatorios-citas-whatsapp-clinica",
     title: "Recordatorios de citas por WhatsApp para clínicas: cómo configurarlos para que funcionen solos",
     excerpt:
-      "Los recordatorios por WhatsApp reducen los no-shows un 40%. Te explicamos cómo configurarlos para que funcionen solos en tu clínica.",
+      "Los recordatorios por WhatsApp reducen los no-shows de forma notable. Te explicamos cómo configurarlos para que funcionen solos en tu clínica.",
     date: "2026-06-11",
     readingTime: "6 min de lectura",
   },
@@ -309,7 +309,7 @@ const posts = [
     slug: "que-es-un-agente-de-voz-ia-para-clinicas",
     title: "Qué es un agente de voz con IA y cómo puede transformar tu clínica",
     excerpt:
-      "Casi un 40% de las consultas de una clínica llegan fuera de horario. Te explicamos qué es un agente de voz con IA, en qué se diferencia de un contestador y cómo puede contestar cada llamada por ti.",
+      "Buena parte de las consultas de una clínica llegan fuera de horario. Te explicamos qué es un agente de voz con IA, en qué se diferencia de un contestador y cómo puede contestar cada llamada por ti.",
     date: "2026-06-07",
     readingTime: "8 min de lectura",
   },
@@ -333,7 +333,7 @@ const posts = [
     slug: "recordatorios-automaticos-citas-clinica",
     title: "Recordatorios automáticos de citas: cómo reducir no-shows sin llamar uno por uno",
     excerpt:
-      "El 12-19% de las citas no se presentan: hasta 7.500€/mes perdidos. Te explicamos cómo los recordatorios automáticos por WhatsApp reducen los no-shows un 40% desde el primer mes.",
+      "El 12-19% de las citas no se presentan: hasta 7.500€/mes perdidos. Te explicamos cómo los recordatorios automáticos por WhatsApp los reducen desde el primer mes.",
     date: "2026-06-09",
     readingTime: "7 min de lectura",
   },
@@ -405,7 +405,7 @@ const posts = [
     slug: "automatizar-whatsapp-clinica-dental",
     title: "Cómo automatizar WhatsApp en tu clínica dental y dejar de perder leads",
     excerpt:
-      "El 40% de las consultas llegan fuera de horario y los no-shows rondan el 12-19%. Te contamos cómo automatizar WhatsApp para responder, confirmar citas y reducir cancelaciones.",
+      "Buena parte de las consultas llegan fuera de horario y los no-shows rondan el 12-19%. Te contamos cómo automatizar WhatsApp para responder, confirmar citas y reducir cancelaciones.",
     date: "2026-06-10",
     readingTime: "7 min de lectura",
   },
