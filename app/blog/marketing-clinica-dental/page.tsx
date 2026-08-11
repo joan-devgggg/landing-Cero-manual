@@ -265,28 +265,29 @@ export default function MarketingClinicaDentalArticlePage() {
               className="text-2xl md:text-3xl font-semibold leading-snug mb-4"
               style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
             >
-              El canal de marketing más barato ya lo tienes
+              Tu marketing no falla en el anuncio, falla en la respuesta
             </h2>
             <p
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Es tu propia base de pacientes. La{" "}
-              <InternalLink href="/reactivacion-pacientes-inactivos">
-                reactivación automática de pacientes
+              Da igual lo bien que esté la campaña si el mensaje que genera se queda sin
+              contestar hasta mañana. El{" "}
+              <InternalLink href="/agente-whatsapp-clinicas-dentales">
+                agente de WhatsApp para clínicas dentales
               </InternalLink>{" "}
-              detecta a los que dejaron de venir y les escribe por WhatsApp, sin coste por
-              impresión y sin competir con nadie por el clic.
+              cubre ese último paso las 24 horas, que es donde se te está escapando el
+              presupuesto.
             </p>
             <Link
-              href="/reactivacion-pacientes-inactivos"
+              href="/agente-whatsapp-clinicas-dentales"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Ver la reactivación de pacientes →
+              Ver el agente para clínicas dentales →
             </Link>
           </div>
         </div>

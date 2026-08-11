@@ -257,25 +257,25 @@ export default function AgenteWhatsappClinicaDentalArticlePage() {
               className="text-2xl md:text-3xl font-semibold leading-snug mb-4"
               style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
             >
-              ¿Quieres que tu clínica dental confirme las citas sola?
+              ¿Y si lo ves montado sobre tu clínica?
             </h2>
             <p
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Es la parte del agente que antes recupera lo invertido: recordatorios por
-              WhatsApp que salen solos antes de cada cita, piden confirmación y liberan el
-              hueco cuando el paciente no puede venir.
+              Todo lo que acabas de leer, aplicado a una clínica dental: la urgencia de las
+              once de la noche, el presupuesto de implantes que lleva tres semanas parado y la
+              revisión que tocaba en marzo.
             </p>
             <Link
-              href="/recordatorios-automaticos-citas"
+              href="/agente-whatsapp-clinicas-dentales"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
               style={{
                 fontFamily: "var(--font-dm-sans)",
                 color: "#ffffff",
               }}
             >
-              Ver los recordatorios automáticos →
+              Ver el agente para clínicas dentales →
             </Link>
           </div>
         </div>
