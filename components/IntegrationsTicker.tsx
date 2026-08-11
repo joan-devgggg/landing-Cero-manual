@@ -15,21 +15,21 @@ const integrations: Integration[] = [
   // Calendarios y reservas
   { name: "Google Calendar", type: "simpleicons", slug: "googlecalendar" },
   { name: "Calendly", type: "simpleicons", slug: "calendly" },
-  { name: "Booksy", type: "simpleicons", slug: "booksy" },
+  { name: "Booksy", type: "lucide", icon: CalendarDays, color: "#0A0A0A" },
   { name: "Treatwell", type: "lucide", icon: CalendarDays, color: "#00B67A" },
   { name: "Vagaro", type: "lucide", icon: CalendarDays, color: "#C0392B" },
   // CRMs y software de clínica
   { name: "Flowww", type: "lucide", icon: Building2, color: "#7D9B76" },
   { name: "Klinikare", type: "lucide", icon: Building2, color: "#3B82F6" },
   { name: "HubSpot", type: "simpleicons", slug: "hubspot" },
-  { name: "Pipedrive", type: "simpleicons", slug: "pipedrive" },
-  { name: "Salesforce", type: "simpleicons", slug: "salesforce" },
+  { name: "Pipedrive", type: "lucide", icon: Building2, color: "#017737" },
+  { name: "Salesforce", type: "lucide", icon: Building2, color: "#00A1E0" },
   // Email marketing
   { name: "Mailchimp", type: "simpleicons", slug: "mailchimp" },
   { name: "Brevo", type: "simpleicons", slug: "brevo" },
   { name: "ActiveCampaign", type: "lucide", icon: Mail, color: "#356AE6" },
   // Reseñas y directorios
-  { name: "Google My Business", type: "simpleicons", slug: "googlemybusiness" },
+  { name: "Google My Business", type: "lucide", icon: Star, color: "#4285F4" },
   { name: "Doctoralia", type: "lucide", icon: Star, color: "#00A3E0" },
   { name: "Top Doctors", type: "lucide", icon: Star, color: "#E87722" },
   // Pagos
@@ -57,10 +57,12 @@ function Pill({ integration }: { integration: Integration }) {
       {integration.type === "simpleicons" ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={`https://cdn.simpleicons.org/${integration.slug}`}
+          src={`/icons/${integration.slug}.svg`}
           alt=""
           width={16}
           height={16}
+          loading="lazy"
+          decoding="async"
           className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0"
         />
       ) : (
