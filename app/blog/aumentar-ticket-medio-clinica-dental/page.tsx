@@ -7,8 +7,10 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/aumentar-ticket-medio-clinica-dental"
+const DATES = articleDates("aumentar-ticket-medio-clinica-dental")
 const TITLE = "Cómo aumentar el ticket medio en tu clínica dental | Cero Manual"
 const DESCRIPTION =
   "Aumentar el ticket medio de tu clínica dental es más fácil que captar nuevos pacientes. Te explicamos cómo hacerlo sin presionar a tus pacientes."
@@ -24,8 +26,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-14T00:00:00.000Z",
-    modifiedTime: "2026-06-14T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -54,8 +56,8 @@ const articleJsonLd = {
   headline: HEADLINE,
   description: DESCRIPTION,
   author: { "@type": "Person", name: "Joan - Cero Manual" },
-  datePublished: "2026-06-14",
-  dateModified: "2026-06-14",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

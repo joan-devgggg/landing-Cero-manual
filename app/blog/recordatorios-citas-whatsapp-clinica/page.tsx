@@ -7,8 +7,10 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/recordatorios-citas-whatsapp-clinica"
+const DATES = articleDates("recordatorios-citas-whatsapp-clinica")
 const TITLE = "Recordatorios de citas por WhatsApp para clínicas: guía completa | Cero Manual"
 const DESCRIPTION =
   "WhatsApp es el canal que mejor funciona para recordar citas. Te explicamos qué debe incluir el mensaje, cuándo enviarlo y cómo automatizarlo en tu clínica."
@@ -26,8 +28,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-11T00:00:00.000Z",
-    modifiedTime: "2026-06-11T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -59,8 +61,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-06-11",
-  dateModified: "2026-06-11",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

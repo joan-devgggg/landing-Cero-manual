@@ -7,8 +7,10 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/agenda-clinica-estetica-online"
+const DATES = articleDates("agenda-clinica-estetica-online")
 const TITLE = "Agenda online para clínicas estéticas: cómo gestionarla sin caos | Cero Manual"
 const DESCRIPTION =
   "Una agenda online bien gestionada llena tu clínica y reduce los huecos vacíos. Te explicamos cómo organizarla para que funcione sola."
@@ -26,8 +28,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-11T00:00:00.000Z",
-    modifiedTime: "2026-06-11T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -59,8 +61,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-06-11",
-  dateModified: "2026-06-11",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

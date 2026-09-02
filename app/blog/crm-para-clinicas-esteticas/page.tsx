@@ -10,8 +10,10 @@ import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/crm-para-clinicas-esteticas"
+const DATES = articleDates("crm-para-clinicas-esteticas")
 const TITLE = "CRM para clínicas estéticas: qué es y cuál necesitas | Cero Manual"
 const DESCRIPTION =
   "Un CRM para clínicas estéticas centraliza leads, citas y seguimiento de pacientes. Te explicamos qué es, para qué sirve y cuándo lo necesitas."
@@ -29,8 +31,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-09T00:00:00.000Z",
-    modifiedTime: "2026-08-08T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -62,8 +64,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-06-09",
-  dateModified: "2026-08-08",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

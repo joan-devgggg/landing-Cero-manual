@@ -8,8 +8,10 @@ import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/automatizar-whatsapp-clinica-dental"
+const DATES = articleDates("automatizar-whatsapp-clinica-dental")
 const TITLE = "Cómo automatizar WhatsApp en tu clínica dental | Cero Manual"
 const DESCRIPTION =
   "Automatizar WhatsApp en tu clínica dental permite responder leads, confirmar citas y reducir no-shows sin que el equipo esté pendiente del móvil."
@@ -26,8 +28,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-10T00:00:00.000Z",
-    modifiedTime: "2026-06-10T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -59,8 +61,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

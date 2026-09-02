@@ -8,8 +8,10 @@ import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-conseguir-resenas-google-clinica-estetica"
+const DATES = articleDates("como-conseguir-resenas-google-clinica-estetica")
 const TITLE = "Cómo conseguir más reseñas en Google para tu clínica estética | Cero Manual"
 const DESCRIPTION =
   "Las reseñas de Google son el factor número 1 en la decisión de un nuevo paciente. Te explicamos cómo conseguirlas sin pedirlas a mano."
@@ -27,8 +29,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-09T00:00:00.000Z",
-    modifiedTime: "2026-06-09T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -60,8 +62,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-06-09",
-  dateModified: "2026-06-09",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

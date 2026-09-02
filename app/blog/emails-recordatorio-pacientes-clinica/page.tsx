@@ -7,8 +7,10 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/emails-recordatorio-pacientes-clinica"
+const DATES = articleDates("emails-recordatorio-pacientes-clinica")
 const TITLE = "Emails recordatorio pacientes: plantillas listas + por qué WhatsApp funciona mejor | Cero Manual"
 const DESCRIPTION =
   "Plantillas de email de recordatorio para clínicas listas para copiar. Y por qué el 95% de tus pacientes prefiere recibir el recordatorio por WhatsApp."
@@ -26,8 +28,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-07-07T00:00:00.000Z",
-    modifiedTime: "2026-07-07T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -59,8 +61,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-07-07",
-  dateModified: "2026-07-07",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

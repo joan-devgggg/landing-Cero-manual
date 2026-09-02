@@ -10,8 +10,10 @@ import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-reducir-no-shows-clinica-dental"
+const DATES = articleDates("como-reducir-no-shows-clinica-dental")
 const TITLE = "Cómo reducir no-shows en tu clínica dental | Cero Manual"
 const DESCRIPTION =
   "Los no-shows cuestan hasta 7.500€/mes a clínicas dentales. Descubre 5 estrategias probadas para reducirlos y recuperar esos ingresos."
@@ -29,8 +31,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-07T00:00:00.000Z",
-    modifiedTime: "2026-08-08T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -62,8 +64,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-06-07",
-  dateModified: "2026-08-08",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

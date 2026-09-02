@@ -1,392 +1,107 @@
 import type { MetadataRoute } from "next"
+import { articleDates, type BlogSlug } from "@/lib/blog-dates"
+
+const baseUrl = "https://ceromanual.es"
+
+type UndatedPage = {
+  path: string
+  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]
+  priority: number
+}
+
+// Estas paginas no tienen ninguna fecha de modificacion fiable, asi que van sin
+// lastModified. Antes llevaban new Date(), que en cada build le decia a Google
+// que habian cambiado hoy.
+const topPages: UndatedPage[] = [
+  { path: "", changeFrequency: "weekly", priority: 1 },
+  { path: "/agente-whatsapp-clinicas-esteticas", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/agente-whatsapp-clinicas-dentales", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/agente-voz-ia-clinicas", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/recordatorios-automaticos-citas", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/reactivacion-pacientes-inactivos", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/calculadora-no-shows", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/blog", changeFrequency: "weekly", priority: 0.7 },
+]
+
+const legalPages: UndatedPage[] = [
+  { path: "/privacidad", changeFrequency: "yearly", priority: 0.3 },
+  { path: "/aviso-legal", changeFrequency: "yearly", priority: 0.3 },
+]
+
+// Los articulos si tienen fecha real. Sale de lib/blog-dates.ts, la misma fuente
+// que alimenta su dateModified de JSON-LD y su og:modified_time.
+const articleSlugs: BlogSlug[] = [
+  "como-reducir-no-shows-clinica-dental",
+  "que-es-un-agente-de-voz-ia-para-clinicas",
+  "chatbot-whatsapp-para-clinicas-esteticas",
+  "como-reactivar-pacientes-inactivos-clinica",
+  "recordatorios-automaticos-citas-clinica",
+  "meta-ads-para-clinicas-esteticas",
+  "como-conseguir-resenas-google-clinica-estetica",
+  "crm-para-clinicas-esteticas",
+  "mejor-crm-clinicas-dentales",
+  "crm-clinicas-esteticas-pequenas",
+  "como-reducir-cancelaciones-clinica-estetica",
+  "como-captar-clientes-clinica-estetica-sin-presupuesto",
+  "como-gestionar-ausencias-clinica-estetica",
+  "inteligencia-artificial-clinicas-esteticas",
+  "como-fidelizar-pacientes-clinica-estetica",
+  "automatizar-whatsapp-clinica-dental",
+  "como-mejorar-atencion-cliente-clinica-estetica",
+  "como-aumentar-facturacion-clinica-dental",
+  "marketing-digital-clinicas-esteticas",
+  "como-conseguir-mas-citas-clinica-estetica",
+  "gestionar-citas-clinica-estetica-whatsapp",
+  "software-gestion-clinicas-esteticas",
+  "agenda-clinica-estetica-online",
+  "whatsapp-business-clinicas-esteticas",
+  "captacion-pacientes-clinica-estetica",
+  "experiencia-paciente-clinica-estetica",
+  "recordatorios-citas-whatsapp-clinica",
+  "automatizacion-clinicas-dentales",
+  "como-reducir-no-shows-clinica-estetica",
+  "agente-ia-recepcion-clinica",
+  "inteligencia-artificial-clinicas-dentales",
+  "como-conseguir-pacientes-clinica-dental",
+  "marketing-clinica-dental",
+  "whatsapp-para-clinicas-dentales",
+  "agente-whatsapp-clinica-dental",
+  "reducir-lista-espera-clinica-estetica",
+  "software-gestion-clinica-estetica",
+  "tecnologia-para-clinicas-esteticas",
+  "coste-real-no-shows-clinica-dental",
+  "resenas-google-clinicas-dentales",
+  "cuanto-cuesta-chatbot-whatsapp-clinica",
+  "chatbot-whatsapp-clinicas-rgpd",
+  "plantillas-recordatorio-cita-clinica",
+  "lista-espera-clinica-dental",
+  "mejor-chatbot-whatsapp-clinica-estetica",
+  "chatbot-whatsapp-vs-recepcionista-clinica",
+  "aumentar-ticket-medio-clinica-dental",
+  "aumentar-ingresos-clinica-dental-sin-pacientes",
+  "clinica-estetica-por-whatsapp",
+  "responder-consultas-clinica-estetica-whatsapp",
+  "emails-recordatorio-pacientes-clinica",
+  "mejor-software-gestion-clinica-estetica",
+  "software-gestion-citas-clinica-estetica",
+  "programa-gestion-clinica-estetica",
+]
+
+const toEntry = ({ path, changeFrequency, priority }: UndatedPage) => ({
+  url: `${baseUrl}${path}`,
+  changeFrequency,
+  priority,
+})
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://ceromanual.es"
-
   return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/agente-whatsapp-clinicas-esteticas`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/agente-whatsapp-clinicas-dentales`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/agente-voz-ia-clinicas`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/recordatorios-automaticos-citas`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/reactivacion-pacientes-inactivos`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/calculadora-no-shows`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+    ...topPages.map(toEntry),
+    ...articleSlugs.map((slug) => ({
+      url: `${baseUrl}/blog/${slug}`,
+      lastModified: articleDates(slug).modified,
+      changeFrequency: "weekly" as const,
       priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-reducir-no-shows-clinica-dental`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/que-es-un-agente-de-voz-ia-para-clinicas`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/chatbot-whatsapp-para-clinicas-esteticas`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-reactivar-pacientes-inactivos-clinica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/recordatorios-automaticos-citas-clinica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/meta-ads-para-clinicas-esteticas`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-conseguir-resenas-google-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/crm-para-clinicas-esteticas`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/mejor-crm-clinicas-dentales`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/crm-clinicas-esteticas-pequenas`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-reducir-cancelaciones-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-captar-clientes-clinica-estetica-sin-presupuesto`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-gestionar-ausencias-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/inteligencia-artificial-clinicas-esteticas`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-fidelizar-pacientes-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/automatizar-whatsapp-clinica-dental`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-mejorar-atencion-cliente-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-aumentar-facturacion-clinica-dental`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/marketing-digital-clinicas-esteticas`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-conseguir-mas-citas-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/gestionar-citas-clinica-estetica-whatsapp`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/software-gestion-clinicas-esteticas`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/agenda-clinica-estetica-online`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/whatsapp-business-clinicas-esteticas`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/captacion-pacientes-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/experiencia-paciente-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/recordatorios-citas-whatsapp-clinica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/automatizacion-clinicas-dentales`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-reducir-no-shows-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/agente-ia-recepcion-clinica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/inteligencia-artificial-clinicas-dentales`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/como-conseguir-pacientes-clinica-dental`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/marketing-clinica-dental`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/whatsapp-para-clinicas-dentales`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/agente-whatsapp-clinica-dental`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/reducir-lista-espera-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/software-gestion-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/tecnologia-para-clinicas-esteticas`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/coste-real-no-shows-clinica-dental`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/resenas-google-clinicas-dentales`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/cuanto-cuesta-chatbot-whatsapp-clinica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/chatbot-whatsapp-clinicas-rgpd`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/plantillas-recordatorio-cita-clinica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/lista-espera-clinica-dental`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/mejor-chatbot-whatsapp-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/chatbot-whatsapp-vs-recepcionista-clinica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/aumentar-ticket-medio-clinica-dental`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/aumentar-ingresos-clinica-dental-sin-pacientes`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/clinica-estetica-por-whatsapp`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/responder-consultas-clinica-estetica-whatsapp`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/emails-recordatorio-pacientes-clinica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/mejor-software-gestion-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/software-gestion-citas-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/programa-gestion-clinica-estetica`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/privacidad`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/aviso-legal`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
+    })),
+    ...legalPages.map(toEntry),
   ]
 }

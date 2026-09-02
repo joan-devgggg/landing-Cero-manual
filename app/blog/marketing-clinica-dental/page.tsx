@@ -7,8 +7,10 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/marketing-clinica-dental"
+const DATES = articleDates("marketing-clinica-dental")
 const TITLE = "Marketing para clínicas dentales: estrategias que funcionan en 2026 | Cero Manual"
 const DESCRIPTION =
   "El marketing para clínicas dentales ha cambiado. Te explicamos qué canales funcionan realmente y cómo automatizar la captación de pacientes."
@@ -25,8 +27,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-11T00:00:00.000Z",
-    modifiedTime: "2026-06-11T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -58,8 +60,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-06-11",
-  dateModified: "2026-06-11",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

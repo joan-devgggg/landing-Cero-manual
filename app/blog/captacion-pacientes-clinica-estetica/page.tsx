@@ -7,8 +7,10 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/captacion-pacientes-clinica-estetica"
+const DATES = articleDates("captacion-pacientes-clinica-estetica")
 const TITLE = "Captación de pacientes para clínicas estéticas: estrategias que funcionan | Cero Manual"
 const DESCRIPTION =
   "Captar pacientes para tu clínica estética es más fácil cuando tienes el proceso automatizado. Te explicamos las estrategias que mejor funcionan."
@@ -25,8 +27,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-11T00:00:00.000Z",
-    modifiedTime: "2026-06-11T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -58,8 +60,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-06-11",
-  dateModified: "2026-06-11",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

@@ -8,8 +8,10 @@ import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/mejor-crm-clinicas-dentales"
+const DATES = articleDates("mejor-crm-clinicas-dentales")
 const TITLE = "Mejor CRM para clínicas dentales: guía completa 2026 | Cero Manual"
 const DESCRIPTION =
   "¿Buscas el mejor CRM para tu clínica dental? Te explicamos qué funcionalidades necesitas y cómo elegir el que mejor se adapta a tu clínica."
@@ -26,8 +28,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-12T00:00:00.000Z",
-    modifiedTime: "2026-06-12T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -59,8 +61,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-06-12",
-  dateModified: "2026-06-12",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

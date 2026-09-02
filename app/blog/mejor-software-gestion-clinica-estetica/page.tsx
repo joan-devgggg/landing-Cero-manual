@@ -9,8 +9,10 @@ import BlogSource from "@/components/BlogSource"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/mejor-software-gestion-clinica-estetica"
+const DATES = articleDates("mejor-software-gestion-clinica-estetica")
 const TITLE = "Mejor software de gestión para clínicas estéticas en 2026 | Cero Manual"
 const DESCRIPTION =
   "¿Cuál es el mejor software de gestión para tu clínica estética? Te explicamos qué criterios usar y cuándo tiene sentido añadir automatización con IA."
@@ -28,8 +30,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-07-07T00:00:00.000Z",
-    modifiedTime: "2026-08-08T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -61,8 +63,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-07-07",
-  dateModified: "2026-08-08",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

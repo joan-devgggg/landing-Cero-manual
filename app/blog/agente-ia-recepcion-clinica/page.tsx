@@ -7,8 +7,10 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/agente-ia-recepcion-clinica"
+const DATES = articleDates("agente-ia-recepcion-clinica")
 const TITLE = "Agente IA para la recepción de tu clínica: qué es y cómo funciona | Cero Manual"
 const DESCRIPTION =
   "Un agente IA en la recepción de tu clínica responde llamadas, agenda citas y atiende WhatsApp 24/7 sin contratar más personal."
@@ -25,8 +27,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-11T00:00:00.000Z",
-    modifiedTime: "2026-06-11T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -58,8 +60,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-06-11",
-  dateModified: "2026-06-11",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",

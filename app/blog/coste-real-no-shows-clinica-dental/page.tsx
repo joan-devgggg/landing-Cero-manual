@@ -7,8 +7,10 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
+import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/coste-real-no-shows-clinica-dental"
+const DATES = articleDates("coste-real-no-shows-clinica-dental")
 const TITLE = "El coste real de los no-shows en tu clínica dental: cómo calcularlo | Cero Manual"
 const DESCRIPTION =
   "Los no-shows en clínicas dentales cuestan más de lo que parece. Te explicamos cómo calcular tu pérdida real y qué puedes hacer para reducirla."
@@ -26,8 +28,8 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: `https://ceromanual.es${PATH}`,
     type: "article",
-    publishedTime: "2026-06-13T00:00:00.000Z",
-    modifiedTime: "2026-06-13T00:00:00.000Z",
+    publishedTime: DATES.publishedTime,
+    modifiedTime: DATES.modifiedTime,
   },
 }
 
@@ -59,8 +61,8 @@ const articleJsonLd = {
     "@type": "Person",
     name: "Joan - Cero Manual",
   },
-  datePublished: "2026-06-13",
-  dateModified: "2026-06-13",
+  datePublished: DATES.published,
+  dateModified: DATES.modified,
   publisher: {
     "@type": "Organization",
     name: "Cero Manual",
