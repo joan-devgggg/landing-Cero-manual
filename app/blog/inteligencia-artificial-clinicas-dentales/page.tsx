@@ -11,9 +11,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/inteligencia-artificial-clinicas-dentales"
 const DATES = articleDates("inteligencia-artificial-clinicas-dentales")
-const TITLE = "Inteligencia artificial para clínicas dentales: guía práctica | Cero Manual"
+const TITLE = "Inteligencia artificial en clínicas dentales | Cero Manual"
 const DESCRIPTION =
-  "La IA ya está transformando cómo las clínicas dentales gestionan citas, leads y pacientes. Descubre qué puedes automatizar hoy."
+  "La IA ya cambia cómo las clínicas dentales gestionan citas, leads y pacientes. Te explicamos qué puedes automatizar hoy y por dónde empezar. Empieza por aquí."
 const HEADLINE = "Inteligencia artificial para clínicas dentales: qué puedes automatizar hoy"
 
 export const metadata: Metadata = {

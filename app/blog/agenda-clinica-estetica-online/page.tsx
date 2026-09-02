@@ -11,9 +11,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/agenda-clinica-estetica-online"
 const DATES = articleDates("agenda-clinica-estetica-online")
-const TITLE = "Agenda online para clínicas estéticas: cómo gestionarla sin caos | Cero Manual"
+const TITLE = "Agenda online para centros de estética | Cero Manual"
 const DESCRIPTION =
-  "Una agenda online bien gestionada llena tu clínica y reduce los huecos vacíos. Te explicamos cómo organizarla para que funcione sola."
+  "Una agenda online bien gestionada llena tu centro de estética y reduce los huecos vacíos. Te explicamos cómo organizarla para que funcione sola. Pruébala ya."
 const HEADLINE =
   "Agenda online para clínicas estéticas: cómo gestionarla sin que sea un caos"
 

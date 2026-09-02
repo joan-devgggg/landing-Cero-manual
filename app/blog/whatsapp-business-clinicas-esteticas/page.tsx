@@ -11,9 +11,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/whatsapp-business-clinicas-esteticas"
 const DATES = articleDates("whatsapp-business-clinicas-esteticas")
-const TITLE = "WhatsApp Business para clínicas estéticas: cómo sacarle partido | Cero Manual"
+const TITLE = "WhatsApp Business para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "WhatsApp Business es la herramienta más usada en clínicas estéticas. Te explicamos cómo configurarlo bien y cuándo automatizarlo."
+  "WhatsApp Business es la herramienta más usada en clínicas estéticas. Te explicamos cómo configurarlo bien y cuándo automatizarlo con IA. Descúbrelo aquí."
 const HEADLINE =
   "WhatsApp Business para clínicas estéticas: cómo configurarlo y cuándo automatizarlo"
 

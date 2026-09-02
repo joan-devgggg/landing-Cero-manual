@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-reducir-no-shows-clinica-estetica"
 const DATES = articleDates("como-reducir-no-shows-clinica-estetica")
-const TITLE = "Cómo reducir los no-shows en tu clínica estética | Cero Manual"
+const TITLE = "Cómo reducir no-shows en tu clínica estética | Cero Manual"
 const DESCRIPTION =
   "Los no-shows cuestan hasta 7.500€/mes a clínicas estéticas. Te explicamos cómo reducirlos con recordatorios automáticos desde el primer mes."
 const HEADLINE = "Cómo reducir los no-shows en tu clínica estética y dejar de perder ingresos"

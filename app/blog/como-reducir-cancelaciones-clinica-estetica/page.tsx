@@ -12,7 +12,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-reducir-cancelaciones-clinica-estetica"
 const DATES = articleDates("como-reducir-cancelaciones-clinica-estetica")
-const TITLE = "Cómo reducir cancelaciones de última hora en tu clínica estética | Cero Manual"
+const TITLE = "Reducir cancelaciones en tu clínica estética | Cero Manual"
 const DESCRIPTION =
   "Las cancelaciones de última hora vacían tu agenda y no dan tiempo a rellenar el hueco. Te explicamos cómo reducirlas sin llamar a cada paciente."
 const HEADLINE = "Cómo reducir las cancelaciones de última hora en tu clínica estética"

@@ -14,9 +14,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/meta-ads-para-clinicas-esteticas"
 const DATES = articleDates("meta-ads-para-clinicas-esteticas")
-const TITLE = "Meta Ads para clínicas estéticas: consigue leads sin que te bloqueen | Cero Manual"
+const TITLE = "Meta Ads para clínicas estéticas sin bloqueos | Cero Manual"
 const DESCRIPTION =
-  "Aprende a hacer Meta Ads para clínicas estéticas sin errores. Copy permitido, segmentación, presupuesto y cómo evitar que Meta te bloquee."
+  "Aprende a hacer Meta Ads para clínicas estéticas sin errores: copy permitido, segmentación, presupuesto y cómo evitar el bloqueo. Empieza por esta guía."
 const HEADLINE =
   "Meta Ads para clínicas estéticas: cómo conseguir leads sin que Meta te bloquee"
 

@@ -11,9 +11,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/automatizacion-clinicas-dentales"
 const DATES = articleDates("automatizacion-clinicas-dentales")
-const TITLE = "Automatización para clínicas dentales: qué puedes automatizar hoy | Cero Manual"
+const TITLE = "Automatización para clínicas dentales | Cero Manual"
 const DESCRIPTION =
-  "La automatización en clínicas dentales reduce no-shows, recupera pacientes inactivos y responde leads 24/7. Descubre por dónde empezar."
+  "La automatización en clínicas dentales reduce no-shows, recupera pacientes inactivos y responde leads 24/7. Descubre por dónde empezar. Reserva tu auditoría."
 const HEADLINE =
   "Automatización para clínicas dentales: qué puedes automatizar hoy y por dónde empezar"
 

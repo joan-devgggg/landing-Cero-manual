@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/marketing-clinica-dental"
 const DATES = articleDates("marketing-clinica-dental")
-const TITLE = "Marketing para clínicas dentales: estrategias que funcionan en 2026 | Cero Manual"
+const TITLE = "Marketing para clínicas dentales en 2026 | Cero Manual"
 const DESCRIPTION =
   "El marketing para clínicas dentales ha cambiado. Te explicamos qué canales funcionan realmente y cómo automatizar la captación de pacientes."
 const HEADLINE = "Marketing para clínicas dentales: qué funciona realmente en 2026"

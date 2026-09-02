@@ -12,7 +12,7 @@ import { articleDates } from "@/lib/blog-dates"
 const PATH = "/blog/responder-consultas-clinica-estetica-whatsapp"
 const DATES = articleDates("responder-consultas-clinica-estetica-whatsapp")
 const TITLE =
-  "Cómo responder consultas de tu clínica estética por WhatsApp más rápido | Cero Manual"
+  "Responder consultas por WhatsApp en estética | Cero Manual"
 const DESCRIPTION =
   "El 80% de los leads se pierden si no respondes en 5 minutos. Te explicamos cómo responder consultas de tu clínica estética por WhatsApp más rápido."
 const HEADLINE =

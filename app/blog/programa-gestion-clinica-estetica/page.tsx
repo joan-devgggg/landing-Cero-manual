@@ -13,7 +13,7 @@ const PATH = "/blog/programa-gestion-clinica-estetica"
 const DATES = articleDates("programa-gestion-clinica-estetica")
 const TITLE = "Programa de gestión para clínicas estéticas: cómo elegir el mejor | Cero Manual"
 const DESCRIPTION =
-  "Un buen programa de gestión para tu clínica estética ahorra horas de trabajo cada semana. Te explicamos cómo elegir y qué evitar."
+  "Un buen programa de gestión para tu centro de estética ahorra horas cada semana. Te explicamos cómo elegirlo y qué evitar. Pide tu diagnóstico gratis."
 const HEADLINE =
   "Programa de gestión para clínicas estéticas: cómo elegir el mejor y no arrepentirte"
 

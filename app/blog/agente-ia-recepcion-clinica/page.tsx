@@ -11,9 +11,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/agente-ia-recepcion-clinica"
 const DATES = articleDates("agente-ia-recepcion-clinica")
-const TITLE = "Agente IA para la recepción de tu clínica: qué es y cómo funciona | Cero Manual"
+const TITLE = "Agente IA para la recepción de tu clínica | Cero Manual"
 const DESCRIPTION =
-  "Un agente IA en la recepción de tu clínica responde llamadas, agenda citas y atiende WhatsApp 24/7 sin contratar más personal."
+  "Un agente IA en la recepción de tu clínica responde llamadas, agenda citas y atiende WhatsApp 24/7 sin contratar a nadie más. Reserva tu auditoría gratuita."
 const HEADLINE = "Agente IA para la recepción de tu clínica: qué es, qué hace y cuánto cuesta"
 
 export const metadata: Metadata = {

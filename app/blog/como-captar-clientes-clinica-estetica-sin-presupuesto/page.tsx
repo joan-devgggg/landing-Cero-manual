@@ -13,9 +13,9 @@ import { articleDates } from "@/lib/blog-dates"
 const PATH = "/blog/como-captar-clientes-clinica-estetica-sin-presupuesto"
 const DATES = articleDates("como-captar-clientes-clinica-estetica-sin-presupuesto")
 const TITLE =
-  "Cómo captar más clientes para tu clínica estética sin aumentar el presupuesto | Cero Manual"
+  "Captar clientes en estética sin gastar más | Cero Manual"
 const DESCRIPTION =
-  "Antes de gastar más en publicidad, recupera los clientes que ya tienes. Te explicamos 5 estrategias para captar más sin invertir más."
+  "Antes de gastar más en publicidad, recupera los clientes que ya tienes. Cinco estrategias para captar más en tu centro de estética sin invertir un euro más."
 const HEADLINE =
   "Cómo captar más clientes para tu clínica estética sin aumentar el presupuesto"
 

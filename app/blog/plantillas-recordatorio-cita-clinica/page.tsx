@@ -12,7 +12,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/plantillas-recordatorio-cita-clinica"
 const DATES = articleDates("plantillas-recordatorio-cita-clinica")
-const TITLE = "Plantillas de recordatorio de cita para clínicas: ejemplos listos para usar | Cero Manual"
+const TITLE = "Plantillas de recordatorio de cita en clínicas | Cero Manual"
 const DESCRIPTION =
   "Los recordatorios de cita por WhatsApp son la forma más directa de reducir los no-shows. Aquí tienes plantillas reales que puedes copiar y adaptar a tu clínica."
 const HEADLINE = "Plantillas de recordatorio de cita para clínicas: ejemplos listos para copiar"

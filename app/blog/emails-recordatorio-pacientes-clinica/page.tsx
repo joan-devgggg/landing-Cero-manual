@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/emails-recordatorio-pacientes-clinica"
 const DATES = articleDates("emails-recordatorio-pacientes-clinica")
-const TITLE = "Emails recordatorio pacientes: plantillas listas + por qué WhatsApp funciona mejor | Cero Manual"
+const TITLE = "Emails de recordatorio de cita: plantillas | Cero Manual"
 const DESCRIPTION =
   "Plantillas de email de recordatorio para clínicas listas para copiar. Y por qué el 95% de tus pacientes prefiere recibir el recordatorio por WhatsApp."
 const HEADLINE =

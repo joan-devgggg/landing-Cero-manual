@@ -12,9 +12,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-gestionar-ausencias-clinica-estetica"
 const DATES = articleDates("como-gestionar-ausencias-clinica-estetica")
-const TITLE = "Cómo gestionar las ausencias en tu clínica estética sin perder ingresos | Cero Manual"
+const TITLE = "Gestionar ausencias en tu clínica estética | Cero Manual"
 const DESCRIPTION =
-  "Las ausencias vacían tu agenda y bloquean huecos que nadie ocupa. Te explicamos cómo gestionarlas para no perder ni un euro de ingresos."
+  "Las ausencias vacían tu agenda y bloquean huecos que nadie ocupa. Te explicamos cómo gestionarlas en tu centro de estética sin perder ingresos. Empieza hoy."
 const HEADLINE =
   "Cómo gestionar las ausencias en tu clínica estética sin perder ingresos"
 

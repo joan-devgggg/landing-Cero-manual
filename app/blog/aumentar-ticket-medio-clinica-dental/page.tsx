@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/aumentar-ticket-medio-clinica-dental"
 const DATES = articleDates("aumentar-ticket-medio-clinica-dental")
-const TITLE = "Cómo aumentar el ticket medio en tu clínica dental | Cero Manual"
+const TITLE = "Aumentar el ticket medio en clínica dental | Cero Manual"
 const DESCRIPTION =
   "Aumentar el ticket medio de tu clínica dental es más fácil que captar nuevos pacientes. Te explicamos cómo hacerlo sin presionar a tus pacientes."
 const HEADLINE =

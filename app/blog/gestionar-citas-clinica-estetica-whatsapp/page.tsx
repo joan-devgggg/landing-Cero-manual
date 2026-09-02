@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/gestionar-citas-clinica-estetica-whatsapp"
 const DATES = articleDates("gestionar-citas-clinica-estetica-whatsapp")
-const TITLE = "Cómo gestionar las citas de tu clínica estética desde WhatsApp | Cero Manual"
+const TITLE = "Gestionar citas por WhatsApp en estética | Cero Manual"
 const DESCRIPTION =
   "Gestionar citas por WhatsApp es posible sin que el equipo esté pendiente del móvil. Te explicamos cómo automatizarlo para que funcione solo."
 const HEADLINE =

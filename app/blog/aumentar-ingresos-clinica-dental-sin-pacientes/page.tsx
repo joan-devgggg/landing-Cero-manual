@@ -11,9 +11,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/aumentar-ingresos-clinica-dental-sin-pacientes"
 const DATES = articleDates("aumentar-ingresos-clinica-dental-sin-pacientes")
-const TITLE = "Cómo aumentar los ingresos de tu clínica dental sin más pacientes | Cero Manual"
+const TITLE = "Aumentar ingresos en tu clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Antes de buscar más pacientes, aprovecha los que ya tienes. Te explicamos cómo aumentar ingresos en tu clínica dental con lo que ya tienes."
+  "Antes de buscar más pacientes, aprovecha los que ya tienes. Te explicamos cómo aumentar los ingresos de tu clínica dental con tu propia base. Empieza hoy."
 const HEADLINE =
   "Cómo aumentar los ingresos de tu clínica dental sin necesitar más pacientes nuevos"
 

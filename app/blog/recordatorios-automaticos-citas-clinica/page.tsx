@@ -12,7 +12,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/recordatorios-automaticos-citas-clinica"
 const DATES = articleDates("recordatorios-automaticos-citas-clinica")
-const TITLE = "Recordatorios automáticos de citas para clínicas | Cero Manual"
+const TITLE = "Recordatorios automáticos de citas: qué son | Cero Manual"
 const DESCRIPTION =
   "Qué es un recordatorio automático de citas, qué canal funciona mejor, cuándo enviarlo y por qué pedir confirmación cambia el resultado en tu clínica."
 const HEADLINE =

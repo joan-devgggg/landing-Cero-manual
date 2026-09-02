@@ -12,7 +12,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/reducir-lista-espera-clinica-estetica"
 const DATES = articleDates("reducir-lista-espera-clinica-estetica")
-const TITLE = "Cómo reducir la lista de espera en tu clínica estética | Cero Manual"
+const TITLE = "Reducir la lista de espera en clínica estética | Cero Manual"
 const DESCRIPTION =
   "Una lista de espera larga hace perder pacientes. Te explicamos cómo gestionarla mejor y convertir cancelaciones en citas nuevas automáticamente."
 const HEADLINE = "Cómo reducir la lista de espera en tu clínica estética sin perder pacientes"

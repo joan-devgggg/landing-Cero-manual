@@ -11,9 +11,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/experiencia-paciente-clinica-estetica"
 const DATES = articleDates("experiencia-paciente-clinica-estetica")
-const TITLE = "Cómo mejorar la experiencia del paciente en tu clínica estética | Cero Manual"
+const TITLE = "Experiencia del paciente en clínica estética | Cero Manual"
 const DESCRIPTION =
-  "La experiencia del paciente decide si vuelve o no. Te explicamos cómo mejorarla en cada punto de contacto sin añadir más trabajo al equipo."
+  "La experiencia del paciente decide si vuelve o no. Te explicamos cómo mejorarla en cada punto de contacto sin cargar de trabajo al equipo. Descubre cómo."
 const HEADLINE = "Cómo mejorar la experiencia del paciente en tu clínica estética (y que vuelvan solos)"
 
 export const metadata: Metadata = {

@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-mejorar-atencion-cliente-clinica-estetica"
 const DATES = articleDates("como-mejorar-atencion-cliente-clinica-estetica")
-const TITLE = "Cómo mejorar la atención al cliente en tu clínica estética | Cero Manual"
+const TITLE = "Atención al cliente en tu clínica estética | Cero Manual"
 const DESCRIPTION =
   "La atención al cliente es el factor que más influye en que un paciente vuelva o no. Te explicamos cómo mejorarla sin contratar más personal."
 const HEADLINE =

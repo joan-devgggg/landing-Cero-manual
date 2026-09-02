@@ -13,9 +13,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-aumentar-facturacion-clinica-dental"
 const DATES = articleDates("como-aumentar-facturacion-clinica-dental")
-const TITLE = "Aumentar facturación clínica dental: 5 estrategias sin más pacientes | Cero Manual"
+const TITLE = "Aumentar la facturación de tu clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Aumenta la facturación de tu clínica dental sin gastar más en publicidad. 5 estrategias probadas que puedes aplicar esta semana."
+  "Aumenta la facturación de tu clínica dental sin gastar más en publicidad: cinco estrategias que puedes aplicar esta semana. Pide tu diagnóstico gratuito."
 const HEADLINE =
   "Cómo aumentar la facturación de tu clínica dental sin necesidad de más pacientes"
 

@@ -11,9 +11,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-conseguir-pacientes-clinica-dental"
 const DATES = articleDates("como-conseguir-pacientes-clinica-dental")
-const TITLE = "Cómo conseguir más pacientes para tu clínica dental | Cero Manual"
+const TITLE = "Conseguir pacientes para tu clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Conseguir pacientes para tu clínica dental requiere más que publicidad. Te explicamos las estrategias que mejor funcionan en 2026."
+  "Conseguir pacientes para tu clínica dental necesita mucho más que publicidad. Te explicamos las estrategias que mejor funcionan en 2026. Reserva tu auditoría."
 const HEADLINE = "Cómo conseguir más pacientes para tu clínica dental en 2026"
 
 export const metadata: Metadata = {

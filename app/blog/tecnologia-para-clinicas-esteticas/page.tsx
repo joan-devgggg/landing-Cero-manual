@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/tecnologia-para-clinicas-esteticas"
 const DATES = articleDates("tecnologia-para-clinicas-esteticas")
-const TITLE = "Tecnología para clínicas estéticas: qué herramientas usar en 2026 | Cero Manual"
+const TITLE = "Tecnología para clínicas estéticas en 2026 | Cero Manual"
 const DESCRIPTION =
   "La tecnología está transformando cómo las clínicas estéticas captan y retienen pacientes. Te explicamos qué herramientas usar y por dónde empezar."
 const HEADLINE =

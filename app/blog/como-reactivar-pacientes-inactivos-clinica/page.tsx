@@ -12,7 +12,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-reactivar-pacientes-inactivos-clinica"
 const DATES = articleDates("como-reactivar-pacientes-inactivos-clinica")
-const TITLE = "Cómo reactivar pacientes inactivos en tu clínica | Cero Manual"
+const TITLE = "Reactivar pacientes inactivos: cómo hacerlo | Cero Manual"
 const DESCRIPTION =
   "Tienes clientes que dejaron de venir. Te explicamos cómo reactivarlos con mensajes automáticos por WhatsApp y recuperar esos ingresos perdidos."
 const HEADLINE = "Cómo reactivar pacientes inactivos en tu clínica (sin llamar uno por uno)"

@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/recordatorios-citas-whatsapp-clinica"
 const DATES = articleDates("recordatorios-citas-whatsapp-clinica")
-const TITLE = "Recordatorios de citas por WhatsApp para clínicas: guía completa | Cero Manual"
+const TITLE = "Recordatorios de cita por WhatsApp en clínicas | Cero Manual"
 const DESCRIPTION =
   "WhatsApp es el canal que mejor funciona para recordar citas. Te explicamos qué debe incluir el mensaje, cuándo enviarlo y cómo automatizarlo en tu clínica."
 const HEADLINE =

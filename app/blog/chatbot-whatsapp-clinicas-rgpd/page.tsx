@@ -12,9 +12,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/chatbot-whatsapp-clinicas-rgpd"
 const DATES = articleDates("chatbot-whatsapp-clinicas-rgpd")
-const TITLE = "Chatbot de WhatsApp para clínicas y RGPD: todo lo que necesitas saber | Cero Manual"
+const TITLE = "Chatbot de WhatsApp para clínicas y RGPD | Cero Manual"
 const DESCRIPTION =
-  "¿Es legal usar un chatbot de WhatsApp en tu clínica? Te explicamos cómo cumplir el RGPD con un agente IA y qué debes tener en cuenta."
+  "¿Es legal usar un chatbot de WhatsApp en tu clínica? Te explicamos cómo cumplir el RGPD con un agente de IA y qué tener en cuenta. Consúltanos sin coste."
 const HEADLINE =
   "Chatbot de WhatsApp para clínicas y RGPD: cómo cumplir la ley sin complicaciones"
 

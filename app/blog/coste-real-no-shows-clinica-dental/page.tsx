@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/coste-real-no-shows-clinica-dental"
 const DATES = articleDates("coste-real-no-shows-clinica-dental")
-const TITLE = "El coste real de los no-shows en tu clínica dental: cómo calcularlo | Cero Manual"
+const TITLE = "Coste real de los no-shows en clínica dental | Cero Manual"
 const DESCRIPTION =
   "Los no-shows en clínicas dentales cuestan más de lo que parece. Te explicamos cómo calcular tu pérdida real y qué puedes hacer para reducirla."
 const HEADLINE =

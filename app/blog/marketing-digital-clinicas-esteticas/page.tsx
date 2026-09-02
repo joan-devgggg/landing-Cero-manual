@@ -14,7 +14,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/marketing-digital-clinicas-esteticas"
 const DATES = articleDates("marketing-digital-clinicas-esteticas")
-const TITLE = "Marketing digital para clínicas estéticas: guía completa | Cero Manual"
+const TITLE = "Marketing digital para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
   "El marketing digital para clínicas estéticas va más allá de Instagram. Te explicamos los canales que realmente funcionan y por dónde empezar."
 const HEADLINE =

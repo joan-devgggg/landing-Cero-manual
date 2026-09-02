@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-fidelizar-pacientes-clinica-estetica"
 const DATES = articleDates("como-fidelizar-pacientes-clinica-estetica")
-const TITLE = "Cómo fidelizar pacientes en tu clínica estética | Cero Manual"
+const TITLE = "Fidelizar pacientes en tu clínica estética | Cero Manual"
 const DESCRIPTION =
   "Conseguir un paciente nuevo cuesta 5 veces más que mantener uno. Te explicamos cómo fidelizar clientes en tu clínica estética de forma automática."
 const HEADLINE =

@@ -12,7 +12,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/cuanto-cuesta-chatbot-whatsapp-clinica"
 const DATES = articleDates("cuanto-cuesta-chatbot-whatsapp-clinica")
-const TITLE = "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? | Cero Manual"
+const TITLE = "Precio de un chatbot de WhatsApp para clínicas | Cero Manual"
 const DESCRIPTION =
   "El precio de un chatbot de WhatsApp para clínicas varía según funcionalidades. Te explicamos qué factores influyen en el coste y cuándo se amortiza."
 const HEADLINE = "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? Guía de precios 2026"

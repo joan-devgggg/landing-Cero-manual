@@ -12,9 +12,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/mejor-chatbot-whatsapp-clinica-estetica"
 const DATES = articleDates("mejor-chatbot-whatsapp-clinica-estetica")
-const TITLE = "Cómo elegir el mejor chatbot de WhatsApp para tu clínica estética | Cero Manual"
+const TITLE = "Mejor chatbot WhatsApp para clínica estética | Cero Manual"
 const DESCRIPTION =
-  "No todos los chatbots de WhatsApp son iguales. Te explicamos qué criterios usar para elegir el mejor para tu clínica estética y qué preguntar antes de contratar."
+  "No todos los chatbots de WhatsApp son iguales. Te explicamos qué criterios usar para elegir el mejor para tu clínica estética. Reserva tu auditoría gratuita."
 const HEADLINE = "Cómo elegir el mejor chatbot de WhatsApp para tu clínica estética"
 
 export const metadata: Metadata = {

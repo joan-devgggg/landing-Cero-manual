@@ -12,7 +12,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/inteligencia-artificial-clinicas-esteticas"
 const DATES = articleDates("inteligencia-artificial-clinicas-esteticas")
-const TITLE = "Inteligencia artificial para clínicas estéticas: guía práctica | Cero Manual"
+const TITLE = "Inteligencia artificial en clínicas estéticas | Cero Manual"
 const DESCRIPTION =
   "La IA ya está transformando cómo las clínicas estéticas gestionan leads, citas y pacientes. Descubre qué puedes automatizar hoy y por dónde empezar."
 const HEADLINE =

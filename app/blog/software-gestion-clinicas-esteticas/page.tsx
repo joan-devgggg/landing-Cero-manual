@@ -15,7 +15,7 @@ const PATH = "/blog/software-gestion-clinicas-esteticas"
 const DATES = articleDates("software-gestion-clinicas-esteticas")
 const TITLE = "Software de gestión para clínicas estéticas: qué necesitas realmente | Cero Manual"
 const DESCRIPTION =
-  "Hay miles de opciones de software para clínicas estéticas. Te explicamos qué necesitas realmente según el tamaño y momento de tu clínica."
+  "Hay miles de programas para centros de estética. Te explicamos qué necesitas de verdad según el tamaño y el momento de tu clínica. Pide tu diagnóstico gratis."
 const HEADLINE =
   "Software de gestión para clínicas estéticas: qué necesitas realmente y por dónde empezar"
 

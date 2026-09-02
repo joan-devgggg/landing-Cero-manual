@@ -12,9 +12,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/mejor-crm-clinicas-dentales"
 const DATES = articleDates("mejor-crm-clinicas-dentales")
-const TITLE = "Mejor CRM para clínicas dentales: guía completa 2026 | Cero Manual"
+const TITLE = "Mejor CRM para clínicas dentales en 2026 | Cero Manual"
 const DESCRIPTION =
-  "¿Buscas el mejor CRM para tu clínica dental? Te explicamos qué funcionalidades necesitas y cómo elegir el que mejor se adapta a tu clínica."
+  "¿Buscas el mejor CRM para tu clínica dental? Te explicamos qué funcionalidades necesitas y cómo elegir el que mejor encaja contigo. Reserva tu auditoría."
 const HEADLINE = "Mejor CRM para clínicas dentales: qué buscar y cómo elegir en 2026"
 
 export const metadata: Metadata = {

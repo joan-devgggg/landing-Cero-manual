@@ -12,7 +12,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/agente-whatsapp-clinica-dental"
 const DATES = articleDates("agente-whatsapp-clinica-dental")
-const TITLE = "Agente de WhatsApp para clínicas dentales: qué es y cómo funciona | Cero Manual"
+const TITLE = "Agente de WhatsApp en clínicas dentales: guía | Cero Manual"
 const DESCRIPTION =
   "Un agente de WhatsApp para clínicas dentales responde consultas, confirma citas y reduce no-shows 24/7. Descubre cómo funciona y cuánto cuesta."
 const HEADLINE =

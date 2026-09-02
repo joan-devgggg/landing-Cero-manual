@@ -11,9 +11,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/resenas-google-clinicas-dentales"
 const DATES = articleDates("resenas-google-clinicas-dentales")
-const TITLE = "Reseñas Google clínica dental: cómo conseguirlas sin pedirlas una a una | Cero Manual"
+const TITLE = "Reseñas de Google para clínicas dentales | Cero Manual"
 const DESCRIPTION =
-  "Las reseñas de Google son clave para captar nuevos pacientes. Te explicamos cómo conseguirlas de forma automática tras cada cita."
+  "Las reseñas de Google pesan cuando un paciente elige clínica dental. Te explicamos cómo conseguirlas en automático después de cada cita. Automatízalo hoy."
 const HEADLINE =
   "Cómo conseguir más reseñas en Google para tu clínica dental (y que los nuevos pacientes te elijan)"
 

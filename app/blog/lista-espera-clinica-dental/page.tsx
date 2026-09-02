@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/lista-espera-clinica-dental"
 const DATES = articleDates("lista-espera-clinica-dental")
-const TITLE = "Cómo crear una lista de espera efectiva en tu clínica dental | Cero Manual"
+const TITLE = "Lista de espera para clínicas dentales | Cero Manual"
 const DESCRIPTION =
   "Una lista de espera bien gestionada convierte cancelaciones en citas nuevas automáticamente. Te explicamos cómo crearla y gestionarla sin esfuerzo."
 const HEADLINE =

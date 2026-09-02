@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/captacion-pacientes-clinica-estetica"
 const DATES = articleDates("captacion-pacientes-clinica-estetica")
-const TITLE = "Captación de pacientes para clínicas estéticas: estrategias que funcionan | Cero Manual"
+const TITLE = "Captación de pacientes en clínica estética | Cero Manual"
 const DESCRIPTION =
   "Captar pacientes para tu clínica estética es más fácil cuando tienes el proceso automatizado. Te explicamos las estrategias que mejor funcionan."
 const HEADLINE = "Captación de pacientes para clínicas estéticas: qué funciona realmente en 2026"

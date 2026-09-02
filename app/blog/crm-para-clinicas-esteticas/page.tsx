@@ -14,7 +14,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/crm-para-clinicas-esteticas"
 const DATES = articleDates("crm-para-clinicas-esteticas")
-const TITLE = "CRM para clínicas estéticas: qué es y cuál necesitas | Cero Manual"
+const TITLE = "CRM para clínicas estéticas: qué es y para qué | Cero Manual"
 const DESCRIPTION =
   "Un CRM para clínicas estéticas centraliza leads, citas y seguimiento de pacientes. Te explicamos qué es, para qué sirve y cuándo lo necesitas."
 const HEADLINE =

@@ -11,9 +11,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-conseguir-mas-citas-clinica-estetica"
 const DATES = articleDates("como-conseguir-mas-citas-clinica-estetica")
-const TITLE = "Cómo conseguir más citas en tu clínica estética | Cero Manual"
+const TITLE = "Conseguir más citas en tu clínica estética | Cero Manual"
 const DESCRIPTION =
-  "Conseguir más citas no siempre significa más publicidad. Te explicamos 5 estrategias para llenar tu agenda aprovechando lo que ya tienes."
+  "Conseguir más citas no siempre significa más publicidad. Cinco estrategias para llenar la agenda de tu clínica estética con lo que ya tienes. Pruébalas hoy."
 const HEADLINE =
   "Cómo conseguir más citas en tu clínica estética sin aumentar el presupuesto publicitario"
 

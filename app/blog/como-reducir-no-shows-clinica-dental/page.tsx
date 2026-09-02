@@ -16,7 +16,7 @@ const PATH = "/blog/como-reducir-no-shows-clinica-dental"
 const DATES = articleDates("como-reducir-no-shows-clinica-dental")
 const TITLE = "Cómo reducir no-shows en tu clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Los no-shows cuestan hasta 7.500€/mes a clínicas dentales. Descubre 5 estrategias probadas para reducirlos y recuperar esos ingresos."
+  "Los no-shows vacían la agenda de tu clínica dental y ese hueco no se recupera. Descubre cinco estrategias probadas para reducirlos ya. Calcula tu pérdida real."
 const HEADLINE =
   "Cómo reducir los no-shows en tu clínica dental (y dejar de perder hasta 7.500€ al mes)"
 

@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/whatsapp-para-clinicas-dentales"
 const DATES = articleDates("whatsapp-para-clinicas-dentales")
-const TITLE = "WhatsApp para clínicas dentales: cómo usarlo para captar y retener pacientes | Cero Manual"
+const TITLE = "WhatsApp para clínicas dentales: cómo usarlo | Cero Manual"
 const DESCRIPTION =
   "WhatsApp es el canal más usado por los pacientes dentales. Te explicamos cómo usarlo para captar, confirmar citas y reactivar pacientes inactivos."
 const HEADLINE = "WhatsApp para clínicas dentales: cómo usarlo para captar y retener más pacientes"

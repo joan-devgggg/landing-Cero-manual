@@ -12,9 +12,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/como-conseguir-resenas-google-clinica-estetica"
 const DATES = articleDates("como-conseguir-resenas-google-clinica-estetica")
-const TITLE = "Cómo conseguir más reseñas en Google para tu clínica estética | Cero Manual"
+const TITLE = "Reseñas de Google para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "Las reseñas de Google son el factor número 1 en la decisión de un nuevo paciente. Te explicamos cómo conseguirlas sin pedirlas a mano."
+  "Las reseñas de Google influyen en la decisión de quien busca centro de estética. Te explicamos cómo conseguirlas sin pedirlas a mano. Automatízalo esta semana."
 const HEADLINE =
   "Cómo conseguir más reseñas en Google para tu clínica estética (sin pedirlas una por una)"
 

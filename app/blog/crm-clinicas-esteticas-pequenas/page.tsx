@@ -12,7 +12,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/crm-clinicas-esteticas-pequenas"
 const DATES = articleDates("crm-clinicas-esteticas-pequenas")
-const TITLE = "CRM para clínicas estéticas pequeñas: qué necesitas realmente | Cero Manual"
+const TITLE = "CRM para centros de estética pequeños | Cero Manual"
 const DESCRIPTION =
   "Una clínica estética pequeña no necesita un CRM complejo. Te explicamos qué funcionalidades son imprescindibles y cuál es el punto de entrada más fácil."
 const HEADLINE =

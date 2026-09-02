@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/clinica-estetica-por-whatsapp"
 const DATES = articleDates("clinica-estetica-por-whatsapp")
-const TITLE = "Clínica estética por WhatsApp: cómo gestionar consultas y citas | Cero Manual"
+const TITLE = "Clínica estética por WhatsApp: guía completa | Cero Manual"
 const DESCRIPTION =
   "Cada vez más pacientes contactan con clínicas estéticas por WhatsApp. Te explicamos cómo gestionarlo sin que el equipo esté pendiente del móvil todo el día."
 const HEADLINE =

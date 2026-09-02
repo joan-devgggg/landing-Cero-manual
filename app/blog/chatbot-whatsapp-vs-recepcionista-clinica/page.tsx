@@ -11,9 +11,9 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/chatbot-whatsapp-vs-recepcionista-clinica"
 const DATES = articleDates("chatbot-whatsapp-vs-recepcionista-clinica")
-const TITLE = "Chatbot de WhatsApp vs recepcionista: comparativa para clínicas | Cero Manual"
+const TITLE = "Chatbot de WhatsApp vs recepcionista clínica | Cero Manual"
 const DESCRIPTION =
-  "¿Chatbot de WhatsApp o recepcionista? Te explicamos en qué se complementan, cuándo tiene sentido automatizar y qué no puede hacer una IA."
+  "¿Chatbot de WhatsApp o recepcionista? Te explicamos en qué se complementan, cuándo tiene sentido automatizar y qué no puede hacer una IA. Consúltanos gratis."
 const HEADLINE = "Chatbot de WhatsApp vs recepcionista en tu clínica: comparativa honesta"
 
 export const metadata: Metadata = {

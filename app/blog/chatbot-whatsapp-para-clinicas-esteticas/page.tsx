@@ -16,7 +16,7 @@ const PATH = "/blog/chatbot-whatsapp-para-clinicas-esteticas"
 const DATES = articleDates("chatbot-whatsapp-para-clinicas-esteticas")
 const TITLE = "Chatbot WhatsApp clínicas estéticas: qué es | Cero Manual"
 const DESCRIPTION =
-  "Un chatbot de WhatsApp responde consultas, agenda citas y cualifica leads para tu clínica estética, las 24h. Descubre cómo funciona."
+  "Un chatbot de WhatsApp responde consultas, agenda citas y cualifica leads de tu clínica estética las 24 horas. Descubre cómo funciona y qué cuesta ponerlo."
 const HEADLINE =
   "Chatbot de WhatsApp para clínicas estéticas: qué es y por qué tu competencia ya lo tiene"
 
