@@ -13,7 +13,7 @@ type UndatedPage = {
 // lastModified. Antes llevaban new Date(), que en cada build le decia a Google
 // que habian cambiado hoy.
 const topPages: UndatedPage[] = [
-  { path: "", changeFrequency: "weekly", priority: 1 },
+  { path: "", changeFrequency: "monthly", priority: 1 },
   { path: "/agente-whatsapp-clinicas-esteticas", changeFrequency: "monthly", priority: 0.8 },
   { path: "/agente-whatsapp-clinicas-dentales", changeFrequency: "monthly", priority: 0.8 },
   { path: "/agente-voz-ia-clinicas", changeFrequency: "monthly", priority: 0.8 },
