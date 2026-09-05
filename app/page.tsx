@@ -14,7 +14,8 @@ import WhatsAppButton from "@/components/WhatsAppButton"
 import HashScroll from "@/components/HashScroll"
 
 const PATH = "/"
-const TITLE = "Agentes de IA en WhatsApp para clínicas estéticas"
+const TITLE = "Agentes de IA para clínicas estéticas | Cero Manual"
+const OG_TITLE = "Agentes de IA para clínicas estéticas"
 const DESCRIPTION =
   "Agentes de IA que responden en WhatsApp, agendan citas, envían recordatorios y reactivan pacientes de tu clínica estética. Pide tu diagnóstico gratuito."
 
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     canonical: PATH,
   },
   openGraph: {
-    title: TITLE,
+    title: OG_TITLE,
     description: DESCRIPTION,
     url: "https://ceromanual.es",
     type: "website",

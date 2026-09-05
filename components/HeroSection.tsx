@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react"
 const metrics = [
   { value: "< 5 seg", label: "tiempo de respuesta" },
   { value: "24/7", label: "atención constante" },
-  { value: "−40%", label: "no-shows desde el primer mes" },
+  { value: "95-98%", label: "tasa de apertura en WhatsApp" },
 ]
 
 export default function HeroSection() {
@@ -53,9 +53,9 @@ export default function HeroSection() {
           className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight mb-8"
           style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
         >
-          Agentes de IA para
+          Agentes de IA para{" "}
           <br />
-          clínicas estéticas
+          clínicas estéticas:{" "}
           <br />
           <span style={{ color: "#7D9B76", fontStyle: "italic" }}>tu clínica trabajando sola.</span>
         </motion.h1>

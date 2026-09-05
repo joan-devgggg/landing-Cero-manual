@@ -17,7 +17,7 @@ const services = [
     icon: Bell,
     name: "Recordatorios y Seguimiento",
     desc: "Recordatorios automáticos 24h y 2h antes de cada cita. Pide reseñas en el momento exacto.",
-    benefit: "Hasta −40% de no-shows desde el primer mes",
+    benefit: "Menos ausencias, sin perseguir a nadie",
     highlight: false,
   },
   {
