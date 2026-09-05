@@ -39,6 +39,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# documentación interna, no vive en el repo del cliente
-base-conocimiento-seo.md
