@@ -1,7 +1,7 @@
 "use client"
 
-import { useRef, useState } from "react"
-import { motion, useInView, AnimatePresence } from "framer-motion"
+import { useRef } from "react"
+import { motion, useInView } from "framer-motion"
 import { Plus, Minus } from "lucide-react"
 
 const faqs = [
@@ -43,62 +43,33 @@ const faqs = [
   },
 ]
 
-function FAQItem({
-  faq,
-  open,
-  onToggle,
-}: {
-  faq: (typeof faqs)[0]
-  open: boolean
-  onToggle: () => void
-}) {
+// Disclosure nativo: la respuesta es hija directa de <details>, así que va
+// siempre en el HTML servido aunque el acordeón esté cerrado. No depende de
+// estado de React, que era justo lo que la dejaba fuera del HTML: los crawlers
+// de IA no ejecutan JS y Googlebot no hace clic.
+function FAQItem({ faq }: { faq: (typeof faqs)[0] }) {
   return (
-    <div style={{ borderBottom: "1px solid #E0DBD4" }}>
-      <button
-        className="w-full flex items-center justify-between py-5 text-left gap-4"
-        onClick={onToggle}
-      >
+    <details className="faq-item" name="faq-home" style={{ borderBottom: "1px solid #E0DBD4" }}>
+      <summary className="w-full flex items-center justify-between py-5 text-left gap-4">
         <span
           className="text-base font-medium"
           style={{ color: "#1A1A1A", fontFamily: "var(--font-dm-sans)" }}
         >
           {faq.q}
         </span>
-        <div
-          className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-200"
-          style={{
-            backgroundColor: open ? "#7D9B76" : "transparent",
-            border: open ? "none" : "1px solid #E0DBD4",
-          }}
-        >
-          {open ? (
-            <Minus size={12} color="#ffffff" strokeWidth={2.5} />
-          ) : (
-            <Plus size={12} color="#8A8580" strokeWidth={2.5} />
-          )}
+        <div className="faq-icon flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-200">
+          <Plus className="faq-icon-plus" size={12} color="#8A8580" strokeWidth={2.5} />
+          <Minus className="faq-icon-minus" size={12} color="#ffffff" strokeWidth={2.5} />
         </div>
-      </button>
+      </summary>
 
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            key="content"
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            style={{ overflow: "hidden" }}
-          >
-            <p
-              className="text-sm leading-relaxed pb-5"
-              style={{ color: "#5A5450", fontFamily: "var(--font-dm-sans)" }}
-            >
-              {faq.a}
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+      <p
+        className="faq-answer text-sm leading-relaxed pb-5"
+        style={{ color: "#5A5450", fontFamily: "var(--font-dm-sans)" }}
+      >
+        {faq.a}
+      </p>
+    </details>
   )
 }
 
@@ -118,7 +89,6 @@ const faqJsonLd = {
 export default function FAQSection() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: "-60px" })
-  const [openIdx, setOpenIdx] = useState<number | null>(null)
 
   return (
     <section id="faq" className="py-28 px-6" ref={ref} style={{ backgroundColor: "#F5F2EE" }}>
@@ -161,12 +131,7 @@ export default function FAQSection() {
           style={{ borderTop: "1px solid #E0DBD4" }}
         >
           {faqs.map((faq, i) => (
-            <FAQItem
-              key={i}
-              faq={faq}
-              open={openIdx === i}
-              onToggle={() => setOpenIdx(openIdx === i ? null : i)}
-            />
+            <FAQItem key={i} faq={faq} />
           ))}
         </motion.div>
       </div>

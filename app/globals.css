@@ -77,3 +77,30 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* FAQ: disclosure nativo (<details>/<summary>).
+   La respuesta se renderiza SIEMPRE en el HTML servido; quien gobierna su
+   visibilidad es el navegador, no un estado de React. Así la leen Googlebot y
+   los crawlers de IA, que no ejecutan JS ni hacen clic. No usar display:none
+   ni opacity sobre .faq-answer en estado cerrado: el cierre lo hace <details>. */
+.faq-item > summary {
+  list-style: none;
+  cursor: pointer;
+}
+.faq-item > summary::-webkit-details-marker { display: none; }
+
+.faq-icon { border: 1px solid #E0DBD4; background-color: transparent; }
+.faq-item[open] .faq-icon { border-color: transparent; background-color: #7D9B76; }
+.faq-item[open] .faq-icon-plus { display: none; }
+.faq-icon-minus { display: none; }
+.faq-item[open] .faq-icon-minus { display: block; }
+
+/* Solo se anima al abrir, nunca en reposo: nada queda a opacidad 0 de forma
+   permanente (§3.6). */
+.faq-item[open] .faq-answer {
+  animation: faq-reveal 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes faq-reveal {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
