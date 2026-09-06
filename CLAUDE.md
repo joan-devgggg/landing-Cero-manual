@@ -121,9 +121,13 @@ debe seguir: cuando se importaban los dos, 10 artículos emitían el schema por 
 
 ## Documentación
 
-- **`docs/base-conocimiento-seo.md`** — la metodología de SEO del equipo, común a varios
-  proyectos. **Léela antes de tocar metadata, JSON-LD/schema, `robots.txt`, sitemap, la
-  estructura de un artículo o el enlazado interno.** Es criterio, no un plan a ejecutar aquí.
+- **La metodología de SEO del equipo ya no vive en este repo.** Está en el plugin `seo`
+  (marketplace `joan-devgggg/seo-kit`, **repo privado**), como documento de referencia único
+  que cargan los skills `seo-auditoria`, `seo-arranque` y `seo-articulos`. Antes de tocar
+  metadata, JSON-LD/schema, `robots.txt`, sitemap, la estructura de un artículo o el enlazado
+  interno, invoca el skill que toque. **Si el plugin no está instalado, no hay fallback:** el
+  repo es privado y solo lo abre su dueño, así que enlazarlo aquí no serviría de nada. Instala
+  el plugin o pide acceso; no improvises las reglas de SEO.
 - `docs/auditoria-2026-08-12.md` — auditoría de solo lectura sobre 63 URLs. Sus hallazgos de
   contraste AA y artículos huérfanos **no los mide ningún check**, así que pueden seguir
   vigentes.
