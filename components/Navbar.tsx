@@ -11,7 +11,13 @@ const links = [
   { label: "Cómo funciona", href: "#como-funciona" },
   { label: "Resultados", href: "#resultados" },
   { label: "FAQ", href: "#faq" },
+  { label: "Blog", href: "/blog" },
 ]
+
+// Los enlaces del menú son anclas de la home salvo el del blog, que es una ruta.
+// Una ruta no se prefija con "/" fuera de la home ni se intercepta para hacer
+// scroll: `querySelector("/blog")` no es un selector válido y reventaría.
+const isAnchor = (href: string) => href.startsWith("#")
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -26,9 +32,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
+  const hrefFor = (href: string) => (isAnchor(href) ? (isHome ? href : `/${href}`) : href)
+
   const handleNav = (href: string) => (e: MouseEvent) => {
     setOpen(false)
-    if (isHome) {
+    if (isHome && isAnchor(href)) {
       e.preventDefault()
       const el = document.querySelector(href)
       if (el) el.scrollIntoView({ behavior: "smooth" })
@@ -72,7 +80,7 @@ export default function Navbar() {
             {links.map((l) => (
               <Link
                 key={l.href}
-                href={isHome ? l.href : `/${l.href}`}
+                href={hrefFor(l.href)}
                 onClick={handleNav(l.href)}
                 className="text-sm font-medium transition-colors duration-200"
                 style={{ fontFamily: "var(--font-dm-sans)", color: "#8A8580" }}
@@ -134,7 +142,7 @@ export default function Navbar() {
                   transition={{ delay: i * 0.07 }}
                 >
                   <Link
-                    href={isHome ? l.href : `/${l.href}`}
+                    href={hrefFor(l.href)}
                     onClick={handleNav(l.href)}
                     className="block text-left py-4 text-2xl font-semibold border-b"
                     style={{
