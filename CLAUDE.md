@@ -52,11 +52,16 @@ Por convención de ficheros del App Router:
   `/recordatorios-automaticos-citas`, `/reactivacion-pacientes-inactivos`,
   `/calculadora-no-shows`, `/blog`.
 - **2 legales**: `/privacidad`, `/aviso-legal`.
-- **54 artículos** bajo `app/blog/`.
+- **40 artículos** bajo `app/blog/`.
 - **3 API**: `/api/chat`, `/api/leads`, `/api/meta-capi`.
 
-Un redirect 301 en `next.config.ts`: `/blog/agente-whatsapp-clinicas-esteticas` →
-`/agente-whatsapp-clinicas-esteticas`.
+**Redirects permanentes en `next.config.ts`:** sin contar el de `www` → ápex, hay 15. Next
+responde con 308 cuando lleva `permanent: true`, no con 301.
+
+- `/blog/agente-whatsapp-clinicas-esteticas` → `/agente-whatsapp-clinicas-esteticas`.
+- **14 artículos fusionados en la Fase 2 SEO** (15-sep-2026) por canibalización de keywords.
+  Tienen una copia literal de cada uno y la tabla de destinos en
+  `docs/fase2-articulos-fusionados/`. **No recrees esos slugs**: volverían a competir con su pilar.
 
 ### La trampa principal: tres listas de artículos en paralelo
 
@@ -66,13 +71,13 @@ Al añadir o quitar un artículo hay que tocar **tres sitios**, y **ningún test
 2. El array `articleSlugs` de `app/sitemap.ts`.
 3. El array `posts` de `app/blog/page.tsx` (con `title`, `excerpt`, `date`, `readingTime`).
 
-Más `lib/blog-dates.ts`, de donde salen las fechas reales. Hoy las cuatro cuadran (54 = 54 =
-54, y las fechas coinciden), pero nada lo garantiza. **Si tocas artículos, comprueba las tres
+Más `lib/blog-dates.ts`, de donde salen las fechas reales. Hoy las cuatro cuadran (40 = 40 =
+40, y las fechas coinciden), pero nada lo garantiza. **Si tocas artículos, comprueba las tres
 listas a mano.**
 
 Detalle que ya se corrigió y conviene no deshacer: las páginas top van **sin `lastModified`**
 en el sitemap. Antes llevaban `new Date()`, que en cada build le decía a Google que habían
-cambiado hoy. Los 54 artículos sí llevan fecha real.
+cambiado hoy. Los 40 artículos sí llevan fecha real.
 
 ## Trampas
 
