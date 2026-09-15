@@ -7,6 +7,7 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
+import BlogSource from "@/components/BlogSource"
 import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/marketing-clinica-dental"
@@ -48,6 +49,14 @@ const faqs = [
   {
     q: "¿Cómo sé si estoy perdiendo pacientes por no responder a tiempo?",
     a: "Una señal clara es revisar cuántos mensajes o llamadas de WhatsApp, Instagram o el formulario web quedan sin respuesta durante más de unas horas. Si tu equipo solo puede atender en horario de clínica, es muy probable que estés perdiendo el 40% de las consultas que llegan fuera de ese horario — y hasta un 80% de probabilidad de perder un lead si tarda más de 5 minutos en recibir respuesta.",
+  },
+  {
+    q: "¿Hace falta un presupuesto grande para conseguir pacientes nuevos?",
+    a: "No necesariamente. Antes de subir la inversión en anuncios, merece la pena revisar si estás aprovechando lo que ya tienes: las reseñas en Google, las recomendaciones de tus pacientes y los leads que escribieron y no recibieron respuesta a tiempo. Muchas clínicas consiguen más citas ordenando esos puntos antes de gastar más en publicidad.",
+  },
+  {
+    q: "¿Sirve esto para una clínica pequeña con un solo dentista?",
+    a: "Sí, y suele notarse más, porque cada paciente nuevo pesa más en la agenda. No hace falta un equipo de marketing: con una ficha de Google cuidada, reseñas pedidas de forma sistemática, respuesta rápida por WhatsApp y seguimiento automático de los leads, una clínica pequeña puede competir con clínicas mucho más grandes de su zona.",
   },
 ]
 
@@ -113,7 +122,7 @@ export default function MarketingClinicaDentalArticlePage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            11 de junio de 2026 · 7 min de lectura
+            11 de junio de 2026 · 8 min de lectura
           </p>
 
           {/* Intro */}
@@ -162,6 +171,11 @@ export default function MarketingClinicaDentalArticlePage() {
             la cita.
           </P>
           <P>
+            <strong>Recomendaciones de pacientes.</strong> El canal que trae pacientes ya
+            predispuestos a confiar en la clínica. Funciona mejor cuando la experiencia en
+            consulta es buena y se lo pones fácil al paciente para que te recomiende.
+          </P>
+          <P>
             La estrategia que mejor funciona no es elegir uno y descartar los demás, sino
             entender que Google y redes sociales generan el contacto, y{" "}
             <InternalLink href="/blog/whatsapp-para-clinicas-dentales">
@@ -189,12 +203,20 @@ export default function MarketingClinicaDentalArticlePage() {
           búsquedas concretas, como un tratamiento específico.
           </P>
           <P>
+            Además, Google es el sitio donde casi todo el mundo comprueba una clínica antes
+            de decidirse, venga de un anuncio o de una recomendación. Si tienes pocas reseñas
+            o una valoración media baja, pierdes pacientes que habrían pedido cita. Por eso
+            conviene pedirlas de forma sistemática, con un mensaje después de cada cita, y no
+            solo «cuando alguien se acuerda».
+          </P>
+          <P>
             El problema no suele estar en atraer estos clics, sino en lo que pasa después:
             si alguien hace clic, escribe por WhatsApp o rellena un formulario y tarda más de
             5 minutos en recibir respuesta, la probabilidad de perder ese lead llega hasta el
             80%. Todo el esfuerzo y el presupuesto invertido en aparecer en Google se pierde
             en los últimos metros.
           </P>
+          <BlogSource>MIT Lead Response Management Study</BlogSource>
 
           <H2>Redes sociales para clínicas dentales: qué funciona y qué no</H2>
           <P>
@@ -230,6 +252,11 @@ export default function MarketingClinicaDentalArticlePage() {
             comparando varias clínicas a la vez— sigue buscando hasta que alguien le responda.
           </P>
           <P>
+            Por eso conviene poner WhatsApp como opción de contacto en la web, en los anuncios
+            y en las redes, en lugar de pedir que rellenen un formulario y esperen a que les
+            llames.
+          </P>
+          <P>
             Aquí es donde un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-dentales">
               agente de WhatsApp para clínicas dentales
@@ -252,6 +279,12 @@ export default function MarketingClinicaDentalArticlePage() {
             consulta que llegue por WhatsApp, web o redes, recogiendo los datos básicos del
             paciente y las preguntas frecuentes, para que tu equipo solo tenga que entrar a
             cerrar la cita o resolver dudas más específicas.
+          </P>
+          <P>
+            Lo mismo vale para dos tareas que casi siempre se quedan a medias: pedir la reseña
+            después de cada cita y hacer seguimiento a los leads que preguntaron y no llegaron
+            a reservar. Si se automatizan, dejan de depender de que alguien del equipo tenga
+            un hueco.
           </P>
           <P>
             El resultado es que el presupuesto que ya inviertes en Google, SEO o redes

@@ -4,8 +4,10 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
+import BlogSource from "@/components/BlogSource"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
+import H3 from "@/components/blog/H3"
 import InternalLink from "@/components/blog/InternalLink"
 import { articleDates } from "@/lib/blog-dates"
 
@@ -49,6 +51,18 @@ const faqs = [
   {
     q: "¿Cuánto tiempo al día se ahorra con la automatización?",
     a: "Depende del volumen de mensajes, pero en clínicas con tráfico habitual de WhatsApp el ahorro suele estar entre una y tres horas diarias solo en gestión de consultas y confirmaciones. Ese tiempo pasa a dedicarse a la atención presencial o a tareas que realmente requieren presencia humana.",
+  },
+  {
+    q: "¿Es posible gestionar todas las citas solo por WhatsApp?",
+    a: "Sí. WhatsApp puede ser el canal único de citas de una clínica estética: el sistema responde la consulta, muestra la disponibilidad, confirma la cita y envía el recordatorio, todo dentro de la misma conversación. Tu equipo solo recibe un aviso cuando hace falta intervenir, por ejemplo si el paciente pide algo muy específico.",
+  },
+  {
+    q: "¿El equipo pierde el control de la agenda si se automatiza?",
+    a: "Al contrario: gana visibilidad. Cada cita que se reserva, cambia o cancela por WhatsApp queda reflejada en la agenda de la clínica sin que nadie copie datos a mano. El equipo deja de estar pendiente del móvil, pero sigue viendo y decidiendo sobre todo lo que ocurre en la agenda.",
+  },
+  {
+    q: "¿Puedo automatizar solo fuera de horario y responder yo durante el día?",
+    a: "Sí, y es una configuración habitual. El sistema puede actuar solo en las franjas en que no hay nadie disponible —tardes, noches, fines de semana— y ceder el control a tu equipo durante el horario de atención. Lo importante es que no haya ningún momento del día en que un mensaje se quede sin respuesta.",
   },
 ]
 
@@ -114,7 +128,7 @@ export default function ClinicaEsteticaWhatsappPage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            14 de junio de 2026 · 6 min de lectura
+            14 de junio de 2026 · 10 min de lectura
           </p>
 
           {/* Intro */}
@@ -148,10 +162,18 @@ export default function ClinicaEsteticaWhatsappPage() {
             Escribe como escribe a cualquier persona y espera una respuesta rápida.
           </P>
           <P>
-            Esa expectativa de rapidez es clave. Quien escribe por WhatsApp no espera recibir
-            respuesta en 24 horas como con un email — espera recibirla en minutos. Un lead
-            que no obtiene respuesta en cinco minutos tiene hasta un 80% de probabilidades
-            de perderse: mientras esperaba, ha encontrado otra clínica que sí le contestó.
+            Esa expectativa de rapidez es clave. Quien pregunta por un tratamiento está en un
+            momento de decisión activa: no investiga para dentro de tres meses, se plantea dar
+            el paso ahora. Por eso no espera respuesta en 24 horas como con un email — espera
+            recibirla en minutos. Un lead que no obtiene respuesta en cinco minutos tiene
+            hasta un 80% de probabilidades de perderse: mientras esperaba, ha encontrado otra
+            clínica que sí le contestó.
+          </P>
+          <BlogSource>MIT Lead Response Management Study</BlogSource>
+          <P>
+            Y la rapidez no solo decide la cita: una respuesta inmediata transmite
+            profesionalidad y confianza antes incluso de que el paciente haya pisado la
+            clínica.
           </P>
           <P>
             A esto se suma que WhatsApp permite conversaciones naturales: el paciente puede
@@ -182,6 +204,15 @@ export default function ClinicaEsteticaWhatsappPage() {
             tratamientos básicos — es tiempo que no está dedicando a la atención presencial
             o a tareas que realmente requieren presencia humana. La gestión manual de
             WhatsApp es, en muchas clínicas, uno de los mayores ladrones de tiempo del día.
+          </P>
+          <P>
+            El cuarto son las citas a mano. Cada petición de cita desencadena una cadena de
+            pasos: mirar la agenda, ofrecer un hueco, esperar a que el paciente conteste,
+            anotar la cita y acordarse de confirmarla. Si el paciente tarda en responder, el
+            hueco puede haberse ocupado entretanto. Y con decenas de conversaciones abiertas
+            aparecen los errores típicos: citas duplicadas, horas mal anotadas, pacientes que
+            confirman por un canal y tienen la cita apuntada en otro. Pequeños fallos que,
+            sumados, dejan huecos en la agenda y pacientes descontentos.
           </P>
 
           <H2>Cómo organizar la gestión de WhatsApp en tu clínica</H2>
@@ -216,6 +247,12 @@ export default function ClinicaEsteticaWhatsappPage() {
             En la mayoría de clínicas estéticas, ambas condiciones se dan a la vez.
           </P>
           <P>
+            Y automatizar la primera respuesta no es poner un «gracias por escribirnos, te
+            contestaremos pronto». Es responder con información concreta —el precio, el hueco
+            disponible, la preparación que necesita el tratamiento— en el tono de tu clínica y
+            en segundos, sea la hora que sea.
+          </P>
+          <P>
             Un{" "}
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               chatbot de WhatsApp para clínicas estéticas
@@ -233,6 +270,47 @@ export default function ClinicaEsteticaWhatsappPage() {
             </InternalLink>
             : es la diferencia entre captar esa persona o dejar que reserve en
             la clínica de al lado.
+          </P>
+
+          <H3>Qué dejar al sistema y qué a tu equipo</H3>
+          <P>
+            Al sistema, todo lo rutinario: precios, disponibilidad, horarios, tratamientos
+            estándar, cómo llegar a la clínica. Es la gran mayoría del tráfico de WhatsApp y
+            no necesita criterio humano, solo información correcta y rápida.
+          </P>
+          <P>
+            A tu equipo, lo que sí lo necesita: reclamaciones, dudas médicas, negociaciones de
+            precio y pacientes que prefieren hablar con una persona. En esos casos el sistema
+            no intenta resolver: deriva la conversación con todo el contexto ya recogido
+            —qué tratamiento le interesa, qué ha preguntado, qué datos ha dejado—, para que
+            quien la retoma no empiece de cero.
+          </P>
+
+          <H2>Cómo gestionar las citas desde WhatsApp paso a paso</H2>
+          <P>
+            En la práctica, una cita por WhatsApp sigue un recorrido corto. El paciente
+            escribe preguntando por un tratamiento o pidiendo cita. Recibe respuesta al
+            momento, resuelve sus dudas básicas y se le ofrecen huecos reales de la agenda de
+            la clínica, no un «¿qué día te va bien?» que obliga a ir y venir mensajes.
+          </P>
+          <P>
+            Cuando elige un horario, la cita queda reservada en la agenda y el paciente recibe
+            la confirmación en el mismo chat. Si más adelante necesita cambiarla o cancelarla,
+            lo hace desde esa misma conversación: el sistema le propone huecos alternativos y
+            reagenda sin que nadie del equipo tenga que tocar la agenda. Así se eliminan de
+            raíz las citas duplicadas y las horas mal anotadas.
+          </P>
+          <P>
+            Antes de la cita, el paciente recibe un aviso para confirmar asistencia; en{" "}
+            <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
+              cómo enviar recordatorios de citas por WhatsApp
+            </InternalLink>{" "}
+            explicamos qué debe incluir y cuándo enviarlo. Si quieres ver cómo se monta este
+            circuito completo en tu clínica, en{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
+              agente de WhatsApp para clínicas estéticas
+            </InternalLink>{" "}
+            lo explicamos con ejemplos reales.
           </P>
 
           <H2>Qué resultados puedes esperar</H2>

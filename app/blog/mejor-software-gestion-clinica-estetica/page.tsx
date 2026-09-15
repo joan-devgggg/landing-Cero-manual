@@ -257,7 +257,7 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
             prefieren mantener piezas más independientes. Si quieres una comparativa más
             detallada de qué necesita realmente una clínica estética y por dónde empezar, la
             tienes en nuestra guía de{" "}
-            <InternalLink href="/blog/software-gestion-clinica-estetica">
+            <InternalLink href="/blog/software-gestion-clinicas-esteticas">
               software de gestión para clínicas estéticas
             </InternalLink>
             .
@@ -312,7 +312,7 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
             Y una vez esa base esté sólida, el paso natural es añadir automatización para
             cubrir lo que el equipo, por tiempo, no llega a atender. Si quieres profundizar en
             qué debe tener ese software base antes de dar el salto, revisa nuestra guía de{" "}
-            <InternalLink href="/blog/software-gestion-clinica-estetica">
+            <InternalLink href="/blog/software-gestion-clinicas-esteticas">
               software de gestión para clínicas estéticas
             </InternalLink>{" "}
             y decide desde ahí.

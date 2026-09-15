@@ -218,7 +218,7 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
           <H2>Cómo reducir ese coste desde el primer mes</H2>
           <P>
             La palanca más rápida y con mejor retorno es el{" "}
-            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+            <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
               recordatorio automático antes de la cita
             </InternalLink>
             . Según los datos del sector, los recordatorios automáticos por WhatsApp pueden

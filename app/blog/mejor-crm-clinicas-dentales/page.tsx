@@ -266,7 +266,7 @@ export default function MejorCrmClinicasDentalesArticlePage() {
           <P>
             Un CRM, por sí solo, sigue siendo una herramienta pasiva: organiza la información,
             pero no actúa. La{" "}
-            <InternalLink href="/blog/inteligencia-artificial-clinicas-dentales">
+            <InternalLink href="/blog/automatizacion-clinicas-dentales">
               automatización con IA
             </InternalLink>{" "}
             entra en juego precisamente en los

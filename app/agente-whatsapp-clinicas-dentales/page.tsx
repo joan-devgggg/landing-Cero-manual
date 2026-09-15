@@ -187,8 +187,8 @@ export default function AgenteWhatsAppDentalPage() {
               title: "Cómo automatizar WhatsApp en tu clínica dental y dejar de perder leads",
             },
             {
-              slug: "inteligencia-artificial-clinicas-dentales",
-              title: "Inteligencia artificial para clínicas dentales: qué puedes automatizar hoy",
+              slug: "automatizacion-clinicas-dentales",
+              title: "Automatización para clínicas dentales: qué puedes automatizar hoy y por dónde empezar",
             },
           ]}
         />

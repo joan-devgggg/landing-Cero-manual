@@ -162,7 +162,7 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
           <H2>Los errores más comunes al elegir un CRM siendo pequeño</H2>
           <P>
             El error más frecuente es{" "}
-            <InternalLink href="/blog/software-gestion-clinica-estetica">
+            <InternalLink href="/blog/software-gestion-clinicas-esteticas">
               elegir un CRM por la cantidad de funcionalidades
             </InternalLink>{" "}
             en lugar de por la facilidad de uso. Una clínica pequeña no va a usar el 80% de las

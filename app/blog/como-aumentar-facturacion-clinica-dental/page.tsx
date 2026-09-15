@@ -49,6 +49,10 @@ const faqs = [
     a: "Entre el 12% y el 19% de las citas de una clínica dental terminan en no-show. Cada hueco que se queda vacío sin que se pueda recolocar es tiempo del equipo y del gabinete que no genera ingresos pero sí tiene un coste. En clínicas con bastante volumen de citas, esto puede suponer pérdidas de hasta 7.500€ al mes: la cuenta sale de 20 citas diarias × 22 días laborables × un 15% de no-shows × un ticket medio de unos 115€, así que conviene rehacerla con tus propios números. Es la pérdida más fácil de corregir de todas, porque no depende de captar a nadie nuevo — solo de que el paciente que ya reservó confirme o avise a tiempo.",
   },
   {
+    q: "¿Cómo se reactivan pacientes que llevan tiempo sin venir?",
+    a: "Con un mensaje por WhatsApp que mencione cuánto tiempo hace que no pasan por la clínica y les proponga una revisión concreta. El tono tiene que ser cercano, no comercial: la mayoría no se fue molesta, simplemente nadie les dio un motivo para volver. Un dato específico, como que ya han pasado más de doce meses desde su última visita, hace el mensaje más personal que cualquier promoción genérica. Si ese filtro por última visita y el envío se automatizan, el proceso se puede aplicar a toda la base sin esfuerzo del equipo.",
+  },
+  {
     q: "¿Necesito contratar a alguien para gestionar todo esto?",
     a: "No. La clave está en automatizar los procesos: mensajes de recuperación para pacientes inactivos, confirmaciones activas para reducir no-shows y seguimientos post-cita para detectar nuevas necesidades. Una vez configurado, el sistema funciona solo por WhatsApp, el canal que más se lee, y tu equipo solo interviene cuando un paciente responde para reservar.",
   },
@@ -214,6 +218,12 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             congelado, esperando a que alguien retome el contacto.
           </P>
           <P>
+            Casi nunca se fueron molestos: la vida les cambió de ritmo y nadie les dio un
+            motivo concreto para volver. Por eso un buen mensaje de reactivación no vende
+            nada: menciona el tiempo que ha pasado desde la última visita y propone una
+            revisión concreta.
+          </P>
+          <P>
             Ese filtro lo puede sacar cualquier software de gestión dental —ClinicCloud o
             Klinikare, por ejemplo, permiten listar pacientes por última cita en un par de
             clics—, así que el dato ya lo tienes. El problema es el paso siguiente:
@@ -259,6 +269,11 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             recolocar ese hueco con otro paciente que esté en lista de espera.
           </P>
           <P>
+            Esa lista de espera funciona mejor si es activa: pacientes que pidieron cita
+            antes o que esperan una cancelación reciben aviso en cuanto se libera un hueco,
+            y el hueco se rellena solo, sin que nadie tenga que llamarlos uno por uno.
+          </P>
+          <P>
             Es una de las formas más directas de aumentar la facturación sin tocar el{" "}
             <InternalLink href="/blog/marketing-clinica-dental">
               presupuesto de marketing
@@ -276,8 +291,8 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             simplemente porque nadie vuelve sobre ellas.
           </P>
           <P>
-            Un mensaje de seguimiento tras la cita, preguntando cómo se encuentra el paciente
-            y aprovechando para recordar tratamientos pendientes o próximas revisiones, no
+            Un mensaje de seguimiento entre 24 y 48 horas después de la cita, preguntando
+            cómo se encuentra el paciente y aprovechando para recordar tratamientos pendientes o próximas revisiones, no
             solo mejora la relación con el paciente: abre la puerta a que reserve servicios
             adicionales que de otra forma habrían quedado en el olvido.
           </P>

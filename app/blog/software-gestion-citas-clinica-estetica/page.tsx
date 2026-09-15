@@ -178,7 +178,7 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
           <H2>Los más usados en clínicas estéticas en España</H2>
           <P>
             En el mercado español conviven dos tipos de soluciones. Por un lado, los{" "}
-            <InternalLink href="/blog/software-gestion-clinica-estetica">
+            <InternalLink href="/blog/software-gestion-clinicas-esteticas">
               softwares específicos del sector estética y salud
             </InternalLink>
             , que además de la agenda incluyen ficha de

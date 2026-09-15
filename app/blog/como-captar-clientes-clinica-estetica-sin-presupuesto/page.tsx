@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
+import BlogSource from "@/components/BlogSource"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
@@ -51,6 +52,14 @@ const faqs = [
   {
     q: "¿Qué es el seguimiento post-cita y por qué aumenta las reservas?",
     a: "El seguimiento post-cita es un mensaje automático que se envía al paciente unos días después del tratamiento para preguntar cómo se encuentra, reforzar el resultado y, opcionalmente, sugerir el siguiente paso (próxima sesión, tratamiento complementario). El 40% de las consultas de una clínica llegan fuera de horario — lo que significa que muchos pacientes intentan contactar cuando nadie puede atenderles. Un sistema de seguimiento automático por WhatsApp mantiene la conversación activa y convierte esa intención en reserva, sin depender de que alguien esté disponible en ese momento.",
+  },
+  {
+    q: "¿De verdad puedo conseguir más citas sin aumentar el presupuesto?",
+    a: "Sí, y en la mayoría de clínicas es donde está el margen más rápido. La publicidad trae leads nuevos, pero si parte de los que ya recibes no obtienen respuesta a tiempo, si los pacientes que ya te conocen no vuelven o si los huecos por cancelación se quedan vacíos, estás dejando citas sobre la mesa sin que el presupuesto tenga nada que ver. Aprovechar lo que ya tienes siempre sale más barato que captar un paciente desde cero.",
+  },
+  {
+    q: "¿Cómo sé si mi agenda está llena de verdad o solo lo parece?",
+    a: "Mira tres cosas: cuántos huecos libres tienes en las próximas dos semanas, cuántas citas acaban en no-show o cancelación de última hora, y cuántos leads del último mes no llegaron a convertirse en cita. Si hay pocos huecos pero muchos no-shows, la agenda está llena sobre el papel, no en la práctica. Y si muchos leads no convierten, el problema no es de demanda, sino de respuesta y seguimiento.",
   },
 ]
 
@@ -116,7 +125,7 @@ export default function CaptarClientesArticlePage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            12 de junio de 2026 · 7 min de lectura
+            12 de junio de 2026 · 9 min de lectura
           </p>
 
           {/* Intro */}
@@ -135,6 +144,12 @@ export default function CaptarClientesArticlePage() {
             tiene 200 pacientes inactivos — pacientes que vinieron una o dos veces y no han
             vuelto — eso representa hasta 600.000€ en ingresos dormidos. Antes de captar
             nuevos clientes, vale la pena recuperar los que ya conocen tu trabajo.
+          </P>
+          <P>
+            En la mayoría de clínicas, el problema no es que entren pocos pacientes, sino los
+            que se escapan: leads que escriben y no reciben respuesta a tiempo, pacientes que
+            dejan de venir y huecos que se quedan vacíos por una cancelación. Cerrar esas
+            fugas sale mucho más barato que captar a alguien desde cero.
           </P>
           <P>
             En este artículo vas a ver 5 estrategias que no requieren más presupuesto publicitario:
@@ -269,6 +284,33 @@ export default function CaptarClientesArticlePage() {
             llega con confianza previa. Alguien que viene porque un amigo le recomendó la clínica
             tiene una tasa de conversión y de retención mucho más alta que alguien que llega
             por un anuncio. Es el canal de captación más barato y con mejor calidad de cliente.
+          </P>
+
+          <H2>Antes de captar más: cierra las fugas de tu agenda</H2>
+          <P>
+            Ninguna de estas estrategias rinde si los pacientes que ya te escriben se quedan
+            sin respuesta. La probabilidad de perder un lead que no recibe respuesta en los
+            primeros cinco minutos es del 80%: mientras espera, esa persona sigue escribiendo
+            a otras clínicas, y la primera que contesta se queda la cita.
+          </P>
+          <BlogSource>MIT Lead Response Management Study</BlogSource>
+          <P>
+            Responder en minutos a todas horas no es realista para un equipo que está
+            atendiendo en cabina. Un{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
+              agente de WhatsApp para clínicas estéticas
+            </InternalLink>{" "}
+            contesta cada consulta en segundos, resuelve las dudas básicas y agenda la cita,
+            también de noche y en fin de semana.
+          </P>
+          <P>
+            La otra fuga son los huecos que dejan las cancelaciones y los no-shows: citas que
+            ya estaban conseguidas y se pierden. La forma más directa de reducirlos es{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
+              confirmar las citas con antelación
+            </InternalLink>
+            , y cuando alguien cancela, ofrecer ese hueco cuanto antes a otro paciente en
+            lugar de dejarlo vacío.
           </P>
         </article>
 

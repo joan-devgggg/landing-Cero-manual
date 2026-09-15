@@ -246,7 +246,7 @@ export default function TecnologiaParaClinicasEsteticasPage() {
           </P>
           <P>
             La forma de evitarlo es{" "}
-            <InternalLink href="/blog/software-gestion-clinica-estetica">
+            <InternalLink href="/blog/software-gestion-clinicas-esteticas">
               priorizar herramientas que se integren entre sí
             </InternalLink>{" "}
             —

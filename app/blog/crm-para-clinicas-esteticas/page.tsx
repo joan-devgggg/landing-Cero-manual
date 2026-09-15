@@ -223,7 +223,7 @@ export default function CrmClinicasArticlePage() {
           </P>
           <P>
             Aquí es donde se nota la diferencia entre un CRM sectorial y uno adaptado. Las{" "}
-            <InternalLink href="/blog/software-gestion-clinica-estetica">
+            <InternalLink href="/blog/software-gestion-clinicas-esteticas">
               plataformas españolas pensadas para clínicas
             </InternalLink>{" "}
             — Flowww o Klinikare, por ejemplo —

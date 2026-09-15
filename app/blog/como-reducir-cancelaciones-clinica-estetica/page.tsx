@@ -211,7 +211,7 @@ export default function CancelacionesArticlePage() {
             frente al 20-25% del email — lo que garantiza que el mensaje llega y se lee.
           </P>
           <P>
-            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+            <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
               El mensaje debe ser breve, personal
             </InternalLink>{" "}
             y con una llamada a la acción clara. No hace

@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
+import BlogSource from "@/components/BlogSource"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
@@ -48,6 +49,14 @@ const faqs = [
   {
     q: "¿Merece la pena invertir en esto si mi clínica ya tiene buena reputación?",
     a: "Sí, precisamente porque cuesta mucho menos cuidar a un paciente que ya confía en ti que conseguir uno nuevo. El valor de un cliente recurrente en una clínica estética puede rondar los 3.000€ a lo largo de su relación con el centro. Mejorar la experiencia no es un gesto bonito — es la forma más rentable de proteger esos ingresos.",
+  },
+  {
+    q: "¿Cómo mejorar la atención al cliente sin contratar más personal?",
+    a: "Gran parte del trabajo de atención en una clínica estética es repetitivo: responder las mismas preguntas sobre precios y disponibilidad, confirmar citas, escribir después del tratamiento. Si esas tareas las resuelve un sistema por WhatsApp a cualquier hora, el equipo puede centrarse en los pacientes que tiene delante, sin que las consultas online se queden esperando. Las conversaciones que necesitan un trato más cercano se derivan a una persona.",
+  },
+  {
+    q: "¿Por dónde empiezo si la atención de mi clínica está desorganizada?",
+    a: "Por los dos momentos donde más pacientes se pierden: el primer mensaje y el después de la cita. Empezar por dar respuesta inmediata a las consultas y por enviar un mensaje de seguimiento tras cada visita ya se nota mucho, sin necesidad de cambiar todo el sistema de golpe. Con eso funcionando, es más fácil ir cuidando el resto de la experiencia.",
   },
 ]
 
@@ -113,7 +122,7 @@ export default function ExperienciaPacienteArticlePage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            11 de junio de 2026 · 6 min de lectura
+            11 de junio de 2026 · 8 min de lectura
           </p>
 
           {/* Intro */}
@@ -137,6 +146,21 @@ export default function ExperienciaPacienteArticlePage() {
             paciente, qué pasa antes de la cita, durante y después, y cómo se puede mejorar
             cada uno de ellos sin añadir más carga de trabajo al equipo — automatizando lo
             que se puede automatizar y dejando el toque humano donde realmente importa.
+          </P>
+
+          <H2>Por qué la atención al cliente es tu mayor ventaja competitiva</H2>
+          <P>
+            En el sector estético, la mayoría de clínicas ofrecen tratamientos muy
+            parecidos, con tecnología y resultados comparables. A ojos del paciente, lo que
+            de verdad diferencia a una clínica de otra es cómo le atienden: si le responden
+            rápido, si le resuelven las dudas sin tener que insistir, si nota que alguien se
+            preocupa por él.
+          </P>
+          <P>
+            Y cuando esa atención falla, el paciente no suele quejarse. Simplemente escribe
+            a otra clínica y no vuelve a aparecer. Por eso la atención al cliente no es un
+            «extra» que se cuida cuando hay tiempo: es la base de la que depende todo lo
+            demás, empezando por la experiencia completa que vamos a ver a continuación.
           </P>
 
           <H2>Los momentos clave en la experiencia del paciente</H2>
@@ -171,6 +195,22 @@ export default function ExperienciaPacienteArticlePage() {
             esa persona es la de una clínica que tarda en contestar — y eso, antes incluso
             de haber puesto un pie dentro, ya genera dudas.
           </P>
+          <P>
+            La reserva también cuenta. Si para pedir cita hay que llamar en horario de
+            oficina o esperar a que alguien lea el mensaje, muchos pacientes abandonan por
+            el camino. Y la rapidez pesa más de lo que parece: la probabilidad de perder a
+            un paciente potencial que no recibe respuesta en los primeros cinco minutos es
+            del 80%. Por eso cada vez más clínicas{" "}
+            <InternalLink href="/blog/clinica-estetica-por-whatsapp">
+              atienden a sus pacientes por WhatsApp
+            </InternalLink>{" "}
+            con un{" "}
+            <InternalLink href="/agente-whatsapp-clinicas-esteticas">
+              agente de WhatsApp para clínicas estéticas
+            </InternalLink>{" "}
+            que responde al momento y deja la cita reservada.
+          </P>
+          <BlogSource>MIT Lead Response Management Study</BlogSource>
 
           <H2>Durante la cita: el momento que más recuerdan</H2>
           <P>
@@ -213,7 +253,7 @@ export default function ExperienciaPacienteArticlePage() {
           <P>
             La buena noticia es que gran parte de esto se puede automatizar sin que se
             note.{" "}
-            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+            <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
               Confirmaciones de cita, recordatorios
             </InternalLink>
             , mensajes de seguimiento después del
@@ -225,7 +265,9 @@ export default function ExperienciaPacienteArticlePage() {
             95% y un 98% de las veces, lo que significa que ese seguimiento que normalmente
             no se hace por falta de tiempo, llega — y se lee. El equipo sigue dedicando su
             tiempo a lo que de verdad requiere su atención, mientras el sistema se encarga
-            de que ningún paciente se sienta olvidado. En{" "}
+            de que ningún paciente se sienta olvidado. Y cuando una consulta es compleja o
+            emocional, el sistema la deriva a una persona del equipo, sin que el paciente
+            tenga que repetir nada. En{" "}
             <InternalLink href="/reactivacion-pacientes-inactivos">
               reactivación de pacientes inactivos
             </InternalLink>{" "}

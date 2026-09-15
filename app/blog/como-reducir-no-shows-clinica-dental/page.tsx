@@ -270,11 +270,7 @@ export default function NoShowsArticlePage() {
             tiempo — que uno por SMS o email.
           </P>
           <P>
-            Lo ideal es{" "}
-            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
-              combinar dos avisos
-            </InternalLink>
-            : uno 24 horas antes, para que el paciente pueda
+            Lo ideal es combinar dos avisos: uno 24 horas antes, para que el paciente pueda
             organizarse con margen, y otro 2 horas antes, para que nadie se despiste a
             última hora por las prisas del día.
           </P>
