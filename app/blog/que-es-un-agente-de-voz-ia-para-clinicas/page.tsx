@@ -183,7 +183,11 @@ export default function AgenteVozArticlePage() {
 
           <H2>Cómo funciona en una clínica: paso a paso</H2>
           <P>
-            En el día a día, funciona como si lo cogiera una persona de recepción — solo
+            En el día a día, funciona{" "}
+            <InternalLink href="/blog/agente-ia-recepcion-clinica">
+              como si lo cogiera una persona de recepción
+            </InternalLink>{" "}
+            — solo
             que las 24 horas, los 365 días del año, sin colas ni tonos de espera, y sin que
             nadie tenga que dejar lo que está haciendo para ir a por el teléfono.
           </P>
@@ -215,7 +219,11 @@ export default function AgenteVozArticlePage() {
           <P>
             Cuando la llamada es compleja, sensible o claramente urgente, el agente no
             improvisa: transfiere la llamada — o deja recogida toda la información — para
-            que una persona de tu equipo la retome sabiendo exactamente de qué se trata.
+            que{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-vs-recepcionista-clinica">
+              una persona de tu equipo la retome
+            </InternalLink>{" "}
+            sabiendo exactamente de qué se trata.
           </P>
 
           <H3>5. Todo queda registrado</H3>
@@ -228,8 +236,11 @@ export default function AgenteVozArticlePage() {
 
           <H2>¿Para qué tipo de clínicas tiene más sentido?</H2>
           <P>
-            Tiene más sentido cuanto más dependes del teléfono para captar y fidelizar
-            pacientes — es decir, prácticamente cualquier clínica. Pero hay perfiles para
+            Tiene más sentido cuanto más dependes del teléfono para{" "}
+            <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
+              captar y fidelizar pacientes
+            </InternalLink>{" "}
+            — es decir, prácticamente cualquier clínica. Pero hay perfiles para
             los que la diferencia se nota especialmente rápido.
           </P>
           <P>

@@ -127,8 +127,11 @@ export default function SoftwareGestionClinicaEsteticaPage() {
             le preguntes. El mercado está saturado, y eso no ayuda a decidir.
           </P>
           <P>
-            Lo que ocurre en la práctica es que muchas clínicas acaban con dos, tres o
-            cuatro herramientas distintas, cada una contratada para resolver un problema
+            Lo que ocurre en la práctica es que muchas clínicas acaban con{" "}
+            <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
+              dos, tres o cuatro herramientas distintas
+            </InternalLink>
+            , cada una contratada para resolver un problema
             puntual, y terminan pagando por funciones que apenas usan o que se solapan
             entre sí.
           </P>
@@ -151,7 +154,11 @@ export default function SoftwareGestionClinicaEsteticaPage() {
             ninguna clínica puede saltarse.
           </P>
           <P>
-            El segundo bloque es el CRM, o gestión de pacientes: el histórico de cada
+            El segundo bloque es el{" "}
+            <InternalLink href="/blog/crm-para-clinicas-esteticas">
+              CRM, o gestión de pacientes
+            </InternalLink>
+            : el histórico de cada
             persona, sus tratamientos, sus datos de contacto y, en muchos casos, la
             facturación y los consentimientos informados.
           </P>
@@ -162,8 +169,11 @@ export default function SoftwareGestionClinicaEsteticaPage() {
             ejecutarlas manualmente cada vez.
           </P>
           <P>
-            En el mercado español estas capas no siempre vienen separadas: plataformas como
-            Flowww o Koibox integran agenda y ficha de paciente en una sola herramienta,
+            En el mercado español estas capas no siempre vienen separadas:{" "}
+            <InternalLink href="/blog/mejor-software-gestion-clinica-estetica">
+              plataformas como Flowww o Koibox
+            </InternalLink>{" "}
+            integran agenda y ficha de paciente en una sola herramienta,
             mientras que opciones más ligeras como Booksy o Treatwell cubren sobre todo la
             reserva online. Lo importante no es el nombre, sino saber qué capa estás
             comprando.
@@ -178,7 +188,11 @@ export default function SoftwareGestionClinicaEsteticaPage() {
             los tres "organizan" algo — pero cada uno resuelve un problema distinto.
           </P>
           <P>
-            El software de citas gestiona el calendario y la disponibilidad: salas,
+            El{" "}
+            <InternalLink href="/blog/software-gestion-citas-clinica-estetica">
+              software de citas
+            </InternalLink>{" "}
+            gestiona el calendario y la disponibilidad: salas,
             profesionales, duración de cada tratamiento.
           </P>
           <P>

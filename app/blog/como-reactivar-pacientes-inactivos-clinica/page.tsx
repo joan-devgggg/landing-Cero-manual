@@ -160,7 +160,11 @@ export default function ReactivarPacientesArticlePage() {
             El email es la opción a la que casi todo el mundo recurre primero — y la que
             peor rinde. Una campaña de reactivación por email tiene, de media, entre un 20%
             y un 25% de probabilidades de ser siquiera abierta. El resto se queda esperando
-            en una bandeja de entrada saturada de promociones, o directamente acaba en la
+            en{" "}
+            <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
+              una bandeja de entrada saturada de promociones
+            </InternalLink>
+            , o directamente acaba en la
             carpeta de spam sin que nadie llegue a verla.
           </P>
           <P>
@@ -180,8 +184,11 @@ export default function ReactivarPacientesArticlePage() {
           </P>
           <P>
             Y hay otra ventaja silenciosa: igual que ocurre con las consultas nuevas —
-            donde casi un 40% llegan fuera del horario de la clínica —, los mensajes de
-            reactivación pueden programarse y enviarse de forma automática, en el momento
+            donde casi un 40% llegan fuera del horario de la clínica —, los{" "}
+            <InternalLink href="/blog/inteligencia-artificial-clinicas-esteticas">
+              mensajes de reactivación
+            </InternalLink>{" "}
+            pueden programarse y enviarse de forma automática, en el momento
             del día en que es más probable que se lean, sin que nadie de tu equipo tenga
             que sentarse a escribir uno por uno. Si quieres ver cómo se monta esto para tu
             clínica en concreto, en{" "}
@@ -218,8 +225,11 @@ export default function ReactivarPacientesArticlePage() {
 
           <H2>Cuántos pacientes puedes recuperar y qué ingresos supone</H2>
           <P>
-            Aquí es donde conviene hacer números con calma. El valor de un cliente
-            recurrente en una clínica suele rondar los 3.000€ a lo largo de su relación con
+            Aquí es donde conviene hacer números con calma. El{" "}
+            <InternalLink href="/blog/como-fidelizar-pacientes-clinica-estetica">
+              valor de un cliente recurrente
+            </InternalLink>{" "}
+            en una clínica suele rondar los 3.000€ a lo largo de su relación con
             el centro — entre tratamientos, revisiones y todo lo que viene después de la
             primera visita. Eso significa que cada paciente inactivo que se reactiva no es
             una cita suelta: es, potencialmente, esa cifra completa volviendo a estar sobre

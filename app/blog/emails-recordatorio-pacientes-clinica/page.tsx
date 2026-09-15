@@ -138,7 +138,11 @@ export default function EmailsRecordatorioPacientesPage() {
             Los recordatorios son una de las herramientas más eficaces para reducir las
             ausencias en una clínica. Cuando un paciente recibe un aviso a tiempo, la
             probabilidad de que aparezca sube de forma notable — de hecho, un sistema de
-            recordatorios bien planteado puede reducir los no-shows hasta un 40%. Y eso
+            recordatorios bien planteado puede{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
+              reducir los no-shows hasta un 40%
+            </InternalLink>
+            . Y eso
             importa, porque entre el 12% y el 19% de las citas de una clínica terminan sin
             que el paciente se presente.
           </P>
@@ -279,7 +283,11 @@ El equipo de [Clínica]`}
 
           <H2>Cómo automatizar los recordatorios para que funcionen solos</H2>
           <P>
-            Tener buenas plantillas es solo la mitad del trabajo. La otra mitad es que los
+            Tener{" "}
+            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+              buenas plantillas
+            </InternalLink>{" "}
+            es solo la mitad del trabajo. La otra mitad es que los
             recordatorios se envíen solos, en el momento exacto, sin que nadie de tu equipo
             tenga que acordarse de hacerlo cita tras cita. Si el envío depende de que alguien
             se siente a mandar correos o mensajes uno a uno, tarde o temprano se cuela algún
@@ -287,8 +295,11 @@ El equipo de [Clínica]`}
           </P>
           <P>
             Automatizar significa que cada paciente recibe su recordatorio con la antelación
-            adecuada por el canal adecuado: un aviso con margen (por email o WhatsApp) y una
-            confirmación cercana a la cita por WhatsApp, con el tono de tu clínica. Y si el
+            adecuada por el canal adecuado: un aviso con margen (por email o WhatsApp) y una{" "}
+            <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
+              confirmación cercana a la cita por WhatsApp
+            </InternalLink>
+            , con el tono de tu clínica. Y si el
             sistema detecta que alguien no confirma, puede activar un seguimiento adicional
             antes de que ese hueco se pierda.
           </P>

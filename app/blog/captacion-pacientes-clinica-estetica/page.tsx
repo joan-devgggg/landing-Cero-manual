@@ -125,7 +125,11 @@ export default function CaptacionPacientesArticlePage() {
             Instagram y precios, todo desde el móvil y en cuestión de minutos.
           </P>
           <P>
-            En ese contexto, tener presencia en redes sociales ya no es suficiente. Muchas
+            En ese contexto, tener{" "}
+            <InternalLink href="/blog/marketing-digital-clinicas-esteticas">
+              presencia en redes sociales ya no es suficiente
+            </InternalLink>
+            . Muchas
             clínicas invierten tiempo y dinero en generar interés — contenido, anuncios,
             promociones — y luego pierden buena parte de ese esfuerzo en el último tramo:
             el momento en que la persona interesada escribe preguntando y nadie responde a
@@ -164,7 +168,11 @@ export default function CaptacionPacientesArticlePage() {
           <H2>El error más común: captar sin convertir</H2>
           <P>
             Aquí está el punto que más ingresos se lleva por delante sin que nadie se dé
-            cuenta: una persona ve un anuncio, entra en el perfil, le gusta lo que ve y
+            cuenta: una persona{" "}
+            <InternalLink href="/blog/meta-ads-para-clinicas-esteticas">
+              ve un anuncio, entra en el perfil
+            </InternalLink>
+            , le gusta lo que ve y
             escribe preguntando por precio o disponibilidad. Hasta ahí, todo perfecto — el
             canal ha hecho su trabajo. El problema empieza cuando ese mensaje se queda sin
             respuesta durante horas.
@@ -178,8 +186,11 @@ export default function CaptacionPacientesArticlePage() {
             tuviera el anuncio más bonito.
           </P>
           <P>
-            Esto significa que, muchas veces, el problema no es de captación — es de
-            conversión. Se está invirtiendo en generar interés y, después, ese interés se
+            Esto significa que, muchas veces,{" "}
+            <InternalLink href="/blog/como-conseguir-mas-citas-clinica-estetica">
+              el problema no es de captación — es de conversión
+            </InternalLink>
+            . Se está invirtiendo en generar interés y, después, ese interés se
             evapora en la bandeja de entrada.
           </P>
 

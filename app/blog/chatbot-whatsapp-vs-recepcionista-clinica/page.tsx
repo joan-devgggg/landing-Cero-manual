@@ -153,15 +153,22 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
           </P>
           <P>
             <strong>Respuesta instantánea, sin colas.</strong> Si tres pacientes escriben a
-            la vez, una recepcionista solo puede atender a uno mientras los otros esperan.
+            la vez,{" "}
+            <InternalLink href="/blog/agente-ia-recepcion-clinica">
+              una recepcionista solo puede atender a uno
+            </InternalLink>{" "}
+            mientras los otros esperan.
             El chatbot responde a los tres en el mismo instante, sin que nadie note que
             «hay cola». Y esto importa: un lead sin respuesta en cinco minutos tiene hasta
             un 80% de probabilidades de perderse para siempre.
           </P>
           <P>
             <strong>Cero coste adicional por volumen.</strong> Para una recepcionista, diez
-            consultas más al día significan más carga de trabajo. Para un chatbot, no
-            suponen ningún coste extra — responde igual de bien la consulta número uno que
+            consultas más al día significan más carga de trabajo. Para un chatbot,{" "}
+            <InternalLink href="/blog/cuanto-cuesta-chatbot-whatsapp-clinica">
+              no suponen ningún coste extra
+            </InternalLink>{" "}
+            — responde igual de bien la consulta número uno que
             la número cien.
           </P>
           <P>

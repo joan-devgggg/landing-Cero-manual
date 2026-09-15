@@ -131,8 +131,11 @@ export default function MetaAdsArticlePage() {
           <P>
             El problema es que la mayoría de clínicas llegan a Meta Ads, invierten el primer
             presupuesto y obtienen uno de estos dos resultados: les bloquean el anuncio antes
-            de que empiece a rodar, o lo lanzan y los leads no convierten porque nadie
-            responde a tiempo. Buena parte de las consultas llega fuera del horario de
+            de que empiece a rodar, o lo lanzan y los leads no convierten porque{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
+              nadie responde a tiempo
+            </InternalLink>
+            . Buena parte de las consultas llega fuera del horario de
             atención — y un lead que espera más de cinco minutos tiene un 80% de
             probabilidades de no contestar cuando alguien le llame al día siguiente.
           </P>
@@ -160,7 +163,11 @@ export default function MetaAdsArticlePage() {
           <P>
             El segundo motivo es el formato visual. Los tratamientos estéticos se venden con
             la vista: resultados, ambiente, sensación. Instagram y Facebook son el entorno
-            natural para ese tipo de contenido — mucho más que un anuncio de texto en Google,
+            natural para ese tipo de contenido — mucho más que{" "}
+            <InternalLink href="/blog/marketing-digital-clinicas-esteticas">
+              un anuncio de texto en Google
+            </InternalLink>
+            ,
             donde compites directamente con el precio de otras clínicas.
           </P>
           <P>
@@ -324,7 +331,11 @@ export default function MetaAdsArticlePage() {
             Un CPL realista para clínicas estéticas bien segmentadas se mueve entre 15€ y
             40€. Por debajo de 15€ o estás en una zona con muy poca competencia o el lead
             no está suficientemente cualificado. Por encima de 40€ conviene revisar la
-            segmentación y el copy antes de escalar el presupuesto.
+            segmentación y el copy{" "}
+            <InternalLink href="/blog/como-captar-clientes-clinica-estetica-sin-presupuesto">
+              antes de escalar el presupuesto
+            </InternalLink>
+            .
           </P>
           <P>
             Y aquí entra el punto más crítico que pocas clínicas tienen resuelto: captar el

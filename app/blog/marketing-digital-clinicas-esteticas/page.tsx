@@ -221,8 +221,11 @@ export default function MarketingDigitalClinicasArticlePage() {
           </P>
           <P>
             Instagram funciona mejor como complemento que como motor principal. Construye
-            la confianza necesaria para que, cuando esa misma persona busque en Google o
-            reciba un anuncio, reconozca tu clínica y confíe en ella. Pero esperar que
+            la confianza necesaria para que, cuando esa misma persona busque en Google o{" "}
+            <InternalLink href="/blog/meta-ads-para-clinicas-esteticas">
+              reciba un anuncio
+            </InternalLink>
+            , reconozca tu clínica y confíe en ella. Pero esperar que
             Instagram por sí solo llene la agenda suele traducirse en mucho esfuerzo de
             contenido y pocos resultados medibles.
           </P>
@@ -252,7 +255,11 @@ export default function MarketingDigitalClinicasArticlePage() {
           <H3>El SEO local y la ficha de Google Business</H3>
           <P>
             Antes incluso de invertir en publicidad, una ficha de Google Business completa
-            — con fotos, horarios, servicios y, sobre todo, reseñas — es uno de los activos
+            — con fotos, horarios, servicios y,{" "}
+            <InternalLink href="/blog/como-conseguir-resenas-google-clinica-estetica">
+              sobre todo, reseñas
+            </InternalLink>{" "}
+            — es uno de los activos
             de marketing más rentables que puede tener una clínica. Aparece de forma
             gratuita en las búsquedas locales y en Google Maps, justo donde la gente busca
             cuando ya está decidida.
@@ -299,7 +306,11 @@ export default function MarketingDigitalClinicasArticlePage() {
           <P>
             Se combinan pensándolos como un embudo, no como cuatro cuentas que alimentar:
             Instagram construye confianza, Google capta la demanda activa y WhatsApp cierra
-            la conversación. El error habitual es invertir tiempo y dinero en los dos
+            la conversación. El error habitual es{" "}
+            <InternalLink href="/blog/como-captar-clientes-clinica-estetica-sin-presupuesto">
+              invertir tiempo y dinero
+            </InternalLink>{" "}
+            en los dos
             primeros sin haber resuelto el tercero — y ahí es donde se pierde la mayor parte
             del retorno.
           </P>
@@ -313,7 +324,11 @@ export default function MarketingDigitalClinicasArticlePage() {
           <P>
             El otro punto donde se rompe la cadena es el registro: si cada canal vive en un
             sitio distinto, nadie sabe de dónde vino cada paciente ni a quién toca hacer
-            seguimiento. Tener la ficha centralizada en el software de gestión que ya uses —
+            seguimiento. Tener{" "}
+            <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
+              la ficha centralizada en el software de gestión
+            </InternalLink>{" "}
+            que ya uses —
             Flowww, Koibox o el que sea — es lo que permite saber qué canal te trae pacientes
             de verdad y cuál solo te trae likes.
           </P>

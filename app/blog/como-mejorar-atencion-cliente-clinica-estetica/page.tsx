@@ -129,8 +129,11 @@ export default function MejorarAtencionClienteArticlePage() {
           <P>
             El problema es que muchas clínicas fallan precisamente ahí, no por falta de
             ganas, sino porque el equipo ya está al límite atendiendo a quien tiene delante y
-            no puede, además, estar pendiente del móvil para responder cada consulta que
-            llega por WhatsApp o redes sociales.
+            no puede, además, estar pendiente del móvil para responder{" "}
+            <InternalLink href="/blog/clinica-estetica-por-whatsapp">
+              cada consulta que llega por WhatsApp
+            </InternalLink>{" "}
+            o redes sociales.
           </P>
           <P>
             En este artículo vas a ver por qué la atención al cliente es tu mayor ventaja
@@ -142,8 +145,11 @@ export default function MejorarAtencionClienteArticlePage() {
           <P>
             En el sector estético, la mayoría de clínicas ofrecen tratamientos muy similares,
             con tecnología y resultados comparables. Lo que de verdad diferencia a una clínica
-            de otra, a ojos del paciente, es la experiencia: cómo le tratan desde el primer
-            mensaje hasta el seguimiento después del tratamiento.
+            de otra, a ojos del paciente, es la experiencia:{" "}
+            <InternalLink href="/blog/experiencia-paciente-clinica-estetica">
+              cómo le tratan desde el primer mensaje
+            </InternalLink>{" "}
+            hasta el seguimiento después del tratamiento.
           </P>
           <P>
             Una clínica que responde rápido, que cuida los detalles y que hace sentir al
@@ -176,7 +182,11 @@ export default function MejorarAtencionClienteArticlePage() {
             han cobrado.
           </P>
           <P>
-            Cada uno de estos momentos es una oportunidad para fidelizar... o para perder al
+            Cada uno de estos momentos es{" "}
+            <InternalLink href="/blog/como-fidelizar-pacientes-clinica-estetica">
+              una oportunidad para fidelizar
+            </InternalLink>
+            ... o para perder al
             paciente sin ni siquiera darte cuenta.
           </P>
 

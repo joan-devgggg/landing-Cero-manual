@@ -122,7 +122,11 @@ export default function SoftwareGestionClinicasArticlePage() {
           {/* Intro */}
           <P>
             Si buscas "software para clínicas estéticas" en Google, te van a aparecer decenas
-            de opciones: programas de gestión de citas, CRMs, plataformas de marketing,
+            de opciones:{" "}
+            <InternalLink href="/blog/programa-gestion-clinica-estetica">
+              programas de gestión de citas
+            </InternalLink>
+            , CRMs, plataformas de marketing,
             herramientas de facturación, chatbots, apps de fidelización... Cada una promete
             ser la solución definitiva, y es fácil acabar pagando por varias herramientas que
             apenas se usan.
@@ -149,8 +153,11 @@ export default function SoftwareGestionClinicasArticlePage() {
           </P>
           <P>
             El software de gestión de citas o agenda permite a los pacientes reservar,
-            modificar o cancelar sus visitas, y a la clínica organizar los huecos de cada
-            profesional. Es la pieza que casi ninguna clínica puede saltarse.
+            modificar o cancelar sus visitas, y a la clínica{" "}
+            <InternalLink href="/blog/agenda-clinica-estetica-online">
+              organizar los huecos de cada profesional
+            </InternalLink>
+            . Es la pieza que casi ninguna clínica puede saltarse.
           </P>
           <P>
             El software de comunicación con pacientes incluye desde el WhatsApp Business
@@ -194,7 +201,11 @@ export default function SoftwareGestionClinicasArticlePage() {
 
           <H2>Por qué muchas clínicas acaban con demasiadas herramientas</H2>
           <P>
-            Porque el software se va incorporando a parches, resolviendo problemas sueltos, en
+            Porque{" "}
+            <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
+              el software se va incorporando a parches
+            </InternalLink>
+            , resolviendo problemas sueltos, en
             lugar de responder a un plan. El resultado son varias suscripciones que se solapan
             y datos del mismo paciente repartidos entre sistemas que no se hablan entre sí.
           </P>

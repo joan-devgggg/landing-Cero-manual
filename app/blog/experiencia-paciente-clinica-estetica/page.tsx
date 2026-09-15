@@ -144,7 +144,11 @@ export default function ExperienciaPacienteArticlePage() {
             La experiencia de un paciente no es un único momento, sino una secuencia: el
             primer contacto, la espera hasta la cita, la cita en sí, y todo lo que ocurre
             después. Cada uno de estos tramos deja una impresión, y todas se suman para
-            formar la opinión final que esa persona tiene de tu clínica — la que decide si
+            formar{" "}
+            <InternalLink href="/blog/como-conseguir-resenas-google-clinica-estetica">
+              la opinión final que esa persona tiene
+            </InternalLink>{" "}
+            de tu clínica — la que decide si
             vuelve, si recomienda o si simplemente no vuelve a pensar en ti.
           </P>
           <P>
@@ -187,12 +191,14 @@ export default function ExperienciaPacienteArticlePage() {
             Aquí está, probablemente, la mayor oportunidad perdida en la mayoría de
             clínicas. Después de la cita, el contacto simplemente se corta. Nadie pregunta
             cómo ha ido, nadie recuerda la siguiente revisión, nadie aprovecha ese momento —
-            cuando el paciente todavía tiene la experiencia fresca — para reforzar la
-            relación.
+            cuando el paciente todavía tiene la experiencia fresca — para reforzar la relación.
           </P>
           <P>
-            Y ese seguimiento tiene un valor enorme: el de un cliente recurrente en una
-            clínica estética puede rondar los 3.000€ a lo largo de su relación con el
+            Y ese seguimiento tiene un valor enorme: el de{" "}
+            <InternalLink href="/blog/como-fidelizar-pacientes-clinica-estetica">
+              un cliente recurrente en una clínica estética
+            </InternalLink>{" "}
+            puede rondar los 3.000€ a lo largo de su relación con el
             centro. Un simple mensaje preguntando cómo se siente, o recordando la próxima
             revisión, puede ser la diferencia entre que esa relación continúe o se apague
             sin que nadie se dé cuenta. Si quieres ver cómo recuperar a pacientes con los
@@ -206,7 +212,11 @@ export default function ExperienciaPacienteArticlePage() {
           <H2>Cómo automatizar la experiencia sin perder el toque humano</H2>
           <P>
             La buena noticia es que gran parte de esto se puede automatizar sin que se
-            note. Confirmaciones de cita, recordatorios, mensajes de seguimiento después del
+            note.{" "}
+            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+              Confirmaciones de cita, recordatorios
+            </InternalLink>
+            , mensajes de seguimiento después del
             tratamiento — todo esto puede enviarse de forma automática, en el momento
             adecuado, con el nombre del paciente y referencias a su tratamiento concreto.
           </P>

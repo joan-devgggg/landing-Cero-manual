@@ -144,7 +144,11 @@ export default function RecordatoriosWhatsAppArticlePage() {
             tienen una tasa de apertura del 95-98%, frente al 20-25% del email.
           </P>
           <P>
-            Dicho de otra forma: si envías cien recordatorios por email, unos setenta y cinco
+            Dicho de otra forma: si envías cien{" "}
+            <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
+              recordatorios por email
+            </InternalLink>
+            , unos setenta y cinco
             no se van a abrir nunca. Si los envías por WhatsApp, prácticamente todos van a
             llegar, abrirse y leerse — la mayoría en los primeros minutos.
           </P>
@@ -164,8 +168,11 @@ export default function RecordatoriosWhatsAppArticlePage() {
           <H2>Qué debe incluir un buen recordatorio de cita</H2>
           <P>
             No todos los recordatorios son iguales. Un mensaje genérico tipo «le recordamos su
-            cita» cumple el expediente, pero deja pasar la oportunidad de evitar el no-show.
-            Un buen recordatorio incluye, como mínimo:
+            cita» cumple el expediente, pero deja pasar la oportunidad de evitar el no-show.{" "}
+            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+              Un buen recordatorio incluye
+            </InternalLink>
+            , como mínimo:
           </P>
           <P>
             <strong>Quién, cuándo y dónde.</strong> El nombre del paciente, el día y la hora
@@ -207,7 +214,11 @@ export default function RecordatoriosWhatsAppArticlePage() {
           </P>
           <P>
             Los dos juntos cubren tanto el olvido planificable como el despiste del día a día,
-            y son la base sobre la que se sostiene esa reducción del 40% en no-shows.
+            y son la base sobre la que se sostiene{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
+              esa reducción del 40% en no-shows
+            </InternalLink>
+            .
           </P>
 
           <H2>Confirmación activa vs aviso pasivo</H2>
@@ -243,7 +254,11 @@ export default function RecordatoriosWhatsAppArticlePage() {
           <P>
             El proceso, una vez configurado, es así: el sistema lee tu agenda, programa los
             dos avisos (24h y 2h antes) para cada cita, envía el mensaje por WhatsApp con el
-            tono y los datos de tu clínica, y procesa la respuesta del paciente — confirmación,
+            tono y los datos de tu clínica, y{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
+              procesa la respuesta del paciente
+            </InternalLink>{" "}
+            — confirmación,
             cancelación o reprogramación — actualizando la agenda en consecuencia.
           </P>
           <P>

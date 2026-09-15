@@ -147,7 +147,11 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
             proporción puede traducirse en pérdidas de hasta 7.500€ al mes para una
             clínica con una agenda ocupada. Y eso sin contar el tiempo del personal que
             queda bloqueado esperando a un paciente que nunca llega, ni la oportunidad
-            perdida de haber dado ese hueco a otra persona en lista de espera.
+            perdida de haber dado ese hueco a{" "}
+            <InternalLink href="/blog/reducir-lista-espera-clinica-estetica">
+              otra persona en lista de espera
+            </InternalLink>
+            .
           </P>
 
           <H2>Por qué los pacientes de estética no avisan cuando no van a venir</H2>
@@ -158,7 +162,11 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
             y mil cosas más, esa cita ha quedado enterrada en el calendario.
           </P>
           <P>
-            A esto se suma otro factor: cancelar suele requerir llamar por teléfono o
+            A esto se suma otro factor:{" "}
+            <InternalLink href="/blog/como-reducir-cancelaciones-clinica-estetica">
+              cancelar suele requerir llamar por teléfono
+            </InternalLink>{" "}
+            o
             escribir un mensaje explicando por qué no van a poder venir, algo que mucha
             gente prefiere evitar. Es más fácil simplemente no aparecer que tener esa
             conversación. El resultado es el mismo para la clínica: un hueco vacío y
@@ -168,13 +176,21 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
           <H2>La solución: confirmación activa por WhatsApp</H2>
           <P>
             La forma más efectiva de reducir los no-shows no es simplemente «recordar»
-            la cita, sino pedir una confirmación activa — que el propio paciente
+            la cita, sino{" "}
+            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+              pedir una confirmación activa
+            </InternalLink>{" "}
+            — que el propio paciente
             responda diciendo que sí va a venir, o que avise con tiempo si no puede.
           </P>
           <P>
             WhatsApp es, con diferencia, el canal que mejor funciona para esto. Los
             mensajes de WhatsApp se abren entre un 95% y un 98% de las veces, frente a
-            las tasas mucho más bajas de los SMS o los emails. Y al ser un canal
+            las tasas mucho más bajas de{" "}
+            <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
+              los SMS o los emails
+            </InternalLink>
+            . Y al ser un canal
             conversacional, responder es tan fácil como escribir «sí» o «no puedo» — sin
             tener que llamar ni rellenar nada. En{" "}
             <InternalLink href="/recordatorios-automaticos-citas">
@@ -186,8 +202,11 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
           <H2>Cómo implementar recordatorios automáticos en tu clínica</H2>
           <P>
             La implementación es más sencilla de lo que parece. Se conecta tu agenda
-            (la que ya usas) con un sistema que envía automáticamente un recordatorio
-            por WhatsApp un día o dos antes de la cita, pidiendo confirmación. Si el
+            (la que ya usas) con un sistema que{" "}
+            <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
+              envía automáticamente un recordatorio por WhatsApp
+            </InternalLink>{" "}
+            un día o dos antes de la cita, pidiendo confirmación. Si el
             paciente confirma, no hace falta hacer nada más. Si avisa de que no puede
             venir, ese hueco queda libre con tiempo suficiente para ofrecerlo a otro
             paciente — por ejemplo, a alguien en lista de espera.

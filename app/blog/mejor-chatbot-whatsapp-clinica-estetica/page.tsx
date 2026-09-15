@@ -123,8 +123,11 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
             te has dado cuenta de que hay decenas de opciones — desde plantillas genéricas
             hasta sistemas a medida, pasando por integraciones que prometen mucho y
             cumplen poco. Y elegir mal no es un detalle menor: significa meses de
-            consultas mal atendidas, pacientes frustrados y, en muchos casos, un coste
-            mensual que no se traduce en ni una sola cita nueva.
+            consultas mal atendidas, pacientes frustrados y, en muchos casos,{" "}
+            <InternalLink href="/blog/cuanto-cuesta-chatbot-whatsapp-clinica">
+              un coste mensual
+            </InternalLink>{" "}
+            que no se traduce en ni una sola cita nueva.
           </P>
           <P>
             El canal en sí no es el problema — al contrario. Entre un 95% y un 98% de los
@@ -221,8 +224,11 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
             responder algo — se queda callado, repite lo mismo, o avisa a alguien de mi
             equipo? ¿Puede agendar citas directamente en mi calendario actual, o solo
             «recoge el interés» para que luego alguien lo gestione? ¿Cuánto tiempo se
-            tarda en tenerlo funcionando desde que se firma? ¿Y qué pasa con mis datos y
-            conversaciones si en algún momento decido cambiar de proveedor?
+            tarda en tenerlo funcionando desde que se firma? ¿Y{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-clinicas-rgpd">
+              qué pasa con mis datos y conversaciones
+            </InternalLink>{" "}
+            si en algún momento decido cambiar de proveedor?
           </P>
           <P>
             Las respuestas a estas preguntas suelen revelar, mucho mejor que cualquier

@@ -160,8 +160,11 @@ export default function CrmClinicasArticlePage() {
           <P>
             En una clínica estética, el CRM actúa principalmente en dos momentos. El primero
             es la captación: desde que un lead llega por primera vez hasta que reserva su
-            primera cita. El segundo es la fidelización: gestionar el seguimiento de clientes
-            que ya han venido, detectar quiénes llevan meses sin aparecer y lanzar campañas
+            primera cita. El segundo es la fidelización: gestionar el{" "}
+            <InternalLink href="/blog/como-fidelizar-pacientes-clinica-estetica">
+              seguimiento de clientes que ya han venido
+            </InternalLink>
+            , detectar quiénes llevan meses sin aparecer y lanzar campañas
             de reactivación antes de que se vayan definitivamente a la competencia.
           </P>
           <P>
@@ -178,8 +181,11 @@ export default function CrmClinicasArticlePage() {
             CRM ya no es una mejora opcional.
           </P>
           <P>
-            No todas las clínicas lo necesitan desde el primer día — una consulta de un solo
-            profesional con diez pacientes nuevos al mes se apaña con la agenda. El problema
+            No todas las clínicas lo necesitan desde el primer día —{" "}
+            <InternalLink href="/blog/crm-clinicas-esteticas-pequenas">
+              una consulta de un solo profesional
+            </InternalLink>{" "}
+            con diez pacientes nuevos al mes se apaña con la agenda. El problema
             aparece cuando el volumen supera lo que cabe en la cabeza de alguien.
           </P>
 
@@ -216,8 +222,11 @@ export default function CrmClinicasArticlePage() {
             cubriendo el hueco a mano.
           </P>
           <P>
-            Aquí es donde se nota la diferencia entre un CRM sectorial y uno adaptado. Las
-            plataformas españolas pensadas para clínicas — Flowww o Klinikare, por ejemplo —
+            Aquí es donde se nota la diferencia entre un CRM sectorial y uno adaptado. Las{" "}
+            <InternalLink href="/blog/software-gestion-clinica-estetica">
+              plataformas españolas pensadas para clínicas
+            </InternalLink>{" "}
+            — Flowww o Klinikare, por ejemplo —
             traen la ficha de paciente, el histórico de tratamientos y los consentimientos de
             serie; en un CRM genérico eso hay que construirlo con campos personalizados.
           </P>
@@ -295,7 +304,10 @@ export default function CrmClinicasArticlePage() {
           />
 
           <P>
-            Las tres piezas son complementarias, no excluyentes. La combinación que mejor
+            <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
+              Las tres piezas son complementarias
+            </InternalLink>
+            , no excluyentes. La combinación que mejor
             funciona es un CRM que gestione leads y seguimiento, conectado con un software de
             agenda que gestione las citas — de forma que cuando un lead pasa a paciente, la
             información fluya entre los dos sistemas sin tener que introducirla dos veces.

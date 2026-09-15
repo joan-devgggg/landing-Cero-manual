@@ -149,14 +149,22 @@ export default function ComoConseguirMasCitasArticlePage() {
             Cada uno de estos puntos representa citas que ya estaban prácticamente
             conseguidas — y que se pierden por falta de seguimiento, no por falta de
             demanda. Antes de gastar más en atraer gente nueva, tiene sentido cerrar estas
-            fugas: es más barato y más rápido que captar un cliente desde cero.
+            fugas: es más barato y más rápido que{" "}
+            <InternalLink href="/blog/captacion-pacientes-clinica-estetica">
+              captar un cliente desde cero
+            </InternalLink>
+            .
           </P>
 
           <H2>Responde más rápido y convierte más leads</H2>
           <P>
             La probabilidad de perder un lead que no recibe respuesta en los primeros
             cinco minutos es del 80%. Esto significa que, si alguien escribe a tu clínica
-            interesado en un tratamiento y nadie responde hasta horas después — o al día
+            interesado en un tratamiento y{" "}
+            <InternalLink href="/blog/como-mejorar-atencion-cliente-clinica-estetica">
+              nadie responde hasta horas después
+            </InternalLink>{" "}
+            — o al día
             siguiente —, lo más probable es que esa persona ya haya reservado en otra
             clínica que sí respondió a tiempo.
           </P>
@@ -195,8 +203,11 @@ export default function ComoConseguirMasCitasArticlePage() {
             queda vacía sin generar ningún ingreso.
           </P>
           <P>
-            Reducir esos huecos tiene un doble efecto: por un lado, confirmar las citas con
-            antelación reduce directamente el número de no-shows. Por otro, cuando sí se
+            Reducir esos huecos tiene un doble efecto: por un lado,{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
+              confirmar las citas con antelación
+            </InternalLink>{" "}
+            reduce directamente el número de no-shows. Por otro, cuando sí se
             produce una cancelación, avisar rápido a una lista de espera permite ocupar ese
             hueco con otro paciente en lugar de perderlo. Las dos cosas juntas pueden
             recuperar varias citas a la semana sin necesidad de un solo lead nuevo.

@@ -126,14 +126,21 @@ export default function RecordatoriosArticlePage() {
             iba a entrar, y que se evapora en silencio.
           </P>
           <P>
-            El problema no es que los pacientes sean descuidados: es que los sistemas de
-            aviso tradicionales no funcionan. Una llamada que nadie coge, un email que se
+            El problema no es que los pacientes sean descuidados: es que{" "}
+            <InternalLink href="/blog/como-gestionar-ausencias-clinica-estetica">
+              los sistemas de aviso tradicionales no funcionan
+            </InternalLink>
+            . Una llamada que nadie coge, un email que se
             pierde entre notificaciones, un SMS que se lee y se olvida — ninguno de esos
             canales genera el compromiso que necesitas para que alguien confirme o avise
             con tiempo si no puede venir.
           </P>
           <P>
-            Los recordatorios automáticos por WhatsApp cambian esa ecuación. En este
+            Los{" "}
+            <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
+              recordatorios automáticos por WhatsApp
+            </InternalLink>{" "}
+            cambian esa ecuación. En este
             artículo vas a ver exactamente qué son, por qué funcionan mejor que cualquier
             otro canal, cuándo y cómo enviarlos — y cuánto puedes recuperar desde el primer
             mes sin que nadie de tu equipo tenga que hacer nada distinto cada mañana.
@@ -153,7 +160,11 @@ export default function RecordatoriosArticlePage() {
             tenga un momento libre entre paciente y paciente para coger el teléfono.
           </P>
           <P>
-            Y lo más importante: puede pedir una respuesta activa — una confirmación, un
+            Y lo más importante: puede{" "}
+            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+              pedir una respuesta activa
+            </InternalLink>{" "}
+            — una confirmación, un
             «sí» o un «no puedo ese día» — que convierte un aviso pasivo en un pequeño
             compromiso real. Ese es el detalle que más impacta en la tasa de no-shows.
           </P>
@@ -171,7 +182,11 @@ export default function RecordatoriosArticlePage() {
             de que lleguen al destinatario.
           </P>
           <P>
-            Piénsalo de esta forma: si mandas cien recordatorios por email, estadísticamente
+            Piénsalo de esta forma: si mandas{" "}
+            <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
+              cien recordatorios por email
+            </InternalLink>
+            , estadísticamente
             unos setenta y cinco no se van a abrir. Si los mandas por WhatsApp, prácticamente
             todos van a llegar, abrirse y leerse — normalmente en los primeros minutos.
           </P>
