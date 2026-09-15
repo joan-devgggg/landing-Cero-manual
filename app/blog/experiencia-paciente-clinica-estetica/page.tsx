@@ -144,12 +144,12 @@ export default function ExperienciaPacienteArticlePage() {
             La experiencia de un paciente no es un único momento, sino una secuencia: el
             primer contacto, la espera hasta la cita, la cita en sí, y todo lo que ocurre
             después. Cada uno de estos tramos deja una impresión, y todas se suman para
-            formar{" "}
+            formar la opinión final que esa persona tiene de tu clínica — la que decide si
+            vuelve, si recomienda, si te{" "}
             <InternalLink href="/blog/como-conseguir-resenas-google-clinica-estetica">
-              la opinión final que esa persona tiene
+              deja una reseña en Google
             </InternalLink>{" "}
-            de tu clínica — la que decide si
-            vuelve, si recomienda o si simplemente no vuelve a pensar en ti.
+            o si simplemente no vuelve a pensar en ti.
           </P>
           <P>
             Lo interesante es que los tramos que menos atención reciben suelen ser los que

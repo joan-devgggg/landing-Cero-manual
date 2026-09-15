@@ -306,12 +306,12 @@ export default function MarketingDigitalClinicasArticlePage() {
           <P>
             Se combinan pensándolos como un embudo, no como cuatro cuentas que alimentar:
             Instagram construye confianza, Google capta la demanda activa y WhatsApp cierra
-            la conversación. El error habitual es{" "}
+            la conversación. El error habitual es invertir tiempo y dinero en los dos
+            primeros sin haber resuelto el tercero, que es lo que permite{" "}
             <InternalLink href="/blog/como-captar-clientes-clinica-estetica-sin-presupuesto">
-              invertir tiempo y dinero
+              captar más clientes sin gastar más
             </InternalLink>{" "}
-            en los dos
-            primeros sin haber resuelto el tercero — y ahí es donde se pierde la mayor parte
+            — y ahí es donde se pierde la mayor parte
             del retorno.
           </P>
           <P>

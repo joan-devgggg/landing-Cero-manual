@@ -124,9 +124,9 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             automatizar las mismas tareas que antes requerían un equipo de recepción
             trabajando sin descanso — con{" "}
             <InternalLink href="/blog/inteligencia-artificial-clinicas-dentales">
-              herramientas que se configuran en días
-            </InternalLink>
-            , no en
+              herramientas de inteligencia artificial
+            </InternalLink>{" "}
+            que se configuran en días, no en
             meses.
           </P>
           <P>

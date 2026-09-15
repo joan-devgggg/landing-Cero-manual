@@ -143,9 +143,9 @@ export default function PlantillasRecordatorioPage() {
           </P>
           <P>
             Los recordatorios por WhatsApp se apoyan en las tasas de apertura de referencia
-            del sector — del 95-98%, frente al{" "}
+            del sector — del 95-98%, frente al 20-25% de los{" "}
             <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
-              20-25% del email
+              emails de recordatorio
             </InternalLink>{" "}
             o el SMS. Y cuando están
             bien planteados, recortan de forma notable los no-shows, que en clínicas

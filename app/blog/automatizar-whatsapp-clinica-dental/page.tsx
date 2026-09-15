@@ -185,9 +185,9 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
 
           <H3>Cualificar consultas antes de pasarlas al equipo</H3>
           <P>
-            Recoge qué necesita el paciente,{" "}
+            Recoge qué necesita el paciente, qué tratamiento le interesa o qué urgencia tiene,{" "}
             <InternalLink href="/blog/chatbot-whatsapp-clinicas-rgpd">
-              qué tratamiento le interesa o qué urgencia tiene
+              tratando esos datos conforme al RGPD
             </InternalLink>
             , para que cuando alguien del equipo retome la conversación lo haga con todo el
             contexto, sin tener que empezar de cero. Si quieres ver cómo se aplicaría esto a

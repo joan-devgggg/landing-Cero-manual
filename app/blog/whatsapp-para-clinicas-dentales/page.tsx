@@ -228,11 +228,11 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
 
           <H2>Cuándo automatizar WhatsApp en tu clínica dental</H2>
           <P>
-            No es necesario{" "}
+            No es necesario automatizar todo de golpe: la{" "}
             <InternalLink href="/blog/inteligencia-artificial-clinicas-dentales">
-              automatizar todo de golpe
-            </InternalLink>
-            . La señal más clara de que ha llegado el
+              inteligencia artificial en tu clínica dental
+            </InternalLink>{" "}
+            puede entrar por partes. La señal más clara de que ha llegado el
             momento es cuando empiezas a notar que algunos mensajes tardan en contestarse, que
             las confirmaciones de cita se hacen de forma irregular, o que la reactivación de
             pacientes inactivos es algo que «algún día habría que hacer» pero nunca se hace.
