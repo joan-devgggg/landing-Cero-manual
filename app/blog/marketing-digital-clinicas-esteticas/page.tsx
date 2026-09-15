@@ -46,6 +46,10 @@ const faqs = [
     a: "Con 200-300€/mes en Google Ads o Meta Ads ya puedes generar un volumen de leads constante para una clínica pequeña, siempre que el embudo de respuesta funcione. El error habitual es subir el presupuesto de publicidad sin haber resuelto cómo se gestionan los leads que ya llegan: si un lead espera horas para recibir respuesta, aumentar la inversión solo multiplica las oportunidades perdidas. Antes de gastar más, asegúrate de que cada consulta recibe respuesta en minutos.",
   },
   {
+    q: "Tengo muchos seguidores en Instagram pero pocas citas, ¿qué falla?",
+    a: "Normalmente no falla Instagram, sino lo que pasa después. Seguir una cuenta y pedir cita son dos cosas distintas: Instagram genera interés y confianza, pero la decisión de reservar llega más tarde, cuando esa persona escribe preguntando por precio o disponibilidad. Si ese mensaje tarda horas en recibir respuesta, el interés que tanto costó generar se enfría y acaba reservando en otra clínica. Antes de publicar más contenido, revisa cuánto tardas en contestar a quien ya te escribe.",
+  },
+  {
     q: "¿Vale la pena contratar una agencia de marketing para mi clínica?",
     a: "Depende del canal. Para gestión de campañas de Google Ads o Meta Ads, una agencia con experiencia en el sector salud/estética suele compensar, porque conoce las restricciones de contenido y evita que te bloqueen la cuenta. Para contenido de Instagram, muchas clínicas obtienen mejores resultados grabando ellas mismas con el móvil que pagando por contenido genérico de agencia. Y para la gestión de WhatsApp y la conversión de leads, ninguna agencia sustituye a un sistema que responda al instante: ahí la automatización rinde más que el gasto en gestión externa.",
   },
@@ -129,7 +133,8 @@ export default function MarketingDigitalClinicasArticlePage() {
             esfuerzo.
           </P>
           <P>
-            El problema no es la falta de canales, sino la falta de orden. Instagram genera
+            En la captación de pacientes, el problema no es la falta de canales, sino la
+            falta de orden. Instagram genera
             visibilidad, pero rara vez genera citas por sí solo. Google capta a quien ya
             está decidido a reservar. Y WhatsApp es, con diferencia, el canal donde se
             cierran las citas — pero solo si alguien responde a tiempo.
@@ -182,6 +187,12 @@ export default function MarketingDigitalClinicasArticlePage() {
                 "Escaparate con reserva directa y reseñas verificadas",
                 "Media-alta: el usuario compara clínicas cercanas",
                 "Comisión por reserva y poco control sobre la relación con el paciente",
+              ],
+              [
+                "Referidos / recomendaciones",
+                "Pacientes que llegan con confianza previa porque alguien de su entorno ya te conoce",
+                "Alta: vienen con la decisión casi tomada",
+                "No se puede escalar a voluntad: depende de tener pacientes satisfechos que te recomienden",
               ],
               [
                 "WhatsApp",
@@ -283,9 +294,11 @@ export default function MarketingDigitalClinicasArticlePage() {
             respuesta rápida, esa inversión se pierde.
           </P>
           <P>
-            Eso significa que, si el primer contacto de un lead llega por WhatsApp, es
-            prácticamente seguro que lo va a leer — la pregunta es si va a recibir respuesta
-            a tiempo.
+            Además, es como la gente prefiere contactar: escribir por WhatsApp, igual que
+            a un amigo, antes que rellenar un formulario y esperar a que alguien le devuelva
+            la llamada. Eso significa que, si el primer contacto de un lead llega por
+            WhatsApp, es prácticamente seguro que lo va a leer — la pregunta es si va a
+            recibir respuesta a tiempo.
           </P>
           <P>
             Y el tiempo es crítico: la probabilidad de perder un lead que no recibe
@@ -298,7 +311,9 @@ export default function MarketingDigitalClinicasArticlePage() {
             </InternalLink>{" "}
             soluciona exactamente este problema: responde en segundos, cualifica al lead y
             puede agendar la cita directamente, sin que nadie del equipo tenga que estar
-            pendiente del móvil.
+            pendiente del móvil. El motivo es sencillo: mientras espera respuesta, esa
+            persona sigue escribiendo a otras clínicas, y la primera que responde se queda
+            la cita.
           </P>
           <BlogSource>MIT Lead Response Management Study</BlogSource>
 

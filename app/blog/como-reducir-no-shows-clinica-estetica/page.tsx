@@ -6,6 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
+import H3 from "@/components/blog/H3"
 import InternalLink from "@/components/blog/InternalLink"
 import { articleDates } from "@/lib/blog-dates"
 
@@ -44,6 +45,10 @@ const faqs = [
   {
     q: "¿Es suficiente con enviar un SMS o un email de recordatorio?",
     a: "No suele bastar. Los SMS y los emails tienen tasas de apertura mucho más bajas y, sobre todo, no generan ninguna acción — el paciente los lee (o no) y no hay forma sencilla de confirmar o cancelar desde ahí. WhatsApp, en cambio, se abre casi siempre y permite responder con un simple mensaje, lo que convierte el recordatorio en una confirmación activa.",
+  },
+  {
+    q: "¿Qué es la confirmación activa y cómo reduce las ausencias?",
+    a: "La confirmación activa consiste en pedirle al paciente que responda al recordatorio — con un «sí», un «no puedo» o un botón — en lugar de enviarle un aviso que puede leer y olvidar. Ese pequeño gesto convierte la cita en un compromiso y, sobre todo, te avisa con antelación: si alguien cancela o no contesta, sabes que ese hueco está en riesgo y tienes tiempo para ofrecérselo a otro paciente.",
   },
   {
     q: "¿Cuánto tiempo tarda en notarse la reducción de no-shows?",
@@ -153,6 +158,13 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
             </InternalLink>
             .
           </P>
+          <P>
+            Si quieres ponerle cifra a tu caso, prueba nuestra{" "}
+            <InternalLink href="/calculadora-no-shows">
+              calculadora de pérdidas por no-shows
+            </InternalLink>{" "}
+            con tu ticket medio y tu volumen de citas.
+          </P>
 
           <H2>Por qué los pacientes de estética no avisan cuando no van a venir</H2>
           <P>
@@ -174,13 +186,23 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
           </P>
 
           <H2>La solución: confirmación activa por WhatsApp</H2>
+          <H3>Por qué un recordatorio pasivo no basta</H3>
+          <P>
+            La mayoría de clínicas ya avisa de alguna forma: una llamada el día antes, un
+            SMS, un mensaje de «te recordamos tu cita». El problema es que ninguno de estos
+            avisos pide nada. La llamada que nadie coge se queda en una llamada perdida, y
+            el mensaje se lee y se olvida.
+          </P>
+          <P>
+            Sin una respuesta del paciente, la clínica no tiene ninguna señal de alerta: no
+            sabe si esa cita está en riesgo hasta que la hora ha pasado y la silla sigue
+            vacía. En cambio, cuando se pide respuesta, el silencio también informa. Si
+            alguien no contesta al primer recordatorio, esa falta de respuesta ya es una
+            alerta, y llega con tiempo para actuar.
+          </P>
           <P>
             La forma más efectiva de reducir los no-shows no es simplemente «recordar»
-            la cita, sino{" "}
-            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
-              pedir una confirmación activa
-            </InternalLink>{" "}
-            — que el propio paciente
+            la cita, sino pedir una confirmación activa — que el propio paciente
             responda diciendo que sí va a venir, o que avise con tiempo si no puede.
           </P>
           <P>
@@ -210,6 +232,12 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
             paciente confirma, no hace falta hacer nada más. Si avisa de que no puede
             venir, ese hueco queda libre con tiempo suficiente para ofrecerlo a otro
             paciente — por ejemplo, a alguien en lista de espera.
+          </P>
+          <P>
+            Una secuencia que funciona bien es sencilla: un mensaje de confirmación entre
+            48 y 24 horas antes de la cita, un segundo recordatorio unas 2 horas antes para
+            los olvidos de última hora y, si el paciente cancela, un aviso automático a la
+            lista de espera para ofrecer ese hueco.
           </P>
           <P>
             Si además el paciente no responde en absoluto, el sistema puede enviar un

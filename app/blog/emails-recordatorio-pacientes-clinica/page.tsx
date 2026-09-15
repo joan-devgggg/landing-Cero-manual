@@ -6,6 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
+import H3 from "@/components/blog/H3"
 import InternalLink from "@/components/blog/InternalLink"
 import { articleDates } from "@/lib/blog-dates"
 
@@ -49,6 +50,10 @@ const faqs = [
   {
     q: "¿Es mejor que el email pida confirmación o que solo avise?",
     a: "Igual que en WhatsApp, un email que pide una acción concreta funciona mejor que uno que solo informa. Un botón claro de «Confirmar cita» o «Necesito cambiarla» convierte el recordatorio en un pequeño compromiso. Aun así, la limitación del email sigue siendo la apertura: si el paciente no lo abre, da igual lo bien redactado que esté.",
+  },
+  {
+    q: "¿Puedo usar estas plantillas tal cual o tengo que adaptarlas?",
+    a: "Puedes usarlas como base, tanto las de email como las de WhatsApp, pero conviene adaptar el tono y el nombre de la clínica para que suenen coherentes con el resto de tu comunicación. Una buena referencia es escribir el recordatorio como lo diría por teléfono la persona de recepción con mejor trato, y quitar todo lo que no diría en voz alta. Ten en cuenta también que, si envías los mensajes de WhatsApp a través de la API de WhatsApp Business, Meta tiene que aprobar las plantillas antes de que puedas usarlas.",
   },
 ]
 
@@ -155,7 +160,8 @@ export default function EmailsRecordatorioPacientesPage() {
           </P>
           <P>
             En este artículo vas a ver por qué los emails de recordatorio no siempre
-            funcionan, en qué casos sí tiene sentido usarlos, plantillas listas para copiar,
+            funcionan, en qué casos sí tiene sentido usarlos, plantillas de email y de
+            WhatsApp listas para copiar,
             por qué WhatsApp suele rendir mejor para este objetivo y cómo automatizar todo
             el proceso para que los recordatorios se envíen solos.
           </P>
@@ -209,6 +215,14 @@ export default function EmailsRecordatorioPacientesPage() {
             Si vas a usar email para recordar citas, cuida el asunto tanto como el cuerpo: es
             lo único que verá el paciente antes de decidir si abre o no. Aquí tienes tres
             plantillas listas para copiar y adaptar.
+          </P>
+          <P>
+            Antes de copiarlas, fíjate en tres detalles que marcan la diferencia. El asunto
+            lleva el nombre de la clínica y la fecha, para que el paciente sepa de qué va sin
+            abrir el correo. La fecha va escrita sin abreviaturas —«martes 16 de junio a las
+            17:30», no «16/6 17:30h»—, porque es el dato que más se consulta. Y siempre
+            aparece el nombre del profesional o del tratamiento, que ayuda a ubicar la visita
+            si el paciente tiene varias citas.
           </P>
           <Template>
             {`Asunto: Recordatorio de tu cita en [Clínica] — [día] a las [hora]
@@ -281,17 +295,70 @@ El equipo de [Clínica]`}
             .
           </P>
 
+          <H2>Plantillas de recordatorio por WhatsApp</H2>
+          <P>
+            Son la versión corta de las plantillas de email anteriores, pensadas para leerse
+            en el móvil en unos segundos. Puedes usarlas como complemento del correo: el
+            email para el aviso con margen o la información extensa, y WhatsApp para el
+            recordatorio rápido y la confirmación.
+          </P>
+
+          <H3>Recordatorio 24 horas antes</H3>
+          <P>
+            Informa sin exigir nada y deja una puerta abierta por si el paciente necesita
+            cambiar la cita.
+          </P>
+          <Template>
+            {`Hola [Nombre] 👋 Te escribimos de [Clínica] para recordarte que tienes cita mañana [día] a las [hora] con [profesional/tratamiento].
+
+Si necesitas cambiarla, avísanos respondiendo a este mensaje y te buscamos otro hueco. ¡Te esperamos! 😊`}
+          </Template>
+
+          <H3>Recordatorio 2 horas antes</H3>
+          <P>Corto y directo: hora, sitio y poco más, para evitar el olvido del mismo día.</P>
+          <Template>
+            {`⏰ Recordatorio: hoy a las [hora] tienes cita con [profesional] en [Clínica].
+
+Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, avísanos por aquí. ¡Nos vemos pronto!`}
+          </Template>
+
+          <H3>Confirmación activa (pide respuesta)</H3>
+          <P>
+            Pide una respuesta concreta, así que el aviso se convierte en un pequeño
+            compromiso y te dice con antelación qué huecos corren riesgo.
+          </P>
+          <Template>
+            {`Hola [Nombre] 😊 Tienes cita en [Clínica] el [día] a las [hora].
+
+¿Nos confirmas que vienes? Responde:
+1️⃣ Sí, confirmo
+2️⃣ Necesito cambiarla
+
+¡Gracias!`}
+          </Template>
+
           <H2>Cómo automatizar los recordatorios para que funcionen solos</H2>
           <P>
-            Tener{" "}
-            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
-              buenas plantillas
-            </InternalLink>{" "}
-            es solo la mitad del trabajo. La otra mitad es que los
+            Tener buenas plantillas es solo la mitad del trabajo. La otra mitad es que los
             recordatorios se envíen solos, en el momento exacto, sin que nadie de tu equipo
             tenga que acordarse de hacerlo cita tras cita. Si el envío depende de que alguien
             se siente a mandar correos o mensajes uno a uno, tarde o temprano se cuela algún
             olvido — y ese olvido acaba siendo un hueco vacío en la agenda.
+          </P>
+          <P>
+            El software de gestión habitual en clínicas ya suele traer recordatorios básicos,
+            y para muchas eso cubre el aviso de 24 horas. El límite aparece con la respuesta
+            del paciente: el sistema envía el mensaje, pero no la gestiona. Si el paciente
+            contesta «no puedo, ¿lo movemos al jueves?», alguien tiene que leerlo y recolocar
+            la cita a mano.
+          </P>
+          <P>
+            Y es precisamente esa respuesta la que más pesa a la hora de{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-dental">
+              reducir los no-shows en una clínica dental
+            </InternalLink>{" "}
+            o estética: un hueco que se libera con horas de margen todavía se puede ofrecer a
+            otro paciente.
           </P>
           <P>
             Automatizar significa que cada paciente recibe su recordatorio con la antelación
