@@ -51,6 +51,11 @@ Por convención de ficheros del App Router:
   `/agente-whatsapp-clinicas-dentales`, `/agente-voz-ia-clinicas`,
   `/recordatorios-automaticos-citas`, `/reactivacion-pacientes-inactivos`,
   `/calculadora-no-shows`, `/blog`.
+- **Casos de éxito**: `/casos` y dos casos, `/casos/geres-group` y
+  `/casos/sante-healthy-hair-salon`. La lista vive **solo** en `lib/casos.ts`: la leen el
+  índice, el bloque de la home (`components/casos/CasosHomeLink.tsx`) y el sitemap. Añadir un
+  caso = su carpeta en `app/casos/` + una entrada ahí. **Sin cifras inventadas**: no hay
+  datos medibles de ningún cliente.
 - **2 legales**: `/privacidad`, `/aviso-legal`.
 - **40 artículos** bajo `app/blog/`.
 - **3 API**: `/api/chat`, `/api/leads`, `/api/meta-capi`.
