@@ -194,8 +194,11 @@ export default function ClinicaEsteticaWhatsappPage() {
           <P>
             El segundo es crear respuestas estándar para las consultas que más se repiten:
             precios orientativos, duración de tratamientos, cómo se pide cita, qué preparación
-            hace falta. Con WhatsApp Business puedes configurar respuestas rápidas que
-            ahorran tiempo — aunque siguen requiriendo que alguien las envíe.
+            hace falta. Con{" "}
+            <InternalLink href="/blog/whatsapp-business-clinicas-esteticas">
+              WhatsApp Business puedes configurar respuestas rápidas
+            </InternalLink>{" "}
+            que ahorran tiempo — aunque siguen requiriendo que alguien las envíe.
           </P>
           <P>
             El tercero es establecer un protocolo para los mensajes fuera de horario: un
@@ -224,8 +227,11 @@ export default function ClinicaEsteticaWhatsappPage() {
           </P>
           <P>
             La clave no es si tu clínica es grande o pequeña — es si estás perdiendo leads
-            porque no puedes responder a tiempo. Si la respuesta es sí, la automatización
-            no es un lujo: es la diferencia entre captar esa persona o dejar que reserve en
+            porque no puedes responder a tiempo. Si la respuesta es sí,{" "}
+            <InternalLink href="/blog/cuanto-cuesta-chatbot-whatsapp-clinica">
+              la automatización no es un lujo
+            </InternalLink>
+            : es la diferencia entre captar esa persona o dejar que reserve en
             la clínica de al lado.
           </P>
 

@@ -120,7 +120,11 @@ export default function AusenciasArticlePage() {
 
           {/* Intro */}
           <P>
-            No es lo mismo una cancelación que una ausencia. Cuando un paciente cancela
+            No es lo mismo{" "}
+            <InternalLink href="/blog/como-reducir-cancelaciones-clinica-estetica">
+              una cancelación que una ausencia
+            </InternalLink>
+            . Cuando un paciente cancela
             con tiempo, todavía puedes hacer algo: ofrecer ese hueco a otra persona,
             reorganizar la agenda, recolocar al profesional. Cuando simplemente no
             aparece — sin avisar — ese hueco se queda vacío para siempre. Nadie lo ocupa,
@@ -210,15 +214,22 @@ export default function AusenciasArticlePage() {
           </P>
           <P>
             El canal importa tanto como el mensaje. Los mensajes de WhatsApp tienen una
-            tasa de apertura del 95-98%, frente al 20-25% del email. Si el recordatorio
-            llega por el canal equivocado, ni siquiera se va a leer — y entonces da igual
+            tasa de apertura del 95-98%, frente al 20-25% del email. Si{" "}
+            <InternalLink href="/blog/recordatorios-automaticos-citas-clinica">
+              el recordatorio llega por el canal equivocado
+            </InternalLink>
+            , ni siquiera se va a leer — y entonces da igual
             lo bien que esté redactado.
           </P>
           <P>
             Cuando un paciente confirma, sabes que esa cita va a celebrarse. Y cuando
             alguien no responde al primer recordatorio, ya tienes una señal de alerta
             con tiempo de sobra para actuar — antes de que el hueco se pierda. Este
-            cambio, por sí solo, reduce las ausencias hasta un 40% en clínicas que antes
+            cambio, por sí solo,{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
+              reduce las ausencias hasta un 40%
+            </InternalLink>{" "}
+            en clínicas que antes
             no pedían confirmación de ningún tipo.
           </P>
           <P>

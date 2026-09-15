@@ -151,7 +151,11 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
             Hay soluciones que solo ofrecen menús tipo «responde 1 para precios, 2 para
             citas» — son las más económicas, pero también las que menos resuelven. Otras
             mantienen una conversación natural, entienden lo que pregunta cada paciente y
-            responden en consecuencia, igual que lo haría alguien de tu recepción. Esta
+            responden en consecuencia,{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-vs-recepcionista-clinica">
+              igual que lo haría alguien de tu recepción
+            </InternalLink>
+            . Esta
             capacidad influye directamente en el precio.
           </P>
 
@@ -263,7 +267,11 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
 
           <H2>Qué preguntar antes de contratar un chatbot para tu clínica</H2>
           <P>
-            Antes de decidirte por una solución, conviene hacer las preguntas correctas —
+            Antes de decidirte por una solución,{" "}
+            <InternalLink href="/blog/mejor-chatbot-whatsapp-clinica-estetica">
+              conviene hacer las preguntas correctas
+            </InternalLink>{" "}
+            —
             porque el precio que ves en la web no siempre refleja el coste total ni lo que
             realmente vas a obtener.
           </P>

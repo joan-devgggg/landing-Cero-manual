@@ -9,6 +9,7 @@ import DemoSection from "@/components/DemoSection"
 import ResultsSection from "@/components/ResultsSection"
 import CTASection from "@/components/CTASection"
 import FAQSection from "@/components/FAQSection"
+import ArticleLinks from "@/components/ArticleLinks"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import HashScroll from "@/components/HashScroll"
@@ -47,6 +48,30 @@ export default function Home() {
         <ResultsSection />
         <CTASection />
         <FAQSection />
+        <ArticleLinks
+          label="Blog"
+          title="Recursos para clínicas que quieren"
+          titleAccent="dejar de perder pacientes"
+          articles={[
+            {
+              slug: "chatbot-whatsapp-para-clinicas-esteticas",
+              title: "Chatbot de WhatsApp para clínicas estéticas: qué es y por qué tu competencia ya lo tiene",
+            },
+            {
+              slug: "software-gestion-clinica-estetica",
+              title: "Software de gestión para clínicas estéticas: guía completa",
+            },
+            {
+              slug: "emails-recordatorio-pacientes-clinica",
+              title: "Emails de recordatorio para pacientes: plantillas, consejos y cuándo usar WhatsApp en su lugar",
+            },
+            {
+              slug: "tecnologia-para-clinicas-esteticas",
+              title: "Tecnología para clínicas estéticas: qué herramientas usar en 2026",
+            },
+          ]}
+          showAllLink
+        />
       </main>
       <Footer />
       <WhatsAppButton />

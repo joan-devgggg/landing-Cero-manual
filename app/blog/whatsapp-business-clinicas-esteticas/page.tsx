@@ -126,7 +126,11 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
           </P>
           <P>
             El problema es que ese mismo canal, que es una ventaja enorme, se convierte en
-            una carga cuando alguien tiene que estar pendiente del móvil constantemente:
+            una carga cuando alguien tiene que{" "}
+            <InternalLink href="/blog/clinica-estetica-por-whatsapp">
+              estar pendiente del móvil constantemente
+            </InternalLink>
+            :
             durante el tratamiento de un paciente, fuera de horario, los fines de semana.
             Cada mensaje que tarda en contestarse es, potencialmente, una cita que se va a
             otra clínica.
@@ -203,7 +207,10 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
 
           <H2>Cuándo tiene sentido automatizar WhatsApp</H2>
           <P>
-            Automatizar no significa sustituir a tu equipo, sino cubrir los huecos que el
+            <InternalLink href="/blog/chatbot-whatsapp-vs-recepcionista-clinica">
+              Automatizar no significa sustituir a tu equipo
+            </InternalLink>
+            , sino cubrir los huecos que el
             equipo no puede cubrir: las noches, los fines de semana, los momentos en los
             que todo el mundo está con un paciente y nadie puede mirar el móvil.
           </P>
@@ -232,8 +239,11 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
           </P>
           <P>
             La API de WhatsApp Business es distinta: no tiene una interfaz propia, sino que
-            permite conectar WhatsApp con otros sistemas — un CRM, un calendario, un agente
-            con inteligencia artificial. Es la tecnología que hace posible que varias
+            permite conectar WhatsApp con otros sistemas — un CRM, un calendario,{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
+              un agente con inteligencia artificial
+            </InternalLink>
+            . Es la tecnología que hace posible que varias
             personas, o un sistema automático, gestionen conversaciones a la vez sin
             depender de un único móvil.
           </P>

@@ -139,7 +139,11 @@ export default function AgenteIaRecepcionClinicaArticlePage() {
           <P>
             Un agente IA de recepción es un sistema que atiende las llamadas, los
             mensajes de WhatsApp y las consultas desde la web de tu clínica de forma
-            automática, usando inteligencia artificial para entender lo que pide cada
+            automática,{" "}
+            <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
+              usando inteligencia artificial
+            </InternalLink>{" "}
+            para entender lo que pide cada
             persona y responder de forma natural — como lo haría alguien del equipo,
             pero disponible las 24 horas.
           </P>
@@ -169,8 +173,11 @@ export default function AgenteIaRecepcionClinicaArticlePage() {
 
           <H2>Agente IA vs recepcionista humana: comparativa real</H2>
           <P>
-            La diferencia más evidente es la disponibilidad. Una recepcionista humana
-            trabaja un horario determinado, mientras que hasta un 40% de las consultas
+            La diferencia más evidente es la disponibilidad.{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-vs-recepcionista-clinica">
+              Una recepcionista humana trabaja un horario determinado
+            </InternalLink>
+            , mientras que hasta un 40% de las consultas
             de pacientes llegan fuera de ese horario — por la noche, los fines de
             semana, durante la pausa del mediodía. Un agente IA está disponible en todos
             esos momentos.
@@ -190,7 +197,11 @@ export default function AgenteIaRecepcionClinicaArticlePage() {
           <H2>Cómo funciona en el día a día de una clínica</H2>
           <P>
             Imagina que son las 21:00 y alguien que ha visto un anuncio de tu clínica
-            llama para preguntar por un tratamiento. El agente IA responde la llamada,
+            llama para preguntar por un tratamiento. El{" "}
+            <InternalLink href="/blog/que-es-un-agente-de-voz-ia-para-clinicas">
+              agente IA responde la llamada
+            </InternalLink>
+            ,
             explica en qué consiste el tratamiento y su precio orientativo, comprueba
             la disponibilidad de la agenda y, si la persona quiere, le reserva una cita
             para esa misma semana — todo en una sola conversación, sin que nadie del
@@ -198,8 +209,11 @@ export default function AgenteIaRecepcionClinicaArticlePage() {
           </P>
           <P>
             Al día siguiente, el equipo simplemente ve la nueva cita en la agenda, con
-            el resumen de la conversación si lo necesita. Lo mismo ocurre con los
-            mensajes de WhatsApp que llegan durante el fin de semana, o con las llamadas
+            el resumen de la conversación si lo necesita. Lo mismo ocurre con{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
+              los mensajes de WhatsApp
+            </InternalLink>{" "}
+            que llegan durante el fin de semana, o con las llamadas
             que se reciben mientras el equipo está con otro paciente.
           </P>
 

@@ -6,6 +6,7 @@ import ServiceHero from "@/components/ServiceHero"
 import ServiceProblem from "@/components/ServiceProblem"
 import ServiceHowItWorks from "@/components/ServiceHowItWorks"
 import ServiceBenefits from "@/components/ServiceBenefits"
+import ArticleLinks from "@/components/ArticleLinks"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import ServiceCTA from "@/components/ServiceCTA"
 import { localBusinessProvider, spainAreaServed } from "@/lib/schema"
@@ -163,6 +164,25 @@ export default function AgenteWhatsAppPage() {
               icon: "LayoutDashboard",
               title: "Tú decides cuándo entra y cuándo no",
               desc: "Un interruptor desde el panel de control. Si quieres atender tú un caso concreto, lo haces con un clic — y el agente se aparta.",
+            },
+          ]}
+        />
+
+        <ArticleLinks
+          label="Del blog"
+          title="Guías relacionadas"
+          articles={[
+            {
+              slug: "chatbot-whatsapp-para-clinicas-esteticas",
+              title: "Chatbot de WhatsApp para clínicas estéticas: qué es y por qué tu competencia ya lo tiene",
+            },
+            {
+              slug: "mejor-chatbot-whatsapp-clinica-estetica",
+              title: "Cómo elegir el mejor chatbot de WhatsApp para tu clínica estética",
+            },
+            {
+              slug: "cuanto-cuesta-chatbot-whatsapp-clinica",
+              title: "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? Guía de precios 2026",
             },
           ]}
         />

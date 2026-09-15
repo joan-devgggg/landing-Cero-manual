@@ -173,7 +173,11 @@ export default function CancelacionesArticlePage() {
 
           <H2>La diferencia entre una cancelación y un no-show</H2>
           <P>
-            Un no-show es cuando el paciente no aparece sin ningún aviso previo. La clínica
+            Un no-show es cuando{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
+              el paciente no aparece sin ningún aviso previo
+            </InternalLink>
+            . La clínica
             descubre el hueco cuando el tiempo de la cita ya ha pasado — sin posibilidad de
             haberlo rellenado. Una cancelación, aunque sea de última hora, implica al menos
             que hubo comunicación.
@@ -207,7 +211,10 @@ export default function CancelacionesArticlePage() {
             frente al 20-25% del email — lo que garantiza que el mensaje llega y se lee.
           </P>
           <P>
-            El mensaje debe ser breve, personal y con una llamada a la acción clara. No hace
+            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+              El mensaje debe ser breve, personal
+            </InternalLink>{" "}
+            y con una llamada a la acción clara. No hace
             falta explicar nada: «¿Confirmas tu cita del jueves a las 11? Responde SÍ para
             confirmar o NO si necesitas cambiarla». Cuanto más fácil sea confirmar, mayor es
             la tasa de respuesta — y cuanto antes cancelen, más tiempo tiene la clínica para
@@ -225,7 +232,10 @@ export default function CancelacionesArticlePage() {
 
           <H2>Lista de espera: convierte una cancelación en una cita nueva</H2>
           <P>
-            Una lista de espera bien gestionada convierte cada cancelación en una oportunidad
+            <InternalLink href="/blog/reducir-lista-espera-clinica-estetica">
+              Una lista de espera bien gestionada
+            </InternalLink>{" "}
+            convierte cada cancelación en una oportunidad
             en lugar de en una pérdida. El concepto es simple: cuando un paciente cancela, el
             sistema notifica automáticamente a los primeros pacientes de la lista que hay un
             hueco disponible — con la fecha, la hora y un enlace para reservarlo directamente.

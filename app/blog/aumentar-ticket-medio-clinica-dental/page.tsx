@@ -109,8 +109,11 @@ export default function AumentarTicketMedioClinicaDentalPage() {
 
           <P>
             Captar un paciente nuevo cuesta entre cinco y diez veces más que retener a uno que
-            ya te conoce. Por eso, antes de invertir más en publicidad o en campañas de
-            captación, muchas clínicas dentales tienen una oportunidad clara mucho más
+            ya te conoce. Por eso, antes de invertir más en{" "}
+            <InternalLink href="/blog/marketing-clinica-dental">
+              publicidad o en campañas de captación
+            </InternalLink>
+            , muchas clínicas dentales tienen una oportunidad clara mucho más
             accesible: aumentar el ticket medio de los pacientes que ya tienen.
           </P>
           <P>
@@ -132,7 +135,11 @@ export default function AumentarTicketMedioClinicaDentalPage() {
             puede superar los <strong>3.000 €</strong> a lo largo de los años, contando
             revisiones periódicas, tratamientos de ortodoncia, implantes, blanqueamientos y
             otras intervenciones. Sin embargo, muchas clínicas no aprovechan ese potencial
-            porque no tienen un sistema para detectar el momento adecuado en que proponer cada
+            porque no tienen{" "}
+            <InternalLink href="/blog/mejor-crm-clinicas-dentales">
+              un sistema para detectar el momento adecuado
+            </InternalLink>{" "}
+            en que proponer cada
             tratamiento al paciente correcto.
           </P>
           <P>

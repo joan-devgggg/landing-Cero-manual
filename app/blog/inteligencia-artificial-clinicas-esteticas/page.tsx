@@ -123,12 +123,19 @@ export default function InteligenciaArtificialArticlePage() {
             Hasta hace poco, hablar de inteligencia artificial en una clínica estética
             sonaba a algo lejano — cosa de grandes cadenas con departamentos de
             tecnología propios. Eso ha cambiado. Hoy, una clínica con un par de
-            profesionales y una recepcionista puede tener un agente que responde
-            WhatsApp a cualquier hora, un sistema que confirma citas solo y una campaña
+            profesionales y una recepcionista puede tener{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
+              un agente que responde WhatsApp a cualquier hora
+            </InternalLink>
+            , un sistema que confirma citas solo y una campaña
             que reactiva pacientes inactivos sin que nadie escriba un solo mensaje.
           </P>
           <P>
-            Lo que está cambiando no es la tecnología en sí — es que ahora es accesible,
+            Lo que está cambiando no es{" "}
+            <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
+              la tecnología en sí
+            </InternalLink>{" "}
+            — es que ahora es accesible,
             se configura en días y no requiere mantenimiento. Las clínicas que ya la
             usan no están haciendo algo radicalmente distinto: están automatizando las
             tareas repetitivas que antes consumían horas de su equipo cada semana.
@@ -147,8 +154,11 @@ export default function InteligenciaArtificialArticlePage() {
             criterio humano en cada caso.
           </P>
           <P>
-            En la práctica, hoy ya se puede automatizar la atención a consultas
-            frecuentes, la confirmación y recordatorio de citas, y el seguimiento a
+            En la práctica, hoy ya se puede{" "}
+            <InternalLink href="/blog/agente-ia-recepcion-clinica">
+              automatizar la atención a consultas frecuentes
+            </InternalLink>
+            , la confirmación y recordatorio de citas, y el seguimiento a
             pacientes que llevan tiempo sin volver. Tres áreas que, juntas, representan
             buena parte del tiempo administrativo de una clínica — y una parte
             importante de los ingresos que se pierden sin que nadie se dé cuenta.
@@ -219,8 +229,11 @@ export default function InteligenciaArtificialArticlePage() {
           </P>
           <P>
             La IA puede identificar a estos pacientes automáticamente — según cuánto
-            tiempo llevan sin reservar — y enviarles un mensaje personalizado por
-            WhatsApp recordándoles que existes, con una oferta o un motivo concreto para
+            tiempo llevan sin reservar — y enviarles un{" "}
+            <InternalLink href="/blog/como-reactivar-pacientes-inactivos-clinica">
+              mensaje personalizado por WhatsApp
+            </InternalLink>{" "}
+            recordándoles que existes, con una oferta o un motivo concreto para
             volver. No hace falta que nadie revise listados ni escriba mensajes uno por
             uno: el sistema los detecta y actúa solo, de forma recurrente.
           </P>

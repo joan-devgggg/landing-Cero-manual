@@ -126,8 +126,11 @@ export default function ListaEsperaClinicaDentalPage() {
           </P>
           <P>
             Entre el 12% y el 19% de las citas de una clínica dental terminan en no-show o
-            cancelación. Sin un sistema que reaccione a tiempo, todos esos huecos se pierden
-            uno a uno, semana tras semana.
+            cancelación. Sin un sistema que reaccione a tiempo, todos{" "}
+            <InternalLink href="/blog/coste-real-no-shows-clinica-dental">
+              esos huecos se pierden uno a uno
+            </InternalLink>
+            , semana tras semana.
           </P>
           <P>
             En este artículo vas a ver qué es exactamente una lista de espera, cómo
@@ -213,8 +216,11 @@ export default function ListaEsperaClinicaDentalPage() {
           </P>
           <P>
             Automatizar este proceso significa que, en cuanto se detecta una cancelación, el
-            sistema identifica a los candidatos adecuados de la lista, les envía un mensaje
-            por WhatsApp — el canal con un 95-98% de apertura — y gestiona las respuestas
+            sistema identifica a los candidatos adecuados de la lista, les envía{" "}
+            <InternalLink href="/blog/whatsapp-para-clinicas-dentales">
+              un mensaje por WhatsApp
+            </InternalLink>{" "}
+            — el canal con un 95-98% de apertura — y gestiona las respuestas
             hasta que el hueco queda ocupado. Todo esto sin que nadie del equipo tenga que
             estar pendiente del móvil.
           </P>

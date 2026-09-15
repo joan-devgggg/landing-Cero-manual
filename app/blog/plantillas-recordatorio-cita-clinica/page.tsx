@@ -143,7 +143,11 @@ export default function PlantillasRecordatorioPage() {
           </P>
           <P>
             Los recordatorios por WhatsApp se apoyan en las tasas de apertura de referencia
-            del sector — del 95-98%, frente al 20-25% del email o el SMS. Y cuando están
+            del sector — del 95-98%, frente al 20-25% de los{" "}
+            <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
+              emails de recordatorio
+            </InternalLink>{" "}
+            o el SMS. Y cuando están
             bien planteados, recortan de forma notable los no-shows, que en clínicas
             privadas suelen moverse en una horquilla de entre el 12% y el 19% de las citas
             programadas.
@@ -306,8 +310,11 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
             mano.
           </P>
           <P>
-            Automatizar de verdad significa que cada paciente recibe su recordatorio de 24h
-            y su recordatorio de 2h sin intervención manual, con el tono de tu clínica — no
+            Automatizar de verdad significa que cada paciente recibe su{" "}
+            <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
+              recordatorio de 24h y su recordatorio de 2h
+            </InternalLink>{" "}
+            sin intervención manual, con el tono de tu clínica — no
             con el de una centralita genérica. Y si el sistema detecta que alguien no
             confirma, puede activar un seguimiento adicional antes de que ese hueco se quede
             vacío.
@@ -322,7 +329,11 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
             esto ocurra sin esfuerzo añadido para tu equipo.
           </P>
           <P>
-            El resultado es una caída notable de los no-shows — es decir, recuperar buena
+            El resultado es{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
+              una caída notable de los no-shows
+            </InternalLink>{" "}
+            — es decir, recuperar buena
             parte de ese 12-19% de citas que hoy se quedan vacías. Montar ese circuito sobre
             tu agenda es justo lo que resolvemos con los{" "}
             <InternalLink href="/recordatorios-automaticos-citas">

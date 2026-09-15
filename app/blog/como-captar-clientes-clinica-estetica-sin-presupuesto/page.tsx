@@ -122,8 +122,11 @@ export default function CaptarClientesArticlePage() {
           {/* Intro */}
           <P>
             Cuando una clínica quiere crecer, el primer instinto suele ser invertir más en
-            publicidad: más presupuesto en Meta Ads, más campañas en Google, más contenido en
-            Instagram. Es lógico, pero pasa por alto una fuente de ingresos que ya existe y
+            publicidad: más presupuesto en Meta Ads,{" "}
+            <InternalLink href="/blog/marketing-digital-clinicas-esteticas">
+              más campañas en Google, más contenido en Instagram
+            </InternalLink>
+            . Es lógico, pero pasa por alto una fuente de ingresos que ya existe y
             que no requiere ningún gasto adicional: la base de datos de pacientes que dejaron
             de venir.
           </P>
@@ -150,8 +153,11 @@ export default function CaptarClientesArticlePage() {
           <P>
             El canal más efectivo para reactivar pacientes inactivos es WhatsApp. Los mensajes
             de WhatsApp se abren entre el 95% y el 98% de las veces — frente al 20-25% del
-            email — lo que garantiza que el mensaje llega y se lee. Un mensaje de reactivación
-            bien redactado no es una promoción genérica: hace referencia al último tratamiento
+            email — lo que garantiza que el mensaje llega y se lee. Un{" "}
+            <InternalLink href="/blog/como-reactivar-pacientes-inactivos-clinica">
+              mensaje de reactivación bien redactado
+            </InternalLink>{" "}
+            no es una promoción genérica: hace referencia al último tratamiento
             del paciente, muestra que la clínica recuerda quién es, y ofrece un motivo concreto
             para volver.
           </P>
@@ -175,8 +181,11 @@ export default function CaptarClientesArticlePage() {
             a la competencia — sin gastar un euro en publicidad.
           </P>
           <P>
-            El problema es que la mayoría de los pacientes satisfechos no dejan reseñas de
-            forma espontánea, no por falta de voluntad sino por falta de empujón en el momento
+            El problema es que la mayoría de los{" "}
+            <InternalLink href="/blog/como-conseguir-resenas-google-clinica-estetica">
+              pacientes satisfechos no dejan reseñas
+            </InternalLink>{" "}
+            de forma espontánea, no por falta de voluntad sino por falta de empujón en el momento
             exacto. La ventana se abre justo después de la cita — entre 30 y 60 minutos después
             de que el paciente ha salido — y se cierra rápido. Un mensaje automático de WhatsApp
             en ese intervalo, con el nombre del paciente y un enlace directo a la ficha de Google,
@@ -219,7 +228,11 @@ export default function CaptarClientesArticlePage() {
             rápida, el interés se enfría.
           </P>
           <P>
-            Un seguimiento post-cita automático por WhatsApp — un mensaje 2-3 días después
+            Un{" "}
+            <InternalLink href="/blog/como-fidelizar-pacientes-clinica-estetica">
+              seguimiento post-cita automático por WhatsApp
+            </InternalLink>{" "}
+            — un mensaje 2-3 días después
             que pregunta cómo evolucionó el tratamiento y sugiere el siguiente paso — mantiene
             la conversación activa y convierte esa intención en reserva. No requiere que el
             equipo esté disponible en ese momento: el sistema envía el mensaje, recoge la

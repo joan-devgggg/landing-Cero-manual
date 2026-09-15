@@ -170,7 +170,11 @@ export default function MejorCrmClinicasDentalesArticlePage() {
 
           <H3>Integración con WhatsApp</H3>
           <P>
-            La mayoría de consultas de pacientes potenciales llegan por WhatsApp, ya sea
+            La mayoría de{" "}
+            <InternalLink href="/blog/whatsapp-para-clinicas-dentales">
+              consultas de pacientes potenciales llegan por WhatsApp
+            </InternalLink>
+            , ya sea
             desde anuncios, redes sociales o el boca a boca. Si el CRM no captura esas
             conversaciones — o al menos permite registrarlas fácilmente —, el equipo acaba
             gestionando dos sistemas en paralelo: el CRM por un lado y el móvil de WhatsApp
@@ -261,7 +265,11 @@ export default function MejorCrmClinicasDentalesArticlePage() {
           <H2>Cuándo tiene sentido añadir automatización con IA al CRM</H2>
           <P>
             Un CRM, por sí solo, sigue siendo una herramienta pasiva: organiza la información,
-            pero no actúa. La automatización con IA entra en juego precisamente en los
+            pero no actúa. La{" "}
+            <InternalLink href="/blog/inteligencia-artificial-clinicas-dentales">
+              automatización con IA
+            </InternalLink>{" "}
+            entra en juego precisamente en los
             momentos donde el equipo humano no puede estar disponible.
           </P>
           <P>

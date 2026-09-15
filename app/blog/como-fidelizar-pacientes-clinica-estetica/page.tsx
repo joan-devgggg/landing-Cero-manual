@@ -153,7 +153,11 @@ export default function FidelizarPacientesArticlePage() {
             necesita que le convenzas de nada.
           </P>
           <P>
-            Por eso, cada paciente que se enfría y deja de volver no es solo una cita menos:
+            Por eso,{" "}
+            <InternalLink href="/blog/como-reactivar-pacientes-inactivos-clinica">
+              cada paciente que se enfría y deja de volver
+            </InternalLink>{" "}
+            no es solo una cita menos:
             es esos 3.000€ de valor potencial que se quedan sobre la mesa, y que tu clínica
             tendrá que reemplazar gastando cinco veces más en captar a otra persona.
           </P>
@@ -182,8 +186,11 @@ export default function FidelizarPacientesArticlePage() {
           <H2>Seguimiento post-cita: el momento más importante</H2>
           <P>
             Las primeras 24-48 horas después de un tratamiento son el momento en el que un
-            paciente está más receptivo y más fácil de fidelizar. Es cuando todavía recuerda
-            la experiencia, valora que alguien se interese por cómo le ha ido, y es más
+            paciente está más receptivo y más fácil de fidelizar. Es cuando{" "}
+            <InternalLink href="/blog/experiencia-paciente-clinica-estetica">
+              todavía recuerda la experiencia
+            </InternalLink>
+            , valora que alguien se interese por cómo le ha ido, y es más
             probable que responda con confianza si surge alguna duda.
           </P>
           <P>
@@ -201,7 +208,11 @@ export default function FidelizarPacientesArticlePage() {
 
           <H2>Cómo usar WhatsApp para mantener el contacto sin ser invasivo</H2>
           <P>
-            WhatsApp es, con diferencia, el canal que más abren tus pacientes: entre un 95% y
+            WhatsApp es, con diferencia,{" "}
+            <InternalLink href="/blog/clinica-estetica-por-whatsapp">
+              el canal que más abren tus pacientes
+            </InternalLink>
+            : entre un 95% y
             un 98% de los mensajes se leen, frente al 20-25% de un email. Si quieres que un
             mensaje de seguimiento o un recordatorio llegue de verdad, WhatsApp es el canal
             con el que cuentas con casi total seguridad de que se va a leer.

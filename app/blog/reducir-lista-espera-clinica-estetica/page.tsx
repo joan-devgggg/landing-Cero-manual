@@ -127,7 +127,11 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
           </P>
           <P>
             El resultado es paradójico: la clínica tiene lista de espera y, al mismo tiempo,
-            huecos libres en la agenda por cancelaciones que nadie ha cubierto a tiempo.
+            huecos libres en la agenda por{" "}
+            <InternalLink href="/blog/como-reducir-cancelaciones-clinica-estetica">
+              cancelaciones que nadie ha cubierto a tiempo
+            </InternalLink>
+            .
           </P>
           <P>
             En este artículo vas a aprender por qué una lista de espera mal gestionada hace
@@ -159,7 +163,11 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
 
           <H2>Cómo gestionar la lista de espera de forma eficiente</H2>
           <P>
-            El primer paso es centralizar la lista en un único sitio, con la información mínima
+            El primer paso es{" "}
+            <InternalLink href="/blog/software-gestion-citas-clinica-estetica">
+              centralizar la lista en un único sitio
+            </InternalLink>
+            , con la información mínima
             necesaria: nombre, contacto, tratamiento de interés y disponibilidad horaria del
             paciente. Si esta información está repartida entre WhatsApp, llamadas y notas en
             papel, ya es prácticamente imposible gestionarla con criterio.
@@ -229,7 +237,11 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
             Todo lo anterior —centralizar la lista, ordenarla, avisar automáticamente ante
             cancelaciones y mantener informados a los pacientes— se puede gestionar con el
             mismo sistema de recordatorios y comunicación automática por WhatsApp que ya usan
-            muchas clínicas para reducir no-shows.
+            muchas clínicas para{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
+              reducir no-shows
+            </InternalLink>
+            .
           </P>
           <P>
             En lugar de tratar la lista de espera y los recordatorios de citas como dos

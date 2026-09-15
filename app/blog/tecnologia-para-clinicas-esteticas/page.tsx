@@ -147,14 +147,21 @@ export default function TecnologiaParaClinicasEsteticasPage() {
             disponibilidad actualizada en tiempo real.
           </P>
           <P>
-            La segunda es la comunicación automatizada por WhatsApp: recordatorios de
+            La segunda es la{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
+              comunicación automatizada por WhatsApp
+            </InternalLink>
+            : recordatorios de
             cita, confirmaciones, mensajes de seguimiento. Tiene sentido porque WhatsApp
             tiene una tasa de apertura del 95-98%, muy superior a un email o un SMS, y es
             el canal donde tus pacientes ya hablan contigo de forma natural.
           </P>
           <P>
-            La tercera es la inteligencia artificial aplicada a la atención al paciente:
-            sistemas capaces de mantener una conversación, responder dudas y gestionar
+            La tercera es la inteligencia artificial aplicada a la atención al paciente:{" "}
+            <InternalLink href="/blog/que-es-un-agente-de-voz-ia-para-clinicas">
+              sistemas capaces de mantener una conversación
+            </InternalLink>
+            , responder dudas y gestionar
             citas sin que haya una persona detrás en cada mensaje. Es la tecnología más
             nueva de las tres, y también la que más recorrido tiene por delante.
           </P>
@@ -190,7 +197,11 @@ export default function TecnologiaParaClinicasEsteticasPage() {
             avisos cuando toca repetir una sesión.
           </P>
           <P>
-            También entran aquí los sistemas de CRM que permiten segmentar pacientes —
+            También entran aquí los{" "}
+            <InternalLink href="/blog/crm-para-clinicas-esteticas">
+              sistemas de CRM que permiten segmentar pacientes
+            </InternalLink>{" "}
+            —
             por ejemplo, identificar a quienes no han vuelto en varios meses — y lanzar
             campañas de reactivación dirigidas, en lugar de enviar el mismo mensaje a toda
             la base de datos.
@@ -203,8 +214,11 @@ export default function TecnologiaParaClinicasEsteticasPage() {
 
           <H2>IA: la tecnología que más impacto tiene ahora mismo</H2>
           <P>
-            De todas las tecnologías disponibles para una clínica estética, la
-            inteligencia artificial aplicada a la atención al paciente es, ahora mismo, la
+            De todas las tecnologías disponibles para una clínica estética, la{" "}
+            <InternalLink href="/blog/inteligencia-artificial-clinicas-esteticas">
+              inteligencia artificial aplicada a la atención al paciente
+            </InternalLink>{" "}
+            es, ahora mismo, la
             que tiene mayor impacto por el esfuerzo que requiere implementarla.
           </P>
           <P>
@@ -231,7 +245,11 @@ export default function TecnologiaParaClinicasEsteticasPage() {
             tiene una vista completa del paciente.
           </P>
           <P>
-            La forma de evitarlo es priorizar herramientas que se integren entre sí —
+            La forma de evitarlo es{" "}
+            <InternalLink href="/blog/software-gestion-clinica-estetica">
+              priorizar herramientas que se integren entre sí
+            </InternalLink>{" "}
+            —
             agenda, CRM y comunicación deberían poder "hablarse" — y avanzar por fases:
             primero la base (agenda y comunicación), después la retención (CRM y
             seguimiento) y, por último, la automatización con IA encima de todo lo

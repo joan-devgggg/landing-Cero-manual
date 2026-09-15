@@ -122,7 +122,11 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             Durante años, automatizar ha sido cosa de empresas grandes con departamentos de
             IT propios. Eso ya no es así. Hoy, una clínica dental con una sola sede puede
             automatizar las mismas tareas que antes requerían un equipo de recepción
-            trabajando sin descanso — con herramientas que se configuran en días, no en
+            trabajando sin descanso — con{" "}
+            <InternalLink href="/blog/inteligencia-artificial-clinicas-dentales">
+              herramientas de inteligencia artificial
+            </InternalLink>{" "}
+            que se configuran en días, no en
             meses.
           </P>
           <P>
@@ -187,7 +191,11 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
           <P>
             Como WhatsApp tiene una tasa de apertura del 95-98% — frente al 20-25% del email —,
             es el canal donde este tipo de automatización funciona realmente. El resultado
-            habitual es una reducción de no-shows de hasta un 40%, sin que nadie de tu equipo
+            habitual es{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-dental">
+              una reducción de no-shows
+            </InternalLink>{" "}
+            de hasta un 40%, sin que nadie de tu equipo
             tenga que hacer una sola llamada de recordatorio.
           </P>
 
@@ -199,7 +207,10 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             recibe respuesta rápido, probablemente escriba al siguiente resultado de Google.
           </P>
           <P>
-            Un asistente automatizado por WhatsApp puede responder al instante: resolver
+            <InternalLink href="/blog/agente-whatsapp-clinica-dental">
+              Un asistente automatizado por WhatsApp
+            </InternalLink>{" "}
+            puede responder al instante: resolver
             preguntas frecuentes sobre precios, tratamientos y horarios, recoger los datos
             básicos del paciente, y dejar la consulta lista para que tu equipo la retome a
             primera hora — o incluso proponer una cita directamente en la agenda.

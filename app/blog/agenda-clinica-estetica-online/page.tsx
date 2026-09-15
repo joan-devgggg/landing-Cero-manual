@@ -165,8 +165,11 @@ export default function AgendaClinicaEsteticaOnlinePage() {
           </P>
           <P>
             El más frecuente es no confirmar las citas con antelación. Sin un recordatorio
-            que pida una respuesta activa, una parte de los pacientes simplemente no
-            aparece — y ese hueco, normalmente, ya no se puede recuperar para ese día.
+            que pida una respuesta activa,{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
+              una parte de los pacientes simplemente no aparece
+            </InternalLink>{" "}
+            — y ese hueco, normalmente, ya no se puede recuperar para ese día.
           </P>
           <P>
             El segundo es no tener un protocolo claro para los huecos que se liberan por
@@ -189,7 +192,11 @@ export default function AgendaClinicaEsteticaOnlinePage() {
           </P>
           <P>
             La clave está en pedir una confirmación activa: no basta con «te recordamos tu
-            cita», sino con un mensaje que pida un «sí» o un «no puedo, quiero cambiarla».
+            cita», sino con{" "}
+            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+              un mensaje que pida un «sí»
+            </InternalLink>{" "}
+            o un «no puedo, quiero cambiarla».
             Esa pequeña diferencia es la que más impacta en la tasa de no-shows, porque
             convierte un aviso que se puede ignorar en un compromiso explícito.
           </P>
@@ -224,7 +231,11 @@ export default function AgendaClinicaEsteticaOnlinePage() {
           <P>
             Cuando combinas confirmaciones automáticas, recordatorios con respuesta activa
             y una lista de espera que se activa sola, la agenda deja de ser algo que hay que
-            vigilar constantemente y se convierte en un sistema que se autogestiona.
+            vigilar constantemente y se convierte en{" "}
+            <InternalLink href="/blog/software-gestion-citas-clinica-estetica">
+              un sistema que se autogestiona
+            </InternalLink>
+            .
           </P>
           <P>
             Cada cita que entra ya lleva incorporado su propio protocolo: se confirma sola,

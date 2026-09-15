@@ -13,7 +13,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/mejor-software-gestion-clinica-estetica"
 const DATES = articleDates("mejor-software-gestion-clinica-estetica")
-const TITLE = "Mejor software de gestión para clínicas estéticas en 2026 | Cero Manual"
+const TITLE = "Mejor software para clínicas estéticas en 2026 | Cero Manual"
 const DESCRIPTION =
   "¿Cuál es el mejor software de gestión para tu clínica estética? Te explicamos qué criterios usar y cuándo tiene sentido añadir automatización con IA."
 const HEADLINE =
@@ -206,7 +206,11 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
             trabajan con tratamientos que exigen documentación y seguimiento.
           </P>
           <P>
-            Las herramientas de agenda y reserva online son más ligeras y están pensadas para
+            Las{" "}
+            <InternalLink href="/blog/software-gestion-citas-clinica-estetica">
+              herramientas de agenda y reserva online
+            </InternalLink>{" "}
+            son más ligeras y están pensadas para
             clínicas que priorizan que el paciente pueda pedir cita por su cuenta y que el
             calendario esté siempre actualizado; algunas, además, funcionan como escaparate y
             traen reservas nuevas. Y los CRM genéricos los adaptan las clínicas que necesitan
@@ -297,8 +301,11 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
           <P>
             Después, prioriza la base. Agenda y CRM bien configurados son el cimiento sobre el
             que se apoya todo lo demás, incluida la automatización. Elige una herramienta que
-            tu equipo pueda poner en marcha de verdad, revisa antes las que ya tienes para no
-            acumular software que se solapa, y comprueba que lo que elijas se pueda integrar
+            tu equipo pueda poner en marcha de verdad, revisa antes las que ya tienes para{" "}
+            <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
+              no acumular software que se solapa
+            </InternalLink>
+            , y comprueba que lo que elijas se pueda integrar
             con otras piezas.
           </P>
           <P>

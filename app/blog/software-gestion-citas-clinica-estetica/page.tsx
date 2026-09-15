@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/software-gestion-citas-clinica-estetica"
 const DATES = articleDates("software-gestion-citas-clinica-estetica")
-const TITLE = "Software de gestión de citas para clínicas estéticas: guía 2026 | Cero Manual"
+const TITLE = "Software de citas para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
   "¿Buscas un software de gestión de citas para tu clínica estética? Te explicamos qué necesitas, qué opciones existen y cuándo automatizar con IA."
 const HEADLINE =
@@ -157,22 +157,31 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
             clínica con más de una persona atendiendo acaba con solapamientos y confusión.
           </P>
           <P>
-            Lo segundo, y quizás lo más rentable, es la confirmación y el recordatorio
-            automáticos. Las clínicas que no confirman la cita de alguna forma suelen registrar
+            Lo segundo, y quizás lo más rentable, es{" "}
+            <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
+              la confirmación y el recordatorio automáticos
+            </InternalLink>
+            . Las clínicas que no confirman la cita de alguna forma suelen registrar
             entre un <strong>12% y un 19% de no-shows</strong>, un porcentaje que baja de forma
             notable en cuanto se envía un recordatorio con antelación.
           </P>
           <P>
             Lo tercero es la reserva online, para que el paciente pueda pedir cita sin llamar ni
-            esperar a que alguien conteste. Y lo cuarto es la gestión de no-shows y lista de
-            espera: que el sistema avise cuando alguien cancela para poder ofrecer ese hueco a
+            esperar a que alguien conteste. Y lo cuarto es la{" "}
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
+              gestión de no-shows y lista de espera
+            </InternalLink>
+            : que el sistema avise cuando alguien cancela para poder ofrecer ese hueco a
             otro paciente antes de que se quede vacío.
           </P>
 
           <H2>Los más usados en clínicas estéticas en España</H2>
           <P>
-            En el mercado español conviven dos tipos de soluciones. Por un lado, los softwares
-            específicos del sector estética y salud, que además de la agenda incluyen ficha de
+            En el mercado español conviven dos tipos de soluciones. Por un lado, los{" "}
+            <InternalLink href="/blog/software-gestion-clinica-estetica">
+              softwares específicos del sector estética y salud
+            </InternalLink>
+            , que además de la agenda incluyen ficha de
             tratamientos, fotos de seguimiento o gestión de bonos. Por otro, las herramientas de
             reserva online más ligeras, centradas sobre todo en que el paciente pueda pedir cita
             por su cuenta.

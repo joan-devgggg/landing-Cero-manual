@@ -123,11 +123,19 @@ export default function ResenasgoogleArticlePage() {
             El 70% de las decisiones de reservar un tratamiento estético se toman mirando las
             reseñas de Google. Antes de llamar, antes de entrar en la web, antes de preguntar
             a una amiga — el primer movimiento es abrir Google Maps y leer lo que dicen otros
-            pacientes. Tu ficha de Google no es un complemento de tu marketing: es el primer
+            pacientes. Tu ficha de Google no es{" "}
+            <InternalLink href="/blog/marketing-digital-clinicas-esteticas">
+              un complemento de tu marketing
+            </InternalLink>
+            : es el primer
             punto de contacto real con la mayoría de tus clientes potenciales.
           </P>
           <P>
-            El problema es que la mayoría de clínicas con pacientes satisfechos tienen menos
+            El problema es que la mayoría de{" "}
+            <InternalLink href="/blog/como-fidelizar-pacientes-clinica-estetica">
+              clínicas con pacientes satisfechos
+            </InternalLink>{" "}
+            tienen menos
             reseñas de las que merecen. No porque sus clientes no estén contentos — sino porque
             nadie les pide que las dejen en el momento adecuado, y el momento pasa. Tres días
             después de la cita, la disposición a dejar una reseña cae drásticamente.
@@ -186,8 +194,11 @@ export default function ResenasgoogleArticlePage() {
           <H2>El momento perfecto para pedir una reseña</H2>
           <P>
             El momento óptimo para pedir una reseña es entre 30 y 60 minutos después de que
-            el paciente ha salido de la cita. En ese intervalo, la experiencia todavía está
-            fresca, el resultado del tratamiento empieza a sentirse, y el cliente tiene el
+            el paciente ha salido de la cita. En ese intervalo,{" "}
+            <InternalLink href="/blog/experiencia-paciente-clinica-estetica">
+              la experiencia todavía está fresca
+            </InternalLink>
+            , el resultado del tratamiento empieza a sentirse, y el cliente tiene el
             móvil en la mano — en el coche, en el metro, en casa.
           </P>
           <P>

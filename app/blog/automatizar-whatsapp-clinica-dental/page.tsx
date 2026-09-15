@@ -126,8 +126,11 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
             revisión, un presupuesto o una urgencia.
           </P>
           <P>
-            Y WhatsApp es, hoy, el canal por el que la mayoría de pacientes prefieren
-            comunicarse con su clínica dental: para pedir cita, preguntar dudas o confirmar
+            Y WhatsApp es, hoy, el canal por el que la mayoría de pacientes{" "}
+            <InternalLink href="/blog/whatsapp-para-clinicas-dentales">
+              prefieren comunicarse con su clínica dental
+            </InternalLink>
+            : para pedir cita, preguntar dudas o confirmar
             una visita. El problema no es que los pacientes no escriban — es que, muchas
             veces, nadie puede responder a tiempo.
           </P>
@@ -182,8 +185,11 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
 
           <H3>Cualificar consultas antes de pasarlas al equipo</H3>
           <P>
-            Recoge qué necesita el paciente, qué tratamiento le interesa o qué urgencia tiene,
-            para que cuando alguien del equipo retome la conversación lo haga con todo el
+            Recoge qué necesita el paciente, qué tratamiento le interesa o qué urgencia tiene,{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-clinicas-rgpd">
+              tratando esos datos conforme al RGPD
+            </InternalLink>
+            , para que cuando alguien del equipo retome la conversación lo haga con todo el
             contexto, sin tener que empezar de cero. Si quieres ver cómo se aplicaría esto a
             tu clínica en concreto, lo detallamos en el{" "}
             <InternalLink href="/agente-whatsapp-clinicas-dentales">
@@ -200,8 +206,11 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
             precios orientativos, horarios y política de citas.
           </P>
           <P>
-            Cuando un paciente escribe, el sistema entiende la consulta y responde de forma
-            natural, igual que lo haría alguien de tu equipo con el móvil en la mano. Si la
+            Cuando un paciente escribe, el sistema{" "}
+            <InternalLink href="/blog/inteligencia-artificial-clinicas-dentales">
+              entiende la consulta y responde de forma natural
+            </InternalLink>
+            , igual que lo haría alguien de tu equipo con el móvil en la mano. Si la
             persona quiere reservar, puede ofrecerle huecos reales de tu agenda y dejar la
             cita puesta ahí mismo. Y si detecta algo que requiere trato humano, traspasa la
             conversación a tu equipo con todo el historial ya recogido.

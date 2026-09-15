@@ -161,8 +161,11 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
 
           <H2>Los errores más comunes al elegir un CRM siendo pequeño</H2>
           <P>
-            El error más frecuente es elegir un CRM por la cantidad de funcionalidades en
-            lugar de por la facilidad de uso. Una clínica pequeña no va a usar el 80% de las
+            El error más frecuente es{" "}
+            <InternalLink href="/blog/software-gestion-clinica-estetica">
+              elegir un CRM por la cantidad de funcionalidades
+            </InternalLink>{" "}
+            en lugar de por la facilidad de uso. Una clínica pequeña no va a usar el 80% de las
             funciones de un CRM «completo» — y cuanto más complejo es la herramienta, más
             probable es que el equipo deje de actualizarla a las pocas semanas.
           </P>
@@ -241,8 +244,11 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
             resolver primero ese problema concreto con automatización: un agente que responda
             al instante, haga las preguntas básicas de cualificación y deje todo registrado
             para que el equipo lo revise por la mañana. Esto no sustituye a un CRM a largo
-            plazo, pero evita la sangría de leads mientras la clínica decide qué herramienta
-            necesita realmente.
+            plazo, pero evita la sangría de leads mientras la clínica decide{" "}
+            <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
+              qué herramienta necesita realmente
+            </InternalLink>
+            .
           </P>
           <P>
             Con un LTV de 3.000€ por cliente recurrente, recuperar aunque sea uno o dos leads

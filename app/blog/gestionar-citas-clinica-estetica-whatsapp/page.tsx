@@ -125,7 +125,11 @@ export default function GestionarCitasWhatsAppArticlePage() {
             chat, mezclado, durante todo el día.
           </P>
           <P>
-            El problema no es que los pacientes usen WhatsApp — eso es una ventaja. El
+            El problema no es que{" "}
+            <InternalLink href="/blog/clinica-estetica-por-whatsapp">
+              los pacientes usen WhatsApp
+            </InternalLink>{" "}
+            — eso es una ventaja. El
             problema es que, para que funcione como sistema de gestión de citas, alguien del
             equipo tiene que estar mirando el móvil constantemente: respondiendo, agendando a
             mano, recordando confirmar, avisando de cambios. Y eso, con la clínica llena, es
@@ -170,7 +174,11 @@ export default function GestionarCitasWhatsAppArticlePage() {
             Además, este tipo de gestión depende de que siempre haya alguien disponible para
             responder. Si la persona encargada está atendiendo a un paciente, en una reunión o
             simplemente fuera de horario, los mensajes se quedan sin respuesta. Y como hemos
-            visto, un paciente que no recibe respuesta rápida tiende a buscar otra clínica.
+            visto,{" "}
+            <InternalLink href="/blog/responder-consultas-clinica-estetica-whatsapp">
+              un paciente que no recibe respuesta rápida
+            </InternalLink>{" "}
+            tiende a buscar otra clínica.
           </P>
           <P>
             A esto se suma el riesgo de errores: citas duplicadas, horarios mal anotados,
@@ -191,7 +199,11 @@ export default function GestionarCitasWhatsAppArticlePage() {
             conversación de WhatsApp.
           </P>
           <P>
-            También se pueden automatizar los recordatorios antes de la cita, las
+            También se pueden{" "}
+            <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
+              automatizar los recordatorios antes de la cita
+            </InternalLink>
+            , las
             confirmaciones de asistencia, y la gestión de cambios o cancelaciones: si un
             paciente escribe para mover su cita, el sistema puede ofrecerle directamente los
             huecos disponibles y reagendar sin que nadie del equipo tenga que intervenir.

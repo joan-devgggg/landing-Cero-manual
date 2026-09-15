@@ -144,8 +144,11 @@ export default function ProgramaGestionClinicaEsteticaPage() {
             consentimientos informados.
           </P>
           <P>
-            La confusión es habitual porque muchos proveedores llaman «programa de gestión» a
-            herramientas que en realidad solo cubren la agenda. Antes de contratar, conviene tener
+            La confusión es habitual porque muchos proveedores llaman «programa de gestión» a{" "}
+            <InternalLink href="/blog/software-gestion-citas-clinica-estetica">
+              herramientas que en realidad solo cubren la agenda
+            </InternalLink>
+            . Antes de contratar, conviene tener
             claro si lo que necesitas es organizar citas o gestionar todo el negocio desde un
             mismo sitio, porque el precio y la complejidad cambian mucho entre una cosa y otra.
           </P>
@@ -176,8 +179,11 @@ export default function ProgramaGestionClinicaEsteticaPage() {
           </P>
           <P>
             El segundo error es no probarlo con el equipo antes de contratar: lo que parece
-            intuitivo en una demo puede no serlo el primer día real de trabajo. El tercero es
-            acumular herramientas que se solapan — un programa de gestión, más una app de
+            intuitivo en una demo puede no serlo el primer día real de trabajo. El tercero es{" "}
+            <InternalLink href="/blog/software-gestion-clinicas-esteticas">
+              acumular herramientas que se solapan
+            </InternalLink>{" "}
+            — un programa de gestión, más una app de
             reservas, más una hoja de cálculo aparte — en lugar de consolidar en un único sistema.
             Y el cuarto es ignorar la curva de adopción: si migrar lleva semanas, hay que
             planificarlo, no improvisarlo.

@@ -129,15 +129,22 @@ export default function ChatbotWhatsappArticlePage() {
             un mensaje que tardará horas — o días — en tener respuesta.
           </P>
           <P>
-            Y la cosa tiene truco: WhatsApp es, con diferencia, el canal que más abren tus
+            Y la cosa tiene truco:{" "}
+            <InternalLink href="/blog/clinica-estetica-por-whatsapp">
+              WhatsApp es, con diferencia, el canal
+            </InternalLink>{" "}
+            que más abren tus
             pacientes — en el sector se manejan tasas de apertura de referencia del 95-98%,
             frente al 20-25% de un email. El problema no es el canal. El problema es que, al
             otro lado, no siempre hay alguien disponible para responder a tiempo.
           </P>
           <P>
             En este artículo vas a entender qué es exactamente un chatbot de WhatsApp para
-            clínicas estéticas, en qué se diferencia de responder tú mismo desde WhatsApp
-            Business, qué puede hacer en el día a día de tu clínica, si es complicado de
+            clínicas estéticas, en qué se diferencia de{" "}
+            <InternalLink href="/blog/whatsapp-business-clinicas-esteticas">
+              responder tú mismo desde WhatsApp Business
+            </InternalLink>
+            , qué puede hacer en el día a día de tu clínica, si es complicado de
             poner en marcha y qué inversión — y qué retorno — supone.
           </P>
 
@@ -150,7 +157,11 @@ export default function ChatbotWhatsappArticlePage() {
             citas»: entiende lo que pregunta la persona y responde en consecuencia.
           </P>
           <P>
-            En la práctica, hace lo que haría alguien de tu recepción si tuviera el móvil en la
+            En la práctica, hace{" "}
+            <InternalLink href="/blog/chatbot-whatsapp-vs-recepcionista-clinica">
+              lo que haría alguien de tu recepción
+            </InternalLink>{" "}
+            si tuviera el móvil en la
             mano en ese mismo instante — con la diferencia de que no descansa, no se olvida de
             ningún mensaje y atiende varias conversaciones a la vez.
           </P>
@@ -183,7 +194,11 @@ export default function ChatbotWhatsappArticlePage() {
           <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
             Conviene además no confundir tres cosas que a menudo se meten en el mismo saco:
-            responder a mano, un chatbot de menús y un agente con IA. Esta es la diferencia
+            responder a mano,{" "}
+            <InternalLink href="/blog/mejor-chatbot-whatsapp-clinica-estetica">
+              un chatbot de menús y un agente con IA
+            </InternalLink>
+            . Esta es la diferencia
             práctica:
           </P>
 
@@ -309,7 +324,8 @@ export default function ChatbotWhatsappArticlePage() {
           </P>
           <BlogSource>SEME (Sociedad Española de Medicina Estética)</BlogSource>
           <P>
-            Por eso la pregunta que de verdad importa no es «¿cuánto cuesta tener un chatbot?»,
+            Por eso la pregunta que de verdad importa no es
+            «<InternalLink href="/blog/cuanto-cuesta-chatbot-whatsapp-clinica">¿cuánto cuesta tener un chatbot?</InternalLink>»,
             sino «¿cuánto me está costando ya no tenerlo?». Cada consulta que tarda horas en
             recibir respuesta es, probablemente, una persona que ha encontrado — y reservado —
             en otra clínica mientras esperaba la tuya.

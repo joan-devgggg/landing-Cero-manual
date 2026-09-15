@@ -162,8 +162,11 @@ export default function ResponderConsultasWhatsappPage() {
 
           <H2>Los errores que ralentizan tu respuesta por WhatsApp</H2>
           <P>
-            El más frecuente es no tener claro quién es responsable del canal en cada
-            momento. Si "todos" se encargan del WhatsApp, en la práctica nadie lo hace con
+            El más frecuente es no tener claro{" "}
+            <InternalLink href="/blog/clinica-estetica-por-whatsapp">
+              quién es responsable del canal en cada momento
+            </InternalLink>
+            . Si "todos" se encargan del WhatsApp, en la práctica nadie lo hace con
             prioridad — y los mensajes esperan hasta que alguien tiene un hueco entre
             pacientes.
           </P>
@@ -244,7 +247,11 @@ export default function ResponderConsultasWhatsappPage() {
           <P>
             El resultado: ningún mensaje sin respuesta, ningún lead perdido por llegar fuera
             de horario, y un equipo que puede concentrarse en la atención directa al paciente
-            en lugar de gestionar el móvil.
+            en lugar de{" "}
+            <InternalLink href="/blog/gestionar-citas-clinica-estetica-whatsapp">
+              gestionar el móvil
+            </InternalLink>
+            .
           </P>
         </article>
 

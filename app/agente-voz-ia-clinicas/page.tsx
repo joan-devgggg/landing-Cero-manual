@@ -6,6 +6,7 @@ import ServiceHero from "@/components/ServiceHero"
 import ServiceProblem from "@/components/ServiceProblem"
 import ServiceHowItWorks from "@/components/ServiceHowItWorks"
 import ServiceBenefits from "@/components/ServiceBenefits"
+import ArticleLinks from "@/components/ArticleLinks"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import ServiceCTA from "@/components/ServiceCTA"
 import { localBusinessProvider, spainAreaServed } from "@/lib/schema"
@@ -164,6 +165,25 @@ export default function AgenteVozPage() {
               icon: "Headphones",
               title: "Suena natural, no a contestador",
               desc: "Configuramos la voz, el tono y las respuestas con la información real de tu clínica. La experiencia se siente humana de principio a fin.",
+            },
+          ]}
+        />
+
+        <ArticleLinks
+          label="Del blog"
+          title="Guías relacionadas"
+          articles={[
+            {
+              slug: "que-es-un-agente-de-voz-ia-para-clinicas",
+              title: "Qué es un agente de voz con IA y cómo puede transformar tu clínica",
+            },
+            {
+              slug: "agente-ia-recepcion-clinica",
+              title: "Agente IA para la recepción de tu clínica: qué es, qué hace y cuánto cuesta",
+            },
+            {
+              slug: "chatbot-whatsapp-vs-recepcionista-clinica",
+              title: "Chatbot de WhatsApp vs recepcionista en tu clínica: comparativa honesta",
             },
           ]}
         />
