@@ -11,7 +11,7 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/software-gestion-citas-clinica-estetica"
 const DATES = articleDates("software-gestion-citas-clinica-estetica")
-const TITLE = "Software de gestión de citas para clínicas estéticas: guía 2026 | Cero Manual"
+const TITLE = "Software de citas para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
   "¿Buscas un software de gestión de citas para tu clínica estética? Te explicamos qué necesitas, qué opciones existen y cuándo automatizar con IA."
 const HEADLINE =
