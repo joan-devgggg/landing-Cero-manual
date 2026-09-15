@@ -58,8 +58,8 @@ export default function Home() {
               title: "Chatbot de WhatsApp para clínicas estéticas: qué es y por qué tu competencia ya lo tiene",
             },
             {
-              slug: "software-gestion-clinica-estetica",
-              title: "Software de gestión para clínicas estéticas: guía completa",
+              slug: "software-gestion-clinicas-esteticas",
+              title: "Software de gestión para clínicas estéticas: qué necesitas realmente y por dónde empezar",
             },
             {
               slug: "emails-recordatorio-pacientes-clinica",

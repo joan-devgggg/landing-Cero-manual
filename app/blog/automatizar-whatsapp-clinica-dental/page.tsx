@@ -207,7 +207,7 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
           </P>
           <P>
             Cuando un paciente escribe, el sistema{" "}
-            <InternalLink href="/blog/inteligencia-artificial-clinicas-dentales">
+            <InternalLink href="/blog/automatizacion-clinicas-dentales">
               entiende la consulta y responde de forma natural
             </InternalLink>
             , igual que lo haría alguien de tu equipo con el móvil en la mano. Si la

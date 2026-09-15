@@ -168,11 +168,7 @@ export default function RecordatoriosWhatsAppArticlePage() {
           <H2>Qué debe incluir un buen recordatorio de cita</H2>
           <P>
             No todos los recordatorios son iguales. Un mensaje genérico tipo «le recordamos su
-            cita» cumple el expediente, pero deja pasar la oportunidad de evitar el no-show.{" "}
-            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
-              Un buen recordatorio incluye
-            </InternalLink>
-            , como mínimo:
+            cita» cumple el expediente, pero deja pasar la oportunidad de evitar el no-show. Un buen recordatorio incluye, como mínimo:
           </P>
           <P>
             <strong>Quién, cuándo y dónde.</strong> El nombre del paciente, el día y la hora

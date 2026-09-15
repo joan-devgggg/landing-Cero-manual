@@ -179,8 +179,8 @@ export default function RecordatoriosPage() {
               title: "Emails de recordatorio para pacientes: plantillas, consejos y cuándo usar WhatsApp en su lugar",
             },
             {
-              slug: "plantillas-recordatorio-cita-clinica",
-              title: "Plantillas de recordatorio de cita para clínicas: ejemplos listos para usar",
+              slug: "como-reducir-no-shows-clinica-estetica",
+              title: "Cómo reducir los no-shows en tu clínica estética y dejar de perder ingresos",
             },
             {
               slug: "recordatorios-citas-whatsapp-clinica",
