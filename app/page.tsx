@@ -7,6 +7,7 @@ import IntegrationsTicker from "@/components/IntegrationsTicker"
 import TimelineSection from "@/components/TimelineSection"
 import DemoSection from "@/components/DemoSection"
 import ResultsSection from "@/components/ResultsSection"
+import CasosHomeLink from "@/components/casos/CasosHomeLink"
 import CTASection from "@/components/CTASection"
 import FAQSection from "@/components/FAQSection"
 import ArticleLinks from "@/components/ArticleLinks"
@@ -46,6 +47,7 @@ export default function Home() {
         <TimelineSection />
         <DemoSection />
         <ResultsSection />
+        <CasosHomeLink />
         <CTASection />
         <FAQSection />
         <ArticleLinks

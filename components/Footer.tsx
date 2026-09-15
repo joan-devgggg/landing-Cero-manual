@@ -22,6 +22,7 @@ const navLinks = [
   { label: "Recordatorios", href: "/recordatorios-automaticos-citas" },
   { label: "Reactivación de clientes", href: "/reactivacion-pacientes-inactivos" },
   { label: "Calculadora de no-shows", href: "/calculadora-no-shows" },
+  { label: "Casos", href: "/casos" },
   { label: "Blog", href: "/blog" },
   { label: "Privacidad", href: "/privacidad" },
   { label: "Aviso Legal", href: "/aviso-legal" },

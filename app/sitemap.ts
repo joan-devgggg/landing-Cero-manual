@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next"
 import { articleDates, type BlogSlug } from "@/lib/blog-dates"
+import { casos } from "@/lib/casos"
 
 const baseUrl = "https://ceromanual.es"
 
@@ -21,6 +22,16 @@ const topPages: UndatedPage[] = [
   { path: "/reactivacion-pacientes-inactivos", changeFrequency: "monthly", priority: 0.8 },
   { path: "/calculadora-no-shows", changeFrequency: "monthly", priority: 0.8 },
   { path: "/blog", changeFrequency: "weekly", priority: 0.7 },
+]
+
+// El índice de casos y cada caso, leídos de lib/casos.ts (la misma lista que pinta /casos).
+const casePages: UndatedPage[] = [
+  { path: "/casos", changeFrequency: "monthly", priority: 0.8 },
+  ...casos.map((caso) => ({
+    path: `/casos/${caso.slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  })),
 ]
 
 const legalPages: UndatedPage[] = [
@@ -82,6 +93,7 @@ const toEntry = ({ path, changeFrequency, priority }: UndatedPage) => ({
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...topPages.map(toEntry),
+    ...casePages.map(toEntry),
     ...articleSlugs.map((slug) => ({
       url: `${baseUrl}/blog/${slug}`,
       lastModified: articleDates(slug).modified,

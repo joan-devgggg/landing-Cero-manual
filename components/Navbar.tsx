@@ -11,10 +11,11 @@ const links = [
   { label: "Cómo funciona", href: "#como-funciona" },
   { label: "Resultados", href: "#resultados" },
   { label: "FAQ", href: "#faq" },
+  { label: "Casos", href: "/casos" },
   { label: "Blog", href: "/blog" },
 ]
 
-// Los enlaces del menú son anclas de la home salvo el del blog, que es una ruta.
+// Los enlaces del menú son anclas de la home salvo los de casos y blog, que son rutas.
 // Una ruta no se prefija con "/" fuera de la home ni se intercepta para hacer
 // scroll: `querySelector("/blog")` no es un selector válido y reventaría.
 const isAnchor = (href: string) => href.startsWith("#")
