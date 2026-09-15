@@ -46,7 +46,7 @@ const posts = [
     excerpt:
       "Los emails de recordatorio para pacientes reducen las ausencias en tu clínica. Te damos plantillas listas para usar y te explicamos cuándo WhatsApp funciona mejor.",
     date: "2026-07-07",
-    readingTime: "6 min de lectura",
+    readingTime: "9 min de lectura",
   },
   {
     slug: "mejor-software-gestion-clinica-estetica",
@@ -70,7 +70,7 @@ const posts = [
     excerpt:
       "Cada vez más pacientes contactan con clínicas estéticas por WhatsApp. Te explicamos cómo gestionarlo sin que el equipo esté pendiente del móvil todo el día.",
     date: "2026-06-14",
-    readingTime: "6 min de lectura",
+    readingTime: "10 min de lectura",
   },
   {
     slug: "chatbot-whatsapp-vs-recepcionista-clinica",
@@ -150,7 +150,7 @@ const posts = [
     excerpt:
       "El marketing para clínicas dentales ha cambiado. Te explicamos qué canales funcionan realmente y cómo automatizar la captación de pacientes.",
     date: "2026-06-11",
-    readingTime: "7 min de lectura",
+    readingTime: "8 min de lectura",
   },
   {
     slug: "whatsapp-para-clinicas-dentales",
@@ -182,7 +182,7 @@ const posts = [
     excerpt:
       "La automatización en clínicas dentales reduce no-shows, recupera pacientes inactivos y responde leads 24/7. Descubre por dónde empezar.",
     date: "2026-06-11",
-    readingTime: "7 min de lectura",
+    readingTime: "8 min de lectura",
   },
   {
     slug: "recordatorios-citas-whatsapp-clinica",
@@ -198,7 +198,7 @@ const posts = [
     excerpt:
       "La experiencia del paciente decide si vuelve o no. Te explicamos cómo mejorarla en cada punto de contacto sin añadir más trabajo al equipo.",
     date: "2026-06-11",
-    readingTime: "6 min de lectura",
+    readingTime: "8 min de lectura",
   },
   {
     slug: "software-gestion-clinicas-esteticas",
@@ -206,7 +206,7 @@ const posts = [
     excerpt:
       "Hay miles de opciones de software para clínicas estéticas. Te explicamos qué necesitas realmente según el tamaño y momento de tu clínica.",
     date: "2026-06-10",
-    readingTime: "8 min de lectura",
+    readingTime: "9 min de lectura",
   },
   {
     slug: "marketing-digital-clinicas-esteticas",
@@ -287,7 +287,7 @@ const posts = [
     excerpt:
       "Antes de gastar más en publicidad, recupera los clientes que ya tienes. 5 estrategias para captar más sin invertir más: reactivación, reseñas, upsell, WhatsApp y referidos.",
     date: "2026-06-12",
-    readingTime: "7 min de lectura",
+    readingTime: "9 min de lectura",
   },
   {
     slug: "inteligencia-artificial-clinicas-esteticas",

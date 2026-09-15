@@ -121,17 +121,13 @@ export default function SoftwareGestionClinicasArticlePage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            10 de junio de 2026 · 8 min de lectura
+            10 de junio de 2026 · 9 min de lectura
           </p>
 
           {/* Intro */}
           <P>
             Si buscas "software para clínicas estéticas" en Google, te van a aparecer decenas
-            de opciones:{" "}
-            <InternalLink href="/blog/programa-gestion-clinica-estetica">
-              programas de gestión
-            </InternalLink>
-            , agendas de citas, CRMs, plataformas de marketing,
+            de opciones: programas de gestión, agendas de citas, CRMs, plataformas de marketing,
             herramientas de facturación, chatbots, apps de fidelización... Cada una promete
             ser la solución definitiva, y es fácil acabar pagando por varias herramientas que
             apenas se usan.

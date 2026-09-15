@@ -122,7 +122,7 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            11 de junio de 2026 · 7 min de lectura
+            11 de junio de 2026 · 8 min de lectura
           </p>
 
           {/* Intro */}

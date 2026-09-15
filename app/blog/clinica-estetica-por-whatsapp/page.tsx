@@ -128,7 +128,7 @@ export default function ClinicaEsteticaWhatsappPage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            14 de junio de 2026 · 6 min de lectura
+            14 de junio de 2026 · 10 min de lectura
           </p>
 
           {/* Intro */}

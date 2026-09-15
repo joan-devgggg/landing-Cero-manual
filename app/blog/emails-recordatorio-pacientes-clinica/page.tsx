@@ -135,7 +135,7 @@ export default function EmailsRecordatorioPacientesPage() {
             className="text-sm mb-16"
             style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
           >
-            7 de julio de 2026 · 6 min de lectura
+            7 de julio de 2026 · 9 min de lectura
           </p>
 
           {/* Intro */}
