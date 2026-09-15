@@ -254,7 +254,7 @@ export default function RecordatoriosWhatsAppArticlePage() {
           <P>
             El proceso, una vez configurado, es así: el sistema lee tu agenda, programa los
             dos avisos (24h y 2h antes) para cada cita, envía el mensaje por WhatsApp con el
-            tono y los datos de tu clínica, y, como haría un{" "}
+            tono y los datos de tu clínica, como haría un{" "}
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               chatbot de WhatsApp
             </InternalLink>
