@@ -6,6 +6,7 @@ import ServiceHero from "@/components/ServiceHero"
 import ServiceProblem from "@/components/ServiceProblem"
 import ServiceHowItWorks from "@/components/ServiceHowItWorks"
 import ServiceBenefits from "@/components/ServiceBenefits"
+import ArticleLinks from "@/components/ArticleLinks"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import ServiceCTA from "@/components/ServiceCTA"
 import { localBusinessProvider, spainAreaServed } from "@/lib/schema"
@@ -169,6 +170,25 @@ export default function AgenteWhatsAppDentalPage() {
               icon: "CalendarCheck",
               title: "Menos horas de sillón vacías",
               desc: "Confirmaciones automáticas y reprogramación desde el propio chat. Cuando alguien cancela, hay margen real para ofrecer el hueco a otro paciente en vez de perder gabinete, auxiliar y tiempo de odontólogo.",
+            },
+          ]}
+        />
+
+        <ArticleLinks
+          label="Del blog"
+          title="Guías relacionadas"
+          articles={[
+            {
+              slug: "whatsapp-para-clinicas-dentales",
+              title: "WhatsApp para clínicas dentales: cómo usarlo para captar y retener más pacientes",
+            },
+            {
+              slug: "automatizar-whatsapp-clinica-dental",
+              title: "Cómo automatizar WhatsApp en tu clínica dental y dejar de perder leads",
+            },
+            {
+              slug: "inteligencia-artificial-clinicas-dentales",
+              title: "Inteligencia artificial para clínicas dentales: qué puedes automatizar hoy",
             },
           ]}
         />

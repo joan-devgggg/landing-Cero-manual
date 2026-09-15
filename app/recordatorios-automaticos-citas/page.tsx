@@ -6,6 +6,7 @@ import ServiceHero from "@/components/ServiceHero"
 import ServiceProblem from "@/components/ServiceProblem"
 import ServiceHowItWorks from "@/components/ServiceHowItWorks"
 import ServiceBenefits from "@/components/ServiceBenefits"
+import ArticleLinks from "@/components/ArticleLinks"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import ServiceCTA from "@/components/ServiceCTA"
 import { localBusinessProvider, spainAreaServed } from "@/lib/schema"
@@ -165,6 +166,25 @@ export default function RecordatoriosPage() {
               icon: "Star",
               title: "Más reseñas, sin pedirlas a mano",
               desc: "El seguimiento automático pide la opinión justo después de la cita, cuando es más probable que la persona la deje — y la deje buena.",
+            },
+          ]}
+        />
+
+        <ArticleLinks
+          label="Del blog"
+          title="Guías relacionadas"
+          articles={[
+            {
+              slug: "emails-recordatorio-pacientes-clinica",
+              title: "Emails de recordatorio para pacientes: plantillas, consejos y cuándo usar WhatsApp en su lugar",
+            },
+            {
+              slug: "plantillas-recordatorio-cita-clinica",
+              title: "Plantillas de recordatorio de cita para clínicas: ejemplos listos para usar",
+            },
+            {
+              slug: "recordatorios-citas-whatsapp-clinica",
+              title: "Recordatorios de citas por WhatsApp para clínicas: cómo configurarlos para que funcionen solos",
             },
           ]}
         />

@@ -6,6 +6,7 @@ import ServiceHero from "@/components/ServiceHero"
 import ServiceProblem from "@/components/ServiceProblem"
 import ServiceHowItWorks from "@/components/ServiceHowItWorks"
 import ServiceBenefits from "@/components/ServiceBenefits"
+import ArticleLinks from "@/components/ArticleLinks"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import ServiceCTA from "@/components/ServiceCTA"
 import { localBusinessProvider, spainAreaServed } from "@/lib/schema"
@@ -166,6 +167,25 @@ export default function ReactivacionPage() {
               icon: "Sparkles",
               title: "Más reservas sin gastar en anuncios",
               desc: "Recuperas clientes que ya te conocían y confiaban en ti — sin pagar por cada nuevo contacto que llega frío desde una campaña.",
+            },
+          ]}
+        />
+
+        <ArticleLinks
+          label="Del blog"
+          title="Guías relacionadas"
+          articles={[
+            {
+              slug: "como-reactivar-pacientes-inactivos-clinica",
+              title: "Cómo reactivar pacientes inactivos en tu clínica (sin llamar uno por uno)",
+            },
+            {
+              slug: "como-fidelizar-pacientes-clinica-estetica",
+              title: "Cómo fidelizar pacientes en tu clínica estética (y que vuelvan sin que tengas que llamarles)",
+            },
+            {
+              slug: "experiencia-paciente-clinica-estetica",
+              title: "Cómo mejorar la experiencia del paciente en tu clínica estética (y que vuelvan solos)",
             },
           ]}
         />
