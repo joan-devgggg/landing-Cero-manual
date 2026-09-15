@@ -143,12 +143,19 @@ export default function InteligenciaArtificialClinicasDentalesArticlePage() {
             por separado según lo que más falta haga en tu clínica. Las más habituales
             son: responder preguntas frecuentes de pacientes (horarios, precios,
             tratamientos), gestionar la agenda (confirmaciones, recordatorios, huecos
-            libres), y hacer seguimiento de pacientes (recordatorios de revisión,
+            libres), y{" "}
+            <InternalLink href="/blog/mejor-crm-clinicas-dentales">
+              hacer seguimiento de pacientes
+            </InternalLink>{" "}
+            (recordatorios de revisión,
             campañas de reactivación).
           </P>
           <P>
-            Esto importa especialmente porque casi un 40% de las consultas de una clínica
-            llegan fuera del horario de atención — por la tarde-noche, fines de semana o
+            Esto importa especialmente porque casi un 40% de las consultas de una clínica{" "}
+            <InternalLink href="/blog/que-es-un-agente-de-voz-ia-para-clinicas">
+              llegan fuera del horario de atención
+            </InternalLink>{" "}
+            — por la tarde-noche, fines de semana o
             mientras el equipo está con un paciente. Sin un sistema que las recoja, esas
             consultas simplemente se pierden o quedan sin respuesta hasta el día
             siguiente, cuando el paciente ya ha llamado a otra clínica.
@@ -183,7 +190,11 @@ export default function InteligenciaArtificialClinicasDentalesArticlePage() {
             día, incluso fuera del horario de la clínica.
           </P>
           <P>
-            El canal importa tanto como la tecnología: los mensajes de WhatsApp se abren
+            El canal importa tanto como la tecnología:{" "}
+            <InternalLink href="/blog/whatsapp-para-clinicas-dentales">
+              los mensajes de WhatsApp
+            </InternalLink>{" "}
+            se abren
             entre un 95% y un 98% de las veces, muy por encima de SMS o email. Eso
             significa que un mensaje automático por WhatsApp tiene muchas más
             probabilidades de ser leído y respondido que cualquier otro canal, lo que lo
@@ -215,8 +226,11 @@ export default function InteligenciaArtificialClinicasDentalesArticlePage() {
           <P>
             No hace falta automatizarlo todo de golpe. Lo más sensato es empezar por el
             punto que más dolor genera hoy en tu clínica: si pierdes muchas citas por
-            no-shows, empieza por los recordatorios con confirmación. Si te cuesta
-            atender el WhatsApp fuera de horario, empieza por ahí. Si tienes una base de
+            no-shows, empieza por los recordatorios con confirmación. Si te cuesta{" "}
+            <InternalLink href="/blog/automatizar-whatsapp-clinica-dental">
+              atender el WhatsApp fuera de horario
+            </InternalLink>
+            , empieza por ahí. Si tienes una base de
             pacientes inactivos sin trabajar, empieza por una campaña de reactivación.
           </P>
           <P>

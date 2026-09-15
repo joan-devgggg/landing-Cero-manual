@@ -120,7 +120,11 @@ export default function AgenteWhatsappClinicaDentalArticlePage() {
 
           {/* Intro */}
           <P>
-            WhatsApp se ha convertido en el canal principal de comunicación entre las clínicas
+            WhatsApp se ha convertido en{" "}
+            <InternalLink href="/blog/whatsapp-para-clinicas-dentales">
+              el canal principal de comunicación
+            </InternalLink>{" "}
+            entre las clínicas
             dentales y sus pacientes. Con tasas de apertura de entre el 95% y el 98%, es donde
             los pacientes preguntan por precios, piden cita, confirman o cancelan, y resuelven
             dudas antes y después de un tratamiento.
@@ -128,8 +132,11 @@ export default function AgenteWhatsappClinicaDentalArticlePage() {
           <P>
             El problema es que, para que ese canal funcione, alguien tiene que estar pendiente
             de él en todo momento. Y eso no siempre es posible: alrededor del 40% de las
-            consultas llegan fuera del horario de atención, y cuando un lead no recibe
-            respuesta en los primeros cinco minutos, la probabilidad de perderlo frente a otra
+            consultas llegan fuera del horario de atención, y cuando un lead{" "}
+            <InternalLink href="/blog/automatizar-whatsapp-clinica-dental">
+              no recibe respuesta en los primeros cinco minutos
+            </InternalLink>
+            , la probabilidad de perderlo frente a otra
             clínica es de hasta el 80%.
           </P>
           <P>
@@ -187,8 +194,11 @@ export default function AgenteWhatsappClinicaDentalArticlePage() {
             WhatsApp.
           </P>
           <P>
-            A medida que se acerca la fecha de la cita, el agente envía recordatorios
-            automáticos y gestiona las respuestas: si el paciente confirma, queda registrado;
+            A medida que se acerca la fecha de la cita, el agente{" "}
+            <InternalLink href="/blog/automatizacion-clinicas-dentales">
+              envía recordatorios automáticos y gestiona las respuestas
+            </InternalLink>
+            : si el paciente confirma, queda registrado;
             si necesita cambiar la hora, el agente le ofrece nuevas opciones sin que nadie del
             equipo tenga que llamar o escribir manualmente.
           </P>

@@ -125,7 +125,11 @@ export default function MarketingClinicaDentalArticlePage() {
           </P>
           <P>
             Las clínicas que no se adaptan a este cambio no desaparecen de la noche a la
-            mañana, pero sí pierden terreno poco a poco: pagan más por cada paciente nuevo,
+            mañana, pero sí pierden terreno poco a poco:{" "}
+            <InternalLink href="/blog/como-aumentar-facturacion-clinica-dental">
+              pagan más por cada paciente nuevo
+            </InternalLink>
+            ,
             compiten peor en Google frente a clínicas que sí han optimizado su presencia
             digital, y dejan escapar leads que ya estaban interesados simplemente porque nadie
             respondió a tiempo.
@@ -159,8 +163,11 @@ export default function MarketingClinicaDentalArticlePage() {
           </P>
           <P>
             La estrategia que mejor funciona no es elegir uno y descartar los demás, sino
-            entender que Google y redes sociales generan el contacto, y WhatsApp es lo que
-            convierte ese contacto en un paciente real.
+            entender que Google y redes sociales generan el contacto, y{" "}
+            <InternalLink href="/blog/whatsapp-para-clinicas-dentales">
+              WhatsApp es lo que convierte ese contacto
+            </InternalLink>{" "}
+            en un paciente real.
           </P>
 
           <H2>Google: el canal con más intención de compra</H2>
@@ -172,7 +179,11 @@ export default function MarketingClinicaDentalArticlePage() {
           </P>
           <P>
             El SEO local es especialmente importante: aparecer en el mapa de Google cuando
-            alguien busca un dentista en tu zona, con buenas reseñas y una ficha completa,
+            alguien busca un dentista en tu zona,{" "}
+            <InternalLink href="/blog/resenas-google-clinicas-dentales">
+              con buenas reseñas
+            </InternalLink>{" "}
+            y una ficha completa,
             genera llamadas y mensajes de forma constante sin coste por clic. Google Ads
           complementa esto cuando quieres resultados más rápidos o quieres aparecer para
           búsquedas concretas, como un tratamiento específico.

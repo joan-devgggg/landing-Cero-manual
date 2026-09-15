@@ -137,7 +137,11 @@ export default function ComoConseguirPacientesClinicaDentalArticlePage() {
             No todos los canales rinden igual. En la mayoría de clínicas dentales, los
             pacientes nuevos llegan principalmente por tres vías: búsquedas en Google
             (sobre todo búsquedas locales tipo "dentista cerca de mí"), recomendaciones de
-            pacientes actuales, y publicidad en redes sociales o Google Ads.
+            pacientes actuales, y{" "}
+            <InternalLink href="/blog/marketing-clinica-dental">
+              publicidad en redes sociales o Google Ads
+            </InternalLink>
+            .
           </P>
           <P>
             Cada canal cumple una función distinta: la publicidad genera volumen de leads
@@ -157,7 +161,11 @@ export default function ComoConseguirPacientesClinicaDentalArticlePage() {
             clínica con más reseñas y mejor valoración.
           </P>
           <P>
-            Las clínicas que piden reseñas de forma sistemática — por ejemplo, enviando un
+            Las clínicas que{" "}
+            <InternalLink href="/blog/resenas-google-clinicas-dentales">
+              piden reseñas de forma sistemática
+            </InternalLink>{" "}
+            — por ejemplo, enviando un
             mensaje automático después de cada cita — consiguen acumular reseñas mucho
             más rápido que las que solo las piden de vez en cuando, "cuando se acuerdan".
             Esto no solo mejora la posición en Google, también da más confianza a quien
@@ -216,8 +224,11 @@ export default function ComoConseguirPacientesClinicaDentalArticlePage() {
           <P>
             Cuando esto está automatizado, cada euro que inviertes en publicidad rinde
             más, porque ya no se pierde por el camino — y además consigues pacientes
-            nuevos sin necesidad de aumentar el presupuesto, simplemente aprovechando
-            mejor lo que ya estás generando.
+            nuevos sin necesidad de aumentar el presupuesto, simplemente{" "}
+            <InternalLink href="/blog/aumentar-ingresos-clinica-dental-sin-pacientes">
+              aprovechando mejor lo que ya estás generando
+            </InternalLink>
+            .
           </P>
         </article>
 

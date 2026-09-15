@@ -148,8 +148,11 @@ export default function ResenasGoogleClinicasDentalesArticlePage() {
             media similar.
           </P>
           <P>
-            En resumen: las reseñas no son solo un "extra" de reputación, son uno de los canales
-            de captación de pacientes nuevos más rentables que existen, porque no cuestan dinero
+            En resumen: las reseñas no son solo un "extra" de reputación, son uno de los{" "}
+            <InternalLink href="/blog/marketing-clinica-dental">
+              canales de captación de pacientes nuevos
+            </InternalLink>{" "}
+            más rentables que existen, porque no cuestan dinero
             por clic ni requieren gestionar campañas.
           </P>
 
@@ -236,8 +239,11 @@ export default function ResenasGoogleClinicasDentalesArticlePage() {
             <InternalLink href="/blog/como-conseguir-resenas-google-clinica-estetica">
               petición de reseñas
             </InternalLink>{" "}
-            tras cada cita es, junto con los recordatorios automáticos, una de las mejoras más
-            rentables que puede aplicar una clínica dental.
+            tras cada cita es, junto con los recordatorios automáticos, una de las{" "}
+            <InternalLink href="/blog/como-aumentar-facturacion-clinica-dental">
+              mejoras más rentables que puede aplicar una clínica dental
+            </InternalLink>
+            .
           </P>
         </article>
 

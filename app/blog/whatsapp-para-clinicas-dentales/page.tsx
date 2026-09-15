@@ -150,8 +150,11 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
             una visita. Es, en la práctica, la centralita de la clínica.
           </P>
           <P>
-            El reto es que ese volumen de mensajes —especialmente si la clínica recibe
-            consultas también por la noche o el fin de semana, que representan hasta un 40% del
+            El reto es que ese volumen de mensajes —especialmente si la clínica recibe{" "}
+            <InternalLink href="/blog/automatizar-whatsapp-clinica-dental">
+              consultas también por la noche o el fin de semana
+            </InternalLink>
+            , que representan hasta un 40% del
             total— puede desbordar fácilmente a un equipo que también está atendiendo
             pacientes en consulta.
           </P>
@@ -182,7 +185,10 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
 
           <H2>Confirmación de citas y reducción de no-shows por WhatsApp</H2>
           <P>
-            Las citas que no se presentan —entre un 12% y un 19% del total en una clínica
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-dental">
+              Las citas que no se presentan
+            </InternalLink>{" "}
+            —entre un 12% y un 19% del total en una clínica
             dental media— son uno de los costes más silenciosos del día a día: un hueco vacío
             en la agenda que ya no se puede recuperar.
           </P>
@@ -206,7 +212,10 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
             de media, un valor de vida (LTV) de unos 3.000€.
           </P>
           <P>
-            Un mensaje de WhatsApp bien planteado —recordando que toca revisión, sin tono
+            <InternalLink href="/blog/como-reactivar-pacientes-inactivos-clinica">
+              Un mensaje de WhatsApp bien planteado
+            </InternalLink>{" "}
+            —recordando que toca revisión, sin tono
             comercial agresivo, y con la opción de agendar directamente desde el chat— suele
             ser suficiente para que una parte de esos pacientes vuelva. No hace falta una
             campaña de descuentos: muchas veces basta con el recordatorio.
@@ -219,7 +228,11 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
 
           <H2>Cuándo automatizar WhatsApp en tu clínica dental</H2>
           <P>
-            No es necesario automatizar todo de golpe. La señal más clara de que ha llegado el
+            No es necesario{" "}
+            <InternalLink href="/blog/inteligencia-artificial-clinicas-dentales">
+              automatizar todo de golpe
+            </InternalLink>
+            . La señal más clara de que ha llegado el
             momento es cuando empiezas a notar que algunos mensajes tardan en contestarse, que
             las confirmaciones de cita se hacen de forma irregular, o que la reactivación de
             pacientes inactivos es algo que «algún día habría que hacer» pero nunca se hace.

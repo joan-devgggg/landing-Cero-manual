@@ -137,8 +137,11 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
           <P>
             En este artículo vas a ver varias estrategias para aumentar la facturación de tu
             clínica dental sin necesidad de más inversión en publicidad: recuperando
-            pacientes inactivos, reduciendo no-shows, aumentando el ticket medio y
-            automatizando todo para que funcione sin esfuerzo extra del equipo.
+            pacientes inactivos, reduciendo no-shows,{" "}
+            <InternalLink href="/blog/aumentar-ticket-medio-clinica-dental">
+              aumentando el ticket medio
+            </InternalLink>{" "}
+            y automatizando todo para que funcione sin esfuerzo extra del equipo.
           </P>
 
           <H2>Por qué buscar nuevos pacientes no siempre es la solución</H2>
@@ -215,8 +218,11 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             Klinikare, por ejemplo, permiten listar pacientes por última cita en un par de
             clics—, así que el dato ya lo tienes. El problema es el paso siguiente:
             contactar con cada persona a mano es una tarea que requiere tiempo que el equipo
-            casi nunca tiene. Con un sistema automático que detecta estos patrones y envía
-            mensajes de recuperación por WhatsApp, ese trabajo se hace solo, sin que nadie
+            casi nunca tiene. Con un sistema automático que detecta estos patrones y envía{" "}
+            <InternalLink href="/blog/como-reactivar-pacientes-inactivos-clinica">
+              mensajes de recuperación por WhatsApp
+            </InternalLink>
+            , ese trabajo se hace solo, sin que nadie
             tenga que revisar la agenda manualmente.
           </P>
           <P>
@@ -230,7 +236,10 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
 
           <H2>Reduce los no-shows que vacían tu agenda</H2>
           <P>
-            Los no-shows se reducen con recordatorios automáticos y confirmación activa en
+            <InternalLink href="/blog/como-reducir-no-shows-clinica-dental">
+              Los no-shows se reducen con recordatorios automáticos
+            </InternalLink>{" "}
+            y confirmación activa en
             los días previos a la cita. Es la palanca más rentable de todas porque, como
             referencia del sector, entre un 12% y un 19% de las citas de una clínica dental
             terminan sin que el paciente aparezca — y cada uno de esos huecos es tiempo de
@@ -250,8 +259,11 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             recolocar ese hueco con otro paciente que esté en lista de espera.
           </P>
           <P>
-            Es una de las formas más directas de aumentar la facturación sin tocar el
-            presupuesto de marketing: simplemente se trata de aprovechar mejor la agenda que
+            Es una de las formas más directas de aumentar la facturación sin tocar el{" "}
+            <InternalLink href="/blog/marketing-clinica-dental">
+              presupuesto de marketing
+            </InternalLink>
+            : simplemente se trata de aprovechar mejor la agenda que
             ya existe.
           </P>
 

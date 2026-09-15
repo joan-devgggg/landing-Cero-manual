@@ -154,8 +154,11 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
           <H2>Qué costes indirectos no se ven pero también duelen</H2>
           <P>
             Más allá de la pérdida inmediata, cada no-show tiene un coste de oportunidad: ese
-            hueco podría haber sido ocupado por otro paciente, ya fuera alguien en lista de
-            espera o alguien que llamó pidiendo cita y al que se le dijo que no había
+            hueco podría haber sido ocupado por otro paciente, ya fuera{" "}
+            <InternalLink href="/blog/lista-espera-clinica-dental">
+              alguien en lista de espera
+            </InternalLink>{" "}
+            o alguien que llamó pidiendo cita y al que se le dijo que no había
             disponibilidad próxima.
           </P>
           <P>
@@ -214,8 +217,11 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
 
           <H2>Cómo reducir ese coste desde el primer mes</H2>
           <P>
-            La palanca más rápida y con mejor retorno es el recordatorio automático antes de la
-            cita. Según los datos del sector, los recordatorios automáticos por WhatsApp pueden
+            La palanca más rápida y con mejor retorno es el{" "}
+            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+              recordatorio automático antes de la cita
+            </InternalLink>
+            . Según los datos del sector, los recordatorios automáticos por WhatsApp pueden
             reducir los no-shows hasta en un 40%, gracias a que la tasa de apertura de WhatsApp
             está entre el 95% y el 98% —muy por encima de un SMS que muchas veces ni se llega a
             leer.

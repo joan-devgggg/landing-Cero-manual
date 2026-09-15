@@ -109,7 +109,11 @@ export default function AumentarIngresosClinicaDentalSinPacientesPage() {
 
           <P>
             Cuando los ingresos de una clínica dental no crecen al ritmo esperado, la primera
-            reacción suele ser buscar más pacientes nuevos: más publicidad, más presencia en
+            reacción suele ser{" "}
+            <InternalLink href="/blog/como-conseguir-pacientes-clinica-dental">
+              buscar más pacientes nuevos
+            </InternalLink>
+            : más publicidad, más presencia en
             redes, más campañas. Pero en muchos casos, la solución está en otro sitio: en los
             pacientes que ya están en la base de datos, en las citas que se pierden por
             no-shows y en los tratamientos presupuestados que nunca se cerraron.
@@ -132,7 +136,10 @@ export default function AumentarIngresosClinicaDentalSinPacientesPage() {
           <P>
             A esto hay que sumar los presupuestos aceptados pero no agendados, los
             tratamientos recomendados que el paciente dejó para &quot;más adelante&quot;, y el margen que
-            existe en cualquier clínica para aumentar el ticket medio con propuestas relevantes
+            existe en cualquier clínica para{" "}
+            <InternalLink href="/blog/aumentar-ticket-medio-clinica-dental">
+              aumentar el ticket medio con propuestas relevantes
+            </InternalLink>{" "}
             y bien temporizadas.
           </P>
           <P>

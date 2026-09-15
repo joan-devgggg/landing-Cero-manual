@@ -144,7 +144,11 @@ export default function NoShowsArticlePage() {
             Un no-show es una cita que alguien reserva y a la que, después, no se presenta — y
             tampoco avisa. En clínicas dentales privadas, la horquilla que se maneja como
             referencia va del 12% al 19% de las citas programadas, lo que para una clínica
-            media supone varios miles de euros al mes en tiempo de sillón que ya estaba
+            media supone{" "}
+            <InternalLink href="/blog/coste-real-no-shows-clinica-dental">
+              varios miles de euros al mes
+            </InternalLink>{" "}
+            en tiempo de sillón que ya estaba
             reservado.
           </P>
           <P>
@@ -183,7 +187,11 @@ export default function NoShowsArticlePage() {
           <H2>Por qué los recordatorios tradicionales no funcionan</H2>
           <P>
             Los recordatorios tradicionales no funcionan porque llegan por canales que tus
-            pacientes ya casi no miran. Un SMS o un email de «le recordamos su cita» se
+            pacientes ya casi no miran. Un SMS o un{" "}
+            <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
+              email de «le recordamos su cita»
+            </InternalLink>{" "}
+            se
             pierde entre decenas de notificaciones que nadie abre.
           </P>
           <P>
@@ -253,13 +261,20 @@ export default function NoShowsArticlePage() {
 
           <H3>1. Recordatorios automáticos por WhatsApp</H3>
           <P>
-            Si solo vas a cambiar una cosa, que sea el canal por el que envías los
-            recordatorios. WhatsApp tiene una tasa de apertura del 95-98%, así que un
+            Si solo vas a cambiar una cosa, que sea{" "}
+            <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
+              el canal por el que envías los recordatorios
+            </InternalLink>
+            . WhatsApp tiene una tasa de apertura del 95-98%, así que un
             mensaje enviado ahí tiene muchas más probabilidades de leerse — y de leerse a
             tiempo — que uno por SMS o email.
           </P>
           <P>
-            Lo ideal es combinar dos avisos: uno 24 horas antes, para que el paciente pueda
+            Lo ideal es{" "}
+            <InternalLink href="/blog/plantillas-recordatorio-cita-clinica">
+              combinar dos avisos
+            </InternalLink>
+            : uno 24 horas antes, para que el paciente pueda
             organizarse con margen, y otro 2 horas antes, para que nadie se despiste a
             última hora por las prisas del día.
           </P>
@@ -299,7 +314,11 @@ export default function NoShowsArticlePage() {
             preparado para ocupar ese hueco o si simplemente se queda vacío.
           </P>
           <P>
-            Una lista de espera con pacientes que ya han mostrado interés es la solución
+            Una{" "}
+            <InternalLink href="/blog/lista-espera-clinica-dental">
+              lista de espera con pacientes que ya han mostrado interés
+            </InternalLink>{" "}
+            es la solución
             más sencilla. Buena parte de las consultas de una clínica llegan fuera de su
             horario de atención: esas personas que escriben a las diez de la noche son
             candidatas perfectas para entrar en esa lista.
