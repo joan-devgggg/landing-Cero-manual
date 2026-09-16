@@ -15,7 +15,7 @@ const CASO = getCaso("sante-healthy-hair-salon")
 const PATH = `/casos/${CASO.slug}`
 const TITLE = "Software a medida con IA para Sante Healthy Hair Salon"
 const DESCRIPTION =
-  "Su software de gestión no permitía conectar un agente de IA. Construimos para este salón de Alicante uno a medida, con el agente dentro. Lee el caso."
+  "Querían un agente de IA propio y no lograban meterlo en su programa de gestión. Construimos para este salón de Alicante uno a medida, con el agente dentro."
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -51,12 +51,13 @@ export default function SanteHealthyHairSalonCasePage() {
 
           <H2>La situación de partida</H2>
           <P>
-            Usaban Shortcuts como software de gestión. El problema no era el software en sí,
-            sino que no permitía conectar un agente de IA.
+            Usaban Shortcuts como software de gestión. Hacía lo básico, pero no se adaptaba a
+            lo que ellas necesitaban, y el agente de IA propio que querían no lograron
+            meterlo en su programa.
           </P>
           <P>
-            Estaban atrapadas entre una herramienta que hacía lo básico y la imposibilidad de
-            ampliarla hacia donde necesitaban ir.
+            Tenían una herramienta que cubría el día a día, pero no encontraban la manera de
+            llevarla hacia donde necesitaban ir.
           </P>
 
           <H2>La solución</H2>

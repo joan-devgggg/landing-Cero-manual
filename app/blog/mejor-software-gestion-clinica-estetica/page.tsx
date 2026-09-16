@@ -274,7 +274,8 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
           <P>
             Solo damos precio de los dos programas sectoriales, que son los que hemos podido
             comprobar en su web oficial, consultada el 16 de septiembre de 2026. Flowww cobra
-            una licencia por centro, no por usuario, y todos los usuarios son gratuitos: 59
+            una licencia por centro y su página de precios indica que todos los usuarios son
+            gratuitos: 59
             €/mes el plan Boss, 119 €/mes el Star y 249 €/mes el Ultimate, más una puesta en
             marcha de 190, 290 o 390 € según el plan. La licencia dura 12 meses y se renueva
             automáticamente si no avisas con 30 días de antelación. Koibox tiene cinco planes

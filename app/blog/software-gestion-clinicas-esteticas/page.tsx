@@ -350,8 +350,8 @@ export default function SoftwareGestionClinicasArticlePage() {
             número limitado de usuarios —Free a 0 €, Lite a 15 €, Basic a 30 €, Gold a 40 € y
             Platinum a 55 € al mes— y cada usuario extra cuesta 3 €/mes; según sus preguntas
             frecuentes no hay permanencia, y la renovación se cancela avisando con 15 días de
-            antelación. Flowww cobra por centro y no por usuario, con todos los usuarios
-            gratuitos: Boss a 59 €/mes, Star a 119 €/mes y Ultimate a 249 €/mes, más una puesta
+            antelación. Flowww cobra una licencia por centro y su página de precios indica que
+            todos los usuarios son gratuitos: Boss a 59 €/mes, Star a 119 €/mes y Ultimate a 249 €/mes, más una puesta
             en marcha de 190, 290 o 390 € según el plan. Su licencia es de 12 meses y se renueva
             automáticamente si no avisas con 30 días de antelación.
           </P>

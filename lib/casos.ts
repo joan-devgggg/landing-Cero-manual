@@ -27,7 +27,7 @@ export const casos: Caso[] = [
     client: "Sante Healthy Hair Salon",
     sector: "Salón de belleza · Alicante",
     summary:
-      "Su software de gestión no permitía conectar un agente de IA. Construimos uno entero a medida, con el agente integrado desde el principio.",
+      "Querían un agente de IA propio y no lograban meterlo en su programa de gestión. Construimos uno entero a medida, con el agente integrado desde el principio.",
     published: "2026-09-16",
   },
 ]
