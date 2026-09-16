@@ -27,7 +27,7 @@ const steps = [
     icon: CalendarCheck,
     num: "04",
     title: "Cita agendada",
-    desc: "Directo en tu calendario. Tú recibes notificación. El contacto recibe confirmación automática. Proceso cerrado.",
+    desc: "Directo en la agenda. Tú recibes notificación. El contacto recibe confirmación automática. Proceso cerrado.",
   },
 ]
 

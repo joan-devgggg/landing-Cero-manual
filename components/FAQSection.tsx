@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "¿Se integra con mi software de gestión?",
-    a: "Sí. Nos integramos con los principales software del sector como Flowww y Klinikare. Si usas otro sistema, lo valoramos juntos en la llamada de diagnóstico.",
+    a: "El agente agenda por defecto en su propio panel, no escribe directamente en Flowww, Koibox ni en ningún otro programa. Si necesitas que se conecte con el que ya usas, lo estudiamos en la llamada y lo desarrollamos a medida para tu clínica.",
   },
   {
     q: "¿Puedo desactivar el agente y atender yo manualmente?",

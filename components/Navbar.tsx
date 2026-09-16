@@ -9,7 +9,6 @@ import { Menu, X } from "lucide-react"
 const links = [
   { label: "Servicios", href: "#servicios" },
   { label: "Cómo funciona", href: "#como-funciona" },
-  { label: "Resultados", href: "#resultados" },
   { label: "FAQ", href: "#faq" },
   { label: "Casos", href: "/casos" },
   { label: "Blog", href: "/blog" },

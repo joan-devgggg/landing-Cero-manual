@@ -5,9 +5,7 @@ import { motion, useInView } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
 const metrics = [
-  { value: "< 5 seg", label: "tiempo de respuesta" },
   { value: "24/7", label: "atención constante" },
-  { value: "95-98%", label: "tasa de apertura en WhatsApp" },
 ]
 
 export default function HeroSection() {
@@ -130,7 +128,7 @@ export default function HeroSection() {
           style={{ borderTop: "1px solid #E0DBD4" }}
         >
           <div
-            className="rounded-2xl grid grid-cols-3"
+            className="rounded-2xl grid grid-cols-1"
             style={{
               backgroundColor: "#FFFFFF",
               border: "1px solid #E0DBD4",

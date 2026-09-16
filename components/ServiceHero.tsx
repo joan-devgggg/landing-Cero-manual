@@ -19,6 +19,14 @@ export interface ServiceHeroProps {
   metrics: ServiceHeroMetric[]
 }
 
+// Clases literales para que Tailwind las detecte al compilar.
+const METRIC_COLS: Record<number, string> = {
+  1: "grid-cols-1",
+  2: "grid-cols-2",
+  3: "grid-cols-3",
+}
+
+
 export default function ServiceHero({ label, headlineLines, accent, subheadline, metrics }: ServiceHeroProps) {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true })
@@ -123,7 +131,8 @@ export default function ServiceHero({ label, headlineLines, accent, subheadline,
           </button>
         </motion.div>
 
-        {/* Metrics — 3-col compact grid on all screen sizes */}
+        {/* Metrics — compact grid with one column per metric */}
+        {metrics.length > 0 && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -132,7 +141,7 @@ export default function ServiceHero({ label, headlineLines, accent, subheadline,
           style={{ borderTop: "1px solid #E0DBD4" }}
         >
           <div
-            className="rounded-2xl grid grid-cols-3"
+            className={`rounded-2xl grid ${METRIC_COLS[metrics.length] ?? "grid-cols-3"}`}
             style={{
               backgroundColor: "#FFFFFF",
               border: "1px solid #E0DBD4",
@@ -162,6 +171,7 @@ export default function ServiceHero({ label, headlineLines, accent, subheadline,
             ))}
           </div>
         </motion.div>
+        )}
       </div>
     </section>
   )
