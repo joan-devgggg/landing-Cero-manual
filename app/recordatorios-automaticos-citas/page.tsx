@@ -14,7 +14,7 @@ import { localBusinessProvider, spainAreaServed } from "@/lib/schema"
 const PATH = "/recordatorios-automaticos-citas"
 const TITLE = "Recordatorios automáticos citas clínica | Cero Manual"
 const DESCRIPTION =
-  "Recordatorios automáticos por WhatsApp que reducen los no-shows de tu clínica desde el primer mes, sin trabajo para tu equipo. Reserva tu auditoría gratuita."
+  "Recordatorios automáticos por WhatsApp que reducen los no-shows de tu clínica, sin trabajo para tu equipo. Reserva tu auditoría gratuita."
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Por qué canal se envían los recordatorios?",
-    a: "Principalmente por WhatsApp, porque es donde tus clientes de verdad leen los mensajes — con un 95-98% de apertura frente al 20-25% del email. Si lo prefieres, también podemos combinarlo con SMS.",
+    a: "Principalmente por WhatsApp, porque es el canal donde tus clientes ya hablan contigo a diario. Si lo prefieres, también podemos combinarlo con SMS.",
   },
   {
     q: "¿Se puede personalizar el mensaje?",
@@ -41,15 +41,15 @@ const faqs = [
   },
   {
     q: "¿El cliente puede cambiar la cita desde el propio recordatorio?",
-    a: "Sí. Puede confirmar su asistencia o pedir otro horario directamente desde el mensaje, y el cambio se refleja en tu calendario sin que nadie tenga que llamar.",
+    a: "Sí. Puede confirmar su asistencia o pedir otro horario directamente desde el mensaje, y el cambio queda en la agenda sin que nadie tenga que llamar.",
   },
   {
     q: "¿Se integra con mi software de gestión?",
-    a: "Sí. Nos integramos con los principales programas del sector, como Flowww y Klinikare. Si usas otro, lo valoramos juntos en la auditoría gratuita.",
+    a: "El sistema envía los recordatorios y gestiona la agenda desde su propio panel. Si quieres que trabaje directamente sobre el programa que ya usas, lo valoramos en la auditoría gratuita y lo desarrollamos a medida.",
   },
   {
     q: "¿Cuánto bajan realmente los no-shows?",
-    a: "Las clínicas que activan los recordatorios automáticos suelen ver una caída notable ya desde el primer mes, que sigue bajando a medida que el sistema aprende los patrones de tus clientes. La referencia del sector sitúa los no-shows entre el 12% y el 19% de las citas programadas, así que el margen de mejora es amplio. En la auditoría gratuita calculamos la cifra con tus propios números en lugar de con una media.",
+    a: "Depende de cada clínica, y no te vamos a dar una media sin fuente. Lo que sí hace el sistema es recordar cada cita por WhatsApp y pedir confirmación, así que los huecos se detectan con margen para ofrecerlos a otra persona. En la auditoría gratuita calculamos el impacto con tus propios números: citas al mes, tu tasa actual de no-shows y tu ticket medio.",
   },
 ]
 
@@ -76,12 +76,10 @@ export default function RecordatoriosPage() {
         <ServiceHero
           label="Para clínicas que pierden ingresos por citas vacías"
           headlineLines={["Recordatorios automáticos que reducen tus no-shows"]}
-          accent="desde el primer mes"
+          accent="sin trabajo para tu equipo"
           subheadline="Para clínicas que ven huecos en la agenda cada semana porque alguien se olvida — o decide no avisar — de que tenía cita. Cada hueco vacío es tiempo, sala y producto que ya estaban reservados para nadie."
           metrics={[
-            { value: "95-98%", label: "tasa de apertura en WhatsApp" },
-            { value: "Hasta 7.500 €/mes", label: "en pérdidas que se pueden evitar" },
-            { value: "12-19%", label: "es la tasa media de no-shows del sector" },
+            { value: "24 h", label: "antes de cada cita, recordatorio por WhatsApp" },
           ]}
         />
 
@@ -89,8 +87,8 @@ export default function RecordatoriosPage() {
           title="Cada hueco vacío en tu agenda"
           titleAccent="es dinero que ya diste por hecho"
           painPoints={[
-            "Entre el 12% y el 19% de las citas de una clínica estética terminan en no-show: alguien que reserva y, simplemente, no aparece.",
-            "Esos huecos le cuestan a una clínica media hasta 7.500 € al mes — tiempo de profesional, sala y producto que ya estaban reservados para nadie.",
+            "Una parte de las citas de una clínica estética termina en no-show: alguien que reserva y, simplemente, no aparece.",
+            "Cada hueco cuesta lo que habría facturado esa cita: tiempo de profesional, sala y producto que ya estaban reservados para nadie.",
             "Tu equipo pierde horas a la semana llamando uno a uno para «recordar» la cita, y aun así una parte no contesta ni confirma.",
             "Cuando alguien no aparece sin avisar, ya es demasiado tarde para llenar ese hueco con otro cliente que sí quería venir.",
           ]}
@@ -117,14 +115,14 @@ export default function RecordatoriosPage() {
             {
               icon: "AlarmClock",
               num: "02",
-              title: "Recordatorio 2 horas antes",
-              desc: "Un segundo aviso, más cercano a la hora de la cita, para que nadie se despiste a última hora — sin sonar repetitivo ni invasivo.",
+              title: "Segundo aviso, si lo quieres",
+              desc: "Si te interesa reforzarlo, configuramos un segundo aviso más cercano a la hora de la cita, para que nadie se despiste a última hora.",
             },
             {
               icon: "CalendarCheck",
               num: "03",
               title: "Confirma o reprograma sin llamar",
-              desc: "Desde el propio mensaje, el cliente puede confirmar su asistencia o pedir cambiar la hora. El cambio queda reflejado directamente en tu calendario, sin que nadie tenga que descolgar el teléfono.",
+              desc: "Desde el propio mensaje, el cliente puede confirmar su asistencia o pedir cambiar la hora. El cambio queda reflejado directamente en la agenda, sin que nadie tenga que descolgar el teléfono.",
             },
             {
               icon: "Star",
@@ -145,7 +143,7 @@ export default function RecordatoriosPage() {
 
         <ServiceBenefits
           title="Lo que notas en tu agenda"
-          titleAccent="desde el primer mes"
+          titleAccent="sin que nadie tenga que perseguir a nadie"
           benefits={[
             {
               icon: "CalendarCheck",

@@ -4,14 +4,14 @@ import { useState } from "react"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
-const NO_SHOW_RATE = 0.15
-
 export default function NoShowsCalculator() {
   const [citasDia, setCitasDia] = useState(20)
+  // Valor inicial de ejemplo, no una media del sector: cada clínica pone su propia tasa.
+  const [tasaNoShows, setTasaNoShows] = useState(10)
   const [ticketMedio, setTicketMedio] = useState<number | "">(100)
   const [diasLaborables, setDiasLaborables] = useState<number | "">(22)
 
-  const noShowsMes = Math.round(citasDia * (Number(diasLaborables) || 0) * NO_SHOW_RATE)
+  const noShowsMes = Math.round(citasDia * (Number(diasLaborables) || 0) * (tasaNoShows / 100))
   const perdidaMensual = noShowsMes * (Number(ticketMedio) || 0)
   const perdidaAnual = perdidaMensual * 12
 
@@ -57,6 +57,41 @@ export default function NoShowsCalculator() {
           >
             <span>5</span>
             <span>50</span>
+          </div>
+        </div>
+
+        <div>
+          <div className="flex items-baseline justify-between mb-3">
+            <label
+              htmlFor="tasaNoShows"
+              className="text-sm font-medium"
+              style={{ color: "#1A1A1A", fontFamily: "var(--font-dm-sans)" }}
+            >
+              Tu tasa de no-shows (%)
+            </label>
+            <span
+              className="text-lg font-semibold"
+              style={{ color: "#7D9B76", fontFamily: "var(--font-playfair)" }}
+            >
+              {tasaNoShows}%
+            </span>
+          </div>
+          <input
+            id="tasaNoShows"
+            type="range"
+            min={1}
+            max={40}
+            step={1}
+            value={tasaNoShows}
+            onChange={(e) => setTasaNoShows(Number(e.target.value))}
+            className="w-full accent-[#7D9B76]"
+          />
+          <div
+            className="flex justify-between text-xs mt-1"
+            style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
+          >
+            <span>1%</span>
+            <span>40%</span>
           </div>
         </div>
 
@@ -128,16 +163,10 @@ export default function NoShowsCalculator() {
           className="text-xs leading-relaxed"
           style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
         >
-          Calculamos los no-shows estimados aplicando una tasa media del sector
-          del 15% sobre el total de citas mensuales.
-        </p>
-        <p
-          className="text-xs leading-relaxed"
-          style={{ color: "#B5B0AA", fontFamily: "var(--font-dm-sans)" }}
-        >
-          Fuente: tasa media de no-shows del 12-19% en clínicas privadas españolas
-          según datos de Klinikare y Elsevier España (2024). Usamos el 15% como
-          estimación conservadora.
+          El cálculo es citas al día × días de trabajo × tu tasa de no-shows × ticket
+          medio. La tasa inicial es solo un valor de ejemplo: para saber la tuya, divide
+          las citas del último mes a las que no vino nadie sin avisar entre el total de
+          citas programadas.
         </p>
       </div>
 
@@ -200,7 +229,7 @@ export default function NoShowsCalculator() {
             className="text-sm md:text-base mb-4 leading-relaxed"
             style={{ color: "#F5F2EE", fontFamily: "var(--font-dm-sans)" }}
           >
-            Reduce tus no-shows un 40% con recordatorios automáticos
+            Reduce tus no-shows con recordatorios automáticos por WhatsApp
           </p>
           <Link
             href="/recordatorios-automaticos-citas"

@@ -79,8 +79,6 @@ export default function AgenteWhatsAppPage() {
           accent="sola"
           subheadline="Para clínicas estéticas y de medicina estética que reciben consultas por WhatsApp e Instagram a todas horas — y no pueden permitirse seguir perdiendo leads por no llegar a responder a tiempo."
           metrics={[
-            { value: "< 5 seg", label: "tiempo de respuesta del agente" },
-            { value: "95-98%", label: "tasa de apertura en WhatsApp" },
             { value: "24/7", label: "disponible, fines de semana incluidos" },
           ]}
         />
@@ -89,9 +87,9 @@ export default function AgenteWhatsAppPage() {
           title="Cada noche que no respondes,"
           titleAccent="pierdes una cita"
           painPoints={[
-            "El 40% de las consultas de tu clínica llegan fuera de horario — entre las 19:00 y las 23:00, o en fin de semana — justo cuando no hay nadie para responder.",
-            "Si un lead no recibe respuesta en los primeros 5 minutos, tiene un 80% de probabilidades de perderse para siempre. Esa cita ya no es tuya.",
-            "Le mandas la información por email y nadie la abre: el email tiene un 20-25% de apertura, frente al 95-98% de WhatsApp. Estás hablando por el canal equivocado.",
+            "Parte de las consultas de tu clínica llega fuera de horario — por la noche o en fin de semana — justo cuando no hay nadie para responder.",
+            "Cuando por fin alguien contesta a la mañana siguiente, esa persona puede haber pedido cita ya en otro sitio.",
+            "Le mandas la información por email cuando la conversación empezó por WhatsApp. Cambias de canal justo cuando esa persona quería una respuesta rápida.",
             "Mientras tanto, ese mismo lead sigue buscando — y encuentra a otra clínica que sí le contesta a la primera.",
           ]}
           closing={
@@ -128,7 +126,7 @@ export default function AgenteWhatsAppPage() {
               icon: "CalendarCheck",
               num: "04",
               title: "Agenda la cita sola",
-              desc: "Cuando el lead está listo, el agente reserva directamente en tu calendario. Tú recibes el aviso, el cliente su confirmación. Nadie tiene que mover un dedo.",
+              desc: "Cuando el lead está listo, el agente reserva la cita en la agenda. Tú recibes el aviso, el cliente su confirmación. Nadie tiene que mover un dedo.",
             },
           ]}
           closing={
@@ -143,7 +141,7 @@ export default function AgenteWhatsAppPage() {
 
         <ServiceBenefits
           title="Lo que cambia para tu clínica"
-          titleAccent="desde la primera semana"
+          titleAccent="sin que tengas que hacer nada"
           benefits={[
             {
               icon: "Clock",

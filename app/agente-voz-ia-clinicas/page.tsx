@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "¿Puede agendar la cita directamente?",
-    a: "Sí. En cuanto la persona confirma que quiere reservar, el agente coloca la cita en tu calendario y envía la confirmación, sin que tengas que llamar de vuelta.",
+    a: "Sí. En cuanto la persona confirma que quiere reservar, el agente coloca la cita en la agenda y envía la confirmación, sin que tengas que llamar de vuelta.",
   },
   {
     q: "¿Qué hace con llamadas complejas o urgentes?",
@@ -79,8 +79,6 @@ export default function AgenteVozPage() {
           accent="hasta a las 3 de la mañana"
           subheadline="Para clínicas que pierden llamadas en hora punta, fuera de horario o cuando el equipo está atendiendo a otro cliente — y no se pueden permitir que esa llamada se quede sin respuesta."
           metrics={[
-            { value: "100%", label: "de las llamadas, atendidas siempre" },
-            { value: "40%", label: "de las consultas llegan fuera de horario" },
             { value: "24/7", label: "— incluso a las 3 de la madrugada" },
           ]}
         />
@@ -89,9 +87,9 @@ export default function AgenteVozPage() {
           title="El teléfono suena,"
           titleAccent="y nadie contesta"
           painPoints={[
-            "El 40% de las consultas de tu clínica llegan entre las 19:00 y las 23:00, o en fin de semana — fuera del horario en el que alguien puede coger el teléfono.",
-            "Un lead que no recibe respuesta en los primeros 5 minutos tiene un 80% de probabilidades de perderse para siempre. Una llamada que nadie coge es justo eso: cero minutos de respuesta.",
-            "El sector estético pierde entre un 12% y un 19% de las citas por no-shows — y muchas empiezan con una llamada mal gestionada, o que nadie llega a devolver.",
+            "Parte de las consultas llega por la tarde-noche o en fin de semana, fuera del horario en el que alguien puede coger el teléfono.",
+            "Una llamada que nadie coge es una consulta sin respuesta: no sabes qué quería esa persona ni si volverá a llamar.",
+            "Algunas citas se pierden antes de existir: empiezan con una llamada mal gestionada, o que nadie llega a devolver.",
             "Cada llamada que no contestas es un cliente que cuelga, busca en Google y prueba con la siguiente clínica de la lista.",
           ]}
           closing={
@@ -128,7 +126,7 @@ export default function AgenteVozPage() {
             {
               icon: "CalendarCheck",
               num: "04",
-              title: "Agenda la cita en tu calendario",
+              title: "Agenda la cita",
               desc: "Cuando la persona está lista, el agente reserva directamente. Tú recibes la grabación, el resumen y la cita ya colocada — sin tener que llamar de vuelta.",
             },
           ]}
@@ -159,7 +157,7 @@ export default function AgenteVozPage() {
             {
               icon: "CalendarCheck",
               title: "Agenda sin intermediarios",
-              desc: "La cita queda colocada directamente en tu calendario, con confirmación para el cliente y aviso para ti. Sin idas y vueltas de mensajes.",
+              desc: "La cita queda colocada directamente en la agenda, con confirmación para el cliente y aviso para ti. Sin idas y vueltas de mensajes.",
             },
             {
               icon: "Headphones",

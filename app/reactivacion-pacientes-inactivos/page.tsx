@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cómo sabéis qué clientes están inactivos?",
-    a: "Analizamos tu base de datos y detectamos a quienes llevan un tiempo determinado sin reservar — el periodo lo definimos juntos según el tipo de tratamiento que ofreces.",
+    a: "Lo configuramos a partir de tu propia base de datos: analizamos quién lleva un tiempo determinado sin reservar, y ese periodo lo definimos juntos según el tipo de tratamiento que ofreces.",
   },
   {
     q: "¿No es spam escribir a alguien después de tanto tiempo?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "¿Cuántos clientes puedo recuperar al mes?",
-    a: "Depende del tamaño de tu base de datos y de tu sector, pero recuperar solo 2-3 clientes inactivos al mes ya puede suponer miles de euros adicionales en ingresos recurrentes.",
+    a: "Depende del tamaño de tu base de datos y de cuántas personas respondan, así que no damos una cifra de antemano. En la auditoría gratuita lo calculamos con tus números: clientes inactivos, ticket medio y visitas al año de un cliente habitual.",
   },
   {
     q: "¿Cuánto cuesta este servicio?",
@@ -78,11 +78,7 @@ export default function ReactivacionPage() {
           headlineLines={["Recupera clientes que llevan meses sin volver,"]}
           accent="en automático"
           subheadline="Para clínicas con cientos de clientes que un día dejaron de venir — y a los que nadie ha vuelto a escribir desde entonces. Esa base de datos tiene ingresos esperando dentro."
-          metrics={[
-            { value: "95-98%", label: "apertura en WhatsApp frente al 20-25% del email" },
-            { value: "≈ 3.000 €", label: "LTV medio de un cliente recurrente" },
-            { value: "100%", label: "automático — sin que nadie tenga que acordarse" },
-          ]}
+          metrics={[]}
         />
 
         <ServiceProblem
@@ -90,8 +86,8 @@ export default function ReactivacionPage() {
           titleAccent="tiene ingresos durmiendo dentro"
           painPoints={[
             "Tienes clientes que llevan meses — a veces años — sin volver, y nadie les ha escrito todavía para preguntarles por qué.",
-            "Cuando alguien lo intenta, suele ser por email: con un 20-25% de apertura, la mayoría de esos mensajes ni siquiera llegan a leerse.",
-            "El LTV medio de un cliente recurrente en clínica estética ronda los 3.000 €. Cada cliente inactivo es, literalmente, ingreso que ya diste por perdido.",
+            "Cuando alguien lo intenta, suele ser por email, donde el mensaje compite con promociones y newsletters.",
+            "Un cliente recurrente vuelve muchas veces a lo largo de los años. Cada cliente inactivo es, literalmente, ingreso que ya diste por perdido.",
             "Mientras tanto, sigues invirtiendo en anuncios para traer clientes nuevos — cuando buena parte de lo que buscas ya está guardado en tu propia base de datos.",
           ]}
           closing={
@@ -113,7 +109,7 @@ export default function ReactivacionPage() {
               icon: "Search",
               num: "01",
               title: "Detectamos quién lleva tiempo sin volver",
-              desc: "Analizamos tu base de datos e identificamos a los clientes que llevan meses sin reservar, sin que tengas que revisar nada a mano.",
+              desc: "Configuramos el sistema con tu base de datos para identificar a los clientes que llevan meses sin reservar, sin que tengas que revisar nada a mano.",
             },
             {
               icon: "MessagesSquare",
@@ -131,7 +127,7 @@ export default function ReactivacionPage() {
               icon: "TrendingUp",
               num: "04",
               title: "Tú recuperas el ingreso",
-              desc: "La cita aparece en tu calendario y el cliente vuelve a tu clínica — exactamente lo que conseguirías con una llamada personal, pero sin hacer ninguna.",
+              desc: "La cita queda en la agenda y el cliente vuelve a tu clínica — exactamente lo que conseguirías con una llamada personal, pero sin hacer ninguna.",
             },
           ]}
           closing={
@@ -151,7 +147,7 @@ export default function ReactivacionPage() {
             {
               icon: "TrendingUp",
               title: "Ingresos que ya dabas por perdidos",
-              desc: "Cada cliente que reactivas vale, de media, cerca de 3.000 € a lo largo del tiempo — dinero que ya estaba en tu base de datos, esperando.",
+              desc: "Cada cliente que reactivas puede seguir viniendo durante años — dinero que ya estaba en tu base de datos, esperando.",
             },
             {
               icon: "Heart",

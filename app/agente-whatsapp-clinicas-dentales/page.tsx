@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "¿Se conecta con ClinicCloud, Klinikare, Flowww o Koibox?",
-    a: "Sí. Lee la agenda y la ficha del paciente, y escribe la cita directamente ahí. Tu equipo sigue trabajando en la misma pantalla de siempre y no hay que llevar dos calendarios en paralelo. Si usas otro software de gestión, lo valoramos juntos en la auditoría gratuita.",
+    a: "Por defecto, el agente agenda en su propio panel: tu equipo ve ahí las citas y las cambia de estado. Si necesitas que escriba directamente en el software que ya usas, es una integración que estudiamos en la auditoría gratuita y desarrollamos a medida para tu clínica.",
   },
   {
     q: "Estamos tratando datos de salud. ¿Qué pasa con el RGPD?",
@@ -81,8 +81,6 @@ export default function AgenteWhatsAppDentalPage() {
           accent="sin seguimiento"
           subheadline="Para clínicas dentales donde el presupuesto de implantes se entrega, el paciente dice que se lo piensa — y ahí se queda. El agente retoma esa conversación, atiende la urgencia de las once de la noche y avisa de la revisión que tocaba hace ocho meses."
           metrics={[
-            { value: "5 min", label: "la ventana para responder antes de perder al paciente" },
-            { value: "12-19%", label: "de las citas dentales acaban en no-show" },
             { value: "24/7", label: "urgencias atendidas, también de madrugada" },
           ]}
         />
@@ -134,7 +132,7 @@ export default function AgenteWhatsAppDentalPage() {
               icon: "Bell",
               num: "04",
               title: "Dispara el recall cuando toca",
-              desc: "Lee de tu software de gestión cuándo fue la última higiene o revisión de cada paciente y le escribe en el momento adecuado, con opción de reservar ahí mismo. Sin que nadie tenga que sacar el listado a mano cada lunes.",
+              desc: "Cuando le toca la higiene o la revisión a cada paciente, le escribe en el momento adecuado, con opción de reservar ahí mismo. Sin que nadie tenga que sacar el listado a mano cada lunes.",
             },
           ]}
           closing={
@@ -164,7 +162,7 @@ export default function AgenteWhatsAppDentalPage() {
             {
               icon: "Bell",
               title: "El recall funciona sin que nadie lo lleve",
-              desc: "Revisiones e higienes se avisan a su tiempo, leyendo directamente de tu agenda. Los pacientes vuelven antes de que el problema pequeño se convierta en uno caro.",
+              desc: "Revisiones e higienes se avisan a su tiempo. Los pacientes vuelven antes de que el problema pequeño se convierta en uno caro.",
             },
             {
               icon: "CalendarCheck",
