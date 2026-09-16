@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Qué tecnología debería priorizar una clínica estética que está empezando?",
-    a: "Una agenda online y un canal de WhatsApp bien configurado. Son las dos tecnologías que más impacto tienen a corto plazo: la agenda reduce las llamadas y los errores de horario, y WhatsApp es el canal donde tus pacientes ya están — con una tasa de apertura del 95-98%.",
+    a: "Una agenda online y un canal de WhatsApp bien configurado. Son las dos tecnologías que más impacto tienen a corto plazo: la agenda reduce las llamadas y los errores de horario, y WhatsApp es el canal donde tus pacientes ya están y donde les resulta natural escribirte.",
   },
   {
     q: "¿La inteligencia artificial es solo para clínicas grandes?",
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tiempo se tarda en implementar nueva tecnología en una clínica?",
-    a: "Depende de la herramienta, pero lo habitual es que una agenda online o un canal de WhatsApp Business estén operativos en pocos días. Las soluciones con IA que se integran con tu agenda y tu CRM suelen tardar algo más en configurarse, porque hay que adaptarlas al tono y a los procesos de tu clínica, pero no implican cambiar de sistema desde cero.",
+    a: "Depende de la herramienta, pero lo habitual es que una agenda online o un canal de WhatsApp Business estén operativos en pocos días. Un agente con IA suele tardar algo más en configurarse, porque hay que adaptarlo al tono y a los procesos de tu clínica, pero trabaja sobre el número de WhatsApp Business que ya tienes.",
   },
   {
     q: "¿Qué pasa si mi equipo no es muy tecnológico?",
@@ -152,8 +152,7 @@ export default function TecnologiaParaClinicasEsteticasPage() {
               comunicación automatizada por WhatsApp
             </InternalLink>
             : recordatorios de
-            cita, confirmaciones, mensajes de seguimiento. Tiene sentido porque WhatsApp
-            tiene una tasa de apertura del 95-98%, muy superior a un email o un SMS, y es
+            cita, confirmaciones, mensajes de seguimiento. Tiene sentido porque WhatsApp es
             el canal donde tus pacientes ya hablan contigo de forma natural.
           </P>
           <P>
@@ -170,22 +169,21 @@ export default function TecnologiaParaClinicasEsteticasPage() {
           <P>
             En la parte de captación, la tecnología más relevante es la que reduce la
             distancia entre el momento en que alguien se interesa por tu clínica y el
-            momento en que consigue una respuesta. Hasta un 40% de las consultas llegan
-            fuera del horario de atención — por la noche, los fines de semana, durante
+            momento en que consigue una respuesta. Y no pocas consultas llegan fuera del
+            horario de atención — por la noche, los fines de semana, durante
             tratamientos.
           </P>
           <P>
-            Si esas consultas no se atienden rápido, el coste es alto: si un lead no
-            recibe respuesta en los primeros 5 minutos, la probabilidad de perderlo puede
-            llegar al 80%. Por eso, herramientas como formularios conectados a WhatsApp,
+            Si esas consultas no se atienden rápido, el coste es alto: quien pregunta suele
+            estar comparando clínicas, y mientras espera puede reservar en otra. Por eso, herramientas como formularios conectados a WhatsApp,
             chats en la web o respuestas automáticas iniciales son tan importantes — no
             sustituyen a tu equipo, pero evitan que un interesado se enfríe mientras
             espera.
           </P>
           <P>
-            Teniendo en cuenta que el valor medio de un paciente (LTV) en una clínica
-            estética suele rondar los 3.000€, cada consulta que se pierde por no responder
-            a tiempo tiene un impacto que se puede medir directamente en la facturación.
+            Y como un paciente que se queda puede volver durante años, cada consulta que se
+            pierde por no responder a tiempo cuesta más que una cita suelta: se nota
+            directamente en la facturación.
           </P>
 
           <H2>Herramientas para retener y fidelizar</H2>
@@ -252,17 +250,17 @@ export default function TecnologiaParaClinicasEsteticasPage() {
             —
             agenda, CRM y comunicación deberían poder "hablarse" — y avanzar por fases:
             primero la base (agenda y comunicación), después la retención (CRM y
-            seguimiento) y, por último, la automatización con IA encima de todo lo
-            anterior.
+            seguimiento) y, por último, la automatización con IA, cuando lo anterior ya
+            funcione.
           </P>
           <P>
-            Implementado así, cada fase aprovecha la anterior en lugar de duplicarla. Y
+            Implementado así, cada fase se apoya en la anterior en lugar de duplicarla. Y
             cuando llega el momento de añadir{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               un agente con IA
             </InternalLink>
-            , este se conecta con lo que ya tienes en marcha, en lugar de obligarte a
-            empezar de cero.
+            , empieza a atender desde el mismo número de WhatsApp que tus pacientes ya
+            conocen.
           </P>
         </article>
 

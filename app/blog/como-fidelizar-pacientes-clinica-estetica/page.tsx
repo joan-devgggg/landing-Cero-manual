@@ -13,7 +13,7 @@ const PATH = "/blog/como-fidelizar-pacientes-clinica-estetica"
 const DATES = articleDates("como-fidelizar-pacientes-clinica-estetica")
 const TITLE = "Fidelizar pacientes en tu clínica estética | Cero Manual"
 const DESCRIPTION =
-  "Conseguir un paciente nuevo cuesta 5 veces más que mantener uno. Te explicamos cómo fidelizar clientes en tu clínica estética de forma automática."
+  "Cómo fidelizar pacientes en tu clínica estética: seguimiento post-cita, mensajes por WhatsApp y automatización para que vuelvan sin tener que llamarles."
 const HEADLINE =
   "Cómo fidelizar pacientes en tu clínica estética (y que vuelvan sin que tengas que llamarles)"
 
@@ -119,8 +119,8 @@ export default function FidelizarPacientesArticlePage() {
 
           {/* Intro */}
           <P>
-            Conseguir un paciente nuevo cuesta, de media, cinco veces más que conseguir que
-            uno que ya te conoce vuelva. Y sin embargo, la mayoría de clínicas estéticas
+            Conseguir que vuelva un paciente que ya te conoce cuesta mucho menos que
+            convencer a uno nuevo. Y sin embargo, la mayoría de clínicas estéticas
             invierten casi todo su tiempo y presupuesto en captación — anuncios, promociones,
             ofertas de bienvenida — y prácticamente nada en cuidar a quien ya ha confiado en
             ellas.
@@ -141,16 +141,17 @@ export default function FidelizarPacientesArticlePage() {
           <H2>Por qué la fidelización es más rentable que la captación</H2>
           <P>
             Un paciente que confía en tu clínica y vuelve de forma recurrente —para
-            mantenimiento, retoques o nuevos tratamientos— puede llegar a generar alrededor
-            de 3.000€ a lo largo de su relación con tu centro. Ese es su valor de vida, y es
-            mucho más que lo que deja una primera visita aislada.
+            mantenimiento, retoques o nuevos tratamientos— genera a lo largo de su relación con
+            tu centro mucho más que lo que deja una primera visita aislada. Ese es su valor de
+            vida, y puedes calcularlo multiplicando tu ticket medio por las visitas que hace un
+            paciente habitual.
           </P>
           <P>
             Captar a ese mismo paciente desde cero, en cambio, tiene un coste: anuncios,
             promociones de bienvenida, tiempo de tu equipo respondiendo consultas que muchas
-            veces no llegan a convertirse en cita. Multiplicado por cinco frente a lo que
-            cuesta mantener a alguien que ya conoce tu clínica, confía en tu equipo y no
-            necesita que le convenzas de nada.
+            veces no llegan a convertirse en cita. Con alguien que ya conoce tu clínica,
+            confía en tu equipo y no necesita que le convenzas de nada, buena parte de ese
+            gasto desaparece.
           </P>
           <P>
             Por eso,{" "}
@@ -158,8 +159,8 @@ export default function FidelizarPacientesArticlePage() {
               cada paciente que se enfría y deja de volver
             </InternalLink>{" "}
             no es solo una cita menos:
-            es esos 3.000€ de valor potencial que se quedan sobre la mesa, y que tu clínica
-            tendrá que reemplazar gastando cinco veces más en captar a otra persona.
+            es todo ese valor potencial que se queda sobre la mesa, y que tu clínica
+            tendrá que reemplazar pagando otra vez todo lo que cuesta captar a alguien nuevo.
           </P>
 
           <H2>Los errores más comunes que hacen que un paciente no vuelva</H2>
@@ -208,14 +209,13 @@ export default function FidelizarPacientesArticlePage() {
 
           <H2>Cómo usar WhatsApp para mantener el contacto sin ser invasivo</H2>
           <P>
-            WhatsApp es, con diferencia,{" "}
+            WhatsApp es{" "}
             <InternalLink href="/blog/clinica-estetica-por-whatsapp">
-              el canal que más abren tus pacientes
+              el canal que tus pacientes ya tienen a mano
             </InternalLink>
-            : entre un 95% y
-            un 98% de los mensajes se leen, frente al 20-25% de un email. Si quieres que un
-            mensaje de seguimiento o un recordatorio llegue de verdad, WhatsApp es el canal
-            con el que cuentas con casi total seguridad de que se va a leer.
+            : es donde hablan a diario con su gente, y el mensaje de su clínica aparece en
+            esa misma lista. Si quieres que un seguimiento o un recordatorio no se quede
+            enterrado en una bandeja de entrada, WhatsApp es el sitio donde mandarlo.
           </P>
           <P>
             La clave para que no resulte invasivo está en el contenido y en la frecuencia.
@@ -246,8 +246,8 @@ export default function FidelizarPacientesArticlePage() {
             Automatizar la fidelización significa que cada paciente recibe su mensaje de
             seguimiento, su recordatorio de mantenimiento o su aviso de reactivación en el
             momento justo, sin que nadie de tu equipo tenga que acordarse ni dedicarle
-            tiempo. Y como casi un 40% de las consultas que recibe una clínica llegan fuera
-            de horario, que estas comunicaciones funcionen solas, a cualquier hora, marca la
+            tiempo. Y como el paciente puede contestar a cualquier hora, también con la
+            clínica cerrada, que la conversación siga sin esperar al día siguiente marca la
             diferencia entre un paciente que vuelve y uno que se olvida de tu clínica.
           </P>
           <P>

@@ -156,7 +156,7 @@ const posts = [
     slug: "whatsapp-para-clinicas-dentales",
     title: "WhatsApp para clínicas dentales: cómo usarlo para captar y retener más pacientes",
     excerpt:
-      "WhatsApp es el canal más usado por los pacientes dentales. Te explicamos cómo usarlo para captar, confirmar citas y reactivar pacientes inactivos.",
+      "Cómo usar WhatsApp en tu clínica dental para captar pacientes, confirmar citas y reactivar a quienes dejaron de venir.",
     date: "2026-06-11",
     readingTime: "6 min de lectura",
   },
@@ -164,7 +164,7 @@ const posts = [
     slug: "como-reducir-no-shows-clinica-estetica",
     title: "Cómo reducir los no-shows en tu clínica estética y dejar de perder ingresos",
     excerpt:
-      "Los no-shows cuestan hasta 7.500€/mes a clínicas estéticas. Te explicamos cómo reducirlos con recordatorios automáticos desde el primer mes.",
+      "Cada no-show es una cita que ya no se factura. Te explicamos cómo calcular lo que te cuestan y cómo reducirlos con recordatorios automáticos.",
     date: "2026-06-11",
     readingTime: "6 min de lectura",
   },
@@ -204,7 +204,7 @@ const posts = [
     slug: "software-gestion-clinicas-esteticas",
     title: "Software de gestión para clínicas estéticas: qué necesitas realmente y por dónde empezar",
     excerpt:
-      "Hay miles de opciones de software para clínicas estéticas. Te explicamos qué necesitas realmente según el tamaño y momento de tu clínica.",
+      "Te explicamos qué software de gestión necesita de verdad tu clínica estética según su tamaño y su momento, y por dónde empezar.",
     date: "2026-06-10",
     readingTime: "9 min de lectura",
   },
@@ -219,9 +219,9 @@ const posts = [
   {
     slug: "como-reducir-no-shows-clinica-dental",
     title:
-      "Cómo reducir los no-shows en tu clínica dental (y dejar de perder hasta 7.500€ al mes)",
+      "Cómo reducir los no-shows en tu clínica dental (y recuperar esos huecos de agenda)",
     excerpt:
-      "Entre el 12% y el 19% de las citas de una clínica dental terminan en no-show. Te contamos 5 estrategias para reducirlos sin volverte loco con llamadas de recordatorio.",
+      "Te contamos 5 estrategias para reducir los no-shows en tu clínica dental sin volverte loco con llamadas de recordatorio.",
     date: "2026-06-07",
     readingTime: "9 min de lectura",
   },
@@ -237,7 +237,7 @@ const posts = [
     slug: "chatbot-whatsapp-para-clinicas-esteticas",
     title: "Chatbot de WhatsApp para clínicas estéticas: qué es y por qué tu competencia ya lo tiene",
     excerpt:
-      "Los mensajes de WhatsApp se leen entre un 95% y un 98% de las veces, frente al 20-25% del email. Te explicamos qué es un chatbot de WhatsApp para clínicas estéticas y cómo responde, agenda y cualifica leads las 24 horas.",
+      "Te explicamos qué es un chatbot de WhatsApp para clínicas estéticas y cómo responde, agenda y cualifica leads las 24 horas.",
     date: "2026-06-07",
     readingTime: "9 min de lectura",
   },
@@ -245,7 +245,7 @@ const posts = [
     slug: "como-reactivar-pacientes-inactivos-clinica",
     title: "Cómo reactivar pacientes inactivos en tu clínica (sin llamar uno por uno)",
     excerpt:
-      "Tienes pacientes que dejaron de venir y representan ingresos dormidos — con un valor medio de unos 3.000€ cada uno. Te contamos cómo reactivarlos con mensajes automáticos por WhatsApp, el canal que de verdad se lee.",
+      "Tienes pacientes que dejaron de venir y representan ingresos dormidos. Te contamos cómo reactivarlos con mensajes automáticos por WhatsApp, el canal que de verdad se lee.",
     date: "2026-06-07",
     readingTime: "7 min de lectura",
   },
@@ -261,7 +261,7 @@ const posts = [
     slug: "como-conseguir-resenas-google-clinica-estetica",
     title: "Cómo conseguir más reseñas en Google para tu clínica estética (sin pedirlas una por una)",
     excerpt:
-      "El 70% de los nuevos pacientes decide su clínica mirando reseñas de Google. Te contamos cómo conseguirlas de forma automática, en el momento exacto, sin pedirlas a mano.",
+      "Muchos pacientes nuevos eligen clínica mirando las reseñas de Google. Te contamos cómo conseguirlas de forma automática, en el momento exacto, sin pedirlas a mano.",
     date: "2026-06-09",
     readingTime: "6 min de lectura",
   },
@@ -301,7 +301,7 @@ const posts = [
     slug: "como-fidelizar-pacientes-clinica-estetica",
     title: "Cómo fidelizar pacientes en tu clínica estética (y que vuelvan sin que tengas que llamarles)",
     excerpt:
-      "Conseguir un paciente nuevo cuesta 5 veces más que mantener uno. Te explicamos cómo fidelizar a tus pacientes con seguimiento post-cita y WhatsApp automatizado.",
+      "Conseguir que vuelva un paciente que ya te conoce cuesta menos que captar uno nuevo. Te explicamos cómo fidelizar a tus pacientes con seguimiento post-cita y WhatsApp automatizado.",
     date: "2026-06-10",
     readingTime: "6 min de lectura",
   },
@@ -309,7 +309,7 @@ const posts = [
     slug: "automatizar-whatsapp-clinica-dental",
     title: "Cómo automatizar WhatsApp en tu clínica dental y dejar de perder leads",
     excerpt:
-      "Buena parte de las consultas llegan fuera de horario y los no-shows rondan el 12-19%. Te contamos cómo automatizar WhatsApp para responder, confirmar citas y reducir cancelaciones.",
+      "Te contamos cómo automatizar WhatsApp en tu clínica dental para responder consultas, confirmar citas y reducir cancelaciones.",
     date: "2026-06-10",
     readingTime: "7 min de lectura",
   },
@@ -325,7 +325,7 @@ const posts = [
     slug: "whatsapp-business-clinicas-esteticas",
     title: "WhatsApp Business para clínicas estéticas: cómo configurarlo y cuándo automatizarlo",
     excerpt:
-      "WhatsApp Business es la herramienta más usada en clínicas estéticas. Te explicamos cómo configurarlo bien y cuándo automatizarlo.",
+      "Cómo configurar bien WhatsApp Business en tu clínica estética y cuándo tiene sentido automatizarlo.",
     date: "2026-06-11",
     readingTime: "6 min de lectura",
   },

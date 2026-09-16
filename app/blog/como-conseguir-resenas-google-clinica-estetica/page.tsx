@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Puedo pedir reseñas a mis clientes por WhatsApp?",
-    a: "Sí, es legal y efectivo. La clave es el momento y el tono: pídela dentro de los 60 minutos después de la cita, cuando la experiencia está fresca, y hazlo de forma personal, no masiva. Un mensaje automático bien redactado — que parezca una conversación, no un formulario — tiene tasas de respuesta mucho más altas que un email genérico.",
+    a: "Sí, es legal y efectivo. La clave es el momento y el tono: pídela poco después de la cita, cuando la experiencia está fresca, y hazlo de forma personal, no masiva. Un mensaje automático bien redactado — que parezca una conversación, no un formulario — tiene tasas de respuesta mucho más altas que un email genérico.",
   },
   {
     q: "¿Cómo respondo una reseña negativa sin dañar mi imagen?",
@@ -120,8 +120,8 @@ export default function ResenasgoogleArticlePage() {
 
           {/* Intro */}
           <P>
-            El 70% de las decisiones de reservar un tratamiento estético se toman mirando las
-            reseñas de Google. Antes de llamar, antes de entrar en la web, antes de preguntar
+            Mucha gente decide dónde reservar un tratamiento estético mirando las reseñas de
+            Google. Antes de llamar, antes de entrar en la web, antes de preguntar
             a una amiga — el primer movimiento es abrir Google Maps y leer lo que dicen otros
             pacientes. Tu ficha de Google no es{" "}
             <InternalLink href="/blog/marketing-digital-clinicas-esteticas">
@@ -193,8 +193,8 @@ export default function ResenasgoogleArticlePage() {
 
           <H2>El momento perfecto para pedir una reseña</H2>
           <P>
-            El momento óptimo para pedir una reseña es entre 30 y 60 minutos después de que
-            el paciente ha salido de la cita. En ese intervalo,{" "}
+            El momento óptimo para pedir una reseña es poco después de que el paciente ha
+            salido de la cita, mientras{" "}
             <InternalLink href="/blog/experiencia-paciente-clinica-estetica">
               la experiencia todavía está fresca
             </InternalLink>
@@ -208,8 +208,9 @@ export default function ResenasgoogleArticlePage() {
             no entre el pago y la puerta.
           </P>
           <P>
-            El canal también importa. Un mensaje por WhatsApp en ese momento tiene una tasa
-            de apertura del 95-98% — frente al 20-25% del email. Y WhatsApp permite incluir
+            El canal también importa. Un mensaje por WhatsApp le llega al paciente en la
+            aplicación que ya lleva en la mano, no en un correo que quizá no abra hasta la
+            noche. Y WhatsApp permite incluir
             directamente el enlace a tu ficha de Google, eliminando el paso de buscarla.
             Un clic, y el cliente ya está en la pantalla de valoración.
           </P>
@@ -218,8 +219,8 @@ export default function ResenasgoogleArticlePage() {
           <P>
             La automatización no significa impersonalidad — significa que el mensaje correcto
             llega en el momento correcto sin que nadie tenga que recordarlo. El flujo básico
-            funciona así: cuando una cita se marca como completada en el software de agenda,
-            se dispara automáticamente un mensaje de WhatsApp al paciente 45 minutos después.
+            funciona así: cuando termina la cita, se programa un mensaje de WhatsApp que le
+            llega al paciente poco después.
           </P>
           <P>
             El mensaje que mejor convierte no es genérico. Incluye el nombre del paciente,
@@ -229,20 +230,20 @@ export default function ResenasgoogleArticlePage() {
             en Google».
           </P>
           <P>
-            El resultado en clínicas que han implementado este sistema es consistente: entre
-            el 20% y el 35% de los pacientes que reciben el mensaje dejan una reseña. Sin
-            automatización, la tasa espontánea ronda el 2-3%. La diferencia no está en la
-            satisfacción del paciente — está en haberle dado el empujón en el momento exacto.
+            Un paciente satisfecho rara vez deja la reseña por iniciativa propia; pedírsela en
+            el momento adecuado, con el enlace a mano, es lo que cambia eso. La diferencia no
+            está en la satisfacción del paciente — está en haberle dado el empujón en el
+            momento exacto.
           </P>
           <P>
             Un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
-            puede gestionar este flujo de forma completamente automática: detecta el cierre
-            de la cita, espera el tiempo configurado, envía el mensaje con el enlace directo
-            a Google y registra si el paciente ha respondido — sin que el equipo tenga que
-            intervenir en ningún paso.
+            puede gestionar este flujo de forma completamente automática: espera el tiempo
+            configurado tras la cita, envía el mensaje con el enlace directo a Google y
+            registra si el paciente ha respondido — sin que el equipo tenga que intervenir
+            en ningún paso.
           </P>
 
           <H2>Qué hacer con las reseñas negativas</H2>
@@ -299,8 +300,9 @@ export default function ResenasgoogleArticlePage() {
               <InternalLink href="/agente-whatsapp-clinicas-esteticas">
                 agente de WhatsApp para clínicas estéticas
               </InternalLink>{" "}
-              envía la petición en el momento exacto — 30 minutos después de la cita — y
-              convierte esa satisfacción en reseña antes de que se enfríe.
+              envía la petición en el momento exacto — poco después de la cita, mientras la
+              experiencia todavía está fresca — y convierte esa satisfacción en reseña antes de
+              que se enfríe.
             </p>
             <Link
               href="/agente-whatsapp-clinicas-esteticas"

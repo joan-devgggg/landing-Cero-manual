@@ -5,7 +5,6 @@ import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import BlogTable from "@/components/BlogTable"
-import BlogSource from "@/components/BlogSource"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿El chatbot puede agendar citas directamente, o solo responde preguntas?",
-    a: "Puede hacer ambas cosas. Responde dudas sobre tratamientos, precios y disponibilidad — y, cuando la persona ya está decidida, agenda la cita directamente en tu calendario, con el hueco real disponible. No se queda en un «te confirmamos en breve»: la persona termina la conversación con la cita ya puesta. Para eso se conecta con la agenda que ya usa tu clínica, sea Flowww, Koibox o el calendario que tengas montado, y escribe la cita ahí mismo, así que tu equipo la ve en el sitio de siempre sin tener que copiar nada a mano. Y si el hueco que pide no está libre, propone alternativas cercanas en lugar de cerrar la conversación.",
+    a: "Puede hacer ambas cosas. Responde dudas sobre tratamientos, precios y disponibilidad — y, cuando la persona ya está decidida, agenda la cita en esa misma conversación, sobre un hueco que está libre. No se queda en un «te confirmamos en breve»: la persona termina la conversación con la cita ya puesta. Y si el hueco que pide no está libre, propone alternativas cercanas en lugar de cerrar la conversación.",
   },
   {
     q: "¿Mis pacientes notarán que están hablando con un bot?",
@@ -51,7 +50,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tarda en estar funcionando en mi clínica?",
-    a: "Días, no meses. Se conecta al número de WhatsApp que ya usas y se configura con la información que ya tienes sobre tratamientos, precios y horarios. No necesitas cambiar de herramientas ni preparar nada especial: en poco tiempo está respondiendo por ti, también a las tres de la mañana. Lo que más suele condicionar el plazo no es la parte técnica, sino tener ordenada la información de partida — qué tratamientos ofreces, con qué precios orientativos y qué se responde a las dudas que más se repiten. Después de arrancar conviene revisar las primeras conversaciones reales y ajustar lo que haga falta, que es cuando el agente termina de sonar como tu clínica.",
+    a: "Días, no meses. Se conecta al número de WhatsApp que ya usas y se configura con la información que ya tienes sobre tratamientos, precios y horarios. No tienes que preparar nada especial: en poco tiempo está respondiendo por ti, también a las tres de la mañana. Lo que más suele condicionar el plazo no es la parte técnica, sino tener ordenada la información de partida — qué tratamientos ofreces, con qué precios orientativos y qué se responde a las dudas que más se repiten. Después de arrancar conviene revisar las primeras conversaciones reales y ajustar lo que haga falta, que es cuando el agente termina de sonar como tu clínica.",
   },
 ]
 
@@ -131,11 +130,10 @@ export default function ChatbotWhatsappArticlePage() {
           <P>
             Y la cosa tiene truco:{" "}
             <InternalLink href="/blog/clinica-estetica-por-whatsapp">
-              WhatsApp es, con diferencia, el canal
+              WhatsApp es el canal
             </InternalLink>{" "}
-            que más abren tus
-            pacientes — en el sector se manejan tasas de apertura de referencia del 95-98%,
-            frente al 20-25% de un email. El problema no es el canal. El problema es que, al
+            que tus pacientes ya usan a diario para hablar con cualquiera, también con su
+            clínica. El problema no es el canal. El problema es que, al
             otro lado, no siempre hay alguien disponible para responder a tiempo.
           </P>
           <P>
@@ -186,12 +184,10 @@ export default function ChatbotWhatsappArticlePage() {
             paciente delante, los mensajes se acumulan.
           </P>
           <P>
-            Y aquí entra en juego la regla de los cinco minutos: un lead que no recibe
-            respuesta en ese margen tiene hasta un 80% de probabilidades de perderse para
-            siempre. No porque haya dejado de interesarle — sino porque, mientras esperaba,
-            ha encontrado otra clínica que sí le ha contestado.
+            Y esa espera tiene coste: quien no recibe respuesta pronto no pierde
+            necesariamente el interés, pero mientras espera puede encontrar otra clínica que
+            sí le conteste.
           </P>
-          <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
             Conviene además no confundir tres cosas que a menudo se meten en el mismo saco:
             responder a mano,{" "}
@@ -237,7 +233,7 @@ export default function ChatbotWhatsappArticlePage() {
               [
                 "Coste",
                 "Horas de tu equipo",
-                "Suscripción baja, entre 30-60€/mes",
+                "Suscripción mensual, según proveedor",
                 "Cuota mensual, mayor que un bot de menús",
               ],
             ]}
@@ -267,16 +263,10 @@ export default function ChatbotWhatsappArticlePage() {
 
           <H3>Agenda la primera visita sin intervención humana</H3>
           <P>
-            Cuando la persona ya está decidida, el chatbot puede ofrecer huecos reales de
-            tu agenda y dejar la cita puesta ahí mismo — sin el «te confirmamos en breve»
-            que tantas veces hace que el interesado acabe reservando en otro sitio mientras
+            Cuando la persona ya está decidida, el chatbot le ofrece los huecos libres y le
+            reserva la cita dentro del mismo chat — sin el «te confirmamos en breve» que
+            tantas veces hace que el interesado acabe reservando en otro sitio mientras
             espera.
-          </P>
-          <P>
-            Para eso se conecta con el software que ya usa tu clínica — Flowww o Koibox, por
-            ejemplo — y escribe la cita directamente ahí, en el mismo sitio donde tu equipo la
-            consulta cada mañana. No hay una segunda agenda paralela que alguien tenga que
-            cuadrar después a mano.
           </P>
 
           <H3>Cualifica al lead antes de pasarlo a tu equipo</H3>
@@ -309,20 +299,20 @@ export default function ChatbotWhatsappArticlePage() {
             probablemente, la sorpresa más habitual de quien nunca ha probado uno.
           </P>
           <P>
-            No hace falta cambiar de herramientas, ni migrar tu agenda, ni formar a tu
-            equipo en un sistema nuevo y complejo. El chatbot se adapta a cómo trabajas tú
-            — no al revés. Y, mientras se ajustan los últimos detalles, tú sigues atendiendo
+            Tampoco hay que formar a tu equipo en un sistema complejo: lo que le toca es
+            retomar las conversaciones que el agente le pasa, con el historial ya recogido.
+            Y, mientras se ajustan los últimos detalles, tú sigues atendiendo
             como siempre, sin interrupciones.
           </P>
 
           <H2>Cuánto cuesta y qué retorno puedes esperar</H2>
           <P>
-            Un agente con IA en WhatsApp se mueve en una cuota mensual claramente por encima de
-            un bot de menús, y se amortiza con muy pocos pacientes nuevos al mes. Con un LTV
-            medio de unos 3.000€ por paciente recurrente en clínica estética en España, basta
-            recuperar una sola consulta que hoy se pierde para cubrir varios meses de servicio.
+            Un agente con IA en WhatsApp tiene una cuota mensual por encima de la de un bot de
+            menús. Para saber si te compensa, haz la cuenta con tus números: cuántas consultas
+            se quedan hoy sin respuesta a tiempo, cuántas de ellas acabarían en cita y cuánto
+            vale para tu clínica un paciente que vuelve. Si el resultado supera la cuota, se
+            paga solo.
           </P>
-          <BlogSource>SEME (Sociedad Española de Medicina Estética)</BlogSource>
           <P>
             Por eso la pregunta que de verdad importa no es
             «<InternalLink href="/blog/cuanto-cuesta-chatbot-whatsapp-clinica">¿cuánto cuesta tener un chatbot?</InternalLink>»,
@@ -331,9 +321,8 @@ export default function ChatbotWhatsappArticlePage() {
             en otra clínica mientras esperaba la tuya.
           </P>
           <P>
-            Recuerda ese dato: un lead sin respuesta en cinco minutos tiene hasta un 80% de
-            probabilidades de perderse. Multiplica eso por todas las consultas que te llegan
-            fuera de horario y empieza a verse con claridad cuánto se está quedando, cada mes,
+            Piensa en todas las consultas que te llegan fuera de horario y se quedan sin
+            respuesta hasta el día siguiente: ahí empieza a verse con claridad cuánto se está quedando, cada mes,
             sin convertirse en cita.
           </P>
           <P>

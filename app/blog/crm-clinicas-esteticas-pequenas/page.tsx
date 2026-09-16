@@ -7,7 +7,9 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
+import BlogSource from "@/components/BlogSource"
 import InternalLink from "@/components/blog/InternalLink"
+import ExternalLink from "@/components/blog/ExternalLink"
 import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/crm-clinicas-esteticas-pequenas"
@@ -37,11 +39,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Necesita un CRM una clínica estética pequeña con un solo profesional?",
-    a: "Depende del volumen de consultas, no del tamaño del equipo. Si recibes menos de 15-20 consultas al mes y puedes responderlas todas el mismo día, probablemente un CRM completo sea más esfuerzo de mantenimiento del que aporta. Si recibes más consultas de las que puedes seguir de memoria, incluso una herramienta gratuita y sencilla evita que se pierdan leads sin que nadie se dé cuenta.",
+    a: "Depende del volumen de consultas, no del tamaño del equipo. Si puedes responder todas tus consultas el mismo día sin esfuerzo, probablemente un CRM completo sea más esfuerzo de mantenimiento del que aporta. Si recibes más consultas de las que puedes seguir de memoria, incluso una herramienta gratuita y sencilla evita que se pierdan leads sin que nadie se dé cuenta.",
   },
   {
     q: "¿Qué CRM gratuito es mejor para empezar?",
-    a: "Para clínicas pequeñas, las opciones gratuitas más razonables son HubSpot CRM (plan gratuito) o Zoho Bigin, que permiten registrar contactos, ver el historial de conversaciones y crear recordatorios básicos sin coste. La clave no es elegir «el mejor» de la lista, sino el que el equipo realmente vaya a usar a diario — un CRM gratuito que nadie actualiza no aporta nada.",
+    a: "Para clínicas pequeñas, las opciones gratuitas más razonables son HubSpot CRM o Zoho Bigin, que según sus webs, consultadas el 16 de septiembre de 2026, tienen plan gratuito (el de Bigin, para un solo usuario) con el que empezar a registrar contactos y hacer seguimiento. La clave no es elegir «el mejor» de la lista, sino el que el equipo realmente vaya a usar a diario — un CRM gratuito que nadie actualiza no aporta nada.",
   },
   {
     q: "¿Cuál es la diferencia entre un CRM y la automatización básica con IA?",
@@ -153,10 +155,10 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
             disperso entre WhatsApp, Instagram y notas sueltas.
           </P>
           <P>
-            Con un LTV medio de unos 3.000€ por cliente recurrente, el coste de no tener ese
-            mínimo control no es solo «desorganización»: son leads reales que se quedan sin
-            respuesta y que, sumados a lo largo de los meses, representan una cantidad de
-            ingresos perdidos muy superior al coste de cualquier herramienta.
+            El coste de no tener ese mínimo control no es solo «desorganización»: son leads
+            reales que se quedan sin respuesta y que, sumados a lo largo de los meses, pueden
+            valer bastante más que una herramienta sencilla. Haz la cuenta con lo que vale un
+            cliente recurrente en tu clínica.
           </P>
 
           <H2>Los errores más comunes al elegir un CRM siendo pequeño</H2>
@@ -165,7 +167,7 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
             <InternalLink href="/blog/software-gestion-clinicas-esteticas">
               elegir un CRM por la cantidad de funcionalidades
             </InternalLink>{" "}
-            en lugar de por la facilidad de uso. Una clínica pequeña no va a usar el 80% de las
+            en lugar de por la facilidad de uso. Una clínica pequeña no va a usar la mayoría de las
             funciones de un CRM «completo» — y cuanto más complejo es la herramienta, más
             probable es que el equipo deje de actualizarla a las pocas semanas.
           </P>
@@ -177,22 +179,33 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
           </P>
           <P>
             El tercer error es pensar que un CRM resuelve el problema de las consultas fuera
-            de horario. En clínicas estéticas, alrededor del 40% de las consultas llegan
-            cuando la clínica está cerrada — y un CRM, por sí solo, no responde a nadie. Solo
-            organiza la información para cuando alguien la revise. Si el objetivo principal es
-            no perder esos leads nocturnos, el CRM es solo media solución.
+            de horario. En clínicas estéticas, una parte de las consultas llega cuando la
+            clínica está cerrada — y lo que hace un CRM es organizar la información
+            para cuando alguien la revise. Si el objetivo principal es no perder esos leads
+            nocturnos, además del CRM necesitas algo que les responda.
           </P>
 
           <H2>Opciones de CRM para clínicas pequeñas: desde gratis hasta premium</H2>
           <P>
-            En el extremo gratuito, herramientas como HubSpot CRM o Zoho Bigin permiten
-            registrar contactos, ver el historial de conversaciones de WhatsApp o email
-            (con alguna integración) y configurar recordatorios simples de seguimiento. Para
-            una clínica con un volumen moderado de consultas, esto puede ser más que
-            suficiente durante mucho tiempo.
+            En el extremo gratuito están HubSpot CRM y Zoho Bigin: según sus páginas de
+            precios, consultadas el 16 de septiembre de 2026, los dos tienen plan gratuito, y
+            el de Bigin es para un solo usuario. Según sus webs, los dos sirven para registrar
+            contactos, consultar el historial de comunicaciones con cada uno —Bigin menciona
+            expresamente WhatsApp— y programar tareas de seguimiento; qué parte entra en el
+            plan gratuito lo detalla cada página de precios. Para una clínica con un volumen
+            moderado de consultas, esto puede ser más que suficiente durante mucho tiempo.
           </P>
+          <BlogSource>
+            webs de HubSpot (
+            <ExternalLink href="https://www.hubspot.es/pricing/crm">precios</ExternalLink> y{" "}
+            <ExternalLink href="https://www.hubspot.es/products/crm">producto</ExternalLink>) y
+            de Bigin (
+            <ExternalLink href="https://www.bigin.com/pricing.html">precios</ExternalLink> y{" "}
+            <ExternalLink href="https://www.bigin.com/">producto</ExternalLink>), consultadas el
+            16 de septiembre de 2026
+          </BlogSource>
           <P>
-            En el rango intermedio (30-60€ al mes), aparecen planes con más automatizaciones:
+            En los planes de pago aparecen más automatizaciones:
             secuencias de seguimiento automático, plantillas de mensajes y mejor integración
             con canales de captación como Instagram o Meta Ads.
           </P>
@@ -235,9 +248,9 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
           <H2>La alternativa al CRM: empezar con automatización básica</H2>
           <P>
             Para muchas clínicas pequeñas, el problema más urgente no es la falta de un CRM,
-            sino la falta de respuesta inmediata. El 80% de los leads que no reciben respuesta
-            en los primeros cinco minutos terminan eligiendo otra clínica — y eso ocurre
-            especialmente en el 40% de consultas que llegan fuera del horario de atención.
+            sino la falta de respuesta inmediata. Un lead que espera respuesta puede acabar
+            eligiendo otra clínica, y eso ocurre sobre todo con las consultas que llegan fuera
+            del horario de atención.
           </P>
           <P>
             Antes de invertir tiempo en implantar un CRM completo, puede tener más sentido
@@ -251,9 +264,10 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
             .
           </P>
           <P>
-            Con un LTV de 3.000€ por cliente recurrente, recuperar aunque sea uno o dos leads
-            al mes que de otro modo se habrían perdido por falta de respuesta ya justifica el
-            coste de esa automatización — y da tiempo a elegir el CRM adecuado sin prisas,
+            Para saber si esa automatización te compensa, haz la cuenta con tus números:
+            cuántos leads al mes se pierden hoy por falta de respuesta y cuánto vale un
+            cliente recurrente en tu clínica. Si recuperar uno o dos ya cubre el coste, además
+            te da tiempo a elegir el CRM adecuado sin prisas,
             cuando el volumen de consultas lo haga realmente necesario.
           </P>
         </article>

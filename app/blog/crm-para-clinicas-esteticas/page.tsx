@@ -10,6 +10,7 @@ import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
 import InternalLink from "@/components/blog/InternalLink"
+import ExternalLink from "@/components/blog/ExternalLink"
 import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/crm-para-clinicas-esteticas"
@@ -39,19 +40,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Necesito un CRM si ya tengo software de gestión de citas?",
-    a: "Depende de si tu problema está en la agenda o en los leads. El software de citas resuelve lo que ocurre después de que el cliente ha reservado: confirmaciones, recordatorios, historial. El CRM resuelve lo que ocurre antes: capturar el lead, cualificarlo, hacer seguimiento si no ha respondido. Si recibes más de 20-30 consultas al mes por WhatsApp o formulario y no llevas un control ordenado, un CRM te evitará perder oportunidades que ahora ni siquiera sabes que estás perdiendo.",
+    a: "Depende de si tu problema está en la agenda o en los leads. El software de citas resuelve lo que ocurre después de que el cliente ha reservado: confirmaciones, recordatorios, historial. El CRM resuelve lo que ocurre antes: capturar el lead, cualificarlo, hacer seguimiento si no ha respondido. Si recibes muchas consultas al mes por WhatsApp o formulario y no llevas un control ordenado, un CRM te evitará perder oportunidades que ahora ni siquiera sabes que estás perdiendo.",
   },
   {
     q: "¿Cuánto cuesta un CRM para una clínica estética?",
-    a: "El rango es muy amplio. Hay soluciones desde 30-50€/mes (HubSpot gratuito, Zoho, Freshsales) hasta plataformas sectoriales específicas para clínicas que superan los 200€/mes. La trampa habitual es infraestimar el tiempo de configuración y adaptación: un CRM genérico barato puede costar más en horas de trabajo que uno especializado con onboarding incluido. Antes de elegir precio, define qué problema concreto quieres resolver.",
+    a: "El rango es muy amplio, y lo sectorial no es necesariamente lo más caro: según los precios que publican en su web, consultados el 16 de septiembre de 2026, Flowww va de 59 a 249 €/mes por centro y Koibox de 0 a 55 €/mes según plan. En los CRM genéricos, como HubSpot, Zoho o Freshsales, compara con la tarifa vigente en su web. La trampa habitual es infraestimar el tiempo de configuración y adaptación: un CRM genérico barato puede costar más en horas de trabajo que uno especializado con onboarding incluido. Antes de elegir precio, define qué problema concreto quieres resolver.",
   },
   {
     q: "¿Puede un agente de IA reemplazar parte de lo que hace un CRM?",
-    a: "En el tramo de captación y primer contacto, sí. Un agente de WhatsApp con IA puede hacer lo que más tiempo consume en un CRM básico: responder leads al instante, cualificarlos con preguntas clave, registrar la conversación y, si el lead está listo, agendar la cita directamente en el calendario. Para clínicas sin CRM, es un punto de entrada más rápido y barato que implantar un CRM completo desde cero.",
+    a: "En el tramo de captación y primer contacto, sí. Un agente de WhatsApp con IA puede hacer lo que más tiempo consume en un CRM básico: responder leads al instante, cualificarlos con preguntas clave, guardar la conversación y, si el lead está listo, agendarle la cita. Para clínicas sin CRM, es un punto de entrada más rápido y barato que implantar un CRM completo desde cero.",
   },
   {
     q: "¿Cuánto tarda en amortizarse un CRM en una clínica estética?",
-    a: "Si un cliente recurrente tiene un LTV de 3.000€ y tu CRM evita perder dos leads al mes que de otro modo habrían quedado sin respuesta, el retorno en el primer trimestre ya cubre el coste anual de la herramienta. La clave es medir: antes de implantar cualquier CRM, anota cuántos leads recibes al mes y cuántos acaban en cita. Ese dato es el punto de partida para calcular el impacto real.",
+    a: "Depende de tus números, así que empieza por medir: antes de implantar cualquier CRM, anota cuántos leads recibes al mes, cuántos acaban en cita y cuánto vale para tu clínica un paciente que vuelve. Después haz la cuenta: pacientes que el CRM te evita perder al mes, multiplicados por lo que vale cada uno, frente al coste anual de la herramienta. Ese cálculo, con tus datos, es el que te dice cuándo se amortiza.",
   },
 ]
 
@@ -131,17 +132,15 @@ export default function CrmClinicasArticlePage() {
           </P>
           <P>
             El problema no es que el equipo trabaje mal — es que sin una herramienta que
-            centralice esa información, perder leads es inevitable. El 80% de los leads que
-            no reciben respuesta en los primeros cinco minutos acaban eligiendo otra clínica.
-            Y eso ocurre especialmente de noche, cuando buena parte de las consultas llega
+            centralice esa información, perder leads es inevitable. Un lead que espera
+            respuesta sigue mirando otras clínicas, y eso ocurre especialmente de noche, cuando buena parte de las consultas llega
             fuera del horario de atención y nadie está disponible para contestar.
           </P>
-          <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
             En este artículo vas a entender qué es exactamente un CRM, en qué se diferencia
             de un software de gestión de citas, qué señales indican que tu clínica ya lo
-            necesita, qué funcionalidades no pueden faltar — y cómo la IA puede multiplicar
-            los resultados de cualquier CRM a partir del primer mes.
+            necesita, qué funcionalidades no pueden faltar — y qué añade la IA a lo que ya
+            hace un CRM.
           </P>
 
           <H2>¿Qué es un CRM y para qué sirve en una clínica estética?</H2>
@@ -191,8 +190,8 @@ export default function CrmClinicasArticlePage() {
 
           <H3>Recibes más consultas de las que puedes gestionar manualmente</H3>
           <P>
-            Si recibes más de 20-30 consultas al mes por WhatsApp, formulario web o redes
-            sociales, el seguimiento manual empieza a fallar. Alguien se olvida de responder
+            Cuando el volumen de consultas por WhatsApp, formulario web o redes sociales supera
+            lo que puedes llevar de memoria, el seguimiento manual empieza a fallar. Alguien se olvida de responder
             a un lead, otro lead queda sin seguimiento después del primer contacto, y no hay
             forma de saber cuántas oportunidades se han perdido porque nunca quedan
             registradas.
@@ -226,14 +225,21 @@ export default function CrmClinicasArticlePage() {
             <InternalLink href="/blog/software-gestion-clinicas-esteticas">
               plataformas españolas pensadas para clínicas
             </InternalLink>{" "}
-            — Flowww o Klinikare, por ejemplo —
-            traen la ficha de paciente, el histórico de tratamientos y los consentimientos de
-            serie; en un CRM genérico eso hay que construirlo con campos personalizados.
+            — Flowww o Klinikare, por ejemplo — traen de serie, según sus webs, la ficha de
+            paciente, el historial clínico y la firma de consentimientos; en un CRM genérico eso
+            hay que construirlo con campos personalizados.
           </P>
+          <BlogSource>
+            webs oficiales de{" "}
+            <ExternalLink href="https://www.flowww.es/">Flowww</ExternalLink> y{" "}
+            <ExternalLink href="https://www.klinikare.com/">Klinikare</ExternalLink>,
+            consultadas el 16 de septiembre de 2026
+          </BlogSource>
           <P>
             La primera es la integración con WhatsApp. El canal principal de comunicación
             con pacientes en España es WhatsApp — y si el CRM no captura esas conversaciones
-            o al menos las registra, pierdes la mitad de la información relevante.
+            o al menos las registra, se te escapa justo la parte de la relación con el paciente
+            que más se mueve.
           </P>
           <P>
             La segunda es la gestión de pipelines por tratamiento. No es lo mismo un lead
@@ -257,11 +263,16 @@ export default function CrmClinicasArticlePage() {
             herramienta de agenda ya cumple la función de un CRM, y no es así.
           </P>
           <P>
-            El software de gestión de citas — Acuity, Calendly o una herramienta sectorial como
-            ClinicCloud — se ocupa de confirmaciones automáticas, recordatorios, gestión del
-            calendario e historial de visitas. Es una herramienta de operaciones, no de
-            captación.
+            El software de gestión de citas — Acuity o Calendly, por ejemplo — se ocupa de la
+            reserva, la gestión del calendario y los recordatorios automáticos. Es una
+            herramienta de operaciones, no de captación.
           </P>
+          <BlogSource>
+            webs oficiales de{" "}
+            <ExternalLink href="https://acuityscheduling.com/">Acuity</ExternalLink> y{" "}
+            <ExternalLink href="https://calendly.com/es">Calendly</ExternalLink>, consultadas
+            el 16 de septiembre de 2026
+          </BlogSource>
           <P>
             El CRM captura el lead desde el canal en que llegó, lo cualifica, hace seguimiento
             si no ha respondido y lo mueve por el embudo hasta que reserva. Y después de la
@@ -296,12 +307,18 @@ export default function CrmClinicasArticlePage() {
               ],
               [
                 "Precio orientativo",
-                "10-30€/mes las opciones ligeras",
-                "Desde 30-50€/mes los genéricos; más de 200€/mes los sectoriales",
+                "Según la tarifa vigente de cada herramienta",
+                "Sectoriales: Flowww, de 59 a 249 €/mes por centro; Koibox, de 0 a 55 €/mes según plan (precios publicados, consultados el 16/09/2026). Genéricos: según la tarifa vigente de cada uno",
                 "Cuota mensual según volumen de conversaciones",
               ],
             ]}
           />
+          <BlogSource>
+            páginas de precios de{" "}
+            <ExternalLink href="https://www.flowww.es/precios">Flowww</ExternalLink> y{" "}
+            <ExternalLink href="https://koibox.cloud/pricing/">Koibox</ExternalLink>,
+            consultadas el 16 de septiembre de 2026
+          </BlogSource>
 
           <P>
             <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
@@ -313,20 +330,19 @@ export default function CrmClinicasArticlePage() {
             información fluya entre los dos sistemas sin tener que introducirla dos veces.
           </P>
 
-          <H2>Cómo un CRM conectado con IA multiplica sus resultados</H2>
+          <H2>Qué añade la IA a lo que hace un CRM</H2>
           <P>
-            La IA convierte el CRM de registro pasivo en sistema que actúa: responde al lead en
-            segundos, lo cualifica y deja la conversación anotada, sin esperar a que nadie se
+            La IA cubre lo que un CRM, por sí solo, no hace: responder al lead en segundos,
+            cualificarlo y dejar la conversación anotada, sin esperar a que nadie se
             acuerde. Un CRM sin automatización es mejor que nada, pero sigue dependiendo de que
             una persona ejecute cada acción a mano.
           </P>
           <P>
             El caso más claro es el primer contacto. Cuando un lead llega fuera del horario de
             atención, un agente con IA puede responder en segundos, hacer las preguntas de
-            cualificación básicas y registrar la conversación en el CRM para que el equipo lo
+            cualificación básicas y dejar la conversación guardada para que el equipo lo
             encuentre todo listo cuando llegue por la mañana. Sin IA, ese lead espera hasta el
-            día siguiente — y la probabilidad de perderlo llega al 80% pasados los primeros
-            cinco minutos sin respuesta.
+            día siguiente, y en ese tiempo puede haber reservado en otra clínica.
           </P>
           <P>
             El segundo momento crítico es el seguimiento. Un lead que no ha respondido al
@@ -339,13 +355,12 @@ export default function CrmClinicasArticlePage() {
             tono natural, sin que el equipo tenga que acordarse de hacerlo.
           </P>
           <P>
-            El resultado es que el CRM deja de ser un registro pasivo y se convierte en
-            un sistema activo que trabaja para convertir leads mientras el equipo se ocupa
-            de los pacientes que ya están en la clínica. Cada cliente recurrente tiene un
-            LTV medio de unos 3.000€ — y evitar perder incluso dos leads al mes por falta
-            de respuesta rápida cambia los números de forma significativa.
+            El resultado es que el primer contacto y el seguimiento dejan de depender de que
+            alguien tenga un hueco libre, mientras el equipo se ocupa de los pacientes que ya
+            están en la clínica. Y como un cliente recurrente vuelve
+            muchas veces, evitar perder incluso dos leads al mes por falta de respuesta rápida
+            se nota en la facturación.
           </P>
-          <BlogSource>SEME (Sociedad Española de Medicina Estética)</BlogSource>
         </article>
 
         <div className="mt-4">

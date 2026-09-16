@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "¿Cómo funciona una lista de espera para clínicas?",
-    a: "Una lista de espera es un registro de pacientes que quieren un tratamiento antes de la primera cita disponible. Cuando hay una cancelación, el sistema notifica automáticamente a los primeros de la lista por WhatsApp con el hueco disponible y la opción de reservarlo con un clic. Sin lista de espera, una cancelación con 24 horas de antelación supone un hueco vacío. Con lista de espera, ese mismo hueco se rellena en minutos.",
+    a: "Una lista de espera es un registro de pacientes que quieren un tratamiento antes de la primera cita disponible. Se puede automatizar para que, cuando hay una cancelación, el sistema notifique por WhatsApp a los primeros de la lista con el hueco disponible y la opción de reservarlo — es una configuración que montamos a medida sobre el agente de WhatsApp. Sin lista de espera, una cancelación con antelación supone un hueco vacío. Con lista de espera bien montada, ese mismo hueco puede rellenarse en minutos.",
   },
   {
     q: "¿Puedo cobrar por cancelaciones de última hora sin perder pacientes?",
@@ -119,10 +119,9 @@ export default function CancelacionesArticlePage() {
 
           {/* Intro */}
           <P>
-            Entre el 12% y el 19% de las citas de una clínica estética no se presentan o se
-            cancelan sin margen para reaccionar. El impacto económico es directo: cada hueco
-            vacío en la agenda es tiempo del profesional que no genera ingresos, con un coste
-            que puede llegar a los 7.500€ al mes en clínicas con volumen medio. Y a diferencia
+            En cualquier clínica estética, una parte de las citas acaba en ausencia o en una
+            cancelación sin margen para reaccionar. El impacto económico es directo: cada hueco
+            vacío en la agenda es tiempo del profesional que no genera ingresos. Y a diferencia
             de los no-shows, las cancelaciones de última hora tienen algo especialmente frustrante:
             el paciente avisó, pero demasiado tarde para hacer algo. Descubre cuánto te
             está costando con nuestra{" "}
@@ -207,8 +206,8 @@ export default function CancelacionesArticlePage() {
             El momento óptimo para enviar la confirmación activa es 48 horas antes de la cita.
             A esa distancia, el paciente todavía puede reorganizarse si tiene un problema, y
             la clínica tiene tiempo suficiente para reaccionar si cancela. El canal más efectivo
-            es WhatsApp: los mensajes de WhatsApp tienen una tasa de apertura del 95-98%,
-            frente al 20-25% del email — lo que garantiza que el mensaje llega y se lee.
+            es WhatsApp: es donde el paciente ya conversa a diario, así que el mensaje tiene
+            muchas más probabilidades de leerse a tiempo que un email.
           </P>
           <P>
             <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
@@ -225,9 +224,9 @@ export default function CancelacionesArticlePage() {
             <InternalLink href="/recordatorios-automaticos-citas">
               recordatorios automáticos de citas
             </InternalLink>{" "}
-            implementados correctamente reducen las cancelaciones de última hora hasta un 40%
-            desde el primer mes, sin que el equipo tenga que hacer ninguna llamada ni enviar
-            mensajes manualmente.
+            bien implementados hacen este envío en cada cita y adelantan las cancelaciones a un
+            momento en que todavía se pueden cubrir, sin que el equipo tenga que hacer ninguna
+            llamada ni enviar mensajes manualmente.
           </P>
 
           <H2>Lista de espera: convierte una cancelación en una cita nueva</H2>
@@ -237,8 +236,10 @@ export default function CancelacionesArticlePage() {
             </InternalLink>{" "}
             convierte cada cancelación en una oportunidad
             en lugar de en una pérdida. El concepto es simple: cuando un paciente cancela, el
-            sistema notifica automáticamente a los primeros pacientes de la lista que hay un
-            hueco disponible — con la fecha, la hora y un enlace para reservarlo directamente.
+            sistema puede notificar automáticamente a los primeros pacientes de la lista que hay
+            un hueco disponible — con la fecha, la hora y un enlace para reservarlo directamente.
+            Es una automatización que se monta a medida sobre el agente de WhatsApp, según cómo
+            gestiones hoy tus cancelaciones.
           </P>
           <P>
             Para que funcione, la lista de espera tiene que estar siempre activa y actualizada.
@@ -272,9 +273,9 @@ export default function CancelacionesArticlePage() {
           <P>
             El plazo más habitual en clínicas estéticas es 24 horas, aunque algunas trabajan
             con 48 horas para tratamientos de mayor duración o coste. El importe no tiene que
-            cubrir el 100% del tratamiento — incluso un coste simbólico de 10-15€ reduce
-            significativamente las cancelaciones impulsivas, porque convierte la decisión de
-            cancelar en algo con consecuencias reales.
+            cubrir el 100% del tratamiento — incluso un coste simbólico reduce las cancelaciones
+            impulsivas, porque convierte la decisión de cancelar en algo con consecuencias
+            reales.
           </P>
           <P>
             La política de cancelación no está reñida con la flexibilidad. Se puede establecer
@@ -316,8 +317,9 @@ export default function CancelacionesArticlePage() {
               <InternalLink href="/recordatorios-automaticos-citas">
                 recordatorios automáticos de citas
               </InternalLink>{" "}
-              envían la confirmación 48 horas antes y activan la lista de espera en el momento
-              de la cancelación — sin que el equipo tenga que intervenir.
+              envían la confirmación con antelación. Si además quieres que las cancelaciones
+              activen automáticamente la lista de espera, lo montamos a medida sobre el mismo
+              agente.
             </p>
             <Link
               href="/recordatorios-automaticos-citas"

@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     q: "¿Tiene sentido un chatbot si mi clínica es pequeña y recibo pocos mensajes?",
-    a: "Depende de cuántos de esos mensajes llegan fuera de horario o se quedan sin respuesta a tiempo. Incluso en clínicas pequeñas, el dato se repite: hasta un 40% de las consultas llegan fuera del horario de atención, y un lead sin respuesta en cinco minutos tiene hasta un 80% de probabilidades de perderse. Si eso describe tu situación, el chatbot puede tener sentido aunque el volumen total no sea muy alto.",
+    a: "Depende de cuántos de esos mensajes llegan fuera de horario o se quedan sin respuesta a tiempo. Incluso en clínicas pequeñas, parte de las consultas llega fuera del horario de atención, y un lead que espera respuesta puede acabar escribiendo a otra clínica. Si eso describe tu situación, el chatbot puede tener sentido aunque el volumen total no sea muy alto.",
   },
 ]
 
@@ -125,9 +125,8 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
             complementan.
           </P>
           <P>
-            Por un lado, entre un 95% y un 98% de los mensajes de WhatsApp se leen, y hasta
-            un 40% de las consultas que recibe una clínica llegan fuera de su horario de
-            atención — momentos en los que, por definición, no hay recepcionista
+            Por un lado, una parte de las consultas que recibe una clínica llega fuera de su
+            horario de atención — momentos en los que, por definición, no hay recepcionista
             disponible. Por otro, hay situaciones — un paciente nervioso antes de un
             tratamiento, una reclamación, una urgencia — donde nada sustituye a una persona
             con criterio y empatía.
@@ -148,8 +147,8 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
             <strong>Disponibilidad 24/7 real.</strong> Una recepcionista tiene un horario,
             descansos, vacaciones y, sobre todo, un único par de manos. El chatbot
             responde a las tres de la madrugada, en festivo o en pleno fin de semana —
-            justo cuando llega ese 40% de consultas fuera de horario que, de otra forma, se
-            quedarían sin respuesta hasta el día siguiente.
+            justo cuando llegan las consultas que, de otra forma, se quedarían sin respuesta
+            hasta el día siguiente.
           </P>
           <P>
             <strong>Respuesta instantánea, sin colas.</strong> Si tres pacientes escriben a
@@ -159,8 +158,8 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
             </InternalLink>{" "}
             mientras los otros esperan.
             El chatbot responde a los tres en el mismo instante, sin que nadie note que
-            «hay cola». Y esto importa: un lead sin respuesta en cinco minutos tiene hasta
-            un 80% de probabilidades de perderse para siempre.
+            «hay cola». Y esto importa: quien espera en la cola puede acabar escribiendo a
+            otra clínica.
           </P>
           <P>
             <strong>Cero coste adicional por volumen.</strong> Para una recepcionista, diez
@@ -242,8 +241,6 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
             mensajes a tiempo, cuando una parte importante de las consultas llega fuera de
             horario, cuando las mismas preguntas se repiten una y otra vez, o cuando notas
             que se pierden leads simplemente porque nadie ha podido contestar a tiempo.
-            Estas situaciones son extremadamente comunes — recuerda que hasta el 40% de las
-            consultas llegan fuera de horario en una clínica estética media.
           </P>
           <P>
             Tiene menos sentido — o al menos no es la prioridad — si tu clínica recibe muy

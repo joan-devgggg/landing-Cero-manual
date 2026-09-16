@@ -9,6 +9,7 @@ import BlogSource from "@/components/BlogSource"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
+import ExternalLink from "@/components/blog/ExternalLink"
 import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/mejor-software-gestion-clinica-estetica"
@@ -42,15 +43,15 @@ const faqs = [
   },
   {
     q: "¿Necesito un software específico para estética o me vale uno genérico?",
-    a: "Depende de tus tratamientos. Un software específico para estética suele incluir ficha de tratamientos, fotos de seguimiento, consentimientos y gestión de bonos, cosas que un CRM genérico no trae. Si tu clínica trabaja con tratamientos que requieren seguimiento visual y documentación, un software del sector te ahorrará muchos parches.",
+    a: "Depende de tus tratamientos. Un software específico para estética suele incluir ficha de tratamientos, fotos de seguimiento, consentimientos y gestión de bonos, cosas que en un CRM genérico normalmente hay que montar a mano con campos personalizados. Si tu clínica trabaja con tratamientos que requieren seguimiento visual y documentación, un software del sector te ahorrará muchos parches.",
   },
   {
     q: "¿Cuánto debería costar el software de gestión de mi clínica?",
-    a: "Los precios varían mucho según funcionalidades y número de usuarios: hay herramientas de agenda ligeras desde 10-20€ al mes y software de gestión más completo que puede superar los 100-150€ mensuales por clínica según los módulos que actives. Pero lo importante no es el coste en sí, sino lo que te ahorra o te hace ganar. Si una herramienta reduce no-shows o recupera consultas que hoy se pierden fuera de horario, con un valor por paciente de alrededor de 3.000€ de LTV, se amortiza con muy pocas citas recuperadas al mes. Por eso conviene mirar el precio como una inversión frente al problema que resuelve, y no como un gasto fijo más que comparar en frío entre proveedores.",
+    a: "Depende del tipo de herramienta, del plan y del número de usuarios o centros. Como referencia, según los precios que publican en su web, consultados el 16 de septiembre de 2026, Flowww va de 59 a 249 €/mes por centro y Koibox de 0 a 55 €/mes según plan. Pero lo importante no es el coste en sí, sino lo que te ahorra o te hace ganar: si una herramienta reduce no-shows o recupera consultas que hoy se pierden fuera de horario, multiplica esas citas por lo que vale un paciente en tu clínica y compáralo con la cuota. Por eso conviene mirar el precio frente al problema que resuelve, y no como un gasto fijo más que comparar en frío entre proveedores.",
   },
   {
     q: "¿El software de gestión ya incluye automatización con IA?",
-    a: "La mayoría de softwares de gestión incluyen automatizaciones básicas — recordatorios programados, plantillas de mensajes, algún flujo sencillo — pero eso no es lo mismo que un agente con IA capaz de mantener una conversación real, resolver dudas y agendar la cita por su cuenta sin que nadie intervenga. La diferencia se nota sobre todo fuera del horario de atención, que es cuando más consultas se pierden y donde el software por sí solo no responde. Esa capa de automatización con IA suele añadirse por encima del software que ya usas, conectándose con tu calendario y tu WhatsApp en lugar de sustituir la herramienta de gestión.",
+    a: "Depende del programa, así que revisa primero qué trae el tuyo. Según sus webs, consultadas el 16 de septiembre de 2026, Flowww y Koibox envían recordatorios automáticos por WhatsApp, y Koibox anuncia además un chatbot de WhatsApp desde el que el cliente puede reservar cita. Si el tuyo no lo incluye, o necesitas un agente que converse con el tono de tu clínica, deje la cita reservada y pase a una persona los casos delicados, esa capa se puede añadir aparte, sobre el número de WhatsApp Business que la clínica ya tiene.",
   },
 ]
 
@@ -135,8 +136,8 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
           </P>
           <P>
             En este artículo vas a ver qué criterios usar para elegir el mejor software para
-            tu clínica estética, qué tipos de software existen, cuáles son los más usados en
-            España, en qué momento el software se queda corto y necesitas automatización, y
+            tu clínica estética, qué tipos de software existen, qué herramientas concretas vas a
+            encontrar en España, en qué momento el software se queda corto y necesitas automatización, y
             cómo tomar la decisión sin equivocarte.
           </P>
 
@@ -160,9 +161,9 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
           <P>
             El tercer criterio es que sea específico para estética. La ficha de tratamientos,
             las fotos de seguimiento, los consentimientos informados o la gestión de bonos son
-            cosas que un CRM genérico no cubre bien. Y el cuarto es la capacidad de conectarse
+            cosas que un CRM genérico no trae preparadas para una clínica. Y el cuarto es la capacidad de conectarse
             con otras herramientas: el mejor software no es una isla, sino uno que se integra
-            con tu calendario, tu WhatsApp y tu automatización.
+            con tu calendario, tu WhatsApp y el resto de herramientas que uses.
           </P>
 
           <H2>Tipos de software que usa una clínica estética</H2>
@@ -188,22 +189,23 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
             herramientas que se encargan de tareas que antes hacía una persona — enviar
             recordatorios, responder mensajes, hacer seguimiento — sin que nadie las ejecute
             manualmente cada vez. Muchas plataformas de gestión combinan los dos primeros
-            bloques, pero la automatización real suele venir de una capa aparte.
+            bloques, y algunas ya incluyen parte del tercero, como recordatorios o asistentes
+            por WhatsApp.
           </P>
 
-          <H2>Los más usados en clínicas estéticas en España</H2>
+          <H2>Ejemplos de software para clínicas estéticas en España</H2>
           <P>
-            En España, las clínicas estéticas se reparten entre tres familias de herramientas:
-            software de gestión específico del sector — Flowww y Koibox son los nombres que más
-            se repiten —, plataformas de agenda y reserva online como Booksy, y CRM genéricos
-            adaptados a mano. Cada familia resuelve un problema distinto, y ahí está la clave
-            para elegir.
+            Las herramientas que vas a encontrar caben en tres familias: software de gestión
+            específico del sector, como Flowww o Koibox; plataformas de agenda y reserva online,
+            como Booksy; y CRM genéricos, como HubSpot o Zoho, que hay que adaptar a mano. Cada
+            familia resuelve un problema distinto, y eso es lo que tiene que guiar la elección.
           </P>
           <P>
-            Los softwares de gestión específicos integran agenda, ficha de paciente,
-            facturación y, en algunos casos, tienda o gestión de bonos. Suelen ser la opción de
-            referencia para clínicas que quieren tenerlo todo en una sola plataforma y que
-            trabajan con tratamientos que exigen documentación y seguimiento.
+            Los dos programas sectoriales que citamos reúnen en una misma herramienta agenda,
+            ficha de cliente y facturación o ventas, y los dos anuncian envío de recordatorios
+            por WhatsApp; Koibox, además, un chatbot de WhatsApp. Encajan en clínicas que
+            quieren tenerlo todo en una sola plataforma y que trabajan con tratamientos que
+            exigen documentación y seguimiento.
           </P>
           <P>
             Las{" "}
@@ -212,8 +214,8 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
             </InternalLink>{" "}
             son más ligeras y están pensadas para
             clínicas que priorizan que el paciente pueda pedir cita por su cuenta y que el
-            calendario esté siempre actualizado; algunas, además, funcionan como escaparate y
-            traen reservas nuevas. Y los CRM genéricos los adaptan las clínicas que necesitan
+            calendario esté siempre actualizado; algunas, además, funcionan como escaparate
+            donde te encuentran clientes de tu zona. Y los CRM genéricos los adaptan las clínicas que necesitan
             sobre todo seguimiento comercial y de pacientes.
           </P>
 
@@ -223,38 +225,80 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
               "Ejemplo",
               "Para qué clínica",
               "Qué incluye",
-              "Rango de precio orientativo",
+              "Precio",
             ]}
             rows={[
               [
                 "Software específico de gestión sanitaria/estética",
                 "Flowww, Koibox",
                 "Clínicas que quieren centralizar agenda, ficha de paciente y facturación en una sola plataforma",
-                "Agenda, ficha de tratamientos, fotos de seguimiento, consentimientos, facturación y, a veces, gestión de bonos",
-                "Desde ~30-40€/mes por usuario hasta 150€/mes según módulos",
+                "Agenda, ficha de cliente y facturación o ventas. Flowww anuncia además historial de fotos de antes y después y firma de consentimientos; Koibox, gestión de bonos y chatbot de WhatsApp",
+                "Flowww, de 59 a 249 €/mes por centro; Koibox, de 0 a 55 €/mes según plan (precios publicados, consultados el 16/09/2026)",
               ],
               [
                 "Agenda y reserva online ligera",
                 "Booksy",
                 "Clínicas pequeñas o de un solo profesional que priorizan la reserva por cuenta propia del paciente",
-                "Calendario online, recordatorios automáticos y sincronización básica, sin módulos clínicos avanzados",
-                "Entre 10-30€/mes, a veces con plan gratuito limitado o comisión por reserva captada",
+                "Calendario, reservas online, recordatorios automáticos y perfil en su marketplace con reseñas",
+                "Consulta la tarifa vigente en su web",
               ],
               [
                 "CRM genérico adaptado",
                 "HubSpot, Zoho",
                 "Clínicas con varios centros que necesitan sobre todo seguimiento comercial y de pacientes",
-                "Gestión de contactos, pipeline y automatizaciones de marketing, adaptadas manualmente al sector estético",
-                "Muy variable: desde 20€/mes hasta varios cientos según usuarios y funciones",
+                "Contactos, embudo de ventas y automatizaciones, que hay que adaptar a mano al sector estético",
+                "Consulta la tarifa vigente en su web",
               ],
             ]}
           />
+          <BlogSource>
+            funcionalidades según las webs oficiales de{" "}
+            <ExternalLink href="https://www.flowww.es/">Flowww</ExternalLink> (y su{" "}
+            <ExternalLink href="https://www.flowww.es/flowww-whatsapp">
+              módulo de WhatsApp
+            </ExternalLink>
+            ),{" "}
+            <ExternalLink href="https://koibox.cloud/clientes-peluqueria-centro-estetica/">
+              Koibox
+            </ExternalLink>{" "}
+            (y su{" "}
+            <ExternalLink href="https://koibox.cloud/integracion-whatsapp-app-centro-belleza/">
+              integración con WhatsApp
+            </ExternalLink>
+            ), <ExternalLink href="https://biz.booksy.com/es-es">Booksy</ExternalLink>,{" "}
+            <ExternalLink href="https://www.hubspot.es/products/crm">HubSpot</ExternalLink> y{" "}
+            <ExternalLink href="https://www.zoho.com/es-xl/crm/">Zoho</ExternalLink>,
+            consultadas el 16 de septiembre de 2026
+          </BlogSource>
+
+          <P>
+            Solo damos precio de los dos programas sectoriales, que son los que hemos podido
+            comprobar en su web oficial, consultada el 16 de septiembre de 2026. Flowww cobra
+            una licencia por centro, no por usuario, y todos los usuarios son gratuitos: 59
+            €/mes el plan Boss, 119 €/mes el Star y 249 €/mes el Ultimate, más una puesta en
+            marcha de 190, 290 o 390 € según el plan. La licencia dura 12 meses y se renueva
+            automáticamente si no avisas con 30 días de antelación. Koibox tiene cinco planes
+            con un número limitado de usuarios —Free a 0 €, Lite a 15 €, Basic a 30 €, Gold a
+            40 € y Platinum a 55 € al mes— y cobra 3 €/mes por cada usuario extra; según sus
+            preguntas frecuentes no tiene permanencia, y la renovación se cancela avisando con
+            15 días de antelación.
+          </P>
+          <BlogSource>
+            webs oficiales de Flowww (
+            <ExternalLink href="https://www.flowww.es/precios">precios</ExternalLink> y{" "}
+            <ExternalLink href="https://www.flowww.es/terminos-del-servicio-y-condiciones-generales">
+              condiciones generales
+            </ExternalLink>
+            ) y de Koibox (
+            <ExternalLink href="https://koibox.cloud/pricing/">precios</ExternalLink> y{" "}
+            <ExternalLink href="https://koibox.cloud/faqs">preguntas frecuentes</ExternalLink>
+            ), consultadas el 16 de septiembre de 2026
+          </BlogSource>
 
           <P>
             Más que quedarte con un nombre concreto, lo útil es entender en qué categoría
-            encaja lo que necesitas. Plataformas como ClinicCloud, por ejemplo, combinan
-            varios de estos bloques en una sola herramienta, mientras que otras clínicas
-            prefieren mantener piezas más independientes. Si quieres una comparativa más
+            encaja lo que necesitas: hay clínicas que prefieren una sola plataforma que reúna
+            casi todo y otras que prefieren mantener piezas más independientes. Si quieres una comparativa más
             detallada de qué necesita realmente una clínica estética y por dónde empezar, la
             tienes en nuestra guía de{" "}
             <InternalLink href="/blog/software-gestion-clinicas-esteticas">
@@ -267,28 +311,26 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
           <P>
             El software se queda corto en el momento en que tu cuello de botella deja de ser la
             organización y pasa a ser el tiempo del equipo para atender todo lo que entra. Si tu
-            agenda está ordenada pero los mensajes se acumulan sin responder, el problema ya no
-            se arregla cambiando de plataforma: se arregla automatizando la respuesta.
+            agenda está ordenada pero los mensajes se acumulan sin responder, lo que necesitas
+            es automatizar la respuesta: con una función de tu programa, si la tiene, o con un
+            agente aparte.
           </P>
           <P>
             El caso más claro es el de las consultas fuera de horario. Buena parte de las
             consultas de una clínica llegan cuando no hay nadie para atenderlas — por la noche,
-            en fin de semana, a media mañana con la agenda llena. Y si un lead no recibe
-            respuesta en los primeros 5 minutos, la probabilidad de perderlo puede llegar al
-            80%.
+            en fin de semana, a media mañana con la agenda llena. Y mientras esperan
+            respuesta, esas personas pueden estar escribiendo también a otras clínicas.
           </P>
-          <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
-            Con un valor medio por paciente (LTV) de alrededor de 3.000€ en clínica estética en
-            España, cada consulta sin responder tiene un coste real y medible: no hace falta
-            perder muchas al mes para que la cifra deje de ser anecdótica.
+            Como un paciente que se queda puede volver muchas veces, cada consulta sin
+            responder cuesta más que una cita suelta: no hace falta perder muchas al mes para
+            que se note.
           </P>
-          <BlogSource>SEME (Sociedad Española de Medicina Estética)</BlogSource>
           <P>
-            Ningún software de agenda o CRM resuelve eso por sí solo: pueden guardar el dato,
-            pero no responden la conversación. Ahí es donde entra un agente con IA que
-            atiende, resuelve las dudas frecuentes y agenda la cita directamente sobre tu
-            calendario, conectándose con el software que ya usas en lugar de sustituirlo.
+            Eso es lo que resuelve un agente con IA en WhatsApp: atiende a cualquier hora,
+            resuelve las dudas frecuentes, agenda la cita y pasa a una persona del equipo los
+            casos delicados. Trabaja con el número de WhatsApp que tu clínica ya tiene, así que
+            el paciente sigue escribiendo al mismo sitio.
           </P>
 
           <H2>Cómo elegir sin equivocarte</H2>
@@ -339,9 +381,9 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Ningún software de gestión responde por ti cuando llega una consulta fuera de
-              horario. El agente de WhatsApp se conecta por encima del que ya usas y atiende
-              esa parte, sin que tengas que cambiar de herramienta.
+              El agente de WhatsApp responde a las consultas que llegan fuera de horario,
+              agenda la cita y pasa a tu equipo lo que necesita una persona, sin que tengas que
+              cambiar de número de WhatsApp.
             </p>
             <Link
               href="/agente-whatsapp-clinicas-esteticas"

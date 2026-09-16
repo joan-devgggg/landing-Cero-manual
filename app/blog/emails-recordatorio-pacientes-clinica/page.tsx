@@ -14,7 +14,7 @@ const PATH = "/blog/emails-recordatorio-pacientes-clinica"
 const DATES = articleDates("emails-recordatorio-pacientes-clinica")
 const TITLE = "Emails de recordatorio de cita: plantillas | Cero Manual"
 const DESCRIPTION =
-  "Plantillas de email de recordatorio para clínicas listas para copiar. Y por qué el 95% de tus pacientes prefiere recibir el recordatorio por WhatsApp."
+  "Plantillas de email de recordatorio para clínicas listas para copiar. Y por qué a muchos pacientes les llega mejor el recordatorio por WhatsApp."
 const HEADLINE =
   "Emails de recordatorio para pacientes: plantillas, consejos y cuándo usar WhatsApp en su lugar"
 
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cuánto se abren realmente los emails de recordatorio?",
-    a: "Depende mucho del sector, pero en clínicas la tasa de apertura de los emails suele moverse entre el 20% y el 25%. Es decir, tres de cada cuatro pacientes no llegan a abrir el recordatorio. Por eso el email funciona mejor como refuerzo o como canal secundario que como único aviso antes de una cita.",
+    a: "Depende de cada clínica y de sus pacientes, y el dato fiable es el que te dé tu propia herramienta de envío. Lo habitual es que una parte de los recordatorios se quede sin abrir, o se abra tarde, porque compite con decenas de correos en la bandeja de entrada. Por eso el email funciona mejor como refuerzo o como canal secundario que como único aviso antes de una cita.",
   },
   {
     q: "¿Cuándo debo enviar el email de recordatorio?",
@@ -142,21 +142,21 @@ export default function EmailsRecordatorioPacientesPage() {
           <P>
             Los recordatorios son una de las herramientas más eficaces para reducir las
             ausencias en una clínica. Cuando un paciente recibe un aviso a tiempo, la
-            probabilidad de que aparezca sube de forma notable — de hecho, un sistema de
-            recordatorios bien planteado puede{" "}
+            probabilidad de que aparezca sube de forma notable — por eso un sistema de
+            recordatorios bien planteado es de lo primero que conviene montar para{" "}
             <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
-              reducir los no-shows hasta un 40%
+              reducir los no-shows
             </InternalLink>
-            . Y eso
-            importa, porque entre el 12% y el 19% de las citas de una clínica terminan sin
-            que el paciente se presente.
+            . Cada cita a la que el paciente no se presenta es un hueco en la agenda que ya
+            no se puede ofrecer a nadie.
           </P>
           <P>
             El problema es que muchas clínicas se centran solo en el mensaje — qué texto
             usar, cuándo enviarlo — y olvidan que el canal importa tanto o más que el
             contenido. Un recordatorio perfecto que el paciente nunca llega a abrir no sirve
-            de nada. Y ahí el email tiene una desventaja clara: su tasa de apertura ronda el
-            20-25%, frente al 95-98% de WhatsApp.
+            de nada. Y ahí el email tiene una desventaja clara: compite en una bandeja de
+            entrada saturada, mientras que WhatsApp es un canal que los pacientes miran a
+            diario.
           </P>
           <P>
             En este artículo vas a ver por qué los emails de recordatorio no siempre
@@ -168,10 +168,9 @@ export default function EmailsRecordatorioPacientesPage() {
 
           <H2>Por qué los emails de recordatorio no siempre funcionan</H2>
           <P>
-            El primer motivo es el más simple: la mayoría de los emails no se abren. Con una
-            tasa de apertura media del 20-25% en clínicas, tres de cada cuatro pacientes ni
-            siquiera ven el recordatorio. Y de los que lo abren, muchos lo hacen horas más
-            tarde, cuando el aviso ya ha perdido buena parte de su utilidad.
+            El primer motivo es el más simple: muchos emails no se abren. Parte de los
+            pacientes ni siquiera ve el recordatorio, y de los que lo abren, muchos lo hacen
+            horas más tarde, cuando el aviso ya ha perdido buena parte de su utilidad.
           </P>
           <P>
             El segundo motivo es el ruido. La bandeja de entrada de cualquier persona está
@@ -273,10 +272,10 @@ El equipo de [Clínica]`}
 
           <H2>Por qué WhatsApp funciona mejor que el email para recordatorios</H2>
           <P>
-            La diferencia más importante es la apertura. Mientras un email se abre en el
-            20-25% de los casos, un mensaje de WhatsApp llega al 95-98%. Casi todo el mundo
-            abre WhatsApp, y lo hace en minutos, no en horas. Para un recordatorio, esa
-            inmediatez lo cambia todo.
+            La diferencia más importante es la apertura. El correo se revisa cuando uno se
+            sienta a mirarlo; WhatsApp es la aplicación que el paciente abre a lo largo del
+            día, y un mensaje ahí se suele leer en minutos, no en horas. Para un
+            recordatorio, esa inmediatez lo cambia todo.
           </P>
           <P>
             A eso se suma la naturalidad del canal. Un mensaje de WhatsApp se lee como una
@@ -376,8 +375,8 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
               recordatorios automáticos de citas
             </InternalLink>
             : combinar el canal correcto, el mensaje correcto y la automatización para que el
-            envío ocurra sin esfuerzo añadido para tu equipo, recuperando buena parte de ese
-            12-19% de citas que hoy se quedan vacías.
+            envío ocurra sin esfuerzo añadido para tu equipo y los huecos que se liberan
+            lleguen a tiempo de ofrecerse a otro paciente.
           </P>
         </article>
 
@@ -401,8 +400,8 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Te explicamos cómo automatizar los recordatorios por el canal correcto y
-              reducir los no-shows de tu clínica hasta un 40% desde el primer mes.
+              Te explicamos cómo automatizar los recordatorios por el canal correcto para
+              que tu agenda tenga menos huecos vacíos por pacientes que no se presentan.
             </p>
             <Link
               href="/recordatorios-automaticos-citas"

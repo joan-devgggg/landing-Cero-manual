@@ -10,6 +10,7 @@ import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
 import InternalLink from "@/components/blog/InternalLink"
+import ExternalLink from "@/components/blog/ExternalLink"
 import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/marketing-digital-clinicas-esteticas"
@@ -43,7 +44,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto presupuesto mínimo necesito para hacer marketing digital en mi clínica?",
-    a: "Con 200-300€/mes en Google Ads o Meta Ads ya puedes generar un volumen de leads constante para una clínica pequeña, siempre que el embudo de respuesta funcione. El error habitual es subir el presupuesto de publicidad sin haber resuelto cómo se gestionan los leads que ya llegan: si un lead espera horas para recibir respuesta, aumentar la inversión solo multiplica las oportunidades perdidas. Antes de gastar más, asegúrate de que cada consulta recibe respuesta en minutos.",
+    a: "No hay una cifra única: depende de tu zona, del tratamiento que anuncies y de cuánto puedes pagar por cada lead, algo que sale de lo que te deja una cita y de cuántos leads necesitas para cerrarla. Sea cual sea el presupuesto, solo rinde si el embudo de respuesta funciona. El error habitual es subir el presupuesto de publicidad sin haber resuelto cómo se gestionan los leads que ya llegan: si un lead espera horas para recibir respuesta, aumentar la inversión solo multiplica las oportunidades perdidas. Antes de gastar más, asegúrate de que cada consulta recibe respuesta en minutos.",
   },
   {
     q: "Tengo muchos seguidores en Instagram pero pocas citas, ¿qué falla?",
@@ -184,9 +185,9 @@ export default function MarketingDigitalClinicasArticlePage() {
               ],
               [
                 "Portales de reserva (Booksy, Treatwell)",
-                "Escaparate con reserva directa y reseñas verificadas",
+                "Escaparate con reserva online",
                 "Media-alta: el usuario compara clínicas cercanas",
-                "Comisión por reserva y poco control sobre la relación con el paciente",
+                "El primer contacto ocurre dentro de su plataforma",
               ],
               [
                 "Referidos / recomendaciones",
@@ -277,19 +278,22 @@ export default function MarketingDigitalClinicasArticlePage() {
           </P>
           <P>
             En la misma línea juegan los portales de reserva como Booksy o Treatwell:
-            funcionan como un segundo escaparate local, con reseñas y reserva directa, y
-            captan búsquedas que de otra forma irían a la competencia. La contrapartida es
-            que cobran comisión por reserva captada y la relación con el paciente queda a
-            medias dentro de su plataforma — sirven bien para llenar huecos, no como canal
-            principal.
+            funcionan como un segundo escaparate local, con reserva online, y pueden captar
+            búsquedas que de otra forma irían a la competencia. La contrapartida es que ese
+            primer contacto ocurre dentro de su plataforma y no en un canal tuyo, así que
+            conviene usarlos como complemento, no como canal principal.
           </P>
+          <BlogSource>
+            webs para profesionales de{" "}
+            <ExternalLink href="https://biz.booksy.com/es-es">Booksy</ExternalLink> y{" "}
+            <ExternalLink href="https://www.treatwell.es/partners/">Treatwell</ExternalLink>,
+            consultadas el 16 de septiembre de 2026
+          </BlogSource>
 
           <H2>WhatsApp: el canal que más convierte</H2>
           <P>
             WhatsApp es el canal que más convierte porque es donde el paciente pregunta
-            precio, dudas y disponibilidad justo antes de decidirse — y porque se lee mucho
-            más que cualquier otro canal: en el sector se manejan tasas de apertura de
-            referencia del 95-98%, frente al 20-25% del email. Da igual cuánto inviertas en
+            precio, dudas y disponibilidad justo antes de decidirse. Da igual cuánto inviertas en
             Instagram o en Google Ads: si el lead que generan esos canales no recibe
             respuesta rápida, esa inversión se pierde.
           </P>
@@ -297,13 +301,11 @@ export default function MarketingDigitalClinicasArticlePage() {
             Además, es como la gente prefiere contactar: escribir por WhatsApp, igual que
             a un amigo, antes que rellenar un formulario y esperar a que alguien le devuelva
             la llamada. Eso significa que, si el primer contacto de un lead llega por
-            WhatsApp, es prácticamente seguro que lo va a leer — la pregunta es si va a
-            recibir respuesta a tiempo.
+            WhatsApp, la conversación ya está abierta — la pregunta es si va a recibir
+            respuesta a tiempo.
           </P>
           <P>
-            Y el tiempo es crítico: la probabilidad de perder un lead que no recibe
-            respuesta en los primeros cinco minutos es del 80%. Esto ocurre constantemente
-            fuera del horario de atención, cuando alguien que acaba de ver tu anuncio o tu
+            Y el tiempo es crítico, sobre todo fuera del horario de atención, cuando alguien que acaba de ver tu anuncio o tu
             ficha de Google escribe por WhatsApp y no hay nadie disponible para responder.
             Un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
@@ -312,10 +314,9 @@ export default function MarketingDigitalClinicasArticlePage() {
             soluciona exactamente este problema: responde en segundos, cualifica al lead y
             puede agendar la cita directamente, sin que nadie del equipo tenga que estar
             pendiente del móvil. El motivo es sencillo: mientras espera respuesta, esa
-            persona sigue escribiendo a otras clínicas, y la primera que responde se queda
-            la cita.
+            persona puede seguir escribiendo a otras clínicas, y la primera que responde tiene
+            ventaja para quedarse la cita.
           </P>
-          <BlogSource>MIT Lead Response Management Study</BlogSource>
 
           <H2>Cómo combinar todos los canales sin volverse loco</H2>
           <P>
@@ -343,9 +344,8 @@ export default function MarketingDigitalClinicasArticlePage() {
             <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
               la ficha centralizada en el software de gestión
             </InternalLink>{" "}
-            que ya uses —
-            Flowww, Koibox o el que sea — es lo que permite saber qué canal te trae pacientes
-            de verdad y cuál solo te trae likes.
+            que uses es lo que permite saber qué canal te trae pacientes de verdad y cuál
+            solo te trae likes.
           </P>
           <P>
             La forma más eficiente de combinar los canales sin que la gestión se convierta

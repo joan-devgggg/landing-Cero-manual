@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Por qué son tan importantes las reseñas de Google para una clínica dental?",
-    a: "Porque son el primer filtro que aplica un paciente nuevo antes de decidir si llamar o no a una clínica. Se estima que alrededor del 70% de las decisiones de los pacientes a la hora de elegir clínica están influidas por las reseñas que encuentran online. Una clínica con pocas reseñas, o con una valoración media baja, parte con desventaja frente a otra con más opiniones y mejor puntuación, aunque ambas ofrezcan el mismo nivel de servicio.",
+    a: "Porque son el primer filtro que aplica un paciente nuevo antes de decidir si llamar o no a una clínica. Quien no conoce la clínica suele mirar qué dicen otros pacientes antes de dar el paso. Una clínica con pocas reseñas, o con una valoración media baja, parte con desventaja frente a otra con más opiniones y mejor puntuación, aunque ambas ofrezcan el mismo nivel de servicio.",
   },
   {
     q: "¿Por qué mis pacientes no dejan reseñas aunque salgan contentos de la consulta?",
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "¿Cuál es el mejor momento para pedir una reseña tras una cita dental?",
-    a: "El momento óptimo está entre los 30 y los 60 minutos después de la cita, cuando el paciente todavía recuerda la experiencia con detalle y, si todo ha ido bien, sigue con la sensación positiva fresca. Pedirlo días después reduce mucho la tasa de respuesta, porque el recuerdo se diluye y la petición pasa a competir con el resto de notificaciones del día.",
+    a: "Cuanto antes, mejor: justo después de la cita, mientras el paciente todavía recuerda la experiencia con detalle y, si todo ha ido bien, sigue con la sensación positiva fresca. Pedirlo días después reduce mucho la tasa de respuesta, porque el recuerdo se diluye y la petición pasa a competir con el resto de notificaciones del día.",
   },
   {
     q: "¿Qué debo hacer si recibo una reseña negativa?",
@@ -135,10 +135,9 @@ export default function ResenasGoogleClinicasDentalesArticlePage() {
           <H2>Por qué las reseñas de Google son tan importantes para una clínica dental</H2>
           <P>
             Las reseñas de Google cumplen una función muy concreta: son la prueba social que un
-            paciente nuevo necesita antes de confiar en una clínica que no conoce. Según las
-            estimaciones del sector, alrededor del <strong>70% de las decisiones</strong> de los
-            pacientes a la hora de elegir clínica están influidas, directa o indirectamente, por
-            las reseñas que encuentran online.
+            paciente nuevo necesita antes de confiar en una clínica que no conoce. Cuando alguien
+            compara dos clínicas cercanas, lo que otros pacientes cuentan de cada una pesa en la
+            decisión.
           </P>
           <P>
             Además, el número y la frecuencia de las reseñas también afectan a la visibilidad de
@@ -203,10 +202,9 @@ export default function ResenasGoogleClinicasDentalesArticlePage() {
             experiencia, es suficiente.
           </P>
           <P>
-            La clave está en el canal: con una tasa de apertura de WhatsApp de entre el{" "}
-            <strong>95% y el 98%</strong>, la probabilidad de que el paciente vea el mensaje en
-            ese mismo momento es muy alta —mucho mayor que con un email o un SMS, que a menudo se
-            quedan sin leer.
+            El canal también cuenta: WhatsApp es una aplicación que el paciente mira a lo largo
+            del día, así que es fácil que vea el mensaje en ese mismo rato, cosa que no suele
+            pasar con un email o un SMS, que a menudo se quedan sin leer.
           </P>
           <P>
             Este mismo sistema automático que ya se utiliza para enviar recordatorios de citas y

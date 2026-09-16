@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto cuesta implementar un agente IA y cuánto tarda en estar funcionando?",
-    a: "El coste es muy inferior al de contratar una persona adicional para recepción, y suele amortizarse rápido solo con las citas que antes se perdían por no responder a tiempo. La implementación no requiere cambiar de software de gestión: se conecta a la agenda y los canales que ya usa la clínica, y en cuestión de días puede estar atendiendo las primeras consultas.",
+    a: "El coste es muy inferior al de contratar una persona adicional para recepción, y suele amortizarse rápido solo con las citas que antes se perdían por no responder a tiempo. La puesta en marcha es rápida: se conecta al número de WhatsApp que ya usa la clínica y, en cuestión de días, puede estar atendiendo las primeras consultas.",
   },
 ]
 
@@ -177,17 +177,15 @@ export default function AgenteIaRecepcionClinicaArticlePage() {
             <InternalLink href="/blog/chatbot-whatsapp-vs-recepcionista-clinica">
               Una recepcionista humana trabaja un horario determinado
             </InternalLink>
-            , mientras que hasta un 40% de las consultas
-            de pacientes llegan fuera de ese horario — por la noche, los fines de
-            semana, durante la pausa del mediodía. Un agente IA está disponible en todos
+            , pero los pacientes también escriben fuera
+            de ese horario — por la noche, los fines de semana, durante la pausa del
+            mediodía. Un agente IA está disponible en todos
             esos momentos.
           </P>
           <P>
-            La velocidad de respuesta también marca una diferencia enorme: si un nuevo
-            lead escribe preguntando por un tratamiento y no recibe respuesta en los
-            primeros 5 minutos, la probabilidad de perder ese contacto puede llegar al
-            80%. Un agente IA responde al instante, sea la hora que sea, lo que reduce
-            drásticamente esa pérdida. En{" "}
+            La velocidad de respuesta también cuenta: si un nuevo lead escribe preguntando
+            por un tratamiento y tarda en recibir respuesta, puede acabar reservando en otra
+            clínica. Un agente IA responde al instante, sea la hora que sea. En{" "}
             <InternalLink href="/agente-voz-ia-clinicas">
               agente de voz IA para clínicas
             </InternalLink>{" "}
@@ -226,8 +224,8 @@ export default function AgenteIaRecepcionClinicaArticlePage() {
           </P>
           <P>
             Además, si se combina con recordatorios automáticos de confirmación, el
-            beneficio se multiplica: recuerda que entre el 12% y el 19% de las citas en
-            clínicas estéticas terminan en un no-show, así que un sistema que agenda
+            beneficio se multiplica: cada no-show es una cita que se pierde después de
+            haberla conseguido, así que un sistema que agenda
             bien desde el principio y confirma antes de la cita ataca el problema por
             los dos extremos. En{" "}
             <InternalLink href="/agente-voz-ia-clinicas">

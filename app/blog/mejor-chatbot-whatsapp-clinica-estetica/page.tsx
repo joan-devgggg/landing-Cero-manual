@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cuánto debería costar un chatbot de WhatsApp para mi clínica?",
-    a: "El precio varía mucho según lo que incluya: hay soluciones genéricas muy baratas que apenas hacen más que un menú automático, y soluciones a medida que agendan citas reales, cualifican leads y se integran con tu agenda. Antes de mirar el precio, conviene mirar qué hace exactamente cada opción — porque lo barato que no resuelve nada acaba saliendo más caro en leads perdidos.",
+    a: "El precio varía mucho según lo que incluya: hay soluciones genéricas muy baratas que apenas hacen más que un menú automático, y soluciones a medida que agendan citas reales, cualifican leads y pasan a tu equipo los casos que lo piden. Antes de mirar el precio, conviene mirar qué hace exactamente cada opción — porque lo barato que no resuelve nada acaba saliendo más caro en leads perdidos.",
   },
   {
     q: "¿Necesito conocimientos técnicos para gestionar el chatbot una vez instalado?",
@@ -130,10 +130,9 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
             que no se traduce en ni una sola cita nueva.
           </P>
           <P>
-            El canal en sí no es el problema — al contrario. Entre un 95% y un 98% de los
-            mensajes de WhatsApp se leen, frente al 20-25% de un email, y hasta un 40% de
-            las consultas que recibe una clínica llegan fuera de su horario de atención.
-            El chatbot adecuado convierte ese volumen en citas. El chatbot equivocado solo
+            El canal en sí no es el problema — al contrario: es donde tus pacientes ya
+            escriben, también cuando tu clínica está cerrada. El chatbot adecuado convierte
+            esas conversaciones en citas. El chatbot equivocado solo
             añade una capa más de fricción entre tu clínica y quien te escribe.
           </P>
           <P>
@@ -252,9 +251,8 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
             sabe qué responder», es una señal de que ese escenario no se ha pensado.
           </P>
           <P>
-            Recuerda el dato clave: un lead que no recibe respuesta en los primeros cinco
-            minutos tiene hasta un 80% de probabilidades de perderse para siempre. Un
-            chatbot que no resuelve esto desde el primer mensaje no está cumpliendo su
+            Recuerda lo que está en juego: un lead que espera respuesta puede acabar
+            reservando en otra clínica. Un chatbot que no resuelve esto desde el primer mensaje no está cumpliendo su
             función principal, por muchas funciones extra que tenga.
           </P>
 
@@ -276,7 +274,7 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
           </P>
           <P>
             Si quieres ver cómo sería esto aplicado a tu clínica en concreto — con tus
-            tratamientos, tu agenda y tu forma de comunicarte — en{" "}
+            tratamientos, tus horarios y tu forma de comunicarte — en{" "}
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               chatbot de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
@@ -305,7 +303,7 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Te mostramos, con tus propios tratamientos y tu agenda real, cómo
+              Te mostramos, con tus propios tratamientos y horarios, cómo
               respondería un chatbot de WhatsApp a las preguntas que más recibes — y cómo
               agendaría citas sin que nadie de tu equipo tenga que intervenir.
             </p>

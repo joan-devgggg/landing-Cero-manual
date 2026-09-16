@@ -43,8 +43,8 @@ const faqs = [
     a: "No. El agente se conecta al número que ya tienes, así que para tus pacientes no cambia absolutamente nada: siguen llamando donde siempre, al mismo teléfono de siempre. Lo único que cambia es que, esta vez, la llamada se contesta — también a las tres de la mañana.",
   },
   {
-    q: "¿Puede agendar citas directamente en mi calendario, o solo toma el recado?",
-    a: "Puede agendar directamente, en tiempo real, en el calendario que ya usa tu clínica. No se queda en un «le llamamos para confirmar»: la persona cuelga con la cita ya puesta, con el hueco real disponible, sin que nadie de tu equipo tenga que revisarlo ni introducirlo después a mano.",
+    q: "¿Puede agendar la cita durante la llamada, o solo toma el recado?",
+    a: "Puede agendarla durante la propia llamada. No se queda en un «le llamamos para confirmar»: la persona cuelga con la cita ya puesta, en un hueco que estaba libre, sin que nadie de tu equipo tenga que devolverle la llamada.",
   },
   {
     q: "¿Qué pasa si la llamada es complicada, urgente o necesita a una persona del equipo?",
@@ -119,8 +119,8 @@ export default function AgenteVozArticlePage() {
 
           {/* Intro */}
           <P>
-            Casi un 40% de las llamadas que recibe una clínica llegan fuera de su horario
-            de atención: entre las siete y las once de la noche, o en fin de semana. Son
+            Mucha gente llama a su clínica cuando puede, no cuando la clínica está abierta:
+            al salir del trabajo, por la noche o en fin de semana. Son
             personas que han decidido, justo en ese momento, pedir cita — y se encuentran
             con un tono de llamada que nadie va a coger.
           </P>
@@ -170,7 +170,7 @@ export default function AgenteVozArticlePage() {
             a llamar más tarde.
           </P>
           <P>
-            Puede agendar directamente en tu calendario, explicar información básica sobre
+            Puede dejar la cita reservada en la misma llamada, explicar información básica sobre
             servicios y horarios, y — esto es lo importante — detectar cuándo una llamada
             es compleja o urgente, para pasarla a una persona de tu equipo con todo el
             contexto ya recogido.
@@ -207,12 +207,11 @@ export default function AgenteVozArticlePage() {
             persona tenga que repetirse ni navegar por un menú.
           </P>
 
-          <H3>3. Agenda directamente en tu calendario</H3>
+          <H3>3. Reserva la cita en la misma llamada</H3>
           <P>
             Si se trata de una cita, no se queda en un «ya le llamaremos para confirmar»:
-            la agenda en ese mismo momento, en el calendario de tu clínica, con el hueco
-            real disponible — sin que nadie tenga que revisarlo ni introducirlo después a
-            mano.
+            la agenda en ese mismo momento, sobre un hueco libre, y la persona cuelga
+            sabiendo qué día y a qué hora tiene que venir.
           </P>
 
           <H3>4. Si hace falta, lo escala con todo el contexto</H3>
@@ -231,7 +230,7 @@ export default function AgenteVozArticlePage() {
             Cada llamada queda anotada: quién ha llamado, qué necesitaba y qué se ha hecho.
             Tu equipo deja de depender de notas sueltas o de un «me suena que alguien
             llamó por lo del tratamiento de...». Y, además, se activa en pocos días, sin
-            tocar tu número de teléfono ni tu forma de trabajar actual.
+            tocar tu número de teléfono.
           </P>
 
           <H2>¿Para qué tipo de clínicas tiene más sentido?</H2>
@@ -246,21 +245,20 @@ export default function AgenteVozArticlePage() {
           <P>
             Clínicas que reciben un volumen alto de llamadas y notan que, en hora punta,
             algunas se quedan sin contestar. Clínicas que ya saben — o sospechan — que
-            pierden consultas por las noches o los fines de semana, ese 40% de llamadas que
-            llegan fuera de horario.
+            pierden consultas por las noches o los fines de semana, cuando el teléfono suena
+            y no hay nadie para cogerlo.
           </P>
           <P>
             Y también clínicas que detectan que algunos pacientes «se enfrían» entre que
             preguntan y que finalmente reservan — porque nadie les devolvió la llamada a
-            tiempo. La regla de los cinco minutos lo explica bien: un lead sin respuesta en
-            ese margen tiene hasta un 80% de probabilidades de perderse para siempre. Una
-            llamada que nadie coge es, exactamente, eso: cero minutos de respuesta.
+            tiempo. Una llamada que nadie coge es una consulta sin respuesta, y quien llama
+            puede probar directamente con la siguiente clínica de su lista.
           </P>
           <P>
             Y hay un efecto en cadena que muchas clínicas no ven hasta que lo miran de
             cerca: una relación que empieza con una llamada perdida o mal gestionada
-            también empieza más floja — y eso alimenta, con el tiempo, esa tasa de
-            no-shows del 12-19% que tanto cuesta reducir después.
+            también empieza más floja — y eso puede acabar notándose, con el tiempo, en
+            citas a las que el paciente no se presenta.
           </P>
 
           <H2>Cuánto cuesta y cuándo se amortiza</H2>

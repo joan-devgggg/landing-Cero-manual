@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Por qué WhatsApp funciona mejor que el SMS o el email para recordatorios?",
-    a: "Porque es donde tus pacientes ya están y donde realmente leen los mensajes. WhatsApp tiene una tasa de apertura del 95-98%, frente al 20-25% del email. El SMS queda en un punto intermedio, pero cada vez se confunde más con spam. Si el recordatorio no se lee, da igual lo bien redactado que esté.",
+    a: "Porque es donde tus pacientes ya están y donde realmente leen los mensajes: es una aplicación que miran a diario, mientras que el email se queda a menudo sin abrir entre promociones y newsletters. El SMS queda en un punto intermedio, pero cada vez se confunde más con spam. Si el recordatorio no se lee, da igual lo bien redactado que esté.",
   },
   {
     q: "¿Cuántos recordatorios debo enviar antes de cada cita?",
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto se reducen los no-shows con recordatorios automáticos por WhatsApp?",
-    a: "De media, un 40%. Si tu clínica tiene una tasa de no-shows del 12-19% — la media del sector —, automatizar los recordatorios por WhatsApp con confirmación activa suele reducir esa cifra de forma visible ya en las primeras semanas, sin que nadie de tu equipo tenga que cambiar su rutina.",
+    a: "Depende de cada clínica, y la forma fiable de saberlo es medirlo: apunta tu tasa de no-shows antes de activar los recordatorios y compárala con la de las semanas siguientes. Lo que más pesa es que el mensaje pida confirmación activa y que el paciente pueda avisar en la misma conversación si no va a venir, sin que nadie de tu equipo tenga que cambiar su rutina.",
   },
 ]
 
@@ -120,15 +120,15 @@ export default function RecordatoriosWhatsAppArticlePage() {
           {/* Intro */}
           <P>
             Si tu clínica todavía recuerda las citas con una llamada el día anterior — o
-            directamente no las recuerda —, estás dejando que entre el 12% y el 19% de tus
-            citas programadas se conviertan en huecos vacíos. La solución no es llamar más:
+            directamente no las recuerda —, estás dejando que parte de tus citas programadas
+            se conviertan en huecos vacíos. La solución no es llamar más:
             es elegir el canal correcto y automatizarlo.
           </P>
           <P>
             Ese canal es WhatsApp. No porque esté de moda, sino porque es donde tus pacientes
             ya están, donde abren los mensajes en minutos y donde les resulta natural
-            contestar. Bien configurado, un recordatorio por WhatsApp reduce los no-shows
-            hasta un 40%.
+            contestar. Bien configurado, un recordatorio por WhatsApp es de las formas más
+            sencillas de que menos pacientes falten a su cita.
           </P>
           <P>
             En esta guía vas a ver por qué WhatsApp gana al SMS y al email, qué tiene que
@@ -140,17 +140,17 @@ export default function RecordatoriosWhatsAppArticlePage() {
           <H2>Por qué WhatsApp funciona mejor que el SMS o el email para recordatorios</H2>
           <P>
             El canal que elijas para el recordatorio decide, antes que nada, si el mensaje se
-            va a leer. Y aquí los datos no dejan lugar a dudas: los mensajes de WhatsApp
-            tienen una tasa de apertura del 95-98%, frente al 20-25% del email.
+            va a leer. WhatsApp es una aplicación que tus pacientes abren a diario; el correo,
+            en cambio, se revisa cuando hay un rato y compite con promociones y newsletters.
           </P>
           <P>
-            Dicho de otra forma: si envías cien{" "}
+            Dicho de otra forma: de los{" "}
             <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
               recordatorios por email
             </InternalLink>
-            , unos setenta y cinco
-            no se van a abrir nunca. Si los envías por WhatsApp, prácticamente todos van a
-            llegar, abrirse y leerse — la mayoría en los primeros minutos.
+            , una parte se quedará sin abrir o se abrirá cuando ya no sirva. Por WhatsApp, el
+            aviso llega a la misma aplicación en la que el paciente habla con su familia y
+            sus amigos, y lo normal es que lo vea pronto.
           </P>
           <P>
             El SMS queda en un punto intermedio, pero cada vez se percibe más como spam y
@@ -210,9 +210,9 @@ export default function RecordatoriosWhatsAppArticlePage() {
           </P>
           <P>
             Los dos juntos cubren tanto el olvido planificable como el despiste del día a día,
-            y son la base sobre la que se sostiene{" "}
+            y son la base sobre la que se construye{" "}
             <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
-              esa reducción del 40% en no-shows
+              un plan para reducir los no-shows
             </InternalLink>
             .
           </P>
@@ -244,11 +244,11 @@ export default function RecordatoriosWhatsAppArticlePage() {
             <InternalLink href="/recordatorios-automaticos-citas">
               recordatorios automáticos para clínicas
             </InternalLink>{" "}
-            conectado a tu agenda, que detecta cada cita nueva y dispara los mensajes en el
-            momento exacto sin que nadie tenga que acordarse de nada.
+            que dispara los mensajes de cada cita en el momento exacto, sin que nadie tenga
+            que acordarse de nada.
           </P>
           <P>
-            El proceso, una vez configurado, es así: el sistema lee tu agenda, programa los
+            El proceso, una vez configurado, es así: el sistema programa los
             dos avisos (24h y 2h antes) para cada cita, envía el mensaje por WhatsApp con el
             tono y los datos de tu clínica, como haría un{" "}
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
@@ -296,7 +296,7 @@ export default function RecordatoriosWhatsAppArticlePage() {
               <InternalLink href="/recordatorios-automaticos-citas">
                 recordatorios automáticos para clínicas
               </InternalLink>{" "}
-              pueden recuperarlas desde la primera semana.
+              pueden recuperarlas.
             </p>
             <Link
               href="/recordatorios-automaticos-citas"

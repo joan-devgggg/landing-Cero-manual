@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Necesito conocimientos técnicos para usar IA en mi clínica?",
-    a: "No. Las herramientas de IA pensadas para clínicas — como un agente de WhatsApp o un sistema de recordatorios — se configuran una vez y funcionan solas a partir de ahí. No tienes que programar nada ni mantener ningún sistema: alguien lo configura por ti según cómo trabaja tu clínica, y tu equipo sigue usando WhatsApp y la agenda como ya hace.",
+    a: "No. Las herramientas de IA pensadas para clínicas — como un agente de WhatsApp o un sistema de recordatorios — se configuran una vez y funcionan solas a partir de ahí. No tienes que programar nada ni mantener ningún sistema: alguien lo configura por ti según cómo trabaja tu clínica, y tu equipo sigue atendiendo desde el mismo número de WhatsApp.",
   },
   {
     q: "¿La IA va a sustituir a mi equipo?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "¿Por dónde debería empezar a automatizar?",
-    a: "Por donde más dinero se está perdiendo en silencio: la atención fuera de horario. Casi un 40% de las consultas llegan cuando la clínica está cerrada, y si nadie responde, ese lead se va a la competencia. Empezar por un agente de WhatsApp que atienda 24/7 suele ser el cambio con el retorno más rápido y visible.",
+    a: "Por donde más dinero se está perdiendo en silencio: la atención fuera de horario. Una parte de las consultas llega cuando la clínica está cerrada, y si nadie responde, ese lead puede acabar en la competencia. Empezar por un agente de WhatsApp que atienda 24/7 suele ser el cambio con el retorno más rápido y visible.",
   },
   {
     q: "¿Cuánto tiempo se tarda en notar resultados?",
@@ -164,23 +164,21 @@ export default function InteligenciaArtificialArticlePage() {
             importante de los ingresos que se pierden sin que nadie se dé cuenta.
           </P>
           <P>
-            Vamos a verlas una por una, con los datos que explican por qué importan.
+            Vamos a verlas una por una, y por qué importa cada una.
           </P>
 
           <H2>Atención al cliente 24/7 sin contratar más personal</H2>
           <P>
-            Casi un 40% de las consultas que recibe una clínica estética llegan fuera de
-            horario: por la noche, en fin de semana, o mientras todo el equipo está
-            atendiendo a otro paciente. Si nadie responde a tiempo, esa persona escribe a
+            Las consultas no respetan el horario de la clínica: llegan por la noche, en fin
+            de semana, o mientras todo el equipo está atendiendo a otro paciente. Si nadie responde a tiempo, esa persona escribe a
             la siguiente clínica de su lista — y probablemente reserve allí.
           </P>
           <P>
             Un agente de WhatsApp con IA responde esas consultas al instante, a
             cualquier hora: explica tratamientos, da precios orientativos, resuelve
             dudas habituales y, si la persona está lista, puede agendar la cita
-            directamente. Todo por el canal donde ya están tus pacientes — los mensajes
-            de WhatsApp se leen entre un 95% y un 98% de las veces, frente al 20-25% del
-            email.
+            directamente. Todo por el canal donde ya están tus pacientes, sin pedirles que
+            llamen ni que rellenen un formulario.
           </P>
           <P>
             Esto no sustituye a tu recepcionista durante el horario de la clínica —
@@ -194,10 +192,10 @@ export default function InteligenciaArtificialArticlePage() {
 
           <H2>Automatizar citas y recordatorios con IA</H2>
           <P>
-            Entre el 12% y el 19% de las citas programadas en una clínica terminan en
-            ausencia — el paciente simplemente no aparece. Cada una de esas ausencias es
-            un hueco de agenda que nadie ocupa y que, sumado al final del mes, puede
-            representar miles de euros en ingresos perdidos.
+            Una parte de las citas programadas en cualquier clínica termina en ausencia —
+            el paciente simplemente no aparece. Cada una de esas ausencias es un hueco de
+            agenda que nadie ocupa y que, sumado al final del mes, se nota en la
+            facturación.
           </P>
           <P>
             La IA reduce esto con recordatorios que piden confirmación activa: en lugar
@@ -223,9 +221,9 @@ export default function InteligenciaArtificialArticlePage() {
           <P>
             Toda clínica tiene una lista de pacientes que vinieron una o varias veces y
             dejaron de venir, sin que pasara nada concreto — simplemente se fueron
-            espaciando las visitas hasta desaparecer. Cada uno de esos pacientes
-            representa, de media, un valor de vida (LTV) de alrededor de 3.000€ si
-            siguiera siendo cliente recurrente.
+            espaciando las visitas hasta desaparecer. Cada uno de esos pacientes podría
+            seguir siendo cliente recurrente, y cada visita que ya no hace es un ingreso que
+            la clínica deja de tener.
           </P>
           <P>
             La IA puede identificar a estos pacientes automáticamente — según cuánto
@@ -299,7 +297,7 @@ export default function InteligenciaArtificialArticlePage() {
               <InternalLink href="/agente-whatsapp-clinicas-esteticas">
                 agente de WhatsApp con IA
               </InternalLink>{" "}
-              puede empezar a recuperarlos desde la primera semana.
+              puede empezar a recuperarlos.
             </p>
             <Link
               href="/agente-whatsapp-clinicas-esteticas"

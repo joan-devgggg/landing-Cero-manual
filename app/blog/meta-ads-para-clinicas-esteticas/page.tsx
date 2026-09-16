@@ -5,7 +5,6 @@ import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import BlogTable from "@/components/BlogTable"
-import BlogSource from "@/components/BlogSource"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
@@ -39,15 +38,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cuánto presupuesto mínimo necesito para empezar con Meta Ads?",
-    a: "Para tener datos suficientes y que el algoritmo aprenda, lo recomendable es partir de 300-500€ al mes los primeros 30 días. Con menos presupuesto, el volumen de impresiones es demasiado bajo para que Meta optimice bien la entrega — y los resultados que ves no son representativos. A partir del segundo mes, puedes escalar en función del CPL que hayas conseguido.",
+    a: "No hay una cifra que valga para todas las clínicas. Lo que necesitas es un presupuesto que permita a Meta reunir datos durante la fase de aprendizaje: si el gasto es tan bajo que apenas hay impresiones ni conversaciones iniciadas, el algoritmo no llega a saber a quién mostrar el anuncio y los resultados de ese primer mes no son representativos. Una forma de fijarlo es pensar cuántos leads quieres que genere la campaña en ese periodo y multiplicarlo por el coste por lead que te puedes permitir. A partir de ahí, escalas o no en función del CPL que hayas conseguido.",
   },
   {
     q: "¿Qué hago si Meta bloquea mi anuncio?",
     a: "Lo primero es revisar el copy y los creativos: la mayoría de bloqueos en clínicas estéticas vienen de palabras o imágenes que Meta interpreta como publicidad de salud con afirmaciones implícitas. Evita términos como «pacientes», «tratamientos», «antes y después» o cualquier frase que sugiera un resultado garantizado. Reformula el copy en torno a la experiencia y el cuidado personal, y vuelve a enviar el anuncio a revisión.",
   },
   {
-    q: "¿Cuál es un CPL realista para clínicas estéticas con Meta Ads?",
-    a: "Bien segmentado y con copy que no infringe las políticas, el coste por lead se mueve entre 15€ y 40€ dependiendo del servicio, la zona geográfica y la competencia local. Tratamientos de ticket alto como blanqueamiento, depilación láser o mesoterapia suelen tener CPL en la parte alta, pero también un margen mayor para amortizarlo. El objetivo no es el lead más barato, sino el lead que convierte.",
+    q: "¿Qué CPL debería buscar mi clínica con Meta Ads?",
+    a: "El que salga de tus propios números, no el de otra clínica. Toma lo que te deja un tratamiento y divídelo entre los leads que necesitas para cerrar una cita de ese tratamiento: ese es el coste por lead máximo que puedes pagar sin perder dinero. Por eso un servicio con más margen admite un CPL más alto que uno de entrada. El coste real, además, cambia con el servicio que anuncias, la zona y la competencia local. El objetivo no es el lead más barato, sino el lead que convierte.",
   },
   {
     q: "¿Necesito una landing page especial para mis anuncios?",
@@ -125,8 +124,7 @@ export default function MetaAdsArticlePage() {
             Meta Ads — Facebook e Instagram — es hoy el canal de pago más rentable para
             clínicas estéticas con presupuesto ajustado. Ningún otro canal te permite llegar
             a personas con interés activo en estética, dentro de un radio de 10 kilómetros de
-            tu clínica, por un coste por lead de entre 15€ y 40€ cuando la campaña está bien
-            configurada.
+            tu clínica, sin que tengan que estar buscando nada en ese momento.
           </P>
           <P>
             El problema es que la mayoría de clínicas llegan a Meta Ads, invierten el primer
@@ -136,10 +134,9 @@ export default function MetaAdsArticlePage() {
               nadie responde a tiempo
             </InternalLink>
             . Buena parte de las consultas llega fuera del horario de
-            atención — y un lead que espera más de cinco minutos tiene un 80% de
-            probabilidades de no contestar cuando alguien le llame al día siguiente.
+            atención — y un lead que espera hasta el día siguiente puede no contestar
+            cuando alguien por fin le llame.
           </P>
-          <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
             En esta guía vas a ver por qué Meta Ads funciona especialmente bien para clínicas
             estéticas, cuál es el error que bloquea casi todos los anuncios, qué copy está
@@ -307,19 +304,20 @@ export default function MetaAdsArticlePage() {
           </P>
           <P>
             Para construirla necesitas exportar tu base de pacientes, y ahí es donde se nota
-            tener la ficha ordenada: desde Flowww, Koibox o Booksy puedes sacar el listado de
-            clientes reales y subirlo como audiencia de origen. Si vas a hacerlo, filtra por
+            tener la ficha ordenada: si el programa de gestión que usas te deja exportar el
+            listado de clientes reales, ese es el que subes como audiencia de origen. Filtra por
             quienes ya han pagado un tratamiento — una lista de curiosos que solo pidieron
             precio genera un lookalike igual de tibio que ellos.
           </P>
 
           <H2>Presupuesto mínimo y qué esperar los primeros 30 días</H2>
           <P>
-            El presupuesto mínimo razonable es de 300-500€ al mes, y lo que debes esperar
-            los primeros treinta días es aprendizaje, no rentabilidad. Con menos de esa
-            cifra el volumen de impresiones es demasiado bajo para que el algoritmo aprenda
-            qué tipo de usuario convierte mejor — y los resultados que ves no son
-            representativos de lo que podrías conseguir a pleno rendimiento.
+            No hay un presupuesto mínimo universal: el razonable es el que da a Meta datos
+            suficientes durante la fase de aprendizaje, y lo que debes esperar los primeros
+            treinta días es aprendizaje, no rentabilidad. Si el gasto se queda tan corto que
+            el volumen de impresiones apenas se mueve, el algoritmo no aprende qué tipo de
+            usuario convierte mejor — y los resultados que ves no son representativos de lo
+            que podrías conseguir a pleno rendimiento.
           </P>
           <P>
             Los primeros días son los más caros: Meta está explorando la audiencia, todavía
@@ -328,9 +326,11 @@ export default function MetaAdsArticlePage() {
             por resultado suele bajar.
           </P>
           <P>
-            Un CPL realista para clínicas estéticas bien segmentadas se mueve entre 15€ y
-            40€. Por debajo de 15€ o estás en una zona con muy poca competencia o el lead
-            no está suficientemente cualificado. Por encima de 40€ conviene revisar la
+            El CPL que puedes aceptar no lo marca una media del sector, lo marcan tus
+            números: lo que te deja un tratamiento, multiplicado por la proporción de leads
+            que acaban en cita, es lo máximo que puedes pagar por cada lead de ese servicio.
+            Si el CPL real sale sorprendentemente bajo, comprueba que los contactos estén
+            cualificados. Si se acerca a ese máximo o lo supera, conviene revisar la
             segmentación y el copy{" "}
             <InternalLink href="/blog/como-captar-clientes-clinica-estetica-sin-presupuesto">
               antes de escalar el presupuesto
@@ -345,8 +345,8 @@ export default function MetaAdsArticlePage() {
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
-            que responda y cualifique de forma automática puede doblar la tasa de conversión
-            de tus campañas sin cambiar un euro de presupuesto.
+            que responda y cualifique de forma automática evita que ese lead se enfríe mientras
+            espera, sin cambiar un euro de presupuesto de la campaña.
           </P>
         </article>
 

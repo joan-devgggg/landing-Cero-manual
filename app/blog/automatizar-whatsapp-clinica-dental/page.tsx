@@ -44,11 +44,11 @@ const faqs = [
   },
   {
     q: "¿Puede confirmar citas y avisar de cambios automáticamente?",
-    a: "Sí. El sistema puede enviar recordatorios antes de la cita, pedir confirmación y, si el paciente quiere cambiar o cancelar, gestionar ese cambio directamente por WhatsApp. Esto es precisamente lo que más reduce los no-shows, que en clínicas dentales suelen rondar el 12-19% de las citas.",
+    a: "Sí. El sistema puede enviar recordatorios antes de la cita, pedir confirmación y, si el paciente quiere cambiar o cancelar, gestionar ese cambio directamente por WhatsApp. Esto es precisamente lo que más ayuda con los no-shows: el paciente que no puede venir avisa en la misma conversación y el hueco queda libre con margen.",
   },
   {
     q: "¿Cuánto se tarda en tener esto funcionando en mi clínica?",
-    a: "Normalmente, días. Se configura con la información que ya tienes —tratamientos, horarios, política de citas— y se conecta a tu WhatsApp actual. No hace falta cambiar de herramientas ni que tu equipo aprenda un sistema nuevo y complejo.",
+    a: "Normalmente, días. Se configura con la información que ya tienes —tratamientos, horarios, política de citas— y se conecta al número de WhatsApp que ya tiene la clínica. Tu equipo no tiene que aprender un sistema complejo: solo entra cuando el agente le pasa una conversación que necesita a una persona.",
   },
 ]
 
@@ -119,14 +119,14 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
 
           {/* Intro */}
           <P>
-            Casi un 40% de las consultas que recibe una clínica dental llegan fuera de su
+            Una parte de las consultas que recibe una clínica dental llega fuera de su
             horario de atención: por la noche, en fin de semana, o en huecos del día en los
             que el equipo está con un paciente en el sillón y no puede mirar el móvil. Son
             personas que han decidido, justo en ese momento, escribir para preguntar por una
             revisión, un presupuesto o una urgencia.
           </P>
           <P>
-            Y WhatsApp es, hoy, el canal por el que la mayoría de pacientes{" "}
+            Y WhatsApp es, hoy, un canal por el que muchos pacientes{" "}
             <InternalLink href="/blog/whatsapp-para-clinicas-dentales">
               prefieren comunicarse con su clínica dental
             </InternalLink>
@@ -142,16 +142,15 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
 
           <H2>Por qué WhatsApp es el canal más importante para tu clínica dental</H2>
           <P>
-            Entre un 95% y un 98% de los mensajes de WhatsApp se leen, frente al 20-25% de un
-            email. Si quieres que un paciente vea tu recordatorio de cita, tu confirmación o
-            tu respuesta a su consulta, WhatsApp es, con diferencia, el canal con más
-            garantías de que el mensaje llegue y se lea.
+            WhatsApp es la aplicación que tus pacientes abren a lo largo del día, mientras que
+            un email puede pasar días sin abrirse. Si quieres que un paciente vea tu
+            recordatorio de cita, tu confirmación o tu respuesta a su consulta, WhatsApp es el
+            canal con más garantías de que el mensaje llegue y se lea.
           </P>
           <P>
-            A esto se suma la regla de los cinco minutos: un lead que no recibe respuesta en
-            ese margen tiene hasta un 80% de probabilidades de perderse para siempre. No
-            porque haya dejado de interesarle tu clínica, sino porque mientras esperaba ha
-            encontrado otra que sí le ha contestado.
+            A esto se suma la velocidad: un lead que no recibe respuesta pronto no pierde
+            necesariamente el interés por tu clínica, pero mientras espera puede encontrar
+            otra que sí le conteste.
           </P>
           <P>
             Para una clínica dental, donde buena parte de las consultas son sobre
@@ -178,9 +177,8 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
           <P>
             El sistema puede enviar recordatorios automáticos antes de cada cita, pedir
             confirmación y gestionar cambios o cancelaciones directamente por WhatsApp. Esto
-            es justo lo que reduce los no-shows, que en clínicas dentales suelen estar entre
-            el 12% y el 19% de las citas — un porcentaje que se nota mucho en la agenda y en
-            la facturación del mes.
+            es justo lo que reduce los no-shows, y cada uno que se evita se nota en la agenda
+            y en la facturación del mes.
           </P>
 
           <H3>Cualificar consultas antes de pasarlas al equipo</H3>
@@ -211,43 +209,40 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
               entiende la consulta y responde de forma natural
             </InternalLink>
             , igual que lo haría alguien de tu equipo con el móvil en la mano. Si la
-            persona quiere reservar, puede ofrecerle huecos reales de tu agenda y dejar la
-            cita puesta ahí mismo. Y si detecta algo que requiere trato humano, traspasa la
+            persona quiere reservar, puede ofrecerle los huecos libres y dejarle la cita
+            agendada en la misma conversación. Y si detecta algo que requiere trato humano, traspasa la
             conversación a tu equipo con todo el historial ya recogido.
           </P>
           <P>
             Para los recordatorios de citas, el proceso es igual de sencillo: el sistema
-            revisa la agenda, envía el recordatorio en el momento adecuado y gestiona la
+            envía el recordatorio de cada cita en el momento adecuado y gestiona la
             respuesta del paciente — confirmación, cambio o cancelación — sin que nadie tenga
             que hacer ese seguimiento a mano, llamada por llamada.
           </P>
 
           <H2>Qué necesitas para empezar</H2>
           <P>
-            Lo bueno de automatizar WhatsApp es que no requiere cambiar las herramientas que
-            ya usas. Necesitas, básicamente, el número de WhatsApp de la clínica, la
-            información sobre tratamientos, precios y horarios que ya manejas en el día a
-            día, y acceso a tu sistema de agenda para que las citas se reflejen en tiempo
-            real.
+            Para empezar no necesitas mucho: el número de WhatsApp Business de la clínica,
+            que sigue siendo el mismo, y la información sobre tratamientos, precios y horarios
+            que ya manejas en el día a día. Con eso se configura el agente, que deja las citas
+            en la agenda de su propio sistema.
           </P>
           <P>
-            No hace falta formar a todo el equipo en un sistema nuevo y complejo: la
-            automatización funciona en segundo plano, y tu equipo solo entra en juego cuando
-            el sistema le traspasa una conversación que necesita atención humana. El resto
-            sigue funcionando exactamente igual que antes, solo que sin huecos sin responder.
+            No hace falta formar a todo el equipo en un sistema complejo: la automatización
+            funciona en segundo plano, y tu equipo solo entra en juego cuando el sistema le
+            traspasa una conversación que necesita atención humana.
           </P>
 
           <H2>Cuánto cuesta y cuándo se amortiza</H2>
           <P>
             La pregunta importante no es cuánto cuesta automatizar WhatsApp, sino cuánto está
-            costando ya no hacerlo. Cada lead que no recibe respuesta en cinco minutos tiene
-            hasta un 80% de probabilidades de perderse — y cada cita que termina en no-show
-            (recuerda, entre el 12% y el 19% del total) es un hueco de agenda que no genera
-            ingresos pero que sí ha ocupado un espacio que otro paciente podría haber
-            ocupado.
+            costando ya no hacerlo. Cada lead que no recibe respuesta a tiempo puede acabar
+            en otra clínica — y cada cita que termina en no-show es un hueco de agenda que
+            no genera ingresos pero que sí ha ocupado un espacio que otro paciente podría
+            haber ocupado.
           </P>
           <P>
-            Sumando los leads fuera de horario que hoy se quedan sin respuesta —ese 40%— y
+            Sumando los leads fuera de horario que hoy se quedan sin respuesta y
             los no-shows que se reducen con recordatorios y confirmaciones automáticas, la
             inversión en automatizar WhatsApp suele amortizarse con muy pocas citas
             recuperadas al mes. A partir de ahí, el sistema sigue funcionando solo, mes tras
@@ -281,8 +276,8 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
               Es lo que hace el agente desde el primer día: contesta la consulta que entra a
-              las once, recoge qué necesita el paciente y deja la cita puesta en tu agenda
-              antes de que escriba a la clínica de al lado.
+              las once, recoge qué necesita el paciente y le deja la cita agendada antes de
+              que escriba a la clínica de al lado.
             </p>
             <Link
               href="/agente-whatsapp-clinicas-dentales"

@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
-import BlogSource from "@/components/BlogSource"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
@@ -48,7 +47,7 @@ const faqs = [
   },
   {
     q: "¿Merece la pena invertir en esto si mi clínica ya tiene buena reputación?",
-    a: "Sí, precisamente porque cuesta mucho menos cuidar a un paciente que ya confía en ti que conseguir uno nuevo. El valor de un cliente recurrente en una clínica estética puede rondar los 3.000€ a lo largo de su relación con el centro. Mejorar la experiencia no es un gesto bonito — es la forma más rentable de proteger esos ingresos.",
+    a: "Sí, precisamente porque cuesta mucho menos cuidar a un paciente que ya confía en ti que conseguir uno nuevo. Un cliente recurrente vuelve muchas veces a lo largo de su relación con el centro. Mejorar la experiencia no es un gesto bonito — es la forma más rentable de proteger esos ingresos.",
   },
   {
     q: "¿Cómo mejorar la atención al cliente sin contratar más personal?",
@@ -189,8 +188,8 @@ export default function ExperienciaPacienteArticlePage() {
             haya pisado la clínica, y ya está decidiendo si esta es la opción adecuada.
           </P>
           <P>
-            Aquí hay un dato que conviene tener en cuenta: hasta un 40% de las consultas de
-            pacientes potenciales llegan fuera del horario de atención. Si esas consultas se
+            Aquí hay un detalle que conviene tener en cuenta: los pacientes potenciales no
+            escriben solo en horario de atención. Si las consultas que llegan fuera de él se
             quedan sin respuesta hasta el día siguiente, la primera impresión que se lleva
             esa persona es la de una clínica que tarda en contestar — y eso, antes incluso
             de haber puesto un pie dentro, ya genera dudas.
@@ -198,9 +197,8 @@ export default function ExperienciaPacienteArticlePage() {
           <P>
             La reserva también cuenta. Si para pedir cita hay que llamar en horario de
             oficina o esperar a que alguien lea el mensaje, muchos pacientes abandonan por
-            el camino. Y la rapidez pesa más de lo que parece: la probabilidad de perder a
-            un paciente potencial que no recibe respuesta en los primeros cinco minutos es
-            del 80%. Por eso cada vez más clínicas{" "}
+            el camino. Y la rapidez pesa más de lo que parece: un paciente potencial que no
+            recibe respuesta pronto puede reservar en otra clínica mientras espera. Por eso cada vez más clínicas{" "}
             <InternalLink href="/blog/clinica-estetica-por-whatsapp">
               atienden a sus pacientes por WhatsApp
             </InternalLink>{" "}
@@ -210,7 +208,6 @@ export default function ExperienciaPacienteArticlePage() {
             </InternalLink>{" "}
             que responde al momento y deja la cita reservada.
           </P>
-          <BlogSource>MIT Lead Response Management Study</BlogSource>
 
           <H2>Durante la cita: el momento que más recuerdan</H2>
           <P>
@@ -234,12 +231,11 @@ export default function ExperienciaPacienteArticlePage() {
             cuando el paciente todavía tiene la experiencia fresca — para reforzar la relación.
           </P>
           <P>
-            Y ese seguimiento tiene un valor enorme: el de{" "}
+            Y ese seguimiento tiene mucho valor, porque{" "}
             <InternalLink href="/blog/como-fidelizar-pacientes-clinica-estetica">
               un cliente recurrente en una clínica estética
             </InternalLink>{" "}
-            puede rondar los 3.000€ a lo largo de su relación con el
-            centro. Un simple mensaje preguntando cómo se siente, o recordando la próxima
+            vuelve muchas veces a lo largo de su relación con el centro. Un simple mensaje preguntando cómo se siente, o recordando la próxima
             revisión, puede ser la diferencia entre que esa relación continúe o se apague
             sin que nadie se dé cuenta. Si quieres ver cómo recuperar a pacientes con los
             que ya se ha perdido ese contacto, en{" "}
@@ -261,9 +257,9 @@ export default function ExperienciaPacienteArticlePage() {
             adecuado, con el nombre del paciente y referencias a su tratamiento concreto.
           </P>
           <P>
-            El canal que mejor funciona para esto es WhatsApp: los mensajes se leen entre un
-            95% y un 98% de las veces, lo que significa que ese seguimiento que normalmente
-            no se hace por falta de tiempo, llega — y se lee. El equipo sigue dedicando su
+            El canal natural para esto es WhatsApp, porque es donde el paciente ya habla con
+            su clínica: ese seguimiento que normalmente no se hace por falta de tiempo le
+            llega en la misma conversación en la que pidió la cita. El equipo sigue dedicando su
             tiempo a lo que de verdad requiere su atención, mientras el sistema se encarga
             de que ningún paciente se sienta olvidado. Y cuando una consulta es compleja o
             emocional, el sistema la deriva a una persona del equipo, sin que el paciente

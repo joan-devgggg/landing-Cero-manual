@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cuál es el mejor CRM para una clínica dental pequeña?",
-    a: "No existe un «mejor CRM» universal: depende del volumen de consultas y del presupuesto. Para clínicas que reciben menos de 30 consultas al mes, suele bastar con un CRM genérico gratuito o de bajo coste (HubSpot, Zoho) bien configurado. Para clínicas con varios gabinetes o alto volumen, conviene valorar plataformas sectoriales pensadas para clínicas dentales, que ya incluyen gestión de tratamientos y agenda integrada.",
+    a: "No existe un «mejor CRM» universal: depende del volumen de consultas y del presupuesto. Para clínicas con poco volumen de consultas, suele bastar con un CRM genérico gratuito o de bajo coste bien configurado. Para clínicas con varios gabinetes o alto volumen, conviene valorar plataformas sectoriales pensadas para clínicas dentales, que ya incluyen gestión de tratamientos y agenda integrada.",
   },
   {
     q: "¿Es mejor un CRM genérico o uno específico para clínicas dentales?",
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tarda en amortizarse un CRM en una clínica dental?",
-    a: "Si el LTV de un paciente recurrente ronda los 3.000€, evitar perder solo dos o tres leads al mes por falta de seguimiento ya cubre el coste anual de casi cualquier CRM del mercado. El cálculo más útil antes de elegir es: cuántas consultas recibes al mes, cuántas se convierten en cita y cuántas se pierden simplemente por no responder a tiempo.",
+    a: "Depende de tus números. El cálculo más útil antes de elegir es: cuántas consultas recibes al mes, cuántas se convierten en cita, cuántas se pierden simplemente por no responder a tiempo y cuánto vale para tu clínica un paciente recurrente. Si los pacientes que el CRM te evita perder, multiplicados por ese valor, superan su coste anual, se amortiza.",
   },
 ]
 
@@ -126,7 +126,7 @@ export default function MejorCrmClinicasDentalesArticlePage() {
             tu clínica en concreto.
           </P>
           <P>
-            No es lo mismo una clínica unipersonal que recibe 15 consultas al mes que una con
+            No es lo mismo una clínica unipersonal con pocas consultas al mes que una con
             tres gabinetes y un equipo comercial dedicado a captación. El «mejor» CRM cambia
             según el tamaño, el volumen de leads y los procesos internos que ya tienes
             montados.
@@ -135,8 +135,8 @@ export default function MejorCrmClinicasDentalesArticlePage() {
             En este artículo vas a aprender qué es exactamente un CRM dental, qué
             funcionalidades son realmente imprescindibles (y cuáles son solo extras de
             marketing), cómo elegir entre un CRM genérico y uno específico del sector, qué
-            rango de precios manejar y cuándo conviene sumar automatización con IA para que
-            el CRM trabaje solo.
+            rango de precios manejar y cuándo conviene sumar automatización con IA para
+            atender lo que el CRM no contesta.
           </P>
 
           <H2>Qué es un CRM para clínicas dentales y para qué sirve</H2>
@@ -195,16 +195,15 @@ export default function MejorCrmClinicasDentalesArticlePage() {
           <P>
             Si un lead pide información sobre un presupuesto y no responde en 48 horas, el
             CRM debería poder enviar un recordatorio automático sin que nadie tenga que
-            acordarse. Esto es especialmente importante porque, según los datos del sector,
-            la probabilidad de perder un lead que no recibe respuesta en los primeros 5
-            minutos cae hasta un 80% — y ese margen de tiempo es casi imposible de cubrir solo
-            con personas.
+            acordarse. Esto es especialmente importante porque un lead que espera respuesta
+            puede acabar en otra clínica, y contestar al momento a todas horas es casi
+            imposible solo con personas.
           </P>
 
           <H3>Visibilidad sobre leads fuera de horario</H3>
           <P>
-            En clínicas dentales, alrededor del 40% de las consultas llegan fuera del horario
-            de atención: por la noche, en fin de semana o durante festivos. Un CRM que no
+            En clínicas dentales es habitual que entren consultas fuera del horario de
+            atención: por la noche, en fin de semana o durante festivos. Un CRM que no
             registra esas consultas hasta que alguien las revisa manualmente al día siguiente
             deja una ventana enorme para que el paciente potencial busque en otro sitio.
           </P>
@@ -212,8 +211,7 @@ export default function MejorCrmClinicasDentalesArticlePage() {
           <H2>CRM genérico vs CRM específico para clínicas: cuál elegir</H2>
           <P>
             Esta es la decisión que más confusión genera. Los CRM genéricos — HubSpot, Zoho,
-            Pipedrive, Freshsales — son herramientas potentes, con planes gratuitos o muy
-            económicos, pero no vienen configurados para el flujo de una clínica dental. Hay
+            Pipedrive, Freshsales — son herramientas potentes, pero no vienen configurados para el flujo de una clínica dental. Hay
             que crear los pipelines, los campos personalizados y las automatizaciones desde
             cero.
           </P>
@@ -243,17 +241,15 @@ export default function MejorCrmClinicasDentalesArticlePage() {
 
           <H2>Cuánto cuesta un CRM para clínicas dentales</H2>
           <P>
-            Los precios varían enormemente según el tipo de CRM y el número de usuarios. Un
-            CRM genérico en su plan gratuito o de entrada (HubSpot Starter, Zoho Bigin) puede
-            costar entre 0€ y 30€ al mes para equipos pequeños. Las versiones intermedias de
-            CRM genéricos con automatizaciones más avanzadas suelen estar entre 50€ y 100€ al
-            mes.
+            Los precios varían mucho según el tipo de CRM, el plan y el número de usuarios, y
+            cambian con frecuencia, así que no te damos rangos que mañana estén desfasados.
+            Algunos CRM genéricos tienen versión gratuita con límites; a partir de ahí, lo
+            normal es que el precio suba con los usuarios y las automatizaciones que actives.
           </P>
           <P>
-            Los CRM específicos para clínicas dentales, con gestión de tratamientos y agenda
-            integrada, suelen empezar en torno a 80-100€ al mes para una clínica pequeña y
-            pueden superar los 200-300€ al mes en clínicas con varios gabinetes o licencias
-            por profesional.
+            En los CRM específicos para clínicas dentales, pide precio para tu caso concreto:
+            número de gabinetes, profesionales y módulos que necesitas. Compara siempre con la
+            tarifa vigente en la web de cada proveedor el día que vayas a decidir.
           </P>
           <P>
             El error más habitual es comparar solo el precio mensual sin tener en cuenta el
@@ -262,10 +258,10 @@ export default function MejorCrmClinicasDentalesArticlePage() {
             uno específico, aunque su precio de etiqueta sea menor.
           </P>
 
-          <H2>Cuándo tiene sentido añadir automatización con IA al CRM</H2>
+          <H2>Cuándo tiene sentido sumar automatización con IA</H2>
           <P>
-            Un CRM, por sí solo, sigue siendo una herramienta pasiva: organiza la información,
-            pero no actúa. La{" "}
+            Un CRM organiza la información y puede automatizar tareas de seguimiento, pero
+            alguien tiene que contestar a los leads cuando escriben. La{" "}
             <InternalLink href="/blog/automatizacion-clinicas-dentales">
               automatización con IA
             </InternalLink>{" "}
@@ -273,17 +269,16 @@ export default function MejorCrmClinicasDentalesArticlePage() {
             momentos donde el equipo humano no puede estar disponible.
           </P>
           <P>
-            El ejemplo más claro es el de las consultas fuera de horario. Si el 40% de las
-            consultas llegan de noche o en fin de semana, y la probabilidad de perder un lead
-            sin respuesta en 5 minutos es del 80%, cualquier CRM — por bueno que sea — pierde
-            efectividad si nadie puede responder a esas horas.
+            El ejemplo más claro es el de las consultas fuera de horario. Si una parte de las
+            consultas llega de noche o en fin de semana y nadie puede responder a esas horas,
+            el CRM las registra, pero la respuesta llega tarde.
           </P>
           <P>
-            Un agente con IA conectado al CRM puede responder esas consultas al instante,
-            hacer las preguntas de cualificación necesarias y registrar toda la conversación
-            para que el equipo la encuentre lista al llegar por la mañana. El CRM deja de ser
-            solo un archivo de leads y se convierte en un sistema que sigue trabajando
-            mientras la clínica está cerrada.
+            Un agente con IA en WhatsApp puede responder esas consultas al instante, resolver
+            las dudas habituales, dejar la cita agendada si el paciente ya lo tiene claro y
+            pasar a una persona del equipo lo que necesite atención humana. Así, lo que llega
+            con la clínica cerrada no se queda esperando a que alguien mire el móvil por la
+            mañana.
           </P>
           <P>
             Si tu clínica todavía no tiene CRM, o tiene uno pero los leads fuera de horario se
@@ -293,9 +288,8 @@ export default function MejorCrmClinicasDentalesArticlePage() {
             <InternalLink href="/blog/crm-para-clinicas-esteticas">
               CRM para clínicas estéticas
             </InternalLink>{" "}
-            se explica con más detalle cómo se combinan ambas piezas — y cómo, con un LTV
-            medio de 3.000€ por cliente recurrente, evitar perder solo un par de leads al mes
-            ya justifica la inversión.
+            se explica con más detalle cómo se combinan ambas piezas y cómo calcular, con tus
+            números, si la inversión te compensa.
           </P>
         </article>
 
@@ -320,8 +314,8 @@ export default function MejorCrmClinicasDentalesArticlePage() {
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
               Antes de cambiar de herramienta, mira qué hay dormido en tu base de datos
-              actual. La reactivación automática detecta a los pacientes que dejaron de venir
-              y les escribe por WhatsApp, sin migrar nada.
+              actual. La reactivación automática escribe por WhatsApp a los pacientes que
+              dejaron de venir.
             </p>
             <Link
               href="/reactivacion-pacientes-inactivos"

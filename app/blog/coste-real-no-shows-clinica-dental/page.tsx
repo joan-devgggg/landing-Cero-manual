@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cómo sé cuántos no-shows tiene realmente mi clínica dental?",
-    a: "Lo más sencillo es revisar la agenda de los últimos dos o tres meses y contar cuántas citas se marcaron como \"no asistió\" o quedaron simplemente vacías sin aviso previo. Divide ese número entre el total de citas programadas en el mismo periodo y obtendrás tu porcentaje real. La mayoría de clínicas dentales en España se mueven entre el 12% y el 19%, así que si tu cifra está en ese rango o por encima, hay margen claro de mejora.",
+    a: "Lo más sencillo es revisar la agenda de los últimos dos o tres meses y contar cuántas citas se marcaron como \"no asistió\" o quedaron simplemente vacías sin aviso previo. Divide ese número entre el total de citas programadas en el mismo periodo y obtendrás tu porcentaje real. Ese dato vale más que cualquier media que leas por ahí, porque refleja a tus pacientes y tu forma de gestionar la agenda, y es el punto de partida para comprobar si lo que cambies funciona.",
   },
   {
     q: "¿El coste de un no-show es solo lo que se hubiera facturado en esa cita?",
@@ -44,11 +44,11 @@ const faqs = [
   },
   {
     q: "¿Cuánto puede llegar a perder al mes una clínica dental por no-shows?",
-    a: "Depende del tamaño de la clínica, del número de sillones y del precio medio de las citas, pero en clínicas dentales de tamaño medio las estimaciones del sector hablan de pérdidas que pueden llegar hasta los 7.500€ al mes solo por huecos de agenda que se quedan vacíos sin aviso. En clínicas más pequeñas la cifra es menor, pero el impacto proporcional sobre la facturación mensual puede ser igual o más significativo.",
+    a: "Depende del tamaño de la clínica, del número de sillones y del precio medio de las citas, así que una cifra general te dirá poco de tu caso. Lo fiable es hacer la cuenta: citas al día × días laborables del mes × tu tasa de no-shows × tu precio medio por cita. En clínicas más pequeñas el resultado es menor, pero el impacto proporcional sobre la facturación mensual puede ser igual o más significativo.",
   },
   {
-    q: "¿Realmente los recordatorios automáticos reducen tanto los no-shows?",
-    a: "Sí, y la diferencia es medible. Los datos del sector indican que los recordatorios automáticos por WhatsApp pueden reducir los no-shows hasta en un 40%, gracias en parte a que la tasa de apertura de WhatsApp está entre el 95% y el 98%, muy por encima de un SMS o una llamada que no se contesta. Aplicado a las cifras anteriores, eso significa recuperar una parte muy relevante de esos huecos perdidos cada mes, sin cambiar nada más en la forma de trabajar de la clínica.",
+    q: "¿Realmente los recordatorios automáticos reducen los no-shows?",
+    a: "Atacan la causa más habitual, que es el olvido. Un recordatorio por WhatsApp llega a la aplicación que el paciente usa a diario y le pide que confirme o cambie la cita, así que muchas ausencias se convierten en avisos con margen para reaccionar, algo que no consigue un SMS que nadie lee o una llamada que no se contesta. Cuánto baja tu tasa depende de tus pacientes y de tu agenda: la forma de saberlo es medirla antes de empezar y volver a medirla unos meses después, con el mismo cálculo de este artículo.",
   },
 ]
 
@@ -128,8 +128,8 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
           <P>
             En este artículo vas a aprender qué costes directos genera cada no-show, qué costes
             indirectos no se ven a simple vista pero también duelen, cómo calcular tu pérdida
-            real con tus propios números, cuánto pierden de media las clínicas dentales en
-            España, y qué puedes hacer para reducir ese coste ya desde el primer mes.
+            real con tus propios números, de qué depende que esa cifra sea mayor o menor, y qué
+            puedes hacer para reducirlo.
           </P>
 
           <H2>Qué costes directos genera un no-show en una clínica dental</H2>
@@ -145,10 +145,9 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
             pierde igual que si la clínica hubiera estado cerrada esa hora.
           </P>
           <P>
-            Con una tasa de no-shows que en clínicas dentales se mueve habitualmente entre el 12%
-            y el 19% de las citas programadas, estos costes directos no son un caso aislado:
-            ocurren todas las semanas, en mayor o menor medida, en prácticamente cualquier
-            clínica que no tenga un sistema activo para evitarlo.
+            Estos costes directos tampoco son un caso aislado: se repiten semana tras semana, en
+            mayor o menor medida, en cualquier clínica que no tenga un sistema activo para
+            evitarlo.
           </P>
 
           <H2>Qué costes indirectos no se ven pero también duelen</H2>
@@ -183,11 +182,10 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
           </P>
           <P>
             La fórmula es: <strong>número de no-shows al mes × precio medio de la cita = pérdida
-            directa mensual</strong>. Por ejemplo, una clínica con 25 citas diarias, 5 días a la
-            semana, y una tasa de no-shows del 15%, tiene aproximadamente 18-19 no-shows a la
-            semana. Si el precio medio de cita es de 70€, eso son más de 1.300€ a la semana, o más
-            de 5.000€ al mes, solo en pérdida directa —sin contar el coste de oportunidad de no
-            haber podido cubrir esos huecos con otros pacientes.
+            directa mensual</strong>. Si no llevas la cuenta de los no-shows, puedes estimarlos
+            así: citas al día × días laborables del mes × tu tasa de no-shows. Ese número,
+            multiplicado por tu precio medio, es tu pérdida directa —sin contar todavía el coste
+            de oportunidad de no haber podido cubrir esos huecos con otros pacientes.
           </P>
           <P>
             Este número es el que conviene tener siempre presente, porque es el que justifica
@@ -196,13 +194,12 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
             inmediato.
           </P>
 
-          <H2>Cuánto pierden de media las clínicas dentales en España</H2>
+          <H2>De qué depende cuánto pierde tu clínica dental</H2>
           <P>
-            Aplicando este cálculo a clínicas dentales de tamaño medio en España —entre 1 y 3
-            sillones, con una agenda razonablemente ocupada—, las estimaciones del sector apuntan
-            a pérdidas que pueden llegar hasta los <strong>7.500€ al mes</strong> únicamente por
-            no-shows no gestionados, sumando el coste directo y el coste de oportunidad de los
-            huecos no recuperados.
+            Una cifra media de pérdidas por no-shows sirve de poco, porque la cuenta cambia
+            mucho de una clínica a otra: influyen el número de sillones, lo llena que esté la
+            agenda, el tipo de tratamientos y su precio. Por eso conviene fiarse más del cálculo
+            anterior, hecho con tus datos, que de cualquier estimación general.
           </P>
           <P>
             En clínicas más pequeñas, con una sola consulta, la cifra absoluta es menor, pero el
@@ -215,22 +212,20 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
             tiene o no un proceso activo para reducirlos.
           </P>
 
-          <H2>Cómo reducir ese coste desde el primer mes</H2>
+          <H2>Cómo reducir ese coste</H2>
           <P>
             La palanca más rápida y con mejor retorno es el{" "}
             <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
               recordatorio automático antes de la cita
             </InternalLink>
-            . Según los datos del sector, los recordatorios automáticos por WhatsApp pueden
-            reducir los no-shows hasta en un 40%, gracias a que la tasa de apertura de WhatsApp
-            está entre el 95% y el 98% —muy por encima de un SMS que muchas veces ni se llega a
-            leer.
+            . Por WhatsApp, el aviso llega a la aplicación que el paciente abre a lo largo del
+            día y le pide que confirme o cambie la cita —algo que no consigue un SMS que muchas
+            veces ni se llega a leer.
           </P>
           <P>
-            Aplicado a la cifra de pérdida real que has calculado en el apartado anterior, una
-            reducción del 40% en los no-shows se traduce directamente en recuperar buena parte de
-            ese importe cada mes, sin necesidad de captar un solo paciente nuevo: simplemente
-            aprovechando mejor la agenda que ya tienes.
+            Sobre la pérdida real que has calculado en el apartado anterior, cada no-show que se
+            evita es una cita que vuelve a facturarse, sin necesidad de captar un solo paciente
+            nuevo: simplemente aprovechando mejor la agenda que ya tienes.
           </P>
           <P>
             Puedes ver con más detalle cómo se configura este tipo de sistema, qué mensajes
@@ -239,7 +234,7 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
               cómo reducir los no-shows en una clínica dental
             </InternalLink>
             . Calcular tu pérdida real es el primer paso; el segundo es poner en marcha el sistema
-            que la reduce desde el primer mes, como se explica en{" "}
+            que la reduce, como se explica en{" "}
             <InternalLink href="/blog/como-reducir-no-shows-clinica-dental">
               esa misma guía
             </InternalLink>

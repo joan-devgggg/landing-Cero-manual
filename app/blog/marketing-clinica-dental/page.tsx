@@ -7,7 +7,6 @@ import ServiceFAQ from "@/components/ServiceFAQ"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
-import BlogSource from "@/components/BlogSource"
 import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/marketing-clinica-dental"
@@ -48,7 +47,7 @@ const faqs = [
   },
   {
     q: "¿Cómo sé si estoy perdiendo pacientes por no responder a tiempo?",
-    a: "Una señal clara es revisar cuántos mensajes o llamadas de WhatsApp, Instagram o el formulario web quedan sin respuesta durante más de unas horas. Si tu equipo solo puede atender en horario de clínica, es muy probable que estés perdiendo el 40% de las consultas que llegan fuera de ese horario — y hasta un 80% de probabilidad de perder un lead si tarda más de 5 minutos en recibir respuesta.",
+    a: "Una señal clara es revisar cuántos mensajes o llamadas de WhatsApp, Instagram o el formulario web quedan sin respuesta durante más de unas horas. Si tu equipo solo puede atender en horario de clínica, es muy probable que estés perdiendo parte de las consultas que llegan fuera de ese horario, porque quien espera respuesta puede acabar pidiendo cita en otra clínica.",
   },
   {
     q: "¿Hace falta un presupuesto grande para conseguir pacientes nuevos?",
@@ -211,12 +210,10 @@ export default function MarketingClinicaDentalArticlePage() {
           </P>
           <P>
             El problema no suele estar en atraer estos clics, sino en lo que pasa después:
-            si alguien hace clic, escribe por WhatsApp o rellena un formulario y tarda más de
-            5 minutos en recibir respuesta, la probabilidad de perder ese lead llega hasta el
-            80%. Todo el esfuerzo y el presupuesto invertido en aparecer en Google se pierde
+            si alguien hace clic, escribe por WhatsApp o rellena un formulario y tarda en
+            recibir respuesta, puede acabar pidiendo cita en otra clínica. Todo el esfuerzo y el presupuesto invertido en aparecer en Google se pierde
             en los últimos metros.
           </P>
-          <BlogSource>MIT Lead Response Management Study</BlogSource>
 
           <H2>Redes sociales para clínicas dentales: qué funciona y qué no</H2>
           <P>
@@ -241,13 +238,13 @@ export default function MarketingClinicaDentalArticlePage() {
           <H2>WhatsApp como canal de conversión</H2>
           <P>
             De todos los canales, WhatsApp es donde se decide si un contacto se convierte en
-            paciente o no. Con una tasa de apertura del 95-98% —muy por encima del 20-25% del
-            email—, es el canal donde los pacientes esperan una respuesta prácticamente
-            inmediata, sea cual sea la hora.
+            paciente o no. Es una aplicación que los pacientes miran a diario y, justo por
+            eso, el canal donde esperan una respuesta prácticamente inmediata, sea cual sea
+            la hora.
           </P>
           <P>
-            Y ahí está el problema para muchas clínicas: hasta un 40% de las consultas llegan
-            fuera del horario de atención, por la noche o en fin de semana. Si nadie del
+            Y ahí está el problema para muchas clínicas: las consultas no respetan el horario
+            de atención y llegan también por la noche o en fin de semana. Si nadie del
             equipo puede contestar en ese momento, el paciente —que probablemente esté
             comparando varias clínicas a la vez— sigue buscando hasta que alguien le responda.
           </P>

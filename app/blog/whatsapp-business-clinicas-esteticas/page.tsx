@@ -13,7 +13,7 @@ const PATH = "/blog/whatsapp-business-clinicas-esteticas"
 const DATES = articleDates("whatsapp-business-clinicas-esteticas")
 const TITLE = "WhatsApp Business para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "WhatsApp Business es la herramienta más usada en clínicas estéticas. Te explicamos cómo configurarlo bien y cuándo automatizarlo con IA. Descúbrelo aquí."
+  "WhatsApp Business para clínicas estéticas: cómo configurarlo bien, qué límites tiene usarlo a mano y cuándo tiene sentido automatizarlo con IA."
 const HEADLINE =
   "WhatsApp Business para clínicas estéticas: cómo configurarlo y cuándo automatizarlo"
 
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "¿Por qué WhatsApp es tan importante para una clínica estética?",
-    a: "Porque es donde están tus pacientes. Los mensajes de WhatsApp tienen una tasa de apertura del 95-98%, muy por encima de cualquier otro canal. Además, hasta un 40% de las consultas llegan fuera del horario de la clínica — y si alguien no recibe respuesta en los primeros 5 minutos, la probabilidad de perder ese lead puede llegar al 80%.",
+    a: "Porque es donde están tus pacientes: escriben a su clínica igual que escriben a cualquiera, sin buscar un teléfono ni rellenar un formulario. Además, esos mensajes llegan también fuera del horario de la clínica — y quien no recibe respuesta pronto puede acabar escribiendo a otra.",
   },
   {
     q: "¿Puedo seguir usando WhatsApp Business app si ya me funciona bien?",
@@ -192,16 +192,16 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
             todo.
           </P>
           <P>
-            Hasta un 40% de las consultas de una clínica llegan fuera del horario habitual
-            de atención. Si nadie puede responder en ese momento, esos mensajes se quedan
+            Y las consultas no esperan a que la clínica abra: también llegan fuera del
+            horario habitual de atención. Si nadie puede responder en ese momento, esos mensajes se quedan
             en espera hasta el día siguiente — y para entonces, una parte de esos pacientes
             ya ha escrito a otra clínica.
           </P>
           <P>
-            El dato que más debería preocupar es este: si un lead no recibe respuesta en
-            los primeros 5 minutos, la probabilidad de perderlo puede llegar al 80%. Por
-            muy bien organizado que esté tu equipo, es prácticamente imposible garantizar
-            ese tiempo de respuesta las 24 horas del día con una sola persona pendiente del
+            Lo que más debería preocupar es la velocidad: quien escribe a una clínica puede
+            estar escribiendo también a otras, y la que contesta antes tiene ventaja. Por muy bien
+            organizado que esté tu equipo, es prácticamente imposible contestar al momento
+            las 24 horas del día con una sola persona pendiente del
             móvil.
           </P>
 

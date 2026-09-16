@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tiempo se tarda en ver resultados de una campaña de reactivación?",
-    a: "Normalmente, los primeros resultados se ven en cuestión de días: las respuestas a un mensaje de WhatsApp suelen llegar rápido, dado que se lee entre un 95% y un 98% de las veces. A partir de ahí, convertir esas respuestas en citas es un proceso natural — no hace falta esperar semanas para empezar a notar el efecto en tu agenda.",
+    a: "Normalmente, los primeros resultados se ven en cuestión de días: las respuestas a un mensaje de WhatsApp suelen llegar rápido, porque el mensaje aparece en la misma aplicación donde la persona habla con los suyos. A partir de ahí, convertir esas respuestas en citas es un proceso natural — no hace falta esperar semanas para empezar a notar el efecto en tu agenda.",
   },
 ]
 
@@ -158,9 +158,8 @@ export default function ReactivarPacientesArticlePage() {
           <H2>Por qué el email de reactivación no funciona</H2>
           <P>
             El email es la opción a la que casi todo el mundo recurre primero — y la que
-            peor rinde. Una campaña de reactivación por email tiene, de media, entre un 20%
-            y un 25% de probabilidades de ser siquiera abierta. El resto se queda esperando
-            en{" "}
+            peor rinde. Un email de reactivación compite con todo lo demás que llega al
+            correo, y es fácil que ni siquiera se abra: se queda esperando en{" "}
             <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
               una bandeja de entrada saturada de promociones
             </InternalLink>
@@ -176,15 +175,14 @@ export default function ReactivarPacientesArticlePage() {
 
           <H2>WhatsApp como canal de reactivación: por qué funciona</H2>
           <P>
-            Aquí el contraste es enorme: mientras el email se queda entre el 20% y el 25%
-            de aperturas, los mensajes de WhatsApp se leen entre un 95% y un 98% de las
-            veces — y, además, casi siempre en los primeros minutos. No es un canal que la
-            gente revise «cuando tenga un rato»: es un canal que revisa varias veces por
-            hora, casi por instinto.
+            Con WhatsApp la situación cambia: es la aplicación donde tus pacientes hablan a
+            diario con su familia y sus amigos, y el mensaje de su clínica aparece entre esas
+            conversaciones, no enterrado entre promociones. No es un canal que la gente
+            revise «cuando tenga un rato»: lo tiene a mano durante todo el día.
           </P>
           <P>
-            Y hay otra ventaja silenciosa: igual que ocurre con las consultas nuevas —
-            donde casi un 40% llegan fuera del horario de la clínica —, los{" "}
+            Y hay otra ventaja silenciosa: igual que las consultas nuevas pueden atenderse
+            aunque lleguen fuera del horario de la clínica, los{" "}
             <InternalLink href="/blog/inteligencia-artificial-clinicas-esteticas">
               mensajes de reactivación
             </InternalLink>{" "}
@@ -229,18 +227,17 @@ export default function ReactivarPacientesArticlePage() {
             <InternalLink href="/blog/como-fidelizar-pacientes-clinica-estetica">
               valor de un cliente recurrente
             </InternalLink>{" "}
-            en una clínica suele rondar los 3.000€ a lo largo de su relación con
-            el centro — entre tratamientos, revisiones y todo lo que viene después de la
-            primera visita. Eso significa que cada paciente inactivo que se reactiva no es
-            una cita suelta: es, potencialmente, esa cifra completa volviendo a estar sobre
-            la mesa.
+            en tu clínica sale de multiplicar tu ticket medio por las visitas que hace a lo
+            largo de su relación con el centro — entre tratamientos, revisiones y todo lo que
+            viene después de la primera visita. Eso significa que cada paciente inactivo que
+            se reactiva no es una cita suelta: es, potencialmente, todo ese valor volviendo a
+            estar sobre la mesa.
           </P>
           <P>
             Y no hace falta reactivar a cientos para que el efecto se note. Recuperar a un
             puñado de pacientes al mes — personas que ya conocían tu clínica, que ya
             confiaban en ella y que solo necesitaban un empujón en el momento adecuado —
-            puede suponer varios miles de euros en ingresos que, hoy, simplemente no están
-            entrando. Si quieres calcular esa cifra con tus propios números, en{" "}
+            son ingresos que, hoy, simplemente no están entrando. Si quieres calcular esa cifra con tus propios números, en{" "}
             <InternalLink href="/reactivacion-pacientes-inactivos">
               reactivación de pacientes inactivos
             </InternalLink>{" "}

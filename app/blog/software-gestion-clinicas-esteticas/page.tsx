@@ -10,13 +10,14 @@ import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
 import InternalLink from "@/components/blog/InternalLink"
+import ExternalLink from "@/components/blog/ExternalLink"
 import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/software-gestion-clinicas-esteticas"
 const DATES = articleDates("software-gestion-clinicas-esteticas")
 const TITLE = "Software de gestión para clínicas estéticas: qué necesitas realmente | Cero Manual"
 const DESCRIPTION =
-  "Hay miles de programas para centros de estética. Te explicamos qué necesitas de verdad según el tamaño y el momento de tu clínica. Pide tu diagnóstico gratis."
+  "Qué software de gestión para clínicas estéticas necesitas de verdad según el tamaño y el momento de tu clínica, y por dónde empezar sin pagar herramientas de más."
 const HEADLINE =
   "Software de gestión para clínicas estéticas: qué necesitas realmente y por dónde empezar"
 
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Qué software necesita una clínica estética pequeña que está empezando?",
-    a: "Si la clínica está empezando, lo más importante es tener un sistema de citas online que evite confusiones de agenda y, si es posible, recordatorios automáticos para reducir las ausencias. No hace falta un CRM completo ni herramientas de automatización avanzada desde el primer día: lo prioritario es tener la agenda ordenada y accesible. Con una plataforma ligera de reserva online tipo Booksy suele bastar durante los primeros meses, y el coste se mueve en el entorno de los 10-30€ al mes. El momento de dar el salto a algo más completo llega cuando empiezas a necesitar ficha de tratamientos, fotos de seguimiento o consentimientos — no antes. Lo que no conviene es empezar por el CRM sin tener la agenda ordenada: acabas con una base de datos que nadie actualiza.",
+    a: "Si la clínica está empezando, lo más importante es tener un sistema de citas online que evite confusiones de agenda y, si es posible, recordatorios automáticos para reducir las ausencias. No hace falta un CRM completo ni herramientas de automatización avanzada desde el primer día: lo prioritario es tener la agenda ordenada y accesible. Con una plataforma ligera de reserva online tipo Booksy suele bastar durante los primeros meses. El momento de dar el salto a algo más completo llega cuando empiezas a necesitar ficha de tratamientos, fotos de seguimiento o consentimientos — no antes. Lo que no conviene es empezar por el CRM sin tener la agenda ordenada: acabas con una base de datos que nadie actualiza.",
   },
   {
     q: "¿Necesito un software complicado para tener una agenda online?",
@@ -51,11 +52,11 @@ const faqs = [
   },
   {
     q: "¿Cuántas herramientas de software necesita realmente una clínica?",
-    a: "Depende del tamaño, pero la mayoría de clínicas estéticas funcionan bien con tres piezas: un sistema de agenda/citas, un canal de comunicación automatizado con pacientes (normalmente WhatsApp) y, opcionalmente, un CRM si el volumen de pacientes lo justifica. Más allá de eso, cada herramienta adicional debería resolver un problema concreto, no añadirse \"por si acaso\". En la práctica, muchas plataformas del sector como Koibox o Flowww ya integran agenda y ficha de paciente en una sola suscripción, así que esas tres piezas no siempre significan tres facturas distintas. La señal de que sobra software es sencilla: si hay datos del mismo paciente en dos sitios y nadie sabe cuál es el bueno, tienes una herramienta de más.",
+    a: "Depende del tamaño, pero muchas clínicas estéticas funcionan bien con tres piezas: un sistema de agenda/citas, un canal de comunicación automatizado con pacientes (normalmente WhatsApp) y, opcionalmente, un CRM si el volumen de pacientes lo justifica. Más allá de eso, cada herramienta adicional debería resolver un problema concreto, no añadirse \"por si acaso\". En la práctica, plataformas del sector como Koibox o Flowww, según sus webs a 16 de septiembre de 2026, ya reúnen agenda y ficha de cliente en la misma herramienta, así que esas tres piezas no siempre significan tres facturas distintas. La señal de que sobra software es sencilla: si hay datos del mismo paciente en dos sitios y nadie sabe cuál es el bueno, tienes una herramienta de más.",
   },
   {
     q: "¿Cuándo tiene sentido añadir automatización con inteligencia artificial?",
-    a: "Tiene sentido cuando la clínica ya tiene la agenda y los procesos básicos ordenados, pero el equipo no da abasto respondiendo consultas o hace seguimiento de pacientes de forma irregular. En ese punto, añadir un agente de WhatsApp con IA permite responder consultas, agendar citas y hacer seguimiento sin sumar carga de trabajo al equipo ni contratar más personal. Al revés no funciona: automatizar sobre una agenda desordenada solo multiplica el desorden más rápido, así que la base va primero. La buena noticia es que esta capa se añade encima del software que ya usas, conectándose con tu calendario y tu WhatsApp, sin obligarte a migrar nada ni a formar al equipo en una herramienta nueva.",
+    a: "Tiene sentido cuando la clínica ya tiene la agenda y los procesos básicos ordenados, pero el equipo no da abasto respondiendo consultas o hace seguimiento de pacientes de forma irregular. En ese punto, añadir un agente de WhatsApp con IA permite responder consultas, agendar citas y hacer seguimiento sin sumar carga de trabajo al equipo ni contratar más personal. Al revés no funciona: automatizar sobre una agenda desordenada solo multiplica el desorden más rápido, así que la base va primero. Además, el agente trabaja sobre el número de WhatsApp Business que la clínica ya tiene, así que tus pacientes siguen escribiendo al mismo número de siempre.",
   },
 ]
 
@@ -197,7 +198,7 @@ export default function SoftwareGestionClinicasArticlePage() {
           <P>
             El software de citas se centra en la agenda: qué huecos hay disponibles, quién
             tiene cita y cuándo, y permite que el paciente reserve sin tener que llamar.
-            Plataformas de reserva online como Booksy cubren bien esta parte.
+            Plataformas de reserva online como Booksy están pensadas para esta parte.
           </P>
           <P>
             Un CRM (Customer Relationship Management) va un paso más allá: guarda el historial
@@ -226,32 +227,55 @@ export default function SoftwareGestionClinicasArticlePage() {
             <InternalLink href="/blog/software-gestion-citas-clinica-estetica">
               software de citas
             </InternalLink>{" "}
-            no sustituye a un CRM, y ninguno de los dos contesta a nadie por su cuenta:
+            no sustituye a un CRM, y la conversación con el paciente es una tercera capa, que
+            algunos programas ya cubren en parte y que también se puede añadir aparte:
           </P>
 
           <BlogTable
-            headers={["Tipo", "Pregunta que responde", "Qué NO hace", "Ejemplo de herramienta"]}
+            headers={["Tipo", "Pregunta que responde", "En qué se centra", "Ejemplo de herramienta"]}
             rows={[
               [
                 "Software de citas y agenda",
                 "«¿Qué hay que hacer hoy y a qué hora?»",
-                "No sabe quién dejó de venir ni por qué",
+                "Que el paciente reserve online y la agenda esté siempre al día",
                 "Booksy, Treatwell",
               ],
               [
                 "CRM o ficha de paciente",
                 "«¿Quién es este paciente y qué sabemos de él?»",
-                "Guarda el dato, pero no contacta a nadie por su cuenta",
+                "Guardar la ficha y el historial de cada paciente para hacer seguimiento",
                 "Flowww, Koibox",
               ],
               [
                 "Automatización con IA",
                 "«¿Quién se encarga de esto si no hay nadie disponible?»",
-                "No sustituye a la agenda ni a la ficha: se apoya en ellas",
-                "Agente de WhatsApp conectado a tu calendario",
+                "Mantener la conversación por WhatsApp: resolver dudas, dejar la cita reservada y pasar a una persona los casos delicados",
+                "Agente de WhatsApp con IA",
               ],
             ]}
           />
+          <P>
+            Las fronteras entre capas no son estrictas. Koibox anuncia en su web un chatbot de
+            WhatsApp desde el que el cliente puede reservar, y Flowww, recordatorios automáticos
+            por WhatsApp con opción de confirmar, cancelar o cambiar la cita. Antes de añadir
+            una capa aparte, revisa qué trae ya el programa que usas.
+          </P>
+          <BlogSource>
+            webs oficiales de{" "}
+            <ExternalLink href="https://biz.booksy.com/es-es">Booksy</ExternalLink>,{" "}
+            <ExternalLink href="https://www.treatwell.es/partners/">Treatwell</ExternalLink>,
+            Flowww (<ExternalLink href="https://www.flowww.es/">producto</ExternalLink> y{" "}
+            <ExternalLink href="https://www.flowww.es/flowww-whatsapp">WhatsApp</ExternalLink>
+            ) y Koibox (
+            <ExternalLink href="https://koibox.cloud/clientes-peluqueria-centro-estetica/">
+              ficha de cliente
+            </ExternalLink>{" "}
+            y{" "}
+            <ExternalLink href="https://koibox.cloud/integracion-whatsapp-app-centro-belleza/">
+              WhatsApp
+            </ExternalLink>
+            ), consultadas el 16 de septiembre de 2026
+          </BlogSource>
 
           <H2>Por qué muchas clínicas acaban con demasiadas herramientas</H2>
           <P>
@@ -296,20 +320,20 @@ export default function SoftwareGestionClinicasArticlePage() {
               "Momento de la clínica",
               "Qué necesitas de verdad",
               "Tipo de herramienta",
-              "Coste orientativo",
+              "Coste",
             ]}
             rows={[
               [
                 "1-2 profesionales, arrancando",
                 "Que nadie se equivoque de hueco y que el paciente pueda reservar solo",
                 "Agenda y reserva online ligera (Booksy y similares)",
-                "10-30€/mes",
+                "Consulta la tarifa vigente en la web de cada plataforma",
               ],
               [
                 "Base de pacientes ya amplia",
                 "Saber quién no vuelve y cuándo toca la siguiente visita",
                 "Software de gestión con ficha de paciente y CRM (Koibox, Flowww)",
-                "30-150€/mes según módulos y usuarios",
+                "Koibox, de 0 a 55 €/mes según plan; Flowww, de 59 a 249 €/mes por centro (precios publicados, consultados el 16/09/2026)",
               ],
               [
                 "Varios profesionales o centros",
@@ -321,6 +345,29 @@ export default function SoftwareGestionClinicasArticlePage() {
           />
 
           <P>
+            Para el segundo escalón te damos los precios que publican Koibox y Flowww en su web
+            oficial, consultada el 16 de septiembre de 2026. Koibox tiene cinco planes con un
+            número limitado de usuarios —Free a 0 €, Lite a 15 €, Basic a 30 €, Gold a 40 € y
+            Platinum a 55 € al mes— y cada usuario extra cuesta 3 €/mes; según sus preguntas
+            frecuentes no hay permanencia, y la renovación se cancela avisando con 15 días de
+            antelación. Flowww cobra por centro y no por usuario, con todos los usuarios
+            gratuitos: Boss a 59 €/mes, Star a 119 €/mes y Ultimate a 249 €/mes, más una puesta
+            en marcha de 190, 290 o 390 € según el plan. Su licencia es de 12 meses y se renueva
+            automáticamente si no avisas con 30 días de antelación.
+          </P>
+          <BlogSource>
+            webs oficiales de Koibox (
+            <ExternalLink href="https://koibox.cloud/pricing/">precios</ExternalLink> y{" "}
+            <ExternalLink href="https://koibox.cloud/faqs">preguntas frecuentes</ExternalLink>
+            ) y de Flowww (
+            <ExternalLink href="https://www.flowww.es/precios">precios</ExternalLink> y{" "}
+            <ExternalLink href="https://www.flowww.es/terminos-del-servicio-y-condiciones-generales">
+              condiciones generales
+            </ExternalLink>
+            ), consultadas el 16 de septiembre de 2026
+          </BlogSource>
+
+          <P>
             Para una clínica que está empezando, con uno o dos profesionales, intentar
             implementar un CRM completo o varias herramientas de automatización suele ser más
             esfuerzo del que la clínica puede absorber. Mejor una agenda que se use al 100% que
@@ -328,11 +375,10 @@ export default function SoftwareGestionClinicasArticlePage() {
           </P>
           <P>
             A medida que la clínica crece y acumula base de pacientes, entra en juego el valor
-            de un CRM: cada paciente recurrente puede tener un valor a largo plazo (LTV) de
-            unos 3.000€, y sin un sistema que recuerde cuándo tocaría su siguiente visita o
-            revisión, esos ingresos se quedan sin capturar.
+            de un CRM: un paciente recurrente vuelve muchas veces a lo largo de los años, y sin
+            un sistema que recuerde cuándo tocaría su siguiente visita o revisión, esas visitas
+            dependen de que el paciente se acuerde.
           </P>
-          <BlogSource>SEME (Sociedad Española de Medicina Estética)</BlogSource>
           <P>
             En clínicas más grandes, con varios profesionales y un volumen alto de consultas
             diarias, es donde tiene más sentido sumar automatización: el equipo ya no puede
@@ -373,21 +419,18 @@ export default function SoftwareGestionClinicasArticlePage() {
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
             puede responder consultas, agendar citas y hacer seguimiento de pacientes de
-            forma automática, conectándose con la agenda y, si la clínica lo tiene, con el
-            CRM. Esto es especialmente importante porque la probabilidad de
-            perder un lead que no recibe respuesta en los primeros 5 minutos puede llegar al
-            80%: ningún software de gestión por sí solo soluciona ese problema si no incluye
-            una capa de respuesta inmediata.
+            forma automática. Lo que aporta es rapidez: la consulta recibe respuesta en el momento, también
+            fuera de horario, y tu equipo solo interviene cuando el agente le pasa un caso que
+            necesita a una persona.
           </P>
-          <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
             Si tu clínica ya tiene la agenda organizada pero notas que las consultas por
             WhatsApp se acumulan o se responden tarde, en{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
-            te explicamos cómo añadir esa capa de automatización sin sustituir el software que
-            ya usas.
+            te explicamos cómo funciona esa capa de automatización sobre el número de WhatsApp
+            que tu clínica ya tiene.
           </P>
         </article>
 
@@ -412,8 +455,8 @@ export default function SoftwareGestionClinicasArticlePage() {
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
               Te enseñamos cómo un agente de WhatsApp puede encargarse de responder consultas,
-              agendar citas y hacer seguimiento de pacientes, integrado con el software que ya
-              usa tu clínica.
+              agendar citas y hacer seguimiento de pacientes desde el mismo número de WhatsApp
+              de tu clínica.
             </p>
             <Link
               href="/agente-whatsapp-clinicas-esteticas"

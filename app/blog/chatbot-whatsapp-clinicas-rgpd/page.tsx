@@ -158,8 +158,8 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
             Dicho de otra forma: el chatbot no añade un riesgo nuevo por el hecho de ser
             un chatbot. El riesgo —y la responsabilidad— es la misma que ya tienes con
             cualquier canal donde se recogen datos de pacientes. La diferencia es que,
-            como WhatsApp es el canal que más abren tus pacientes —entre un 95% y un 98%
-            de los mensajes se leen—,{" "}
+            como WhatsApp es un canal que tus pacientes usan a diario y por el que te
+            cuentan cosas personales,{" "}
             <InternalLink href="/blog/whatsapp-business-clinicas-esteticas">
               conviene tenerlo bien configurado desde el primer día
             </InternalLink>
@@ -307,7 +307,7 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
           <P>
             Si tienes estos puntos cubiertos, tu chatbot de WhatsApp cumple con el RGPD
             sin que tengas que renunciar a nada de lo que lo hace útil: responder al
-            instante, las 24 horas, casi un 40% de las consultas que hoy llegan fuera de
+            instante, las 24 horas, también a las consultas que hoy llegan fuera de
             horario y se quedan sin atender. Si quieres ver con detalle qué puede hacer
             este tipo de agente por tu clínica, en{" "}
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">

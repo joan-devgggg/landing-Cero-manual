@@ -128,9 +128,9 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
             La respuesta corta es que depende — hay soluciones desde unos pocos euros al
             mes hasta agentes IA avanzados con un coste mensual mayor. Pero la pregunta
             que de verdad importa no es solo cuánto cuesta tenerlo, sino cuánto te está
-            costando ya no tenerlo: entre un 12% y un 19% de las citas de una clínica
-            terminan en no-show, y las pérdidas asociadas a una mala atención fuera de
-            horario pueden llegar a los 7.500€ al mes.
+            costando ya no tenerlo: cada no-show deja un hueco que ya no se puede llenar, y
+            cada consulta que llega fuera de horario y nadie contesta a tiempo puede acabar
+            reservando en otra clínica.
           </P>
           <P>
             En este artículo vas a entender qué factores influyen en el precio de un
@@ -159,13 +159,13 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
             capacidad influye directamente en el precio.
           </P>
 
-          <H3>Integración con tu agenda y calendario</H3>
+          <H3>Reserva de citas dentro de la conversación</H3>
           <P>
-            Que el chatbot pueda consultar tu disponibilidad real y dejar la cita puesta
-            directamente — sin pasar por un «te confirmamos en breve» — requiere una
-            integración técnica con tu sistema de gestión o calendario. Esta función suele
-            marcar una diferencia clara de precio frente a soluciones que solo recogen el
-            contacto y lo derivan a una persona.
+            Que el chatbot sepa qué huecos quedan libres y deje la cita reservada en la
+            propia conversación — sin pasar por un «te confirmamos en breve» — exige más
+            trabajo técnico que limitarse a responder. Esta función suele marcar una
+            diferencia clara de precio frente a soluciones que solo recogen el contacto y lo
+            derivan a una persona.
           </P>
 
           <H3>Personalización con la información de tu clínica</H3>
@@ -203,14 +203,14 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
           <P>
             Combinan respuestas automáticas con alguna automatización —como recordatorios
             de citas o derivación de leads— pero sin una conversación realmente natural ni
-            integración completa con tu agenda. Su precio se sitúa en un rango medio, y
+            capacidad de cerrar la cita por su cuenta. Su precio se sitúa en un rango medio, y
             suelen requerir más configuración manual por tu parte.
           </P>
 
-          <H3>Agentes IA avanzados con agenda integrada</H3>
+          <H3>Agentes IA avanzados que reservan la cita</H3>
           <P>
             Son la solución más completa: conversación natural, respuestas personalizadas
-            con la información real de tu clínica, agenda de citas integrada y
+            con la información real de tu clínica, citas reservadas en el propio chat y
             cualificación de leads antes de pasarlos a tu equipo. Su coste mensual es
             mayor que el de un bot básico, pero también es el único tipo de solución
             pensado para recuperar de forma activa las consultas que hoy se están
@@ -231,16 +231,15 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
             Un bot básico puede informar de tu horario o derivar a un número de teléfono,
             pero no resuelve la consulta ni agenda nada por sí mismo. Un agente IA
             avanzado responde dudas sobre tratamientos, precios y disponibilidad, y —
-            cuando la persona ya está decidida— agenda la cita directamente, con el hueco
-            real disponible en tu calendario.
+            cuando la persona ya está decidida— agenda la cita en ese momento, sobre un
+            hueco libre.
           </P>
           <P>
-            Y aquí entra el dato que de verdad importa: el LTV (valor de vida) de un
-            paciente nuevo en una clínica suele rondar los 3.000€, contando tratamientos
-            recurrentes y recomendaciones. Si un agente IA avanzado recupera, gracias a su
-            disponibilidad 24/7, aunque sea una sola cita al mes que un bot básico habría
-            dejado escapar, la diferencia de precio entre ambos queda completamente
-            absorbida por ese único paciente.
+            Y aquí entra la cuenta que de verdad importa: cuánto vale en tu clínica un
+            paciente nuevo que se queda, contando tratamientos recurrentes y recomendaciones.
+            Si un agente IA avanzado recupera, gracias a su disponibilidad 24/7, aunque sea
+            una cita al mes que un bot básico habría dejado escapar, compara ese valor con la
+            diferencia de precio entre ambos.
           </P>
 
           <H2>Cuándo se amortiza la inversión</H2>
@@ -249,18 +248,16 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
             datos: cuántas citas se están perdiendo hoy y cuánto vale cada una.
           </P>
           <P>
-            Entre un 12% y un 19% de las citas programadas en una clínica terminan en
-            no-show, y las pérdidas por una atención deficiente fuera de horario —
-            consultas sin respuesta que terminan en otra clínica— pueden alcanzar los
-            7.500€ al mes en clínicas con buen volumen de tráfico. Frente a esas cifras, la
-            cuota mensual de un agente IA avanzado suele representar una fracción muy
-            pequeña.
+            Esas citas perdidas se buscan en dos sitios: los no-shows de tu agenda y las
+            consultas que llegaron fuera de horario, no recibieron respuesta a tiempo y
+            terminaron en otra clínica. Suma las de un mes, multiplícalas por lo que vale
+            cada cita y pon el resultado al lado de la cuota mensual del agente: esa es la
+            comparación que decide si te compensa.
           </P>
           <P>
-            Como WhatsApp es, además, el canal que más abren los pacientes —entre un 95%
-            y un 98% de los mensajes se leen, frente al 20-25% de un email—, cada consulta
-            que el chatbot resuelve y agenda por esa vía tiene muchas más probabilidades de
-            convertirse en cita real. En la práctica, recuperar una o dos citas al mes que
+            Además, como la consulta se resuelve en el mismo WhatsApp donde la persona ha
+            escrito, sin mandarla a una llamada ni a un formulario, hay menos pasos en los
+            que pueda quedarse por el camino. En la práctica, recuperar una o dos citas al mes que
             antes se perdían suele bastar para cubrir el coste del chatbot — y, a partir
             de ahí, todo lo que recupera es retorno neto.
           </P>
@@ -277,8 +274,8 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
           </P>
           <P>
             ¿El precio incluye la configuración inicial y el entrenamiento con la
-            información de mi clínica, o es un coste aparte? ¿Puede el chatbot consultar mi
-            agenda real y dejar citas puestas, o solo recoge datos de contacto? ¿Qué pasa
+            información de mi clínica, o es un coste aparte? ¿Puede el chatbot reservar la cita
+            él mismo, o solo recoge datos de contacto? ¿Qué pasa
             si una conversación requiere intervención humana —se escala correctamente, con
             el contexto recogido, o se pierde? ¿Hay límite de conversaciones al mes, o la
             cuota es fija independientemente del volumen?

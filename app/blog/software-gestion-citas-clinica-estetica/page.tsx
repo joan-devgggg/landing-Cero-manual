@@ -40,15 +40,15 @@ const faqs = [
   },
   {
     q: "¿Cuánto cuesta un software de gestión de citas?",
-    a: "Los precios varían según el número de profesionales, salas y funcionalidades, pero suelen moverse en un rango asequible mensual por usuario. Lo relevante no es el precio en sí, sino lo que evita perder: si reduce no-shows o huecos en el calendario, se amortiza rápido con muy pocas citas recuperadas al mes.",
+    a: "Los precios varían según el programa, el plan y el número de profesionales o centros: unos cobran por usuario y otros por centro, así que compara siempre la tarifa vigente en la web de cada proveedor. Lo relevante no es el precio en sí, sino lo que evita perder: si reduce no-shows o huecos en el calendario, calcula cuántas citas recuperadas al mes necesitas para cubrir la cuota.",
   },
   {
     q: "¿Puedo usar Google Calendar en vez de un software específico?",
-    a: "Puedes, y muchas clínicas pequeñas empiezan así. El problema aparece cuando creces: varios profesionales, salas compartidas, confirmaciones manuales y ningún control sobre no-shows. Un software específico añade recordatorios automáticos, reserva online y visión conjunta de todo el equipo, cosas que un calendario genérico no resuelve bien.",
+    a: "Puedes, y muchas clínicas pequeñas empiezan así. El problema aparece cuando creces: varios profesionales, salas compartidas, confirmaciones manuales y ningún control sobre no-shows. Un software específico para clínicas trae preparado lo propio del sector —recordatorios y confirmaciones a pacientes, reserva online por tratamiento y visión conjunta de profesionales y salas—, que en un calendario de uso general tendrías que montar o resolver a mano.",
   },
   {
     q: "¿El software de citas ya evita los no-shows por sí solo?",
-    a: "Ayuda, pero no los elimina. Un buen software envía recordatorios y permite confirmar o cancelar con un clic, lo que reduce las ausencias. Pero si el paciente no contesta o tiene una duda de última hora fuera de horario, el software no responde esa conversación — ahí es donde entra la automatización con IA por encima del software.",
+    a: "Ayuda, pero no los elimina. Un buen software envía recordatorios y permite confirmar o cancelar con un clic, lo que reduce las ausencias. Pero si el paciente no contesta o tiene una duda de última hora fuera de horario, alguien tiene que mantener esa conversación: algunos programas lo cubren en parte, y si el tuyo no, ahí es donde entra un agente con IA que la atienda por WhatsApp.",
   },
 ]
 
@@ -131,9 +131,9 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
           </P>
           <P>
             En este artículo vas a ver qué es exactamente un software de gestión de citas, qué
-            funcionalidades no pueden faltar, cuáles son los más usados en clínicas estéticas en
-            España, dónde se queda corto el software tradicional y cuándo tiene sentido añadir
-            automatización con IA por encima.
+            funcionalidades no pueden faltar, qué tipos vas a encontrar en España, dónde se queda
+            corto el software tradicional y cuándo tiene sentido sumar
+            automatización con IA.
           </P>
 
           <H2>Qué es un software de gestión de citas para clínicas estéticas</H2>
@@ -147,7 +147,7 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
             No es lo mismo que un calendario genérico. Un software pensado para clínicas añade
             cosas específicas del sector: duración distinta según el tratamiento, bloqueo de
             salas o aparatos concretos, y visibilidad de la ocupación de cada profesional a la
-            vez, algo que una agenda de uso general no contempla.
+            vez, algo que en una agenda de uso general tienes que resolver a mano.
           </P>
 
           <H2>Funcionalidades imprescindibles en un software de citas</H2>
@@ -161,9 +161,9 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
             <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
               la confirmación y el recordatorio automáticos
             </InternalLink>
-            . Las clínicas que no confirman la cita de alguna forma suelen registrar
-            entre un <strong>12% y un 19% de no-shows</strong>, un porcentaje que baja de forma
-            notable en cuanto se envía un recordatorio con antelación.
+            . Si nadie confirma la cita, que el paciente venga depende de que se acuerde; un
+            recordatorio con antelación que pida respuesta le da la ocasión de confirmar o de
+            avisar a tiempo si no puede venir.
           </P>
           <P>
             Lo tercero es la reserva online, para que el paciente pueda pedir cita sin llamar ni
@@ -175,7 +175,7 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
             otro paciente antes de que se quede vacío.
           </P>
 
-          <H2>Los más usados en clínicas estéticas en España</H2>
+          <H2>Qué tipos de software de citas hay en España</H2>
           <P>
             En el mercado español conviven dos tipos de soluciones. Por un lado, los{" "}
             <InternalLink href="/blog/software-gestion-clinicas-esteticas">
@@ -200,30 +200,30 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
 
           <H2>Limitaciones del software de citas tradicional</H2>
           <P>
-            Por muy bueno que sea, un software de citas solo actúa dentro de su propio sistema:
-            organiza lo que ya está agendado, pero no atiende lo que llega antes de convertirse en
-            cita. Y ahí está el problema, porque hasta un <strong>40% de las consultas</strong> de
-            una clínica llegan fuera de horario — por la noche, en fin de semana o con la agenda
-            ya llena.
+            Un software de citas se centra en organizar lo que ya está agendado; lo que llega antes
+            de convertirse en cita depende de lo que incluya cada programa. Y ahí está el reto,
+            porque una parte de las consultas de una clínica llega fuera de horario — por la
+            noche, en fin de semana o con la agenda ya llena.
           </P>
           <P>
-            Tampoco responde WhatsApp, que es hoy el canal donde los pacientes preguntan primero
-            por precios, disponibilidad o dudas sobre un tratamiento. Y no hace seguimiento
-            proactivo: si un paciente no vuelve, el software se limita a guardar el dato, pero
-            nadie le escribe para recuperarlo.
+            WhatsApp es hoy el canal donde los pacientes preguntan primero por precios,
+            disponibilidad o dudas sobre un tratamiento. Algunos programas ya envían
+            recordatorios o tienen asistentes por ese canal; otros no responden por WhatsApp ni
+            escriben a los pacientes que dejan de venir. Revisa qué cubre el tuyo antes de
+            añadir nada.
           </P>
 
-          <H2>Cuándo añadir automatización con IA a tu software de citas</H2>
+          <H2>Cuándo complementar tu software de citas con IA</H2>
           <P>
             El momento de dar el siguiente paso llega cuando el cuello de botella ya no es la
             agenda, sino la falta de tiempo del equipo para responder todo lo que entra. Ahí es
-            donde WhatsApp se vuelve clave: es el canal con mayor tasa de apertura que existe,
-            entre un <strong>95% y un 98%</strong>, muy por encima del email o las llamadas.
+            donde WhatsApp se vuelve clave: es el canal por el que muchos pacientes ya escriben a
+            la clínica, y donde esperan que alguien les conteste.
           </P>
           <P>
             Un agente con IA puede atender esas conversaciones fuera de horario, resolver dudas
-            frecuentes y agendar la cita directamente sobre el mismo calendario que ya usas, sin
-            sustituir tu software de citas. Si quieres ver qué debe tener ese software base antes
+            frecuentes, dejar la cita reservada y pasar a una persona del equipo los casos que la
+            necesitan. Si quieres ver qué debe tener ese software base antes
             de añadir esta capa y cómo elegir sin equivocarte, revisa nuestra guía de{" "}
             <InternalLink href="/blog/mejor-software-gestion-clinica-estetica">
               mejor software de gestión para clínicas estéticas
@@ -252,9 +252,9 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Casi todos los software de citas envían un aviso, pero ninguno gestiona la
-              respuesta del paciente. Los recordatorios automáticos por WhatsApp se conectan
-              a la agenda que ya usas, piden confirmación y liberan el hueco si no puede venir.
+              Un aviso que nadie contesta no te dice si el paciente va a venir. Los
+              recordatorios automáticos por WhatsApp piden confirmación y liberan el hueco si
+              no puede venir.
             </p>
             <Link
               href="/recordatorios-automaticos-citas"

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cuánto dinero pierde realmente una clínica estética por los no-shows?",
-    a: "Depende del ticket medio y del volumen de citas, pero en clínicas estéticas con tratamientos de 80€-300€ y una agenda con varias citas diarias, las pérdidas pueden llegar a los 7.500€ al mes solo en huecos que no se llenan a tiempo. A eso hay que sumarle el coste de oportunidad: ese hueco podría haberse ofrecido a otro paciente que sí quería venir.",
+    a: "Depende del ticket medio y del volumen de citas de cada clínica, así que lo mejor es calcularlo con tus datos: citas al mes × tu tasa de no-shows × tu ticket medio. Eso es lo que se va en huecos que no se llenan a tiempo. A eso hay que sumarle el coste de oportunidad: ese hueco podría haberse ofrecido a otro paciente que sí quería venir.",
   },
   {
     q: "¿Por qué los pacientes de estética no avisan cuando no van a venir?",
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "¿Es suficiente con enviar un SMS o un email de recordatorio?",
-    a: "No suele bastar. Los SMS y los emails tienen tasas de apertura mucho más bajas y, sobre todo, no generan ninguna acción — el paciente los lee (o no) y no hay forma sencilla de confirmar o cancelar desde ahí. WhatsApp, en cambio, se abre casi siempre y permite responder con un simple mensaje, lo que convierte el recordatorio en una confirmación activa.",
+    a: "No suele bastar. Los SMS y los emails se pierden con facilidad entre notificaciones y promociones y, sobre todo, no generan ninguna acción — el paciente los lee (o no) y no hay forma sencilla de confirmar o cancelar desde ahí. WhatsApp, en cambio, es donde el paciente ya conversa cada día y permite responder con un simple mensaje, lo que convierte el recordatorio en una confirmación activa.",
   },
   {
     q: "¿Qué es la confirmación activa y cómo reduce las ausencias?",
@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tiempo tarda en notarse la reducción de no-shows?",
-    a: "Normalmente desde el primer mes. En cuanto se activan los recordatorios automáticos por WhatsApp con confirmación, las clínicas suelen ver una reducción de alrededor del 40% en sus no-shows, porque los huecos que antes se quedaban vacíos sin previo aviso ahora se liberan con suficiente antelación para poder ofrecerlos a otro paciente.",
+    a: "Se nota en cuanto los recordatorios automáticos por WhatsApp con confirmación empiezan a funcionar, porque los huecos que antes se quedaban vacíos sin previo aviso pasan a liberarse con antelación suficiente para ofrecerlos a otro paciente. Para medirlo, apunta tu tasa de no-shows del mes anterior a activarlos y compárala con la de los meses siguientes.",
   },
 ]
 
@@ -125,9 +125,9 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
           <P>
             En cualquier negocio con agenda, los huecos que se quedan vacíos sin previo
             aviso duelen. Pero en una clínica estética duelen especialmente, porque el
-            ticket medio suele ser alto: una sesión de tratamiento facial, depilación
-            láser o medicina estética puede valer entre 80€ y 300€, y un hueco de una
-            hora que no se llena no se recupera.
+            ticket medio suele ser alto y cada sesión — un tratamiento facial, depilación
+            láser, medicina estética — bloquea tiempo de cabina y de profesional. Un hueco
+            que no se llena no se recupera.
           </P>
           <P>
             Cuando esto pasa varias veces a la semana, las pérdidas se acumulan rápido —
@@ -143,23 +143,24 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
 
           <H2>¿Cuánto te cuesta un no-show en una clínica estética?</H2>
           <P>
-            La tasa media de no-shows en clínicas estéticas se sitúa habitualmente entre
-            el 12% y el 19% de las citas agendadas. Es decir, de cada diez citas que
-            tienes en la agenda, una o dos pacientes no se presentan ni avisan.
+            No hay una tasa de no-shows que valga para todas las clínicas estéticas:
+            depende del tipo de tratamiento, de con cuánta antelación se reserva y de cómo
+            se recuerda la cita. Lo que sí se repite es que, sin nadie que pida
+            confirmación, una parte de quienes tienen cita no se presenta ni avisa.
           </P>
           <P>
-            Si haces el cálculo con un ticket medio de tratamiento de estética, esa
-            proporción puede traducirse en pérdidas de hasta 7.500€ al mes para una
-            clínica con una agenda ocupada. Y eso sin contar el tiempo del personal que
-            queda bloqueado esperando a un paciente que nunca llega, ni la oportunidad
-            perdida de haber dado ese hueco a{" "}
+            La cuenta de lo que te cuesta es directa: citas al mes × tu tasa de no-shows ×
+            tu ticket medio. Con tratamientos de precio alto, unos pocos huecos a la semana
+            ya suman una cantidad seria a final de mes. Y eso sin contar el tiempo del
+            personal que queda bloqueado esperando a un paciente que nunca llega, ni la
+            oportunidad perdida de haber dado ese hueco a{" "}
             <InternalLink href="/blog/reducir-lista-espera-clinica-estetica">
               otra persona en lista de espera
             </InternalLink>
             .
           </P>
           <P>
-            Si quieres ponerle cifra a tu caso, prueba nuestra{" "}
+            Si prefieres no hacer la cuenta a mano, prueba nuestra{" "}
             <InternalLink href="/calculadora-no-shows">
               calculadora de pérdidas por no-shows
             </InternalLink>{" "}
@@ -206,9 +207,9 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
             responda diciendo que sí va a venir, o que avise con tiempo si no puede.
           </P>
           <P>
-            WhatsApp es, con diferencia, el canal que mejor funciona para esto. Los
-            mensajes de WhatsApp se abren entre un 95% y un 98% de las veces, frente a
-            las tasas mucho más bajas de{" "}
+            WhatsApp es, con diferencia, el canal que mejor funciona para esto. Es la
+            aplicación en la que tus pacientes ya conversan cada día, así que el aviso no
+            se queda enterrado como pasa a menudo con{" "}
             <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
               los SMS o los emails
             </InternalLink>
@@ -223,8 +224,8 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
 
           <H2>Cómo implementar recordatorios automáticos en tu clínica</H2>
           <P>
-            La implementación es más sencilla de lo que parece. Se conecta tu agenda
-            (la que ya usas) con un sistema que{" "}
+            La implementación es más sencilla de lo que parece. Un sistema conectado al
+            número de WhatsApp Business de tu clínica{" "}
             <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
               envía automáticamente un recordatorio por WhatsApp
             </InternalLink>{" "}
@@ -251,19 +252,18 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
             .
           </P>
 
-          <H2>Cuánto puedes recuperar desde el primer mes</H2>
+          <H2>Cuánto puedes recuperar</H2>
           <P>
-            Las clínicas que activan este tipo de recordatorios suelen ver una reducción
-            de alrededor del 40% en sus no-shows ya en el primer mes. Si partías de una
-            tasa del 15% y la bajas al 9%, sobre una agenda de 200 citas mensuales eso
-            son unas 12 citas que antes se perdían y ahora se mantienen o se rellenan a
-            tiempo.
+            Lo que recuperas depende de dos datos que solo tienes tú: cuántos no-shows
+            tienes hoy y cuántos siguen produciéndose una vez activados los recordatorios.
+            La diferencia entre ambos, multiplicada por tu ticket medio, es lo que vuelve a
+            entrar cada mes.
           </P>
           <P>
-            Con un ticket medio de 150€, esas 12 citas recuperadas representan
-            aproximadamente 1.800€ al mes que antes se quedaban sobre la mesa — y eso
-            sin necesidad de captar un solo paciente nuevo, simplemente aprovechando
-            mejor la agenda que ya tienes.
+            Para verlo claro, anota tu tasa de no-shows antes de empezar y compárala con la
+            de los meses siguientes. Cada cita que se mantiene o se rellena a tiempo es
+            facturación que antes se quedaba sobre la mesa — sin necesidad de captar un
+            solo paciente nuevo, simplemente aprovechando mejor la agenda que ya tienes.
           </P>
         </article>
 

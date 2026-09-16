@@ -42,11 +42,11 @@ const faqs = [
   },
   {
     q: "¿Cuánto puede aumentar el ticket medio con estas estrategias?",
-    a: "Depende del punto de partida de cada clínica, pero clínicas que combinan seguimiento post-cita automatizado con propuestas de tratamiento en el momento adecuado observan incrementos de entre el 15% y el 30% en el ticket medio. Dado que el LTV de un paciente recurrente puede superar los 3.000 €, incluso un pequeño aumento en el ticket tiene un impacto significativo en la facturación total.",
+    a: "Depende del punto de partida de cada clínica, y no hay una cifra que sirva para todas: lo razonable es anotar tu ticket medio antes de empezar y revisarlo al cabo de unos meses. Eso sí, como un paciente recurrente vuelve durante años, incluso un pequeño aumento en el ticket tiene un impacto significativo en la facturación total.",
   },
   {
     q: "¿El seguimiento por WhatsApp realmente funciona para proponer tratamientos?",
-    a: "Sí, y la razón es la tasa de apertura: entre el 95% y el 98% de los mensajes de WhatsApp se leen, frente al 20-30% del email. Eso significa que la propuesta llega efectivamente al paciente, que puede responder en el momento que le venga bien. La clave es que el mensaje sea útil y personalizado —que haga referencia a algo que se habló en la consulta— y no un mensaje genérico de promoción.",
+    a: "Sí, y la razón es el canal: WhatsApp es donde el paciente ya habla a diario, mientras que un email con una propuesta se queda a menudo sin abrir. Así la propuesta llega al paciente, que puede responder en el momento que le venga bien. Lo importante es que el mensaje sea útil y personalizado —que haga referencia a algo que se habló en la consulta— y no un mensaje genérico de promoción.",
   },
 ]
 
@@ -108,8 +108,8 @@ export default function AumentarTicketMedioClinicaDentalPage() {
           </p>
 
           <P>
-            Captar un paciente nuevo cuesta entre cinco y diez veces más que retener a uno que
-            ya te conoce. Por eso, antes de invertir más en{" "}
+            Captar un paciente nuevo cuesta publicidad, tiempo y consultas que no siempre
+            acaban en cita; retener a uno que ya te conoce cuesta mucho menos. Por eso, antes de invertir más en{" "}
             <InternalLink href="/blog/marketing-clinica-dental">
               publicidad o en campañas de captación
             </InternalLink>
@@ -131,9 +131,8 @@ export default function AumentarTicketMedioClinicaDentalPage() {
             cuánto valor se genera en cada contacto.
           </P>
           <P>
-            En una clínica dental, el LTV (valor de vida del cliente) de un paciente recurrente
-            puede superar los <strong>3.000 €</strong> a lo largo de los años, contando
-            revisiones periódicas, tratamientos de ortodoncia, implantes, blanqueamientos y
+            En una clínica dental, un paciente recurrente genera ingresos a lo largo de los
+            años, contando revisiones periódicas, tratamientos de ortodoncia, implantes, blanqueamientos y
             otras intervenciones. Sin embargo, muchas clínicas no aprovechan ese potencial
             porque no tienen{" "}
             <InternalLink href="/blog/mejor-crm-clinicas-dentales">
@@ -143,7 +142,7 @@ export default function AumentarTicketMedioClinicaDentalPage() {
             tratamiento al paciente correcto.
           </P>
           <P>
-            Mover el ticket medio un 20% no requiere captar nuevos pacientes: requiere que los
+            Mover el ticket medio no requiere captar nuevos pacientes: requiere que los
             que ya tienes reciban la propuesta adecuada en el momento adecuado.
           </P>
 
@@ -200,10 +199,9 @@ export default function AumentarTicketMedioClinicaDentalPage() {
 
           <H2>El papel de WhatsApp en el upsell de servicios dentales</H2>
           <P>
-            WhatsApp tiene una tasa de apertura de entre el <strong>95% y el 98%</strong>, muy
-            por encima del email. Eso significa que un mensaje enviado por WhatsApp llega, se
-            lee y obtiene respuesta con una frecuencia incomparablemente mayor que cualquier
-            otro canal digital.
+            WhatsApp es la aplicación que el paciente abre cada día para hablar con su gente,
+            y un mensaje que llega ahí se ve mucho antes que un email. Por eso es el canal
+            donde una propuesta tiene más opciones de leerse y de recibir respuesta.
           </P>
           <P>
             En el contexto del upsell dental, esa diferencia es determinante. Una propuesta de
@@ -215,24 +213,23 @@ export default function AumentarTicketMedioClinicaDentalPage() {
           <P>
             Además, WhatsApp permite que el paciente responda en el momento que le viene bien
             —fuera del horario de la clínica si es necesario—, lo que elimina la fricción de
-            tener que llamar durante el horario de atención. Hasta el{" "}
-            <strong>40% de las consultas</strong> de los pacientes se producen fuera del
-            horario habitual, lo que hace especialmente valioso disponer de un canal asíncrono
-            como este.
+            tener que llamar durante el horario de atención. Muchos pacientes escriben al
+            salir de trabajar o en fin de semana, y por eso tiene tanto valor un canal
+            asíncrono como este.
           </P>
 
           <H2>Cuánto puedes aumentar tu facturación con estas estrategias</H2>
           <P>
             El impacto de aumentar el ticket medio depende del volumen de pacientes activos y
-            del punto de partida de la clínica, pero las cifras son significativas incluso en
-            clínicas de tamaño medio.
+            del punto de partida de la clínica. La cuenta es sencilla: pacientes activos al
+            mes × ticket medio, antes y después del cambio.
           </P>
           <P>
-            Una clínica con 200 pacientes activos al mes y un ticket medio de 80 € que consigue
-            subirlo a 100 € —un incremento del 25%— pasa de facturar 16.000 € a 20.000 € al
-            mes, sin captar un solo paciente nuevo. Ese incremento de 4.000 € mensuales se
-            consigue principalmente recuperando presupuestos pendientes, proponiendo
-            tratamientos complementarios y fidelizando a los pacientes existentes para que
+            Un ejemplo con números inventados, solo para ilustrarlo: imagina una clínica con
+            200 pacientes activos al mes y un ticket medio de 80 € que consigue subirlo a
+            100 €. Pasaría de facturar 16.000 € a 20.000 € al mes, sin captar un solo
+            paciente nuevo. Ese salto vendría de recuperar presupuestos pendientes, proponer
+            tratamientos complementarios y fidelizar a los pacientes existentes para que
             vuelvan con más frecuencia.
           </P>
           <P>

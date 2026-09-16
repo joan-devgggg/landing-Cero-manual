@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "¿La lista de espera ayuda a reducir los no-shows?",
-    a: "De forma indirecta, sí. Si cada cancelación se cubre rápidamente con un paciente de la lista de espera, el hueco no se queda vacío y el impacto económico de un no-show —que en clínicas estéticas ronda el 12-19% de las citas— se reduce. Combinado con recordatorios automáticos antes de la cita, que pueden reducir los no-shows hasta un 40%, el efecto conjunto es notable.",
+    a: "De forma indirecta, sí. Si cada cancelación se cubre rápidamente con un paciente de la lista de espera, el hueco no se queda vacío y el impacto económico se reduce. Y si además se envían recordatorios automáticos antes de la cita, hay menos ausencias por olvido y las que se avisan llegan con margen para ofrecérselas a la lista: los dos mecanismos se refuerzan.",
   },
 ]
 
@@ -149,11 +149,10 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
             forma lenta.
           </P>
           <P>
-            A esto se suma el efecto de las cancelaciones. Con una tasa de no-shows que en
-            clínicas estéticas se mueve habitualmente entre el 12% y el 19%, cada semana se
-            liberan huecos que, si no se cubren rápido, quedan vacíos. Mientras tanto, la lista
-            de espera sigue creciendo con pacientes que podrían haber ocupado exactamente esos
-            huecos.
+            A esto se suma el efecto de las cancelaciones. Cada semana, las ausencias y los
+            avisos de última hora liberan huecos que, si no se cubren rápido, quedan vacíos.
+            Mientras tanto, la lista de espera sigue creciendo con pacientes que podrían haber
+            ocupado exactamente esos huecos.
           </P>
           <P>
             El coste real, por tanto, no es solo la insatisfacción de quien espera: es la
@@ -194,15 +193,15 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
             primeros en la lista.
           </P>
           <P>
-            Dado que la tasa de apertura de WhatsApp es de entre el 95% y el 98%, la
-            probabilidad de que el mensaje llegue y se vea casi al instante es muy alta. El
+            Como el aviso llega por WhatsApp, a la misma conversación que el paciente ya tiene
+            con la clínica, es fácil que lo vea a tiempo y conteste en el momento. El
             primer paciente que confirma se queda con la cita, y el sistema actualiza la lista
             automáticamente para el resto.
           </P>
           <P>
             Este mismo mecanismo de recordatorios automáticos por WhatsApp es el que se utiliza
-            para reducir los no-shows desde el origen: según los datos del sector, puede
-            reducirlos hasta en un 40%. Es decir, no solo ayuda a cubrir los huecos que ya se
+            para reducir los no-shows desde el origen, pidiendo a cada paciente que confirme su
+            cita. Es decir, no solo ayuda a cubrir los huecos que ya se
             han liberado, sino que reduce el número de huecos que se liberan por sorpresa. Puedes
             ver cómo se aplica esto con más detalle en el artículo sobre{" "}
             <InternalLink href="/recordatorios-automaticos-citas">

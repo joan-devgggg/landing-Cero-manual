@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "¿El programa de gestión incluye automatización con IA?",
-    a: "La mayoría incluye automatizaciones básicas, como recordatorios programados o plantillas de mensajes, pero eso no es lo mismo que un agente con IA que mantenga una conversación y agende por su cuenta. Esa capa suele añadirse por encima, conectada al programa que ya usas.",
+    a: "La mayoría incluye automatizaciones básicas, como recordatorios programados o plantillas de mensajes, pero eso no es lo mismo que un agente con IA que mantenga una conversación y agende por su cuenta. Si la necesitas, lo normal es que sea una pieza aparte del programa.",
   },
 ]
 
@@ -204,19 +204,17 @@ export default function ProgramaGestionClinicaEsteticaPage() {
 
           <H2>Cuándo el programa no es suficiente y necesitas automatización</H2>
           <P>
-            Incluso con el mejor programa de gestión, hay un tipo de problema que ninguno resuelve
-            por sí solo: las consultas que llegan fuera de horario. Hasta un{" "}
-            <strong>40% de las consultas</strong> de una clínica llegan cuando no hay nadie para
-            atenderlas, y si un lead no recibe respuesta en los primeros 5 minutos, la
-            probabilidad de perderlo puede llegar al <strong>80%</strong>. Con un valor medio por
-            paciente de alrededor de <strong>3.000€ de LTV</strong>, cada consulta sin responder
-            tiene un coste real.
+            Incluso con un buen programa de gestión, queda un momento delicado: las consultas
+            que llegan fuera de horario. Una parte de las consultas de una clínica entra cuando
+            no hay nadie para atenderlas —de noche, en fin de semana o con la recepción
+            ocupada—, y cada una que se queda sin respuesta hasta el día siguiente puede
+            acabar reservando en otra clínica.
           </P>
           <P>
-            El programa de gestión guarda el dato del paciente, pero no mantiene la conversación.
-            Ahí es donde entra un agente con IA que atiende, resuelve dudas frecuentes y agenda la
-            cita directamente sobre el programa que ya usas, conectándose con él en lugar de
-            sustituirlo. Si quieres ver cómo asegurarte de que el programa base esté bien elegido
+            Algunos programas ya incluyen recordatorios o asistentes por WhatsApp, así que revisa
+            primero qué trae el tuyo. Si necesitas más, un agente con IA atiende a cualquier hora,
+            resuelve dudas frecuentes, deja la cita reservada y pasa a una persona del equipo los
+            casos delicados, todo desde el número de WhatsApp Business de la clínica. Si quieres ver cómo asegurarte de que el programa base esté bien elegido
             antes de dar ese paso, revisa nuestra guía de{" "}
             <InternalLink href="/blog/mejor-software-gestion-clinica-estetica">
               mejor software de gestión para clínicas estéticas
@@ -245,9 +243,8 @@ export default function ProgramaGestionClinicaEsteticaPage() {
               className="text-base leading-relaxed mb-8 max-w-xl mx-auto"
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
-              Es el hueco que ningún programa de gestión cubre: nadie contesta cuando la
-              consulta llega fuera de horario. El agente de WhatsApp se conecta por encima
-              del programa que ya usas y atiende esa parte.
+              El agente de WhatsApp contesta las consultas que llegan fuera de horario,
+              agenda la cita y pasa a tu equipo lo que necesita una persona.
             </p>
             <Link
               href="/agente-whatsapp-clinicas-esteticas"

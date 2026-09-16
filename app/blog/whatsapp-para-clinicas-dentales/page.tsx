@@ -13,7 +13,7 @@ const PATH = "/blog/whatsapp-para-clinicas-dentales"
 const DATES = articleDates("whatsapp-para-clinicas-dentales")
 const TITLE = "WhatsApp para clínicas dentales: cómo usarlo | Cero Manual"
 const DESCRIPTION =
-  "WhatsApp es el canal más usado por los pacientes dentales. Te explicamos cómo usarlo para captar, confirmar citas y reactivar pacientes inactivos."
+  "Guía de WhatsApp para clínicas dentales: cómo usarlo para captar pacientes, confirmar citas y reactivar a los que llevan tiempo sin venir."
 const HEADLINE = "WhatsApp para clínicas dentales: cómo usarlo para captar y retener más pacientes"
 
 export const metadata: Metadata = {
@@ -35,11 +35,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Por qué WhatsApp es mejor que el email para comunicarme con mis pacientes?",
-    a: "Porque la tasa de apertura de WhatsApp es del 95-98%, frente al 20-25% del email. Un recordatorio o una respuesta enviada por WhatsApp tiene muchas más probabilidades de ser vista —y vista a tiempo— que un correo, que a menudo se queda sin abrir durante días o acaba en spam.",
+    a: "Porque WhatsApp es una aplicación que los pacientes abren a diario y en la que están acostumbrados a contestar. Un recordatorio o una respuesta enviada por WhatsApp tiene muchas más probabilidades de ser vista —y vista a tiempo— que un correo, que a menudo se queda sin abrir durante días o acaba en spam.",
   },
   {
     q: "¿Puedo usar mi número de WhatsApp normal para la clínica?",
-    a: "Puedes, pero a medida que crece el volumen de mensajes se vuelve difícil de gestionar desde un móvil personal. La mayoría de clínicas dentales pasan a WhatsApp Business, que permite respuestas rápidas, catálogos y mensajes automáticos básicos, y que es la base sobre la que se conecta un agente de WhatsApp más avanzado cuando el volumen lo justifica.",
+    a: "Puedes, pero a medida que crece el volumen de mensajes se vuelve difícil de gestionar desde un móvil personal. Lo habitual es pasar a WhatsApp Business, que permite respuestas rápidas, catálogos y mensajes automáticos básicos, y que es la base sobre la que se conecta un agente de WhatsApp más avanzado cuando el volumen lo justifica.",
   },
   {
     q: "¿Cómo evito que WhatsApp se convierta en una carga para mi equipo?",
@@ -130,17 +130,17 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
             pacientes que llevan tiempo sin venir simplemente se olviden.
           </P>
           <P>
-            En este artículo vas a ver por qué WhatsApp es el canal favorito de los pacientes
+            En este artículo vas a ver por qué WhatsApp encaja tan bien con los pacientes
             dentales, cómo usarlo para captar pacientes nuevos, reducir no-shows y reactivar a
             los que dejaron de venir —y cuándo tiene sentido empezar a automatizar parte de esa
             gestión.
           </P>
 
-          <H2>Por qué WhatsApp es el canal favorito de los pacientes dentales</H2>
+          <H2>Por qué WhatsApp encaja tan bien con los pacientes dentales</H2>
           <P>
-            La razón es sencilla: es donde ya están. WhatsApp tiene una tasa de apertura del
-            95-98%, muy por encima del 20-25% del email, y los mensajes se leen en minutos, no
-            en días. Para un paciente, escribir por WhatsApp es tan natural como escribirle a
+            La razón es sencilla: es donde ya están. Es la aplicación que tienen abierta a lo
+            largo del día, y un mensaje ahí se suele ver en minutos, mientras que un email
+            puede esperar días. Para un paciente, escribir por WhatsApp es tan natural como escribirle a
             un amigo —y espera una respuesta con esa misma rapidez.
           </P>
           <P>
@@ -154,9 +154,8 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
             <InternalLink href="/blog/automatizar-whatsapp-clinica-dental">
               consultas también por la noche o el fin de semana
             </InternalLink>
-            , que representan hasta un 40% del
-            total— puede desbordar fácilmente a un equipo que también está atendiendo
-            pacientes en consulta.
+            — puede desbordar fácilmente a un equipo que también está atendiendo pacientes
+            en consulta.
           </P>
 
           <H2>Cómo usar WhatsApp para captar pacientes nuevos</H2>
@@ -173,9 +172,8 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
             un paciente que reserva.
           </P>
           <P>
-            El problema es que, si esa primera respuesta tarda en llegar, la probabilidad de
-            perder ese lead crece muy rápido —hasta un 80% si pasan más de 5 minutos sin
-            respuesta—. Por eso un{" "}
+            El problema es que, si esa primera respuesta tarda en llegar, es fácil que ese lead
+            se enfríe o escriba a otra clínica. Por eso un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-dentales">
               agente de WhatsApp para clínicas dentales
             </InternalLink>{" "}
@@ -188,9 +186,8 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
             <InternalLink href="/blog/como-reducir-no-shows-clinica-dental">
               Las citas que no se presentan
             </InternalLink>{" "}
-            —entre un 12% y un 19% del total en una clínica
-            dental media— son uno de los costes más silenciosos del día a día: un hueco vacío
-            en la agenda que ya no se puede recuperar.
+            son uno de los costes más silenciosos del día a día en una clínica dental: un
+            hueco vacío en la agenda que ya no se puede recuperar.
           </P>
           <P>
             WhatsApp es el canal ideal para reducirlas porque permite una confirmación activa:
@@ -208,8 +205,8 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
           <P>
             Toda clínica dental tiene una base de pacientes que, en algún momento, dejaron de
             venir. No porque estuvieran descontentos, sino porque la revisión o la limpieza
-            pendiente simplemente se quedó en el olvido. Cada uno de esos pacientes representa,
-            de media, un valor de vida (LTV) de unos 3.000€.
+            pendiente simplemente se quedó en el olvido. Cada uno de esos pacientes ya confió
+            en la clínica y, con el recordatorio adecuado, puede volver.
           </P>
           <P>
             <InternalLink href="/blog/como-reactivar-pacientes-inactivos-clinica">
@@ -274,7 +271,8 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
               <InternalLink href="/recordatorios-automaticos-citas">
                 recordatorios automáticos por WhatsApp
               </InternalLink>{" "}
-              salen de tu agenda en el momento exacto y gestionan la respuesta del paciente,
+              se envían en el momento exacto antes de cada cita y gestionan la respuesta del
+              paciente,
               sin que nadie de tu equipo tenga que estar pendiente del móvil.
             </p>
             <Link

@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
-import BlogSource from "@/components/BlogSource"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
@@ -46,11 +45,11 @@ const faqs = [
   },
   {
     q: "¿El equipo tiene que aprender algún sistema nuevo?",
-    a: "No de forma significativa. El chatbot funciona en el mismo WhatsApp que ya usa tu equipo, y solo interviene cuando hace falta una persona. Tu equipo no cambia de herramienta — simplemente deja de tener que estar pendiente del móvil para los mensajes rutinarios.",
+    a: "No de forma significativa. El chatbot funciona en el mismo WhatsApp que ya usa tu equipo, y solo interviene cuando hace falta una persona. Lo único nuevo es el panel donde se ven las citas, y ahí no hace falta estar pendiente del móvil para los mensajes rutinarios.",
   },
   {
     q: "¿Cuánto tiempo al día se ahorra con la automatización?",
-    a: "Depende del volumen de mensajes, pero en clínicas con tráfico habitual de WhatsApp el ahorro suele estar entre una y tres horas diarias solo en gestión de consultas y confirmaciones. Ese tiempo pasa a dedicarse a la atención presencial o a tareas que realmente requieren presencia humana.",
+    a: "Depende del volumen de mensajes: cuantas más consultas y confirmaciones repetitivas se automatizan, más tiempo del equipo queda libre. Ese tiempo pasa a dedicarse a la atención presencial o a tareas que realmente requieren presencia humana.",
   },
   {
     q: "¿Es posible gestionar todas las citas solo por WhatsApp?",
@@ -58,7 +57,7 @@ const faqs = [
   },
   {
     q: "¿El equipo pierde el control de la agenda si se automatiza?",
-    a: "Al contrario: gana visibilidad. Cada cita que se reserva, cambia o cancela por WhatsApp queda reflejada en la agenda de la clínica sin que nadie copie datos a mano. El equipo deja de estar pendiente del móvil, pero sigue viendo y decidiendo sobre todo lo que ocurre en la agenda.",
+    a: "Al contrario: gana visibilidad. Cada cita que se reserva por WhatsApp queda anotada en la agenda del sistema, en lugar de repartida entre chats, notas y memoria. El equipo deja de estar pendiente del móvil, y los casos que piden criterio le siguen llegando a él.",
   },
   {
     q: "¿Puedo automatizar solo fuera de horario y responder yo durante el día?",
@@ -135,16 +134,15 @@ export default function ClinicaEsteticaWhatsappPage() {
           <P>
             WhatsApp se ha convertido en el canal principal por el que los pacientes
             contactan con clínicas estéticas. No el formulario web, no el correo electrónico,
-            no la llamada — WhatsApp. Entre el 95% y el 98% de los mensajes que llegan por
-            este canal se leen, frente al 20-25% de un email. El problema no es el canal. El
-            problema es lo que pasa al otro lado cuando llega un mensaje.
+            no la llamada — WhatsApp. El problema no es el canal. El problema es lo que pasa
+            al otro lado cuando llega un mensaje.
           </P>
           <P>
             En la mayoría de clínicas, alguien del equipo tiene que revisar el móvil, leer
             el mensaje, pensar la respuesta y escribirla. Un proceso que, multiplicado por
             todas las consultas del día, consume horas — y que, cuando el equipo está ocupado
-            atendiendo pacientes, simplemente no ocurre a tiempo. El 40% de las consultas
-            llegan fuera del horario de atención, cuando no hay nadie disponible.
+            atendiendo pacientes, simplemente no ocurre a tiempo. Y una parte de las
+            consultas llega fuera del horario de atención, cuando no hay nadie disponible.
           </P>
           <P>
             En este artículo vas a entender por qué los pacientes eligen WhatsApp, cuáles
@@ -165,11 +163,9 @@ export default function ClinicaEsteticaWhatsappPage() {
             Esa expectativa de rapidez es clave. Quien pregunta por un tratamiento está en un
             momento de decisión activa: no investiga para dentro de tres meses, se plantea dar
             el paso ahora. Por eso no espera respuesta en 24 horas como con un email — espera
-            recibirla en minutos. Un lead que no obtiene respuesta en cinco minutos tiene
-            hasta un 80% de probabilidades de perderse: mientras esperaba, ha encontrado otra
-            clínica que sí le contestó.
+            recibirla en minutos. Si tarda, es fácil que mientras esperaba haya encontrado
+            otra clínica que sí le contestó.
           </P>
-          <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
             Y la rapidez no solo decide la cita: una respuesta inmediata transmite
             profesionalidad y confianza antes incluso de que el paciente haya pisado la
@@ -259,8 +255,8 @@ export default function ClinicaEsteticaWhatsappPage() {
             </InternalLink>{" "}
             no sustituye a tu equipo — lo libera de las conversaciones rutinarias para que
             pueda centrarse en lo que realmente requiere trato humano. Responde al instante
-            las preguntas frecuentes, recoge los datos del interesado, ofrece huecos reales
-            de tu agenda y avisa a tu equipo solo cuando hace falta intervención.
+            las preguntas frecuentes, recoge los datos del interesado, le reserva la cita en
+            un hueco libre y avisa a tu equipo solo cuando hace falta intervención.
           </P>
           <P>
             La clave no es si tu clínica es grande o pequeña — es si estás perdiendo leads
@@ -316,8 +312,8 @@ export default function ClinicaEsteticaWhatsappPage() {
           <H2>Qué resultados puedes esperar</H2>
           <P>
             El cambio más inmediato es en los tiempos de respuesta: de horas a segundos,
-            las 24 horas del día, también fuera de horario. Ese 40% de consultas que llegaba
-            cuando no había nadie empieza a recibir respuesta y a convertirse en citas.
+            las 24 horas del día, también fuera de horario. Las consultas que antes llegaban
+            cuando no había nadie empiezan a recibir respuesta y a convertirse en citas.
           </P>
           <P>
             El segundo cambio es en la carga del equipo: las preguntas rutinarias dejan de

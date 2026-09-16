@@ -5,7 +5,6 @@ import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
 import BlogTable from "@/components/BlogTable"
-import BlogSource from "@/components/BlogSource"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import InternalLink from "@/components/blog/InternalLink"
@@ -42,11 +41,11 @@ const faqs = [
   },
   {
     q: "¿Cuánto representa un paciente que deja de venir?",
-    a: "Un paciente recurrente puede generar a lo largo de su relación con la clínica un valor aproximado de unos 3.000€, entre revisiones, limpiezas, tratamientos y posibles derivaciones a especialistas. Cuando ese paciente deja de venir sin que nadie lo note, ese valor se queda sobre la mesa, y recuperarlo es mucho más barato que conseguir un paciente nuevo desde cero. El problema es que esa pérdida no aparece en ningún informe: nadie da de baja a un paciente, simplemente deja de aparecer en la agenda. Por eso conviene revisar cada cierto tiempo el listado de última visita, que cualquier software de gestión dental permite sacar en unos clics.",
+    a: "Un paciente recurrente genera ingresos durante años, entre revisiones, limpiezas, tratamientos y posibles derivaciones a especialistas. Para ponerle cifra en tu clínica, multiplica tu ticket medio por las visitas que hace al año un paciente habitual y por los años que suele seguir viniendo. Cuando ese paciente deja de venir sin que nadie lo note, ese valor se queda sobre la mesa, y recuperarlo es mucho más barato que conseguir un paciente nuevo desde cero. El problema es que esa pérdida no aparece en ningún informe: nadie da de baja a un paciente, simplemente deja de aparecer en la agenda. Por eso conviene revisar cada cierto tiempo el listado de última visita, que muchos programas de gestión permiten sacar filtrando por fecha de última cita.",
   },
   {
     q: "¿Cómo afectan los no-shows a la facturación?",
-    a: "Entre el 12% y el 19% de las citas de una clínica dental terminan en no-show. Cada hueco que se queda vacío sin que se pueda recolocar es tiempo del equipo y del gabinete que no genera ingresos pero sí tiene un coste. En clínicas con bastante volumen de citas, esto puede suponer pérdidas de hasta 7.500€ al mes: la cuenta sale de 20 citas diarias × 22 días laborables × un 15% de no-shows × un ticket medio de unos 115€, así que conviene rehacerla con tus propios números. Es la pérdida más fácil de corregir de todas, porque no depende de captar a nadie nuevo — solo de que el paciente que ya reservó confirme o avise a tiempo.",
+    a: "Cada cita a la que el paciente no se presenta, y que no se puede recolocar, es tiempo del equipo y del gabinete que no genera ingresos pero sí tiene un coste. Para saber cuánto te cuesta a ti, haz la cuenta con tus propios datos: citas al día × días laborables del mes × tu tasa de no-shows × tu ticket medio. Es la pérdida más fácil de corregir de todas, porque no depende de captar a nadie nuevo — solo de que el paciente que ya reservó confirme o avise a tiempo.",
   },
   {
     q: "¿Cómo se reactivan pacientes que llevan tiempo sin venir?",
@@ -54,7 +53,7 @@ const faqs = [
   },
   {
     q: "¿Necesito contratar a alguien para gestionar todo esto?",
-    a: "No. La clave está en automatizar los procesos: mensajes de recuperación para pacientes inactivos, confirmaciones activas para reducir no-shows y seguimientos post-cita para detectar nuevas necesidades. Una vez configurado, el sistema funciona solo por WhatsApp, el canal que más se lee, y tu equipo solo interviene cuando un paciente responde para reservar.",
+    a: "No. Basta con automatizar los procesos: mensajes de recuperación para pacientes inactivos, confirmaciones activas para reducir no-shows y seguimientos post-cita para detectar nuevas necesidades. Una vez configurado, el sistema funciona solo por WhatsApp, un canal que los pacientes consultan a diario, y tu equipo solo interviene cuando un paciente responde para reservar.",
   },
 ]
 
@@ -209,10 +208,8 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             Se recuperan filtrando tu base por fecha de última visita y contactando a quien
             lleve más de doce meses sin aparecer. Merece la pena porque un paciente
             recurrente —que viene a sus revisiones, limpiezas y tratamientos a lo largo de
-            los años— puede llegar a representar un valor de vida de alrededor de 3.000€
-            para la clínica.
+            los años— vale para la clínica mucho más que una cita suelta.
           </P>
-          <BlogSource>SEME (Sociedad Española de Medicina Estética)</BlogSource>
           <P>
             Cuando ese paciente deja de venir sin que nadie lo note, ese valor se queda
             congelado, esperando a que alguien retome el contacto.
@@ -224,16 +221,16 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             revisión concreta.
           </P>
           <P>
-            Ese filtro lo puede sacar cualquier software de gestión dental —ClinicCloud o
-            Klinikare, por ejemplo, permiten listar pacientes por última cita en un par de
-            clics—, así que el dato ya lo tienes. El problema es el paso siguiente:
+            Ese listado suele poder sacarse del propio programa de gestión filtrando por fecha
+            de última cita; revisa cómo se hace en el tuyo, porque el dato probablemente ya lo
+            tienes. El problema es el paso siguiente:
             contactar con cada persona a mano es una tarea que requiere tiempo que el equipo
-            casi nunca tiene. Con un sistema automático que detecta estos patrones y envía{" "}
+            casi nunca tiene. Con un sistema automático que envía{" "}
             <InternalLink href="/blog/como-reactivar-pacientes-inactivos-clinica">
               mensajes de recuperación por WhatsApp
-            </InternalLink>
-            , ese trabajo se hace solo, sin que nadie
-            tenga que revisar la agenda manualmente.
+            </InternalLink>{" "}
+            a esos pacientes, ese trabajo se hace solo, sin que nadie tenga que escribirles
+            uno por uno.
           </P>
           <P>
             Si quieres ver cómo funciona este proceso paso a paso, en{" "}
@@ -250,17 +247,16 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
               Los no-shows se reducen con recordatorios automáticos
             </InternalLink>{" "}
             y confirmación activa en
-            los días previos a la cita. Es la palanca más rentable de todas porque, como
-            referencia del sector, entre un 12% y un 19% de las citas de una clínica dental
-            terminan sin que el paciente aparezca — y cada uno de esos huecos es tiempo de
-            gabinete y de personal que no genera ingreso pero sí tiene un coste fijo
-            asociado.
+            los días previos a la cita. Es la palanca más rentable de todas porque actúa
+            sobre citas que ya estaban vendidas: cada paciente que no aparece deja un hueco
+            que es tiempo de gabinete y de personal que no genera ingreso pero sí tiene un
+            coste fijo asociado.
           </P>
           <P>
-            En clínicas con buen volumen de citas, esto puede suponer pérdidas de hasta
-            7.500€ al mes. Sale de una cuenta sencilla — 20 citas al día × 22 días
-            laborables × 15% de no-shows × un ticket medio de unos 115€ — así que la cifra
-            cambia bastante según el tamaño de la clínica y el tipo de tratamiento.
+            Para ponerle cifra en tu clínica, la cuenta es sencilla: citas al día × días
+            laborables del mes × tu tasa de no-shows × tu ticket medio. El resultado cambia
+            mucho según el tamaño de la clínica y el tipo de tratamiento, así que merece la
+            pena hacerla con los datos reales de tu agenda.
           </P>
           <P>
             Reducir los no-shows no requiere más pacientes, solo mejor gestión de los que ya
@@ -308,18 +304,18 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
 
           <H2>Automatiza para que funcione sin esfuerzo del equipo</H2>
           <P>
-            Se automatiza conectando tu software de gestión con WhatsApp, de forma que los
-            mensajes salgan solos según el historial de cada paciente. Es la única manera de
+            Se automatiza con un sistema que envía los mensajes por el WhatsApp de la
+            clínica, sin que nadie tenga que mandarlos a mano. Es la única manera de
             que estas estrategias se sostengan: si dependen de que alguien del equipo se
             acuerde cada día, casi nunca se ejecutan de forma constante — la agenda diaria
             siempre gana.
           </P>
           <P>
-            El canal importa tanto como la automatización: en el sector se manejan tasas de
-            apertura de referencia del 95-98% en WhatsApp, frente al 20-25% de un email. Una
-            vez configurado el sistema, los mensajes de recuperación, recordatorios y
-            seguimientos se envían solos, según el historial y la situación de cada paciente,
-            y el equipo solo entra en juego cuando alguien responde para reservar.
+            El canal importa tanto como la automatización: WhatsApp es la aplicación en la
+            que los pacientes ya conversan a diario, y contestar ahí les cuesta una palabra;
+            a un email, en cambio, es fácil no responder nunca. Una vez configurado el
+            sistema, los mensajes de recuperación, recordatorios y seguimientos se envían
+            solos, en el momento que toca a cada paciente, y el equipo solo entra en juego cuando alguien responde para reservar.
           </P>
           <P>
             El resultado es una clínica que aprovecha al máximo la base de pacientes que ya

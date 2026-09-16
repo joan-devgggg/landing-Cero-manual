@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Qué pacientes deberían estar en la lista de espera?",
-    a: "Cualquiera que haya mostrado interés en adelantar su cita o que esté esperando una primera cita disponible. También son buenos candidatos los pacientes que escriben fuera de horario — hasta un 40% de las consultas de una clínica llegan así — y que pueden no haber encontrado hueco en la agenda inmediata.",
+    a: "Cualquiera que haya mostrado interés en adelantar su cita o que esté esperando una primera cita disponible. También son buenos candidatos los pacientes que escriben fuera de horario, cuando nadie puede darles cita en el momento, y que pueden no haber encontrado hueco en la agenda inmediata.",
   },
   {
     q: "¿Cómo aviso a un paciente sin que parezca spam?",
@@ -125,8 +125,8 @@ export default function ListaEsperaClinicaDentalPage() {
             oportunidad para otro paciente que ya estaba esperando.
           </P>
           <P>
-            Entre el 12% y el 19% de las citas de una clínica dental terminan en no-show o
-            cancelación. Sin un sistema que reaccione a tiempo, todos{" "}
+            Entre no-shows y cancelaciones, cualquier clínica dental ve cómo se le caen citas
+            cada semana. Sin un sistema que reaccione a tiempo, todos{" "}
             <InternalLink href="/blog/coste-real-no-shows-clinica-dental">
               esos huecos se pierden uno a uno
             </InternalLink>
@@ -153,7 +153,7 @@ export default function ListaEsperaClinicaDentalPage() {
           </P>
           <P>
             Y hay una fuente de pacientes para esta lista que muchas clínicas no
-            aprovechan: hasta un 40% de las consultas llegan fuera del horario de atención.
+            aprovechan: muchos mensajes llegan cuando la clínica ya ha cerrado.
             Esas personas que escriben a las diez de la noche preguntando por
             disponibilidad son, muchas veces, las candidatas perfectas para entrar en la
             lista de espera — ya han mostrado interés, solo falta el hueco adecuado.
@@ -220,7 +220,7 @@ export default function ListaEsperaClinicaDentalPage() {
             <InternalLink href="/blog/whatsapp-para-clinicas-dentales">
               un mensaje por WhatsApp
             </InternalLink>{" "}
-            — el canal con un 95-98% de apertura — y gestiona las respuestas
+            — la aplicación que el paciente tiene siempre a mano — y gestiona las respuestas
             hasta que el hueco queda ocupado. Todo esto sin que nadie del equipo tenga que
             estar pendiente del móvil.
           </P>
@@ -241,16 +241,16 @@ export default function ListaEsperaClinicaDentalPage() {
 
           <H2>Cuántos huecos puedes recuperar al mes</H2>
           <P>
-            Si tu clínica tiene una tasa de no-shows y cancelaciones del 12-19%, eso supone
-            varios huecos vacíos cada semana — y, sumados a lo largo de un mes, una cantidad
-            de citas que se podrían haber cubierto perfectamente con pacientes que ya
+            Para saber cuántos huecos se te escapan, suma los no-shows y las cancelaciones de
+            un mes normal en tu agenda. Si salen varios por semana, a final de mes son unas
+            cuantas citas que se podrían haber cubierto perfectamente con pacientes que ya
             estaban esperando.
           </P>
           <P>
-            Con recordatorios automáticos bien planteados, esa tasa puede reducirse hasta un
-            40%. Pero el porcentaje que queda — las cancelaciones que siempre van a existir,
-            porque son parte normal de cualquier agenda — es exactamente lo que una lista de
-            espera bien gestionada puede recuperar casi por completo.
+            Los recordatorios automáticos bien planteados evitan una parte de esas ausencias.
+            Las que quedan — las cancelaciones que siempre van a existir, porque son parte
+            normal de cualquier agenda — son exactamente lo que una lista de espera bien
+            gestionada puede recuperar.
           </P>
           <P>
             En la práctica, esto se traduce en que la mayoría de huecos que antes se quedaban

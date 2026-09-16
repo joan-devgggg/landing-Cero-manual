@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import ServiceFAQ from "@/components/ServiceFAQ"
-import BlogSource from "@/components/BlogSource"
 import P from "@/components/blog/P"
 import H2 from "@/components/blog/H2"
 import H3 from "@/components/blog/H3"
@@ -39,11 +38,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cuánto vale realmente un cliente recurrente para una clínica estética?",
-    a: "Un cliente que visita la clínica regularmente durante varios años puede generar entre 2.000€ y 4.000€ en ingresos totales — con una media aproximada de unos 3.000€ de valor de vida. Eso significa que reactivar a un paciente inactivo tiene un valor potencial mucho mayor que captar uno nuevo, sin el coste de adquisición asociado a la publicidad. Muchas clínicas invierten en atraer nuevos pacientes mientras ignoran una base de datos con decenas de clientes dormidos de alto valor.",
+    a: "Depende de tus tratamientos y de cuántas veces vuelve. Para saberlo en tu clínica, multiplica el ticket medio por las visitas que hace un cliente habitual a lo largo de los años: ese es su valor de vida. Lo que sí vale para cualquier clínica es que reactivar a un paciente inactivo tiene un valor potencial mucho mayor que captar uno nuevo, sin el coste de adquisición asociado a la publicidad. Muchas clínicas invierten en atraer nuevos pacientes mientras ignoran una base de datos con decenas de clientes dormidos.",
   },
   {
     q: "¿Cuándo es el mejor momento para pedir una reseña a un paciente?",
-    a: "Entre 30 y 60 minutos después de que el paciente ha salido de la cita. En ese momento la experiencia está fresca, el resultado del tratamiento empieza a sentirse, y el cliente tiene el móvil en la mano. Un mensaje automático de WhatsApp en ese intervalo — con el nombre del paciente y un enlace directo a la ficha de Google — tiene tasas de conversión del 20-35%, frente al 2-3% espontáneo. Pasados unos días, la ventana se cierra.",
+    a: "Poco después de que el paciente ha salido de la cita. En ese momento la experiencia está fresca, el resultado del tratamiento empieza a sentirse, y el cliente tiene el móvil en la mano. Un mensaje automático de WhatsApp en ese intervalo — con el nombre del paciente y un enlace directo a la ficha de Google — le pone muy fácil dejar la reseña en ese momento, cuando sin ese empujón casi nadie se acuerda de hacerlo. Pasados unos días, la ventana se cierra.",
   },
   {
     q: "¿Cómo funciona un programa de referidos para clínicas?",
@@ -51,7 +50,7 @@ const faqs = [
   },
   {
     q: "¿Qué es el seguimiento post-cita y por qué aumenta las reservas?",
-    a: "El seguimiento post-cita es un mensaje automático que se envía al paciente unos días después del tratamiento para preguntar cómo se encuentra, reforzar el resultado y, opcionalmente, sugerir el siguiente paso (próxima sesión, tratamiento complementario). El 40% de las consultas de una clínica llegan fuera de horario — lo que significa que muchos pacientes intentan contactar cuando nadie puede atenderles. Un sistema de seguimiento automático por WhatsApp mantiene la conversación activa y convierte esa intención en reserva, sin depender de que alguien esté disponible en ese momento.",
+    a: "El seguimiento post-cita es un mensaje automático que se envía al paciente unos días después del tratamiento para preguntar cómo se encuentra, reforzar el resultado y, opcionalmente, sugerir el siguiente paso (próxima sesión, tratamiento complementario). Un paciente escribe cuando le viene bien, y esa hora no siempre coincide con la de la clínica. Un sistema de seguimiento automático por WhatsApp mantiene la conversación activa y convierte esa intención en reserva, sin depender de que alguien esté disponible en ese momento.",
   },
   {
     q: "¿De verdad puedo conseguir más citas sin aumentar el presupuesto?",
@@ -140,9 +139,11 @@ export default function CaptarClientesArticlePage() {
             de venir.
           </P>
           <P>
-            Un cliente recurrente tiene un valor de vida de aproximadamente 3.000€. Si tu clínica
-            tiene 200 pacientes inactivos — pacientes que vinieron una o dos veces y no han
-            vuelto — eso representa hasta 600.000€ en ingresos dormidos. Antes de captar
+            Un cliente recurrente vuelve varias veces a lo largo de los años, así que cada
+            paciente que deja de venir es ingreso que ya no entra. Si tu clínica tiene 200
+            pacientes inactivos — pacientes que vinieron una o dos veces y no han vuelto —,
+            multiplica esa cifra por tu ticket medio y por las visitas al año de un cliente
+            habitual: eso es lo que tienes dormido en la base de datos. Antes de captar
             nuevos clientes, vale la pena recuperar los que ya conocen tu trabajo.
           </P>
           <P>
@@ -167,8 +168,8 @@ export default function CaptarClientesArticlePage() {
           </P>
           <P>
             El canal más efectivo para reactivar pacientes inactivos es WhatsApp. Los mensajes
-            de WhatsApp se abren entre el 95% y el 98% de las veces — frente al 20-25% del
-            email — lo que garantiza que el mensaje llega y se lee. Un{" "}
+            llegan a la aplicación que tus pacientes ya abren a diario, sin competir con las
+            promociones que se amontonan en la bandeja de entrada del correo. Un{" "}
             <InternalLink href="/blog/como-reactivar-pacientes-inactivos-clinica">
               mensaje de reactivación bien redactado
             </InternalLink>{" "}
@@ -183,8 +184,7 @@ export default function CaptarClientesArticlePage() {
             </InternalLink>{" "}
             automatiza este proceso: segmenta a los pacientes por tiempo de inactividad, envía
             el mensaje en el momento adecuado y gestiona las respuestas sin que el equipo tenga
-            que hacerlo manualmente. El resultado habitual es entre un 15% y un 30% de respuestas
-            positivas en la primera campaña.
+            que hacerlo manualmente.
           </P>
 
           <H2>2. Pide reseñas en el momento justo</H2>
@@ -201,8 +201,8 @@ export default function CaptarClientesArticlePage() {
               pacientes satisfechos no dejan reseñas
             </InternalLink>{" "}
             de forma espontánea, no por falta de voluntad sino por falta de empujón en el momento
-            exacto. La ventana se abre justo después de la cita — entre 30 y 60 minutos después
-            de que el paciente ha salido — y se cierra rápido. Un mensaje automático de WhatsApp
+            exacto. La ventana se abre justo después de la cita — mientras el paciente todavía la
+            tiene fresca — y se cierra rápido. Un mensaje automático de WhatsApp
             en ese intervalo, con el nombre del paciente y un enlace directo a la ficha de Google,
             convierte esa satisfacción en reseña antes de que se enfríe.
           </P>
@@ -236,9 +236,9 @@ export default function CaptarClientesArticlePage() {
 
           <H2>4. Usa WhatsApp para seguimiento post-cita</H2>
           <P>
-            El 40% de las consultas de una clínica llegan fuera de horario — por la noche,
-            el fin de semana, en momentos en que no hay nadie para atender. Muchos de esos
-            mensajes son de pacientes que acaban de tener una cita y quieren preguntar algo,
+            Parte de los mensajes que recibe una clínica llegan fuera de horario — por la
+            noche, el fin de semana, en momentos en que no hay nadie para atender. Entre
+            ellos hay pacientes que acaban de tener una cita y quieren preguntar algo,
             o que están considerando reservar la siguiente sesión. Si no reciben respuesta
             rápida, el interés se enfría.
           </P>
@@ -289,11 +289,9 @@ export default function CaptarClientesArticlePage() {
           <H2>Antes de captar más: cierra las fugas de tu agenda</H2>
           <P>
             Ninguna de estas estrategias rinde si los pacientes que ya te escriben se quedan
-            sin respuesta. La probabilidad de perder un lead que no recibe respuesta en los
-            primeros cinco minutos es del 80%: mientras espera, esa persona sigue escribiendo
-            a otras clínicas, y la primera que contesta se queda la cita.
+            sin respuesta. Mientras espera, esa persona puede seguir escribiendo a otras
+            clínicas, y la primera que contesta tiene ventaja para quedarse la cita.
           </P>
-          <BlogSource>MIT Lead Response Management Study</BlogSource>
           <P>
             Responder en minutos a todas horas no es realista para un equipo que está
             atendiendo en cabina. Un{" "}
