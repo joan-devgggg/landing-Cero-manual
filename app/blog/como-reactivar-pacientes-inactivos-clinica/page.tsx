@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cómo sé qué pacientes están inactivos sin revisar la agenda uno por uno?",
-    a: "No hace falta que lo hagas tú a mano. Se puede cruzar el historial de tu clínica con un criterio de tiempo — por ejemplo, «no ha reservado en los últimos seis meses» — y obtener automáticamente la lista de personas que encajan. Es el mismo trabajo que harías mirando ficha por ficha, pero hecho en segundos y sin que nadie tenga que dedicarle una tarde entera.",
+    a: "No hace falta que lo hagas tú a mano. El historial de tu clínica llega al sistema conectándolo a tu programa de gestión, si lo permite, o a partir de una exportación de tu base de pacientes; con él se aplica un criterio de tiempo — por ejemplo, «no ha reservado en los últimos seis meses» — y sale la lista de personas que encajan. Es el mismo trabajo que harías mirando ficha por ficha, pero hecho de forma automática y sin que nadie tenga que dedicarle una tarde entera.",
   },
   {
     q: "¿No es invasivo escribir a alguien que dejó de venir hace tiempo?",

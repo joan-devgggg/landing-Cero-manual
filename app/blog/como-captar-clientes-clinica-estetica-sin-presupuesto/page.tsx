@@ -201,7 +201,7 @@ export default function CaptarClientesArticlePage() {
               pacientes satisfechos no dejan reseñas
             </InternalLink>{" "}
             de forma espontánea, no por falta de voluntad sino por falta de empujón en el momento
-            exacto. La ventana se abre justo después de la cita — mientras el paciente todavía la
+            exacto. La ventana se abre poco después de la cita — mientras el paciente todavía la
             tiene fresca — y se cierra rápido. Un mensaje automático de WhatsApp
             en ese intervalo, con el nombre del paciente y un enlace directo a la ficha de Google,
             convierte esa satisfacción en reseña antes de que se enfríe.

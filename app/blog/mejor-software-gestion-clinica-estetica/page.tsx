@@ -163,7 +163,8 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
             las fotos de seguimiento, los consentimientos informados o la gestión de bonos son
             cosas que un CRM genérico no trae preparadas para una clínica. Y el cuarto es la capacidad de conectarse
             con otras herramientas: el mejor software no es una isla, sino uno que se integra
-            con tu calendario, tu WhatsApp y el resto de herramientas que uses.
+            con tu calendario, tu WhatsApp y el resto de herramientas que uses. Es también lo
+            que permite conectarle después un agente con IA sin duplicar la agenda.
           </P>
 
           <H2>Tipos de software que usa una clínica estética</H2>
@@ -331,7 +332,10 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
             Eso es lo que resuelve un agente con IA en WhatsApp: atiende a cualquier hora,
             resuelve las dudas frecuentes, agenda la cita y pasa a una persona del equipo los
             casos delicados. Trabaja con el número de WhatsApp que tu clínica ya tiene, así que
-            el paciente sigue escribiendo al mismo sitio.
+            el paciente sigue escribiendo al mismo sitio. Si tu programa de gestión se deja
+            conectar (Flowww, Koibox, ClinicCloud o Klinikare, por ejemplo), la cita entra en
+            tu agenda de siempre; si no encaja, la alternativa es un software a medida con el
+            agente dentro.
           </P>
 
           <H2>Cómo elegir sin equivocarte</H2>

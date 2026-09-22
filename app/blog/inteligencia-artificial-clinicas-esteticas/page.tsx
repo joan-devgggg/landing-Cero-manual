@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tiempo se tarda en notar resultados?",
-    a: "Las primeras semanas. Un agente de WhatsApp empieza a responder consultas desde el primer día, los recordatorios automáticos reducen los no-shows casi de inmediato, y las campañas de reactivación de pacientes inactivos suelen generar las primeras citas nuevas en la primera o segunda semana de funcionamiento.",
+    a: "Cada pieza empieza a trabajar el día que se activa: el agente de WhatsApp responde consultas desde ese momento, los recordatorios salen con la primera cita que tengan por delante y la reactivación escribe a tus pacientes inactivos en cuanto se lanza. Cuánto cambia tu agenda depende de tu clínica, así que la forma de saberlo es medir tus no-shows y tus citas antes de empezar y volver a medirlos unas semanas después.",
   },
 ]
 
@@ -136,9 +136,10 @@ export default function InteligenciaArtificialArticlePage() {
               la tecnología en sí
             </InternalLink>{" "}
             — es que ahora es accesible,
-            se configura en días y no requiere mantenimiento. Las clínicas que ya la
-            usan no están haciendo algo radicalmente distinto: están automatizando las
-            tareas repetitivas que antes consumían horas de su equipo cada semana.
+            se pone en marcha en menos de 14 días y su mantenimiento se limita a tener al
+            día la información de tu clínica. Lo que hace no es
+            radicalmente distinto de lo que ya hace tu equipo: automatiza las tareas
+            repetitivas que hoy consumen horas cada semana.
           </P>
           <P>
             En este artículo vas a ver, con datos concretos, qué puede hacer la IA por
@@ -266,8 +267,8 @@ export default function InteligenciaArtificialArticlePage() {
             porque no requiere captación.
           </P>
           <P>
-            Cada paso se apoya en el anterior, y cada uno empieza a dar resultados desde
-            las primeras semanas. No es necesario tener todo resuelto para empezar — solo
+            Cada paso se apoya en el anterior, y cada uno funciona desde el día en que se
+            activa. No es necesario tener todo resuelto para empezar — solo
             hay que empezar por el primero.
           </P>
         </article>

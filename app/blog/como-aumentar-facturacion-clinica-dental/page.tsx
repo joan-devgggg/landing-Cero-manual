@@ -14,7 +14,7 @@ const PATH = "/blog/como-aumentar-facturacion-clinica-dental"
 const DATES = articleDates("como-aumentar-facturacion-clinica-dental")
 const TITLE = "Aumentar la facturación de tu clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Aumenta la facturación de tu clínica dental sin gastar más en publicidad: cinco estrategias que puedes aplicar esta semana. Pide tu diagnóstico gratuito."
+  "Aumenta la facturación de tu clínica dental sin gastar más en publicidad: cuatro palancas que puedes activar esta semana. Pide tu auditoría gratuita."
 const HEADLINE =
   "Cómo aumentar la facturación de tu clínica dental sin necesidad de más pacientes"
 

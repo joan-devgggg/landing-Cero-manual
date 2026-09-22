@@ -244,7 +244,7 @@ export default function ChatbotWhatsappArticlePage() {
             caliente o dejar que se enfríe mientras decide escribir a la clínica de al lado.
           </P>
 
-          <H2>Qué puede hacer el chatbot por tu clínica: casos reales</H2>
+          <H2>Qué puede hacer el chatbot por tu clínica</H2>
           <P>
             Cuatro cosas, en concreto: resolver dudas sobre tratamientos, agendar la primera
             visita, cualificar al lead antes de pasarlo a tu equipo y escalar a una persona
@@ -281,7 +281,7 @@ export default function ChatbotWhatsappArticlePage() {
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
-            lo explicamos con ejemplos reales.
+            te explicamos cómo funcionaría con tus tratamientos.
           </P>
 
           <H3>Escala a una persona cuando hace falta</H3>
@@ -293,7 +293,7 @@ export default function ChatbotWhatsappArticlePage() {
 
           <H2>¿Es complicado de configurar?</H2>
           <P>
-            No: se monta en cuestión de días, no de meses. Se conecta al número de WhatsApp
+            No: está funcionando en menos de 14 días desde que empezamos. Se conecta al número de WhatsApp
             que ya usa tu clínica y se entrena con la información que ya tienes —
             tratamientos, precios, horarios — sin que tengas que crear nada desde cero. Es,
             probablemente, la sorpresa más habitual de quien nunca ha probado uno.

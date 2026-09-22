@@ -229,7 +229,7 @@ export default function AgenteVozArticlePage() {
           <P>
             Cada llamada queda anotada: quién ha llamado, qué necesitaba y qué se ha hecho.
             Tu equipo deja de depender de notas sueltas o de un «me suena que alguien
-            llamó por lo del tratamiento de...». Y, además, se activa en pocos días, sin
+            llamó por lo del tratamiento de...». Y, además, se activa en menos de 14 días, sin
             tocar tu número de teléfono.
           </P>
 
@@ -284,7 +284,7 @@ export default function AgenteVozArticlePage() {
             <InternalLink href="/agente-voz-ia-clinicas">
               agente de voz con IA para clínicas
             </InternalLink>{" "}
-            te explicamos, con ejemplos reales, cómo funciona el sistema, qué necesitas
+            te explicamos cómo funciona el sistema, qué necesitas
             para ponerlo en marcha y cuánto podrías estar dejando de ganar cada mes por
             llamadas que hoy nadie coge.
           </P>

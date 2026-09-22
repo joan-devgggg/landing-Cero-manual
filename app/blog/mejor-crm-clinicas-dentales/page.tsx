@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "¿Qué diferencia hay entre un CRM y el software de gestión de la clínica?",
-    a: "El software de gestión (agenda, historiales clínicos, facturación) resuelve la operativa una vez el paciente ya está dentro del sistema. El CRM se centra en lo anterior: captar el lead, cualificarlo y hacer seguimiento hasta que reserva su primera cita. Muchas clínicas dentales tienen un buen software de gestión pero ningún sistema que controle qué pasa con los leads que todavía no han venido.",
+    a: "El software de gestión (agenda, historiales clínicos, facturación) resuelve la operativa una vez el paciente ya está dentro del sistema. El CRM se ocupa de la relación: captar el lead, cualificarlo y hacerle seguimiento hasta que reserva, y después fidelizarlo. Algunos programas del sector reúnen las dos cosas. Muchas clínicas dentales tienen un buen software de gestión pero ningún sistema que controle qué pasa con los leads que todavía no han venido.",
   },
   {
     q: "¿Cuánto tarda en amortizarse un CRM en una clínica dental?",
@@ -314,8 +314,9 @@ export default function MejorCrmClinicasDentalesArticlePage() {
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
               Antes de cambiar de herramienta, mira qué hay dormido en tu base de datos
-              actual. La reactivación automática escribe por WhatsApp a los pacientes que
-              dejaron de venir.
+              actual. La reactivación automática trabaja sobre tu base de pacientes —conectándose
+              a tu programa si lo permite, o a partir de una exportación— y escribe por
+              WhatsApp a los que dejaron de venir.
             </p>
             <Link
               href="/reactivacion-pacientes-inactivos"

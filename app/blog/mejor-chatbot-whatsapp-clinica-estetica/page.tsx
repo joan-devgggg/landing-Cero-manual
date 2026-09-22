@@ -165,12 +165,14 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
             citas». Los menús rígidos frustran a quien escribe y no resuelven nada que no
             pudiera resolver una simple página de preguntas frecuentes.
           </P>
-          <H3>Que pueda agendar citas reales en tu calendario</H3>
+          <H3>Que pueda agendar citas reales, con disponibilidad real</H3>
           <P>
             Un chatbot que solo dice «en breve te confirmamos la cita» traslada el trabajo
             a tu equipo y, mientras tanto, deja la puerta abierta a que esa persona reserve
             en otra clínica. El sistema debería poder consultar la disponibilidad real y
-            dejar la cita confirmada en el mismo momento de la conversación.
+            dejar la cita confirmada en el mismo momento de la conversación: en tu programa
+            de gestión, si se deja conectar, o en un software a medida con el agente dentro
+            si no.
           </P>
           <H3>Que se entrene con la información real de tu clínica</H3>
           <P>
@@ -198,7 +200,7 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               chatbot de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
-            explicamos cada una con ejemplos reales.
+            explicamos cada una con más detalle.
           </P>
           <H3>Opcionales (pero útiles según tu caso)</H3>
           <P>

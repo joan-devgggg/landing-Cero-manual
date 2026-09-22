@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "¿Realmente los recordatorios automáticos reducen los no-shows?",
-    a: "Atacan la causa más habitual, que es el olvido. Un recordatorio por WhatsApp llega a la aplicación que el paciente usa a diario y le pide que confirme o cambie la cita, así que muchas ausencias se convierten en avisos con margen para reaccionar, algo que no consigue un SMS que nadie lee o una llamada que no se contesta. Cuánto baja tu tasa depende de tus pacientes y de tu agenda: la forma de saberlo es medirla antes de empezar y volver a medirla unos meses después, con el mismo cálculo de este artículo.",
+    a: "Atacan la causa más habitual, que es el olvido. Un recordatorio por WhatsApp llega a la aplicación que el paciente usa a diario y le pide que confirme o cambie la cita, así que muchas ausencias se convierten en avisos con margen para reaccionar, algo que no consigue un SMS, que no abre una conversación, o una llamada que no se contesta. Cuánto baja tu tasa depende de tus pacientes y de tu agenda: la forma de saberlo es medirla antes de empezar y volver a medirla unos meses después, con el mismo cálculo de este artículo.",
   },
 ]
 
@@ -219,8 +219,8 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
               recordatorio automático antes de la cita
             </InternalLink>
             . Por WhatsApp, el aviso llega a la aplicación que el paciente abre a lo largo del
-            día y le pide que confirme o cambie la cita —algo que no consigue un SMS que muchas
-            veces ni se llega a leer.
+            día y le pide que confirme o cambie la cita —algo que no consigue un SMS, que llega
+            pero no abre una conversación en la que responder.
           </P>
           <P>
             Sobre la pérdida real que has calculado en el apartado anterior, cada no-show que se

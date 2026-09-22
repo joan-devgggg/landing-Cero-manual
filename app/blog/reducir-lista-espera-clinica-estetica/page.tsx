@@ -235,8 +235,8 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
           <P>
             Todo lo anterior —centralizar la lista, ordenarla, avisar automáticamente ante
             cancelaciones y mantener informados a los pacientes— se puede gestionar con el
-            mismo sistema de recordatorios y comunicación automática por WhatsApp que ya usan
-            muchas clínicas para{" "}
+            mismo sistema de recordatorios y comunicación automática por WhatsApp que sirve
+            para{" "}
             <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
               reducir no-shows
             </InternalLink>

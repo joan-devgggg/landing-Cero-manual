@@ -41,15 +41,15 @@ const faqs = [
   },
   {
     q: "¿Hace seguimiento de los presupuestos que ya di y no se cerraron?",
-    a: "Sí, y es lo que más se nota. Retoma la conversación a los días que marques, pregunta por el motivo real de que esté parado — precio, miedo, no encontrar el momento — y según la respuesta ofrece financiación o una segunda visita para resolver dudas. Sin que nadie de tu equipo tenga que repasar una lista a mano.",
+    a: "Sí. Retoma la conversación a los días que marques, pregunta por el motivo real de que esté parado — precio, miedo, no encontrar el momento — y según la respuesta ofrece financiación o una segunda visita para resolver dudas. Sin que nadie de tu equipo tenga que repasar una lista a mano.",
   },
   {
     q: "¿Se conecta con ClinicCloud, Klinikare, Flowww o Koibox?",
-    a: "Por defecto, el agente agenda en su propio panel: tu equipo ve ahí las citas y las cambia de estado. Si necesitas que escriba directamente en el software que ya usas, es una integración que estudiamos en la auditoría gratuita y desarrollamos a medida para tu clínica.",
+    a: "Se puede integrar con ellos, si tu programa lo permite: el agente escribe la cita en la agenda que ya usa tu equipo. Si el tuyo no encaja o no se deja conectar, construimos el software a medida con el agente dentro, para que los datos de cada paciente sigan en un solo sitio. Lo vemos en la auditoría gratuita.",
   },
   {
     q: "Estamos tratando datos de salud. ¿Qué pasa con el RGPD?",
-    a: "Trabajamos sobre la API oficial de WhatsApp Business, con el consentimiento registrado dentro de la propia conversación, los datos alojados en la UE y contrato de encargado del tratamiento firmado. El agente no vuelca historial clínico en el chat: para hablar de un diagnóstico, deriva a tu equipo.",
+    a: "Trabajamos sobre la API oficial de WhatsApp Business, con el consentimiento registrado dentro de la propia conversación y contrato de encargado del tratamiento firmado. El agente no vuelca historial clínico en el chat: para hablar de un diagnóstico, deriva a tu equipo.",
   },
 ]
 

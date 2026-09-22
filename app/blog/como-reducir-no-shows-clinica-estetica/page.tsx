@@ -14,7 +14,7 @@ const PATH = "/blog/como-reducir-no-shows-clinica-estetica"
 const DATES = articleDates("como-reducir-no-shows-clinica-estetica")
 const TITLE = "Cómo reducir no-shows en tu clínica estética | Cero Manual"
 const DESCRIPTION =
-  "Un no-show en tu clínica estética es un hueco que ya no se llena. Te explicamos cómo reducirlos con recordatorios automáticos. Pide tu diagnóstico gratuito."
+  "Un no-show en tu clínica estética es un hueco que ya no se llena. Te explicamos cómo reducirlos con recordatorios automáticos. Pide tu auditoría gratuita."
 const HEADLINE = "Cómo reducir los no-shows en tu clínica estética y dejar de perder ingresos"
 
 export const metadata: Metadata = {

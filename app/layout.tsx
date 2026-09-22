@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s · Cero Manual",
   },
   description:
-    "Automatiza tu clínica estética con agentes de IA: WhatsApp, voz, recordatorios y reactivación de pacientes. Pide tu diagnóstico gratuito.",
+    "Automatiza tu clínica estética con agentes de IA: WhatsApp, voz, recordatorios y reactivación de pacientes. Pide tu auditoría gratuita.",
   keywords: [
     "automatización clínica estética",
     "agente IA WhatsApp clínica",

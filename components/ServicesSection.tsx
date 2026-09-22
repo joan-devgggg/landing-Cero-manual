@@ -10,7 +10,6 @@ const services = [
     name: "Agente WhatsApp 24/7",
     desc: "Responde, cualifica y agenda automáticamente. Las 24 horas. Habla con el tono de tu clínica, filtra leads y deja la cita reservada en la agenda.",
     benefit: "Tu mejor recepcionista, sin horario ni descanso",
-    badge: "Más solicitado",
     highlight: true,
   },
   {

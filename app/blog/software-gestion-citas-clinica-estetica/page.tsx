@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Qué diferencia hay entre un software de citas y un CRM?",
-    a: "Un software de citas se centra en el calendario: quién viene, cuándo y con qué profesional. Un CRM va un paso más allá y guarda el histórico de cada paciente, sus tratamientos y, en muchos casos, la facturación. Muchas clínicas empiezan solo con citas y añaden el CRM cuando necesitan hacer seguimiento comercial, no solo organizar la agenda.",
+    a: "Un software de citas se centra en el calendario: quién viene, cuándo y con qué profesional. El software de gestión suma la ficha del paciente, su historial y la facturación. Un CRM se ocupa de la relación: captar y cualificar leads, hacer seguimiento y fidelizar. Muchos programas del sector reúnen varias de estas piezas en una sola herramienta. Muchas clínicas empiezan solo con citas y añaden el CRM cuando necesitan hacer seguimiento comercial, no solo organizar la agenda.",
   },
   {
     q: "¿Cuánto cuesta un software de gestión de citas?",
@@ -223,8 +223,12 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
           <P>
             Un agente con IA puede atender esas conversaciones fuera de horario, resolver dudas
             frecuentes, dejar la cita reservada y pasar a una persona del equipo los casos que la
-            necesitan. Si quieres ver qué debe tener ese software base antes
-            de añadir esta capa y cómo elegir sin equivocarte, revisa nuestra guía de{" "}
+            necesitan. Si tu programa permite conectarse (Flowww, Koibox, ClinicCloud o
+            Klinikare, por ejemplo), el agente se integra con él y las citas entran en la
+            misma agenda que ya usa tu equipo; si no encaja o no se deja conectar, la
+            alternativa es un software a medida con el agente dentro, para que los datos de
+            cada paciente sigan en un solo sitio. Si quieres ver qué debe tener ese software
+            base antes de añadir esta capa y cómo elegir sin equivocarte, revisa nuestra guía de{" "}
             <InternalLink href="/blog/mejor-software-gestion-clinica-estetica">
               mejor software de gestión para clínicas estéticas
             </InternalLink>

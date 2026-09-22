@@ -7,7 +7,7 @@ import { Plus, Minus } from "lucide-react"
 const faqs = [
   {
     q: "¿Cuánto cuesta?",
-    a: "Depende del plan y los canales que actives. En la llamada de diagnóstico te hacemos una propuesta personalizada sin sorpresas ni letra pequeña.",
+    a: "Depende del plan y los canales que actives. En la auditoría gratuita te hacemos una propuesta personalizada sin sorpresas ni letra pequeña.",
   },
   {
     q: "¿El agente suena robótico?",
@@ -23,15 +23,15 @@ const faqs = [
   },
   {
     q: "¿Cuánto tarda en estar funcionando?",
-    a: "El agente está operativo en menos de 14 días desde que firmamos. El onboarding incluye configurar la base de conocimiento con tu información, tratamientos y precios.",
+    a: "El agente está operativo en menos de 14 días desde que empezamos. El onboarding incluye configurar la base de conocimiento con tu información, tratamientos y precios.",
   },
   {
     q: "¿Los datos de mis contactos están seguros?",
-    a: "Sí. Todo cumple con el RGPD. Los datos se almacenan en servidores europeos y nunca se comparten con terceros. Gestionamos los consentimientos digitales necesarios.",
+    a: "Sí. Tratamos los datos conforme al RGPD. Para dar el servicio trabajamos con proveedores —alojamiento, WhatsApp, modelos de IA y voz— que actúan como encargados del tratamiento, y algunos están fuera de la UE. La lista de encargados está en la política de privacidad.",
   },
   {
     q: "¿Se integra con mi software de gestión?",
-    a: "El agente agenda por defecto en su propio panel, no escribe directamente en Flowww, Koibox ni en ningún otro programa. Si necesitas que se conecte con el que ya usas, lo estudiamos en la llamada y lo desarrollamos a medida para tu clínica.",
+    a: "Si tu programa lo permite, sí: el agente se puede integrar con Flowww, Koibox, ClinicCloud o Klinikare para que las citas entren en la agenda que ya usa tu equipo. Si el tuyo no encaja o no se deja conectar, construimos el software a medida con el agente dentro. Lo vemos en la auditoría gratuita.",
   },
   {
     q: "¿Puedo desactivar el agente y atender yo manualmente?",

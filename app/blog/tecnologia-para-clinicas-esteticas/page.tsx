@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tiempo se tarda en implementar nueva tecnología en una clínica?",
-    a: "Depende de la herramienta, pero lo habitual es que una agenda online o un canal de WhatsApp Business estén operativos en pocos días. Un agente con IA suele tardar algo más en configurarse, porque hay que adaptarlo al tono y a los procesos de tu clínica, pero trabaja sobre el número de WhatsApp Business que ya tienes.",
+    a: "Depende de la herramienta, pero lo habitual es que una agenda online o un canal de WhatsApp Business estén operativos en pocos días. Un agente con IA tarda algo más en configurarse —en nuestro caso, menos de 14 días desde que empezamos—, porque hay que adaptarlo al tono y a los procesos de tu clínica, pero trabaja sobre el número de WhatsApp Business que ya tienes.",
   },
   {
     q: "¿Qué pasa si mi equipo no es muy tecnológico?",
@@ -260,7 +260,9 @@ export default function TecnologiaParaClinicasEsteticasPage() {
               un agente con IA
             </InternalLink>
             , empieza a atender desde el mismo número de WhatsApp que tus pacientes ya
-            conocen.
+            conocen, y se conecta a tu programa de gestión si este lo permite. Si no se deja
+            conectar, se construye el software a medida con el agente dentro, para que la
+            información de cada paciente siga en un solo sitio.
           </P>
         </article>
 

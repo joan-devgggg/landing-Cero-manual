@@ -93,7 +93,7 @@ export default function HeroSection() {
               e.currentTarget.style.boxShadow = "none"
             }}
           >
-            Agendar diagnóstico gratuito
+            Agendar auditoría gratuita
             <ArrowRight size={16} />
           </button>
 

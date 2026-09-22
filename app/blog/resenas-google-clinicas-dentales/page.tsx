@@ -40,11 +40,11 @@ const faqs = [
   },
   {
     q: "¿Por qué mis pacientes no dejan reseñas aunque salgan contentos de la consulta?",
-    a: "Casi nunca es porque no quieran. Lo habitual es que, simplemente, nadie se lo pide en el momento adecuado, o se les pide de una forma que requiere demasiados pasos —buscar la clínica en Google, encontrar el botón de reseñas, escribir el texto—. Un paciente satisfecho tiene buena intención pero poca prioridad para hacerlo por iniciativa propia; si se le facilita el proceso justo después de la cita, la probabilidad de que deje la reseña aumenta mucho.",
+    a: "Casi nunca es porque no quieran. Lo habitual es que, simplemente, nadie se lo pide en el momento adecuado, o se les pide de una forma que requiere demasiados pasos —buscar la clínica en Google, encontrar el botón de reseñas, escribir el texto—. Un paciente satisfecho tiene buena intención pero poca prioridad para hacerlo por iniciativa propia; si se le facilita el proceso en la hora siguiente a la cita, la probabilidad de que deje la reseña aumenta mucho.",
   },
   {
     q: "¿Cuál es el mejor momento para pedir una reseña tras una cita dental?",
-    a: "Cuanto antes, mejor: justo después de la cita, mientras el paciente todavía recuerda la experiencia con detalle y, si todo ha ido bien, sigue con la sensación positiva fresca. Pedirlo días después reduce mucho la tasa de respuesta, porque el recuerdo se diluye y la petición pasa a competir con el resto de notificaciones del día.",
+    a: "En la hora siguiente a la cita, mientras el paciente todavía recuerda la experiencia con detalle y, si todo ha ido bien, sigue con la sensación positiva fresca. Pedirlo días después reduce mucho la tasa de respuesta, porque el recuerdo se diluye y la petición pasa a competir con el resto de notificaciones del día.",
   },
   {
     q: "¿Qué debo hacer si recibo una reseña negativa?",
@@ -203,8 +203,8 @@ export default function ResenasGoogleClinicasDentalesArticlePage() {
           </P>
           <P>
             El canal también cuenta: WhatsApp es una aplicación que el paciente mira a lo largo
-            del día, así que es fácil que vea el mensaje en ese mismo rato, cosa que no suele
-            pasar con un email o un SMS, que a menudo se quedan sin leer.
+            del día, así que es fácil que vea el mensaje en ese mismo rato, y puede
+            responder en la misma conversación, cosa que no permiten un email o un SMS.
           </P>
           <P>
             Este mismo sistema automático que ya se utiliza para enviar recordatorios de citas y

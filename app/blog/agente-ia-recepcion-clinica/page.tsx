@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto cuesta implementar un agente IA y cuánto tarda en estar funcionando?",
-    a: "El coste es muy inferior al de contratar una persona adicional para recepción, y suele amortizarse rápido solo con las citas que antes se perdían por no responder a tiempo. La puesta en marcha es rápida: se conecta al número de WhatsApp que ya usa la clínica y, en cuestión de días, puede estar atendiendo las primeras consultas.",
+    a: "El coste es muy inferior al de contratar una persona adicional para recepción, y suele amortizarse rápido solo con las citas que antes se perdían por no responder a tiempo. La puesta en marcha es rápida: se conecta al número de WhatsApp que ya usa la clínica y en menos de 14 días desde que empezamos puede estar atendiendo las primeras consultas.",
   },
 ]
 

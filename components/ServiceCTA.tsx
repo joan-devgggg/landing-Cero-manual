@@ -13,7 +13,7 @@ export interface ServiceCTAProps {
 }
 
 export default function ServiceCTA({
-  geoLine = "Ya hay clínicas en Madrid, Barcelona y Valencia usando este sistema. Las primeras en adoptarlo en su ciudad tienen ventaja real.",
+  geoLine = "Sin permanencia: trabajamos mes a mes y cancelas con 30 días de aviso.",
   heading = "Reservar auditoría gratuita",
   subheading = (
     <>

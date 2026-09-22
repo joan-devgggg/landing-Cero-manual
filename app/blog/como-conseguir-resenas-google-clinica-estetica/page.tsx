@@ -179,7 +179,7 @@ export default function ResenasgoogleArticlePage() {
           </P>
           <P>
             El segundo motivo es el momento. Si no pides la reseña cuando la satisfacción
-            está en su punto más alto — justo después de la cita — la ventana se cierra.
+            está en su punto más alto — poco después de la cita — la ventana se cierra.
             A los dos días, la experiencia ya no está tan presente. A la semana, el cliente
             ya piensa en otra cosa.
           </P>

@@ -25,7 +25,7 @@ export default function CaseCTA({ title, text }: { title: string; text: string }
           className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-colors duration-200 bg-[#7D9B76] hover:bg-[#6A8564]"
           style={{ fontFamily: "var(--font-dm-sans)", color: "#ffffff" }}
         >
-          Agendar diagnóstico gratuito →
+          Agendar auditoría gratuita →
         </Link>
       </div>
     </div>

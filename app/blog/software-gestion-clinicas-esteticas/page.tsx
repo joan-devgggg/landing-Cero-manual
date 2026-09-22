@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: "¿Cuándo tiene sentido añadir automatización con inteligencia artificial?",
-    a: "Tiene sentido cuando la clínica ya tiene la agenda y los procesos básicos ordenados, pero el equipo no da abasto respondiendo consultas o hace seguimiento de pacientes de forma irregular. En ese punto, añadir un agente de WhatsApp con IA permite responder consultas, agendar citas y hacer seguimiento sin sumar carga de trabajo al equipo ni contratar más personal. Al revés no funciona: automatizar sobre una agenda desordenada solo multiplica el desorden más rápido, así que la base va primero. Además, el agente trabaja sobre el número de WhatsApp Business que la clínica ya tiene, así que tus pacientes siguen escribiendo al mismo número de siempre.",
+    a: "Tiene sentido cuando la clínica ya tiene la agenda y los procesos básicos ordenados, pero el equipo no da abasto respondiendo consultas o hace seguimiento de pacientes de forma irregular. En ese punto, añadir un agente de WhatsApp con IA permite responder consultas, agendar citas y hacer seguimiento sin sumar carga de trabajo al equipo ni contratar más personal. Al revés no funciona: automatizar sobre una agenda desordenada solo multiplica el desorden más rápido, así que la base va primero. Además, el agente trabaja sobre el número de WhatsApp Business que la clínica ya tiene, así que tus pacientes siguen escribiendo al mismo número de siempre. Y para no duplicar datos, se conecta a tu programa de gestión si este lo permite; si no, se construye el software a medida con el agente dentro.",
   },
 ]
 
@@ -210,8 +210,11 @@ export default function SoftwareGestionClinicasArticlePage() {
             La automatización, por su parte, no es exactamente una "categoría" de software,
             sino una capa que se puede aplicar sobre la agenda, el CRM o la comunicación: por
             ejemplo, enviar recordatorios automáticos, responder consultas por WhatsApp sin
-            intervención humana, o lanzar mensajes de seguimiento después de una cita. Muchas
-            clínicas tienen agenda y CRM, pero siguen haciendo todo lo demás a mano.
+            intervención humana, o lanzar mensajes de seguimiento después de una cita. Para
+            que esa capa no cree una segunda agenda, tiene que conectarse al programa que ya
+            usas —si lo permite, como Flowww, Koibox, ClinicCloud o Klinikare— o, si no
+            encaja, formar parte de un software a medida que lo reúna todo. Muchas clínicas
+            tienen agenda y CRM, pero siguen haciendo todo lo demás a mano.
           </P>
           <P>
             La automatización más básica sobre la agenda es la confirmación activa: un mensaje

@@ -106,7 +106,7 @@ export default function Navbar() {
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#6A8564")}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#7D9B76")}
             >
-              Agendar diagnóstico gratuito
+              Agendar auditoría gratuita
             </Link>
           </div>
 
@@ -170,7 +170,7 @@ export default function Navbar() {
                     color: "#ffffff",
                   }}
                 >
-                  Agendar diagnóstico gratuito →
+                  Agendar auditoría gratuita →
                 </Link>
               </motion.div>
             </div>

@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "¿Un chatbot barato puede salir más caro a largo plazo?",
-    a: "Sí, y es algo que se ve con frecuencia. Una solución low-cost que solo contesta con menús rígidos o respuestas genéricas no agenda citas ni cualifica leads — sigue perdiendo las consultas que llegan fuera de horario. La diferencia de precio frente a un agente IA avanzado suele ser pequeña comparada con el valor de las citas que ese agente sí consigue cerrar.",
+    a: "Puede. Una solución low-cost que solo contesta con menús rígidos o respuestas genéricas no agenda citas ni cualifica leads — sigue perdiendo las consultas que llegan fuera de horario. La diferencia de precio frente a un agente IA avanzado suele ser pequeña comparada con el valor de las citas que ese agente sí consigue cerrar.",
   },
   {
     q: "¿Cuánto tiempo tarda en notarse el retorno de la inversión?",
@@ -281,8 +281,8 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
             cuota es fija independientemente del volumen?
           </P>
           <P>
-            Si quieres ver cómo se responden estas preguntas en la práctica, con ejemplos
-            reales aplicados a clínicas estéticas, en{" "}
+            Si quieres ver cómo se responden estas preguntas en el caso de una clínica
+            estética, en{" "}
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               chatbot de WhatsApp para clínicas estéticas
             </InternalLink>{" "}

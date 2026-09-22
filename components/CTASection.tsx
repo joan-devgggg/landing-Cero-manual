@@ -75,7 +75,7 @@ export default function CTASection() {
           className="text-center text-sm mb-8"
           style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
         >
-          Ya hay clínicas en Madrid, Barcelona y Valencia usando este sistema. Las primeras en adoptarlo en su ciudad tienen ventaja real.
+          Sin permanencia: trabajamos mes a mes y cancelas con 30 días de aviso.
         </motion.p>
 
         <motion.div
@@ -105,7 +105,7 @@ export default function CTASection() {
                 className="text-3xl md:text-4xl font-semibold leading-tight mb-4"
                 style={{ fontFamily: "var(--font-playfair)", color: "#ffffff" }}
               >
-                Agenda tu diagnóstico gratuito
+                Agenda tu auditoría gratuita
               </h2>
               <p
                 className="text-base leading-relaxed"
@@ -250,7 +250,7 @@ export default function CTASection() {
                 >
                   {loading ? "Enviando..." : (
                     <>
-                      Quiero mi diagnóstico gratuito
+                      Quiero mi auditoría gratuita
                       <ArrowRight size={16} />
                     </>
                   )}

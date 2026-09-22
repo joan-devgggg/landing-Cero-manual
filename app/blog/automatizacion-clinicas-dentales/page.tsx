@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "¿Qué necesito para empezar a automatizar mi clínica?",
-    a: "Básicamente, el número de WhatsApp Business de la clínica y la información que ya tienes: tratamientos, horarios y política de citas. El agente se conecta a ese mismo número, responde a los pacientes, les agenda la cita en la agenda del propio sistema y pasa a una persona del equipo los casos delicados. El cambio se nota en el día a día: menos llamadas repetitivas y menos huecos vacíos.",
+    a: "Básicamente, el número de WhatsApp Business de la clínica y la información que ya tienes: tratamientos, horarios y política de citas. El agente se conecta a ese mismo número, responde a los pacientes, les agenda la cita —en tu programa de gestión si se deja conectar, o en un software a medida si no— y pasa a una persona del equipo los casos delicados. El cambio se nota en el día a día: menos llamadas repetitivas y menos huecos vacíos.",
   },
   {
     q: "¿Por dónde debería empezar si nunca he automatizado nada en mi clínica?",
@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: "¿Es muy caro implementar IA en una clínica dental pequeña?",
-    a: "No tanto como parece. Una clínica pequeña no necesita un desarrollo a medida ni un equipo técnico propio: hay sistemas ya preparados que se ponen en marcha sobre el WhatsApp de la clínica en pocos días, con una cuota mensual como la de cualquier otra herramienta de gestión. Y al empezar por una sola tarea, la inversión inicial es pequeña y el retorno se ve pronto en los no-shows evitados y los leads que dejan de perderse.",
+    a: "No tanto como parece. Una clínica pequeña no necesita un desarrollo a medida ni un equipo técnico propio: hay sistemas ya preparados que se ponen en marcha sobre el WhatsApp de la clínica en menos de 14 días, con una cuota mensual como la de cualquier otra herramienta de gestión. Y al empezar por una sola tarea, la inversión inicial es pequeña y el retorno se ve pronto en los no-shows evitados y los leads que dejan de perderse.",
   },
   {
     q: "¿Los pacientes notan que hablan con un sistema automatizado?",
@@ -131,7 +131,7 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             IT propios. Eso ya no es así. Hoy, una clínica dental con una sola sede puede
             automatizar las mismas tareas que antes requerían un equipo de recepción
             trabajando sin descanso — con herramientas de inteligencia artificial que se
-            configuran en días, no en meses.
+            ponen en marcha en menos de 14 días.
           </P>
           <P>
             La pregunta ya no es si tu clínica puede permitirse automatizar, sino cuánto te
@@ -267,8 +267,9 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
           </P>
           <P>
             Reactivarlos uno por uno con llamadas es lento y, en la práctica, casi nunca se
-            hace de forma sistemática. Un sistema automatizado puede identificar a los
-            pacientes que llevan entre 6 y 12 meses sin cita y enviarles un mensaje por
+            hace de forma sistemática. Un sistema automatizado, conectado a tu programa de
+            gestión si lo permite o alimentado con una exportación de tu base de pacientes,
+            puede identificar a los pacientes que llevan entre 6 y 12 meses sin cita y enviarles un mensaje por
             WhatsApp recordándoles que toca revisión, con la opción de agendar directamente
             desde el mensaje.
           </P>

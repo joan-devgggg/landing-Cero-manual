@@ -162,13 +162,14 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
             otra clínica.
           </P>
           <P>
-            <strong>Cero coste adicional por volumen.</strong> Para una recepcionista, diez
-            consultas más al día significan más carga de trabajo. Para un chatbot,{" "}
+            <strong>Más volumen sin más personas.</strong> Para una recepcionista, diez
+            consultas más al día significan más carga de trabajo. Para un chatbot no
+            suponen ni más horas de equipo ni otra contratación, y{" "}
             <InternalLink href="/blog/cuanto-cuesta-chatbot-whatsapp-clinica">
-              no suponen ningún coste extra
+              su cuota
             </InternalLink>{" "}
-            — responde igual de bien la consulta número uno que
-            la número cien.
+            no crece al ritmo de la carga — responde igual de bien la consulta número uno
+            que la número cien.
           </P>
           <P>
             <strong>Consistencia.</strong> El chatbot da siempre la misma información sobre
@@ -223,7 +224,7 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               chatbot de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
-            lo explicamos con ejemplos reales de conversaciones.
+            lo explicamos con más detalle.
           </P>
           <P>
             Dicho de otra forma: el chatbot se ocupa del volumen, y la recepcionista se
@@ -251,8 +252,8 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
 
           <H2>La combinación ganadora: chatbot + recepcionista</H2>
           <P>
-            En la práctica, las clínicas que mejor resultado obtienen no eligen entre una
-            opción y la otra — combinan ambas, cada una en lo que hace mejor. El chatbot
+            Lo más sensato no suele ser elegir entre una opción y la otra, sino combinar
+            ambas, cada una en lo que hace mejor. El chatbot
             cubre las 24 horas, responde al instante y nunca deja un mensaje sin contestar.
             La recepcionista se centra en los pacientes que tiene delante, en las
             conversaciones que el chatbot ha escalado porque requieren una persona, y en
