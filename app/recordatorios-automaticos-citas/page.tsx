@@ -163,7 +163,7 @@ export default function RecordatoriosPage() {
             {
               icon: "Star",
               title: "Más reseñas, sin pedirlas a mano",
-              desc: "El seguimiento automático pide la opinión justo después de la cita, cuando es más probable que la persona la deje — y la deje buena.",
+              desc: "El seguimiento automático pide la opinión poco después de la cita, cuando es más probable que la persona la deje — y la deje buena.",
             },
           ]}
         />

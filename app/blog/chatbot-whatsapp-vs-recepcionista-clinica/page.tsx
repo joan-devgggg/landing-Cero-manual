@@ -162,13 +162,14 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
             otra clínica.
           </P>
           <P>
-            <strong>Cero coste adicional por volumen.</strong> Para una recepcionista, diez
-            consultas más al día significan más carga de trabajo. Para un chatbot,{" "}
+            <strong>Más volumen sin más personas.</strong> Para una recepcionista, diez
+            consultas más al día significan más carga de trabajo. Para un chatbot no
+            suponen ni más horas de equipo ni otra contratación, y{" "}
             <InternalLink href="/blog/cuanto-cuesta-chatbot-whatsapp-clinica">
-              no suponen ningún coste extra
+              su cuota
             </InternalLink>{" "}
-            — responde igual de bien la consulta número uno que
-            la número cien.
+            no crece al ritmo de la carga — responde igual de bien la consulta número uno
+            que la número cien.
           </P>
           <P>
             <strong>Consistencia.</strong> El chatbot da siempre la misma información sobre

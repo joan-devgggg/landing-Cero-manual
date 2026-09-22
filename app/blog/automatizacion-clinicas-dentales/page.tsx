@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: "¿Es muy caro implementar IA en una clínica dental pequeña?",
-    a: "No tanto como parece. Una clínica pequeña no necesita un desarrollo a medida ni un equipo técnico propio: hay sistemas ya preparados que se ponen en marcha sobre el WhatsApp de la clínica en pocos días, con una cuota mensual como la de cualquier otra herramienta de gestión. Y al empezar por una sola tarea, la inversión inicial es pequeña y el retorno se ve pronto en los no-shows evitados y los leads que dejan de perderse.",
+    a: "No tanto como parece. Una clínica pequeña no necesita un desarrollo a medida ni un equipo técnico propio: hay sistemas ya preparados que se ponen en marcha sobre el WhatsApp de la clínica en menos de 14 días, con una cuota mensual como la de cualquier otra herramienta de gestión. Y al empezar por una sola tarea, la inversión inicial es pequeña y el retorno se ve pronto en los no-shows evitados y los leads que dejan de perderse.",
   },
   {
     q: "¿Los pacientes notan que hablan con un sistema automatizado?",
@@ -131,7 +131,7 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             IT propios. Eso ya no es así. Hoy, una clínica dental con una sola sede puede
             automatizar las mismas tareas que antes requerían un equipo de recepción
             trabajando sin descanso — con herramientas de inteligencia artificial que se
-            configuran en días, no en meses.
+            ponen en marcha en menos de 14 días.
           </P>
           <P>
             La pregunta ya no es si tu clínica puede permitirse automatizar, sino cuánto te

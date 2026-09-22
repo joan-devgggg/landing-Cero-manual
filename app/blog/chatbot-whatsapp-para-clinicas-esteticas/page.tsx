@@ -293,7 +293,7 @@ export default function ChatbotWhatsappArticlePage() {
 
           <H2>¿Es complicado de configurar?</H2>
           <P>
-            No: se monta en cuestión de días, no de meses. Se conecta al número de WhatsApp
+            No: está funcionando en menos de 14 días desde que empezamos. Se conecta al número de WhatsApp
             que ya usa tu clínica y se entrena con la información que ya tienes —
             tratamientos, precios, horarios — sin que tengas que crear nada desde cero. Es,
             probablemente, la sorpresa más habitual de quien nunca ha probado uno.

@@ -181,8 +181,8 @@ export default function NoShowsArticlePage() {
 
           <H2>Por qué los recordatorios tradicionales no funcionan</H2>
           <P>
-            Los recordatorios tradicionales no funcionan porque llegan por canales que tus
-            pacientes ya casi no miran. Un SMS o un{" "}
+            Los recordatorios tradicionales no funcionan porque llegan por canales en los que el
+            paciente no puede contestar en la misma conversación. Un SMS o un{" "}
             <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
               email de «le recordamos su cita»
             </InternalLink>{" "}

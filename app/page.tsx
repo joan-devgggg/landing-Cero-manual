@@ -17,7 +17,7 @@ const PATH = "/"
 const TITLE = "Agentes de IA para clínicas estéticas | Cero Manual"
 const OG_TITLE = "Agentes de IA para clínicas estéticas"
 const DESCRIPTION =
-  "Agentes de IA que responden en WhatsApp, agendan citas, envían recordatorios y reactivan pacientes de tu clínica estética. Pide tu diagnóstico gratuito."
+  "Agentes de IA que responden en WhatsApp, agendan citas, envían recordatorios y reactivan pacientes de tu clínica estética. Pide tu auditoría gratuita."
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

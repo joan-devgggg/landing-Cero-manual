@@ -136,7 +136,8 @@ export default function InteligenciaArtificialArticlePage() {
               la tecnología en sí
             </InternalLink>{" "}
             — es que ahora es accesible,
-            se configura en días y no requiere mantenimiento. Lo que hace no es
+            se pone en marcha en menos de 14 días y su mantenimiento se limita a tener al
+            día la información de tu clínica. Lo que hace no es
             radicalmente distinto de lo que ya hace tu equipo: automatiza las tareas
             repetitivas que hoy consumen horas cada semana.
           </P>

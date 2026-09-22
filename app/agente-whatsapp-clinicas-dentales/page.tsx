@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Estamos tratando datos de salud. ¿Qué pasa con el RGPD?",
-    a: "Trabajamos sobre la API oficial de WhatsApp Business, con el consentimiento registrado dentro de la propia conversación, los datos alojados en la UE y contrato de encargado del tratamiento firmado. El agente no vuelca historial clínico en el chat: para hablar de un diagnóstico, deriva a tu equipo.",
+    a: "Trabajamos sobre la API oficial de WhatsApp Business, con el consentimiento registrado dentro de la propia conversación y contrato de encargado del tratamiento firmado. El agente no vuelca historial clínico en el chat: para hablar de un diagnóstico, deriva a tu equipo.",
   },
 ]
 

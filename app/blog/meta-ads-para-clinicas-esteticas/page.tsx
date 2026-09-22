@@ -123,7 +123,7 @@ export default function MetaAdsArticlePage() {
           <P>
             Meta Ads — Facebook e Instagram — es hoy el canal de pago más rentable para
             clínicas estéticas con presupuesto ajustado. Ningún otro canal te permite llegar
-            a personas con interés activo en estética, dentro de un radio de 10 kilómetros de
+            a personas con interés activo en estética, dentro de un radio de 5-15 km de
             tu clínica, sin que tengan que estar buscando nada en ese momento.
           </P>
           <P>
@@ -155,7 +155,7 @@ export default function MetaAdsArticlePage() {
           <P>
             La razón principal es la primera: puedes llegar exactamente a personas que han
             mostrado interés en tratamientos estéticos, bienestar o cuidado personal — y
-            limitarlo a quienes viven o trabajan a menos de diez kilómetros de tu clínica.
+            limitarlo a quienes viven o trabajan en un radio de 5-15 km de tu clínica.
           </P>
           <P>
             El segundo motivo es el formato visual. Los tratamientos estéticos se venden con

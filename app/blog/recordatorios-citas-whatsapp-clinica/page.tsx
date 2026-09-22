@@ -153,9 +153,8 @@ export default function RecordatoriosWhatsAppArticlePage() {
             sus amigos, y lo normal es que lo vea pronto.
           </P>
           <P>
-            El SMS queda en un punto intermedio, pero cada vez se percibe más como spam y
-            muchos operadores filtran los mensajes comerciales antes de que lleguen al
-            destinatario. Y el email, aunque sigue siendo útil para facturas o documentación,
+            El SMS queda en un punto intermedio: llega, pero no abre una conversación en la
+            que el paciente pueda confirmar, preguntar o cambiar la cita en el mismo hilo. Y el email, aunque sigue siendo útil para facturas o documentación,
             no es el canal en el que un paciente espera recibir un aviso urgente sobre su
             cita de mañana.
           </P>

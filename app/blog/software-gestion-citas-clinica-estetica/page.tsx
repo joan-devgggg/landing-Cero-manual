@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Qué diferencia hay entre un software de citas y un CRM?",
-    a: "Un software de citas se centra en el calendario: quién viene, cuándo y con qué profesional. Un CRM va un paso más allá y guarda el histórico de cada paciente, sus tratamientos y, en muchos casos, la facturación. Muchas clínicas empiezan solo con citas y añaden el CRM cuando necesitan hacer seguimiento comercial, no solo organizar la agenda.",
+    a: "Un software de citas se centra en el calendario: quién viene, cuándo y con qué profesional. El software de gestión suma la ficha del paciente, su historial y la facturación. Un CRM se ocupa de la relación: captar y cualificar leads, hacer seguimiento y fidelizar. Muchos programas del sector reúnen varias de estas piezas en una sola herramienta. Muchas clínicas empiezan solo con citas y añaden el CRM cuando necesitan hacer seguimiento comercial, no solo organizar la agenda.",
   },
   {
     q: "¿Cuánto cuesta un software de gestión de citas?",

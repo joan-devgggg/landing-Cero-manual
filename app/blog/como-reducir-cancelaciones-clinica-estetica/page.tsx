@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cuál es la diferencia entre un no-show y una cancelación de última hora?",
-    a: "Un no-show es cuando el paciente sencillamente no aparece sin avisar — el hueco queda inutilizable porque nadie puede reservarlo. Una cancelación de última hora (menos de 2-4 horas antes) es técnicamente mejor, porque al menos hay tiempo teórico para rellenar la cita, pero en la práctica es igual de dañina: con tan poco margen, la probabilidad de cubrir ese hueco es mínima. Ambas situaciones provocan la misma pérdida de ingresos y de tiempo del profesional.",
+    a: "Un no-show es cuando el paciente sencillamente no aparece sin avisar — el hueco queda inutilizable porque nadie puede reservarlo. Una cancelación de última hora (con menos de 24 horas de antelación) es técnicamente mejor, porque al menos hay tiempo teórico para rellenar la cita, pero en la práctica es igual de dañina: con tan poco margen, la probabilidad de cubrir ese hueco es mínima. Ambas situaciones provocan la misma pérdida de ingresos y de tiempo del profesional.",
   },
   {
     q: "¿Con cuánta antelación debo enviar la confirmación de cita?",
@@ -183,8 +183,8 @@ export default function CancelacionesArticlePage() {
           </P>
           <P>
             Desde el punto de vista de la gestión de agenda, la diferencia práctica es pequeña
-            si la cancelación llega con menos de 2 horas de antelación: tampoco hay tiempo real
-            para actuar. Pero si la cancelación llega con 24-48 horas de margen, la situación
+            si la cancelación llega el mismo día, a pocas horas de la cita: tampoco hay tiempo
+            real para actuar. Pero si la cancelación llega con 24-48 horas de margen, la situación
             es completamente diferente — ese hueco puede rellenarse con pacientes de lista de
             espera o con pacientes a los que se les ofreció adelantar su cita.
           </P>

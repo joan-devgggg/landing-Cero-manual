@@ -149,8 +149,9 @@ export default function MarketingDigitalClinicasArticlePage() {
 
           <H2>Los canales de marketing que realmente funcionan para clínicas estéticas</H2>
           <P>
-            Los canales que funcionan de verdad para una clínica estética son tres:
-            Instagram, Google y WhatsApp. Cada uno cubre una fase distinta del recorrido del
+            Los canales que funcionan de verdad para una clínica estética son tres
+            principales —Instagram, Google y WhatsApp—, con los portales de reserva y los
+            referidos como apoyo. Cada uno cubre una fase distinta del recorrido del
             paciente — Instagram genera confianza, Google capta la demanda que ya existe y
             WhatsApp cierra la cita — y el error más común es tratarlos como si fueran
             intercambiables.
@@ -320,7 +321,7 @@ export default function MarketingDigitalClinicasArticlePage() {
 
           <H2>Cómo combinar todos los canales sin volverse loco</H2>
           <P>
-            Se combinan pensándolos como un embudo, no como cuatro cuentas que alimentar:
+            Se combinan pensándolos como un embudo, no como canales sueltos que alimentar:
             Instagram construye confianza, Google capta la demanda activa y WhatsApp cierra
             la conversación. El error habitual es invertir tiempo y dinero en los dos
             primeros sin haber resuelto el tercero, que es lo que permite{" "}
