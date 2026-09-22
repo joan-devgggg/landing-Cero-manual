@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cómo sé qué pacientes están en riesgo de no volver?",
-    a: "El indicador más fiable es el tiempo desde la última visita comparado con la frecuencia habitual de ese tratamiento. Si una persona que suele venir cada 6-8 semanas para mantenimiento lleva 12 sin aparecer, es una señal clara. Un sistema automático puede detectar estos patrones por ti y avisarte antes de que ese paciente se convierta en un cliente perdido.",
+    a: "El indicador más fiable es el tiempo desde la última visita comparado con la frecuencia habitual de ese tratamiento. Si una persona que suele venir cada 6-8 semanas para mantenimiento lleva 12 sin aparecer, es una señal clara. Un sistema automático puede detectar estos patrones por ti —con el historial que recibe de tu programa de gestión, si se deja conectar, o de una exportación de tu base de pacientes— y avisarte antes de que ese paciente se convierta en un cliente perdido.",
   },
   {
     q: "¿No es invasivo escribir a un paciente que no ha pedido cita?",
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tiempo tengo que dedicar a la fidelización si la automatizo?",
-    a: "Prácticamente nada en el día a día. Una vez configurados los mensajes de seguimiento y las secuencias de reactivación, el sistema los envía solo según el calendario y el historial de cada paciente. Tu equipo solo entra en juego cuando un paciente responde y quiere reservar, algo que también se puede gestionar de forma automática.",
+    a: "Prácticamente nada en el día a día. Una vez configurados los mensajes de seguimiento y las secuencias de reactivación, el sistema los envía solo según el calendario y el historial de cada paciente, que obtiene de tu programa de gestión si se puede conectar o de una exportación de tu base de pacientes. Tu equipo solo entra en juego cuando un paciente responde y quiere reservar, algo que también se puede gestionar de forma automática.",
   },
   {
     q: "¿Funciona igual de bien para clínicas pequeñas que para clínicas grandes?",

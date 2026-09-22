@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "¿Se conecta con ClinicCloud, Klinikare, Flowww o Koibox?",
-    a: "Por defecto, el agente agenda en su propio panel: tu equipo ve ahí las citas y las cambia de estado. Si necesitas que escriba directamente en el software que ya usas, es una integración que estudiamos en la auditoría gratuita y desarrollamos a medida para tu clínica.",
+    a: "Se puede integrar con ellos, si tu programa lo permite: el agente escribe la cita en la agenda que ya usa tu equipo. Si el tuyo no encaja o no se deja conectar, construimos el software a medida con el agente dentro, para que los datos de cada paciente sigan en un solo sitio. Lo vemos en la auditoría gratuita.",
   },
   {
     q: "Estamos tratando datos de salud. ¿Qué pasa con el RGPD?",

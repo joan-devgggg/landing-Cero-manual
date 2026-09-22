@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "¿Se integra con mi software de gestión?",
-    a: "El sistema envía los recordatorios y gestiona la agenda desde su propio panel. Si quieres que trabaje directamente sobre el programa que ya usas, lo valoramos en la auditoría gratuita y lo desarrollamos a medida.",
+    a: "Si tu programa lo permite (Flowww, Koibox, ClinicCloud o Klinikare, por ejemplo), el sistema se integra con él y envía los recordatorios sobre las citas de tu agenda de siempre. Si no encaja o no se deja conectar, construimos el software a medida con los recordatorios dentro. Lo vemos en la auditoría gratuita.",
   },
   {
     q: "¿Cuánto bajan realmente los no-shows?",

@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "¿Se integra con mi software de gestión?",
-    a: "El agente agenda por defecto en su propio panel, no escribe directamente en Flowww, Koibox ni en ningún otro programa. Si necesitas que se conecte con el que ya usas, lo estudiamos en la llamada y lo desarrollamos a medida para tu clínica.",
+    a: "Si tu programa lo permite, sí: el agente se puede integrar con Flowww, Koibox, ClinicCloud o Klinikare para que las citas entren en la agenda que ya usa tu equipo. Si el tuyo no encaja o no se deja conectar, construimos el software a medida con el agente dentro. Lo vemos en la auditoría gratuita.",
   },
   {
     q: "¿Puedo desactivar el agente y atender yo manualmente?",

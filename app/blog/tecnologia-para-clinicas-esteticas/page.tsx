@@ -260,7 +260,9 @@ export default function TecnologiaParaClinicasEsteticasPage() {
               un agente con IA
             </InternalLink>
             , empieza a atender desde el mismo número de WhatsApp que tus pacientes ya
-            conocen.
+            conocen, y se conecta a tu programa de gestión si este lo permite. Si no se deja
+            conectar, se construye el software a medida con el agente dentro, para que la
+            información de cada paciente siga en un solo sitio.
           </P>
         </article>
 

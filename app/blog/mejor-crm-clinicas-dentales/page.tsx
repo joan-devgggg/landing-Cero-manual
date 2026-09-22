@@ -314,8 +314,9 @@ export default function MejorCrmClinicasDentalesArticlePage() {
               style={{ color: "#3A3A3A", fontFamily: "var(--font-dm-sans)" }}
             >
               Antes de cambiar de herramienta, mira qué hay dormido en tu base de datos
-              actual. La reactivación automática escribe por WhatsApp a los pacientes que
-              dejaron de venir.
+              actual. La reactivación automática trabaja sobre tu base de pacientes —conectándose
+              a tu programa si lo permite, o a partir de una exportación— y escribe por
+              WhatsApp a los que dejaron de venir.
             </p>
             <Link
               href="/reactivacion-pacientes-inactivos"

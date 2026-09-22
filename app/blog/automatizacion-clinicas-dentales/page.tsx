@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "¿Qué necesito para empezar a automatizar mi clínica?",
-    a: "Básicamente, el número de WhatsApp Business de la clínica y la información que ya tienes: tratamientos, horarios y política de citas. El agente se conecta a ese mismo número, responde a los pacientes, les agenda la cita en la agenda del propio sistema y pasa a una persona del equipo los casos delicados. El cambio se nota en el día a día: menos llamadas repetitivas y menos huecos vacíos.",
+    a: "Básicamente, el número de WhatsApp Business de la clínica y la información que ya tienes: tratamientos, horarios y política de citas. El agente se conecta a ese mismo número, responde a los pacientes, les agenda la cita —en tu programa de gestión si se deja conectar, o en un software a medida si no— y pasa a una persona del equipo los casos delicados. El cambio se nota en el día a día: menos llamadas repetitivas y menos huecos vacíos.",
   },
   {
     q: "¿Por dónde debería empezar si nunca he automatizado nada en mi clínica?",
@@ -267,8 +267,9 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
           </P>
           <P>
             Reactivarlos uno por uno con llamadas es lento y, en la práctica, casi nunca se
-            hace de forma sistemática. Un sistema automatizado puede identificar a los
-            pacientes que llevan entre 6 y 12 meses sin cita y enviarles un mensaje por
+            hace de forma sistemática. Un sistema automatizado, conectado a tu programa de
+            gestión si lo permite o alimentado con una exportación de tu base de pacientes,
+            puede identificar a los pacientes que llevan entre 6 y 12 meses sin cita y enviarles un mensaje por
             WhatsApp recordándoles que toca revisión, con la opción de agendar directamente
             desde el mensaje.
           </P>
