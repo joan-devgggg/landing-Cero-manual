@@ -284,7 +284,7 @@ export default function AgenteVozArticlePage() {
             <InternalLink href="/agente-voz-ia-clinicas">
               agente de voz con IA para clínicas
             </InternalLink>{" "}
-            te explicamos, con ejemplos reales, cómo funciona el sistema, qué necesitas
+            te explicamos cómo funciona el sistema, qué necesitas
             para ponerlo en marcha y cuánto podrías estar dejando de ganar cada mes por
             llamadas que hoy nadie coge.
           </P>

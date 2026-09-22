@@ -223,7 +223,7 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               chatbot de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
-            lo explicamos con ejemplos reales de conversaciones.
+            lo explicamos con más detalle.
           </P>
           <P>
             Dicho de otra forma: el chatbot se ocupa del volumen, y la recepcionista se
@@ -251,8 +251,8 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
 
           <H2>La combinación ganadora: chatbot + recepcionista</H2>
           <P>
-            En la práctica, las clínicas que mejor resultado obtienen no eligen entre una
-            opción y la otra — combinan ambas, cada una en lo que hace mejor. El chatbot
+            Lo más sensato no suele ser elegir entre una opción y la otra, sino combinar
+            ambas, cada una en lo que hace mejor. El chatbot
             cubre las 24 horas, responde al instante y nunca deja un mensaje sin contestar.
             La recepcionista se centra en los pacientes que tiene delante, en las
             conversaciones que el chatbot ha escalado porque requieren una persona, y en

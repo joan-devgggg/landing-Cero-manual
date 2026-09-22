@@ -198,7 +198,7 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               chatbot de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
-            explicamos cada una con ejemplos reales.
+            explicamos cada una con más detalle.
           </P>
           <H3>Opcionales (pero útiles según tu caso)</H3>
           <P>

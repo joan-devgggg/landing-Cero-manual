@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "¿Hace seguimiento de los presupuestos que ya di y no se cerraron?",
-    a: "Sí, y es lo que más se nota. Retoma la conversación a los días que marques, pregunta por el motivo real de que esté parado — precio, miedo, no encontrar el momento — y según la respuesta ofrece financiación o una segunda visita para resolver dudas. Sin que nadie de tu equipo tenga que repasar una lista a mano.",
+    a: "Sí. Retoma la conversación a los días que marques, pregunta por el motivo real de que esté parado — precio, miedo, no encontrar el momento — y según la respuesta ofrece financiación o una segunda visita para resolver dudas. Sin que nadie de tu equipo tenga que repasar una lista a mano.",
   },
   {
     q: "¿Se conecta con ClinicCloud, Klinikare, Flowww o Koibox?",

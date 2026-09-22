@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "¿Qué hago si un paciente no contesta al recordatorio?",
-    a: "Lo mejor es tener un segundo aviso más cercano a la cita y, si tampoco responde, hacer un seguimiento breve después — igual que harías con cualquier lead que tarda en contestar. Cuanto antes retomes el contacto, más probable es que confirme o reprograme. Muchas clínicas descubren que, simplemente reordenando cuándo se envía ese segundo aviso, recuperan una parte importante de esas citas.",
+    a: "Lo mejor es tener un segundo aviso más cercano a la cita y, si tampoco responde, hacer un seguimiento breve después — igual que harías con cualquier lead que tarda en contestar. Cuanto antes retomes el contacto, más probable es que confirme o reprograme.",
   },
   {
     q: "¿Cuánto cuesta poner en marcha un sistema de recordatorios automáticos?",

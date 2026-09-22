@@ -6,7 +6,7 @@ import { X } from "lucide-react"
 
 const problems = [
   "Recibes consultas a las 11 de la noche y no puedes responder",
-  "Tienes un 15-20% de no-shows cada semana",
+  "Cada semana se te quedan huecos por pacientes que no aparecen",
   "Los leads de Meta se enfrían porque tardas en contestar",
   "Tu equipo no puede estar en todo a la vez",
   "Tienes pacientes inactivos que no han vuelto en meses",

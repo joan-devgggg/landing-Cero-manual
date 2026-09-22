@@ -75,7 +75,7 @@ export default function CTASection() {
           className="text-center text-sm mb-8"
           style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
         >
-          Ya hay clínicas en Madrid, Barcelona y Valencia usando este sistema. Las primeras en adoptarlo en su ciudad tienen ventaja real.
+          Sin permanencia: trabajamos mes a mes y cancelas con 30 días de aviso.
         </motion.p>
 
         <motion.div

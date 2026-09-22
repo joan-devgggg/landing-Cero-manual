@@ -306,7 +306,7 @@ export default function ClinicaEsteticaWhatsappPage() {
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
-            lo explicamos con ejemplos reales.
+            te explicamos cómo funcionaría con tus tratamientos.
           </P>
 
           <H2>Qué resultados puedes esperar</H2>
