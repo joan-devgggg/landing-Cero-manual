@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Agentes de IA para Clínicas Estéticas | Cero Manual",
     description:
-      "Agente de IA en WhatsApp que responde, cualifica y agenda citas en menos de 5 minutos. Sin contratar a nadie más.",
+      "Agente de IA en WhatsApp que responde, cualifica y agenda citas a cualquier hora. Sin contratar a nadie más.",
     type: "website",
     url: "https://ceromanual.es",
     siteName: "Cero Manual",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Agentes de IA para Clínicas Estéticas | Cero Manual",
     description:
-      "Agente de IA en WhatsApp que responde, cualifica y agenda citas en menos de 5 minutos. Sin contratar a nadie más.",
+      "Agente de IA en WhatsApp que responde, cualifica y agenda citas a cualquier hora. Sin contratar a nadie más.",
   },
   robots: {
     index: true,

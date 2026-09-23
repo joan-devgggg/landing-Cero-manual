@@ -53,7 +53,7 @@ interface Message {
 const WELCOME: Message = {
   role: "assistant",
   content:
-    "¡Hola! Soy Sara, tu asistente de la clínica. Esta es una demo para que veas cómo funcionaría un agente real. Pregúntame sobre tratamientos, precios o reserva una cita de prueba. ¿En qué te puedo ayudar?",
+    "¡Hola! Soy Sara, la asistente virtual de la clínica. Esta es una demo para que veas cómo funcionaría un agente real. Pregúntame sobre tratamientos, precios o reserva una cita de prueba. ¿En qué te puedo ayudar?",
 }
 
 const SUGGESTIONS = [

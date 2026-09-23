@@ -17,7 +17,7 @@ const TITLE = "Chatbot WhatsApp clínicas estéticas: qué es | Cero Manual"
 const DESCRIPTION =
   "Un chatbot de WhatsApp responde consultas, agenda citas y cualifica leads de tu clínica estética las 24 horas. Descubre cómo funciona y qué cuesta ponerlo."
 const HEADLINE =
-  "Chatbot de WhatsApp para clínicas estéticas: qué es y por qué tu competencia ya lo tiene"
+  "Chatbot de WhatsApp para clínicas estéticas: qué es y cómo funciona"
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "¿Mis pacientes notarán que están hablando con un bot?",
-    a: "Si está bien configurado, la mayoría no lo nota — o, si lo nota, no le importa porque ha recibido lo que necesitaba: una respuesta clara, al momento, sin esperas. Se entrena con el tono y la información real de tu clínica, así que la conversación suena cercana y natural, no a contestador automático. La diferencia con un chatbot de menús de hace unos años es justo esa: no obliga a elegir entre opciones numeradas, entiende lo que le escriben con sus propias palabras y responde en consecuencia. Y en el momento en que la consulta se sale de lo previsible o pide criterio clínico, pasa la conversación a una persona de tu equipo en lugar de improvisar.",
+    a: "Sí, y así debe ser: desde el 2 de agosto de 2026, el Reglamento europeo de IA obliga a informar de que se está hablando con una IA, así que el chatbot se presenta como asistente virtual de la clínica. Lo que no notarán es la rigidez de un bot de menús: reciben una respuesta clara, al momento, sin esperas. Se entrena con el tono y la información real de tu clínica, así que la conversación suena cercana y natural, no a contestador automático. La diferencia con un chatbot de menús de hace unos años es justo esa: no obliga a elegir entre opciones numeradas, entiende lo que le escriben con sus propias palabras y responde en consecuencia. Y en el momento en que la consulta se sale de lo previsible o pide criterio clínico, pasa la conversación a una persona de tu equipo en lugar de improvisar.",
   },
   {
     q: "¿Tengo que estar pendiente del WhatsApp para que funcione?",
@@ -305,7 +305,7 @@ export default function ChatbotWhatsappArticlePage() {
             como siempre, sin interrupciones.
           </P>
 
-          <H2>Cuánto cuesta y qué retorno puedes esperar</H2>
+          <H2>De qué depende el coste y qué retorno esperar</H2>
           <P>
             Un agente con IA en WhatsApp tiene una cuota mensual por encima de la de un bot de
             menús. Para saber si te compensa, haz la cuenta con tus números: cuántas consultas

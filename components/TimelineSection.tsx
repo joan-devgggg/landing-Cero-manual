@@ -60,7 +60,7 @@ export default function TimelineSection() {
           >
             De lead a cita
             <br />
-            <span style={{ fontStyle: "italic", color: "#7D9B76" }}>en menos de 5 minutos</span>
+            <span style={{ fontStyle: "italic", color: "#7D9B76" }}>sin esperas</span>
           </h2>
         </motion.div>
 

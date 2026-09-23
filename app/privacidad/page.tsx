@@ -33,7 +33,7 @@ export default function PrivacidadPage() {
           Política de Privacidad
         </h1>
         <p className="text-sm mb-16" style={{ color: "#8A8580" }}>
-          Última actualización: mayo de 2025
+          Última actualización: septiembre de 2026
         </p>
 
         <div className="flex flex-col gap-12" style={{ color: "#3A3A3A" }}>
@@ -71,7 +71,7 @@ export default function PrivacidadPage() {
               2. Datos que recopilamos
             </h2>
             <p className="text-sm leading-relaxed mb-3">
-              A través de los formularios de contacto y diagnóstico de nuestra web recopilamos: nombre, dirección de correo electrónico, número de teléfono e información sobre el volumen de negocio y problemas operativos de su empresa.
+              A través de los formularios de contacto y de auditoría gratuita de nuestra web recopilamos: nombre, dirección de correo electrónico, número de teléfono e información sobre el volumen de negocio y problemas operativos de su empresa. Si utiliza el chat o el agente de voz de demostración, se trata además el contenido de lo que escriba o diga, para generar las respuestas.
             </p>
             <p className="text-sm leading-relaxed">
               Adicionalmente, mediante cookies y tecnologías de seguimiento (ver sección 8), podemos recopilar datos de navegación como dirección IP, tipo de dispositivo, páginas visitadas y duración de la sesión.
@@ -88,7 +88,7 @@ export default function PrivacidadPage() {
             </h2>
             <ul className="text-sm leading-relaxed space-y-2 list-disc list-inside">
               <li>Gestión de leads comerciales y seguimiento de solicitudes de información.</li>
-              <li>Contacto proactivo para agendar reuniones de diagnóstico gratuito.</li>
+              <li>Contacto proactivo para agendar reuniones de auditoría gratuita.</li>
               <li>Envío de comunicaciones comerciales relacionadas con los servicios de Cero Manual (solo si ha prestado consentimiento).</li>
               <li>Medición del rendimiento de campañas publicitarias en Meta (Facebook/Instagram).</li>
               <li>Mejora de la experiencia de usuario en nuestra web.</li>
@@ -139,7 +139,19 @@ export default function PrivacidadPage() {
                 <strong>WhatsApp Business API</strong> — para la gestión de comunicaciones automatizadas por WhatsApp.
               </li>
               <li>
-                <strong>Railway (Utility Warehouse Ltd.)</strong> — proveedor de infraestructura cloud donde se aloja la aplicación.
+                <strong>Railway Corporation</strong> (Estados Unidos) — proveedor de infraestructura cloud donde se aloja la aplicación.
+              </li>
+              <li>
+                <strong>Airtable (Formagrid, Inc.)</strong> (Estados Unidos) — almacenamiento de los datos de contacto que se envían a través de los formularios de la web.
+              </li>
+              <li>
+                <strong>OpenRouter, Inc.</strong> (Estados Unidos) — intermediario técnico que da acceso al modelo de inteligencia artificial del chat de demostración de la web.
+              </li>
+              <li>
+                <strong>Anthropic PBC</strong> (Estados Unidos) — proveedor del modelo de inteligencia artificial que genera las respuestas del chat de demostración.
+              </li>
+              <li>
+                <strong>Vapi</strong> (Estados Unidos) — plataforma del agente de voz de demostración de la web.
               </li>
             </ul>
           </section>
@@ -153,6 +165,9 @@ export default function PrivacidadPage() {
               6. Transferencias internacionales
             </h2>
             <p className="text-sm leading-relaxed">
+              Algunos de los encargados indicados en el apartado anterior tratan datos fuera del Espacio Económico Europeo, en los Estados Unidos de América: Railway Corporation, Airtable (Formagrid, Inc.), OpenRouter, Inc., Anthropic PBC y Vapi. Estas transferencias internacionales se amparan en el Marco de Privacidad de Datos UE-EE. UU. (decisión de adecuación de la Comisión Europea) cuando el proveedor está adherido a él o, en su defecto, en las Cláusulas Contractuales Tipo aprobadas por la Comisión Europea (Art. 46 RGPD).
+            </p>
+            <p className="text-sm leading-relaxed mt-3">
               Meta Platforms procesa datos en servidores ubicados en los Estados Unidos de América. Dicha transferencia se realiza con las garantías adecuadas previstas en el Art. 46 RGPD, concretamente mediante las{" "}
               <strong>Cláusulas Contractuales Tipo (Standard Contractual Clauses — SCC)</strong>{" "}
               adoptadas por la Comisión Europea. Para más información, consulte la{" "}

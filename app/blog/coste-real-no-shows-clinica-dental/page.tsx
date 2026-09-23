@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "¿El coste de un no-show es solo lo que se hubiera facturado en esa cita?",
-    a: "No, esa es solo la parte más visible. Al coste directo de la cita perdida hay que sumar el tiempo del profesional y del equipo que queda sin uso, el coste fijo del sillón y la consulta durante ese hueco, y el efecto indirecto de no haber podido ofrecer ese hueco a otro paciente que sí habría asistido. Cuando se suman todos estos factores, la pérdida real suele ser bastante mayor que el precio del tratamiento que tocaba ese día.",
+    a: "En lo esencial, sí: la pérdida es lo que habrías facturado —o, si quieres afinar, el margen de esa cita—. El sillón, la consulta y el sueldo del equipo se pagan igual venga o no el paciente; por eso el hueco duele, pero no son un coste que se sume encima. Tampoco se suma aparte el coste de oportunidad de no haber dado ese hueco a otro paciente: es ese mismo ingreso, y contarlo otra vez duplicaría la pérdida. Lo único que sí se añade es lo que se gastó específicamente para esa cita y ya no se recupera, como material desechable abierto o un trabajo de laboratorio.",
   },
   {
     q: "¿Cuánto puede llegar a perder al mes una clínica dental por no-shows?",
@@ -139,10 +139,13 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
             mayor importe, ese ingreso simplemente no se produce.
           </P>
           <P>
-            Pero el hueco vacío también tiene un coste fijo asociado: el sillón, la consulta, el
-            material preparado y, sobre todo, el tiempo del odontólogo y del auxiliar que estaban
-            reservados para esa franja. Ese tiempo no se puede "guardar" para otro momento; se
-            pierde igual que si la clínica hubiera estado cerrada esa hora.
+            Detrás de ese ingreso hay costes que se pagan igual venga o no el paciente: el
+            sillón, la consulta y, sobre todo, el tiempo del odontólogo y del auxiliar
+            reservados para esa franja. No son una pérdida que se sume a la anterior —se
+            pagarían de todos modos—, pero explican por qué el hueco duele: ese tiempo no se
+            puede "guardar" para otro momento. Lo que sí se suma es lo que se gastó solo para
+            esa cita y no se recupera, como material desechable ya abierto o un trabajo de
+            laboratorio encargado.
           </P>
           <P>
             Estos costes directos tampoco son un caso aislado: se repiten semana tras semana, en
@@ -152,12 +155,14 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
 
           <H2>Qué costes indirectos no se ven pero también duelen</H2>
           <P>
-            Más allá de la pérdida inmediata, cada no-show tiene un coste de oportunidad: ese
-            hueco podría haber sido ocupado por otro paciente, ya fuera{" "}
+            El coste de oportunidad —que ese hueco podría haberlo ocupado otro paciente— no
+            es una pérdida distinta de la anterior, sino la misma vista desde otro lado: si lo
+            sumas al precio de la cita, la cuentas dos veces. Lo que sí añade es un motivo para
+            actuar: ese hueco podía ser para{" "}
             <InternalLink href="/blog/lista-espera-clinica-dental">
               alguien en lista de espera
             </InternalLink>{" "}
-            o alguien que llamó pidiendo cita y al que se le dijo que no había
+            o para alguien que llamó pidiendo cita y al que se le dijo que no había
             disponibilidad próxima.
           </P>
           <P>

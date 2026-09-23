@@ -14,11 +14,11 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/mejor-software-gestion-clinica-estetica"
 const DATES = articleDates("mejor-software-gestion-clinica-estetica")
-const TITLE = "Mejor software para clínicas estéticas en 2026 | Cero Manual"
+const TITLE = "Mejor software para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
   "¿Cuál es el mejor software de gestión para tu clínica estética? Te explicamos qué criterios usar y cuándo tiene sentido añadir automatización con IA."
 const HEADLINE =
-  "Mejor software de gestión para clínicas estéticas: cómo elegir en 2026"
+  "Mejor software de gestión para clínicas estéticas: cómo elegir"
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -333,7 +333,7 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
             resuelve las dudas frecuentes, agenda la cita y pasa a una persona del equipo los
             casos delicados. Trabaja con el número de WhatsApp que tu clínica ya tiene, así que
             el paciente sigue escribiendo al mismo sitio. Si tu programa de gestión se deja
-            conectar (Flowww, Koibox, ClinicCloud o Klinikare, por ejemplo), la cita entra en
+            conectar (Flowww o Koibox, por ejemplo), la cita entra en
             tu agenda de siempre; si no encaja, la alternativa es un software a medida con el
             agente dentro.
           </P>

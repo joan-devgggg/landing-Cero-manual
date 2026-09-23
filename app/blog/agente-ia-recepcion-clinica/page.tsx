@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "¿No suena robótico hablar con un agente IA en lugar de con una persona?",
-    a: "Si está bien configurado, no. El agente se entrena con el tono, el vocabulario y la información concreta de tu clínica, y mantiene conversaciones naturales en español, entendiendo variaciones en cómo se formulan las preguntas. La mayoría de pacientes simplemente notan que les responden rápido y bien — no que están hablando con un sistema.",
+    a: "Si está bien configurado, no. El agente se entrena con el tono, el vocabulario y la información concreta de tu clínica, y mantiene conversaciones naturales en español, entendiendo variaciones en cómo se formulan las preguntas. Se presenta como asistente virtual de la clínica, como exige el Reglamento europeo de IA, y lo que el paciente nota es que le responden rápido y bien.",
   },
   {
     q: "¿Qué pasa si un paciente plantea algo que el agente no puede resolver?",
@@ -215,7 +215,7 @@ export default function AgenteIaRecepcionClinicaArticlePage() {
             que se reciben mientras el equipo está con otro paciente.
           </P>
 
-          <H2>Cuánto cuesta y cuándo se amortiza</H2>
+          <H2>De qué depende el coste y cuándo se amortiza</H2>
           <P>
             El coste de un agente IA de recepción es muy inferior al de contratar a una
             persona adicional, y no implica gastos de nómina, vacaciones ni bajas. En la

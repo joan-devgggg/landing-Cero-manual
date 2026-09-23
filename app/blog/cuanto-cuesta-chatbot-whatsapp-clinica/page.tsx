@@ -15,7 +15,7 @@ const DATES = articleDates("cuanto-cuesta-chatbot-whatsapp-clinica")
 const TITLE = "Precio de un chatbot de WhatsApp para clínicas | Cero Manual"
 const DESCRIPTION =
   "El precio de un chatbot de WhatsApp para clínicas varía según funcionalidades. Te explicamos qué factores influyen en el coste y cuándo se amortiza."
-const HEADLINE = "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? Guía de precios 2026"
+const HEADLINE = "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? De qué depende el precio"
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -134,8 +134,8 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
           </P>
           <P>
             En este artículo vas a entender qué factores influyen en el precio de un
-            chatbot de WhatsApp para tu clínica, qué rangos de precio puedes esperar según
-            el tipo de solución, en qué se diferencia un chatbot básico de un agente IA
+            chatbot de WhatsApp para tu clínica, qué tipos de solución hay y qué cambia en
+            el precio de cada una, en qué se diferencia un chatbot básico de un agente IA
             avanzado, y cuándo empieza a amortizarse la inversión.
           </P>
 
@@ -182,10 +182,14 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
             Algunas soluciones cobran en función del número de conversaciones o mensajes
             gestionados al mes, mientras que otras ofrecen una cuota fija con volumen
             ilimitado. El nivel de soporte y mantenimiento —ajustes, mejoras continuas,
-            resolución de incidencias— también forma parte del precio.
+            resolución de incidencias— también forma parte del precio. Y hay un coste aparte
+            de la cuota del proveedor: Meta cobra los mensajes de plantilla que envía la
+            empresa —recordatorios, avisos, campañas— por mensaje entregado desde el 1 de
+            julio de 2025, con una tarifa que depende de la categoría del mensaje y del país.
+            Pregunta al proveedor si ese coste va incluido o se factura aparte.
           </P>
 
-          <H2>Rangos de precio según el tipo de solución</H2>
+          <H2>Tipos de solución y qué cambia en el precio</H2>
           <P>
             A grandes rasgos, en el mercado encontramos tres niveles de solución, cada uno
             con un rango de precio y un nivel de resultados muy distinto.

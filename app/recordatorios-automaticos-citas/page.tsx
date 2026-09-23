@@ -128,7 +128,7 @@ export default function RecordatoriosPage() {
               icon: "Star",
               num: "04",
               title: "Seguimiento después de la cita",
-              desc: "Cuando todo ha ido bien, el sistema pide la reseña en el momento exacto — cuando la experiencia todavía está fresca y la persona está más dispuesta a dejarla.",
+              desc: "Después de cada cita, el sistema pide la reseña a todos los clientes por igual, cuando la experiencia todavía está fresca.",
             },
           ]}
           closing={
@@ -163,7 +163,7 @@ export default function RecordatoriosPage() {
             {
               icon: "Star",
               title: "Más reseñas, sin pedirlas a mano",
-              desc: "El seguimiento automático pide la opinión poco después de la cita, cuando es más probable que la persona la deje — y la deje buena.",
+              desc: "El seguimiento automático pide la opinión poco después de la cita, a todos por igual, cuando la experiencia todavía está fresca.",
             },
           ]}
         />

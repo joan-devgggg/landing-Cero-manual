@@ -42,8 +42,8 @@ const faqs = [
     a: "Sorprendentemente, no suele ser el tratamiento en sí — sino lo que pasa antes y después. Una primera respuesta lenta o confusa puede hacer que alguien ni siquiera llegue a la cita, y un seguimiento ausente después de la visita hace que la relación se enfríe rápido. Los momentos de «entrada» y «salida» son los que más se descuidan y los que más impacto tienen.",
   },
   {
-    q: "¿Cómo se automatiza la experiencia del paciente sin que se note artificial?",
-    a: "La clave está en automatizar lo repetitivo — confirmaciones, recordatorios, mensajes de seguimiento — pero mantener el tono cercano y personalizado, con el nombre del paciente y referencias a su tratamiento concreto. Bien hecho, el paciente no percibe que es un sistema automático: solo nota que la clínica se ha acordado de él en el momento adecuado.",
+    q: "¿Cómo se automatiza la experiencia del paciente sin que suene artificial?",
+    a: "La clave está en automatizar lo repetitivo — confirmaciones, recordatorios, mensajes de seguimiento — pero mantener el tono cercano y personalizado, con el nombre del paciente y referencias a su tratamiento concreto. Bien hecho, el mensaje no suena a plantilla: el paciente nota que la clínica se ha acordado de él en el momento adecuado. Si en esa conversación interviene un asistente con IA, se identifica como tal, como exige el Reglamento europeo de IA.",
   },
   {
     q: "¿Merece la pena invertir en esto si mi clínica ya tiene buena reputación?",
@@ -247,8 +247,8 @@ export default function ExperienciaPacienteArticlePage() {
 
           <H2>Cómo automatizar la experiencia sin perder el toque humano</H2>
           <P>
-            La buena noticia es que gran parte de esto se puede automatizar sin que se
-            note.{" "}
+            La buena noticia es que gran parte de esto se puede automatizar sin que suene
+            a plantilla.{" "}
             <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
               Confirmaciones de cita, recordatorios
             </InternalLink>

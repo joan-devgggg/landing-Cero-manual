@@ -233,7 +233,7 @@ export default function AutomatizarWhatsappClinicaDentalArticlePage() {
             traspasa una conversación que necesita atención humana.
           </P>
 
-          <H2>Cuánto cuesta y cuándo se amortiza</H2>
+          <H2>De qué depende el coste y cuándo se amortiza</H2>
           <P>
             La pregunta importante no es cuánto cuesta automatizar WhatsApp, sino cuánto está
             costando ya no hacerlo. Cada lead que no recibe respuesta a tiempo puede acabar

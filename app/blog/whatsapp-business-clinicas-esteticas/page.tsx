@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cuál es la diferencia entre WhatsApp Business app y WhatsApp Business API?",
-    a: "La app de WhatsApp Business es gratuita, se instala en un móvil y la usa una persona a la vez: sirve para clínicas pequeñas que reciben pocos mensajes al día. La API no tiene interfaz propia, permite que varias personas — o un sistema automático — gestionen la conversación a la vez, y es la base sobre la que se construyen los chatbots y las respuestas automáticas.",
+    a: "La app de WhatsApp Business es gratuita y se instala en un móvil; admite dispositivos vinculados, así que varias personas pueden atender desde distintos equipos, pero todo lo que no sean respuestas rápidas y mensajes automáticos básicos sigue siendo manual: sirve para clínicas que reciben un volumen de mensajes manejable. La API no tiene interfaz propia, permite que varias personas — o un sistema automático — gestionen la conversación a la vez, y es la base sobre la que se construyen los chatbots y las respuestas automáticas.",
   },
   {
     q: "¿Por qué WhatsApp es tan importante para una clínica estética?",
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "¿Automatizar WhatsApp hace que las respuestas suenen robóticas?",
-    a: "No tiene por qué. Un sistema bien configurado responde con el mismo tono que usaría tu recepción, resuelve las preguntas más habituales — precios, horarios, disponibilidad — y solo deriva a una persona cuando la conversación lo requiere de verdad. La mayoría de pacientes no nota la diferencia, solo nota que les contestan al momento.",
+    a: "No tiene por qué. Un sistema bien configurado responde con el mismo tono que usaría tu recepción, resuelve las preguntas más habituales — precios, horarios, disponibilidad — y solo deriva a una persona cuando la conversación lo requiere de verdad. El asistente se presenta como tal, como exige el Reglamento europeo de IA, y lo que el paciente nota es que le contestan al momento.",
   },
 ]
 
@@ -157,9 +157,12 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
             herramientas básicas para no perder el hilo de cada conversación.
           </P>
           <P>
-            Aun así, sigue siendo una app pensada para que la use una persona desde un
-            único dispositivo. Esa es precisamente la limitación que, más adelante,
-            empieza a notarse a medida que crece el volumen de mensajes.
+            Aun así, sigue siendo una app pensada para atender a mano. Admite dispositivos
+            vinculados, así que varias personas del equipo pueden responder desde distintos
+            equipos, pero su automatización se queda en mensajes de bienvenida, de ausencia y
+            respuestas rápidas, y no se conecta con otros sistemas. Esa es precisamente la
+            limitación que, más adelante, empieza a notarse a medida que crece el volumen de
+            mensajes.
           </P>
 
           <H2>Cómo configurar WhatsApp Business para tu clínica</H2>
@@ -188,8 +191,8 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
             Con poco volumen de mensajes, WhatsApp Business bien configurado es más que
             suficiente. El problema aparece cuando ese volumen crece: varias personas
             escribiendo a la vez, consultas que llegan por la noche o el fin de semana, y un
-            único dispositivo — y normalmente una única persona — intentando responder a
-            todo.
+            equipo que tiene que responder a mano a todo, aunque lo haga desde varios
+            dispositivos.
           </P>
           <P>
             Y las consultas no esperan a que la clínica abra: también llegan fuera del
@@ -233,8 +236,9 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
 
           <H2>WhatsApp Business API vs WhatsApp Business app</H2>
           <P>
-            La app de WhatsApp Business funciona en un móvil, la usa una persona a la vez y
-            es gratuita. Es perfecta para empezar y para clínicas con un volumen de
+            La app de WhatsApp Business es gratuita, funciona en el móvil y admite
+            dispositivos vinculados para que varias personas atiendan, pero todo se responde a
+            mano. Es perfecta para empezar y para clínicas con un volumen de
             mensajes manejable.
           </P>
           <P>

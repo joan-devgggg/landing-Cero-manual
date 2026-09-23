@@ -33,11 +33,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿El agente suena robótico?",
-    a: "No. Lo configuramos con el tono, el vocabulario y los tratamientos de tu clínica, así que la mayoría de tus clientes no notan que están hablando con una IA. Tú apruebas cómo habla antes de activarlo.",
+    a: "No. Lo configuramos con el tono, el vocabulario y los tratamientos de tu clínica, así que conversa con naturalidad y no como un bot de menús. Se presenta como el asistente virtual de tu clínica, como exige el Reglamento europeo de IA, y tú apruebas cómo habla antes de activarlo.",
   },
   {
     q: "¿Cuánto tarda en estar funcionando?",
-    a: "Menos de 14 días desde que empezamos. En el onboarding cargamos tu información, tratamientos, precios y tono de marca para que el agente esté listo desde el primer mensaje.",
+    a: "Menos de 14 días desde que empezamos. En el onboarding cargamos tu información, tratamientos, precios y tono de marca para que el agente esté listo desde el primer mensaje. Si además hace falta integrarlo con tu programa de gestión o desarrollar software a medida, el plazo se fija en la propuesta.",
   },
   {
     q: "¿Qué pasa si comete un error con un cliente?",
@@ -151,7 +151,7 @@ export default function AgenteWhatsAppPage() {
             {
               icon: "MessageCircle",
               title: "Suena como tu clínica, no como un bot",
-              desc: "Configuramos el agente con tu tono, tus tratamientos y tus precios. Tus clientes no notan la diferencia — solo notan que por fin alguien responde.",
+              desc: "Configuramos el agente con tu tono, tus tratamientos y tus precios. La conversación fluye con naturalidad y tus clientes reciben respuesta al momento.",
             },
             {
               icon: "Filter",
@@ -172,7 +172,7 @@ export default function AgenteWhatsAppPage() {
           articles={[
             {
               slug: "chatbot-whatsapp-para-clinicas-esteticas",
-              title: "Chatbot de WhatsApp para clínicas estéticas: qué es y por qué tu competencia ya lo tiene",
+              title: "Chatbot de WhatsApp para clínicas estéticas: qué es y cómo funciona",
             },
             {
               slug: "mejor-chatbot-whatsapp-clinica-estetica",
@@ -180,7 +180,7 @@ export default function AgenteWhatsAppPage() {
             },
             {
               slug: "cuanto-cuesta-chatbot-whatsapp-clinica",
-              title: "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? Guía de precios 2026",
+              title: "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? De qué depende el precio",
             },
           ]}
         />

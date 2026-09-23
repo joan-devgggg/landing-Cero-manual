@@ -50,7 +50,7 @@ const posts = [
   },
   {
     slug: "mejor-software-gestion-clinica-estetica",
-    title: "Mejor software de gestión para clínicas estéticas: cómo elegir en 2026",
+    title: "Mejor software de gestión para clínicas estéticas: cómo elegir",
     excerpt:
       "¿Cuál es el mejor software de gestión para tu clínica estética? Te explicamos qué criterios usar y cuándo tiene sentido añadir automatización con IA.",
     date: "2026-07-07",
@@ -60,7 +60,7 @@ const posts = [
     slug: "aumentar-ticket-medio-clinica-dental",
     title: "Cómo aumentar el ticket medio en tu clínica dental (sin presionar a tus pacientes)",
     excerpt:
-      "Aumentar el ticket medio es más rentable que captar nuevos pacientes. Te explicamos cómo hacerlo con seguimiento post-cita y WhatsApp.",
+      "Sube el ticket medio con los pacientes que ya tienes, sin presionarlos. Te explicamos cómo hacerlo con seguimiento post-cita y WhatsApp.",
     date: "2026-06-14",
     readingTime: "6 min de lectura",
   },
@@ -98,7 +98,7 @@ const posts = [
   },
   {
     slug: "cuanto-cuesta-chatbot-whatsapp-clinica",
-    title: "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? Guía de precios 2026",
+    title: "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? De qué depende el precio",
     excerpt:
       "El precio de un chatbot de WhatsApp para clínicas varía según funcionalidades. Te explicamos qué factores influyen en el coste y cuándo se amortiza.",
     date: "2026-06-13",
@@ -122,7 +122,7 @@ const posts = [
   },
   {
     slug: "tecnologia-para-clinicas-esteticas",
-    title: "Tecnología para clínicas estéticas: qué herramientas usar en 2026",
+    title: "Tecnología para clínicas estéticas: qué herramientas usar",
     excerpt:
       "La tecnología está transformando cómo las clínicas estéticas captan y retienen pacientes. Te explicamos qué herramientas usar y por dónde empezar.",
     date: "2026-06-13",
@@ -130,7 +130,7 @@ const posts = [
   },
   {
     slug: "mejor-crm-clinicas-dentales",
-    title: "Mejor CRM para clínicas dentales: qué buscar y cómo elegir en 2026",
+    title: "Mejor CRM para clínicas dentales: qué buscar y cómo elegir",
     excerpt:
       "¿Buscas el mejor CRM para tu clínica dental? Te explicamos qué funcionalidades necesitas y cómo elegir el que mejor se adapta a tu clínica.",
     date: "2026-06-12",
@@ -146,7 +146,7 @@ const posts = [
   },
   {
     slug: "marketing-clinica-dental",
-    title: "Marketing para clínicas dentales: qué funciona realmente en 2026",
+    title: "Marketing para clínicas dentales: qué funciona realmente",
     excerpt:
       "El marketing para clínicas dentales ha cambiado. Te explicamos qué canales funcionan realmente y cómo automatizar la captación de pacientes.",
     date: "2026-06-11",
@@ -188,7 +188,7 @@ const posts = [
     slug: "recordatorios-citas-whatsapp-clinica",
     title: "Recordatorios de citas por WhatsApp para clínicas: cómo configurarlos para que funcionen solos",
     excerpt:
-      "Los recordatorios por WhatsApp reducen los no-shows de forma notable. Te explicamos cómo configurarlos para que funcionen solos en tu clínica.",
+      "Los recordatorios por WhatsApp piden confirmación y dejan margen para reaccionar si un paciente no puede venir. Te explicamos cómo configurarlos para que funcionen solos en tu clínica.",
     date: "2026-06-11",
     readingTime: "6 min de lectura",
   },
@@ -235,7 +235,7 @@ const posts = [
   },
   {
     slug: "chatbot-whatsapp-para-clinicas-esteticas",
-    title: "Chatbot de WhatsApp para clínicas estéticas: qué es y por qué tu competencia ya lo tiene",
+    title: "Chatbot de WhatsApp para clínicas estéticas: qué es y cómo funciona",
     excerpt:
       "Te explicamos qué es un chatbot de WhatsApp para clínicas estéticas y cómo responde, agenda y cualifica leads las 24 horas.",
     date: "2026-06-07",
@@ -253,7 +253,7 @@ const posts = [
     slug: "meta-ads-para-clinicas-esteticas",
     title: "Meta Ads para clínicas estéticas: cómo conseguir leads sin que Meta te bloquee",
     excerpt:
-      "Meta Ads es el canal más rentable para clínicas estéticas con presupuesto ajustado — si sabes qué copy está prohibido. Guía completa: segmentación, presupuesto mínimo y CPL realista.",
+      "Meta Ads permite llegar a público de tu zona con presupuestos ajustados — si sabes qué copy evitar. Guía completa: segmentación, presupuesto mínimo y CPL realista.",
     date: "2026-06-09",
     readingTime: "9 min de lectura",
   },

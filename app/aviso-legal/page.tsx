@@ -33,7 +33,7 @@ export default function AvisoLegalPage() {
           Aviso Legal
         </h1>
         <p className="text-sm mb-16" style={{ color: "#8A8580" }}>
-          Última actualización: mayo de 2025
+          Última actualización: septiembre de 2026
         </p>
 
         <div className="flex flex-col gap-12" style={{ color: "#3A3A3A" }}>

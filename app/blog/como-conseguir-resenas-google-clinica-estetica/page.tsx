@@ -45,11 +45,11 @@ const faqs = [
   },
   {
     q: "¿Cuántas reseñas necesito para posicionarme bien en Google Maps?",
-    a: "No hay un número mágico, pero por debajo de 20 reseñas con una media de 4,5 o más, tu ficha pierde visibilidad frente a competidores con más volumen. El volumen importa tanto como la nota: una clínica con 80 reseñas a 4,3 aparece antes que una con 10 reseñas a 5,0.",
+    a: "No hay un número publicado. Google explica que los resultados locales dependen de tres factores: relevancia (lo bien que tu ficha encaja con la búsqueda), distancia y prominencia. El número de reseñas y la valoración forman parte de la prominencia, así que ayudan, pero no compensan que la clínica esté lejos de quien busca o que la ficha esté incompleta. Lo útil es tener un flujo constante de reseñas y la ficha bien rellenada.",
   },
   {
-    q: "¿Qué pasa si incentivo económicamente a los clientes para que dejen reseñas?",
-    a: "Google lo prohíbe explícitamente y puede penalizarte eliminando reseñas o suspendiendo tu ficha. Lo que sí puedes hacer es facilitar el proceso al máximo — un enlace directo, el momento justo, un mensaje amable — de forma que la reseña sea un gesto natural, no un intercambio.",
+    q: "¿Puedo ofrecer algo a cambio de una reseña?",
+    a: "No. Las políticas de Google prohíben ofrecer cualquier incentivo a cambio de una reseña —dinero, descuentos, regalos o servicios gratis— y también pedírselas solo a los clientes que crees que estarán contentos. Si lo haces, Google puede penalizarte eliminando reseñas o suspendiendo tu ficha. Lo que sí puedes hacer es facilitar el proceso al máximo — un enlace directo, el momento justo, un mensaje amable — de forma que la reseña sea un gesto natural, no un intercambio.",
   },
 ]
 
@@ -137,8 +137,7 @@ export default function ResenasgoogleArticlePage() {
             </InternalLink>{" "}
             tienen menos
             reseñas de las que merecen. No porque sus clientes no estén contentos — sino porque
-            nadie les pide que las dejen en el momento adecuado, y el momento pasa. Tres días
-            después de la cita, la disposición a dejar una reseña cae drásticamente.
+            nadie les pide que las dejen en el momento adecuado, y el momento pasa.
           </P>
           <P>
             En este artículo vas a ver por qué las reseñas importan tanto, por qué tus
@@ -152,8 +151,9 @@ export default function ResenasgoogleArticlePage() {
             Google Maps es hoy el directorio de referencia para servicios locales. Cuando
             alguien busca «clínica estética cerca de mí» o «mesoterapia en [ciudad]», los
             primeros resultados que aparecen son fichas de Google con foto, horario, valoración
-            y número de reseñas. No aparece primero quien tiene la web más bonita — aparece
-            quien tiene más reseñas recientes y una nota más alta.
+            y número de reseñas. Google explica que ese orden depende de
+            tres factores: relevancia, distancia y prominencia. Las reseñas —cuántas hay y qué
+            nota tienen— forman parte de la prominencia, así que pesan, aunque no son lo único.
           </P>
           <P>
             El impacto va más allá del posicionamiento. Las reseñas actúan como prueba social

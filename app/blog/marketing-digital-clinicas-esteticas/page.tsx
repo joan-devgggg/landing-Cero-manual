@@ -223,7 +223,11 @@ export default function MarketingDigitalClinicasArticlePage() {
             Antes y después de tratamientos, testimonios de pacientes, contenido del día a
             día del equipo: todo eso construye la confianza que un paciente necesita antes
             de dar el paso de contactar. Es un trabajo que rinde, pero rinde a plazo y de
-            forma indirecta.
+            forma indirecta. Eso sí, antes de publicar antes/después o testimonios, ten en
+            cuenta que la publicidad sanitaria está regulada en España —entre otras normas, por
+            el Real Decreto 1907/1996 y por la normativa de tu comunidad autónoma— y puede
+            limitar el uso de testimonios de pacientes y de imágenes de resultados: verifica
+            qué admite la normativa aplicable a tu clínica.
           </P>
           <P>
             Pero Instagram tiene un límite claro: la mayoría de personas que ven tu
