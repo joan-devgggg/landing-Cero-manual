@@ -119,32 +119,25 @@ export default function RecordatoriosWhatsAppArticlePage() {
 
           {/* Intro */}
           <P>
-            Si tu clínica todavía recuerda las citas con una llamada el día anterior — o
-            directamente no las recuerda —, estás dejando que parte de tus citas programadas
-            se conviertan en huecos vacíos. La solución no es llamar más:
-            es elegir el canal correcto y automatizarlo.
+            Para que los recordatorios de citas por WhatsApp funcionen solos, un sistema
+            automático programa dos avisos por cita, uno 24 horas antes y otro 2 horas antes,
+            con el nombre del paciente, el día, la hora y una forma sencilla de confirmar o
+            cambiar la cita. Cuando el paciente responde, el sistema actualiza la agenda sin
+            que nadie de tu equipo tenga que intervenir.
           </P>
           <P>
-            Ese canal es WhatsApp. No porque esté de moda, sino porque es donde tus pacientes
-            ya están, donde abren los mensajes en minutos y donde les resulta natural
-            contestar. Bien configurado, un recordatorio por WhatsApp es de las formas más
-            sencillas de que menos pacientes falten a su cita.
-          </P>
-          <P>
-            En esta guía vas a ver por qué WhatsApp gana al SMS y al email, qué tiene que
-            llevar un buen recordatorio, cuándo enviarlo, qué diferencia hay entre pedir
-            confirmación y solo avisar — y cómo montarlo todo para que funcione solo, cita
-            tras cita, sin que nadie de tu equipo tenga que acordarse de nada.
+            Si tu clínica todavía recuerda las citas con una llamada el día anterior, o
+            directamente no las recuerda, parte de tus citas programadas acaban siendo huecos
+            vacíos.
           </P>
 
           <H2>Por qué WhatsApp funciona mejor que el SMS o el email para recordatorios</H2>
           <P>
             El canal que elijas para el recordatorio decide, antes que nada, si el mensaje se
-            va a leer. WhatsApp es una aplicación que tus pacientes abren a diario; el correo,
-            en cambio, se revisa cuando hay un rato y compite con promociones y newsletters.
+            va a leer. WhatsApp es una aplicación que tus pacientes abren a diario.
           </P>
           <P>
-            Dicho de otra forma: de los{" "}
+            De los{" "}
             <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
               recordatorios por email
             </InternalLink>
@@ -154,19 +147,16 @@ export default function RecordatoriosWhatsAppArticlePage() {
           </P>
           <P>
             El SMS queda en un punto intermedio: llega, pero no abre una conversación en la
-            que el paciente pueda confirmar, preguntar o cambiar la cita en el mismo hilo. Y el email, aunque sigue siendo útil para facturas o documentación,
-            no es el canal en el que un paciente espera recibir un aviso urgente sobre su
-            cita de mañana.
+            que el paciente pueda confirmar, preguntar o cambiar la cita en el mismo hilo. El
+            email sigue siendo útil para facturas o documentación.
           </P>
           <P>
-            Si solo puedes automatizar un canal de recordatorios, que sea WhatsApp. Es donde
-            está la conversación, y es donde un mensaje tiene posibilidades reales de generar
-            una respuesta.
+            Si solo puedes automatizar un canal de recordatorios, que sea WhatsApp.
           </P>
 
           <H2>Qué debe incluir un buen recordatorio de cita</H2>
           <P>
-            No todos los recordatorios son iguales. Un mensaje genérico tipo «le recordamos su
+            Un mensaje genérico tipo «le recordamos su
             cita» cumple el expediente, pero deja pasar la oportunidad de evitar el no-show. Un buen recordatorio incluye, como mínimo:
           </P>
           <P>
@@ -186,8 +176,8 @@ export default function RecordatoriosWhatsAppArticlePage() {
           </P>
           <P>
             <strong>Tono cercano, no de aviso legal.</strong> Un mensaje cálido y breve genera
-            mejor respuesta que un texto largo y formal. El objetivo es que se lea como algo
-            de tu clínica, no como un aviso automático de un sistema externo.
+            mejor respuesta que un texto largo y formal, y se lee como un mensaje de tu
+            clínica.
           </P>
 
           <H2>Cuándo enviar el recordatorio: el timing perfecto</H2>
@@ -220,7 +210,7 @@ export default function RecordatoriosWhatsAppArticlePage() {
           <P>
             Hay una diferencia enorme entre «te recordamos tu cita para mañana a las 11h» y
             «confirma tu cita para mañana a las 11h respondiendo SÍ». El primero es un aviso
-            pasivo: se puede leer, procesar y olvidar en diez segundos sin hacer nada. El
+            pasivo: se puede leer y olvidar en diez segundos sin hacer nada. El
             segundo pide una acción concreta.
           </P>
           <P>
@@ -229,22 +219,19 @@ export default function RecordatoriosWhatsAppArticlePage() {
             romper que las intenciones vagas de «sí, claro, ahí estaré».
           </P>
           <P>
-            Además, la confirmación activa te da información valiosa en tiempo real: si nadie
+            La confirmación activa también te da información en tiempo real: si nadie
             responde al aviso de 24 horas, ya sabes que ese hueco tiene más riesgo de quedar
             vacío. Puedes mandar el segundo aviso antes, ofrecer el hueco a alguien en lista
-            de espera, o hacer una llamada si la cita es especialmente importante — antes de
-            que el hueco se pierda, no después.
+            de espera, o hacer una llamada si la cita es especialmente importante.
           </P>
 
           <H2>Cómo automatizarlo para que funcione sin intervención humana</H2>
           <P>
-            Configurar esto a mano cita por cita no es sostenible — y tampoco hace falta. La
-            forma correcta de hacerlo es con un sistema de{" "}
+            Mandar esto a mano cita por cita no es sostenible. Se hace con un sistema de{" "}
             <InternalLink href="/recordatorios-automaticos-citas">
               recordatorios automáticos para clínicas
             </InternalLink>{" "}
-            que dispara los mensajes de cada cita en el momento exacto, sin que nadie tenga
-            que acordarse de nada.
+            que dispara los mensajes de cada cita en el momento exacto.
           </P>
           <P>
             El proceso, una vez configurado, es así: el sistema programa los

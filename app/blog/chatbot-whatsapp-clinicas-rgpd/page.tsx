@@ -120,16 +120,10 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
 
           {/* Intro */}
           <P>
-            Cuando un dueño de clínica empieza a valorar un chatbot de WhatsApp, casi
-            siempre surge la misma duda antes que cualquier otra: «¿esto es legal? ¿puedo
-            tener un bot hablando con mis pacientes y gestionando sus datos sin meterme en
-            un problema con el RGPD?».
-          </P>
-          <P>
-            Es una pregunta razonable —en una clínica se manejan datos especialmente
-            sensibles, los de salud— y conviene tener la respuesta clara antes de dar el
-            paso. La buena noticia es que sí, es legal, y no es complicado de cumplir si
-            la solución está bien configurada desde el principio.
+            Sí, es legal usar un chatbot de WhatsApp en una clínica, y cumplir el RGPD no es
+            complicado si la solución está bien configurada desde el principio. Es la duda
+            que casi siempre surge antes que cualquier otra, y es razonable: en una clínica
+            se manejan datos especialmente sensibles, los de salud.
           </P>
           <P>
             <strong>Aviso:</strong> este artículo es informativo y no sustituye el
@@ -137,12 +131,6 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
             no centro sanitario, qué datos trata, qué proveedores usa—, así que revisa tu caso
             con tu asesor o con tu delegado de protección de datos antes de poner en marcha el
             chatbot.
-          </P>
-          <P>
-            En este artículo vas a entender si es legal usar un chatbot de WhatsApp en tu
-            clínica, qué dice exactamente el RGPD sobre los datos de tus pacientes, cómo
-            configurar el chatbot para cumplirlo, qué documentos necesitas tener
-            preparados y un checklist final para repasarlo todo de un vistazo.
           </P>
 
           <H2>¿Es legal usar un chatbot de WhatsApp en una clínica?</H2>
@@ -162,7 +150,7 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
             un software de gestión de pacientes o un sistema de citas online.
           </P>
           <P>
-            Dicho de otra forma: el chatbot no convierte en ilegal algo que antes era legal,
+            El chatbot no convierte en ilegal algo que antes era legal,
             pero sí añade piezas que hay que revisar: un proveedor de IA que trata los datos
             por cuenta de tu clínica, posibles transferencias fuera de la Unión Europea y, con
             frecuencia, la necesidad de una evaluación de impacto. La diferencia es que,
@@ -233,9 +221,8 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
 
           <H2>Cómo configurar el chatbot para cumplir el RGPD</H2>
           <P>
-            La buena noticia es que cumplir el RGPD con un chatbot de WhatsApp no requiere
-            grandes complicaciones técnicas —se trata, sobre todo, de configurarlo
-            correctamente desde el inicio. Esto es lo que hay que tener en cuenta.
+            Con un chatbot de WhatsApp, cumplir el RGPD es sobre todo cuestión de
+            configurarlo correctamente desde el inicio.
           </P>
 
           <H3>Limitar la información que solicita el chatbot</H3>
@@ -298,10 +285,6 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
           </P>
 
           <H2>Qué documentos necesitas: política de privacidad y consentimiento</H2>
-          <P>
-            Más allá de la configuración técnica del chatbot, hay una parte documental que
-            no puede faltar. Estos son los documentos que conviene tener listos.
-          </P>
 
           <H3>Política de privacidad actualizada</H3>
           <P>
