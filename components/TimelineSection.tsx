@@ -152,9 +152,8 @@ export default function TimelineSection() {
             className="text-base leading-relaxed"
             style={{ color: "#5A5450", fontFamily: "var(--font-dm-sans)" }}
           >
-            Sin formularios. Sin esperas. Sin leads perdidos.{" "}
             <strong style={{ color: "#1A1A1A" }}>
-              Exactamente lo mismo que haría tu mejor recepcionista, pero a las 3 de la mañana.
+              Lo mismo que haría tu mejor recepcionista, también a las 3 de la mañana.
             </strong>
           </p>
         </motion.div>

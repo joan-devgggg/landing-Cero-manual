@@ -74,7 +74,7 @@ export default function RecordatoriosPage() {
       <Navbar />
       <main>
         <ServiceHero
-          label="Para clínicas que pierden ingresos por citas vacías"
+          label="Recordatorios automáticos de citas"
           headlineLines={["Recordatorios automáticos que reducen tus no-shows"]}
           accent="sin trabajo para tu equipo"
           subheadline="Para clínicas que ven huecos en la agenda cada semana porque alguien se olvida — o decide no avisar — de que tenía cita. Cada hueco vacío es tiempo, sala y producto que ya estaban reservados para nadie."
@@ -94,9 +94,9 @@ export default function RecordatoriosPage() {
           ]}
           closing={
             <>
-              No es que tus clientes no quieran venir.{" "}
+              Tus clientes quieren venir.{" "}
               <strong style={{ color: "#1A1A1A" }}>
-                Es que nadie les ha recordado la cita por el canal — y en el momento — adecuado.
+                Lo que falta es recordarles la cita por el canal y en el momento adecuados.
               </strong>
             </>
           }
@@ -133,9 +133,8 @@ export default function RecordatoriosPage() {
           ]}
           closing={
             <>
-              Sin llamadas de última hora. Sin agendas con huecos que nadie llena.{" "}
               <strong style={{ color: "#1A1A1A" }}>
-                Sin que tengas que acordarte tú de recordarles la cita a los demás.
+                Tu equipo deja de hacer llamadas de última hora para recordar citas.
               </strong>
             </>
           }
@@ -143,7 +142,6 @@ export default function RecordatoriosPage() {
 
         <ServiceBenefits
           title="Lo que notas en tu agenda"
-          titleAccent="sin que nadie tenga que perseguir a nadie"
           benefits={[
             {
               icon: "CalendarCheck",

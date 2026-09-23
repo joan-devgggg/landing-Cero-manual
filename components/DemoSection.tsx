@@ -45,7 +45,7 @@ export default function DemoSection() {
           className="text-center text-base leading-relaxed mb-12"
           style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}
         >
-          Este es un ejemplo real de cómo funciona. Pregúntale por tratamientos,
+          Es una demo con datos de ejemplo. Pregúntale por tratamientos,
           precios, disponibilidad o pide una cita.
         </motion.p>
 

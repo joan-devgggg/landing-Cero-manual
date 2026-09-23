@@ -74,7 +74,7 @@ export default function AgenteVozPage() {
       <Navbar />
       <main>
         <ServiceHero
-          label="Para clínicas que no pueden permitirse perder ni una llamada"
+          label="Agente de voz con IA para clínicas"
           headlineLines={["El agente de voz con IA que contesta cada llamada de tu clínica,"]}
           accent="hasta a las 3 de la mañana"
           subheadline="Para clínicas que pierden llamadas en hora punta, fuera de horario o cuando el equipo está atendiendo a otro cliente — y no se pueden permitir que esa llamada se quede sin respuesta."
@@ -94,8 +94,8 @@ export default function AgenteVozPage() {
           ]}
           closing={
             <>
-              No es que falte interés en tu clínica.{" "}
-              <strong style={{ color: "#1A1A1A" }}>Es que falta alguien al otro lado del teléfono</strong> — a
+              Interés en tu clínica hay.{" "}
+              <strong style={{ color: "#1A1A1A" }}>Lo que falta es alguien al otro lado del teléfono</strong> a
               cualquier hora del día.
             </>
           }
@@ -132,17 +132,15 @@ export default function AgenteVozPage() {
           ]}
           closing={
             <>
-              Sin contestador automático. Sin &ldquo;deje su mensaje después de la señal&rdquo;.{" "}
               <strong style={{ color: "#1A1A1A" }}>
-                Sin clientes que cuelgan y prueban con la clínica de al lado.
+                Nadie tiene que dejar un mensaje después de la señal: el agente contesta y resuelve.
               </strong>
             </>
           }
         />
 
         <ServiceBenefits
-          title="Lo que cambia"
-          titleAccent="cuando ninguna llamada se queda sin respuesta"
+          title="Lo que cambia cuando ninguna llamada se queda sin respuesta"
           benefits={[
             {
               icon: "Phone",
