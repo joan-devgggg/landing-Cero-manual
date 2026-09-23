@@ -163,10 +163,9 @@ export default function ResenasgoogleArticlePage() {
             da credibilidad a la nota.
           </P>
           <P>
-            Y hay un tercer efecto que pocas clínicas tienen en cuenta: las reseñas recientes
-            pesan más que las antiguas en el algoritmo de Google. No basta con tener muchas
-            reseñas acumuladas hace dos años — necesitas un flujo constante de reseñas nuevas
-            para mantener la visibilidad en Maps.
+            Además, quien lee reseñas suele fijarse en las más recientes para decidir. Un flujo
+            constante de opiniones nuevas mantiene la ficha al día; un puñado acumulado hace dos
+            años dice poco de cómo atiende la clínica hoy.
           </P>
 
           <H2>Por qué tus clientes no dejan reseñas aunque estén contentos</H2>

@@ -137,8 +137,7 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
           <P>
             En este artículo vamos a ver cuánto cuesta un no-show en una clínica
             estética, por qué pasa tan a menudo, y cómo un sistema de recordatorios
-            automáticos por WhatsApp puede reducirlos de forma notable desde el primer
-            mes.
+            automáticos por WhatsApp puede reducirlos.
           </P>
 
           <H2>¿Cuánto te cuesta un no-show en una clínica estética?</H2>

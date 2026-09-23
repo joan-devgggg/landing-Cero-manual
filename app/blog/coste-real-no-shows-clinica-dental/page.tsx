@@ -172,10 +172,9 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
             muertos que afectan al resto del día.
           </P>
           <P>
-            Por último, está el coste reputacional indirecto: si la clínica tiene que cancelar o
-            retrasar citas de otros pacientes porque la agenda está "llena sobre el papel" pero en
-            la práctica hay huecos vacíos por no-shows, la percepción de organización de la
-            clínica se resiente.
+            Por último, está el paciente que se quedó fuera: a quien pidió cita y se le dijo que
+            no había hueco hasta dentro de unas semanas le da igual que luego la agenda tuviera
+            huecos por no-shows. Para él, la clínica estaba llena, y quizá buscó otra.
           </P>
 
           <H2>Cómo calcular tu pérdida real por no-shows</H2>

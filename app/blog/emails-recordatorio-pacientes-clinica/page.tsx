@@ -141,8 +141,8 @@ export default function EmailsRecordatorioPacientesPage() {
           {/* Intro */}
           <P>
             Los recordatorios son una de las herramientas más eficaces para reducir las
-            ausencias en una clínica. Cuando un paciente recibe un aviso a tiempo, la
-            probabilidad de que aparezca sube de forma notable — por eso un sistema de
+            ausencias en una clínica. Un aviso a tiempo le recuerda la cita al paciente y
+            le da ocasión de confirmar o de avisar si no puede venir — por eso un sistema de
             recordatorios bien planteado es de lo primero que conviene montar para{" "}
             <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
               reducir los no-shows

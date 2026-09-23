@@ -225,15 +225,14 @@ export default function CrmClinicasArticlePage() {
             <InternalLink href="/blog/software-gestion-clinicas-esteticas">
               plataformas españolas pensadas para clínicas
             </InternalLink>{" "}
-            — Flowww o Klinikare, por ejemplo — traen de serie, según sus webs, la ficha de
+            — Flowww, por ejemplo — traen de serie, según su web, la ficha de
             paciente, el historial clínico y la firma de consentimientos; en un CRM genérico eso
             hay que construirlo con campos personalizados.
           </P>
           <BlogSource>
-            webs oficiales de{" "}
-            <ExternalLink href="https://www.flowww.es/">Flowww</ExternalLink> y{" "}
-            <ExternalLink href="https://www.klinikare.com/">Klinikare</ExternalLink>,
-            consultadas el 16 de septiembre de 2026
+            web oficial de{" "}
+            <ExternalLink href="https://www.flowww.es/">Flowww</ExternalLink>,
+            consultada el 16 de septiembre de 2026
           </BlogSource>
           <P>
             La primera es la integración con WhatsApp. El canal principal de comunicación
