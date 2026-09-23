@@ -44,11 +44,11 @@ const faqs = [
   },
   {
     q: "¿Cuánto presupuesto mínimo necesito para hacer marketing digital en mi clínica?",
-    a: "No hay una cifra única: depende de tu zona, del tratamiento que anuncies y de cuánto puedes pagar por cada lead, algo que sale de lo que te deja una cita y de cuántos leads necesitas para cerrarla. Sea cual sea el presupuesto, solo rinde si el embudo de respuesta funciona. El error habitual es subir el presupuesto de publicidad sin haber resuelto cómo se gestionan los leads que ya llegan: si un lead espera horas para recibir respuesta, aumentar la inversión solo multiplica las oportunidades perdidas. Antes de gastar más, asegúrate de que cada consulta recibe respuesta en minutos.",
+    a: "No hay una cifra única: depende de tu zona, del tratamiento que anuncies y de cuánto puedes pagar por cada lead, algo que sale de lo que te deja una cita y de cuántos leads necesitas para cerrarla. El error habitual es subir el presupuesto de publicidad sin haber resuelto cómo se gestionan los leads que ya llegan: si un lead espera horas para recibir respuesta, aumentar la inversión solo multiplica las oportunidades perdidas. Antes de gastar más, asegúrate de que cada consulta recibe respuesta en minutos.",
   },
   {
     q: "Tengo muchos seguidores en Instagram pero pocas citas, ¿qué falla?",
-    a: "Normalmente no falla Instagram, sino lo que pasa después. Seguir una cuenta y pedir cita son dos cosas distintas: Instagram genera interés y confianza, pero la decisión de reservar llega más tarde, cuando esa persona escribe preguntando por precio o disponibilidad. Si ese mensaje tarda horas en recibir respuesta, el interés que tanto costó generar se enfría y acaba reservando en otra clínica. Antes de publicar más contenido, revisa cuánto tardas en contestar a quien ya te escribe.",
+    a: "Normalmente falla lo que pasa después. Seguir una cuenta y pedir cita son dos cosas distintas: Instagram genera interés y confianza, pero la decisión de reservar llega más tarde, cuando esa persona escribe preguntando por precio o disponibilidad. Si ese mensaje tarda horas en recibir respuesta, el interés que tanto costó generar se enfría y acaba reservando en otra clínica. Antes de publicar más contenido, revisa cuánto tardas en contestar a quien ya te escribe.",
   },
   {
     q: "¿Vale la pena contratar una agencia de marketing para mi clínica?",
@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: "¿Cómo sé si mi estrategia de marketing digital está funcionando?",
-    a: "Mide tres números cada mes: cuántos leads nuevos llegan (por canal), qué porcentaje de esos leads se convierte en cita, y cuánto tiempo tardas en responder al primer contacto. Si los leads suben pero las citas no, el problema no es de marketing sino de conversión — normalmente respuesta lenta o falta de seguimiento. Antes de invertir más en captación, revisa siempre esos tres datos: a menudo el cuello de botella está en la respuesta, no en el alcance.",
+    a: "Mide tres números cada mes: cuántos leads nuevos llegan (por canal), qué porcentaje de esos leads se convierte en cita, y cuánto tiempo tardas en responder al primer contacto. Si los leads suben pero las citas no, el problema está en la conversión: normalmente, respuesta lenta o falta de seguimiento. Antes de invertir más en captación, revisa siempre esos tres datos.",
   },
 ]
 
@@ -127,34 +127,24 @@ export default function MarketingDigitalClinicasArticlePage() {
 
           {/* Intro */}
           <P>
+            El marketing digital que funciona para una clínica estética se apoya en tres
+            canales principales, Instagram, Google y WhatsApp, con los portales de reserva y
+            los referidos como apoyo, y solo rinde si los leads que generan reciben respuesta
+            rápida. Lo que suele ser perder el tiempo es esperar que Instagram llene la agenda
+            por sí solo, o subir el presupuesto de anuncios sin haber resuelto cómo se
+            contesta a quien ya escribe.
+          </P>
+          <P>
             Muchas clínicas estéticas invierten en marketing digital sin una estrategia
             clara: suben fotos a Instagram cuando hay tiempo, prueban un anuncio de vez en
-            cuando y esperan que algo funcione. El resultado suele ser el mismo — algo de
-            visibilidad, pocos leads y casi ninguna cita nueva que se pueda atribuir a ese
-            esfuerzo.
-          </P>
-          <P>
-            En la captación de pacientes, el problema no es la falta de canales, sino la
-            falta de orden. Instagram genera
-            visibilidad, pero rara vez genera citas por sí solo. Google capta a quien ya
-            está decidido a reservar. Y WhatsApp es, con diferencia, el canal donde se
-            cierran las citas — pero solo si alguien responde a tiempo.
-          </P>
-          <P>
-            En este artículo vas a ver qué papel cumple cada canal, por qué Instagram solo
-            no es suficiente, qué canal tiene la intención de compra más alta, por qué
-            WhatsApp es el que más convierte, y cómo combinarlos todos sin que la gestión
-            se convierta en un caos.
+            cuando y esperan que algo funcione. El resultado suele ser algo de visibilidad y
+            casi ninguna cita nueva que se pueda atribuir a ese esfuerzo.
           </P>
 
           <H2>Los canales de marketing que realmente funcionan para clínicas estéticas</H2>
           <P>
-            Los canales que funcionan de verdad para una clínica estética son tres
-            principales —Instagram, Google y WhatsApp—, con los portales de reserva y los
-            referidos como apoyo. Cada uno cubre una fase distinta del recorrido del
-            paciente — Instagram genera confianza, Google capta la demanda que ya existe y
-            WhatsApp cierra la cita — y el error más común es tratarlos como si fueran
-            intercambiables.
+            Cada canal cubre una fase distinta del recorrido del paciente, y el error más
+            común es tratarlos como si fueran intercambiables.
           </P>
           <P>
             Instagram construye marca y confianza — es el canal donde un paciente potencial
@@ -206,9 +196,8 @@ export default function MarketingDigitalClinicasArticlePage() {
           />
 
           <P>
-            Una estrategia de marketing digital para clínicas estéticas que funcione no
-            elige uno de estos canales — los combina, entendiendo qué papel cumple cada
-            uno y asegurándose de que la cadena no se rompe en ningún punto.
+            Una estrategia de marketing digital para clínicas estéticas que funcione combina
+            estos canales, entendiendo qué papel cumple cada uno y asegurándose de que la cadena no se rompe en ningún punto.
           </P>
 
           <H2>Instagram: imprescindible pero insuficiente</H2>
@@ -230,19 +219,12 @@ export default function MarketingDigitalClinicasArticlePage() {
             qué admite la normativa aplicable a tu clínica.
           </P>
           <P>
-            Pero Instagram tiene un límite claro: la mayoría de personas que ven tu
-            contenido no están buscando activamente un tratamiento en ese momento. Están
-            navegando, entreteniéndose, sin intención de compra inmediata. Por eso muchas
-            clínicas acumulan seguidores y «me gusta» sin que eso se traduzca en un
-            aumento real de citas.
-          </P>
-          <P>
             Instagram funciona mejor como complemento que como motor principal. Construye
             la confianza necesaria para que, cuando esa misma persona busque en Google o{" "}
             <InternalLink href="/blog/meta-ads-para-clinicas-esteticas">
               reciba un anuncio
             </InternalLink>
-            , reconozca tu clínica y confíe en ella. Pero esperar que
+            , reconozca tu clínica y confíe en ella. Esperar que
             Instagram por sí solo llene la agenda suele traducirse en mucho esfuerzo de
             contenido y pocos resultados medibles.
           </P>
@@ -251,12 +233,10 @@ export default function MarketingDigitalClinicasArticlePage() {
           <P>
             Google es el canal con más intención de compra porque el usuario llega buscando
             exactamente lo que tú vendes. Cuando alguien escribe «clínica estética [tu
-            ciudad]» o «depilación láser precio» no está navegando por curiosidad: está a un
-            paso de tomar una decisión.
+            ciudad]» o «depilación láser precio» está a un paso de tomar una decisión.
           </P>
           <P>
-            Esa es la diferencia clave frente a Instagram — la intención de compra ya
-            existe, solo falta capturarla antes que la clínica de al lado. Y se captura por
+            La intención de compra ya existe; solo falta capturarla. Y se captura por
             dos vías que conviene no confundir: la publicidad de pago y la presencia
             orgánica en el mapa.
           </P>
@@ -264,8 +244,7 @@ export default function MarketingDigitalClinicasArticlePage() {
           <P>
             La publicidad en Google Ads permite aparecer justo en el momento en que alguien
             busca un tratamiento concreto. Es uno de los canales con mejor retorno para
-            clínicas, porque no estás generando una necesidad — estás respondiendo a una
-            que ya existe. El coste por lead suele ser más alto que en redes sociales, pero
+            clínicas, porque respondes a una necesidad que ya existe. El coste por lead suele ser más alto que en redes sociales, pero
             la calidad del lead — y la probabilidad de que se convierta en cita — también
             lo es.
           </P>
@@ -286,7 +265,7 @@ export default function MarketingDigitalClinicasArticlePage() {
             funcionan como un segundo escaparate local, con reserva online, y pueden captar
             búsquedas que de otra forma irían a la competencia. La contrapartida es que ese
             primer contacto ocurre dentro de su plataforma y no en un canal tuyo, así que
-            conviene usarlos como complemento, no como canal principal.
+            conviene usarlos como complemento.
           </P>
           <BlogSource>
             webs para profesionales de{" "}
@@ -303,7 +282,7 @@ export default function MarketingDigitalClinicasArticlePage() {
             respuesta rápida, esa inversión se pierde.
           </P>
           <P>
-            Además, es como la gente prefiere contactar: escribir por WhatsApp, igual que
+            Es también como la gente prefiere contactar: escribir por WhatsApp, igual que
             a un amigo, antes que rellenar un formulario y esperar a que alguien le devuelva
             la llamada. Eso significa que, si el primer contacto de un lead llega por
             WhatsApp, la conversación ya está abierta — la pregunta es si va a recibir
@@ -318,29 +297,18 @@ export default function MarketingDigitalClinicasArticlePage() {
             </InternalLink>{" "}
             soluciona exactamente este problema: responde en segundos, cualifica al lead y
             puede agendar la cita directamente, sin que nadie del equipo tenga que estar
-            pendiente del móvil. El motivo es sencillo: mientras espera respuesta, esa
-            persona puede seguir escribiendo a otras clínicas, y la primera que responde tiene
+            pendiente del móvil. Mientras espera respuesta, esa persona puede seguir escribiendo a otras clínicas, y la primera que responde tiene
             ventaja para quedarse la cita.
           </P>
 
           <H2>Cómo combinar todos los canales sin volverse loco</H2>
           <P>
-            Se combinan pensándolos como un embudo, no como canales sueltos que alimentar:
-            Instagram construye confianza, Google capta la demanda activa y WhatsApp cierra
-            la conversación. El error habitual es invertir tiempo y dinero en los dos
-            primeros sin haber resuelto el tercero, que es lo que permite{" "}
+            Se combinan pensándolos como un embudo. El error habitual es invertir tiempo y
+            dinero en Instagram y Google sin haber resuelto WhatsApp, que es lo que permite{" "}
             <InternalLink href="/blog/como-captar-clientes-clinica-estetica-sin-presupuesto">
               captar más clientes sin gastar más
-            </InternalLink>{" "}
-            — y ahí es donde se pierde la mayor parte
-            del retorno.
-          </P>
-          <P>
-            Buena parte de las consultas de una clínica llega fuera del horario de atención:
-            por la noche, los fines de semana, durante una comida. Si tu estrategia de
-            marketing está generando tráfico hacia WhatsApp pero nadie responde en esos
-            momentos, estás pagando por leads que se enfrían antes de que alguien pueda
-            atenderlos.
+            </InternalLink>
+            .
           </P>
           <P>
             El otro punto donde se rompe la cadena es el registro: si cada canal vive en un
@@ -359,8 +327,7 @@ export default function MarketingDigitalClinicasArticlePage() {
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
             cada lead que llega — venga de Instagram, de Google o de una recomendación —
-            recibe respuesta inmediata, las 24 horas, sin que tengas que aumentar el equipo
-            ni estar pendiente del teléfono fuera de horario.
+            recibe respuesta inmediata, las 24 horas, sin que tengas que aumentar el equipo.
           </P>
         </article>
 

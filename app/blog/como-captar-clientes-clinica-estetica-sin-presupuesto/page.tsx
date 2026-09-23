@@ -38,15 +38,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cuánto vale realmente un cliente recurrente para una clínica estética?",
-    a: "Depende de tus tratamientos y de cuántas veces vuelve. Para saberlo en tu clínica, multiplica el ticket medio por las visitas que hace un cliente habitual a lo largo de los años: ese es su valor de vida. Lo que sí vale para cualquier clínica es que reactivar a un paciente inactivo tiene un valor potencial mucho mayor que captar uno nuevo, sin el coste de adquisición asociado a la publicidad. Muchas clínicas invierten en atraer nuevos pacientes mientras ignoran una base de datos con decenas de clientes dormidos.",
+    a: "Depende de tus tratamientos y de cuántas veces vuelve. Para saberlo en tu clínica, multiplica el ticket medio por las visitas que hace un cliente habitual a lo largo de los años: ese es su valor de vida. Es lo que deja de entrar cada vez que un paciente deja de venir.",
   },
   {
     q: "¿Cuándo es el mejor momento para pedir una reseña a un paciente?",
-    a: "Poco después de que el paciente ha salido de la cita. En ese momento la experiencia está fresca, el resultado del tratamiento empieza a sentirse, y el cliente tiene el móvil en la mano. Un mensaje automático de WhatsApp en ese intervalo — con el nombre del paciente y un enlace directo a la ficha de Google — le pone muy fácil dejar la reseña en ese momento, cuando sin ese empujón casi nadie se acuerda de hacerlo. Pasados unos días, la ventana se cierra.",
+    a: "Poco después de que el paciente ha salido de la cita. En ese momento la experiencia está fresca y el cliente tiene el móvil en la mano. Un mensaje automático de WhatsApp en ese intervalo — con el nombre del paciente y un enlace directo a la ficha de Google — le pone muy fácil dejar la reseña en ese momento, cuando sin ese empujón casi nadie se acuerda de hacerlo.",
   },
   {
     q: "¿Cómo funciona un programa de referidos para clínicas?",
-    a: "Un programa de referidos sencillo ofrece un beneficio concreto a ambas partes: la persona que recomienda recibe un descuento o crédito en su próxima cita, y la persona referida tiene un incentivo para reservar por primera vez. El beneficio no tiene que ser económico — puede ser un tratamiento adicional, una sesión de cortesía o prioridad en la agenda. Lo importante es que el proceso sea simple: el paciente recibe un mensaje con su enlace o código único, lo comparte, y el sistema registra automáticamente la referencia.",
+    a: "Un programa de referidos sencillo ofrece un beneficio concreto a ambas partes: la persona que recomienda recibe un descuento o crédito en su próxima cita, y la persona referida tiene un incentivo para reservar por primera vez. El beneficio no tiene que ser económico — puede ser un tratamiento adicional, una sesión de cortesía o prioridad en la agenda. El proceso tiene que ser simple: el paciente recibe un mensaje con su enlace o código único, lo comparte, y el sistema registra automáticamente la referencia.",
   },
   {
     q: "¿Qué es el seguimiento post-cita y por qué aumenta las reservas?",
@@ -54,11 +54,11 @@ const faqs = [
   },
   {
     q: "¿De verdad puedo conseguir más citas sin aumentar el presupuesto?",
-    a: "Sí, y en la mayoría de clínicas es donde está el margen más rápido. La publicidad trae leads nuevos, pero si parte de los que ya recibes no obtienen respuesta a tiempo, si los pacientes que ya te conocen no vuelven o si los huecos por cancelación se quedan vacíos, estás dejando citas sobre la mesa sin que el presupuesto tenga nada que ver. Aprovechar lo que ya tienes siempre sale más barato que captar un paciente desde cero.",
+    a: "Sí, y suele ser el margen más rápido. La publicidad trae leads nuevos, pero si parte de los que ya recibes no obtienen respuesta a tiempo, si los pacientes que ya te conocen no vuelven o si los huecos por cancelación se quedan vacíos, estás dejando citas sobre la mesa sin que el presupuesto tenga nada que ver. Aprovechar lo que ya tienes siempre sale más barato que captar un paciente desde cero.",
   },
   {
     q: "¿Cómo sé si mi agenda está llena de verdad o solo lo parece?",
-    a: "Mira tres cosas: cuántos huecos libres tienes en las próximas dos semanas, cuántas citas acaban en no-show o cancelación de última hora, y cuántos leads del último mes no llegaron a convertirse en cita. Si hay pocos huecos pero muchos no-shows, la agenda está llena sobre el papel, no en la práctica. Y si muchos leads no convierten, el problema no es de demanda, sino de respuesta y seguimiento.",
+    a: "Mira tres cosas: cuántos huecos libres tienes en las próximas dos semanas, cuántas citas acaban en no-show o cancelación de última hora, y cuántos leads del último mes no llegaron a convertirse en cita. Si hay pocos huecos pero muchos no-shows, la agenda solo está llena sobre el papel. Y si muchos leads no convierten, lo que falla es la respuesta y el seguimiento.",
   },
 ]
 
@@ -129,41 +129,27 @@ export default function CaptarClientesArticlePage() {
 
           {/* Intro */}
           <P>
+            Para captar más clientes sin aumentar el presupuesto, apóyate en lo que no depende
+            de la publicidad: reseñas de Google pedidas en el momento justo, un programa de
+            referidos que convierta a tus pacientes en canal de captación y una respuesta
+            rápida a cada persona que te escribe. A eso se suma recuperar a los pacientes que
+            dejaron de venir.
+          </P>
+          <P>
             Cuando una clínica quiere crecer, el primer instinto suele ser invertir más en
             publicidad: más presupuesto en Meta Ads,{" "}
             <InternalLink href="/blog/marketing-digital-clinicas-esteticas">
               más campañas en Google, más contenido en Instagram
             </InternalLink>
-            . Es lógico, pero pasa por alto una fuente de ingresos que ya existe y
-            que no requiere ningún gasto adicional: la base de datos de pacientes que dejaron
-            de venir.
-          </P>
-          <P>
-            Un cliente recurrente vuelve varias veces a lo largo de los años, así que cada
-            paciente que deja de venir es ingreso que ya no entra. Si tu clínica tiene 200
-            pacientes inactivos — pacientes que vinieron una o dos veces y no han vuelto —,
-            multiplica esa cifra por tu ticket medio y por las visitas al año de un cliente
-            habitual: eso es lo que tienes dormido en la base de datos. Antes de captar
-            nuevos clientes, vale la pena recuperar los que ya conocen tu trabajo.
-          </P>
-          <P>
-            En la mayoría de clínicas, el problema no es que entren pocos pacientes, sino los
-            que se escapan: leads que escriben y no reciben respuesta a tiempo, pacientes que
-            dejan de venir y huecos que se quedan vacíos por una cancelación. Cerrar esas
-            fugas sale mucho más barato que captar a alguien desde cero.
-          </P>
-          <P>
-            En este artículo vas a ver 5 estrategias que no requieren más presupuesto publicitario:
-            reactivar pacientes inactivos, pedir reseñas en el momento exacto, convertir cada
-            cita en una oportunidad de upsell, usar WhatsApp para el seguimiento post-cita, y
-            crear un programa de referidos que se gestione solo.
+            . Antes de eso conviene mirar cuántas personas se pierden por el camino: leads
+            que escriben y no reciben respuesta a tiempo, o huecos que se quedan vacíos por una
+            cancelación.
           </P>
 
           <H2>1. Reactiva a los clientes que dejaron de venir</H2>
           <P>
-            La mayoría de los pacientes que dejaron de visitar una clínica no lo hicieron por
-            una mala experiencia — simplemente perdieron el hábito, cambiaron de rutina o nadie
-            les recordó que volvieran. Eso significa que una parte significativa de ellos está
+            Muchos de los pacientes que dejaron de visitar una clínica simplemente perdieron el
+            hábito o nadie les recordó que volvieran. Eso significa que una parte significativa de ellos está
             abierta a retomar la relación si se les contacta de la manera correcta.
           </P>
           <P>
@@ -173,8 +159,7 @@ export default function CaptarClientesArticlePage() {
             <InternalLink href="/blog/como-reactivar-pacientes-inactivos-clinica">
               mensaje de reactivación bien redactado
             </InternalLink>{" "}
-            no es una promoción genérica: hace referencia al último tratamiento
-            del paciente, muestra que la clínica recuerda quién es, y ofrece un motivo concreto
+            hace referencia al último tratamiento del paciente y ofrece un motivo concreto
             para volver.
           </P>
           <P>
@@ -189,19 +174,18 @@ export default function CaptarClientesArticlePage() {
 
           <H2>2. Pide reseñas en el momento justo</H2>
           <P>
-            Las reseñas de Google son el primer punto de contacto real de la mayoría de los
-            nuevos pacientes con tu clínica. Antes de llamar, antes de entrar en la web, el
-            primer movimiento es abrir Google Maps y ver qué dicen otros. Una clínica con
-            reseñas recientes y una nota alta tiene una ventaja de visibilidad directa frente
-            a la competencia — sin gastar un euro en publicidad.
+            Las reseñas de Google son una vía de captación: son el primer punto de contacto
+            real de muchos pacientes nuevos con tu clínica. Antes de llamar, el primer
+            movimiento es abrir Google Maps y ver qué dicen otros. Una clínica con reseñas
+            recientes y una nota alta tiene una ventaja de visibilidad directa frente a la
+            competencia.
           </P>
           <P>
             El problema es que la mayoría de los{" "}
             <InternalLink href="/blog/como-conseguir-resenas-google-clinica-estetica">
               pacientes satisfechos no dejan reseñas
             </InternalLink>{" "}
-            de forma espontánea, no por falta de voluntad sino por falta de empujón en el momento
-            exacto. La ventana se abre poco después de la cita — mientras el paciente todavía la
+            de forma espontánea, porque nadie les da el empujón en el momento exacto. La ventana se abre poco después de la cita — mientras el paciente todavía la
             tiene fresca — y se cierra rápido. Un mensaje automático de WhatsApp
             en ese intervalo, con el nombre del paciente y un enlace directo a la ficha de Google,
             convierte esa satisfacción en reseña antes de que se enfríe.
@@ -209,19 +193,15 @@ export default function CaptarClientesArticlePage() {
 
           <H2>3. Convierte cada cita en una oportunidad de upsell</H2>
           <P>
-            El upsell en una clínica estética no es vender de forma agresiva — es ofrecer al
-            paciente algo que tiene sentido en relación con lo que ya está haciendo. Un paciente
-            que viene a depilación láser puede estar interesado en hidratación posterior. Uno
-            que viene a mesoterapia puede querer saber cómo complementar el tratamiento en casa.
-            La clave es que la sugerencia llegue en el contexto adecuado, no como un discurso
-            de ventas.
+            El upsell en una clínica estética consiste en ofrecer al paciente algo que tiene
+            sentido en relación con lo que ya está haciendo. Un paciente que viene a depilación
+            láser puede estar interesado en hidratación posterior. Uno que viene a mesoterapia
+            puede querer saber cómo complementar el tratamiento en casa.
           </P>
           <P>
             Identificar los tratamientos que se complementan bien y crear un protocolo sencillo
             para que el equipo los mencione durante o después de la cita tiene un impacto directo
-            en el ticket medio — sin necesidad de captar ningún cliente nuevo. Cada cita existente
-            es una oportunidad de incrementar los ingresos con pacientes que ya confían en la
-            clínica.
+            en el ticket medio.
           </P>
 
           <H3>Cuándo y cómo proponer el upsell</H3>
@@ -231,7 +211,7 @@ export default function CaptarClientesArticlePage() {
             los resultados, podríamos complementar con…» — funciona mejor que una oferta en
             el mostrador antes de salir. Y si la propuesta llega por WhatsApp unos días después,
             con una referencia al tratamiento que recibió, el paciente la percibe como un
-            seguimiento personalizado, no como publicidad.
+            seguimiento personalizado.
           </P>
 
           <H2>4. Usa WhatsApp para seguimiento post-cita</H2>
@@ -249,9 +229,8 @@ export default function CaptarClientesArticlePage() {
             </InternalLink>{" "}
             — un mensaje 2-3 días después
             que pregunta cómo evolucionó el tratamiento y sugiere el siguiente paso — mantiene
-            la conversación activa y convierte esa intención en reserva. No requiere que el
-            equipo esté disponible en ese momento: el sistema envía el mensaje, recoge la
-            respuesta, y solo escala al equipo si hay una consulta específica que requiere
+            la conversación activa y convierte esa intención en reserva. El sistema envía el
+            mensaje, recoge la respuesta y solo escala al equipo si hay una consulta específica que requiere
             atención humana.
           </P>
           <P>
@@ -259,7 +238,7 @@ export default function CaptarClientesArticlePage() {
             <InternalLink href="/reactivacion-pacientes-inactivos">
               reactivación de pacientes
             </InternalLink>{" "}
-            y el seguimiento post-cita trabajan de forma complementaria: uno recupera a los
+            y el seguimiento post-cita se complementan: uno recupera a los
             que dejaron de venir, el otro evita que los actuales pierdan el ritmo.
           </P>
 
@@ -276,24 +255,23 @@ export default function CaptarClientesArticlePage() {
             imprimir un cupón, recordar un código, explicar cómo funciona — menos se usa.
             Lo más efectivo es un enlace o código personal que el paciente puede compartir
             directamente desde el mensaje que recibe por WhatsApp, y que el sistema registra
-            automáticamente cuando se usa. Sin formularios, sin gestión manual, sin que nadie
-            tenga que hacer seguimiento.
+            automáticamente cuando se usa.
           </P>
           <P>
-            La captación por referidos tiene además una ventaja sobre la publicidad: el lead
+            La captación por referidos tiene una ventaja sobre la publicidad: el lead
             llega con confianza previa. Alguien que viene porque un amigo le recomendó la clínica
             tiene una tasa de conversión y de retención mucho más alta que alguien que llega
-            por un anuncio. Es el canal de captación más barato y con mejor calidad de cliente.
+            por un anuncio.
           </P>
 
           <H2>Antes de captar más: cierra las fugas de tu agenda</H2>
           <P>
-            Ninguna de estas estrategias rinde si los pacientes que ya te escriben se quedan
-            sin respuesta. Mientras espera, esa persona puede seguir escribiendo a otras
-            clínicas, y la primera que contesta tiene ventaja para quedarse la cita.
+            Responder rápido también capta clientes nuevos. Mientras espera, quien te ha
+            escrito puede seguir escribiendo a otras clínicas, y la primera que contesta tiene
+            ventaja para quedarse la cita.
           </P>
           <P>
-            Responder en minutos a todas horas no es realista para un equipo que está
+            Responder en minutos a todas horas es difícil para un equipo que está
             atendiendo en cabina. Un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas

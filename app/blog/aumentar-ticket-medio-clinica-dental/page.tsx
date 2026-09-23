@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "¿Cómo puedo aumentar el ticket medio sin que los pacientes sientan que les estoy vendiendo?",
-    a: "La clave está en el contexto y en el momento. Informar a un paciente de que hay un tratamiento que puede mejorar su salud bucal justo después de una revisión, cuando la información sigue fresca, no se percibe como presión comercial sino como asesoramiento. Lo mismo ocurre con el seguimiento post-cita: un mensaje de WhatsApp que recuerda una recomendación del dentista tiene mucho más recorrido que un email genérico días después.",
+    a: "Depende del contexto y del momento. Informar a un paciente de que hay un tratamiento que puede mejorar su salud bucal justo después de una revisión, cuando la información sigue fresca, se percibe como asesoramiento. Lo mismo ocurre con el seguimiento post-cita: un mensaje de WhatsApp que recuerda una recomendación del dentista tiene mucho más recorrido que un email genérico días después.",
   },
   {
     q: "¿Cuánto puede aumentar el ticket medio con estas estrategias?",
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "¿El seguimiento por WhatsApp realmente funciona para proponer tratamientos?",
-    a: "Sí, y la razón es el canal: WhatsApp es donde el paciente ya habla a diario, mientras que un email con una propuesta se queda a menudo sin abrir. Así la propuesta llega al paciente, que puede responder en el momento que le venga bien. Lo importante es que el mensaje sea útil y personalizado —que haga referencia a algo que se habló en la consulta— y no un mensaje genérico de promoción.",
+    a: "Sí, y la razón es el canal: WhatsApp es donde el paciente ya habla a diario, mientras que un email con una propuesta se queda a menudo sin abrir. Así la propuesta llega al paciente, que puede responder en el momento que le venga bien. El mensaje tiene que ser útil y personalizado: que haga referencia a algo que se habló en la consulta.",
   },
 ]
 
@@ -108,27 +108,27 @@ export default function AumentarTicketMedioClinicaDentalPage() {
           </p>
 
           <P>
-            Captar un paciente nuevo cuesta publicidad, tiempo y consultas que no siempre
-            acaban en cita; retener a uno que ya te conoce cuesta mucho menos. Por eso, antes de invertir más en{" "}
+            El ticket medio de una clínica dental se aumenta proponiendo a cada paciente el
+            tratamiento que ya necesita en el momento en que está más receptivo, y haciendo
+            seguimiento de lo que se habló en consulta, sobre todo de los presupuestos que se
+            quedan sin respuesta. Es una palanca que actúa sobre los pacientes que ya tienes.
+          </P>
+          <P>
+            Captar un paciente nuevo cuesta publicidad y consultas que no siempre acaban en
+            cita; retener a uno que ya te conoce cuesta mucho menos. Por eso conviene revisar
+            el ticket medio antes de invertir más en{" "}
             <InternalLink href="/blog/marketing-clinica-dental">
               publicidad o en campañas de captación
             </InternalLink>
-            , muchas clínicas dentales tienen una oportunidad clara mucho más
-            accesible: aumentar el ticket medio de los pacientes que ya tienen.
-          </P>
-          <P>
-            En este artículo vas a aprender qué es el ticket medio y por qué es el indicador
-            más fácil de mover, qué estrategias funcionan para aumentarlo sin presionar a los
-            pacientes, cómo el seguimiento post-cita multiplica las oportunidades de upsell, y
-            qué papel juega WhatsApp en todo este proceso.
+            .
           </P>
 
           <H2>Qué es el ticket medio y por qué importa en una clínica dental</H2>
           <P>
             El ticket medio es el importe promedio que ingresa la clínica por cada cita o por
             cada paciente activo. Es uno de los indicadores más directos de la salud económica
-            de una clínica porque no depende exclusivamente del número de pacientes, sino de
-            cuánto valor se genera en cada contacto.
+            de una clínica porque mide cuánto valor se genera en cada contacto con el
+            paciente.
           </P>
           <P>
             En una clínica dental, un paciente recurrente genera ingresos a lo largo de los
@@ -140,10 +140,6 @@ export default function AumentarTicketMedioClinicaDentalPage() {
             </InternalLink>{" "}
             en que proponer cada
             tratamiento al paciente correcto.
-          </P>
-          <P>
-            Mover el ticket medio no requiere captar nuevos pacientes: requiere que los
-            que ya tienes reciban la propuesta adecuada en el momento adecuado.
           </P>
 
           <H2>Estrategias para aumentar el ticket medio sin ser invasivo</H2>
@@ -178,8 +174,7 @@ export default function AumentarTicketMedioClinicaDentalPage() {
 
           <H2>Cómo el seguimiento post-cita aumenta el ticket</H2>
           <P>
-            Lo que ocurre después de la cita importa tanto como lo que ocurre durante ella. Un
-            paciente que sale de la consulta con un presupuesto en papel tiene pocas
+            Un paciente que sale de la consulta con un presupuesto en papel tiene pocas
             probabilidades de retomarlo por iniciativa propia; un paciente que recibe un
             mensaje de WhatsApp 24 horas después recordándole lo que se habló tiene muchas más
             posibilidades de dar el paso.
@@ -193,8 +188,8 @@ export default function AumentarTicketMedioClinicaDentalPage() {
           </P>
           <P>
             Este tipo de seguimiento, cuando se automatiza, no requiere esfuerzo del equipo de
-            la clínica y funciona de forma consistente con todos los pacientes, no solo con
-            aquellos a los que alguien recuerda llamar.
+            la clínica y llega a todos los pacientes, también a aquellos a los que nadie se
+            acuerda de llamar.
           </P>
 
           <H2>El papel de WhatsApp en el upsell de servicios dentales</H2>
@@ -204,18 +199,15 @@ export default function AumentarTicketMedioClinicaDentalPage() {
             donde una propuesta tiene más opciones de leerse y de recibir respuesta.
           </P>
           <P>
-            En el contexto del upsell dental, esa diferencia es determinante. Una propuesta de
-            tratamiento enviada por email puede quedarse sin leer durante días o directamente
-            perderse entre otras comunicaciones. La misma propuesta enviada por WhatsApp, en
-            tono conversacional y haciendo referencia a lo que se habló en consulta, tiene
-            muchas más posibilidades de generar una respuesta en el mismo día.
+            Una propuesta de tratamiento enviada por WhatsApp, en tono conversacional y
+            haciendo referencia a lo que se habló en consulta, tiene muchas más posibilidades
+            de recibir respuesta en el mismo día.
           </P>
           <P>
-            Además, WhatsApp permite que el paciente responda en el momento que le viene bien
+            WhatsApp también permite que el paciente responda en el momento que le viene bien
             —fuera del horario de la clínica si es necesario—, lo que elimina la fricción de
             tener que llamar durante el horario de atención. Muchos pacientes escriben al
-            salir de trabajar o en fin de semana, y por eso tiene tanto valor un canal
-            asíncrono como este.
+            salir de trabajar o en fin de semana.
           </P>
 
           <H2>Cuánto puedes aumentar tu facturación con estas estrategias</H2>
@@ -227,8 +219,7 @@ export default function AumentarTicketMedioClinicaDentalPage() {
           <P>
             Un ejemplo con números inventados, solo para ilustrarlo: imagina una clínica con
             200 pacientes activos al mes y un ticket medio de 80 € que consigue subirlo a
-            100 €. Pasaría de facturar 16.000 € a 20.000 € al mes, sin captar un solo
-            paciente nuevo. Ese salto vendría de recuperar presupuestos pendientes, proponer
+            100 €. Pasaría de facturar 16.000 € a 20.000 € al mes. Ese salto vendría de recuperar presupuestos pendientes, proponer
             tratamientos complementarios y fidelizar a los pacientes existentes para que
             vuelvan con más frecuencia.
           </P>
@@ -242,7 +233,7 @@ export default function AumentarTicketMedioClinicaDentalPage() {
             <InternalLink href="/blog/como-aumentar-facturacion-clinica-dental">
               ticket medio
             </InternalLink>{" "}
-            es la más rápida de aplicar porque actúa sobre pacientes que ya tienes.
+            es la más rápida de aplicar.
           </P>
         </article>
 

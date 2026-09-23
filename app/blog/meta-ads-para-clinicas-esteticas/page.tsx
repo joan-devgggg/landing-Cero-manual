@@ -46,11 +46,11 @@ const faqs = [
   },
   {
     q: "¿Qué CPL debería buscar mi clínica con Meta Ads?",
-    a: "El que salga de tus propios números, no el de otra clínica. Toma lo que te deja un tratamiento y divídelo entre los leads que necesitas para cerrar una cita de ese tratamiento: ese es el coste por lead máximo que puedes pagar sin perder dinero. Por eso un servicio con más margen admite un CPL más alto que uno de entrada. El coste real, además, cambia con el servicio que anuncias, la zona y la competencia local. El objetivo no es el lead más barato, sino el lead que convierte.",
+    a: "El que salga de tus propios números. Toma lo que te deja un tratamiento y divídelo entre los leads que necesitas para cerrar una cita de ese tratamiento: ese es el coste por lead máximo que puedes pagar sin perder dinero. Por eso un servicio con más margen admite un CPL más alto que uno de entrada. El coste real, además, cambia con el servicio que anuncias, la zona y la competencia local.",
   },
   {
     q: "¿Necesito una landing page especial para mis anuncios?",
-    a: "No es imprescindible tener una landing elaborada, pero sí necesitas algo que responda al lead en segundos. Los anuncios se entregan a todas horas, así que buena parte de las consultas llega fuera de horario — si tu anuncio funciona a las 10 de la noche y nadie contesta hasta el día siguiente, ese lead ya se ha enfriado. De hecho, para la mayoría de clínicas es más rentable enviar el tráfico directamente a WhatsApp que a una web: el paciente pregunta precio y disponibilidad en el mismo chat, sin rellenar un formulario. Un agente de WhatsApp que responda y cualifique de forma inmediata marca una diferencia enorme en la tasa de conversión.",
+    a: "No es imprescindible tener una landing elaborada, pero sí necesitas algo que responda al lead en segundos. Los anuncios se entregan a todas horas, así que buena parte de las consultas llega fuera de horario — si tu anuncio funciona a las 10 de la noche y nadie contesta hasta el día siguiente, ese lead ya se ha enfriado. Para muchas clínicas es más rentable enviar el tráfico directamente a WhatsApp que a una web: el paciente pregunta precio y disponibilidad en el mismo chat, sin rellenar un formulario. Un agente de WhatsApp que responda y cualifique de forma inmediata marca una diferencia enorme en la tasa de conversión.",
   },
 ]
 
@@ -121,6 +121,13 @@ export default function MetaAdsArticlePage() {
 
           {/* Intro */}
           <P>
+            Para conseguir leads con Meta Ads sin que te bloqueen el anuncio, escribe el copy
+            sobre el servicio y la experiencia, sin aludir a ninguna condición física de quien
+            lo lee, y segmenta por zona, intereses y lookalike, siempre con la edad mínima en
+            18 años. Después, responde a cada lead en segundos: el anuncio solo rinde si alguien
+            contesta.
+          </P>
+          <P>
             Meta Ads — Facebook e Instagram — es hoy el canal de pago más rentable para
             clínicas estéticas con presupuesto ajustado. Ningún otro canal te permite llegar
             a personas con interés activo en estética, dentro de un radio de 5-15 km de
@@ -133,15 +140,7 @@ export default function MetaAdsArticlePage() {
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               nadie responde a tiempo
             </InternalLink>
-            . Buena parte de las consultas llega fuera del horario de
-            atención — y un lead que espera hasta el día siguiente puede no contestar
-            cuando alguien por fin le llame.
-          </P>
-          <P>
-            En esta guía vas a ver por qué Meta Ads funciona especialmente bien para clínicas
-            estéticas, cuál es el error que bloquea casi todos los anuncios, qué copy está
-            permitido y cuál no, cómo segmentar correctamente — y qué esperar del presupuesto
-            los primeros treinta días.
+            .
           </P>
 
           <H2>Por qué Meta Ads funciona especialmente bien para clínicas estéticas</H2>
@@ -149,17 +148,16 @@ export default function MetaAdsArticlePage() {
             Meta Ads funciona especialmente bien para clínicas estéticas por tres motivos:
             permite cruzar interés con geolocalización fina, el formato visual encaja con
             cómo se vende un tratamiento, y no necesita que el usuario esté buscando nada
-            para que el anuncio funcione. Ninguno de los tres lo da un buscador con el mismo
-            volumen de audiencia.
+            para que el anuncio funcione.
           </P>
           <P>
-            La razón principal es la primera: puedes llegar exactamente a personas que han
+            El primero pesa más que los otros dos: puedes llegar exactamente a personas que han
             mostrado interés en tratamientos estéticos, bienestar o cuidado personal — y
             limitarlo a quienes viven o trabajan en un radio de 5-15 km de tu clínica.
           </P>
           <P>
             El segundo motivo es el formato visual. Los tratamientos estéticos se venden con
-            la vista: resultados, ambiente, sensación. Instagram y Facebook son el entorno
+            la vista: resultados y ambiente. Instagram y Facebook son el entorno
             natural para ese tipo de contenido — mucho más que{" "}
             <InternalLink href="/blog/marketing-digital-clinicas-esteticas">
               un anuncio de texto en Google
@@ -168,7 +166,7 @@ export default function MetaAdsArticlePage() {
             donde compites directamente con el precio de otras clínicas.
           </P>
           <P>
-            Y el tercero, que a menudo se pasa por alto: la intención de compra no tiene por
+            El tercero: la intención de compra no tiene por
             qué ser activa para que el anuncio funcione. En Google, alguien busca porque ya
             quiere algo concreto. En Meta, puedes generar esa intención en alguien que
             todavía no había pensado en reservar — y que, al ver tu anuncio en el momento
@@ -191,10 +189,9 @@ export default function MetaAdsArticlePage() {
             sus Normas de publicidad antes de lanzar una campaña.
           </P>
           <P>
-            El problema es que muchas clínicas escriben el copy de sus anuncios exactamente
-            como escribirían un folleto de consulta. Y lo que funciona en un folleto para
-            quien ya ha entrado en la clínica no funciona en Meta — y suele acabar en
-            rechazo del anuncio.
+            Muchas clínicas escriben el copy de sus anuncios como escribirían un folleto de
+            consulta, y lo que funciona en un folleto para quien ya ha entrado en la clínica
+            suele acabar en Meta en rechazo del anuncio.
           </P>
           <P>
             Lo que Meta vigila no es una lista de palabras, sino el criterio de su política de
@@ -208,20 +205,14 @@ export default function MetaAdsArticlePage() {
           <P>
             El bloqueo no siempre es inmediato — a veces el anuncio se aprueba y se rechaza
             días después, cuando ya has empezado a invertir. Por eso conviene revisar el copy
-            antes de lanzar, no después de que Meta te lo haya parado.
+            antes de lanzar.
           </P>
 
           <H2>Qué copy SÍ está permitido (y qué no)</H2>
           <P>
             Está permitido todo copy que hable de la experiencia, el servicio y el cuidado
             personal; no lo está el que menciona un problema del usuario, promete un
-            resultado concreto o usa vocabulario médico. La frontera es esa: describes lo
-            que ofreces, no el defecto que corriges.
-          </P>
-          <P>
-            Dicho de otra forma, el copy que Meta aprueba habla en términos de servicio,
-            bienestar y atención — y el que rechaza habla en términos de diagnóstico y
-            promesa.
+            resultado concreto o usa vocabulario médico.
           </P>
 
           <H3>Copy que Meta aprueba</H3>
@@ -293,8 +284,7 @@ export default function MetaAdsArticlePage() {
             Para llegar a tu cliente ideal hay que combinar tres capas de segmentación:
             geográfica (5-15 km alrededor de la clínica), por interés (belleza, cuidado
             personal, bienestar) y lookalike a partir de tus propios pacientes. Aplicadas
-            juntas bajan el coste por lead y suben la calidad de los contactos; por separado
-            rinden bastante menos.
+            juntas bajan el coste por lead y suben la calidad de los contactos.
           </P>
           <P>
             Antes de las tres capas, un requisito: Meta exige que los anuncios de
@@ -322,8 +312,7 @@ export default function MetaAdsArticlePage() {
             estás llegando a personas que se parecen a quienes ya te han elegido.
           </P>
           <P>
-            Para construirla necesitas exportar tu base de pacientes, y ahí es donde se nota
-            tener la ficha ordenada: si el programa de gestión que usas te deja exportar el
+            Para construirla necesitas exportar tu base de pacientes: si el programa de gestión que usas te deja exportar el
             listado de clientes reales, ese es el que subes como audiencia de origen. Filtra por
             quienes ya han pagado un tratamiento — una lista de curiosos que solo pidieron
             precio genera un lookalike igual de tibio que ellos.
@@ -341,8 +330,8 @@ export default function MetaAdsArticlePage() {
           <H2>Presupuesto mínimo y qué esperar los primeros 30 días</H2>
           <P>
             No hay un presupuesto mínimo universal: el razonable es el que da a Meta datos
-            suficientes durante la fase de aprendizaje, y lo que debes esperar los primeros
-            treinta días es aprendizaje, no rentabilidad. Si el gasto se queda tan corto que
+            suficientes durante la fase de aprendizaje, y los primeros treinta días son
+            precisamente eso, aprendizaje. Si el gasto se queda tan corto que
             el volumen de impresiones apenas se mueve, el algoritmo no aprende qué tipo de
             usuario convierte mejor — y los resultados que ves no son representativos de lo
             que podrías conseguir a pleno rendimiento.
@@ -354,8 +343,7 @@ export default function MetaAdsArticlePage() {
             por resultado suele bajar.
           </P>
           <P>
-            El CPL que puedes aceptar no lo marca una media del sector, lo marcan tus
-            números: lo que te deja un tratamiento, multiplicado por la proporción de leads
+            El CPL que puedes aceptar lo marcan tus números: lo que te deja un tratamiento, multiplicado por la proporción de leads
             que acaban en cita, es lo máximo que puedes pagar por cada lead de ese servicio.
             Si el CPL real sale sorprendentemente bajo, comprueba que los contactos estén
             cualificados. Si se acerca a ese máximo o lo supera, conviene revisar la
@@ -366,10 +354,9 @@ export default function MetaAdsArticlePage() {
             .
           </P>
           <P>
-            Y aquí entra el punto más crítico que pocas clínicas tienen resuelto: captar el
-            lead es solo la mitad del trabajo. Los anuncios rinden a todas horas, así que
+            Captar el lead es solo la mitad del trabajo. Los anuncios rinden a todas horas, así que
             una parte importante de los leads entra de noche o en fin de semana y necesita
-            respuesta inmediata — en segundos, no en horas. Un{" "}
+            respuesta inmediata, en segundos. Un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}

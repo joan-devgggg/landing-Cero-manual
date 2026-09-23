@@ -39,11 +39,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Necesita un CRM una clínica estética pequeña con un solo profesional?",
-    a: "Depende del volumen de consultas, no del tamaño del equipo. Si puedes responder todas tus consultas el mismo día sin esfuerzo, probablemente un CRM completo sea más esfuerzo de mantenimiento del que aporta. Si recibes más consultas de las que puedes seguir de memoria, incluso una herramienta gratuita y sencilla evita que se pierdan leads sin que nadie se dé cuenta.",
+    a: "Depende del volumen de consultas más que del tamaño del equipo. Si puedes responder todas tus consultas el mismo día sin esfuerzo, probablemente un CRM completo sea más esfuerzo de mantenimiento del que aporta. Si recibes más consultas de las que puedes seguir de memoria, incluso una herramienta gratuita y sencilla evita que se pierdan leads sin que nadie se dé cuenta.",
   },
   {
     q: "¿Qué CRM gratuito es mejor para empezar?",
-    a: "Para clínicas pequeñas, las opciones gratuitas más razonables son HubSpot CRM o Zoho Bigin, que según sus webs, consultadas el 16 de septiembre de 2026, tienen plan gratuito (el de Bigin, para un solo usuario) con el que empezar a registrar contactos y hacer seguimiento. La clave no es elegir «el mejor» de la lista, sino el que el equipo realmente vaya a usar a diario — un CRM gratuito que nadie actualiza no aporta nada.",
+    a: "Para clínicas pequeñas, las opciones gratuitas más razonables son HubSpot CRM o Zoho Bigin, que según sus webs, consultadas el 16 de septiembre de 2026, tienen plan gratuito (el de Bigin, para un solo usuario) con el que empezar a registrar contactos y hacer seguimiento. Elige el que el equipo vaya a usar a diario: un CRM gratuito que nadie actualiza no aporta nada.",
   },
   {
     q: "¿Cuál es la diferencia entre un CRM y la automatización básica con IA?",
@@ -122,6 +122,13 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
 
           {/* Intro */}
           <P>
+            Para empezar, a una clínica estética pequeña le basta un CRM básico, incluso
+            gratuito, que registre quién ha contactado, por qué canal y en qué punto está cada
+            conversación. Y si lo más urgente es responder al instante a cada consulta, el
+            punto de entrada más fácil es una automatización que conteste y deje todo
+            registrado para el equipo.
+          </P>
+          <P>
             Cuando una clínica estética pequeña empieza a buscar un CRM, lo más habitual es
             encontrarse con comparativas pensadas para cadenas con varios centros, equipos
             comerciales y miles de leads al mes. La mayoría de esas funcionalidades —
@@ -129,22 +136,14 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
             multi-sede — no aportan nada a una clínica con uno o dos profesionales.
           </P>
           <P>
-            El resultado es que muchas clínicas pequeñas acaban descartando el CRM por
-            completo, pensando que es «demasiado para lo que necesitan» — y siguen perdiendo
+            Por eso muchas clínicas pequeñas acaban descartando el CRM por completo, pensando que es «demasiado para lo que necesitan» — y siguen perdiendo
             leads por falta de seguimiento, que es justo el problema que un CRM, incluso uno
             muy sencillo, resuelve.
-          </P>
-          <P>
-            En este artículo vas a aprender qué necesita realmente una clínica estética
-            pequeña, qué errores son más habituales al elegir herramienta, qué opciones
-            existen desde gratis hasta planes premium, cuándo tiene sentido crecer a algo más
-            completo — y por qué, en muchos casos, el primer paso ni siquiera es un CRM.
           </P>
 
           <H2>Qué necesita realmente una clínica estética pequeña</H2>
           <P>
-            Una clínica pequeña no necesita gestionar un embudo de ventas complejo. Necesita
-            tres cosas muy concretas: saber quién ha contactado y por qué canal, no olvidarse
+            Una clínica pequeña necesita tres cosas muy concretas: saber quién ha contactado y por qué canal, no olvidarse
             de responder a nadie, y tener un registro mínimo de en qué punto está cada
             conversación.
           </P>
@@ -155,10 +154,9 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
             disperso entre WhatsApp, Instagram y notas sueltas.
           </P>
           <P>
-            El coste de no tener ese mínimo control no es solo «desorganización»: son leads
-            reales que se quedan sin respuesta y que, sumados a lo largo de los meses, pueden
-            valer bastante más que una herramienta sencilla. Haz la cuenta con lo que vale un
-            cliente recurrente en tu clínica.
+            Sin ese mínimo control, hay leads reales que se quedan sin respuesta y que,
+            sumados a lo largo de los meses, pueden valer bastante más que una herramienta
+            sencilla.
           </P>
 
           <H2>Los errores más comunes al elegir un CRM siendo pequeño</H2>
@@ -167,7 +165,7 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
             <InternalLink href="/blog/software-gestion-clinicas-esteticas">
               elegir un CRM por la cantidad de funcionalidades
             </InternalLink>{" "}
-            en lugar de por la facilidad de uso. Una clínica pequeña no va a usar la mayoría de las
+            y olvidar la facilidad de uso. Una clínica pequeña no va a usar la mayoría de las
             funciones de un CRM «completo» — y cuanto más complejo es la herramienta, más
             probable es que el equipo deje de actualizarla a las pocas semanas.
           </P>
@@ -223,8 +221,8 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
 
           <H2>Cuándo crecer a un CRM más completo</H2>
           <P>
-            La señal más clara para dar el salto no es el tamaño de la clínica, sino la
-            cantidad de información que se está perdiendo. Si empiezas a notar que nadie
+            La señal más clara para dar el salto es la cantidad de información que se está
+            perdiendo. Si empiezas a notar que nadie
             recuerda en qué quedó una conversación de hace dos semanas, o que dos personas del
             equipo están haciendo seguimiento al mismo lead sin saberlo, es momento de pasar a
             algo más estructurado.
@@ -232,12 +230,11 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
           <P>
             Otra señal habitual es el crecimiento del volumen de consultas. Cuando el volumen
             supera lo que una persona puede seguir de memoria, el seguimiento manual empieza a
-            fallar de forma sistemática — no por falta de organización del equipo, sino porque
-            ya no es humanamente posible recordar el estado de cada conversación sin ayuda de
+            fallar de forma sistemática, porque ya no es humanamente posible recordar el estado de cada conversación sin ayuda de
             una herramienta.
           </P>
           <P>
-            En ese punto, el CRM más completo no es un lujo: es lo que permite seguir
+            En ese punto, el CRM más completo es lo que permite seguir
             creciendo sin que la calidad del seguimiento empeore. El artículo sobre{" "}
             <InternalLink href="/blog/crm-para-clinicas-esteticas">
               CRM para clínicas estéticas
@@ -247,17 +244,15 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
 
           <H2>La alternativa al CRM: empezar con automatización básica</H2>
           <P>
-            Para muchas clínicas pequeñas, el problema más urgente no es la falta de un CRM,
-            sino la falta de respuesta inmediata. Un lead que espera respuesta puede acabar
-            eligiendo otra clínica, y eso ocurre sobre todo con las consultas que llegan fuera
-            del horario de atención.
+            Para muchas clínicas pequeñas, el problema más urgente es la falta de respuesta
+            inmediata: un lead que espera respuesta puede acabar eligiendo otra clínica.
           </P>
           <P>
             Antes de invertir tiempo en implantar un CRM completo, puede tener más sentido
             resolver primero ese problema concreto con automatización: un agente que responda
             al instante, haga las preguntas básicas de cualificación y deje todo registrado
-            para que el equipo lo revise por la mañana. Esto no sustituye a un CRM a largo
-            plazo, pero evita la sangría de leads mientras la clínica decide{" "}
+            para que el equipo lo revise por la mañana. A largo plazo seguirás necesitando un
+            CRM, pero así no pierdes leads mientras la clínica decide{" "}
             <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
               qué herramienta necesita realmente
             </InternalLink>
