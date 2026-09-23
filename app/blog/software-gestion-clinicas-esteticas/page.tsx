@@ -212,7 +212,7 @@ export default function SoftwareGestionClinicasArticlePage() {
             ejemplo, enviar recordatorios automáticos, responder consultas por WhatsApp sin
             intervención humana, o lanzar mensajes de seguimiento después de una cita. Para
             que esa capa no cree una segunda agenda, tiene que conectarse al programa que ya
-            usas —si lo permite, como Flowww, Koibox, ClinicCloud o Klinikare— o, si no
+            usas —si lo permite, como Flowww o Koibox— o, si no
             encaja, formar parte de un software a medida que lo reúna todo. Muchas clínicas
             tienen agenda y CRM, pero siguen haciendo todo lo demás a mano.
           </P>

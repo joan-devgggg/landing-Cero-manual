@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tarda en estar funcionando?",
-    a: "El agente está operativo en menos de 14 días desde que empezamos. El onboarding incluye configurar la base de conocimiento con tu información, tratamientos y precios.",
+    a: "El agente estándar está operativo en menos de 14 días desde que empezamos. El onboarding incluye configurar la base de conocimiento con tu información, tratamientos y precios. Si hace falta una integración con tu programa de gestión o un software a medida, el plazo se fija en la propuesta, según el alcance.",
   },
   {
     q: "¿Los datos de mis contactos están seguros?",

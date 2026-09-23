@@ -223,8 +223,8 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
           <P>
             Un agente con IA puede atender esas conversaciones fuera de horario, resolver dudas
             frecuentes, dejar la cita reservada y pasar a una persona del equipo los casos que la
-            necesitan. Si tu programa permite conectarse (Flowww, Koibox, ClinicCloud o
-            Klinikare, por ejemplo), el agente se integra con él y las citas entran en la
+            necesitan. Si tu programa permite conectarse (Flowww o Koibox, por
+            ejemplo), el agente se integra con él y las citas entran en la
             misma agenda que ya usa tu equipo; si no encaja o no se deja conectar, la
             alternativa es un software a medida con el agente dentro, para que los datos de
             cada paciente sigan en un solo sitio. Si quieres ver qué debe tener ese software

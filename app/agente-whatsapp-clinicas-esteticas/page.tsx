@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tarda en estar funcionando?",
-    a: "Menos de 14 días desde que empezamos. En el onboarding cargamos tu información, tratamientos, precios y tono de marca para que el agente esté listo desde el primer mensaje.",
+    a: "Menos de 14 días desde que empezamos. En el onboarding cargamos tu información, tratamientos, precios y tono de marca para que el agente esté listo desde el primer mensaje. Si además hace falta integrarlo con tu programa de gestión o desarrollar software a medida, el plazo se fija en la propuesta.",
   },
   {
     q: "¿Qué pasa si comete un error con un cliente?",

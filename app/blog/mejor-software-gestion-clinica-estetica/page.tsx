@@ -333,7 +333,7 @@ export default function MejorSoftwareGestionClinicaEsteticaPage() {
             resuelve las dudas frecuentes, agenda la cita y pasa a una persona del equipo los
             casos delicados. Trabaja con el número de WhatsApp que tu clínica ya tiene, así que
             el paciente sigue escribiendo al mismo sitio. Si tu programa de gestión se deja
-            conectar (Flowww, Koibox, ClinicCloud o Klinikare, por ejemplo), la cita entra en
+            conectar (Flowww o Koibox, por ejemplo), la cita entra en
             tu agenda de siempre; si no encaja, la alternativa es un software a medida con el
             agente dentro.
           </P>

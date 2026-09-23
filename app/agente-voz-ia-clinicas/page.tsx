@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tarda en estar activo?",
-    a: "Menos de 14 días desde que empezamos. Configuramos la voz, el guion y la información de tu clínica antes de poner el agente a contestar de verdad.",
+    a: "Menos de 14 días desde que empezamos. Configuramos la voz, el guion y la información de tu clínica antes de poner el agente a contestar de verdad. Si además hace falta una integración con tu programa de gestión o un desarrollo a medida, el plazo se fija en la propuesta.",
   },
 ]
 
