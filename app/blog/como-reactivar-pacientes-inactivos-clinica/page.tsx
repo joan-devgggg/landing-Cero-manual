@@ -14,7 +14,9 @@ const PATH = "/blog/como-reactivar-pacientes-inactivos-clinica"
 const DATES = articleDates("como-reactivar-pacientes-inactivos-clinica")
 const TITLE = "Reactivar pacientes inactivos: cómo hacerlo | Cero Manual"
 const DESCRIPTION =
-  "Tienes clientes que dejaron de venir. Te explicamos cómo reactivarlos con mensajes automáticos por WhatsApp y recuperar esos ingresos perdidos."
+  "Cómo reactivar pacientes inactivos en tu clínica con mensajes automáticos por WhatsApp, sin llamarles uno por uno. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Cómo reactivar pacientes inactivos en una clínica: cómo identificarlos, qué mensaje enviarles por WhatsApp y cómo calcular lo que vale recuperarlos."
 const HEADLINE = "Cómo reactivar pacientes inactivos en tu clínica (sin llamar uno por uno)"
 
 export const metadata: Metadata = {
@@ -40,15 +42,15 @@ const faqs = [
   },
   {
     q: "¿No es invasivo escribir a alguien que dejó de venir hace tiempo?",
-    a: "No, si el mensaje está bien planteado. No es un desconocido al que abordas de la nada: es alguien que ya fue tu paciente, que ya conoció tu clínica y que, en algún momento, decidió confiar en ella. Un mensaje cercano, con su nombre y una propuesta concreta, se recibe como un gesto de atención — no como una intrusión.",
+    a: "No, si el mensaje está bien planteado. Escribes a alguien que ya fue tu paciente y conoce tu clínica. Un mensaje cercano, con su nombre y una propuesta concreta, se recibe como un gesto de atención.",
   },
   {
     q: "¿Qué tipo de mensaje funciona mejor para reactivar a un paciente?",
-    a: "Los que se sienten personales y ofrecen algo concreto: mencionar su última visita, proponer una revisión o una actualización de un tratamiento que ya conoce, y dejar la puerta abierta sin presionar. Lo que peor funciona son los mensajes genéricos de «te echamos de menos» enviados igual a toda la base de datos — porque se notan, y se ignoran.",
+    a: "Los que se sienten personales y ofrecen algo concreto: mencionar su última visita, proponer una revisión o una actualización de un tratamiento que ya conoce, y dejar la puerta abierta sin presionar. Lo que peor funciona son los mensajes genéricos de «te echamos de menos» enviados igual a toda la base de datos, porque se nota que son genéricos.",
   },
   {
     q: "¿Cuánto tiempo se tarda en ver resultados de una campaña de reactivación?",
-    a: "Normalmente, los primeros resultados se ven en cuestión de días: las respuestas a un mensaje de WhatsApp suelen llegar rápido, porque el mensaje aparece en la misma aplicación donde la persona habla con los suyos. A partir de ahí, convertir esas respuestas en citas es un proceso natural — no hace falta esperar semanas para empezar a notar el efecto en tu agenda.",
+    a: "Normalmente, los primeros resultados se ven en cuestión de días: las respuestas a un mensaje de WhatsApp suelen llegar rápido, porque el mensaje aparece en la misma aplicación donde la persona habla con los suyos. A partir de ahí, convertir esas respuestas en citas es un proceso natural, así que el efecto en tu agenda se nota sin esperar semanas.",
   },
 ]
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,29 +121,22 @@ export default function ReactivarPacientesArticlePage() {
 
           {/* Intro */}
           <P>
-            Casi cualquier clínica tiene, guardada en su agenda o su historial, una lista
-            de personas que un día fueron pacientes habituales — y que, en algún momento,
-            simplemente dejaron de venir. Nadie los dio de baja. Nadie decidió perderlos.
-            Sencillamente, un día no volvieron a reservar, y ahí se quedó la cosa.
+            Para reactivar a los pacientes inactivos de tu clínica, filtra tu historial por
+            quién lleva meses sin reservar y escríbeles por WhatsApp con un mensaje personal:
+            su nombre, su última visita y una propuesta concreta, como una revisión. Si el
+            envío se automatiza, llega a toda la lista sin que nadie del equipo tenga que
+            escribir uno por uno.
           </P>
           <P>
-            Esa lista no es solo un dato curioso: es ingreso dormido. Cada persona de esa
-            lista ya conoció tu clínica, ya confió en ella y ya pagó por un servicio — lo
-            cual la sitúa a años luz de un desconocido al que tienes que convencer desde
-            cero. El problema es que, para reactivarla, el canal que casi todo el mundo
-            prueba primero — el email — apenas funciona.
-          </P>
-          <P>
-            En este artículo vas a entender qué es exactamente un paciente inactivo y
-            cuántos puedes tener sin saberlo, por qué el email de reactivación rinde tan
-            poco, por qué WhatsApp es un canal mucho más eficaz para esto, cómo estructurar
-            un mensaje que no parezca spam, y cuántos ingresos puede suponer recuperar solo
-            a una parte de ellos.
+            Casi cualquier clínica tiene, guardada en su agenda o su historial, una lista de
+            personas que un día fueron pacientes habituales y dejaron de venir. Nadie los dio
+            de baja: un día no volvieron a reservar, y ahí se quedó la cosa. Esa lista es
+            ingreso dormido.
           </P>
 
           <H2>¿Qué es un paciente inactivo y cuántos tienes sin saberlo?</H2>
           <P>
-            Un paciente inactivo es, simplemente, alguien que fue cliente habitual de tu
+            Un paciente inactivo es alguien que fue cliente habitual de tu
             clínica y que, pasado un tiempo razonable — tres meses, seis, un año,
             dependiendo del tipo de tratamiento —, ha dejado de reservar sin que nadie se
             haya dado cuenta del todo.
@@ -149,10 +144,8 @@ export default function ReactivarPacientesArticlePage() {
           <P>
             La mayoría de clínicas no tiene esta cifra a la vista. Vive enterrada en el
             historial, repartida entre cientos de fichas, sin que nadie se haya sentado a
-            mirar quién dejó de venir y cuándo. Y, sin embargo, cuando se hace ese
-            ejercicio, casi siempre aparece una cifra mayor de la esperada — y, con ella,
-            una cantidad de ingresos que se está dejando de generar mes tras mes sin que
-            nadie lo note.
+            mirar quién dejó de venir y cuándo. Cuando se hace ese ejercicio, casi siempre
+            aparece una cifra mayor de la esperada.
           </P>
 
           <H2>Por qué el email de reactivación no funciona</H2>
@@ -170,19 +163,17 @@ export default function ReactivarPacientesArticlePage() {
             Y, aunque se abra, el formato no ayuda: un email de «te echamos de menos» suena
             a plantilla genérica enviada a toda la base de datos — porque, normalmente, lo
             es. No transmite la cercanía de quien recuerda quién eres y qué tratamiento te
-            hiciste la última vez. Transmite, más bien, lo contrario.
+            hiciste la última vez.
           </P>
 
           <H2>WhatsApp como canal de reactivación: por qué funciona</H2>
           <P>
-            Con WhatsApp la situación cambia: es la aplicación donde tus pacientes hablan a
-            diario con su familia y sus amigos, y el mensaje de su clínica aparece entre esas
-            conversaciones, no enterrado entre promociones. No es un canal que la gente
-            revise «cuando tenga un rato»: lo tiene a mano durante todo el día.
+            WhatsApp es la aplicación donde tus pacientes hablan a diario con su familia y
+            sus amigos, y el mensaje de su clínica aparece entre esas conversaciones. La
+            tienen a mano durante todo el día.
           </P>
           <P>
-            Y hay otra ventaja silenciosa: igual que las consultas nuevas pueden atenderse
-            aunque lleguen fuera del horario de la clínica, los{" "}
+            Además, los{" "}
             <InternalLink href="/blog/inteligencia-artificial-clinicas-esteticas">
               mensajes de reactivación
             </InternalLink>{" "}
@@ -200,9 +191,8 @@ export default function ReactivarPacientesArticlePage() {
           <H3>Personaliza con su nombre y su última visita</H3>
           <P>
             Un mensaje que empieza por el nombre de la persona y menciona — aunque sea de
-            pasada — el tratamiento que se hizo la última vez, no se siente como
-            publicidad: se siente como que alguien se ha acordado de ella. Esa diferencia,
-            por sí sola, ya cambia cómo se recibe todo lo que viene después.
+            pasada — el tratamiento que se hizo la última vez, se siente como que alguien se
+            ha acordado de ella.
           </P>
 
           <H3>Ofrece algo concreto, no un genérico «te echamos de menos»</H3>
@@ -215,38 +205,30 @@ export default function ReactivarPacientesArticlePage() {
 
           <H3>Deja la puerta abierta sin presionar</H3>
           <P>
-            El objetivo no es forzar una reserva en el primer mensaje, sino reabrir la
-            conversación. Un tono cercano, sin urgencias artificiales ni descuentos
+            El primer mensaje sirve para reabrir la conversación. Un tono cercano, sin urgencias artificiales ni descuentos
             agresivos, consigue que la persona responda — y, a partir de ahí, lo normal es
             que la cita llegue sola, sin que nadie tenga que insistir.
           </P>
 
           <H2>Cuántos pacientes puedes recuperar y qué ingresos supone</H2>
           <P>
-            Aquí es donde conviene hacer números con calma. El{" "}
+            El{" "}
             <InternalLink href="/blog/como-fidelizar-pacientes-clinica-estetica">
               valor de un cliente recurrente
             </InternalLink>{" "}
             en tu clínica sale de multiplicar tu ticket medio por las visitas que hace a lo
             largo de su relación con el centro — entre tratamientos, revisiones y todo lo que
-            viene después de la primera visita. Eso significa que cada paciente inactivo que
-            se reactiva no es una cita suelta: es, potencialmente, todo ese valor volviendo a
-            estar sobre la mesa.
+            viene después de la primera visita. Cada paciente inactivo que se reactiva pone
+            otra vez sobre la mesa, potencialmente, todo ese valor.
           </P>
           <P>
-            Y no hace falta reactivar a cientos para que el efecto se note. Recuperar a un
-            puñado de pacientes al mes — personas que ya conocían tu clínica, que ya
-            confiaban en ella y que solo necesitaban un empujón en el momento adecuado —
-            son ingresos que, hoy, simplemente no están entrando. Si quieres calcular esa cifra con tus propios números, en{" "}
+            Para que el efecto se note basta con recuperar a un puñado de pacientes al mes:
+            personas que ya conocían tu clínica, confiaban en ella y solo necesitaban un
+            empujón en el momento adecuado. Si quieres calcular esa cifra con tus propios números, en{" "}
             <InternalLink href="/reactivacion-pacientes-inactivos">
               reactivación de pacientes inactivos
             </InternalLink>{" "}
             te ayudamos a verlo aplicado a tu clínica.
-          </P>
-          <P>
-            La pregunta, en el fondo, no es si tienes pacientes inactivos — los tienes,
-            prácticamente seguro —, sino cuánto tiempo más vas a dejar esos ingresos
-            dormidos antes de hacer algo tan sencillo como escribirles.
           </P>
         </article>
 

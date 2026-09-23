@@ -14,7 +14,9 @@ const PATH = "/blog/que-es-un-agente-de-voz-ia-para-clinicas"
 const DATES = articleDates("que-es-un-agente-de-voz-ia-para-clinicas")
 const TITLE = "Agente de voz IA para clínicas: guía completa | Cero Manual"
 const DESCRIPTION =
-  "Un agente de voz con IA contesta cada llamada de tu clínica, agenda citas y resuelve dudas, incluso a las 3 de la mañana. Descubre cómo funciona."
+  "Qué es un agente de voz con IA para clínicas: contesta llamadas, agenda citas y resuelve dudas a cualquier hora. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Qué es un agente de voz con IA para clínicas, en qué se diferencia de un contestador automático, para qué clínicas tiene sentido y de qué depende su coste."
 const HEADLINE = "Qué es un agente de voz con IA y cómo puede transformar tu clínica"
 
 export const metadata: Metadata = {
@@ -36,15 +38,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Un agente de voz con IA suena robótico o como una máquina?",
-    a: "No, si está bien configurado. Se entrena con la información real de tu clínica — horarios, servicios, tratamientos, tono — y mantiene una conversación natural, no un menú de opciones tipo «pulse 1 para citas». Al empezar la llamada se presenta como asistente virtual de la clínica —el Reglamento europeo de IA obliga a informar de que se habla con una IA—, y a partir de ahí lo que nota el paciente es que, por fin, alguien contesta al teléfono.",
+    a: "No, si está bien configurado. Se entrena con la información real de tu clínica — horarios, servicios, tratamientos, tono — y mantiene una conversación natural, sin menús de opciones tipo «pulse 1 para citas». Al empezar la llamada se presenta como asistente virtual de la clínica —el Reglamento europeo de IA obliga a informar de que se habla con una IA—, y a partir de ahí lo que nota el paciente es que, por fin, alguien contesta al teléfono.",
   },
   {
     q: "¿Tengo que cambiar el número de teléfono de mi clínica?",
-    a: "No. El agente se conecta al número que ya tienes, así que para tus pacientes no cambia absolutamente nada: siguen llamando donde siempre, al mismo teléfono de siempre. Lo único que cambia es que, esta vez, la llamada se contesta — también a las tres de la mañana.",
+    a: "No. El agente se conecta al número que ya tienes, así que para tus pacientes no cambia nada: siguen llamando al mismo teléfono de siempre. Lo único que cambia es que, esta vez, la llamada se contesta — también a las tres de la mañana.",
   },
   {
     q: "¿Puede agendar la cita durante la llamada, o solo toma el recado?",
-    a: "Puede agendarla durante la propia llamada. No se queda en un «le llamamos para confirmar»: la persona cuelga con la cita ya puesta, en un hueco que estaba libre, sin que nadie de tu equipo tenga que devolverle la llamada.",
+    a: "Puede agendarla durante la propia llamada. La persona cuelga con la cita ya puesta, en un hueco que estaba libre. Nadie de tu equipo tiene que devolverle la llamada.",
   },
   {
     q: "¿Qué pasa si la llamada es complicada, urgente o necesita a una persona del equipo?",
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,49 +121,40 @@ export default function AgenteVozArticlePage() {
 
           {/* Intro */}
           <P>
-            Mucha gente llama a su clínica cuando puede, no cuando la clínica está abierta:
-            al salir del trabajo, por la noche o en fin de semana. Son
-            personas que han decidido, justo en ese momento, pedir cita — y se encuentran
-            con un tono de llamada que nadie va a coger.
+            Un agente de voz con IA es un sistema que contesta las llamadas de tu clínica con
+            una conversación natural: entiende qué pide quien llama, le agenda la cita en la
+            misma llamada y pasa a tu equipo lo que necesita a una persona. Atiende a
+            cualquier hora, también por la noche, en fin de semana o en plena hora punta.
           </P>
           <P>
-            Y no hace falta que sea de noche. En plena hora punta, con la sala de espera
-            llena y todo el equipo atendiendo a quien tiene delante, el teléfono también
-            puede sonar varias veces sin que nadie lo descuelgue. Cada una de esas llamadas
-            es, probablemente, un paciente que está a punto de irse a otra clínica.
-          </P>
-          <P>
-            En este artículo vas a entender qué es exactamente un agente de voz con
-            inteligencia artificial, en qué se diferencia de un contestador automático,
-            cómo funciona en el día a día de una clínica, para qué tipo de centros tiene
-            más sentido y qué inversión supone ponerlo en marcha.
+            Mucha gente llama cuando puede: al salir del trabajo o por la noche, con la
+            clínica ya cerrada. Y en hora punta, con la sala de espera llena y todo el equipo
+            atendiendo a quien tiene delante, el teléfono también puede sonar varias veces
+            sin que nadie lo descuelgue.
           </P>
 
           <H2>¿Qué es exactamente un agente de voz con IA?</H2>
           <P>
-            Un agente de voz con IA es un sistema que contesta las llamadas de tu clínica
-            manteniendo una conversación natural — no un menú de «pulse 1 para citas, pulse
-            2 para...». Entiende lo que pide la persona que llama y actúa en consecuencia,
+            El agente mantiene una conversación natural, sin menús de «pulse 1 para citas,
+            pulse 2 para...». Entiende lo que pide la persona que llama y actúa en consecuencia,
             igual que lo haría alguien de tu equipo.
           </P>
           <P>
             Se configura con la información real de tu clínica: horarios, servicios,
             tratamientos, tarifas orientativas y el tono con el que quieres que se hable a
-            tus pacientes. No es una voz genérica de centralita, sino una que suena — y
-            responde — como tu clínica.
+            tus pacientes. Así suena, y responde, como tu clínica.
           </P>
           <P>
-            Y lo más importante: no necesitas cambiar de número de teléfono. El agente se
-            conecta al que ya tienes, así que para quien llama no cambia nada — salvo que,
-            esta vez, alguien contesta.
+            El agente se conecta al número de teléfono que ya tienes, así que para quien
+            llama no cambia nada, salvo que esta vez alguien contesta.
           </P>
 
           <H2>¿En qué se diferencia de un contestador automático?</H2>
           <P>
             Un contestador automático graba un mensaje y deja a la persona esperando: «en
             este momento no podemos atenderle, deje su mensaje después de la señal». Es una
-            forma educada de decir «llama en otro momento» — y la mayoría de la gente,
-            simplemente, cuelga y prueba en otra clínica.
+            forma educada de decir «llama en otro momento», y es fácil que quien llama
+            cuelgue y pruebe en otra clínica.
           </P>
           <P>
             Un agente de voz con IA, en cambio, mantiene una conversación real. Entiende si
@@ -171,14 +164,13 @@ export default function AgenteVozArticlePage() {
           </P>
           <P>
             Puede dejar la cita reservada en la misma llamada, explicar información básica sobre
-            servicios y horarios, y — esto es lo importante — detectar cuándo una llamada
+            servicios y horarios, y detectar cuándo una llamada
             es compleja o urgente, para pasarla a una persona de tu equipo con todo el
             contexto ya recogido.
           </P>
           <P>
             La diferencia, en la práctica, es la que hay entre «te he dejado un mensaje, a
-            ver si me llaman» y «ya tengo cita para el jueves». Una genera fricción; la
-            otra, confianza — desde el primer contacto.
+            ver si me llaman» y «ya tengo cita para el jueves».
           </P>
 
           <H2>Cómo funciona en una clínica: paso a paso</H2>
@@ -188,14 +180,13 @@ export default function AgenteVozArticlePage() {
               como si lo cogiera una persona de recepción
             </InternalLink>{" "}
             — solo
-            que las 24 horas, los 365 días del año, sin colas ni tonos de espera, y sin que
-            nadie tenga que dejar lo que está haciendo para ir a por el teléfono.
+            que las 24 horas y sin que nadie tenga que dejar lo que está haciendo para ir a por el teléfono.
           </P>
 
           <H3>1. La llamada entra y el agente responde al instante</H3>
           <P>
-            No hay tonos, ni esperas, ni un «en este momento todas nuestras líneas están
-            ocupadas». El agente descuelga de inmediato, con la voz y el tono que has
+            Sin esperas ni un «en este momento todas nuestras líneas están ocupadas»: el
+            agente descuelga de inmediato, con la voz y el tono que has
             definido para tu clínica, y empieza la conversación con total normalidad.
           </P>
 
@@ -209,15 +200,14 @@ export default function AgenteVozArticlePage() {
 
           <H3>3. Reserva la cita en la misma llamada</H3>
           <P>
-            Si se trata de una cita, no se queda en un «ya le llamaremos para confirmar»:
-            la agenda en ese mismo momento, sobre un hueco libre, y la persona cuelga
+            Si se trata de una cita, la agenda en ese mismo momento, sobre un hueco libre, y la persona cuelga
             sabiendo qué día y a qué hora tiene que venir.
           </P>
 
           <H3>4. Si hace falta, lo escala con todo el contexto</H3>
           <P>
-            Cuando la llamada es compleja, sensible o claramente urgente, el agente no
-            improvisa: transfiere la llamada — o deja recogida toda la información — para
+            Cuando la llamada es compleja, sensible o claramente urgente, el agente
+            transfiere la llamada — o deja recogida toda la información — para
             que{" "}
             <InternalLink href="/blog/chatbot-whatsapp-vs-recepcionista-clinica">
               una persona de tu equipo la retome
@@ -229,8 +219,7 @@ export default function AgenteVozArticlePage() {
           <P>
             Cada llamada queda anotada: quién ha llamado, qué necesitaba y qué se ha hecho.
             Tu equipo deja de depender de notas sueltas o de un «me suena que alguien
-            llamó por lo del tratamiento de...». Y, además, se activa en menos de 14 días, sin
-            tocar tu número de teléfono.
+            llamó por lo del tratamiento de...». El agente se activa en menos de 14 días.
           </P>
 
           <H2>¿Para qué tipo de clínicas tiene más sentido?</H2>
@@ -251,33 +240,25 @@ export default function AgenteVozArticlePage() {
           <P>
             Y también clínicas que detectan que algunos pacientes «se enfrían» entre que
             preguntan y que finalmente reservan — porque nadie les devolvió la llamada a
-            tiempo. Una llamada que nadie coge es una consulta sin respuesta, y quien llama
-            puede probar directamente con la siguiente clínica de su lista.
+            tiempo.
           </P>
           <P>
-            Y hay un efecto en cadena que muchas clínicas no ven hasta que lo miran de
-            cerca: una relación que empieza con una llamada perdida o mal gestionada
-            también empieza más floja — y eso puede acabar notándose, con el tiempo, en
-            citas a las que el paciente no se presenta.
+            Una relación que empieza con una llamada perdida o mal gestionada también
+            empieza más floja, y con el tiempo eso puede notarse en citas a las que el
+            paciente no se presenta.
           </P>
 
           <H2>De qué depende el coste y cuándo se amortiza</H2>
           <P>
-            La pregunta correcta no es «¿cuánto cuesta tener un agente de voz?», sino
-            «¿cuánto me está costando ya no tenerlo?». Cada llamada que nadie contesta es,
-            probablemente, un paciente que ha llamado — y reservado — en otra clínica.
-          </P>
-          <P>
-            La inversión en un agente de voz con IA suele amortizarse con muy pocos
-            pacientes nuevos al mes: basta con recuperar una parte de esas llamadas que hoy
-            se quedan sin respuesta para que el sistema se pague solo, y siga generando
-            ingresos después, mes tras mes, sin que nadie tenga que hacer nada distinto.
+            Para saber si un agente de voz compensa, compáralo con lo que valen las llamadas
+            que hoy nadie contesta. La inversión suele amortizarse con muy pocos pacientes
+            nuevos al mes: basta con recuperar una parte de esas llamadas para que el
+            sistema se pague solo.
           </P>
           <P>
             La forma más sencilla de verlo es con tus propios números: cuántas llamadas
             recibe tu clínica, cuántas se quedan sin contestar y qué valor medio tiene un
-            paciente nuevo. Con esos tres datos, la cuenta se hace en un minuto — y
-            normalmente sorprende a quien la hace por primera vez.
+            paciente nuevo. Con esos tres datos, la cuenta se hace en un minuto.
           </P>
           <P>
             Si quieres ver esa cuenta aplicada a tu clínica, en{" "}

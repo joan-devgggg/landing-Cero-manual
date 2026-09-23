@@ -14,7 +14,9 @@ const PATH = "/blog/como-aumentar-facturacion-clinica-dental"
 const DATES = articleDates("como-aumentar-facturacion-clinica-dental")
 const TITLE = "Aumentar la facturación de tu clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Aumenta la facturación de tu clínica dental sin gastar más en publicidad: cuatro palancas que puedes activar esta semana. Pide tu auditoría gratuita."
+  "Cómo aumentar la facturación de tu clínica dental sin gastar más en publicidad: cuatro palancas que puedes activar esta semana. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Cuatro palancas para aumentar la facturación de una clínica dental sin captar más pacientes: reactivar a los inactivos, reducir no-shows, subir el ticket medio y automatizar."
 const HEADLINE =
   "Cómo aumentar la facturación de tu clínica dental sin necesidad de más pacientes"
 
@@ -37,19 +39,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿De verdad puedo aumentar la facturación sin captar pacientes nuevos?",
-    a: "Sí, en la mayoría de clínicas dentales hay ingresos dormidos en su propia base de datos: pacientes que dejaron de venir, citas que se cancelan sin recolocar y revisiones que nunca se llegan a programar. Recuperar esos ingresos no requiere presupuesto de publicidad, solo un sistema que se encargue de contactar a esos pacientes en el momento adecuado. La ventaja frente a la captación es doble: son personas que ya confiaron en la clínica una vez, así que la conversación empieza mucho más adelantada, y el coste de contactarlas es prácticamente cero. Antes de subir la inversión en anuncios, merece la pena mirar cuántos pacientes llevan más de un año sin aparecer.",
+    a: "Sí, en la mayoría de clínicas dentales hay ingresos dormidos en su propia base de datos: pacientes que dejaron de venir, citas que se cancelan sin recolocar y revisiones que nunca se llegan a programar. Para recuperarlos basta con un sistema que se encargue de contactar a esos pacientes en el momento adecuado, sin presupuesto de publicidad. Antes de subir la inversión en anuncios, merece la pena mirar cuántos pacientes llevan más de un año sin aparecer.",
   },
   {
     q: "¿Cuánto representa un paciente que deja de venir?",
-    a: "Un paciente recurrente genera ingresos durante años, entre revisiones, limpiezas, tratamientos y posibles derivaciones a especialistas. Para ponerle cifra en tu clínica, multiplica tu ticket medio por las visitas que hace al año un paciente habitual y por los años que suele seguir viniendo. Cuando ese paciente deja de venir sin que nadie lo note, ese valor se queda sobre la mesa, y recuperarlo es mucho más barato que conseguir un paciente nuevo desde cero. El problema es que esa pérdida no aparece en ningún informe: nadie da de baja a un paciente, simplemente deja de aparecer en la agenda. Por eso conviene revisar cada cierto tiempo el listado de última visita, que muchos programas de gestión permiten sacar filtrando por fecha de última cita.",
+    a: "Un paciente recurrente genera ingresos durante años, entre revisiones, limpiezas, tratamientos y posibles derivaciones a especialistas. Para ponerle cifra en tu clínica, multiplica tu ticket medio por las visitas que hace al año un paciente habitual y por los años que suele seguir viniendo. Cuando ese paciente deja de venir sin que nadie lo note, ese valor se queda sobre la mesa. El problema es que esa pérdida no aparece en ningún informe: nadie da de baja a un paciente, simplemente deja de aparecer en la agenda. Por eso conviene revisar cada cierto tiempo el listado de última visita, que muchos programas de gestión permiten sacar filtrando por fecha de última cita.",
   },
   {
     q: "¿Cómo afectan los no-shows a la facturación?",
-    a: "Cada cita a la que el paciente no se presenta, y que no se puede recolocar, es tiempo del equipo y del gabinete que no genera ingresos pero sí tiene un coste. Para saber cuánto te cuesta a ti, haz la cuenta con tus propios datos: citas al día × días laborables del mes × tu tasa de no-shows × tu ticket medio. Es la pérdida más fácil de corregir de todas, porque no depende de captar a nadie nuevo — solo de que el paciente que ya reservó confirme o avise a tiempo.",
+    a: "Cada cita a la que el paciente no se presenta, y que no se puede recolocar, es tiempo del equipo y del gabinete que no genera ingresos pero sí tiene un coste. Para saber cuánto te cuesta a ti, haz la cuenta con tus propios datos: citas al día × días laborables del mes × tu tasa de no-shows × tu ticket medio. Es la pérdida más fácil de corregir: basta con que el paciente que ya reservó confirme o avise a tiempo.",
   },
   {
     q: "¿Cómo se reactivan pacientes que llevan tiempo sin venir?",
-    a: "Con un mensaje por WhatsApp que mencione cuánto tiempo hace que no pasan por la clínica y les proponga una revisión concreta. El tono tiene que ser cercano, no comercial: la mayoría no se fue molesta, simplemente nadie les dio un motivo para volver. Un dato específico, como que ya han pasado más de doce meses desde su última visita, hace el mensaje más personal que cualquier promoción genérica. Si ese filtro por última visita y el envío se automatizan, el proceso se puede aplicar a toda la base sin esfuerzo del equipo.",
+    a: "Con un mensaje por WhatsApp que mencione cuánto tiempo hace que no pasan por la clínica y les proponga una revisión concreta. El tono tiene que ser cercano: la mayoría no se fue molesta, simplemente nadie les dio un motivo para volver. Un dato específico, como que ya han pasado más de doce meses desde su última visita, hace el mensaje más personal que cualquier promoción genérica. Si ese filtro por última visita y el envío se automatizan, el proceso se puede aplicar a toda la base sin esfuerzo del equipo.",
   },
   {
     q: "¿Necesito contratar a alguien para gestionar todo esto?",
@@ -61,7 +63,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -124,27 +126,21 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
 
           {/* Intro */}
           <P>
-            Cuando una clínica dental quiere facturar más, la primera idea que suele venir a
-            la cabeza es la misma: conseguir más pacientes nuevos. Más publicidad, más
-            promociones, más inversión en captación. Pero antes de gastar un euro más en
-            atraer a gente nueva, merece la pena mirar hacia dentro: la mayoría de clínicas
-            tienen ingresos dormidos en su propia base de datos, esperando a que alguien los
-            active.
+            Para aumentar la facturación de una clínica dental sin captar más pacientes hay
+            tres palancas: recuperar a los pacientes que dejaron de venir, reducir los
+            no-shows y{" "}
+            <InternalLink href="/blog/aumentar-ticket-medio-clinica-dental">
+              subir el ticket medio
+            </InternalLink>{" "}
+            con un seguimiento después de cada cita. Las tres trabajan con ingresos que ya
+            están en tu propia base de datos, y se sostienen si las automatizas para que no
+            dependan de que alguien del equipo se acuerde.
           </P>
           <P>
             Pacientes que dejaron de venir, huecos de agenda que se quedan vacíos por
-            cancelaciones de última hora, revisiones que nunca llegan a programarse... Todo
-            eso es facturación que ya estaba al alcance de la clínica y que se está perdiendo
-            sin que nadie se dé cuenta.
-          </P>
-          <P>
-            En este artículo vas a ver varias estrategias para aumentar la facturación de tu
-            clínica dental sin necesidad de más inversión en publicidad: recuperando
-            pacientes inactivos, reduciendo no-shows,{" "}
-            <InternalLink href="/blog/aumentar-ticket-medio-clinica-dental">
-              aumentando el ticket medio
-            </InternalLink>{" "}
-            y automatizando todo para que funcione sin esfuerzo extra del equipo.
+            cancelaciones de última hora, revisiones que nunca llegan a programarse: todo
+            eso es facturación que ya estaba al alcance de la clínica y que se pierde sin que
+            nadie se dé cuenta.
           </P>
 
           <H2>Por qué buscar nuevos pacientes no siempre es la solución</H2>
@@ -152,8 +148,7 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             Buscar pacientes nuevos no siempre es la solución porque es la palanca más cara
             y la más lenta de las cuatro que tienes disponibles. Captar a alguien de cero
             cuesta publicidad, promociones de bienvenida y tiempo del equipo respondiendo
-            consultas que muchas veces no acaban en cita — mientras que recuperar a quien ya
-            confió en la clínica no cuesta prácticamente nada.
+            consultas que muchas veces no acaban en cita.
           </P>
           <P>
             Mientras tanto, en la propia base de datos de la clínica suele haber cientos de
@@ -163,9 +158,8 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             solo hace falta darles un motivo y una forma fácil de volver.
           </P>
           <P>
-            Por eso, antes de aumentar el presupuesto de captación, tiene sentido preguntarse:
-            ¿estoy aprovechando al máximo a los pacientes que ya tengo? Esta es la comparación
-            entre las cuatro palancas, ordenadas por lo que cuesta activarlas:
+            Esta es la comparación entre las cuatro palancas, ordenadas por lo que cuesta
+            activarlas:
           </P>
 
           <BlogTable
@@ -211,14 +205,9 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             los años— vale para la clínica mucho más que una cita suelta.
           </P>
           <P>
-            Cuando ese paciente deja de venir sin que nadie lo note, ese valor se queda
-            congelado, esperando a que alguien retome el contacto.
-          </P>
-          <P>
             Casi nunca se fueron molestos: la vida les cambió de ritmo y nadie les dio un
-            motivo concreto para volver. Por eso un buen mensaje de reactivación no vende
-            nada: menciona el tiempo que ha pasado desde la última visita y propone una
-            revisión concreta.
+            motivo concreto para volver. Por eso un buen mensaje de reactivación menciona el
+            tiempo que ha pasado desde la última visita y propone una revisión concreta.
           </P>
           <P>
             Ese listado suele poder sacarse del propio programa de gestión filtrando por fecha
@@ -259,10 +248,8 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             pena hacerla con los datos reales de tu agenda.
           </P>
           <P>
-            Reducir los no-shows no requiere más pacientes, solo mejor gestión de los que ya
-            tienes agendados: recordatorios automáticos en los días previos a la cita, y
-            confirmación activa para detectar con antelación quién no va a poder venir y poder
-            recolocar ese hueco con otro paciente que esté en lista de espera.
+            La confirmación activa sirve además para detectar con antelación quién no va a
+            poder venir y recolocar ese hueco con otro paciente que esté en lista de espera.
           </P>
           <P>
             Esa lista de espera funciona mejor si es activa: pacientes que pidieron cita
@@ -274,8 +261,7 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             <InternalLink href="/blog/marketing-clinica-dental">
               presupuesto de marketing
             </InternalLink>
-            : simplemente se trata de aprovechar mejor la agenda que
-            ya existe.
+            , porque aprovecha mejor la agenda que ya existe.
           </P>
 
           <H2>Aumenta el ticket medio con seguimiento post-cita</H2>
@@ -288,13 +274,13 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
           </P>
           <P>
             Un mensaje de seguimiento entre 24 y 48 horas después de la cita, preguntando
-            cómo se encuentra el paciente y aprovechando para recordar tratamientos pendientes o próximas revisiones, no
-            solo mejora la relación con el paciente: abre la puerta a que reserve servicios
-            adicionales que de otra forma habrían quedado en el olvido.
+            cómo se encuentra el paciente y aprovechando para recordar tratamientos pendientes
+            o próximas revisiones, mejora la relación con el paciente y abre la puerta a que
+            reserve servicios adicionales que de otra forma habrían quedado en el olvido.
           </P>
           <P>
             Este tipo de seguimiento, aplicado de forma sistemática a toda la base de
-            pacientes, es exactamente lo que en{" "}
+            pacientes, es lo que en{" "}
             <InternalLink href="/reactivacion-pacientes-inactivos">
               reactivación de pacientes inactivos
             </InternalLink>{" "}
@@ -307,8 +293,7 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             Se automatiza con un sistema que envía los mensajes por el WhatsApp de la
             clínica, sin que nadie tenga que mandarlos a mano. Es la única manera de
             que estas estrategias se sostengan: si dependen de que alguien del equipo se
-            acuerde cada día, casi nunca se ejecutan de forma constante — la agenda diaria
-            siempre gana.
+            acuerde cada día, casi nunca se ejecutan de forma constante.
           </P>
           <P>
             El canal importa tanto como la automatización: WhatsApp es la aplicación en la
@@ -316,11 +301,6 @@ export default function AumentarFacturacionClinicaDentalArticlePage() {
             a un email, en cambio, es fácil no responder nunca. Una vez configurado el
             sistema, los mensajes de recuperación, recordatorios y seguimientos se envían
             solos, en el momento que toca a cada paciente, y el equipo solo entra en juego cuando alguien responde para reservar.
-          </P>
-          <P>
-            El resultado es una clínica que aprovecha al máximo la base de pacientes que ya
-            tiene, sin necesidad de aumentar el presupuesto de publicidad ni de sumar carga de
-            trabajo extra al equipo.
           </P>
         </article>
 

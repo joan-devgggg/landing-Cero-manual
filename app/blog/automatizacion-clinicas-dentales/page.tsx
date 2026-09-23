@@ -13,7 +13,9 @@ const PATH = "/blog/automatizacion-clinicas-dentales"
 const DATES = articleDates("automatizacion-clinicas-dentales")
 const TITLE = "Automatización para clínicas dentales | Cero Manual"
 const DESCRIPTION =
-  "La automatización en clínicas dentales reduce no-shows, recupera pacientes inactivos y responde leads 24/7. Descubre por dónde empezar. Reserva tu auditoría."
+  "Qué puedes automatizar en tu clínica dental (confirmaciones, recordatorios, recall y consultas por WhatsApp) y por dónde empezar. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Qué tareas de una clínica dental se pueden automatizar —confirmación de citas, recordatorios, recall de revisiones y consultas por WhatsApp— y en qué orden conviene empezar."
 const HEADLINE =
   "Automatización para clínicas dentales: qué puedes automatizar hoy y por dónde empezar"
 
@@ -36,11 +38,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Qué tareas de mi clínica dental puedo automatizar primero?",
-    a: "Las que más impacto tienen y menos esfuerzo requieren: la confirmación de citas por WhatsApp y la respuesta a leads fuera de horario. Son las dos áreas donde una clínica dental pierde más dinero de forma silenciosa: citas a las que el paciente no se presenta y consultas que llegan fuera de horario sin que nadie las conteste.",
+    a: "Las que más impacto tienen y menos esfuerzo requieren: la confirmación de citas por WhatsApp y la respuesta a leads fuera de horario. La primera ataca las citas a las que el paciente no se presenta; la segunda, las consultas que llegan por la noche o en fin de semana. Las dos funcionan sobre el número de WhatsApp que la clínica ya tiene.",
   },
   {
     q: "¿La automatización sustituye a mi equipo de recepción?",
-    a: "No, lo libera. La automatización se encarga de las tareas repetitivas — recordatorios, primeras respuestas, seguimientos — para que tu equipo dedique su tiempo a lo que realmente requiere trato humano: pacientes en consulta, casos complejos y decisiones que no puede tomar un sistema.",
+    a: "No, lo libera. La automatización se encarga de las tareas repetitivas — recordatorios, primeras respuestas, seguimientos — para que tu equipo dedique su tiempo a lo que requiere trato humano: los pacientes en consulta y los casos complejos. Las decisiones que no puede tomar un sistema siguen en manos del equipo.",
   },
   {
     q: "¿Qué necesito para empezar a automatizar mi clínica?",
@@ -48,11 +50,11 @@ const faqs = [
   },
   {
     q: "¿Por dónde debería empezar si nunca he automatizado nada en mi clínica?",
-    a: "Por una sola cosa, no por todo a la vez. Empieza por la confirmación automática de citas o por la respuesta a leads fuera de horario — son las dos que más se notan en el día a día. Si tienes una base de pacientes inactivos sin trabajar, la reactivación también es un buen primer paso. Una vez que veas el impacto, añadir la siguiente tarea es mucho más sencillo.",
+    a: "Por una sola tarea. Empieza por la confirmación automática de citas o por la respuesta a leads fuera de horario — son las dos que más se notan en el día a día. Si tienes una base de pacientes inactivos sin trabajar, la reactivación también es un buen primer paso. Una vez que veas el impacto, añadir la siguiente tarea es mucho más sencillo.",
   },
   {
     q: "¿Es muy caro implementar IA en una clínica dental pequeña?",
-    a: "No tanto como parece. Una clínica pequeña no necesita un desarrollo a medida ni un equipo técnico propio: hay sistemas ya preparados que se ponen en marcha sobre el WhatsApp de la clínica en menos de 14 días, con una cuota mensual como la de cualquier otra herramienta de gestión. Y al empezar por una sola tarea, la inversión inicial es pequeña y el retorno se ve pronto en los no-shows evitados y los leads que dejan de perderse.",
+    a: "No tanto como parece. Una clínica pequeña no necesita un desarrollo a medida ni un equipo técnico propio: hay sistemas ya preparados que se ponen en marcha sobre el WhatsApp de la clínica en menos de 14 días, con una cuota mensual como la de cualquier otra herramienta de gestión. Y al empezar por una sola tarea, la inversión inicial es pequeña y el retorno se ve pronto en los no-shows evitados y las consultas atendidas.",
   },
   {
     q: "¿Los pacientes notan que hablan con un sistema automatizado?",
@@ -64,7 +66,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -127,30 +129,24 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
 
           {/* Intro */}
           <P>
-            Durante años, automatizar ha sido cosa de empresas grandes con departamentos de
-            IT propios. Eso ya no es así. Hoy, una clínica dental con una sola sede puede
-            automatizar las mismas tareas que antes requerían un equipo de recepción
-            trabajando sin descanso — con herramientas de inteligencia artificial que se
-            ponen en marcha en menos de 14 días.
+            En una clínica dental puedes automatizar hoy cuatro tareas: la confirmación y el
+            recordatorio de citas, la primera respuesta a quien escribe preguntando, la
+            reactivación de pacientes inactivos y el seguimiento después del tratamiento. Si
+            nunca has automatizado nada, empieza por una sola, la que más te esté costando
+            ahora, y añade la siguiente cuando la primera ya funcione.
           </P>
           <P>
-            La pregunta ya no es si tu clínica puede permitirse automatizar, sino cuánto te
-            está costando no hacerlo: citas a las que el paciente no se presenta, consultas
-            que llegan fuera de horario y se quedan sin respuesta, y pacientes que dejaron de
-            venir y con ellos todas las visitas que habrían hecho.
-          </P>
-          <P>
-            En este artículo vas a ver qué tareas de una clínica dental se pueden automatizar
-            hoy mismo, cómo funciona cada una en la práctica, y por dónde empezar si nunca has
-            automatizado nada — sin necesidad de contratar un equipo técnico.
+            Una clínica con una sola sede puede ponerlo en marcha en menos de 14 días, con
+            herramientas de inteligencia artificial y sin contratar un equipo técnico. Lo que
+            cuesta no hacerlo se ve en la agenda: citas a las que el paciente no se presenta y
+            pacientes que dejaron de venir.
           </P>
 
           <H2>Qué aporta la inteligencia artificial a la automatización de tu clínica dental</H2>
           <P>
             La IA aporta una cosa concreta: que los mensajes automáticos dejen de ser fijos y
-            entiendan lo que el paciente pregunta. Y no es una sola herramienta, sino un
-            conjunto de funciones que se activan por separado, según lo que más falte en tu
-            clínica.
+            entiendan lo que el paciente pregunta. Son varias funciones que se activan por
+            separado, según lo que más falte en tu clínica.
           </P>
           <P>
             Las más habituales son responder preguntas frecuentes, gestionar la agenda
@@ -169,10 +165,9 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
 
           <H2>Qué tareas de una clínica dental se pueden automatizar</H2>
           <P>
-            No todo en una clínica dental se puede ni se debe automatizar — el diagnóstico y
-            el trato con el paciente en consulta siguen siendo, y seguirán siendo, cosa de
-            personas. Pero hay un conjunto de tareas repetitivas, que se hacen igual cita tras
-            cita, que son perfectas para automatizar:
+            El diagnóstico y el trato con el paciente en consulta siguen siendo cosa de
+            personas. Lo que se automatiza son las tareas repetitivas, las que se hacen igual
+            cita tras cita:
           </P>
           <P>
             <strong>Confirmación y recordatorio de citas.</strong> El aviso antes de cada cita,
@@ -194,29 +189,26 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             reseñas.
           </P>
           <P>
-            Las cuatro tienen algo en común: son tareas que hoy probablemente hace una persona
-            de tu equipo, a mano, entre paciente y paciente — y que un sistema puede hacer
-            igual de bien, todos los días, sin saltarse ninguna.
+            Las cuatro las hace hoy, probablemente, una persona de tu equipo a mano entre
+            paciente y paciente. Un sistema puede hacerlas todos los días sin saltarse ninguna.
           </P>
 
           <H2>Automatizar la confirmación de citas</H2>
           <P>
-            Es el punto de partida más habitual, y por buenos motivos: el impacto es rápido y
-            se mide fácilmente. Un sistema de recordatorios envía un aviso por
+            Es el punto de partida más habitual porque el impacto es rápido y se mide
+            fácilmente. Un sistema de recordatorios envía un aviso por
             WhatsApp 24 horas antes de la cita y otro 2 horas antes, pidiendo confirmación
             activa.
           </P>
           <P>
-            La diferencia frente a un recordatorio pasivo es clave: cuando el paciente
-            responde «sí» o confirma con un botón, ese aviso se convierte en un compromiso. Y
-            si alguien no responde al primer aviso, ya sabes con antelación que ese hueco
-            tiene riesgo de quedar vacío — y puedes actuar antes de que pase, no después.
+            Frente a un recordatorio pasivo, cuando el paciente responde «sí» o confirma con
+            un botón, ese aviso se convierte en un compromiso. Y si alguien no responde al
+            primer aviso, sabes con antelación que ese hueco puede quedar vacío y tienes
+            margen para actuar.
           </P>
           <P>
-            Como WhatsApp es un canal que los pacientes miran a diario — y el email muchas
-            veces se queda sin abrir —, es el canal donde este tipo de automatización funciona realmente. Y a diferencia
-            del SMS, el paciente puede contestar en la misma conversación que ya usa a diario:
-            por eso{" "}
+            WhatsApp es un canal que los pacientes miran a diario y, a diferencia del SMS,
+            permite contestar en la misma conversación: por eso{" "}
             <InternalLink href="/blog/whatsapp-para-clinicas-dentales">
               WhatsApp para clínicas dentales
             </InternalLink>{" "}
@@ -224,14 +216,13 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             <InternalLink href="/blog/como-reducir-no-shows-clinica-dental">
               reducir los no-shows
             </InternalLink>{" "}
-            sin que nadie de tu equipo tenga que hacer una sola llamada de recordatorio.
+            sin que nadie de tu equipo tenga que hacer una llamada de recordatorio.
           </P>
 
           <H2>Automatizar la respuesta a leads fuera de horario</H2>
           <P>
             Muchas de las consultas de una clínica dental llegan fuera del horario de
-            atención: por la noche, en fin de semana, o durante una pausa en la que nadie
-            puede contestar. Cada una de esas consultas es un paciente potencial que, si no
+            atención, por la noche o en fin de semana. Cada una de esas consultas es un paciente potencial que, si no
             recibe respuesta rápido, probablemente escriba al siguiente resultado de Google.
           </P>
           <P>
@@ -249,21 +240,18 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             primera hora — o incluso proponer una cita directamente en la agenda.
           </P>
           <P>
-            La diferencia no es solo de imagen. Es la diferencia entre captar ese lead o
-            perderlo frente a la clínica que sí contestó en cinco minutos. Si quieres ver cómo
-            funciona en la práctica, el{" "}
+            Así funciona en la práctica el{" "}
             <InternalLink href="/agente-whatsapp-clinicas-dentales">
               agente de WhatsApp para clínicas dentales
-            </InternalLink>{" "}
-            está pensado exactamente para esto.
+            </InternalLink>
+            .
           </P>
 
           <H2>Automatizar la reactivación de pacientes inactivos</H2>
           <P>
-            Cada clínica dental tiene una base de pacientes que dejaron de venir — no porque
-            estuvieran descontentos, sino porque la vida se interpuso entre ellos y su próxima
-            revisión. Cada uno de esos pacientes podría seguir viniendo a revisiones y
-            tratamientos durante años.
+            Cada clínica dental tiene una base de pacientes que dejaron de venir porque la vida
+            se interpuso entre ellos y su próxima revisión, y que podrían seguir viniendo a
+            revisiones y tratamientos durante años.
           </P>
           <P>
             Reactivarlos uno por uno con llamadas es lento y, en la práctica, casi nunca se
@@ -274,21 +262,19 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             desde el mensaje.
           </P>
           <P>
-            No hace falta una campaña agresiva ni un descuento llamativo — muchas veces basta
-            con el recordatorio en sí, porque el paciente simplemente se había olvidado. Es
-            ingreso que ya estaba ahí, esperando un empujón automático.
+            Muchas veces basta con el recordatorio en sí, sin descuentos, porque el paciente
+            simplemente se había olvidado.
           </P>
 
           <H2>Por dónde empezar si nunca has automatizado nada</H2>
           <P>
-            La tentación es querer automatizarlo todo de golpe. No lo hagas. Empieza por una
-            sola cosa — la que más dolor te esté causando ahora mismo — y deja que funcione
-            unas semanas antes de añadir la siguiente.
+            Empieza por una sola tarea, la que más te esté costando ahora mismo, y deja que
+            funcione unas semanas antes de añadir la siguiente.
           </P>
           <P>
             Si tu mayor problema son los huecos vacíos en la agenda, empieza por la
-            confirmación de citas. Si lo que más te frustra son los leads que se pierden por
-            la noche o el fin de semana, empieza por la respuesta automática a esas consultas
+            confirmación de citas. Si lo que más te preocupa son las consultas que llegan
+            por la noche o el fin de semana, empieza por la respuesta automática a esas consultas
             con el{" "}
             <InternalLink href="/agente-whatsapp-clinicas-dentales">
               agente de WhatsApp para clínicas dentales
@@ -303,11 +289,8 @@ export default function AutomatizacionClinicasDentalesArticlePage() {
             paso a paso.
           </P>
           <P>
-            Una vez que veas el primer resultado — menos huecos vacíos, menos leads perdidos,
-            pacientes que vuelven — el resto de tareas se añaden sobre la misma base, sin
-            volver a empezar de cero. Automatizar deja de ser un proyecto
-            grande y se convierte en una serie de pequeños cambios, cada uno con su propio
-            retorno.
+            Cuando veas el primer resultado, el resto de tareas se añaden sobre la misma base,
+            sin volver a empezar de cero.
           </P>
         </article>
 

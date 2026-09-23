@@ -106,11 +106,8 @@ export default function ProblemSection() {
             className="text-base md:text-lg"
             style={{ color: "#5A5450", fontFamily: "var(--font-dm-sans)" }}
           >
-            No es un problema de tu clínica.
-            {" "}
-            <strong style={{ color: "#1A1A1A" }}>Es un problema de sistemas.</strong>
-            {" "}
-            <span style={{ color: "#7D9B76", fontWeight: 600 }}>Y tiene solución.</span>
+            Son problemas de sistema,{" "}
+            <strong style={{ color: "#1A1A1A" }}>y se pueden resolver sin ampliar tu equipo.</strong>
           </p>
         </motion.div>
       </div>

@@ -15,6 +15,8 @@ const DATES = articleDates("emails-recordatorio-pacientes-clinica")
 const TITLE = "Emails de recordatorio de cita: plantillas | Cero Manual"
 const DESCRIPTION =
   "Plantillas de email de recordatorio para clínicas listas para copiar. Y por qué a muchos pacientes les llega mejor el recordatorio por WhatsApp."
+const ARTICLE_DESCRIPTION =
+  "Plantillas de email de recordatorio de citas para clínicas, qué debe incluir cada mensaje, cuándo enviarlo y en qué casos conviene usar WhatsApp en su lugar."
 const HEADLINE =
   "Emails de recordatorio para pacientes: plantillas, consejos y cuándo usar WhatsApp en su lugar"
 
@@ -45,11 +47,11 @@ const faqs = [
   },
   {
     q: "¿Puedo combinar email y WhatsApp para recordar citas?",
-    a: "Sí, y de hecho suele ser lo más efectivo. El email sirve para el paciente que prefiere ese canal o para adjuntar información más extensa (indicaciones previas, documentos, preparación del tratamiento), y WhatsApp se encarga del recordatorio corto y de la confirmación activa. Lo importante es no depender solo del email para evitar el no-show.",
+    a: "Sí, y de hecho suele ser lo más efectivo. El email sirve para el paciente que prefiere ese canal o para adjuntar información más extensa (indicaciones previas, documentos, preparación del tratamiento), y WhatsApp se encarga del recordatorio corto y de la confirmación activa. Para evitar el no-show, no conviene depender solo del email.",
   },
   {
     q: "¿Es mejor que el email pida confirmación o que solo avise?",
-    a: "Igual que en WhatsApp, un email que pide una acción concreta funciona mejor que uno que solo informa. Un botón claro de «Confirmar cita» o «Necesito cambiarla» convierte el recordatorio en un pequeño compromiso. Aun así, la limitación del email sigue siendo la apertura: si el paciente no lo abre, da igual lo bien redactado que esté.",
+    a: "Igual que en WhatsApp, un email que pide una acción concreta funciona mejor que uno que solo informa. Un botón claro de «Confirmar cita» o «Necesito cambiarla» convierte el recordatorio en un pequeño compromiso. Eso sí, si el paciente no lo abre, da igual lo bien redactado que esté.",
   },
   {
     q: "¿Puedo usar estas plantillas tal cual o tengo que adaptarlas?",
@@ -61,7 +63,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -140,61 +142,45 @@ export default function EmailsRecordatorioPacientesPage() {
 
           {/* Intro */}
           <P>
-            Los recordatorios son una de las herramientas más eficaces para reducir las
-            ausencias en una clínica. Cuando un paciente recibe un aviso a tiempo, la
-            probabilidad de que aparezca sube de forma notable — por eso un sistema de
-            recordatorios bien planteado es de lo primero que conviene montar para{" "}
+            Un email de recordatorio para pacientes es el aviso que la clínica envía antes
+            de una cita para que el paciente la tenga presente y pueda confirmarla o
+            cambiarla a tiempo. Lo habitual es mandarlo entre 48 y 24 horas antes, con el
+            nombre de la clínica y la fecha en el asunto, y en el cuerpo el día y la hora sin
+            abreviaturas, el profesional o el tratamiento, la dirección y una forma sencilla
+            de cambiar la cita.
+          </P>
+          <P>
+            Un sistema de recordatorios bien planteado es de lo primero que conviene montar
+            para{" "}
             <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
               reducir los no-shows
             </InternalLink>
-            . Cada cita a la que el paciente no se presenta es un hueco en la agenda que ya
-            no se puede ofrecer a nadie.
-          </P>
-          <P>
-            El problema es que muchas clínicas se centran solo en el mensaje — qué texto
-            usar, cuándo enviarlo — y olvidan que el canal importa tanto o más que el
-            contenido. Un recordatorio perfecto que el paciente nunca llega a abrir no sirve
-            de nada. Y ahí el email tiene una desventaja clara: compite en una bandeja de
-            entrada saturada, mientras que WhatsApp es un canal que los pacientes miran a
-            diario.
-          </P>
-          <P>
-            En este artículo vas a ver por qué los emails de recordatorio no siempre
-            funcionan, en qué casos sí tiene sentido usarlos, plantillas de email y de
-            WhatsApp listas para copiar,
-            por qué WhatsApp suele rendir mejor para este objetivo y cómo automatizar todo
-            el proceso para que los recordatorios se envíen solos.
+            : un aviso a tiempo le da al paciente ocasión de confirmar o de avisar si no
+            puede venir.
           </P>
 
           <H2>Por qué los emails de recordatorio no siempre funcionan</H2>
           <P>
-            El primer motivo es el más simple: muchos emails no se abren. Parte de los
-            pacientes ni siquiera ve el recordatorio, y de los que lo abren, muchos lo hacen
-            horas más tarde, cuando el aviso ya ha perdido buena parte de su utilidad.
+            Parte de los pacientes no llega a abrir el recordatorio, o lo abre horas más
+            tarde. Compite con newsletters, promociones y notificaciones y, salvo que el
+            asunto sea muy directo, se pierde entre ellas o acaba en la carpeta de
+            promociones sin que el paciente lo vea.
           </P>
           <P>
-            El segundo motivo es el ruido. La bandeja de entrada de cualquier persona está
-            saturada de newsletters, promociones y notificaciones. Tu recordatorio compite
-            con decenas de mensajes y, salvo que el asunto sea muy directo, se pierde entre
-            todos ellos o acaba en la carpeta de promociones sin que el paciente lo vea.
-          </P>
-          <P>
-            El tercer motivo es el timing. El email es un canal asíncrono: la gente lo revisa
-            una o dos veces al día, no de forma inmediata. Eso lo hace poco fiable para el
-            aviso de última hora — el de las 2 horas antes de la cita — que es justo el que
-            evita los olvidos de ese mismo día.
+            Además, la gente revisa el correo una o dos veces al día. Eso lo hace poco
+            fiable para el aviso de última hora, el de las 2 horas antes de la cita, que es
+            el que evita los olvidos de ese mismo día.
           </P>
 
           <H2>Cuándo sí tiene sentido usar email para recordar citas</H2>
           <P>
-            Esto no significa que el email no sirva para nada. Tiene contextos en los que
-            funciona bien, sobre todo cuando se usa como refuerzo y no como único canal.
+            El email funciona bien en estos contextos, sobre todo como refuerzo de otro
+            canal.
           </P>
           <P>
             <strong>Cuando el paciente prefiere el email.</strong> Hay perfiles — sobre todo
             en ciertos rangos de edad o en entornos profesionales — que revisan el correo con
-            frecuencia y lo consideran su canal principal. Para ellos, un email es
-            perfectamente válido.
+            frecuencia y lo consideran su canal principal.
           </P>
           <P>
             <strong>Cuando hay que enviar información extensa.</strong> Si la cita requiere
@@ -205,8 +191,7 @@ export default function EmailsRecordatorioPacientesPage() {
           <P>
             <strong>Como parte de una estrategia multicanal.</strong> El email puede ser una
             de las capas del recordatorio — la del aviso con más antelación — mientras el
-            canal inmediato se reserva para la confirmación y el aviso del mismo día. Usados
-            juntos, cubren más terreno que cualquiera por separado.
+            canal inmediato se reserva para la confirmación y el aviso del mismo día.
           </P>
 
           <H2>Plantillas de email de recordatorio para clínicas</H2>
@@ -216,7 +201,7 @@ export default function EmailsRecordatorioPacientesPage() {
             plantillas listas para copiar y adaptar.
           </P>
           <P>
-            Antes de copiarlas, fíjate en tres detalles que marcan la diferencia. El asunto
+            Antes de copiarlas, fíjate en tres detalles. El asunto
             lleva el nombre de la clínica y la fecha, para que el paciente sepa de qué va sin
             abrir el correo. La fecha va escrita sin abreviaturas —«martes 16 de junio a las
             17:30», no «16/6 17:30h»—, porque es el dato que más se consulta. Y siempre
@@ -274,19 +259,18 @@ El equipo de [Clínica]`}
           <P>
             La diferencia más importante es la apertura. El correo se revisa cuando uno se
             sienta a mirarlo; WhatsApp es la aplicación que el paciente abre a lo largo del
-            día, y un mensaje ahí se suele leer en minutos, no en horas. Para un
-            recordatorio, esa inmediatez lo cambia todo.
+            día, y un mensaje ahí se suele leer en minutos.
           </P>
           <P>
-            A eso se suma la naturalidad del canal. Un mensaje de WhatsApp se lee como una
-            conversación, no como un correo formal, y el paciente puede confirmar,
-            reprogramar o preguntar respondiendo con una sola palabra. Esa fricción tan baja
-            es la que convierte el recordatorio en una confirmación activa, mucho más difícil
-            de ignorar.
+            Un mensaje de WhatsApp se lee además como una conversación, y el paciente puede
+            confirmar, reprogramar o preguntar respondiendo con una sola palabra. Con tan poca
+            fricción, el recordatorio se convierte en una confirmación activa, mucho más
+            difícil de ignorar.
           </P>
           <P>
-            Por eso, cuando el objetivo es puramente reducir no-shows, WhatsApp suele ser el
-            canal principal y el email el refuerzo. Si quieres profundizar en cómo montar ese
+            Por eso, cuando el objetivo es reducir no-shows, WhatsApp suele ser el canal
+            principal y el email el refuerzo: el aviso con más antelación, la información
+            extensa y el paciente que prefiere el correo. Si quieres profundizar en cómo montar ese
             sistema, tienes los detalles en nuestra página de{" "}
             <InternalLink href="/recordatorios-automaticos-citas">
               recordatorios automáticos de citas
@@ -297,9 +281,7 @@ El equipo de [Clínica]`}
           <H2>Plantillas de recordatorio por WhatsApp</H2>
           <P>
             Son la versión corta de las plantillas de email anteriores, pensadas para leerse
-            en el móvil en unos segundos. Puedes usarlas como complemento del correo: el
-            email para el aviso con margen o la información extensa, y WhatsApp para el
-            recordatorio rápido y la confirmación.
+            en el móvil en unos segundos.
           </P>
 
           <H3>Recordatorio 24 horas antes</H3>
@@ -342,7 +324,7 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
             recordatorios se envíen solos, en el momento exacto, sin que nadie de tu equipo
             tenga que acordarse de hacerlo cita tras cita. Si el envío depende de que alguien
             se siente a mandar correos o mensajes uno a uno, tarde o temprano se cuela algún
-            olvido — y ese olvido acaba siendo un hueco vacío en la agenda.
+            olvido.
           </P>
           <P>
             El software de gestión habitual en clínicas ya suele traer recordatorios básicos,
@@ -352,7 +334,7 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
             la cita a mano.
           </P>
           <P>
-            Y es precisamente esa respuesta la que más pesa a la hora de{" "}
+            Esa respuesta pesa mucho a la hora de{" "}
             <InternalLink href="/blog/como-reducir-no-shows-clinica-dental">
               reducir los no-shows en una clínica dental
             </InternalLink>{" "}
@@ -370,13 +352,11 @@ Si llegas con algo de adelanto, perfecto — si necesitas unos minutos más, av�
             antes de que ese hueco se pierda.
           </P>
           <P>
-            Ese es exactamente el enfoque que aplicamos con los{" "}
+            Así lo planteamos en los{" "}
             <InternalLink href="/recordatorios-automaticos-citas">
               recordatorios automáticos de citas
             </InternalLink>
-            : combinar el canal correcto, el mensaje correcto y la automatización para que el
-            envío ocurra sin esfuerzo añadido para tu equipo y los huecos que se liberan
-            lleguen a tiempo de ofrecerse a otro paciente.
+            : cada aviso sale solo, por el canal que toca, sin trabajo añadido para tu equipo.
           </P>
         </article>
 

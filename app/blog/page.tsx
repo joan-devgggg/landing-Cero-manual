@@ -28,7 +28,7 @@ const posts = [
     slug: "programa-gestion-clinica-estetica",
     title: "Programa de gestión para clínicas estéticas: cómo elegir el mejor y no arrepentirte",
     excerpt:
-      "Un buen programa de gestión para tu clínica estética ahorra horas de trabajo cada semana. Te explicamos cómo elegir y qué evitar.",
+      "Cómo elegir un programa de gestión para tu clínica estética: qué debe incluir, errores habituales y preguntas antes de contratar.",
     date: "2026-07-12",
     readingTime: "6 min de lectura",
   },
@@ -36,7 +36,7 @@ const posts = [
     slug: "software-gestion-citas-clinica-estetica",
     title: "Software de gestión de citas para clínicas estéticas: qué necesitas realmente",
     excerpt:
-      "¿Buscas un software de gestión de citas para tu clínica estética? Te explicamos qué necesitas, qué opciones existen y cuándo automatizar con IA.",
+      "Qué necesita un software de gestión de citas para tu clínica estética, qué tipos hay y cuándo complementarlo con IA.",
     date: "2026-07-12",
     readingTime: "6 min de lectura",
   },
@@ -44,7 +44,7 @@ const posts = [
     slug: "emails-recordatorio-pacientes-clinica",
     title: "Emails de recordatorio para pacientes: plantillas, consejos y cuándo usar WhatsApp en su lugar",
     excerpt:
-      "Los emails de recordatorio para pacientes reducen las ausencias en tu clínica. Te damos plantillas listas para usar y te explicamos cuándo WhatsApp funciona mejor.",
+      "Plantillas de email de recordatorio para clínicas listas para copiar. Y por qué a muchos pacientes les llega mejor el recordatorio por WhatsApp.",
     date: "2026-07-07",
     readingTime: "9 min de lectura",
   },
@@ -52,7 +52,7 @@ const posts = [
     slug: "mejor-software-gestion-clinica-estetica",
     title: "Mejor software de gestión para clínicas estéticas: cómo elegir",
     excerpt:
-      "¿Cuál es el mejor software de gestión para tu clínica estética? Te explicamos qué criterios usar y cuándo tiene sentido añadir automatización con IA.",
+      "Cómo elegir el mejor software de gestión para tu clínica estética: criterios, tipos de programa, precios publicados y cuándo añadir IA.",
     date: "2026-07-07",
     readingTime: "7 min de lectura",
   },
@@ -60,7 +60,7 @@ const posts = [
     slug: "aumentar-ticket-medio-clinica-dental",
     title: "Cómo aumentar el ticket medio en tu clínica dental (sin presionar a tus pacientes)",
     excerpt:
-      "Sube el ticket medio con los pacientes que ya tienes, sin presionarlos. Te explicamos cómo hacerlo con seguimiento post-cita y WhatsApp.",
+      "Cómo aumentar el ticket medio de tu clínica dental sin presionar al paciente: seguimiento de presupuestos y mensajes post-cita por WhatsApp.",
     date: "2026-06-14",
     readingTime: "6 min de lectura",
   },
@@ -68,7 +68,7 @@ const posts = [
     slug: "clinica-estetica-por-whatsapp",
     title: "Clínica estética por WhatsApp: cómo gestionar consultas y citas sin volverte loco",
     excerpt:
-      "Cada vez más pacientes contactan con clínicas estéticas por WhatsApp. Te explicamos cómo gestionarlo sin que el equipo esté pendiente del móvil todo el día.",
+      "Cómo gestionar tu clínica estética por WhatsApp: consultas, citas y seguimiento sin que el equipo esté pendiente del móvil todo el día.",
     date: "2026-06-14",
     readingTime: "10 min de lectura",
   },
@@ -76,7 +76,7 @@ const posts = [
     slug: "chatbot-whatsapp-vs-recepcionista-clinica",
     title: "Chatbot de WhatsApp vs recepcionista en tu clínica: comparativa honesta",
     excerpt:
-      "¿Chatbot de WhatsApp o recepcionista? Te explicamos en qué se complementan, cuándo tiene sentido automatizar y qué no puede hacer una IA.",
+      "Chatbot de WhatsApp o recepcionista: qué hace mejor cada uno, en qué se complementan y cuándo tiene sentido automatizar en tu clínica.",
     date: "2026-06-13",
     readingTime: "7 min de lectura",
   },
@@ -84,7 +84,7 @@ const posts = [
     slug: "mejor-chatbot-whatsapp-clinica-estetica",
     title: "Cómo elegir el mejor chatbot de WhatsApp para tu clínica estética",
     excerpt:
-      "No todos los chatbots de WhatsApp son iguales. Te explicamos qué criterios usar para elegir el mejor para tu clínica estética y qué preguntar antes de contratar.",
+      "Cómo elegir el mejor chatbot de WhatsApp para tu clínica estética: criterios, preguntas al proveedor y señales de alerta.",
     date: "2026-06-13",
     readingTime: "6 min de lectura",
   },
@@ -92,7 +92,7 @@ const posts = [
     slug: "lista-espera-clinica-dental",
     title: "Cómo crear una lista de espera efectiva en tu clínica dental",
     excerpt:
-      "Una lista de espera bien gestionada convierte cancelaciones en citas nuevas automáticamente. Te explicamos cómo crearla y gestionarla sin esfuerzo.",
+      "Cómo crear una lista de espera en tu clínica dental que convierta cancelaciones en citas nuevas, y cómo avisar a los pacientes automáticamente.",
     date: "2026-06-13",
     readingTime: "6 min de lectura",
   },
@@ -100,7 +100,7 @@ const posts = [
     slug: "cuanto-cuesta-chatbot-whatsapp-clinica",
     title: "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? De qué depende el precio",
     excerpt:
-      "El precio de un chatbot de WhatsApp para clínicas varía según funcionalidades. Te explicamos qué factores influyen en el coste y cuándo se amortiza.",
+      "De qué depende el precio de un chatbot de WhatsApp para clínicas: tipo de solución, volumen, mensajes de Meta y cuándo se amortiza.",
     date: "2026-06-13",
     readingTime: "6 min de lectura",
   },
@@ -108,7 +108,7 @@ const posts = [
     slug: "chatbot-whatsapp-clinicas-rgpd",
     title: "Chatbot de WhatsApp para clínicas y RGPD: cómo cumplir la ley sin complicaciones",
     excerpt:
-      "¿Es legal usar un chatbot de WhatsApp en tu clínica? Te explicamos cómo cumplir el RGPD con un agente IA y qué debes tener en cuenta.",
+      "Cómo usar un chatbot de WhatsApp en tu clínica conforme al RGPD: base legal, datos de salud, proveedor de IA y documentos que necesitas.",
     date: "2026-06-13",
     readingTime: "7 min de lectura",
   },
@@ -116,7 +116,7 @@ const posts = [
     slug: "reducir-lista-espera-clinica-estetica",
     title: "Cómo reducir la lista de espera en tu clínica estética sin perder pacientes",
     excerpt:
-      "Una lista de espera larga hace perder pacientes. Te explicamos cómo gestionarla mejor y convertir cancelaciones en citas nuevas automáticamente.",
+      "Cómo reducir la lista de espera de tu clínica estética: aprovechar cancelaciones, avisar antes y ordenar la lista para no perder pacientes.",
     date: "2026-06-13",
     readingTime: "6 min de lectura",
   },
@@ -124,7 +124,7 @@ const posts = [
     slug: "tecnologia-para-clinicas-esteticas",
     title: "Tecnología para clínicas estéticas: qué herramientas usar",
     excerpt:
-      "La tecnología está transformando cómo las clínicas estéticas captan y retienen pacientes. Te explicamos qué herramientas usar y por dónde empezar.",
+      "Qué tecnología necesita tu clínica estética para captar y retener pacientes —agenda, CRM, WhatsApp e IA— y en qué orden implantarla.",
     date: "2026-06-13",
     readingTime: "7 min de lectura",
   },
@@ -132,7 +132,7 @@ const posts = [
     slug: "mejor-crm-clinicas-dentales",
     title: "Mejor CRM para clínicas dentales: qué buscar y cómo elegir",
     excerpt:
-      "¿Buscas el mejor CRM para tu clínica dental? Te explicamos qué funcionalidades necesitas y cómo elegir el que mejor se adapta a tu clínica.",
+      "Cómo elegir el mejor CRM para tu clínica dental: funciones que necesitas, de qué depende el coste y qué errores evitar.",
     date: "2026-06-12",
     readingTime: "7 min de lectura",
   },
@@ -140,7 +140,7 @@ const posts = [
     slug: "crm-clinicas-esteticas-pequenas",
     title: "CRM para clínicas estéticas pequeñas: qué necesitas realmente y por dónde empezar",
     excerpt:
-      "Una clínica estética pequeña no necesita un CRM complejo. Te explicamos qué funcionalidades son imprescindibles y cuál es el punto de entrada más fácil.",
+      "Qué CRM necesita una clínica estética pequeña: funciones imprescindibles, errores al elegir y el punto de entrada más sencillo.",
     date: "2026-06-12",
     readingTime: "6 min de lectura",
   },
@@ -148,7 +148,7 @@ const posts = [
     slug: "marketing-clinica-dental",
     title: "Marketing para clínicas dentales: qué funciona realmente",
     excerpt:
-      "El marketing para clínicas dentales ha cambiado. Te explicamos qué canales funcionan realmente y cómo automatizar la captación de pacientes.",
+      "Qué canales de marketing funcionan para una clínica dental —Google, redes sociales y WhatsApp— y cómo automatizar la respuesta a los pacientes.",
     date: "2026-06-11",
     readingTime: "8 min de lectura",
   },
@@ -156,7 +156,7 @@ const posts = [
     slug: "whatsapp-para-clinicas-dentales",
     title: "WhatsApp para clínicas dentales: cómo usarlo para captar y retener más pacientes",
     excerpt:
-      "Cómo usar WhatsApp en tu clínica dental para captar pacientes, confirmar citas y reactivar a quienes dejaron de venir.",
+      "Guía de WhatsApp para clínicas dentales: cómo usarlo para captar pacientes, confirmar citas y reactivar a los que llevan tiempo sin venir.",
     date: "2026-06-11",
     readingTime: "6 min de lectura",
   },
@@ -164,7 +164,7 @@ const posts = [
     slug: "como-reducir-no-shows-clinica-estetica",
     title: "Cómo reducir los no-shows en tu clínica estética y dejar de perder ingresos",
     excerpt:
-      "Cada no-show es una cita que ya no se factura. Te explicamos cómo calcular lo que te cuestan y cómo reducirlos con recordatorios automáticos.",
+      "Cómo reducir los no-shows de tu clínica estética con recordatorios automáticos y confirmación activa por WhatsApp.",
     date: "2026-06-11",
     readingTime: "6 min de lectura",
   },
@@ -172,7 +172,7 @@ const posts = [
     slug: "agente-ia-recepcion-clinica",
     title: "Agente IA para la recepción de tu clínica: qué es, qué hace y cuánto cuesta",
     excerpt:
-      "Un agente IA en la recepción de tu clínica responde llamadas, agenda citas y atiende WhatsApp 24/7 sin contratar más personal.",
+      "Qué es un agente IA para la recepción de tu clínica: atiende llamadas y WhatsApp, agenda citas y de qué depende su coste.",
     date: "2026-06-11",
     readingTime: "7 min de lectura",
   },
@@ -180,7 +180,7 @@ const posts = [
     slug: "automatizacion-clinicas-dentales",
     title: "Automatización para clínicas dentales: qué puedes automatizar hoy y por dónde empezar",
     excerpt:
-      "La automatización en clínicas dentales reduce no-shows, recupera pacientes inactivos y responde leads 24/7. Descubre por dónde empezar.",
+      "Qué puedes automatizar en tu clínica dental (confirmaciones, recordatorios, recall y consultas por WhatsApp) y por dónde empezar.",
     date: "2026-06-11",
     readingTime: "8 min de lectura",
   },
@@ -188,7 +188,7 @@ const posts = [
     slug: "recordatorios-citas-whatsapp-clinica",
     title: "Recordatorios de citas por WhatsApp para clínicas: cómo configurarlos para que funcionen solos",
     excerpt:
-      "Los recordatorios por WhatsApp piden confirmación y dejan margen para reaccionar si un paciente no puede venir. Te explicamos cómo configurarlos para que funcionen solos en tu clínica.",
+      "Cómo configurar recordatorios de citas por WhatsApp en tu clínica: qué debe incluir el mensaje, cuándo enviarlo y cómo automatizarlo.",
     date: "2026-06-11",
     readingTime: "6 min de lectura",
   },
@@ -196,7 +196,7 @@ const posts = [
     slug: "experiencia-paciente-clinica-estetica",
     title: "Cómo mejorar la experiencia del paciente en tu clínica estética (y que vuelvan solos)",
     excerpt:
-      "La experiencia del paciente decide si vuelve o no. Te explicamos cómo mejorarla en cada punto de contacto sin añadir más trabajo al equipo.",
+      "Cómo mejorar la experiencia del paciente en tu clínica estética antes, durante y después de la cita, sin cargar de trabajo al equipo.",
     date: "2026-06-11",
     readingTime: "8 min de lectura",
   },
@@ -204,7 +204,7 @@ const posts = [
     slug: "software-gestion-clinicas-esteticas",
     title: "Software de gestión para clínicas estéticas: qué necesitas realmente y por dónde empezar",
     excerpt:
-      "Te explicamos qué software de gestión necesita de verdad tu clínica estética según su tamaño y su momento, y por dónde empezar.",
+      "Qué software de gestión para clínicas estéticas necesitas de verdad según el tamaño y el momento de tu clínica, y por dónde empezar sin pagar herramientas de más.",
     date: "2026-06-10",
     readingTime: "9 min de lectura",
   },
@@ -212,7 +212,7 @@ const posts = [
     slug: "marketing-digital-clinicas-esteticas",
     title: "Marketing digital para clínicas estéticas: qué funciona realmente y qué es perder el tiempo",
     excerpt:
-      "El marketing digital para clínicas estéticas va más allá de Instagram. Te explicamos los canales que realmente funcionan y por dónde empezar.",
+      "Qué canales de marketing digital funcionan para una clínica estética —Instagram, Google y WhatsApp— y cómo combinarlos sin perder leads.",
     date: "2026-06-10",
     readingTime: "9 min de lectura",
   },
@@ -221,7 +221,7 @@ const posts = [
     title:
       "Cómo reducir los no-shows en tu clínica dental (y recuperar esos huecos de agenda)",
     excerpt:
-      "Te contamos 5 estrategias para reducir los no-shows en tu clínica dental sin volverte loco con llamadas de recordatorio.",
+      "Cinco estrategias para reducir los no-shows de tu clínica dental, empezando por los recordatorios por WhatsApp.",
     date: "2026-06-07",
     readingTime: "9 min de lectura",
   },
@@ -229,7 +229,7 @@ const posts = [
     slug: "que-es-un-agente-de-voz-ia-para-clinicas",
     title: "Qué es un agente de voz con IA y cómo puede transformar tu clínica",
     excerpt:
-      "Buena parte de las consultas de una clínica llegan fuera de horario. Te explicamos qué es un agente de voz con IA, en qué se diferencia de un contestador y cómo puede contestar cada llamada por ti.",
+      "Qué es un agente de voz con IA para clínicas: contesta llamadas, agenda citas y resuelve dudas a cualquier hora.",
     date: "2026-06-07",
     readingTime: "8 min de lectura",
   },
@@ -237,7 +237,7 @@ const posts = [
     slug: "chatbot-whatsapp-para-clinicas-esteticas",
     title: "Chatbot de WhatsApp para clínicas estéticas: qué es y cómo funciona",
     excerpt:
-      "Te explicamos qué es un chatbot de WhatsApp para clínicas estéticas y cómo responde, agenda y cualifica leads las 24 horas.",
+      "Qué es un chatbot de WhatsApp para clínicas estéticas, qué hace (consultas, citas, cualificar leads) y de qué depende su coste.",
     date: "2026-06-07",
     readingTime: "9 min de lectura",
   },
@@ -245,7 +245,7 @@ const posts = [
     slug: "como-reactivar-pacientes-inactivos-clinica",
     title: "Cómo reactivar pacientes inactivos en tu clínica (sin llamar uno por uno)",
     excerpt:
-      "Tienes pacientes que dejaron de venir y representan ingresos dormidos. Te contamos cómo reactivarlos con mensajes automáticos por WhatsApp, el canal que de verdad se lee.",
+      "Cómo reactivar pacientes inactivos en tu clínica con mensajes automáticos por WhatsApp, sin llamarles uno por uno.",
     date: "2026-06-07",
     readingTime: "7 min de lectura",
   },
@@ -253,7 +253,7 @@ const posts = [
     slug: "meta-ads-para-clinicas-esteticas",
     title: "Meta Ads para clínicas estéticas: cómo conseguir leads sin que Meta te bloquee",
     excerpt:
-      "Meta Ads permite llegar a público de tu zona con presupuestos ajustados — si sabes qué copy evitar. Guía completa: segmentación, presupuesto mínimo y CPL realista.",
+      "Meta Ads para clínicas estéticas: qué copy aprueba Meta, cómo segmentar, qué presupuesto fijar y qué esperar del primer mes.",
     date: "2026-06-09",
     readingTime: "9 min de lectura",
   },
@@ -261,7 +261,7 @@ const posts = [
     slug: "como-conseguir-resenas-google-clinica-estetica",
     title: "Cómo conseguir más reseñas en Google para tu clínica estética (sin pedirlas una por una)",
     excerpt:
-      "Muchos pacientes nuevos eligen clínica mirando las reseñas de Google. Te contamos cómo conseguirlas de forma automática, en el momento exacto, sin pedirlas a mano.",
+      "Cómo conseguir más reseñas en Google para tu clínica estética: cuándo pedirlas, cómo automatizarlo y qué hacer con las negativas.",
     date: "2026-06-09",
     readingTime: "6 min de lectura",
   },
@@ -269,7 +269,7 @@ const posts = [
     slug: "crm-para-clinicas-esteticas",
     title: "CRM para clínicas estéticas: qué es, para qué sirve y cuándo lo necesitas",
     excerpt:
-      "Muchas clínicas gestionan leads por WhatsApp, email y agenda sin orden — y pierden oportunidades sin saberlo. Te explicamos qué es un CRM, en qué se diferencia del software de citas y cuándo necesitas uno.",
+      "Qué es un CRM para clínicas estéticas, para qué sirve, en qué se diferencia del software de citas y cuándo lo necesitas.",
     date: "2026-06-09",
     readingTime: "8 min de lectura",
   },
@@ -277,7 +277,7 @@ const posts = [
     slug: "como-reducir-cancelaciones-clinica-estetica",
     title: "Cómo reducir las cancelaciones de última hora en tu clínica estética",
     excerpt:
-      "Las cancelaciones de última hora vacían tu agenda. Te explicamos cómo reducirlas con confirmación activa y listas de espera, sin llamar a cada paciente.",
+      "Cómo reducir las cancelaciones de última hora en tu clínica estética con confirmación activa, lista de espera y una política de cancelación clara.",
     date: "2026-06-11",
     readingTime: "6 min de lectura",
   },
@@ -285,7 +285,7 @@ const posts = [
     slug: "como-captar-clientes-clinica-estetica-sin-presupuesto",
     title: "Cómo captar más clientes para tu clínica estética sin aumentar el presupuesto",
     excerpt:
-      "Antes de gastar más en publicidad, recupera los clientes que ya tienes. 5 estrategias para captar más sin invertir más: reactivación, reseñas, upsell, WhatsApp y referidos.",
+      "Cómo captar más clientes para tu clínica estética sin aumentar el presupuesto en publicidad: reseñas, referidos, respuesta rápida y más.",
     date: "2026-06-12",
     readingTime: "9 min de lectura",
   },
@@ -293,7 +293,7 @@ const posts = [
     slug: "inteligencia-artificial-clinicas-esteticas",
     title: "Inteligencia artificial para clínicas estéticas: qué puedes automatizar hoy",
     excerpt:
-      "La IA ya está transformando cómo las clínicas estéticas gestionan leads, citas y pacientes. Descubre qué puedes automatizar hoy y por dónde empezar.",
+      "Qué puede automatizar hoy la inteligencia artificial en tu clínica estética —atención, citas, recordatorios y reactivación— y por dónde empezar.",
     date: "2026-06-10",
     readingTime: "8 min de lectura",
   },
@@ -301,7 +301,7 @@ const posts = [
     slug: "como-fidelizar-pacientes-clinica-estetica",
     title: "Cómo fidelizar pacientes en tu clínica estética (y que vuelvan sin que tengas que llamarles)",
     excerpt:
-      "Conseguir que vuelva un paciente que ya te conoce cuesta menos que captar uno nuevo. Te explicamos cómo fidelizar a tus pacientes con seguimiento post-cita y WhatsApp automatizado.",
+      "Cómo fidelizar pacientes en tu clínica estética: seguimiento post-cita, mensajes por WhatsApp y automatización para que vuelvan sin tener que llamarles.",
     date: "2026-06-10",
     readingTime: "6 min de lectura",
   },
@@ -309,7 +309,7 @@ const posts = [
     slug: "automatizar-whatsapp-clinica-dental",
     title: "Cómo automatizar WhatsApp en tu clínica dental y dejar de perder leads",
     excerpt:
-      "Te contamos cómo automatizar WhatsApp en tu clínica dental para responder consultas, confirmar citas y reducir cancelaciones.",
+      "Cómo automatizar WhatsApp en tu clínica dental para responder consultas, confirmar citas y reducir no-shows sin estar pendiente del móvil.",
     date: "2026-06-10",
     readingTime: "7 min de lectura",
   },
@@ -317,7 +317,7 @@ const posts = [
     slug: "como-aumentar-facturacion-clinica-dental",
     title: "Cómo aumentar la facturación de tu clínica dental sin necesidad de más pacientes",
     excerpt:
-      "Antes de buscar más pacientes, aprovecha los que ya tienes. Te explicamos cómo aumentar la facturación de tu clínica dental recuperando ingresos perdidos.",
+      "Cómo aumentar la facturación de tu clínica dental sin gastar más en publicidad: cuatro palancas que puedes activar esta semana.",
     date: "2026-06-10",
     readingTime: "8 min de lectura",
   },
@@ -325,7 +325,7 @@ const posts = [
     slug: "whatsapp-business-clinicas-esteticas",
     title: "WhatsApp Business para clínicas estéticas: cómo configurarlo y cuándo automatizarlo",
     excerpt:
-      "Cómo configurar bien WhatsApp Business en tu clínica estética y cuándo tiene sentido automatizarlo.",
+      "WhatsApp Business para clínicas estéticas: cómo configurarlo bien, qué límites tiene usarlo a mano y cuándo tiene sentido automatizarlo con IA.",
     date: "2026-06-11",
     readingTime: "6 min de lectura",
   },
@@ -333,7 +333,7 @@ const posts = [
     slug: "coste-real-no-shows-clinica-dental",
     title: "El coste real de los no-shows en tu clínica dental (y cómo calcularlo con tus propios números)",
     excerpt:
-      "Los no-shows en clínicas dentales cuestan más de lo que parece. Te explicamos cómo calcular tu pérdida real y qué puedes hacer para reducirla.",
+      "Cuánto te cuestan de verdad los no-shows en tu clínica dental y cómo calcularlo con tus propios números.",
     date: "2026-06-13",
     readingTime: "6 min de lectura",
   },
@@ -341,7 +341,7 @@ const posts = [
     slug: "resenas-google-clinicas-dentales",
     title: "Cómo conseguir más reseñas en Google para tu clínica dental (y que los nuevos pacientes te elijan)",
     excerpt:
-      "Las reseñas de Google son clave para que nuevos pacientes elijan tu clínica dental. Te explicamos cómo conseguirlas de forma automática.",
+      "Cómo conseguir más reseñas en Google para tu clínica dental: el momento de pedirlas, cómo automatizarlo y cómo responder a las negativas.",
     date: "2026-06-13",
     readingTime: "6 min de lectura",
   },

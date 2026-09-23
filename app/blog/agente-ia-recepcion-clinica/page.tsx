@@ -13,7 +13,9 @@ const PATH = "/blog/agente-ia-recepcion-clinica"
 const DATES = articleDates("agente-ia-recepcion-clinica")
 const TITLE = "Agente IA para la recepción de tu clínica | Cero Manual"
 const DESCRIPTION =
-  "Un agente IA en la recepción de tu clínica responde llamadas, agenda citas y atiende WhatsApp 24/7 sin contratar a nadie más. Reserva tu auditoría gratuita."
+  "Qué es un agente IA para la recepción de tu clínica: atiende llamadas y WhatsApp, agenda citas y de qué depende su coste. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Qué es un agente de IA para la recepción de una clínica, qué tareas asume (llamadas, WhatsApp, citas), en qué se diferencia de una recepcionista y de qué depende su coste."
 const HEADLINE = "Agente IA para la recepción de tu clínica: qué es, qué hace y cuánto cuesta"
 
 export const metadata: Metadata = {
@@ -55,7 +57,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -118,21 +120,16 @@ export default function AgenteIaRecepcionClinicaArticlePage() {
 
           {/* Intro */}
           <P>
-            Para muchas clínicas, la recepción es el cuello de botella del negocio.
-            Mientras el equipo está atendiendo a un paciente, el teléfono suena, llegan
-            mensajes de WhatsApp y nadie puede contestar. Y fuera del horario de
-            atención, todas esas consultas simplemente se acumulan hasta el día
-            siguiente — si es que alguien se acuerda de responderlas.
+            Un agente IA de recepción atiende de forma automática las llamadas, los mensajes
+            de WhatsApp y las consultas web de tu clínica: informa de tratamientos y precios,
+            agenda o cambia citas y pasa al equipo lo que necesita criterio humano. Cuesta
+            bastante menos que contratar a otra persona y suele amortizarse con las citas que
+            antes se perdían por no responder a tiempo.
           </P>
           <P>
-            El problema no es de actitud ni de esfuerzo: es que una persona no puede
-            estar en dos sitios a la vez, y la recepción de una clínica necesita
-            estarlo constantemente.
-          </P>
-          <P>
-            En este artículo vamos a ver qué es un agente IA para la recepción de una
-            clínica, qué tareas puede asumir, en qué se diferencia de tener una
-            recepcionista humana, y cuánto cuesta ponerlo en marcha.
+            Resuelve el cuello de botella de muchas recepciones: mientras el equipo atiende a
+            un paciente, el teléfono suena y llegan mensajes que nadie puede contestar, porque
+            una persona no puede estar en dos sitios a la vez.
           </P>
 
           <H2>Qué es un agente IA para la recepción de una clínica</H2>
@@ -148,8 +145,8 @@ export default function AgenteIaRecepcionClinicaArticlePage() {
             pero disponible las 24 horas.
           </P>
           <P>
-            No se trata de un simple contestador con respuestas predefinidas. El agente
-            entiende preguntas formuladas de muchas formas distintas, accede a la
+            A diferencia de un contestador con respuestas predefinidas, el agente entiende
+            preguntas formuladas de muchas formas distintas, accede a la
             información real de la clínica (tratamientos, precios, disponibilidad) y
             puede mantener una conversación completa hasta resolver lo que el paciente
             necesita.
@@ -220,11 +217,11 @@ export default function AgenteIaRecepcionClinicaArticlePage() {
             El coste de un agente IA de recepción es muy inferior al de contratar a una
             persona adicional, y no implica gastos de nómina, vacaciones ni bajas. En la
             mayoría de los casos, se amortiza solo con las citas que antes se perdían
-            por no responder a tiempo fuera de horario.
+            por no responder a tiempo.
           </P>
           <P>
-            Además, si se combina con recordatorios automáticos de confirmación, el
-            beneficio se multiplica: cada no-show es una cita que se pierde después de
+            Si se combina con recordatorios automáticos de confirmación, cubre también el
+            otro extremo: cada no-show es una cita que se pierde después de
             haberla conseguido, así que un sistema que agenda
             bien desde el principio y confirma antes de la cita ataca el problema por
             los dos extremos. En{" "}

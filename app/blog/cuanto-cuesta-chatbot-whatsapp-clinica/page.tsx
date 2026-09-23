@@ -14,7 +14,9 @@ const PATH = "/blog/cuanto-cuesta-chatbot-whatsapp-clinica"
 const DATES = articleDates("cuanto-cuesta-chatbot-whatsapp-clinica")
 const TITLE = "Precio de un chatbot de WhatsApp para clínicas | Cero Manual"
 const DESCRIPTION =
-  "El precio de un chatbot de WhatsApp para clínicas varía según funcionalidades. Te explicamos qué factores influyen en el coste y cuándo se amortiza."
+  "De qué depende el precio de un chatbot de WhatsApp para clínicas: tipo de solución, volumen, mensajes de Meta y cuándo se amortiza."
+const ARTICLE_DESCRIPTION =
+  "De qué depende el precio de un chatbot de WhatsApp para una clínica: tipo de solución, volumen de conversaciones, coste de los mensajes de Meta y cómo calcular cuándo se amortiza."
 const HEADLINE = "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? De qué depende el precio"
 
 export const metadata: Metadata = {
@@ -48,7 +50,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tiempo tarda en notarse el retorno de la inversión?",
-    a: "En la mayoría de clínicas, con que el chatbot recupere una o dos citas al mes que antes se perdían fuera de horario, ya cubre su coste. A partir de ahí, cada consulta adicional que convierte es retorno añadido — y, como funciona 24/7, ese efecto se mantiene mes tras mes sin esfuerzo extra por parte de tu equipo.",
+    a: "Con que el chatbot recupere una o dos citas al mes que antes se perdían fuera de horario, ya cubre su coste. A partir de ahí, cada consulta adicional que convierte es retorno añadido — y, como funciona 24/7, ese efecto se mantiene mes tras mes sin esfuerzo extra por parte de tu equipo.",
   },
 ]
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,31 +121,24 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
 
           {/* Intro */}
           <P>
-            «¿Cuánto cuesta esto?» es, casi siempre, la primera pregunta que se hace el
-            dueño de una clínica cuando le hablan de un chatbot de WhatsApp. Y es lógica:
-            antes de plantearte incorporar cualquier herramienta nueva, quieres saber qué
-            inversión supone y si realmente compensa.
+            El precio de un chatbot de WhatsApp para clínicas depende de cuatro cosas: si
+            conversa en lenguaje natural o solo con menús, si reserva la cita dentro de la
+            conversación, cuánto se personaliza con la información de tu clínica y cómo se
+            cobran el volumen de conversaciones y el soporte. A eso se suman los mensajes de
+            plantilla que Meta cobra por mensaje entregado, que pueden ir incluidos en la
+            cuota o facturarse aparte.
           </P>
           <P>
-            La respuesta corta es que depende — hay soluciones desde unos pocos euros al
-            mes hasta agentes IA avanzados con un coste mensual mayor. Pero la pregunta
-            que de verdad importa no es solo cuánto cuesta tenerlo, sino cuánto te está
-            costando ya no tenerlo: cada no-show deja un hueco que ya no se puede llenar, y
-            cada consulta que llega fuera de horario y nadie contesta a tiempo puede acabar
-            reservando en otra clínica.
-          </P>
-          <P>
-            En este artículo vas a entender qué factores influyen en el precio de un
-            chatbot de WhatsApp para tu clínica, qué tipos de solución hay y qué cambia en
-            el precio de cada una, en qué se diferencia un chatbot básico de un agente IA
-            avanzado, y cuándo empieza a amortizarse la inversión.
+            Antes de incorporar una herramienta nueva quieres saber qué inversión supone y si
+            compensa. Para lo segundo, mira también cuánto te está costando ya no tenerlo:
+            cada no-show deja un hueco que ya no se puede llenar, y cada consulta que llega
+            fuera de horario sin respuesta es una cita que no llega a tu agenda.
           </P>
 
           <H2>Qué factores determinan el precio de un chatbot para clínicas</H2>
           <P>
-            No todos los chatbots de WhatsApp son iguales, y el precio refleja
-            precisamente eso. Estos son los factores que más influyen a la hora de fijar
-            el coste de una solución para tu clínica.
+            Estos son los factores que más influyen en el coste de una solución para tu
+            clínica.
           </P>
 
           <H3>Capacidad de conversación: menús rígidos vs lenguaje natural</H3>
@@ -191,8 +186,8 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
 
           <H2>Tipos de solución y qué cambia en el precio</H2>
           <P>
-            A grandes rasgos, en el mercado encontramos tres niveles de solución, cada uno
-            con un rango de precio y un nivel de resultados muy distinto.
+            A grandes rasgos, hay tres niveles de solución, con precios y resultados muy
+            distintos.
           </P>
 
           <H3>Bots de respuestas automáticas básicas</H3>
@@ -239,8 +234,7 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
             hueco libre.
           </P>
           <P>
-            Y aquí entra la cuenta que de verdad importa: cuánto vale en tu clínica un
-            paciente nuevo que se queda, contando tratamientos recurrentes y recomendaciones.
+            Para compararlos, calcula cuánto vale en tu clínica un paciente nuevo que se queda, contando tratamientos recurrentes y recomendaciones.
             Si un agente IA avanzado recupera, gracias a su disponibilidad 24/7, aunque sea
             una cita al mes que un bot básico habría dejado escapar, compara ese valor con la
             diferencia de precio entre ambos.
@@ -259,11 +253,10 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
             comparación que decide si te compensa.
           </P>
           <P>
-            Además, como la consulta se resuelve en el mismo WhatsApp donde la persona ha
-            escrito, sin mandarla a una llamada ni a un formulario, hay menos pasos en los
-            que pueda quedarse por el camino. En la práctica, recuperar una o dos citas al mes que
-            antes se perdían suele bastar para cubrir el coste del chatbot — y, a partir
-            de ahí, todo lo que recupera es retorno neto.
+            Como la consulta se resuelve en el mismo WhatsApp donde la persona ha escrito,
+            sin mandarla a una llamada ni a un formulario, hay menos pasos en los que pueda
+            quedarse por el camino. En la práctica, recuperar una o dos citas al mes que
+            antes se perdían suele bastar para cubrir el coste del chatbot.
           </P>
 
           <H2>Qué preguntar antes de contratar un chatbot para tu clínica</H2>

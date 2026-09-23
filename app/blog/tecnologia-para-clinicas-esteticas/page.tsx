@@ -13,7 +13,9 @@ const PATH = "/blog/tecnologia-para-clinicas-esteticas"
 const DATES = articleDates("tecnologia-para-clinicas-esteticas")
 const TITLE = "Tecnología para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "La tecnología está transformando cómo las clínicas estéticas captan y retienen pacientes. Te explicamos qué herramientas usar y por dónde empezar."
+  "Qué tecnología necesita tu clínica estética para captar y retener pacientes —agenda, CRM, WhatsApp e IA— y en qué orden implantarla."
+const ARTICLE_DESCRIPTION =
+  "Herramientas tecnológicas para clínicas estéticas —agenda online, CRM, WhatsApp e IA—, para qué sirve cada una y en qué orden conviene implantarlas."
 const HEADLINE =
   "Tecnología para clínicas estéticas: qué herramientas usar y por dónde empezar"
 
@@ -40,7 +42,7 @@ const faqs = [
   },
   {
     q: "¿La inteligencia artificial es solo para clínicas grandes?",
-    a: "No. De hecho, suele tener más impacto relativo en clínicas pequeñas y medianas, porque no tienen un equipo grande de recepción que pueda cubrir todas las franjas horarias. Un agente con IA permite que una clínica con poco personal dé una atención que antes solo se podía dar con varias personas dedicadas.",
+    a: "No. Suele tener más impacto relativo en clínicas pequeñas y medianas, porque no tienen un equipo grande de recepción que pueda cubrir todas las franjas horarias. Un agente con IA permite que una clínica con poco personal dé una atención que antes solo se podía dar con varias personas dedicadas.",
   },
   {
     q: "¿Cuánto tiempo se tarda en implementar nueva tecnología en una clínica?",
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,24 +121,17 @@ export default function TecnologiaParaClinicasEsteticasPage() {
 
           {/* Intro */}
           <P>
+            Las herramientas que más aportan hoy a una clínica estética son la agenda online,
+            la comunicación automatizada por WhatsApp y la inteligencia artificial aplicada a
+            la atención al paciente. Conviene empezar por la base (agenda y comunicación),
+            seguir con la retención (CRM y seguimiento) y dejar la IA para cuando lo anterior
+            ya funcione, eligiendo herramientas que se integren entre sí.
+          </P>
+          <P>
             Hace unos años, la tecnología en una clínica estética era poco más que un
-            ordenador con una hoja de cálculo y, como mucho, un programa de citas.
-            Hoy ya no es así: la forma en que un paciente descubre tu clínica, reserva una
-            cita, recibe un recordatorio o vuelve a contactar pasa, casi siempre, por
-            alguna herramienta tecnológica.
-          </P>
-          <P>
-            Esto no significa que haya que adoptar todo lo nuevo que aparece. Significa
-            que, si tu clínica no usa bien la tecnología que ya está disponible, es muy
-            probable que estés perdiendo pacientes frente a otra clínica que sí lo hace —
-            aunque ofrezca los mismos tratamientos.
-          </P>
-          <P>
-            En este artículo vas a ver qué tecnologías están cambiando realmente el día a
-            día de las clínicas estéticas, cuáles ayudan a captar más pacientes, cuáles
-            ayudan a retenerlos, qué papel tiene la inteligencia artificial en todo esto y
-            cómo implementarlo todo sin que se convierta en un caos de herramientas
-            sueltas.
+            ordenador con una hoja de cálculo y, como mucho, un programa de citas. Hoy, la
+            forma en que un paciente descubre tu clínica, reserva una cita o vuelve a
+            contactar pasa, casi siempre, por alguna herramienta tecnológica.
           </P>
 
           <H2>Las tecnologías que están cambiando las clínicas estéticas</H2>
@@ -170,26 +165,22 @@ export default function TecnologiaParaClinicasEsteticasPage() {
             En la parte de captación, la tecnología más relevante es la que reduce la
             distancia entre el momento en que alguien se interesa por tu clínica y el
             momento en que consigue una respuesta. Y no pocas consultas llegan fuera del
-            horario de atención — por la noche, los fines de semana, durante
-            tratamientos.
+            horario de atención, por la noche o durante tratamientos.
           </P>
           <P>
             Si esas consultas no se atienden rápido, el coste es alto: quien pregunta suele
             estar comparando clínicas, y mientras espera puede reservar en otra. Por eso, herramientas como formularios conectados a WhatsApp,
-            chats en la web o respuestas automáticas iniciales son tan importantes — no
-            sustituyen a tu equipo, pero evitan que un interesado se enfríe mientras
-            espera.
+            chats en la web o respuestas automáticas iniciales son tan importantes: evitan
+            que el interesado se enfríe.
           </P>
           <P>
             Y como un paciente que se queda puede volver durante años, cada consulta que se
-            pierde por no responder a tiempo cuesta más que una cita suelta: se nota
-            directamente en la facturación.
+            pierde por no responder a tiempo cuesta más que una cita suelta.
           </P>
 
           <H2>Herramientas para retener y fidelizar</H2>
           <P>
-            Captar un paciente nuevo es solo la mitad del trabajo. La otra mitad es
-            conseguir que vuelva. Aquí la tecnología más útil es la que mantiene el
+            Para que el paciente vuelva, la tecnología más útil es la que mantiene el
             contacto sin que el equipo tenga que acordarse manualmente de hacerlo:
             recordatorios de revisión, mensajes de seguimiento tras un tratamiento o
             avisos cuando toca repetir una sesión.
@@ -203,11 +194,6 @@ export default function TecnologiaParaClinicasEsteticasPage() {
             por ejemplo, identificar a quienes no han vuelto en varios meses — y lanzar
             campañas de reactivación dirigidas, en lugar de enviar el mismo mensaje a toda
             la base de datos.
-          </P>
-          <P>
-            La combinación de ambas cosas — seguimiento automático y segmentación — es lo
-            que convierte una base de pacientes en una fuente de ingresos recurrente, en
-            lugar de depender constantemente de capturar pacientes nuevos.
           </P>
 
           <H2>IA: la tecnología que más impacto tiene ahora mismo</H2>
@@ -229,8 +215,8 @@ export default function TecnologiaParaClinicasEsteticasPage() {
             del equipo tenga que estar disponible en ese momento.
           </P>
           <P>
-            La diferencia frente a otras tecnologías es que no se limita a organizar
-            información — actúa: responde, agenda, hace seguimiento. Para una clínica con
+            La diferencia frente a otras tecnologías es que actúa: responde, agenda y hace
+            seguimiento. Para una clínica con
             un equipo reducido, esto equivale a tener una persona de recepción cubriendo
             las franjas horarias que, de otra forma, quedarían sin atender.
           </P>
@@ -238,8 +224,8 @@ export default function TecnologiaParaClinicasEsteticasPage() {
           <H2>Cómo implementar tecnología sin que sea un caos</H2>
           <P>
             El error más habitual al adoptar tecnología es ir sumando herramientas según
-            van apareciendo necesidades, sin que se conecten entre sí. El resultado es una
-            clínica con varias plataformas, cada una con su propia información, y nadie
+            van apareciendo necesidades, sin que se conecten entre sí. Así se acaba con varias
+            plataformas, cada una con su propia información, y nadie
             tiene una vista completa del paciente.
           </P>
           <P>
@@ -254,7 +240,7 @@ export default function TecnologiaParaClinicasEsteticasPage() {
             funcione.
           </P>
           <P>
-            Implementado así, cada fase se apoya en la anterior en lugar de duplicarla. Y
+            Implementado así, cada fase se apoya en la anterior. Y
             cuando llega el momento de añadir{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               un agente con IA

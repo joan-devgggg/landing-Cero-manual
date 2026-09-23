@@ -14,7 +14,9 @@ const PATH = "/blog/inteligencia-artificial-clinicas-esteticas"
 const DATES = articleDates("inteligencia-artificial-clinicas-esteticas")
 const TITLE = "Inteligencia artificial en clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "La IA ya está transformando cómo las clínicas estéticas gestionan leads, citas y pacientes. Descubre qué puedes automatizar hoy y por dónde empezar."
+  "Qué puede automatizar hoy la inteligencia artificial en tu clínica estética —atención, citas, recordatorios y reactivación— y por dónde empezar."
+const ARTICLE_DESCRIPTION =
+  "Qué tareas de una clínica estética puede automatizar la inteligencia artificial —atención por WhatsApp, citas, recordatorios y reactivación— y en qué orden empezar."
 const HEADLINE =
   "Inteligencia artificial para clínicas estéticas: qué puedes automatizar hoy"
 
@@ -41,11 +43,11 @@ const faqs = [
   },
   {
     q: "¿La IA va a sustituir a mi equipo?",
-    a: "No, lo libera. La IA se encarga de las tareas repetitivas — responder preguntas frecuentes, enviar recordatorios, hacer seguimiento a pacientes inactivos — para que tu equipo dedique su tiempo a lo que de verdad requiere trato humano: la atención en consulta, los casos complejos y las decisiones que solo una persona puede tomar.",
+    a: "No. La IA se encarga de las tareas repetitivas: responder preguntas frecuentes, enviar recordatorios y hacer seguimiento a pacientes inactivos. Tu equipo dedica ese tiempo a lo que requiere trato humano. La atención en consulta y los casos complejos siguen siendo cosa de personas.",
   },
   {
     q: "¿Por dónde debería empezar a automatizar?",
-    a: "Por donde más dinero se está perdiendo en silencio: la atención fuera de horario. Una parte de las consultas llega cuando la clínica está cerrada, y si nadie responde, ese lead puede acabar en la competencia. Empezar por un agente de WhatsApp que atienda 24/7 suele ser el cambio con el retorno más rápido y visible.",
+    a: "Por la atención fuera de horario, porque una parte de las consultas llega cuando la clínica está cerrada. Empezar por un agente de WhatsApp que atienda 24/7 suele ser el cambio con el retorno más rápido y visible. Después vienen los recordatorios y la reactivación de pacientes inactivos.",
   },
   {
     q: "¿Cuánto tiempo se tarda en notar resultados?",
@@ -57,7 +59,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -120,38 +122,28 @@ export default function InteligenciaArtificialArticlePage() {
 
           {/* Intro */}
           <P>
-            Hasta hace poco, hablar de inteligencia artificial en una clínica estética
-            sonaba a algo lejano — cosa de grandes cadenas con departamentos de
-            tecnología propios. Eso ha cambiado. Hoy, una clínica con un par de
-            profesionales y una recepcionista puede tener{" "}
+            Con inteligencia artificial, una clínica estética puede automatizar hoy la atención
+            por WhatsApp a cualquier hora, la confirmación y el recordatorio de citas y la
+            reactivación de pacientes inactivos. Está al alcance de una clínica con un par de
+            profesionales y una recepcionista, que puede tener{" "}
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               un agente que responde WhatsApp a cualquier hora
-            </InternalLink>
-            , un sistema que confirma citas solo y una campaña
-            que reactiva pacientes inactivos sin que nadie escriba un solo mensaje.
+            </InternalLink>{" "}
+            funcionando en menos de 14 días.
           </P>
           <P>
-            Lo que está cambiando no es{" "}
+            Lo que ha cambiado no es{" "}
             <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
               la tecnología en sí
-            </InternalLink>{" "}
-            — es que ahora es accesible,
-            se pone en marcha en menos de 14 días y su mantenimiento se limita a tener al
-            día la información de tu clínica. Lo que hace no es
-            radicalmente distinto de lo que ya hace tu equipo: automatiza las tareas
-            repetitivas que hoy consumen horas cada semana.
-          </P>
-          <P>
-            En este artículo vas a ver, con datos concretos, qué puede hacer la IA por
-            tu clínica estética hoy mismo, en qué áreas tiene más impacto y, sobre todo,
-            por dónde conviene empezar para ver resultados cuanto antes.
+            </InternalLink>
+            , sino que ahora es accesible y su mantenimiento se limita a tener al día la
+            información de tu clínica.
           </P>
 
           <H2>¿Qué puede hacer la IA por tu clínica estética?</H2>
           <P>
-            La inteligencia artificial aplicada a una clínica estética no es un robot que
-            sustituye a las personas — es un conjunto de sistemas que se encargan de las
-            tareas repetitivas y predecibles, las que ocupan tiempo pero no requieren
+            La inteligencia artificial aplicada a una clínica estética es un conjunto de
+            sistemas que se encargan de las tareas repetitivas y predecibles, las que ocupan tiempo pero no requieren
             criterio humano en cada caso.
           </P>
           <P>
@@ -160,19 +152,15 @@ export default function InteligenciaArtificialArticlePage() {
               automatizar la atención a consultas frecuentes
             </InternalLink>
             , la confirmación y recordatorio de citas, y el seguimiento a
-            pacientes que llevan tiempo sin volver. Tres áreas que, juntas, representan
-            buena parte del tiempo administrativo de una clínica — y una parte
-            importante de los ingresos que se pierden sin que nadie se dé cuenta.
-          </P>
-          <P>
-            Vamos a verlas una por una, y por qué importa cada una.
+            pacientes que llevan tiempo sin volver. Tres áreas que, juntas, ocupan buena
+            parte del tiempo administrativo de una clínica.
           </P>
 
           <H2>Atención al cliente 24/7 sin contratar más personal</H2>
           <P>
             Las consultas no respetan el horario de la clínica: llegan por la noche, en fin
             de semana, o mientras todo el equipo está atendiendo a otro paciente. Si nadie responde a tiempo, esa persona escribe a
-            la siguiente clínica de su lista — y probablemente reserve allí.
+            la siguiente clínica de su lista.
           </P>
           <P>
             Un agente de WhatsApp con IA responde esas consultas al instante, a
@@ -182,9 +170,8 @@ export default function InteligenciaArtificialArticlePage() {
             llamen ni que rellenen un formulario.
           </P>
           <P>
-            Esto no sustituye a tu recepcionista durante el horario de la clínica —
-            cubre exactamente las horas en las que, hoy, nadie está contestando. Lo
-            explicamos con más detalle en nuestra guía sobre el{" "}
+            En horario de clínica sigue atendiendo tu recepcionista; el agente cubre las
+            horas en las que hoy nadie contesta. Lo explicamos con más detalle en nuestra guía sobre el{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
             </InternalLink>
@@ -199,32 +186,24 @@ export default function InteligenciaArtificialArticlePage() {
             facturación.
           </P>
           <P>
-            La IA reduce esto con recordatorios que piden confirmación activa: en lugar
-            de un aviso que se puede ignorar, el paciente responde «sí» o «no puedo» — y
-            ese pequeño gesto cambia por completo su comportamiento. Si alguien no
+            La IA reduce esto con recordatorios que piden confirmación activa: el paciente
+            responde «sí» o «no puedo», y ese gesto le compromete más que un aviso que se
+            puede ignorar. Si alguien no
             confirma, el sistema lo detecta con tiempo y puede ofrecer ese hueco a otro
             paciente antes de que se pierda.
-          </P>
-          <P>
-            El resultado es menos huecos vacíos, menos llamadas de seguimiento y una
-            agenda que se autogestiona buena parte del tiempo.
           </P>
 
           <H3>De la confirmación a la lista de espera</H3>
           <P>
             Cuando un hueco se libera — por cancelación o por falta de confirmación — el
             mismo sistema puede avisar automáticamente a pacientes en lista de espera,
-            que confirman su interés y ocupan ese hueco en minutos. Una ausencia deja de
-            ser una pérdida total y se convierte en una cita para otra persona.
+            que confirman su interés y ocupan ese hueco en minutos.
           </P>
 
           <H2>Recuperar pacientes inactivos con mensajes automáticos</H2>
           <P>
-            Toda clínica tiene una lista de pacientes que vinieron una o varias veces y
-            dejaron de venir, sin que pasara nada concreto — simplemente se fueron
-            espaciando las visitas hasta desaparecer. Cada uno de esos pacientes podría
-            seguir siendo cliente recurrente, y cada visita que ya no hace es un ingreso que
-            la clínica deja de tener.
+            Toda clínica tiene una lista de pacientes que vinieron una o varias veces y fueron
+            espaciando las visitas hasta dejar de venir, sin que pasara nada concreto.
           </P>
           <P>
             La IA puede identificar a estos pacientes automáticamente — según cuánto
@@ -236,24 +215,18 @@ export default function InteligenciaArtificialArticlePage() {
             volver. No hace falta que nadie revise listados ni escriba mensajes uno por
             uno: el sistema los detecta y actúa solo, de forma recurrente.
           </P>
-          <P>
-            Recuperar a una parte de esos pacientes no requiere captar a nadie nuevo —
-            son ingresos que ya conocías y que estaban esperando un motivo para volver.
-          </P>
 
           <H2>Por dónde empezar: el orden correcto</H2>
           <P>
-            No hace falta automatizarlo todo de golpe. El orden que mejor funciona en la
-            práctica es empezar por donde se está perdiendo dinero de forma más directa
-            y visible, e ir añadiendo capas desde ahí.
+            El orden que mejor funciona es empezar por donde se pierde dinero de forma más
+            directa e ir añadiendo capas desde ahí.
           </P>
           <P>
-            <strong>1. Atención 24/7.</strong> Es el punto de entrada de todo lo demás —
-            si no captas el lead cuando llega, nada de lo siguiente importa. Un{" "}
+            <strong>1. Atención 24/7.</strong> Es el punto de entrada de todo lo demás. Un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp con IA
             </InternalLink>{" "}
-            cubre las horas en las que hoy nadie responde.
+            atiende cada consulta en el momento en que llega.
           </P>
           <P>
             <strong>2. Citas y recordatorios.</strong> Una vez que entran más leads,
@@ -265,11 +238,6 @@ export default function InteligenciaArtificialArticlePage() {
             agenda funcionando solas, el último paso es recuperar a los pacientes que ya
             tenías y que llevan tiempo sin volver — el ingreso más rápido de conseguir
             porque no requiere captación.
-          </P>
-          <P>
-            Cada paso se apoya en el anterior, y cada uno funciona desde el día en que se
-            activa. No es necesario tener todo resuelto para empezar — solo
-            hay que empezar por el primero.
           </P>
         </article>
 

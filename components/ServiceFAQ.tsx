@@ -87,9 +87,7 @@ export default function ServiceFAQ({ faqs }: ServiceFAQProps) {
             className="text-4xl md:text-5xl font-semibold leading-tight"
             style={{ fontFamily: "var(--font-playfair)", color: "#1A1A1A" }}
           >
-            Preguntas
-            <br />
-            <span style={{ fontStyle: "italic", color: "#7D9B76" }}>frecuentes</span>
+            Preguntas frecuentes
           </h2>
         </motion.div>
 

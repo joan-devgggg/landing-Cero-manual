@@ -13,7 +13,9 @@ const PATH = "/blog/marketing-clinica-dental"
 const DATES = articleDates("marketing-clinica-dental")
 const TITLE = "Marketing para clínicas dentales: qué funciona | Cero Manual"
 const DESCRIPTION =
-  "El marketing para clínicas dentales ha cambiado. Te explicamos qué canales funcionan realmente y cómo automatizar la captación de pacientes."
+  "Qué canales de marketing funcionan para una clínica dental —Google, redes sociales y WhatsApp— y cómo automatizar la respuesta a los pacientes."
+const ARTICLE_DESCRIPTION =
+  "Canales de marketing para clínicas dentales: Google, redes sociales y WhatsApp, qué aporta cada uno y cómo automatizar la respuesta a los pacientes que llegan."
 const HEADLINE = "Marketing para clínicas dentales: qué funciona realmente"
 
 export const metadata: Metadata = {
@@ -63,7 +65,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -126,34 +128,26 @@ export default function MarketingClinicaDentalArticlePage() {
 
           {/* Intro */}
           <P>
-            El marketing para clínicas dentales ya no se parece al de hace cinco años. Los
-            folletos, las vallas publicitarias y los anuncios genéricos en redes sociales han
-            dejado paso a canales donde se puede medir, en euros, cuánto cuesta captar a un
-            paciente y cuánto vale ese paciente a lo largo del tiempo.
+            En marketing para clínicas dentales funciona combinar canales con papeles
+            distintos: Google (SEO local y Google Ads) capta a quien ya busca dentista, las
+            redes sociales y las recomendaciones generan confianza, y WhatsApp convierte ese
+            contacto en una cita. De todos ellos, Google suele ser el que da mayor retorno,
+            porque llega a personas que están a un paso de pedir cita.
           </P>
           <P>
-            Las clínicas que no se adaptan a este cambio no desaparecen de la noche a la
-            mañana, pero sí pierden terreno poco a poco:{" "}
+            Los folletos, las vallas publicitarias y los anuncios genéricos han dejado paso a
+            canales donde se puede medir, en euros, cuánto cuesta captar a un paciente. Las
+            clínicas que no se adaptan pierden terreno poco a poco:{" "}
             <InternalLink href="/blog/como-aumentar-facturacion-clinica-dental">
               pagan más por cada paciente nuevo
-            </InternalLink>
-            ,
-            compiten peor en Google frente a clínicas que sí han optimizado su presencia
-            digital, y dejan escapar leads que ya estaban interesados simplemente porque nadie
-            respondió a tiempo.
-          </P>
-          <P>
-            En este artículo vas a ver qué canales de marketing funcionan realmente para una
-            clínica dental hoy, cómo se complementan entre sí, y cómo automatizar la parte
-            de captación y conversión sin perder el trato cercano que diferencia a una clínica
-            de otra.
+            </InternalLink>{" "}
+            y compiten peor en Google frente a clínicas que han optimizado su presencia
+            digital.
           </P>
 
           <H2>Los canales de marketing que más funcionan para clínicas dentales</H2>
           <P>
-            No todos los canales de marketing cumplen la misma función, y uno de los errores
-            más comunes es tratarlos como si fueran intercambiables. Para una clínica dental,
-            cada canal tiene un papel distinto dentro del recorrido del paciente:
+            Para una clínica dental, cada canal tiene un papel distinto dentro del recorrido del paciente:
           </P>
           <P>
             <strong>Google (SEO y Google Ads).</strong> El canal donde están las personas que
@@ -175,8 +169,8 @@ export default function MarketingClinicaDentalArticlePage() {
             consulta es buena y se lo pones fácil al paciente para que te recomiende.
           </P>
           <P>
-            La estrategia que mejor funciona no es elegir uno y descartar los demás, sino
-            entender que Google y redes sociales generan el contacto, y{" "}
+            La estrategia que mejor funciona combina los canales: Google y redes sociales
+            generan el contacto, y{" "}
             <InternalLink href="/blog/whatsapp-para-clinicas-dentales">
               WhatsApp es lo que convierte ese contacto
             </InternalLink>{" "}
@@ -186,7 +180,7 @@ export default function MarketingClinicaDentalArticlePage() {
           <H2>Google: el canal con más intención de compra</H2>
           <P>
             Cuando alguien busca «dentista cerca de mí» o «implante dental precio» en Google,
-            no está navegando sin rumbo: está a un paso de pedir cita. Por eso Google —tanto
+            está a un paso de pedir cita. Por eso Google —tanto
             en resultados orgánicos (SEO) como en anuncios (Google Ads)— suele ser el canal
             con mayor retorno para una clínica dental.
           </P>
@@ -202,17 +196,10 @@ export default function MarketingClinicaDentalArticlePage() {
           búsquedas concretas, como un tratamiento específico.
           </P>
           <P>
-            Además, Google es el sitio donde casi todo el mundo comprueba una clínica antes
+            Google es también el sitio donde casi todo el mundo comprueba una clínica antes
             de decidirse, venga de un anuncio o de una recomendación. Si tienes pocas reseñas
             o una valoración media baja, pierdes pacientes que habrían pedido cita. Por eso
-            conviene pedirlas de forma sistemática, con un mensaje después de cada cita, y no
-            solo «cuando alguien se acuerda».
-          </P>
-          <P>
-            El problema no suele estar en atraer estos clics, sino en lo que pasa después:
-            si alguien hace clic, escribe por WhatsApp o rellena un formulario y tarda en
-            recibir respuesta, puede acabar pidiendo cita en otra clínica. Todo el esfuerzo y el presupuesto invertido en aparecer en Google se pierde
-            en los últimos metros.
+            conviene pedirlas de forma sistemática, con un mensaje después de cada cita.
           </P>
 
           <H2>Redes sociales para clínicas dentales: qué funciona y qué no</H2>
@@ -237,9 +224,7 @@ export default function MarketingClinicaDentalArticlePage() {
           <P>
             La función real de las redes sociales en el marketing dental es de apoyo: alguien
             que ya te ha encontrado por Google o por recomendación entra en tu perfil para
-            confirmar que la clínica es de fiar antes de escribir. Si esa persona escribe por
-            WhatsApp o por mensaje directo y no recibe respuesta rápida, todo ese trabajo de
-            construir confianza se pierde en el último paso.
+            confirmar que la clínica es de fiar antes de escribir.
           </P>
 
           <H2>WhatsApp como canal de conversión</H2>
@@ -250,7 +235,7 @@ export default function MarketingClinicaDentalArticlePage() {
             la hora.
           </P>
           <P>
-            Y ahí está el problema para muchas clínicas: las consultas no respetan el horario
+            Las consultas no respetan el horario
             de atención y llegan también por la noche o en fin de semana. Si nadie del
             equipo puede contestar en ese momento, el paciente —que probablemente esté
             comparando varias clínicas a la vez— sigue buscando hasta que alguien le responda.
@@ -261,20 +246,19 @@ export default function MarketingClinicaDentalArticlePage() {
             llames.
           </P>
           <P>
-            Aquí es donde un{" "}
+            Un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-dentales">
               agente de WhatsApp para clínicas dentales
             </InternalLink>{" "}
-            marca la diferencia: responde al instante, resuelve las preguntas más habituales
+            responde al instante, resuelve las preguntas más habituales
             sobre precios, tratamientos y disponibilidad, y deja la conversación lista para
             que tu equipo la cierre o agende la cita directamente.
           </P>
 
           <H2>Cómo automatizar el marketing sin perder el toque personal</H2>
           <P>
-            La automatización en marketing dental no significa sustituir el trato humano por
-            respuestas robóticas. Significa asegurarse de que ningún lead se quede sin
-            respuesta mientras tu equipo está ocupado, durmiendo o fuera de horario —y que,
+            Automatizar el marketing dental consiste en asegurarse de que ningún lead se
+            quede sin respuesta mientras tu equipo está ocupado o fuera de horario, y de que,
             cuando llegue el momento de hablar con una persona, la conversación ya esté
             avanzada.
           </P>
@@ -291,13 +275,12 @@ export default function MarketingClinicaDentalArticlePage() {
             un hueco.
           </P>
           <P>
-            El resultado es que el presupuesto que ya inviertes en Google, SEO o redes
-            sociales rinde más, porque deja de perderse en el último paso del embudo: la
-            respuesta. El{" "}
+            Así, el presupuesto que ya inviertes en Google, SEO o redes sociales rinde más.
+            El{" "}
             <InternalLink href="/agente-whatsapp-clinicas-dentales">
               agente de WhatsApp con IA para clínicas dentales
             </InternalLink>{" "}
-            está pensado precisamente para cubrir ese último paso, las 24 horas del día.
+            está pensado para cubrir esa respuesta las 24 horas del día.
           </P>
         </article>
 

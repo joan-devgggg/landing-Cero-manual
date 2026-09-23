@@ -13,7 +13,9 @@ const PATH = "/blog/programa-gestion-clinica-estetica"
 const DATES = articleDates("programa-gestion-clinica-estetica")
 const TITLE = "Programa de gestión para clínicas estéticas: cómo elegir el mejor | Cero Manual"
 const DESCRIPTION =
-  "Un buen programa de gestión para tu centro de estética ahorra horas cada semana. Te explicamos cómo elegirlo y qué evitar. Pide tu auditoría gratis."
+  "Cómo elegir un programa de gestión para tu clínica estética: qué debe incluir, errores habituales y preguntas antes de contratar. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Cómo elegir un programa de gestión para una clínica estética: funciones que debe incluir, errores habituales, preguntas antes de contratar y cuándo no es suficiente."
 const HEADLINE =
   "Programa de gestión para clínicas estéticas: cómo elegir el mejor y no arrepentirte"
 
@@ -36,11 +38,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Qué es un programa de gestión para clínicas estéticas?",
-    a: "Es la herramienta que centraliza la operativa diaria de la clínica: agenda, ficha de paciente y tratamientos, facturación y, en muchos casos, gestión de bonos. A diferencia de un simple software de citas, cubre todo el ciclo del paciente, no solo el calendario.",
+    a: "Es la herramienta que centraliza la operativa diaria de la clínica: agenda, ficha de paciente y tratamientos, facturación y, en muchos casos, gestión de bonos. A diferencia de un simple software de citas, cubre todo el ciclo del paciente.",
   },
   {
     q: "¿Cuánto cuesta un programa de gestión?",
-    a: "El precio depende del número de usuarios y de las funcionalidades que incluya, y varía bastante entre proveedores. Antes de fijarte solo en el coste mensual, conviene calcular cuánto tiempo del equipo ahorra o cuántas citas perdidas evita, porque ahí está el retorno real.",
+    a: "El precio depende del número de usuarios y de las funcionalidades que incluya, y varía bastante entre proveedores. Antes de fijarte solo en el coste mensual, calcula cuánto tiempo del equipo ahorra o cuántas citas perdidas evita.",
   },
   {
     q: "¿Puedo cambiar de programa sin perder mis datos?",
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,21 +121,17 @@ export default function ProgramaGestionClinicaEsteticaPage() {
 
           {/* Intro */}
           <P>
-            Elegir un programa de gestión para tu clínica estética no debería ser complicado, pero
-            en la práctica lo es: hay decenas de opciones, todas prometen resolverlo todo, y muchas
-            clínicas acaban contratando algo que a los pocos meses se queda a medias o que nadie
-            en el equipo termina de usar bien.
+            Para elegir el mejor programa de gestión para tu clínica estética, parte del problema
+            que quieres resolver: si solo necesitas organizar citas, te basta un software de
+            agenda; si quieres llevar la ficha de paciente, la facturación y los bonos en un mismo
+            sitio, necesitas un programa de gestión. Después, pruébalo con tu equipo antes de
+            contratar y pregunta cómo se integra con WhatsApp, cuánto tarda la puesta en marcha y
+            qué pasa con tus datos si cambias de proveedor.
           </P>
           <P>
-            Elegir mal no es un error menor. Cuesta tiempo, porque migrar de un programa a otro se
-            lleva semanas, y cuesta dinero, porque muchas clínicas terminan pagando por
-            herramientas que se solapan o por funciones que nunca llegan a usar.
-          </P>
-          <P>
-            En este artículo vas a ver la diferencia entre un programa de gestión y un simple
-            software de citas, qué debe incluir uno bueno, los errores más comunes al elegir,
-            qué preguntas hacer antes de contratar y cuándo el programa se queda corto y necesitas
-            automatización.
+            Elegir mal cuesta tiempo, porque migrar de un programa a otro lleva semanas, y cuesta
+            dinero, porque muchas clínicas terminan pagando por herramientas que se solapan o por
+            funciones que nunca llegan a usar.
           </P>
 
           <H2>Diferencia entre programa de gestión y software de citas</H2>
@@ -186,20 +184,19 @@ export default function ProgramaGestionClinicaEsteticaPage() {
             — un programa de gestión, más una app de
             reservas, más una hoja de cálculo aparte — en lugar de consolidar en un único sistema.
             Y el cuarto es ignorar la curva de adopción: si migrar lleva semanas, hay que
-            planificarlo, no improvisarlo.
+            planificarlo.
           </P>
 
           <H2>Preguntas que debes hacer antes de contratar</H2>
           <P>
             Antes de firmar, pregunta si el programa se integra con WhatsApp y con el calendario
             que ya usa el equipo, porque eso condiciona cuánto tendrás que cambiar tu forma de
-            trabajar. Pregunta también cuánto tarda la puesta en marcha real, no la teórica, y qué
+            trabajar. Pregunta también cuánto tarda la puesta en marcha real y qué
             pasa con tus datos si decides cambiar de proveedor más adelante.
           </P>
           <P>
             Por último, comprueba que el soporte esté en español y sea accesible cuando surge un
-            problema el mismo día — es habitual que este punto se descuide en la decisión y acabe
-            siendo el que más fricción genera en el día a día.
+            problema el mismo día. Es un punto que se suele descuidar al decidir.
           </P>
 
           <H2>Cuándo el programa no es suficiente y necesitas automatización</H2>

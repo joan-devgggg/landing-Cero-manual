@@ -14,7 +14,9 @@ const PATH = "/blog/reducir-lista-espera-clinica-estetica"
 const DATES = articleDates("reducir-lista-espera-clinica-estetica")
 const TITLE = "Reducir la lista de espera en clínica estética | Cero Manual"
 const DESCRIPTION =
-  "Una lista de espera larga hace perder pacientes. Te explicamos cómo gestionarla mejor y convertir cancelaciones en citas nuevas automáticamente."
+  "Cómo reducir la lista de espera de tu clínica estética: aprovechar cancelaciones, avisar antes y ordenar la lista para no perder pacientes."
+const ARTICLE_DESCRIPTION =
+  "Cómo reducir la lista de espera de una clínica estética: convertir cancelaciones en citas, avisar a tiempo a los pacientes en espera y ordenar la lista."
 const HEADLINE = "Cómo reducir la lista de espera en tu clínica estética sin perder pacientes"
 
 export const metadata: Metadata = {
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,34 +121,29 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
 
           {/* Intro */}
           <P>
-            Una lista de espera larga suele verse como un problema "bueno": significa que hay
-            demanda. Pero cuando esa lista se gestiona a mano, con notas sueltas o una hoja de
-            cálculo que nadie revisa con frecuencia, deja de ser una ventaja y se convierte en
-            pacientes que esperan sin saber nada, hasta que se cansan y reservan en otra
-            clínica.
+            Para reducir la lista de espera de una clínica estética, convierte cada
+            cancelación en una cita para alguien de la lista: en cuanto se libera un hueco,
+            avisa por WhatsApp a los pacientes compatibles y el primero que confirma se lo
+            queda. Con la lista centralizada y ordenada, y con recordatorios que piden
+            confirmar cada cita, los huecos se liberan con más margen y se cubren antes.
           </P>
           <P>
-            El resultado es paradójico: la clínica tiene lista de espera y, al mismo tiempo,
-            huecos libres en la agenda por{" "}
+            Cuando la lista se gestiona a mano, con notas sueltas o una hoja de cálculo que
+            nadie revisa con frecuencia, se llena de pacientes que esperan sin saber nada,
+            hasta que se cansan y reservan en otra clínica. Y la clínica acaba teniendo lista
+            de espera y, al mismo tiempo, huecos libres en la agenda por{" "}
             <InternalLink href="/blog/como-reducir-cancelaciones-clinica-estetica">
               cancelaciones que nadie ha cubierto a tiempo
             </InternalLink>
             .
           </P>
-          <P>
-            En este artículo vas a aprender por qué una lista de espera mal gestionada hace
-            perder pacientes, cómo organizarla de forma eficiente, cómo convertir cada
-            cancelación en una cita nueva de forma automática, cómo comunicar los tiempos de
-            espera sin que el paciente se desanime, y cómo automatizar todo este proceso.
-          </P>
 
           <H2>Por qué una lista de espera larga es un problema</H2>
           <P>
-            El problema no es tener pacientes esperando, sino lo que ocurre mientras esperan.
-            Si nadie les da una estimación realista ni les avisa cuando se libera un hueco
-            antes de tiempo, la sensación que se lleva el paciente es que la clínica no tiene
-            el proceso bajo control —aunque internamente sí lo esté gestionando, simplemente de
-            forma lenta.
+            Lo que pesa es lo que ocurre mientras los pacientes esperan. Si nadie les da una
+            estimación realista ni les avisa cuando se libera un hueco antes de tiempo, la
+            sensación que se llevan es que la clínica no tiene el proceso bajo control, aunque
+            internamente sí lo esté gestionando, solo que de forma lenta.
           </P>
           <P>
             A esto se suma el efecto de las cancelaciones. Cada semana, las ausencias y los
@@ -154,13 +151,8 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
             Mientras tanto, la lista de espera sigue creciendo con pacientes que podrían haber
             ocupado exactamente esos huecos.
           </P>
-          <P>
-            El coste real, por tanto, no es solo la insatisfacción de quien espera: es la
-            combinación de agenda infrautilizada y pacientes que, cansados de esperar sin
-            noticias, terminan reservando en otra clínica.
-          </P>
 
-          <H2>Cómo gestionar la lista de espera de forma eficiente</H2>
+          <H2>Cómo organizar la lista de espera para acortarla</H2>
           <P>
             El primer paso es{" "}
             <InternalLink href="/blog/software-gestion-citas-clinica-estetica">
@@ -179,7 +171,7 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
           <P>
             El tercer paso, y el que más diferencia marca, es la rapidez de respuesta cuando se
             libera un hueco. Una lista de espera bien organizada pero que se revisa una vez al
-            día sigue perdiendo la mayoría de esas oportunidades, porque los huecos liberados
+            día sigue perdiendo muchas de esas oportunidades, porque los huecos liberados
             por cancelación normalmente son para los próximos días, y el paciente que iba a
             ocuparlos necesita confirmar cuanto antes.
           </P>
@@ -201,8 +193,8 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
           <P>
             Este mismo mecanismo de recordatorios automáticos por WhatsApp es el que se utiliza
             para reducir los no-shows desde el origen, pidiendo a cada paciente que confirme su
-            cita. Es decir, no solo ayuda a cubrir los huecos que ya se
-            han liberado, sino que reduce el número de huecos que se liberan por sorpresa. Puedes
+            cita. Así, además de cubrir los huecos que ya se han liberado, reduce los que se
+            liberan por sorpresa. Puedes
             ver cómo se aplica esto con más detalle en el artículo sobre{" "}
             <InternalLink href="/recordatorios-automaticos-citas">
               recordatorios automáticos de citas
@@ -225,17 +217,14 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
             mejora la precisión de las siguientes asignaciones.
           </P>
           <P>
-            Cuando se combina con avisos automáticos en cuanto hay un hueco disponible, la
-            percepción del paciente cambia completamente: pasa de sentir que está "en una
-            lista olvidada" a sentir que la clínica está activamente buscando cómo atenderle
-            antes.
+            Si además recibe un aviso automático en cuanto hay un hueco disponible, el
+            paciente siente que la clínica está buscando cómo atenderle antes.
           </P>
 
-          <H2>Automatiza la gestión de lista de espera</H2>
+          <H2>Automatiza los avisos para reducir la lista de espera</H2>
           <P>
-            Todo lo anterior —centralizar la lista, ordenarla, avisar automáticamente ante
-            cancelaciones y mantener informados a los pacientes— se puede gestionar con el
-            mismo sistema de recordatorios y comunicación automática por WhatsApp que sirve
+            Los avisos ante cancelaciones y el contacto periódico con quien espera se pueden
+            gestionar con el mismo sistema de recordatorios y comunicación automática por WhatsApp que sirve
             para{" "}
             <InternalLink href="/blog/como-reducir-no-shows-clinica-estetica">
               reducir no-shows
@@ -243,8 +232,8 @@ export default function ReducirListaEsperaClinicaEsteticaArticlePage() {
             .
           </P>
           <P>
-            En lugar de tratar la lista de espera y los recordatorios de citas como dos
-            procesos separados, tiene sentido unificarlos: el mismo sistema que avisa a un
+            Tiene sentido unificar la lista de espera y los recordatorios de citas: el mismo
+            sistema que avisa a un
             paciente de su cita puede avisar a otro de que se ha liberado un hueco antes. Así,
             cada cancelación se convierte automáticamente en una oportunidad para cubrir el
             hueco y reducir la lista de espera al mismo tiempo.

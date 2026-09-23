@@ -74,7 +74,7 @@ export default function AgenteWhatsAppPage() {
       <Navbar />
       <main>
         <ServiceHero
-          label="Para clínicas que no quieren perder ni un lead más"
+          label="Agente de WhatsApp para clínicas estéticas"
           headlineLines={["Agente de WhatsApp con IA para clínicas estéticas que llena tu agenda"]}
           accent="sola"
           subheadline="Para clínicas estéticas y de medicina estética que reciben consultas por WhatsApp e Instagram a todas horas — y no pueden permitirse seguir perdiendo leads por no llegar a responder a tiempo."
@@ -94,15 +94,14 @@ export default function AgenteWhatsAppPage() {
           ]}
           closing={
             <>
-              No es que tu equipo no se esfuerce. Es que nadie puede estar disponible las 24 horas.{" "}
-              <strong style={{ color: "#1A1A1A" }}>Y tu competencia tampoco</strong> — pero su agente de IA, sí.
+              Nadie en tu equipo puede estar disponible las 24 horas.{" "}
+              <strong style={{ color: "#1A1A1A" }}>Un agente de IA, sí.</strong>
             </>
           }
         />
 
         <ServiceHowItWorks
           title="De un mensaje a una cita confirmada"
-          titleAccent="en minutos, sin que nadie lo toque"
           steps={[
             {
               icon: "MessageSquare",
@@ -131,9 +130,8 @@ export default function AgenteWhatsAppPage() {
           ]}
           closing={
             <>
-              Sin formularios que nadie rellena. Sin esperas que enfrían al lead.{" "}
               <strong style={{ color: "#1A1A1A" }}>
-                Sin la sensación de que tu clínica solo trabaja en horario de oficina.
+                Tu clínica atiende también fuera del horario de oficina.
               </strong>
             </>
           }
@@ -141,7 +139,6 @@ export default function AgenteWhatsAppPage() {
 
         <ServiceBenefits
           title="Lo que cambia para tu clínica"
-          titleAccent="sin que tengas que hacer nada"
           benefits={[
             {
               icon: "Clock",

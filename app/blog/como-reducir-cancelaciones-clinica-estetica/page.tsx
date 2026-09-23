@@ -14,7 +14,9 @@ const PATH = "/blog/como-reducir-cancelaciones-clinica-estetica"
 const DATES = articleDates("como-reducir-cancelaciones-clinica-estetica")
 const TITLE = "Reducir cancelaciones en tu clínica estética | Cero Manual"
 const DESCRIPTION =
-  "Las cancelaciones de última hora vacían tu agenda y no dan tiempo a rellenar el hueco. Te explicamos cómo reducirlas sin llamar a cada paciente."
+  "Cómo reducir las cancelaciones de última hora en tu clínica estética con confirmación activa, lista de espera y una política de cancelación clara."
+const ARTICLE_DESCRIPTION =
+  "Cómo reducir las cancelaciones de última hora en una clínica estética: confirmación activa, lista de espera y una política de cancelación comunicada de antemano."
 const HEADLINE = "Cómo reducir las cancelaciones de última hora en tu clínica estética"
 
 export const metadata: Metadata = {
@@ -44,11 +46,11 @@ const faqs = [
   },
   {
     q: "¿Cómo funciona una lista de espera para clínicas?",
-    a: "Una lista de espera es un registro de pacientes que quieren un tratamiento antes de la primera cita disponible. Se puede automatizar para que, cuando hay una cancelación, el sistema notifique por WhatsApp a los primeros de la lista con el hueco disponible y la opción de reservarlo — es una configuración que montamos a medida sobre el agente de WhatsApp. Sin lista de espera, una cancelación con antelación supone un hueco vacío. Con lista de espera bien montada, ese mismo hueco puede rellenarse en minutos.",
+    a: "Una lista de espera es un registro de pacientes que quieren un tratamiento antes de la primera cita disponible. Se puede automatizar para que, cuando hay una cancelación, el sistema notifique por WhatsApp a los primeros de la lista con el hueco disponible y la opción de reservarlo — es una configuración que montamos a medida sobre el agente de WhatsApp. Con una lista de espera bien montada, el hueco de una cancelación con antelación puede rellenarse en minutos.",
   },
   {
     q: "¿Puedo cobrar por cancelaciones de última hora sin perder pacientes?",
-    a: "Sí, siempre que la política esté comunicada antes de la reserva, no después. El error habitual es intentar aplicar la política en el momento de la cancelación — ahí sí genera conflicto. Si el paciente sabe desde el primer momento que una cancelación con menos de 24 horas tiene un coste parcial, lo acepta como parte del servicio. La clave es la transparencia previa, no la dureza en el momento.",
+    a: "Sí, siempre que la política esté comunicada antes de la reserva. El error habitual es intentar aplicar la política en el momento de la cancelación — ahí sí genera conflicto. Si el paciente sabe desde el primer momento que una cancelación con menos de 24 horas tiene un coste parcial, lo acepta como parte del servicio.",
   },
 ]
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,11 +121,15 @@ export default function CancelacionesArticlePage() {
 
           {/* Intro */}
           <P>
-            En cualquier clínica estética, una parte de las citas acaba en ausencia o en una
-            cancelación sin margen para reaccionar. El impacto económico es directo: cada hueco
-            vacío en la agenda es tiempo del profesional que no genera ingresos. Y a diferencia
-            de los no-shows, las cancelaciones de última hora tienen algo especialmente frustrante:
-            el paciente avisó, pero demasiado tarde para hacer algo. Descubre cuánto te
+            Las cancelaciones de última hora se reducen con tres medidas: pedir al paciente una
+            confirmación activa por WhatsApp 48 horas antes de la cita, tener una lista de
+            espera que cubra el hueco cuando alguien cancela y comunicar una política de
+            cancelación clara desde el momento de la reserva. Cuando la clínica no ha creado
+            esas condiciones, el aviso llega esa misma mañana, sin margen para reaccionar.
+          </P>
+          <P>
+            El impacto económico es directo: cada hueco vacío en la agenda es tiempo del
+            profesional que no genera ingresos. Descubre cuánto te
             está costando con nuestra{" "}
             <Link
               href="/calculadora-no-shows"
@@ -133,18 +139,6 @@ export default function CancelacionesArticlePage() {
               calculadora de pérdidas por no-shows
             </Link>
             .
-          </P>
-          <P>
-            La mayor parte de esas cancelaciones no son malintencionadas. Son el resultado de
-            que la clínica no ha creado las condiciones para que el paciente confirme a tiempo,
-            no tiene un sistema para cubrir los huecos rápido, y no ha comunicado una política
-            de cancelación clara desde el principio.
-          </P>
-          <P>
-            En este artículo vas a ver por qué se producen las cancelaciones de última hora,
-            en qué se diferencian de los no-shows, cómo actuar en ambos casos, cómo aprovechar
-            una cancelación para generar una cita nueva, y cómo establecer una política de
-            cancelación que los pacientes acepten sin conflicto.
           </P>
 
           <H2>Por qué se cancelan las citas de última hora</H2>
@@ -159,13 +153,12 @@ export default function CancelacionesArticlePage() {
           <P>
             Hay también un componente de percepción: muchos pacientes no son conscientes de
             que una cancelación con menos de 24 horas tiene el mismo impacto económico para
-            la clínica que un no-show. Para ellos, cancelar es mejor que no aparecer — y tienen
-            razón en términos de cortesía, pero no en términos de gestión de agenda.
+            la clínica que un no-show.
           </P>
           <P>
             Un tercer factor es la ausencia de fricción en el proceso de cancelación. Si cancelar
             es tan fácil como enviar un mensaje de WhatsApp en cualquier momento, el paciente
-            lo hará cuando le surja el problema, no cuando le sea conveniente para la clínica.
+            lo hará en cuanto le surja el problema.
             Un sistema de confirmación activa obliga a tomar esa decisión 48 horas antes — cuando
             todavía hay tiempo para reaccionar.
           </P>
@@ -190,17 +183,14 @@ export default function CancelacionesArticlePage() {
           </P>
           <P>
             El objetivo no es solo reducir el número de cancelaciones: es adelantar el momento
-            en que se producen. Una cancelación con 48 horas de antelación es una oportunidad.
-            Una cancelación con 2 horas de antelación es una pérdida. La confirmación activa
-            es la herramienta que convierte unas en otras.
+            en que se producen, para que lleguen cuando todavía se puede cubrir el hueco.
           </P>
 
           <H2>Cómo reducir cancelaciones con confirmación activa</H2>
           <P>
-            Un recordatorio pasivo — «te recordamos tu cita mañana a las 11» — informa, pero
-            no genera ninguna acción. Una confirmación activa pide una respuesta explícita: el
-            paciente tiene que confirmar o cancelar. Ese pequeño cambio tiene un impacto enorme
-            en la tasa de cancelaciones de última hora.
+            Un recordatorio pasivo — «te recordamos tu cita mañana a las 11» — solo informa.
+            Una confirmación activa pide una respuesta explícita: el paciente tiene que
+            confirmar o cancelar.
           </P>
           <P>
             El momento óptimo para enviar la confirmación activa es 48 horas antes de la cita.
@@ -234,8 +224,7 @@ export default function CancelacionesArticlePage() {
             <InternalLink href="/blog/reducir-lista-espera-clinica-estetica">
               Una lista de espera bien gestionada
             </InternalLink>{" "}
-            convierte cada cancelación en una oportunidad
-            en lugar de en una pérdida. El concepto es simple: cuando un paciente cancela, el
+            convierte cada cancelación en una cita nueva. Cuando un paciente cancela, el
             sistema puede notificar automáticamente a los primeros pacientes de la lista que hay
             un hueco disponible — con la fecha, la hora y un enlace para reservarlo directamente.
             Es una automatización que se monta a medida sobre el agente de WhatsApp, según cómo
@@ -248,16 +237,11 @@ export default function CancelacionesArticlePage() {
             opción de entrar en la lista. Con WhatsApp como canal de notificación, el tiempo
             entre la cancelación y la nueva reserva puede ser de minutos.
           </P>
-          <P>
-            El resultado es que la tasa de huecos vacíos baja drásticamente, incluso en clínicas
-            con alta demanda y lista de espera activa. Cada cancelación deja de ser una pérdida
-            para convertirse en una redistribución de agenda.
-          </P>
 
           <H2>Política de cancelación: cómo comunicarla sin perder pacientes</H2>
           <P>
-            Una política de cancelación solo funciona si el paciente la conoce antes de reservar,
-            no cuando intenta cancelar. El error más habitual es no tener ninguna política comunicada
+            Una política de cancelación solo funciona si el paciente la conoce antes de reservar.
+            El error más habitual es no tener ninguna política comunicada
             y luego intentar aplicarla reactivamente cuando el daño ya está hecho — lo que genera
             conflicto y mala experiencia.
           </P>
@@ -265,8 +249,7 @@ export default function CancelacionesArticlePage() {
             La política debe comunicarse en el momento de la reserva, de forma clara y sin
             tecnicismos: «Las cancelaciones con menos de 24 horas de antelación tienen un coste
             de X€ para cubrir el tiempo reservado». La mayoría de los pacientes lo entienden
-            y lo aceptan si lo saben desde el principio — es exactamente como funciona en un
-            hotel, un vuelo o una consulta médica privada.
+            y lo aceptan si lo saben desde el principio, igual que en un hotel o un vuelo.
           </P>
 
           <H3>Cómo establecer el plazo y el importe</H3>
@@ -278,7 +261,7 @@ export default function CancelacionesArticlePage() {
             reales.
           </P>
           <P>
-            La política de cancelación no está reñida con la flexibilidad. Se puede establecer
+            La política admite flexibilidad. Se puede establecer
             una distinción entre imprevistos documentados (enfermedad, emergencia) y cancelaciones
             sin justificación — lo que muestra empatía sin abrir la puerta a que cualquier excusa
             sea válida.
@@ -289,7 +272,7 @@ export default function CancelacionesArticlePage() {
               recordatorios automáticos
             </InternalLink>{" "}
             que genera confirmaciones activas 48 horas antes, una política de cancelación clara
-            crea el entorno para que los huecos de última hora sean la excepción, no la norma.
+            hace que los huecos de última hora sean excepcionales.
           </P>
         </article>
 

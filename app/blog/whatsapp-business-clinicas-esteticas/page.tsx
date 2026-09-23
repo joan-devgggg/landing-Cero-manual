@@ -14,6 +14,8 @@ const DATES = articleDates("whatsapp-business-clinicas-esteticas")
 const TITLE = "WhatsApp Business para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
   "WhatsApp Business para clínicas estéticas: cómo configurarlo bien, qué límites tiene usarlo a mano y cuándo tiene sentido automatizarlo con IA."
+const ARTICLE_DESCRIPTION =
+  "Cómo configurar WhatsApp Business en una clínica estética, sus límites cuando crece el volumen, la diferencia entre la app y la API y cuándo automatizarlo."
 const HEADLINE =
   "WhatsApp Business para clínicas estéticas: cómo configurarlo y cuándo automatizarlo"
 
@@ -40,11 +42,11 @@ const faqs = [
   },
   {
     q: "¿Por qué WhatsApp es tan importante para una clínica estética?",
-    a: "Porque es donde están tus pacientes: escriben a su clínica igual que escriben a cualquiera, sin buscar un teléfono ni rellenar un formulario. Además, esos mensajes llegan también fuera del horario de la clínica — y quien no recibe respuesta pronto puede acabar escribiendo a otra.",
+    a: "Porque es donde están tus pacientes: escriben a su clínica igual que escriben a cualquiera, sin buscar un teléfono ni rellenar un formulario. Además, esos mensajes llegan también fuera del horario de la clínica, así que el canal tiene que estar atendido cuando la recepción está cerrada.",
   },
   {
     q: "¿Puedo seguir usando WhatsApp Business app si ya me funciona bien?",
-    a: "Sí, sin problema, mientras el volumen de mensajes sea manejable y siempre haya alguien disponible para responder rápido, incluyendo fuera de horario. El momento de plantearse un cambio es cuando empiezas a notar que los mensajes se acumulan, las respuestas tardan o se os escapan consultas — ahí es donde automatizar empieza a tener sentido.",
+    a: "Sí, sin problema, mientras el volumen de mensajes sea manejable y siempre haya alguien disponible para responder rápido, incluyendo fuera de horario. El momento de plantearse un cambio es cuando empiezas a notar que los mensajes se acumulan, las respuestas tardan o se os escapan consultas. En ese punto automatizar tiene sentido.",
   },
   {
     q: "¿Automatizar WhatsApp hace que las respuestas suenen robóticas?",
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,27 +121,19 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
 
           {/* Intro */}
           <P>
-            Si hay un canal por el que pasan casi todas las conversaciones con tus
-            pacientes, es WhatsApp. Preguntas sobre precios, peticiones de cita, dudas antes
-            de un tratamiento, cambios de última hora — todo llega ahí, a cualquier hora del
-            día.
+            Para configurar WhatsApp Business en tu clínica estética, completa el perfil
+            (horario, dirección y tratamientos con precios orientativos), activa los mensajes de
+            bienvenida y de ausencia y guarda respuestas rápidas para las preguntas que más se
+            repiten. Automatizarlo compensa cuando los mensajes se acumulan, las respuestas
+            tardan o llegan consultas por la noche y el fin de semana que nadie puede atender.
           </P>
           <P>
-            El problema es que ese mismo canal, que es una ventaja enorme, se convierte en
-            una carga cuando alguien tiene que{" "}
+            Por WhatsApp pasan casi todas las conversaciones con tus pacientes, desde precios
+            hasta peticiones de cita, y atenderlo a mano obliga a alguien a{" "}
             <InternalLink href="/blog/clinica-estetica-por-whatsapp">
               estar pendiente del móvil constantemente
             </InternalLink>
-            :
-            durante el tratamiento de un paciente, fuera de horario, los fines de semana.
-            Cada mensaje que tarda en contestarse es, potencialmente, una cita que se va a
-            otra clínica.
-          </P>
-          <P>
-            En este artículo vas a ver qué diferencia hay entre WhatsApp normal y WhatsApp
-            Business, cómo configurarlo correctamente para tu clínica, dónde está el límite
-            de lo que se puede gestionar a mano y cuándo tiene sentido dar el paso a
-            automatizarlo.
+            , también durante el tratamiento de un paciente.
           </P>
 
           <H2>Qué es WhatsApp Business y en qué se diferencia del WhatsApp normal</H2>
@@ -151,8 +145,7 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
             conversaciones y respuestas rápidas para las preguntas que se repiten más.
           </P>
           <P>
-            Para una clínica estética, esto supone una diferencia importante respecto a
-            usar un WhatsApp personal: los pacientes ven un perfil profesional, con
+            Frente a un WhatsApp personal, los pacientes ven un perfil profesional, con
             información clara sobre cuándo pueden esperar respuesta, y tu equipo gana
             herramientas básicas para no perder el hilo de cada conversación.
           </P>
@@ -160,9 +153,8 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
             Aun así, sigue siendo una app pensada para atender a mano. Admite dispositivos
             vinculados, así que varias personas del equipo pueden responder desde distintos
             equipos, pero su automatización se queda en mensajes de bienvenida, de ausencia y
-            respuestas rápidas, y no se conecta con otros sistemas. Esa es precisamente la
-            limitación que, más adelante, empieza a notarse a medida que crece el volumen de
-            mensajes.
+            respuestas rápidas, y no se conecta con otros sistemas. Esa limitación se nota a
+            medida que crece el volumen de mensajes.
           </P>
 
           <H2>Cómo configurar WhatsApp Business para tu clínica</H2>
@@ -195,13 +187,7 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
             dispositivos.
           </P>
           <P>
-            Y las consultas no esperan a que la clínica abra: también llegan fuera del
-            horario habitual de atención. Si nadie puede responder en ese momento, esos mensajes se quedan
-            en espera hasta el día siguiente — y para entonces, una parte de esos pacientes
-            ya ha escrito a otra clínica.
-          </P>
-          <P>
-            Lo que más debería preocupar es la velocidad: quien escribe a una clínica puede
+            Lo que más pesa es la velocidad: quien escribe a una clínica puede
             estar escribiendo también a otras, y la que contesta antes tiene ventaja. Por muy bien
             organizado que esté tu equipo, es prácticamente imposible contestar al momento
             las 24 horas del día con una sola persona pendiente del
@@ -228,10 +214,8 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
             citas y avisar a tu equipo solo cuando la conversación realmente lo requiere.
           </P>
           <P>
-            El objetivo no es que el paciente hable con un robot, sino que reciba una
-            respuesta inmediata las 24 horas del día — y que, cuando llega el momento de
-            agendar o resolver algo más complejo, todo esté ya listo para que tu equipo
-            continúe sin fricción.
+            Así el paciente recibe respuesta inmediata a cualquier hora y, cuando toca agendar
+            o resolver algo más complejo, tu equipo lo encuentra todo listo para continuar.
           </P>
 
           <H2>WhatsApp Business API vs WhatsApp Business app</H2>
@@ -242,8 +226,7 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
             mensajes manejable.
           </P>
           <P>
-            La API de WhatsApp Business es distinta: no tiene una interfaz propia, sino que
-            permite conectar WhatsApp con otros sistemas — un CRM, un calendario,{" "}
+            La API de WhatsApp Business no tiene interfaz propia: permite conectar WhatsApp con otros sistemas — un CRM, un calendario,{" "}
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               un agente con inteligencia artificial
             </InternalLink>
@@ -252,14 +235,12 @@ export default function WhatsAppBusinessClinicasEsteticasPage() {
             depender de un único móvil.
           </P>
           <P>
-            La pregunta no es cuál es «mejor» en abstracto, sino cuál corresponde al
-            momento de tu clínica. Si te identificas con las limitaciones del apartado
+            Cuál te conviene depende del momento de tu clínica. Si te identificas con las limitaciones del apartado
             anterior, la API — combinada con un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp con IA
             </InternalLink>{" "}
-            — es el siguiente paso natural para dejar de perder pacientes por no llegar a
-            tiempo a cada conversación.
+            — es el siguiente paso natural.
           </P>
         </article>
 

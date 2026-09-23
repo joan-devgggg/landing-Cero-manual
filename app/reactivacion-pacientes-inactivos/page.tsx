@@ -74,7 +74,7 @@ export default function ReactivacionPage() {
       <Navbar />
       <main>
         <ServiceHero
-          label="Para clínicas con una base de datos que no trabaja para ellas"
+          label="Reactivación de clientes inactivos"
           headlineLines={["Recupera clientes que llevan meses sin volver,"]}
           accent="en automático"
           subheadline="Para clínicas con cientos de clientes que un día dejaron de venir — y a los que nadie ha vuelto a escribir desde entonces. Esa base de datos tiene ingresos esperando dentro."
@@ -92,11 +92,11 @@ export default function ReactivacionPage() {
           ]}
           closing={
             <>
-              No te falta base de clientes.{" "}
+              La base de clientes ya la tienes.{" "}
               <strong style={{ color: "#1A1A1A" }}>
-                Te falta un sistema que la haga trabajar
+                Falta un sistema que la haga trabajar
               </strong>{" "}
-              — sin que nadie tenga que acordarse de revisarla cada semana.
+              sin que nadie tenga que revisarla cada semana.
             </>
           }
         />
@@ -132,9 +132,8 @@ export default function ReactivacionPage() {
           ]}
           closing={
             <>
-              Sin campañas masivas. Sin mensajes genéricos a toda la lista.{" "}
               <strong style={{ color: "#1A1A1A" }}>
-                Solo el contacto adecuado, en el momento adecuado, con la persona adecuada.
+                Nada de campañas masivas: cada mensaje va a una persona concreta, cuando le toca.
               </strong>
             </>
           }
@@ -142,7 +141,6 @@ export default function ReactivacionPage() {
 
         <ServiceBenefits
           title="Lo que recuperas"
-          titleAccent="sin mover un dedo"
           benefits={[
             {
               icon: "TrendingUp",

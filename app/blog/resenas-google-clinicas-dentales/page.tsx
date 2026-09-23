@@ -13,7 +13,9 @@ const PATH = "/blog/resenas-google-clinicas-dentales"
 const DATES = articleDates("resenas-google-clinicas-dentales")
 const TITLE = "Reseñas de Google para clínicas dentales | Cero Manual"
 const DESCRIPTION =
-  "Las reseñas de Google pesan cuando un paciente elige clínica dental. Te explicamos cómo conseguirlas en automático después de cada cita. Automatízalo hoy."
+  "Cómo conseguir más reseñas en Google para tu clínica dental: el momento de pedirlas, cómo automatizarlo y cómo responder a las negativas."
+const ARTICLE_DESCRIPTION =
+  "Cómo conseguir más reseñas de Google en una clínica dental: por qué los pacientes no las dejan, en qué momento pedirlas, cómo automatizarlo y cómo responder a las negativas."
 const HEADLINE =
   "Cómo conseguir más reseñas en Google para tu clínica dental (y que los nuevos pacientes te elijan)"
 
@@ -40,7 +42,7 @@ const faqs = [
   },
   {
     q: "¿Por qué mis pacientes no dejan reseñas aunque salgan contentos de la consulta?",
-    a: "Casi nunca es porque no quieran. Lo habitual es que, simplemente, nadie se lo pide en el momento adecuado, o se les pide de una forma que requiere demasiados pasos —buscar la clínica en Google, encontrar el botón de reseñas, escribir el texto—. Un paciente satisfecho tiene buena intención pero poca prioridad para hacerlo por iniciativa propia; si se le facilita el proceso en la hora siguiente a la cita, la probabilidad de que deje la reseña aumenta mucho.",
+    a: "Lo habitual es que nadie se lo pida en el momento adecuado. Otras veces se les pide de una forma que requiere demasiados pasos —buscar la clínica en Google, encontrar el botón de reseñas, escribir el texto—. Un paciente satisfecho tiene buena intención pero poca prioridad para hacerlo por iniciativa propia; si se le facilita el proceso en la hora siguiente a la cita, la probabilidad de que deje la reseña aumenta mucho.",
   },
   {
     q: "¿Cuál es el mejor momento para pedir una reseña tras una cita dental?",
@@ -48,7 +50,7 @@ const faqs = [
   },
   {
     q: "¿Qué debo hacer si recibo una reseña negativa?",
-    a: "Lo primero es responder siempre, de forma profesional y sin entrar en discusión pública sobre detalles clínicos. Agradecer el feedback, mostrar disposición a solucionar el problema y ofrecer un canal directo (teléfono o WhatsApp) para resolverlo fuera de la reseña suele ser suficiente. Una reseña negativa bien gestionada no solo no daña la reputación, sino que a menudo genera confianza en quienes la leen, porque demuestra que la clínica responde y se preocupa.",
+    a: "Lo primero es responder siempre, de forma profesional y sin entrar en discusión pública sobre detalles clínicos. Agradecer el feedback, mostrar disposición a solucionar el problema y ofrecer un canal directo (teléfono o WhatsApp) para resolverlo fuera de la reseña suele ser suficiente. Una reseña negativa bien gestionada puede incluso generar confianza en quienes la leen, porque demuestra que la clínica responde y se preocupa.",
   },
 ]
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,17 +121,17 @@ export default function ResenasGoogleClinicasDentalesArticlePage() {
 
           {/* Intro */}
           <P>
-            Cuando alguien busca un dentista cerca de casa, lo primero que mira no es la web de
-            la clínica ni su catálogo de tratamientos: son las reseñas de Google. El número de
-            opiniones y la valoración media son, para muchos pacientes nuevos, el factor que
-            decide si entran a ver más información o si pasan directamente a la siguiente
-            clínica de la lista.
+            Una clínica dental consigue más reseñas en Google cuando se las pide a todos sus
+            pacientes, cada vez, con un mensaje de WhatsApp que llega entre 30 y 60 minutos
+            después de la cita y lleva el enlace directo a la ficha. El paciente la deja
+            mientras recuerda la visita, y quien compara clínicas en Google ve opiniones
+            recientes.
           </P>
           <P>
-            En este artículo vas a aprender por qué las reseñas de Google son tan importantes
-            para una clínica dental, por qué tus pacientes contentos no las dejan aunque
-            quisieran, cuál es el momento perfecto para pedirlas, cómo automatizar esa petición
-            tras cada cita, y qué hacer cuando llega una reseña negativa.
+            Cuando alguien busca un dentista cerca de casa, lo primero que mira son las reseñas
+            de Google. El número de opiniones y la valoración media deciden, para muchos
+            pacientes nuevos, si entran a ver más información o pasan a la siguiente clínica de
+            la lista.
           </P>
 
           <H2>Por qué las reseñas de Google son tan importantes para una clínica dental</H2>
@@ -140,14 +142,14 @@ export default function ResenasGoogleClinicasDentalesArticlePage() {
             decisión.
           </P>
           <P>
-            Además, el número y la frecuencia de las reseñas también afectan a la visibilidad de
+            El número y la frecuencia de las reseñas también afectan a la visibilidad de
             la clínica en el propio Google Maps y en las búsquedas locales. Una clínica con
             reseñas recientes y constantes suele aparecer mejor posicionada que una con pocas
             opiniones o con las últimas reseñas de hace años, incluso si ambas tienen una nota
             media similar.
           </P>
           <P>
-            En resumen: las reseñas no son solo un "extra" de reputación, son uno de los{" "}
+            Por eso las reseñas son uno de los{" "}
             <InternalLink href="/blog/marketing-clinica-dental">
               canales de captación de pacientes nuevos
             </InternalLink>{" "}
@@ -157,21 +159,18 @@ export default function ResenasGoogleClinicasDentalesArticlePage() {
 
           <H2>Por qué tus pacientes no dejan reseñas aunque estén contentos</H2>
           <P>
-            La mayoría de las clínicas dentales tienen un alto porcentaje de pacientes
-            satisfechos, pero eso casi nunca se refleja en el número de reseñas en Google. La
-            razón no es la falta de satisfacción, sino la falta de fricción mínima: para dejar
-            una reseña, el paciente tiene que buscar la clínica en Google, encontrar el sitio
-            correcto, localizar el botón de reseñas y escribir un texto.
+            Que los pacientes salgan contentos casi nunca se refleja en el número de reseñas en
+            Google, porque dejar una tiene su trabajo: el paciente tiene que buscar la clínica
+            en Google, encontrar el sitio correcto, localizar el botón de reseñas y escribir un
+            texto.
           </P>
           <P>
-            Son varios pasos que, por sí solos, no parecen mucho, pero que en la práctica hacen
-            que la mayoría de pacientes contentos simplemente no lleguen a completarlos, salvo que
-            alguien se los facilite en el momento justo.
+            Por separado no parecen mucho, pero en la práctica bastan para que muchos pacientes
+            no lleguen a completarlos si nadie se lo facilita en el momento justo.
           </P>
           <P>
-            A esto se suma que, salvo que algo haya ido especialmente mal, dejar una reseña no es
-            algo que la mayoría de personas tengan en su lista de tareas pendientes. Es una acción
-            que requiere un pequeño empujón externo para producirse.
+            A esto se suma que, salvo que algo haya ido especialmente mal, dejar una reseña no
+            está en la lista de tareas pendientes de casi nadie.
           </P>
 
           <H2>El momento perfecto para pedir una reseña en una clínica dental</H2>
@@ -185,12 +184,7 @@ export default function ResenasGoogleClinicasDentalesArticlePage() {
             Pedirlo en el mismo momento de salir de la consulta puede resultar precipitado o
             incómodo, especialmente si el paciente todavía está bajo el efecto de la anestesia o
             con alguna molestia puntual. Pero esperar varios días tampoco funciona: el recuerdo se
-            diluye, la petición llega entre decenas de notificaciones de otro tipo, y la tasa de
-            respuesta cae drásticamente.
-          </P>
-          <P>
-            Esa ventana de 30 a 60 minutos es, por tanto, el punto óptimo entre "todavía lo
-            recuerda bien" y "ya no está pendiente de la clínica".
+            diluye y la petición llega entre decenas de notificaciones de otro tipo.
           </P>
 
           <H2>Cómo automatizar la petición de reseñas tras cada cita</H2>
@@ -216,24 +210,21 @@ export default function ResenasGoogleClinicasDentalesArticlePage() {
           <H2>Qué hacer con las reseñas negativas</H2>
           <P>
             Cuantas más reseñas reciba una clínica, antes o después aparecerá alguna negativa. Lo
-            importante no es evitarlo a toda costa, sino saber gestionarlo: responder siempre, de
+            que toca es gestionarla bien: responder siempre, de
             forma profesional, agradeciendo el comentario y mostrando disposición a solucionar lo
             que haya ocurrido, sin entrar en detalles clínicos en una respuesta pública.
           </P>
           <P>
             Ofrecer un canal directo —un teléfono o un WhatsApp— para resolver el problema fuera
-            de la reseña suele ser la mejor opción. Muchos pacientes que leen reseñas no esperan
-            que una clínica tenga un 100% de opiniones perfectas; lo que valoran es ver que, ante
-            un problema, la clínica responde y se hace cargo.
+            de la reseña suele ser la mejor opción. Quien lee reseñas valora ver que, ante un
+            problema, la clínica responde y se hace cargo.
           </P>
           <P>
-            Para profundizar en cómo construir un flujo completo de petición y gestión de
-            reseñas, incluyendo ejemplos de mensajes y plantillas de respuesta, puedes consultar
-            el artículo sobre{" "}
+            El flujo completo de petición y gestión de reseñas está en el artículo sobre{" "}
             <InternalLink href="/blog/como-conseguir-resenas-google-clinica-estetica">
               cómo conseguir reseñas en Google para una clínica estética
             </InternalLink>
-            , cuyo proceso es directamente aplicable a una clínica dental. Automatizar esa{" "}
+            , y se aplica igual a una clínica dental. Automatizar esa{" "}
             <InternalLink href="/blog/como-conseguir-resenas-google-clinica-estetica">
               petición de reseñas
             </InternalLink>{" "}

@@ -13,7 +13,9 @@ const PATH = "/blog/software-gestion-citas-clinica-estetica"
 const DATES = articleDates("software-gestion-citas-clinica-estetica")
 const TITLE = "Software de citas para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "¿Buscas un software de gestión de citas para tu clínica estética? Te explicamos qué necesitas, qué opciones existen y cuándo automatizar con IA."
+  "Qué necesita un software de gestión de citas para tu clínica estética, qué tipos hay y cuándo complementarlo con IA. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Qué es un software de gestión de citas para clínicas estéticas, qué funciones debe tener, qué tipos hay, sus límites y cuándo complementarlo con IA."
 const HEADLINE =
   "Software de gestión de citas para clínicas estéticas: qué necesitas realmente"
 
@@ -36,11 +38,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Qué diferencia hay entre un software de citas y un CRM?",
-    a: "Un software de citas se centra en el calendario: quién viene, cuándo y con qué profesional. El software de gestión suma la ficha del paciente, su historial y la facturación. Un CRM se ocupa de la relación: captar y cualificar leads, hacer seguimiento y fidelizar. Muchos programas del sector reúnen varias de estas piezas en una sola herramienta. Muchas clínicas empiezan solo con citas y añaden el CRM cuando necesitan hacer seguimiento comercial, no solo organizar la agenda.",
+    a: "Un software de citas se centra en el calendario: quién viene, cuándo y con qué profesional. El software de gestión suma la ficha del paciente, su historial y la facturación. Un CRM se ocupa de la relación: captar y cualificar leads, hacer seguimiento y fidelizar. Muchos programas del sector reúnen varias de estas piezas en una sola herramienta. Muchas clínicas empiezan solo con citas y añaden el CRM cuando necesitan hacer seguimiento comercial además de organizar la agenda.",
   },
   {
     q: "¿Cuánto cuesta un software de gestión de citas?",
-    a: "Los precios varían según el programa, el plan y el número de profesionales o centros: unos cobran por usuario y otros por centro, así que compara siempre la tarifa vigente en la web de cada proveedor. Lo relevante no es el precio en sí, sino lo que evita perder: si reduce no-shows o huecos en el calendario, calcula cuántas citas recuperadas al mes necesitas para cubrir la cuota.",
+    a: "Los precios varían según el programa, el plan y el número de profesionales o centros: unos cobran por usuario y otros por centro, así que compara siempre la tarifa vigente en la web de cada proveedor. Compáralo con lo que evita perder: si reduce no-shows o huecos en el calendario, calcula cuántas citas recuperadas al mes necesitas para cubrir la cuota.",
   },
   {
     q: "¿Puedo usar Google Calendar en vez de un software específico?",
@@ -48,7 +50,7 @@ const faqs = [
   },
   {
     q: "¿El software de citas ya evita los no-shows por sí solo?",
-    a: "Ayuda, pero no los elimina. Un buen software envía recordatorios y permite confirmar o cancelar con un clic, lo que reduce las ausencias. Pero si el paciente no contesta o tiene una duda de última hora fuera de horario, alguien tiene que mantener esa conversación: algunos programas lo cubren en parte, y si el tuyo no, ahí es donde entra un agente con IA que la atienda por WhatsApp.",
+    a: "Ayuda, pero no los elimina. Un buen software envía recordatorios y permite confirmar o cancelar con un clic, lo que reduce las ausencias. Pero si el paciente no contesta o tiene una duda de última hora fuera de horario, alguien tiene que mantener esa conversación: algunos programas lo cubren en parte, y si el tuyo no, un agente con IA puede atenderla por WhatsApp.",
   },
 ]
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,21 +121,18 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
 
           {/* Intro */}
           <P>
-            Si en tu clínica estética las citas se gestionan a mano — un cuaderno, una hoja de
-            cálculo o el calendario de Google compartido entre varias personas — seguramente ya
-            conoces el problema: huecos que aparecen sin explicación, confirmaciones que nadie
-            hizo y pacientes que simplemente no aparecen el día de la cita.
+            Un software de gestión de citas para tu clínica estética necesita, como mínimo, un
+            calendario para varios profesionales y salas, confirmación y recordatorio
+            automáticos, reserva online y gestión de no-shows y lista de espera. Lo que no
+            cubra, sobre todo las consultas por WhatsApp fuera de horario, se puede
+            complementar con un agente de IA.
           </P>
           <P>
-            Un software de gestión de citas no es un lujo para clínicas grandes: es la base que
-            evita que la agenda dependa de la memoria de una persona. El problema es que hay
-            muchas opciones y no todas resuelven lo mismo.
-          </P>
-          <P>
-            En este artículo vas a ver qué es exactamente un software de gestión de citas, qué
-            funcionalidades no pueden faltar, qué tipos vas a encontrar en España, dónde se queda
-            corto el software tradicional y cuándo tiene sentido sumar
-            automatización con IA.
+            Si hoy las citas se gestionan a mano — un cuaderno, una hoja de cálculo o el
+            calendario de Google compartido entre varias personas — seguramente ya conoces el
+            problema: huecos que aparecen sin explicación, confirmaciones que nadie hizo y
+            pacientes que no aparecen el día de la cita. Un software de citas evita que la
+            agenda dependa de la memoria de una persona.
           </P>
 
           <H2>Qué es un software de gestión de citas para clínicas estéticas</H2>
@@ -144,7 +143,7 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
             todo el equipo puede consultar y actualizar en tiempo real.
           </P>
           <P>
-            No es lo mismo que un calendario genérico. Un software pensado para clínicas añade
+            Frente a un calendario genérico, un software pensado para clínicas añade
             cosas específicas del sector: duración distinta según el tratamiento, bloqueo de
             salas o aparatos concretos, y visibilidad de la ocupación de cada profesional a la
             vez, algo que en una agenda de uso general tienes que resolver a mano.
@@ -157,7 +156,7 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
             clínica con más de una persona atendiendo acaba con solapamientos y confusión.
           </P>
           <P>
-            Lo segundo, y quizás lo más rentable, es{" "}
+            Lo segundo es{" "}
             <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
               la confirmación y el recordatorio automáticos
             </InternalLink>
@@ -187,9 +186,9 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
             por su cuenta.
           </P>
           <P>
-            Más que fijarte en un nombre concreto, lo útil es identificar qué necesitas: si tu
+            Elige según lo que necesitas: si tu
             prioridad es la ficha clínica y el seguimiento, un software específico de estética
-            encaja mejor; si lo que buscas es simplemente ordenar la agenda, una herramienta de
+            encaja mejor; si lo que buscas es ordenar la agenda, una herramienta de
             reserva más sencilla puede ser suficiente. Si quieres profundizar en qué criterios
             usar para elegir bien, tienes una guía completa en{" "}
             <InternalLink href="/blog/mejor-software-gestion-clinica-estetica">
@@ -201,9 +200,8 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
           <H2>Limitaciones del software de citas tradicional</H2>
           <P>
             Un software de citas se centra en organizar lo que ya está agendado; lo que llega antes
-            de convertirse en cita depende de lo que incluya cada programa. Y ahí está el reto,
-            porque una parte de las consultas de una clínica llega fuera de horario — por la
-            noche, en fin de semana o con la agenda ya llena.
+            de convertirse en cita depende de lo que incluya cada programa. Y una parte de las
+            consultas de una clínica llega fuera de horario, por la noche o en fin de semana.
           </P>
           <P>
             WhatsApp es hoy el canal donde los pacientes preguntan primero por precios,
@@ -215,10 +213,8 @@ export default function SoftwareGestionCitasClinicaEsteticaPage() {
 
           <H2>Cuándo complementar tu software de citas con IA</H2>
           <P>
-            El momento de dar el siguiente paso llega cuando el cuello de botella ya no es la
-            agenda, sino la falta de tiempo del equipo para responder todo lo que entra. Ahí es
-            donde WhatsApp se vuelve clave: es el canal por el que muchos pacientes ya escriben a
-            la clínica, y donde esperan que alguien les conteste.
+            El momento de dar el siguiente paso llega cuando el cuello de botella es la falta de
+            tiempo del equipo para responder todo lo que entra por WhatsApp.
           </P>
           <P>
             Un agente con IA puede atender esas conversaciones fuera de horario, resolver dudas

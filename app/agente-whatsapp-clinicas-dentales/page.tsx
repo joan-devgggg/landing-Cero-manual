@@ -74,7 +74,7 @@ export default function AgenteWhatsAppDentalPage() {
       <Navbar />
       <main>
         <ServiceHero
-          label="Para clínicas dentales con presupuestos abiertos y sillones vacíos"
+          label="Agente de WhatsApp para clínicas dentales"
           headlineLines={[
             "Agente de WhatsApp con IA para clínicas dentales que no deja un presupuesto",
           ]}
@@ -89,19 +89,19 @@ export default function AgenteWhatsAppDentalPage() {
           title="Tu agenda no está vacía por falta de pacientes,"
           titleAccent="está vacía por falta de seguimiento"
           painPoints={[
-            "El presupuesto de implantes u ortodoncia sale de la consulta y nadie vuelve a tocarlo. No es que el paciente haya dicho que no: es que dijo «me lo pienso» y ahí se quedó, sin una segunda conversación que lo desbloquee.",
+            "El presupuesto de implantes u ortodoncia sale de la consulta y nadie vuelve a tocarlo. El paciente no ha dicho que no: dijo «me lo pienso» y ahí se quedó, sin una segunda conversación que lo desbloquee.",
             "Las revisiones y las higienes anuales se olvidan. El paciente no vuelve porque nadie le avisa, y cuando reaparece es con dolor y con un tratamiento mucho más caro que el que habría evitado.",
             "La urgencia llega un viernes a las once de la noche. Nadie contesta hasta el lunes, y para entonces esa persona ya ha encontrado una clínica que sí le abrió el chat.",
-            "Un no-show en dental no es solo una hora perdida: es el gabinete, el auxiliar y el tiempo del odontólogo reservados para un sillón que se queda vacío, y con muy poco margen para llenarlo a última hora.",
+            "Un no-show en dental cuesta el gabinete, el auxiliar y el tiempo del odontólogo reservados para un sillón que se queda vacío, y con muy poco margen para llenarlo a última hora.",
             "La primera visita de valoración entra en la agenda sin filtrar. Ocupa el hueco de un tratamiento real y muchas veces se resuelve en cinco minutos porque el caso ni siquiera encajaba.",
           ]}
           closing={
             <>
-              Ninguno de estos huecos se arregla contratando a más gente en recepción.{" "}
+              Estos huecos no se arreglan contratando a más gente en recepción.{" "}
               <strong style={{ color: "#1A1A1A" }}>
-                Se arreglan cuando alguien hace el seguimiento que nadie tiene tiempo de hacer
-              </strong>{" "}
-              — todos los días, con todos los pacientes, sin que se le escape ninguno.
+                Se arreglan con el seguimiento que nadie tiene tiempo de hacer
+              </strong>
+              , todos los días y con cada paciente.
             </>
           }
         />
@@ -137,17 +137,15 @@ export default function AgenteWhatsAppDentalPage() {
           ]}
           closing={
             <>
-              Ni listados de pendientes que nadie repasa. Ni pacientes que se pierden entre una visita y la siguiente.{" "}
               <strong style={{ color: "#1A1A1A" }}>
-                Ni presupuestos que caducan en un cajón mientras el sillón está libre.
+                El seguimiento que hoy depende de listados a mano pasa a hacerse solo.
               </strong>
             </>
           }
         />
 
         <ServiceBenefits
-          title="Lo que deja de escaparse"
-          titleAccent="en tu clínica dental"
+          title="Lo que deja de escaparse en tu clínica dental"
           benefits={[
             {
               icon: "TrendingUp",

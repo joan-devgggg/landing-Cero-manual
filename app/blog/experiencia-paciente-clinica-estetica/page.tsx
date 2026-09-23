@@ -13,7 +13,9 @@ const PATH = "/blog/experiencia-paciente-clinica-estetica"
 const DATES = articleDates("experiencia-paciente-clinica-estetica")
 const TITLE = "Experiencia del paciente en clínica estética | Cero Manual"
 const DESCRIPTION =
-  "La experiencia del paciente decide si vuelve o no. Te explicamos cómo mejorarla en cada punto de contacto sin cargar de trabajo al equipo. Descubre cómo."
+  "Cómo mejorar la experiencia del paciente en tu clínica estética antes, durante y después de la cita, sin cargar de trabajo al equipo."
+const ARTICLE_DESCRIPTION =
+  "Cómo mejorar la experiencia del paciente en una clínica estética en cada fase —antes, durante y después de la cita— y qué parte se puede automatizar."
 const HEADLINE = "Cómo mejorar la experiencia del paciente en tu clínica estética (y que vuelvan solos)"
 
 export const metadata: Metadata = {
@@ -39,15 +41,15 @@ const faqs = [
   },
   {
     q: "¿Cuál es el momento que más influye en si un paciente vuelve?",
-    a: "Sorprendentemente, no suele ser el tratamiento en sí — sino lo que pasa antes y después. Una primera respuesta lenta o confusa puede hacer que alguien ni siquiera llegue a la cita, y un seguimiento ausente después de la visita hace que la relación se enfríe rápido. Los momentos de «entrada» y «salida» son los que más se descuidan y los que más impacto tienen.",
+    a: "Lo que pasa antes y después del tratamiento. Una primera respuesta lenta o confusa puede hacer que alguien ni siquiera llegue a la cita, y un seguimiento ausente después de la visita hace que la relación se enfríe rápido. Los momentos de «entrada» y «salida» son los que más se descuidan y los que más impacto tienen.",
   },
   {
     q: "¿Cómo se automatiza la experiencia del paciente sin que suene artificial?",
-    a: "La clave está en automatizar lo repetitivo — confirmaciones, recordatorios, mensajes de seguimiento — pero mantener el tono cercano y personalizado, con el nombre del paciente y referencias a su tratamiento concreto. Bien hecho, el mensaje no suena a plantilla: el paciente nota que la clínica se ha acordado de él en el momento adecuado. Si en esa conversación interviene un asistente con IA, se identifica como tal, como exige el Reglamento europeo de IA.",
+    a: "Se automatiza lo repetitivo — confirmaciones, recordatorios, mensajes de seguimiento — manteniendo un tono cercano y personalizado, con el nombre del paciente y referencias a su tratamiento concreto. Bien hecho, el paciente nota que la clínica se ha acordado de él en el momento adecuado. Si en esa conversación interviene un asistente con IA, se identifica como tal, como exige el Reglamento europeo de IA.",
   },
   {
     q: "¿Merece la pena invertir en esto si mi clínica ya tiene buena reputación?",
-    a: "Sí, precisamente porque cuesta mucho menos cuidar a un paciente que ya confía en ti que conseguir uno nuevo. Un cliente recurrente vuelve muchas veces a lo largo de su relación con el centro. Mejorar la experiencia no es un gesto bonito — es la forma más rentable de proteger esos ingresos.",
+    a: "Sí, precisamente porque cuesta mucho menos cuidar a un paciente que ya confía en ti que conseguir uno nuevo. Un cliente recurrente vuelve muchas veces a lo largo de su relación con el centro. Mejorar la experiencia es la forma de proteger esos ingresos.",
   },
   {
     q: "¿Cómo mejorar la atención al cliente sin contratar más personal?",
@@ -63,7 +65,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -126,25 +128,17 @@ export default function ExperienciaPacienteArticlePage() {
 
           {/* Intro */}
           <P>
-            Cuando se piensa en mejorar una clínica estética, lo primero que suele venir a
-            la cabeza es el tratamiento: la técnica, los resultados, la formación del
-            equipo médico. Y es importante, sin duda. Pero la experiencia del paciente
-            empieza mucho antes de que se siente en la camilla — empieza en el primer
-            mensaje que escribe preguntando por precios, y no termina cuando sale por la
-            puerta.
+            La experiencia del paciente en una clínica estética se mejora cuidando lo que rodea
+            al tratamiento: una respuesta rápida y clara al primer mensaje, una cita en la que
+            se le recibe por su nombre y sabe cuánto va a esperar, y un seguimiento después de
+            la visita. Lo repetitivo de esos momentos, como confirmaciones, recordatorios y
+            mensajes de seguimiento, se puede automatizar por WhatsApp, y el equipo se queda
+            con lo que requiere trato humano.
           </P>
           <P>
             Muchas clínicas ofrecen un servicio excelente puertas adentro y, sin embargo,
-            pierden pacientes por lo que pasa fuera de esa sala: una respuesta tardía, una
-            espera incómoda, un silencio total después de la visita. Son detalles que no
-            afectan al resultado clínico, pero que afectan — y mucho — a si esa persona
-            vuelve o no.
-          </P>
-          <P>
-            En este artículo vamos a repasar los momentos clave de la experiencia del
-            paciente, qué pasa antes de la cita, durante y después, y cómo se puede mejorar
-            cada uno de ellos sin añadir más carga de trabajo al equipo — automatizando lo
-            que se puede automatizar y dejando el toque humano donde realmente importa.
+            pierden pacientes por lo que pasa fuera de esa sala: una respuesta tardía o un
+            silencio total después de la visita.
           </P>
 
           <H2>Por qué la atención al cliente es tu mayor ventaja competitiva</H2>
@@ -152,53 +146,45 @@ export default function ExperienciaPacienteArticlePage() {
             En el sector estético, la mayoría de clínicas ofrecen tratamientos muy
             parecidos, con tecnología y resultados comparables. A ojos del paciente, lo que
             de verdad diferencia a una clínica de otra es cómo le atienden: si le responden
-            rápido, si le resuelven las dudas sin tener que insistir, si nota que alguien se
-            preocupa por él.
+            rápido y si nota que alguien se preocupa por él.
           </P>
           <P>
-            Y cuando esa atención falla, el paciente no suele quejarse. Simplemente escribe
-            a otra clínica y no vuelve a aparecer. Por eso la atención al cliente no es un
-            «extra» que se cuida cuando hay tiempo: es la base de la que depende todo lo
-            demás, empezando por la experiencia completa que vamos a ver a continuación.
+            Cuando esa atención falla, el paciente no suele quejarse: escribe a otra clínica
+            y no vuelve a aparecer.
           </P>
 
           <H2>Los momentos clave en la experiencia del paciente</H2>
           <P>
-            La experiencia de un paciente no es un único momento, sino una secuencia: el
+            La experiencia de un paciente es una secuencia: el
             primer contacto, la espera hasta la cita, la cita en sí, y todo lo que ocurre
             después. Cada uno de estos tramos deja una impresión, y todas se suman para
-            formar la opinión final que esa persona tiene de tu clínica — la que decide si
-            vuelve, si recomienda, si te{" "}
+            formar la opinión final que esa persona tiene de tu clínica, la que decide si
+            vuelve o si te{" "}
             <InternalLink href="/blog/como-conseguir-resenas-google-clinica-estetica">
               deja una reseña en Google
-            </InternalLink>{" "}
-            o si simplemente no vuelve a pensar en ti.
+            </InternalLink>
+            .
           </P>
           <P>
-            Lo interesante es que los tramos que menos atención reciben suelen ser los que
-            más pesan: el «antes» y el «después». El tratamiento en sí está, casi siempre,
-            muy cuidado. Lo que rodea al tratamiento, no tanto.
+            Los tramos que menos atención reciben suelen ser el «antes» y el «después»; el
+            tratamiento en sí suele estar muy cuidado.
           </P>
 
           <H2>Antes de la cita: la primera impresión</H2>
           <P>
-            La primera impresión no se forma en la sala de espera — se forma en el primer
-            mensaje. Cómo de rápido se responde, qué tono se usa, si la información es clara
-            o genera más dudas de las que resuelve. Todo eso ocurre antes de que la persona
+            La primera impresión se forma en el primer mensaje: cómo de rápido se responde y
+            si la información es clara o genera más dudas de las que resuelve. Todo eso ocurre antes de que la persona
             haya pisado la clínica, y ya está decidiendo si esta es la opción adecuada.
           </P>
           <P>
-            Aquí hay un detalle que conviene tener en cuenta: los pacientes potenciales no
-            escriben solo en horario de atención. Si las consultas que llegan fuera de él se
+            Los pacientes potenciales también escriben fuera del horario de atención. Si las consultas que llegan fuera de él se
             quedan sin respuesta hasta el día siguiente, la primera impresión que se lleva
-            esa persona es la de una clínica que tarda en contestar — y eso, antes incluso
-            de haber puesto un pie dentro, ya genera dudas.
+            esa persona es la de una clínica que tarda en contestar.
           </P>
           <P>
             La reserva también cuenta. Si para pedir cita hay que llamar en horario de
             oficina o esperar a que alguien lea el mensaje, muchos pacientes abandonan por
-            el camino. Y la rapidez pesa más de lo que parece: un paciente potencial que no
-            recibe respuesta pronto puede reservar en otra clínica mientras espera. Por eso cada vez más clínicas{" "}
+            el camino. Por eso cada vez más clínicas{" "}
             <InternalLink href="/blog/clinica-estetica-por-whatsapp">
               atienden a sus pacientes por WhatsApp
             </InternalLink>{" "}
@@ -211,10 +197,8 @@ export default function ExperienciaPacienteArticlePage() {
 
           <H2>Durante la cita: el momento que más recuerdan</H2>
           <P>
-            Una vez en la clínica, lo que más se recuerda no suele ser un detalle técnico,
-            sino cómo se sintió la persona: si la recibieron por su nombre, si supieron a
-            qué hora le tocaba sin tener que preguntar, si alguien le explicó con calma lo
-            que iba a pasar. Son detalles pequeños, pero son los que se quedan.
+            Una vez en la clínica, lo que más se recuerda es cómo se sintió la persona: si la
+            recibieron por su nombre y si alguien le explicó con calma lo que iba a pasar.
           </P>
           <P>
             La espera también cuenta. Una sala de espera ordenada, con información clara
@@ -225,10 +209,9 @@ export default function ExperienciaPacienteArticlePage() {
 
           <H2>Después de la cita: el seguimiento que nadie hace</H2>
           <P>
-            Aquí está, probablemente, la mayor oportunidad perdida en la mayoría de
-            clínicas. Después de la cita, el contacto simplemente se corta. Nadie pregunta
-            cómo ha ido, nadie recuerda la siguiente revisión, nadie aprovecha ese momento —
-            cuando el paciente todavía tiene la experiencia fresca — para reforzar la relación.
+            En muchas clínicas, después de la cita el contacto simplemente se corta. Nadie
+            pregunta cómo ha ido ni recuerda la siguiente revisión, justo cuando el paciente
+            todavía tiene la experiencia fresca.
           </P>
           <P>
             Y ese seguimiento tiene mucho valor, porque{" "}
@@ -247,7 +230,7 @@ export default function ExperienciaPacienteArticlePage() {
 
           <H2>Cómo automatizar la experiencia sin perder el toque humano</H2>
           <P>
-            La buena noticia es que gran parte de esto se puede automatizar sin que suene
+            Gran parte de esto se puede automatizar sin que suene
             a plantilla.{" "}
             <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
               Confirmaciones de cita, recordatorios

@@ -13,7 +13,9 @@ const PATH = "/blog/coste-real-no-shows-clinica-dental"
 const DATES = articleDates("coste-real-no-shows-clinica-dental")
 const TITLE = "Coste real de los no-shows en clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Los no-shows en clínicas dentales cuestan más de lo que parece. Te explicamos cómo calcular tu pérdida real y qué puedes hacer para reducirla."
+  "Cuánto te cuestan de verdad los no-shows en tu clínica dental y cómo calcularlo con tus propios números. Usa la calculadora gratuita."
+const ARTICLE_DESCRIPTION =
+  "Cómo calcular el coste real de los no-shows en una clínica dental con los datos propios de la clínica, qué costes se suman y cuáles no, y cómo reducirlos."
 const HEADLINE =
   "El coste real de los no-shows en tu clínica dental (y cómo calcularlo con tus propios números)"
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,24 +121,23 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
 
           {/* Intro */}
           <P>
-            Un no-show —un paciente que no acude a su cita y no avisa— se suele archivar
-            mentalmente como "mala suerte" o "cosas que pasan". El problema es que, cuando se
-            repiten varias veces a la semana, dejan de ser una anécdota y se convierten en un
-            agujero silencioso en la facturación que muchas clínicas dentales nunca llegan a
-            cuantificar.
+            El coste real de un no-show en una clínica dental es, en lo esencial, lo que
+            habrías facturado por esa cita, más el material o el trabajo de laboratorio que se
+            preparó solo para ella y ya no se recupera. Para calcular tu pérdida mensual,
+            multiplica citas al día × días laborables del mes × tu tasa de no-shows × tu precio
+            medio por cita.
           </P>
           <P>
-            En este artículo vas a aprender qué costes directos genera cada no-show, qué costes
-            indirectos no se ven a simple vista pero también duelen, cómo calcular tu pérdida
-            real con tus propios números, de qué depende que esa cifra sea mayor o menor, y qué
-            puedes hacer para reducirlo.
+            Un no-show —un paciente que no acude a su cita y no avisa— se suele archivar
+            mentalmente como "mala suerte". Cuando se repite varias veces a la semana, es un
+            agujero en la facturación que muchas clínicas dentales nunca llegan a cuantificar.
           </P>
 
           <H2>Qué costes directos genera un no-show en una clínica dental</H2>
           <P>
             El coste más evidente de un no-show es la facturación que se pierde por esa cita
             concreta: si un paciente no aparece a una revisión, una limpieza o un tratamiento de
-            mayor importe, ese ingreso simplemente no se produce.
+            mayor importe, ese ingreso no se produce.
           </P>
           <P>
             Detrás de ese ingreso hay costes que se pagan igual venga o no el paciente: el
@@ -146,11 +147,6 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
             puede "guardar" para otro momento. Lo que sí se suma es lo que se gastó solo para
             esa cita y no se recupera, como material desechable ya abierto o un trabajo de
             laboratorio encargado.
-          </P>
-          <P>
-            Estos costes directos tampoco son un caso aislado: se repiten semana tras semana, en
-            mayor o menor medida, en cualquier clínica que no tenga un sistema activo para
-            evitarlo.
           </P>
 
           <H2>Qué costes indirectos no se ven pero también duelen</H2>
@@ -172,10 +168,9 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
             muertos que afectan al resto del día.
           </P>
           <P>
-            Por último, está el coste reputacional indirecto: si la clínica tiene que cancelar o
-            retrasar citas de otros pacientes porque la agenda está "llena sobre el papel" pero en
-            la práctica hay huecos vacíos por no-shows, la percepción de organización de la
-            clínica se resiente.
+            Por último, está el paciente que se quedó fuera: a quien pidió cita y se le dijo que
+            no había hueco hasta dentro de unas semanas le da igual que luego la agenda tuviera
+            huecos por no-shows. Para él, la clínica estaba llena, y quizá buscó otra.
           </P>
 
           <H2>Cómo calcular tu pérdida real por no-shows</H2>
@@ -189,12 +184,10 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
             La fórmula es: <strong>número de no-shows al mes × precio medio de la cita = pérdida
             directa mensual</strong>. Si no llevas la cuenta de los no-shows, puedes estimarlos
             así: citas al día × días laborables del mes × tu tasa de no-shows. Ese número,
-            multiplicado por tu precio medio, es tu pérdida directa —sin contar todavía el coste
-            de oportunidad de no haber podido cubrir esos huecos con otros pacientes.
+            multiplicado por tu precio medio, es tu pérdida directa.
           </P>
           <P>
-            Este número es el que conviene tener siempre presente, porque es el que justifica
-            cualquier inversión en un sistema de recordatorios o confirmación automática: si esa
+            Este número es el que justifica cualquier inversión en un sistema de recordatorios o confirmación automática: si esa
             inversión cuesta una fracción de lo que se pierde cada mes, el retorno es prácticamente
             inmediato.
           </P>
@@ -212,8 +205,7 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
             proporcionalmente más cuando la agenda diaria tiene menos citas en total.
           </P>
           <P>
-            En cualquiera de los dos casos, el patrón es el mismo: el coste de los no-shows no es
-            un gasto fijo inevitable, sino una variable que depende directamente de si la clínica
+            En los dos casos, el coste de los no-shows depende directamente de si la clínica
             tiene o no un proceso activo para reducirlos.
           </P>
 
@@ -229,8 +221,7 @@ export default function CosteRealNoShowsClinicaDentalArticlePage() {
           </P>
           <P>
             Sobre la pérdida real que has calculado en el apartado anterior, cada no-show que se
-            evita es una cita que vuelve a facturarse, sin necesidad de captar un solo paciente
-            nuevo: simplemente aprovechando mejor la agenda que ya tienes.
+            evita es una cita que vuelve a facturarse, sin captar un solo paciente nuevo.
           </P>
           <P>
             Puedes ver con más detalle cómo se configura este tipo de sistema, qué mensajes

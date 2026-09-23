@@ -13,7 +13,9 @@ const PATH = "/blog/lista-espera-clinica-dental"
 const DATES = articleDates("lista-espera-clinica-dental")
 const TITLE = "Lista de espera para clínicas dentales | Cero Manual"
 const DESCRIPTION =
-  "Una lista de espera bien gestionada convierte cancelaciones en citas nuevas automáticamente. Te explicamos cómo crearla y gestionarla sin esfuerzo."
+  "Cómo crear una lista de espera en tu clínica dental que convierta cancelaciones en citas nuevas, y cómo avisar a los pacientes automáticamente."
+const ARTICLE_DESCRIPTION =
+  "Cómo crear y gestionar una lista de espera en una clínica dental: qué datos recoger, cómo priorizar a los pacientes y cómo avisarles cuando se libera un hueco."
 const HEADLINE =
   "Cómo crear una lista de espera efectiva en tu clínica dental y no perder ni una cita"
 
@@ -40,7 +42,7 @@ const faqs = [
   },
   {
     q: "¿Cómo aviso a un paciente sin que parezca spam?",
-    a: "La clave es que el mensaje suene a oportunidad, no a presión: «se ha liberado un hueco antes de lo previsto, ¿te interesa?». Si además puedes confirmarlo con una sola respuesta, el paciente lo percibe como un favor, no como una venta.",
+    a: "Haz que el mensaje suene a oportunidad: «se ha liberado un hueco antes de lo previsto, ¿te interesa?». Si además puede confirmarlo con una sola respuesta, el paciente lo percibe como un favor. Evita cualquier tono de venta o de presión.",
   },
   {
     q: "¿Una lista de espera funciona igual en clínicas pequeñas y grandes?",
@@ -48,7 +50,7 @@ const faqs = [
   },
   {
     q: "¿Qué pasa si nadie de la lista responde a tiempo?",
-    a: "Por eso conviene avisar a varios pacientes casi a la vez, no de uno en uno, y dejar claro que el hueco es para quien confirme primero. Así evitas que el espacio quede vacío mientras esperas la respuesta de una sola persona.",
+    a: "Para evitarlo, conviene avisar a varios pacientes casi a la vez y dejar claro que el hueco es para quien confirme primero. Así evitas que el espacio quede vacío mientras esperas la respuesta de una sola persona.",
   },
 ]
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
@@ -119,29 +121,26 @@ export default function ListaEsperaClinicaDentalPage() {
 
           {/* Intro */}
           <P>
-            Cada vez que un paciente cancela su cita, pasa lo mismo en la mayoría de
-            clínicas: el hueco se queda vacío hasta el día siguiente, o hasta que alguien lo
-            note. Pero esa cancelación no tiene por qué ser una pérdida — puede ser una
-            oportunidad para otro paciente que ya estaba esperando.
+            Para crear una lista de espera efectiva en tu clínica dental, apunta a los
+            pacientes que quieren adelantar su cita o esperan el primer hueco libre, con el
+            tipo de hueco que buscan, con cuánta antelación pueden acudir y un orden de
+            prioridad. Cuando alguien cancela, avisas por WhatsApp a varios candidatos a la
+            vez y el hueco es para quien confirma primero; si lo automatizas, pasa sin que
+            nadie del equipo tenga que estar pendiente.
           </P>
           <P>
-            Entre no-shows y cancelaciones, cualquier clínica dental ve cómo se le caen citas
-            cada semana. Sin un sistema que reaccione a tiempo, todos{" "}
+            Sin ese sistema, el hueco que deja una cancelación se queda vacío hasta el día
+            siguiente, o hasta que alguien lo note. Entre no-shows y cancelaciones, cualquier
+            clínica dental ve cómo se le caen citas cada semana, y{" "}
             <InternalLink href="/blog/coste-real-no-shows-clinica-dental">
               esos huecos se pierden uno a uno
             </InternalLink>
-            , semana tras semana.
-          </P>
-          <P>
-            En este artículo vas a ver qué es exactamente una lista de espera, cómo
-            organizarla, cómo comunicarte con los pacientes que están en ella y cómo
-            automatizar todo el proceso para que cada cancelación se convierta, casi
-            siempre, en una cita nueva.
+            .
           </P>
 
           <H2>Qué es una lista de espera y para qué sirve en una clínica dental</H2>
           <P>
-            Una lista de espera es, simplemente, un registro de pacientes que han mostrado
+            Una lista de espera es un registro de pacientes que han mostrado
             interés en conseguir una cita antes de la fecha que tienen asignada — o que
             todavía no tienen una cita asignada y están esperando el primer hueco
             disponible.
@@ -149,14 +148,13 @@ export default function ListaEsperaClinicaDentalPage() {
           <P>
             Su utilidad aparece en el momento exacto en que se libera un hueco: en lugar de
             que esa franja quede vacía hasta que alguien revise la agenda, ya tienes a quién
-            ofrecérsela. El hueco se ocupa en minutos, no en días.
+            ofrecérsela.
           </P>
           <P>
-            Y hay una fuente de pacientes para esta lista que muchas clínicas no
-            aprovechan: muchos mensajes llegan cuando la clínica ya ha cerrado.
-            Esas personas que escriben a las diez de la noche preguntando por
-            disponibilidad son, muchas veces, las candidatas perfectas para entrar en la
-            lista de espera — ya han mostrado interés, solo falta el hueco adecuado.
+            Otra fuente de pacientes para esta lista son los mensajes que llegan cuando la
+            clínica ya ha cerrado. Quien escribe a las diez de la noche preguntando por
+            disponibilidad ya ha mostrado interés, y puede entrar en la lista de espera
+            hasta que aparezca el hueco adecuado.
           </P>
 
           <H2>Cómo organizar tu lista de espera</H2>
@@ -165,8 +163,8 @@ export default function ListaEsperaClinicaDentalPage() {
             unos criterios claros desde el primer día:
           </P>
           <P>
-            <strong>Qué tipo de hueco busca cada paciente.</strong> No es lo mismo alguien
-            que acepta cualquier hora libre que alguien que solo puede venir por la tarde.
+            <strong>Qué tipo de hueco busca cada paciente.</strong> Hay quien acepta
+            cualquier hora libre y quien solo puede venir por la tarde.
             Anotar esta preferencia evita ofrecer huecos que la persona no podrá aceptar.
           </P>
           <P>
@@ -195,7 +193,7 @@ export default function ListaEsperaClinicaDentalPage() {
             un hueco libre».
           </P>
           <P>
-            Es importante también ser claro con los tiempos: indicar hasta cuándo está
+            Sé claro también con los tiempos: indicar hasta cuándo está
             disponible ese hueco y pedir una respuesta concreta — «confírmanos en los
             próximos 30 minutos si quieres la cita» — para que el paciente entienda que debe
             actuar rápido, sin que suene a presión innecesaria.
@@ -211,8 +209,8 @@ export default function ListaEsperaClinicaDentalPage() {
             Gestionar la lista de espera a mano funciona mientras el volumen es bajo. Pero
             en cuanto la clínica crece, revisar la lista, decidir a quién avisar y escribir
             el mensaje cada vez que se libera un hueco se convierte en una tarea más que
-            nadie tiene tiempo de hacer bien — y los huecos vuelven a perderse, esta vez por
-            falta de tiempo del equipo, no por falta de candidatos.
+            nadie tiene tiempo de hacer bien, y los huecos vuelven a perderse por falta de
+            tiempo del equipo.
           </P>
           <P>
             Automatizar este proceso significa que, en cuanto se detecta una cancelación, el
@@ -230,13 +228,7 @@ export default function ListaEsperaClinicaDentalPage() {
               cómo reducir los no-shows en tu clínica dental
             </InternalLink>
             , una lista de espera bien gestionada es una de las cinco estrategias que más
-            impacto tienen, porque convierte cada cancelación inevitable en una cita nueva
-            en lugar de en un hueco perdido.
-          </P>
-          <P>
-            Cuando ambos sistemas trabajan juntos — recordatorios que reducen los no-shows y
-            lista de espera que cubre las cancelaciones que aún ocurren — el resultado es
-            una agenda que se autorregula prácticamente sola.
+            impacto tienen, porque convierte cada cancelación inevitable en una cita nueva.
           </P>
 
           <H2>Cuántos huecos puedes recuperar al mes</H2>
@@ -253,10 +245,7 @@ export default function ListaEsperaClinicaDentalPage() {
             gestionada puede recuperar.
           </P>
           <P>
-            En la práctica, esto se traduce en que la mayoría de huecos que antes se quedaban
-            vacíos hasta el día siguiente —o más— pasan a ocuparse en cuestión de minutos.
-            Y eso, mes a mes, es agenda llena y facturación que antes simplemente se quedaba
-            sobre la mesa. Si quieres ver el detalle completo de cómo combinar recordatorios
+            En la práctica, un hueco liberado puede ocuparse en cuestión de minutos. Si quieres ver el detalle completo de cómo combinar recordatorios
             y lista de espera, en{" "}
             <InternalLink href="/blog/como-reducir-no-shows-clinica-dental">
               este artículo
