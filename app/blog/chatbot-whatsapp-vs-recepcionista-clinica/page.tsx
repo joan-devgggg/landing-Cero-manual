@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Un chatbot de WhatsApp puede sustituir por completo a mi recepcionista?",
-    a: "No, y tampoco es el objetivo. El chatbot se encarga de las consultas repetitivas y de responder al instante fuera de horario, pero hay tareas — recibir a pacientes, gestionar imprevistos en consulta, tomar decisiones que requieren criterio — que necesitan una persona. La pregunta no es «uno u otro», sino qué tareas tiene sentido automatizar para que tu recepcionista se dedique a lo que realmente aporta valor.",
+    a: "No, y tampoco es el objetivo. El chatbot se encarga de las consultas repetitivas y de responder al instante fuera de horario, pero hay tareas — recibir a pacientes, gestionar imprevistos en consulta, tomar decisiones que requieren criterio — que necesitan una persona. Lo que conviene decidir es qué tareas automatizar para que tu recepcionista se dedique a las que más aportan.",
   },
   {
     q: "Si pongo un chatbot, ¿mi recepcionista se queda sin trabajo?",
@@ -43,11 +43,11 @@ const faqs = [
   },
   {
     q: "¿Qué pasa si un paciente prefiere hablar con una persona?",
-    a: "Un chatbot bien configurado lo detecta y escala la conversación a tu equipo con todo el contexto recogido, para que la persona no tenga que repetir nada. La idea no es forzar a nadie a hablar con un bot, sino que quien prefiere autogestionarse — la mayoría, fuera de horario — pueda hacerlo, y quien necesita trato humano lo tenga sin demoras.",
+    a: "Un chatbot bien configurado lo detecta y escala la conversación a tu equipo con todo el contexto recogido, para que la persona no tenga que repetir nada. Así, quien prefiere autogestionarse puede hacerlo, y quien necesita trato humano lo tiene sin demoras.",
   },
   {
     q: "¿Tiene sentido un chatbot si mi clínica es pequeña y recibo pocos mensajes?",
-    a: "Depende de cuántos de esos mensajes llegan fuera de horario o se quedan sin respuesta a tiempo. Incluso en clínicas pequeñas, parte de las consultas llega fuera del horario de atención, y un lead que espera respuesta puede acabar escribiendo a otra clínica. Si eso describe tu situación, el chatbot puede tener sentido aunque el volumen total no sea muy alto.",
+    a: "Depende de cuántos de esos mensajes llegan fuera de horario o se quedan sin respuesta a tiempo. Incluso en clínicas pequeñas, parte de las consultas llega fuera del horario de atención y espera hasta el día siguiente. Si eso describe tu situación, el chatbot puede tener sentido aunque el volumen total no sea muy alto.",
   },
 ]
 
@@ -118,37 +118,27 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
 
           {/* Intro */}
           <P>
-            Es la pregunta que más se repite entre dueños y gerentes de clínicas estéticas
-            cuando empiezan a mirar la automatización del WhatsApp: «¿esto significa que ya
-            no necesito recepcionista?». Es una pregunta lógica — y la respuesta honesta es
-            que no es una cosa o la otra, sino entender qué hace mejor cada una y dónde se
-            complementan.
+            Un chatbot de WhatsApp es mejor que una recepcionista en lo repetitivo y en lo que
+            llega fuera de horario: contesta al instante, a cualquier hora y a varios pacientes
+            a la vez. Una recepcionista es mejor en todo lo que pide presencia o criterio, como
+            recibir al paciente, resolver imprevistos o tratar una situación delicada. Por eso
+            lo que mejor funciona en una clínica es tener los dos, cada uno en lo suyo.
           </P>
           <P>
-            Por un lado, una parte de las consultas que recibe una clínica llega fuera de su
-            horario de atención — momentos en los que, por definición, no hay recepcionista
-            disponible. Por otro, hay situaciones — un paciente nervioso antes de un
-            tratamiento, una reclamación, una urgencia — donde nada sustituye a una persona
-            con criterio y empatía.
-          </P>
-          <P>
-            En este artículo vas a ver, sin venderte nada, qué hace mejor un chatbot que
-            una recepcionista, qué hace mejor una recepcionista que un chatbot, en qué se
-            complementan, cuándo tiene sentido automatizar — y cuándo no — y cómo es, en la
-            práctica, la combinación que mejor funciona en una clínica real.
+            Es la duda que más se repite entre dueños y gerentes de clínicas estéticas cuando
+            empiezan a mirar la automatización del WhatsApp: «¿esto significa que ya no
+            necesito recepcionista?».
           </P>
 
           <H2>Qué hace mejor un chatbot que una recepcionista</H2>
           <P>
-            Hay tareas en las que un chatbot, sencillamente, da más de sí que una persona —
-            no porque sea «mejor», sino porque su naturaleza es distinta.
+            Hay tareas en las que un chatbot da más de sí que una persona, por la forma en que
+            funciona.
           </P>
           <P>
-            <strong>Disponibilidad 24/7 real.</strong> Una recepcionista tiene un horario,
-            descansos, vacaciones y, sobre todo, un único par de manos. El chatbot
-            responde a las tres de la madrugada, en festivo o en pleno fin de semana —
-            justo cuando llegan las consultas que, de otra forma, se quedarían sin respuesta
-            hasta el día siguiente.
+            <strong>Disponibilidad 24/7 real.</strong> Una recepcionista tiene un horario y
+            vacaciones. El chatbot responde a las tres de la madrugada o en pleno fin de
+            semana.
           </P>
           <P>
             <strong>Respuesta instantánea, sin colas.</strong> Si tres pacientes escriben a
@@ -157,9 +147,8 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
               una recepcionista solo puede atender a uno
             </InternalLink>{" "}
             mientras los otros esperan.
-            El chatbot responde a los tres en el mismo instante, sin que nadie note que
-            «hay cola». Y esto importa: quien espera en la cola puede acabar escribiendo a
-            otra clínica.
+            El chatbot responde a los tres a la vez, y eso cuenta porque quien espera en la
+            cola puede acabar escribiendo a otra clínica.
           </P>
           <P>
             <strong>Más volumen sin más personas.</strong> Para una recepcionista, diez
@@ -173,21 +162,18 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
           </P>
           <P>
             <strong>Consistencia.</strong> El chatbot da siempre la misma información sobre
-            precios, condiciones y disponibilidad, sin variaciones según el día, el cansancio
-            o quién esté de turno.
+            precios, condiciones y disponibilidad, la misma esté quien esté de turno.
           </P>
 
           <H2>Qué hace mejor una recepcionista que un chatbot</H2>
           <P>
-            Y hay tareas donde ocurre justo lo contrario — y conviene ser honesto sobre
-            ello, porque es la base para que la automatización tenga sentido.
+            Y hay tareas donde ocurre lo contrario.
           </P>
           <P>
-            <strong>Trato humano en situaciones delicadas.</strong> Un paciente con miedo
-            antes de un tratamiento, una queja, una situación emocionalmente cargada...
-            ahí, la empatía y el criterio de una persona son insustituibles. Un chatbot
-            bien diseñado reconoce estas situaciones y las deriva — pero no las resuelve
-            él mismo.
+            <strong>Trato humano en situaciones delicadas.</strong> Con un paciente con miedo
+            antes de un tratamiento o con una queja, hacen falta la empatía y el criterio de
+            una persona. Un chatbot bien diseñado reconoce estas situaciones y las deriva al
+            equipo.
           </P>
           <P>
             <strong>Tareas presenciales.</strong> Recibir a quien llega a la clínica,
@@ -198,20 +184,19 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
             <strong>Gestión de imprevistos.</strong> Un profesional se retrasa, hay que
             reorganizar la agenda del día, un paciente llega sin cita... resolver estos
             imprevistos sobre la marcha requiere a alguien con visión completa del día a
-            día de la clínica, no un sistema automatizado.
+            día de la clínica.
           </P>
           <P>
             <strong>Criterio en casos fuera de lo normal.</strong> Cuando una situación no
             se ajusta a ningún patrón previsto, una persona puede improvisar una solución
-            razonable. Un chatbot, en cambio, debe reconocer que está fuera de su alcance y
-            pasar el testigo — no inventar una respuesta.
+            razonable. Un chatbot debe reconocer que está fuera de su alcance y pasar el
+            testigo sin inventarse una respuesta.
           </P>
 
           <H2>En qué se complementan</H2>
           <P>
-            La clave está aquí: el chatbot no compite con la recepcionista por las mismas
-            tareas, sino que se encarga de la parte del trabajo que hoy le quita tiempo
-            para lo que de verdad importa.
+            El chatbot se encarga de la parte del trabajo que hoy le quita tiempo a la
+            recepcionista.
           </P>
           <P>
             El chatbot filtra y cualifica: responde las preguntas repetitivas sobre
@@ -226,43 +211,29 @@ export default function ChatbotWhatsappVsRecepcionistaClinicaPage() {
             </InternalLink>{" "}
             lo explicamos con más detalle.
           </P>
-          <P>
-            Dicho de otra forma: el chatbot se ocupa del volumen, y la recepcionista se
-            ocupa del valor — los pacientes presenciales, las conversaciones que requieren
-            trato humano y las decisiones que no se pueden automatizar.
-          </P>
 
           <H2>Cuándo tiene sentido automatizar y cuándo no</H2>
           <P>
-            No todas las clínicas están en el mismo punto, y no toda automatización tiene
-            sentido en cualquier momento.
-          </P>
-          <P>
             Tiene sentido automatizar cuando tu equipo no llega a responder todos los
             mensajes a tiempo, cuando una parte importante de las consultas llega fuera de
-            horario, cuando las mismas preguntas se repiten una y otra vez, o cuando notas
-            que se pierden leads simplemente porque nadie ha podido contestar a tiempo.
+            horario o cuando las mismas preguntas se repiten una y otra vez.
           </P>
           <P>
-            Tiene menos sentido — o al menos no es la prioridad — si tu clínica recibe muy
-            pocos mensajes y tu equipo los gestiona sin problema, o si lo que falla no es
-            la atención por WhatsApp sino, por ejemplo, la gestión de la agenda interna.
-            Automatizar no soluciona problemas que no están en el canal de comunicación.
+            Tiene menos sentido si tu clínica recibe muy pocos mensajes y tu equipo los
+            gestiona sin problema, o si lo que falla es otra cosa, por ejemplo la gestión de
+            la agenda interna: automatizar el WhatsApp no arregla eso.
           </P>
 
           <H2>La combinación ganadora: chatbot + recepcionista</H2>
           <P>
-            Lo más sensato no suele ser elegir entre una opción y la otra, sino combinar
-            ambas, cada una en lo que hace mejor. El chatbot
-            cubre las 24 horas, responde al instante y nunca deja un mensaje sin contestar.
-            La recepcionista se centra en los pacientes que tiene delante, en las
-            conversaciones que el chatbot ha escalado porque requieren una persona, y en
-            todo lo que ocurre dentro de la clínica.
+            Lo más sensato suele ser combinar ambas, cada una en lo que hace mejor. El
+            chatbot cubre las 24 horas y responde al instante. La recepcionista se centra en
+            los pacientes que tiene delante y en las conversaciones que el chatbot le ha
+            escalado porque requieren una persona.
           </P>
           <P>
-            El resultado no es «menos personas atendiendo», sino que cada mensaje recibe el
-            tipo de atención que necesita: inmediata cuando es una consulta sencilla, y
-            humana cuando hace falta criterio o cercanía. Si quieres ver cómo se configura
+            Así cada mensaje recibe la atención que necesita: inmediata cuando es una consulta
+            sencilla y humana cuando hace falta criterio. Si quieres ver cómo se configura
             esta combinación para una clínica como la tuya — conectada a tu WhatsApp
             actual y con tu información real — en{" "}
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">

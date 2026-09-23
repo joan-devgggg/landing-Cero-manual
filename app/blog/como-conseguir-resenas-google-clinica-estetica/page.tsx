@@ -37,11 +37,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Puedo pedir reseñas a mis clientes por WhatsApp?",
-    a: "Sí, es legal y efectivo. La clave es el momento y el tono: pídela poco después de la cita, cuando la experiencia está fresca, y hazlo de forma personal, no masiva. Un mensaje automático bien redactado — que parezca una conversación, no un formulario — tiene tasas de respuesta mucho más altas que un email genérico.",
+    a: "Sí, es legal y efectivo. Cuentan el momento y el tono: pídela poco después de la cita, cuando la experiencia está fresca, y con un mensaje personal. Un mensaje automático bien redactado, que se lea como una conversación, suele tener bastante más respuesta que un email genérico.",
   },
   {
     q: "¿Cómo respondo una reseña negativa sin dañar mi imagen?",
-    a: "Responde siempre en público, en menos de 24 horas, sin entrar en el fondo del conflicto. La estructura que funciona: agradece el feedback, reconoce que la experiencia no fue la esperada, ofrece resolverlo en privado. Quien lee tu respuesta no es solo quien dejó la reseña — es el próximo cliente que está decidiendo si reservar.",
+    a: "Responde siempre en público, en menos de 24 horas, sin entrar en el fondo del conflicto. La estructura que funciona: agradece el feedback, reconoce que la experiencia no fue la esperada, ofrece resolverlo en privado. Tu respuesta la lee también el próximo cliente que está decidiendo si reservar.",
   },
   {
     q: "¿Cuántas reseñas necesito para posicionarme bien en Google Maps?",
@@ -120,30 +120,24 @@ export default function ResenasgoogleArticlePage() {
 
           {/* Intro */}
           <P>
-            Mucha gente decide dónde reservar un tratamiento estético mirando las reseñas de
-            Google. Antes de llamar, antes de entrar en la web, antes de preguntar
-            a una amiga — el primer movimiento es abrir Google Maps y leer lo que dicen otros
-            pacientes. Tu ficha de Google no es{" "}
+            Para conseguir más reseñas en Google sin pedirlas una por una, automatiza la
+            petición: un mensaje de WhatsApp que le llega a cada paciente poco después de la
+            cita, con el enlace directo a tu ficha. Así se la pides a todos, mientras la
+            experiencia está fresca y a un clic de la pantalla de valoración.
+          </P>
+          <P>
+            Importa porque mucha gente decide dónde reservar un tratamiento estético mirando
+            las reseñas de Google. Tu ficha de Google no es{" "}
             <InternalLink href="/blog/marketing-digital-clinicas-esteticas">
               un complemento de tu marketing
             </InternalLink>
             : es el primer
-            punto de contacto real con la mayoría de tus clientes potenciales.
-          </P>
-          <P>
-            El problema es que la mayoría de{" "}
+            punto de contacto real con muchos de tus clientes potenciales. Y muchas{" "}
             <InternalLink href="/blog/como-fidelizar-pacientes-clinica-estetica">
               clínicas con pacientes satisfechos
             </InternalLink>{" "}
-            tienen menos
-            reseñas de las que merecen. No porque sus clientes no estén contentos — sino porque
-            nadie les pide que las dejen en el momento adecuado, y el momento pasa.
-          </P>
-          <P>
-            En este artículo vas a ver por qué las reseñas importan tanto, por qué tus
-            clientes no las dejan aunque estén satisfechos, cuál es el momento exacto para
-            pedirlas, cómo automatizar ese proceso sin que parezca un robot — y qué hacer
-            cuando una reseña negativa llega igualmente.
+            tienen menos reseñas de las que merecen porque nadie pide a esos pacientes que las
+            dejen en el momento adecuado.
           </P>
 
           <H2>Por qué las reseñas de Google son tan importantes para una clínica estética</H2>
@@ -163,31 +157,29 @@ export default function ResenasgoogleArticlePage() {
             da credibilidad a la nota.
           </P>
           <P>
-            Además, quien lee reseñas suele fijarse en las más recientes para decidir. Un flujo
+            Quien lee reseñas suele fijarse en las más recientes para decidir. Un flujo
             constante de opiniones nuevas mantiene la ficha al día; un puñado acumulado hace dos
             años dice poco de cómo atiende la clínica hoy.
           </P>
 
           <H2>Por qué tus clientes no dejan reseñas aunque estén contentos</H2>
           <P>
-            La razón más habitual no es la falta de satisfacción — es la fricción. Dejar una
+            La razón más habitual es la fricción. Dejar una
             reseña en Google requiere varios pasos: abrir la app, encontrar la ficha, hacer
             clic en el número de estrellas, escribir algo, publicar. Para alguien que acaba
             de salir de una cita y tiene el móvil en el bolso, ese proceso es suficiente para
-            que lo deje para después. Y «después» raramente llega.
+            que lo deje para después.
           </P>
           <P>
             El segundo motivo es el momento. Si no pides la reseña cuando la satisfacción
             está en su punto más alto — poco después de la cita — la ventana se cierra.
-            A los dos días, la experiencia ya no está tan presente. A la semana, el cliente
-            ya piensa en otra cosa.
+            A los dos días, la experiencia ya no está tan presente.
           </P>
           <P>
             Y el tercer motivo es que muchas clínicas no piden la reseña de forma directa.
             Hay una incomodidad en pedirla verbalmente, cara a cara, en el mostrador de
-            recepción. El cliente asiente, dice que sí, y no lo hace. No porque sea mala
-            persona — sino porque en ese momento tiene el abrigo en la mano y la mente ya
-            puesta en lo siguiente.
+            recepción. El cliente asiente, dice que sí y no lo hace: en ese momento tiene el
+            abrigo en la mano y la cabeza en lo siguiente.
           </P>
 
           <H2>El momento perfecto para pedir una reseña</H2>
@@ -198,59 +190,45 @@ export default function ResenasgoogleArticlePage() {
               la experiencia todavía está fresca
             </InternalLink>
             , el resultado del tratamiento empieza a sentirse, y el cliente tiene el
-            móvil en la mano — en el coche, en el metro, en casa.
+            móvil en la mano.
           </P>
           <P>
-            Pedir la reseña en ese momento tiene dos ventajas clave sobre hacerlo al salir
-            de la clínica. La primera: el cliente está en un entorno privado, sin la presión
-            social de un mostrador. La segunda: tiene tiempo para escribir algo con calma,
-            no entre el pago y la puerta.
+            Pedirla en ese momento tiene dos ventajas sobre hacerlo al salir de la clínica:
+            el cliente está en un entorno privado, sin la presión social de un mostrador, y
+            tiene tiempo para escribir con calma.
           </P>
           <P>
-            El canal también importa. Un mensaje por WhatsApp le llega al paciente en la
-            aplicación que ya lleva en la mano, no en un correo que quizá no abra hasta la
-            noche. Y WhatsApp permite incluir
-            directamente el enlace a tu ficha de Google, eliminando el paso de buscarla.
-            Un clic, y el cliente ya está en la pantalla de valoración.
+            El canal también importa. WhatsApp permite incluir directamente el enlace a tu
+            ficha de Google, sin que el paciente tenga que buscarla: con un clic ya está en la
+            pantalla de valoración.
           </P>
 
           <H2>Cómo automatizar la petición de reseñas después de cada cita</H2>
           <P>
-            La automatización no significa impersonalidad — significa que el mensaje correcto
-            llega en el momento correcto sin que nadie tenga que recordarlo. El flujo básico
+            Automatizar consiste en que el mensaje llegue en el momento adecuado sin que nadie
+            tenga que acordarse. El flujo básico
             funciona así: cuando termina la cita, se programa un mensaje de WhatsApp que le
             llega al paciente poco después.
           </P>
           <P>
-            El mensaje que mejor convierte no es genérico. Incluye el nombre del paciente,
-            una mención al tratamiento que acaba de recibir, y un tono cercano — como si lo
-            enviara la persona que le ha atendido, no la clínica como institución. Y termina
-            con un enlace directo a la ficha de Google, no con una instrucción de «búscanos
-            en Google».
-          </P>
-          <P>
-            Un paciente satisfecho rara vez deja la reseña por iniciativa propia; pedírsela en
-            el momento adecuado, con el enlace a mano, es lo que cambia eso. La diferencia no
-            está en la satisfacción del paciente — está en haberle dado el empujón en el
-            momento exacto.
+            El mensaje que mejor funciona incluye el nombre del paciente, una mención al
+            tratamiento que acaba de recibir y un tono cercano, como si lo enviara la persona
+            que le ha atendido. Y termina con el enlace directo a la ficha de Google.
           </P>
           <P>
             Un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
-            puede gestionar este flujo de forma completamente automática: espera el tiempo
-            configurado tras la cita, envía el mensaje con el enlace directo a Google y
-            registra si el paciente ha respondido — sin que el equipo tenga que intervenir
-            en ningún paso.
+            puede gestionar este flujo de forma automática: espera el tiempo configurado tras
+            la cita, envía el mensaje con el enlace directo a Google y registra si el paciente
+            ha respondido.
           </P>
 
           <H2>Qué hacer con las reseñas negativas</H2>
           <P>
-            Las reseñas negativas son inevitables. Cualquier clínica con volumen de actividad
-            acaba recibiéndolas — y la forma en que respondes dice tanto de tu clínica como
-            la reseña en sí. El próximo cliente que lea esa reseña también va a leer tu
-            respuesta.
+            Cualquier clínica con volumen de actividad acaba recibiendo reseñas negativas, y el
+            próximo cliente que lea una también va a leer tu respuesta.
           </P>
           <P>
             La estructura que funciona tiene tres pasos. Primero, agradecer el feedback sin
@@ -269,7 +247,7 @@ export default function ResenasgoogleArticlePage() {
           </P>
           <P>
             Un sistema de petición de reseñas activo también tiene un efecto colateral
-            positivo: diluciona el peso de las reseñas negativas. Si recibes 5 reseñas
+            positivo: diluye el peso de las reseñas negativas. Si recibes 5 reseñas
             nuevas a 5 estrellas cada semana, una reseña a 2 estrellas tiene cada vez
             menos impacto en tu media y en tu visibilidad.
           </P>

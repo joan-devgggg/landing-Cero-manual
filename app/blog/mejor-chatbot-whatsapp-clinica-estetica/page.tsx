@@ -36,11 +36,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cuánto debería costar un chatbot de WhatsApp para mi clínica?",
-    a: "El precio varía mucho según lo que incluya: hay soluciones genéricas muy baratas que apenas hacen más que un menú automático, y soluciones a medida que agendan citas reales, cualifican leads y pasan a tu equipo los casos que lo piden. Antes de mirar el precio, conviene mirar qué hace exactamente cada opción — porque lo barato que no resuelve nada acaba saliendo más caro en leads perdidos.",
+    a: "El precio varía mucho según lo que incluya: hay soluciones genéricas muy baratas que apenas hacen más que un menú automático, y soluciones a medida que agendan citas reales, cualifican leads y pasan a tu equipo los casos que lo piden. Antes de mirar el precio, conviene mirar qué hace exactamente cada opción.",
   },
   {
     q: "¿Necesito conocimientos técnicos para gestionar el chatbot una vez instalado?",
-    a: "No deberías necesitarlos. Un chatbot bien implementado se configura una vez con la información de tu clínica y funciona solo, sin que tengas que tocar nada en el día a día. Si el proveedor te dice que vas a tener que aprender a usar una plataforma compleja o dedicar tiempo semanal a mantenerlo, probablemente no es la opción adecuada para una clínica que ya tiene suficiente con su actividad diaria.",
+    a: "No deberías necesitarlos. Un chatbot bien implementado se configura una vez con la información de tu clínica y funciona solo, sin que tengas que tocar nada en el día a día. Si el proveedor te dice que vas a tener que aprender a usar una plataforma compleja o dedicar tiempo semanal a mantenerlo, probablemente no es la opción adecuada para una clínica.",
   },
   {
     q: "¿Qué pasa si el chatbot no entiende una consulta de un paciente?",
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "¿Puedo cambiar de proveedor de chatbot si no estoy satisfecho?",
-    a: "Deberías poder, y es algo que conviene preguntar antes de firmar nada. Un chatbot bien implementado se conecta a tu número de WhatsApp y se nutre de la información de tu clínica — esa información es tuya. Si el proveedor te «encierra» en su plataforma con contratos largos o dificulta exportar tus datos, es una señal de alerta que vale la pena tener en cuenta desde el principio.",
+    a: "Deberías poder, y es algo que conviene preguntar antes de firmar nada. Un chatbot bien implementado se conecta a tu número de WhatsApp y se nutre de la información de tu clínica — esa información es tuya. Si el proveedor te «encierra» en su plataforma con contratos largos o dificulta exportar tus datos, es una señal de alerta.",
   },
 ]
 
@@ -119,37 +119,26 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
 
           {/* Intro */}
           <P>
-            Si has empezado a buscar «chatbot WhatsApp clínica estética», probablemente ya
-            te has dado cuenta de que hay decenas de opciones — desde plantillas genéricas
-            hasta sistemas a medida, pasando por integraciones que prometen mucho y
-            cumplen poco. Y elegir mal no es un detalle menor: significa meses de
-            consultas mal atendidas, pacientes frustrados y, en muchos casos,{" "}
+            El mejor chatbot de WhatsApp para clínicas estéticas es el que se conecta al número
+            que ya usa tu clínica, entiende lo que escribe el paciente sin menús, agenda citas
+            con disponibilidad real y trabaja con tus tratamientos y precios. Para elegirlo,
+            compara las opciones con esos criterios, pregunta al proveedor qué pasa cuando el
+            chatbot no sabe responder y pruébalo con casos reales antes de firmar.
+          </P>
+          <P>
+            Hay decenas de opciones, desde plantillas genéricas hasta sistemas a medida, y
+            elegir mal significa meses de consultas mal atendidas y, en muchos casos,{" "}
             <InternalLink href="/blog/cuanto-cuesta-chatbot-whatsapp-clinica">
               un coste mensual
             </InternalLink>{" "}
             que no se traduce en ni una sola cita nueva.
           </P>
-          <P>
-            El canal en sí no es el problema — al contrario: es donde tus pacientes ya
-            escriben, también cuando tu clínica está cerrada. El chatbot adecuado convierte
-            esas conversaciones en citas. El chatbot equivocado solo
-            añade una capa más de fricción entre tu clínica y quien te escribe.
-          </P>
-          <P>
-            En este artículo vas a aprender qué criterios usar para comparar opciones, qué
-            funcionalidades son realmente imprescindibles y cuáles son solo «extras» de
-            marketing, qué preguntas hacer antes de firmar con un proveedor, qué señales
-            indican que un chatbot no es el adecuado para tu clínica y cómo probarlo antes
-            de comprometerte a largo plazo.
-          </P>
 
-          <H2>Qué criterios usar para elegir un chatbot de WhatsApp para clínicas</H2>
+          <H2>Criterios para elegir el mejor chatbot de WhatsApp para clínicas estéticas</H2>
           <P>
-            No todos los chatbots están pensados para el mismo tipo de negocio, y un
-            sistema que funciona bien para una tienda online puede quedarse muy corto en
-            una clínica estética, donde las conversaciones son más delicadas y la agenda
-            es el corazón del negocio. Estos son los criterios que de verdad marcan la
-            diferencia.
+            Un sistema que funciona bien para una tienda online puede quedarse corto en una
+            clínica estética, donde las conversaciones son más delicadas y todo gira en torno
+            a la agenda. Estos son los criterios que cuentan.
           </P>
           <H3>Que se conecte al WhatsApp que ya usa tu clínica</H3>
           <P>
@@ -158,12 +147,12 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
             conversaciones entre dos números distintos. Si un proveedor te pide cambiar de
             número o usar una app aparte, ya estás perdiendo parte del valor del canal.
           </P>
-          <H3>Que entienda lenguaje natural, no solo menús</H3>
+          <H3>Que entienda lenguaje natural</H3>
           <P>
-            Hay una diferencia enorme entre un chatbot que mantiene una conversación
-            natural y uno que solo funciona a base de «responde 1 para precios, 2 para
-            citas». Los menús rígidos frustran a quien escribe y no resuelven nada que no
-            pudiera resolver una simple página de preguntas frecuentes.
+            Un chatbot que funciona a base de «responde 1 para precios, 2 para citas» frustra
+            a quien escribe y no resuelve nada que no resuelva una página de preguntas
+            frecuentes. El paciente tiene que poder escribir con sus palabras y recibir
+            respuesta a lo que ha preguntado.
           </P>
           <H3>Que pueda agendar citas reales, con disponibilidad real</H3>
           <P>
@@ -178,16 +167,13 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
           <P>
             Tratamientos, precios orientativos, duración de las sesiones, políticas de
             cancelación, tono de comunicación... El chatbot debería hablar de tu clínica
-            con tus datos, no con respuestas genéricas que podrían valer para cualquier
-            negocio.
+            con tus datos.
           </P>
 
           <H2>Funcionalidades imprescindibles vs opcionales</H2>
           <P>
-            Cuando empieces a comparar opciones, es fácil dejarse impresionar por listas
-            larguísimas de funcionalidades. Para no perderte, conviene separar lo que de
-            verdad necesita resolver tu clínica de lo que es simplemente «relleno»
-            comercial.
+            Al comparar opciones es fácil dejarse impresionar por listas larguísimas de
+            funcionalidades. Separa lo que tu clínica necesita de lo que es relleno comercial.
           </P>
           <H3>Imprescindibles</H3>
           <P>
@@ -206,17 +192,15 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
           <P>
             Recordatorios automáticos de citas para reducir no-shows, envío de fotos o
             catálogos de tratamientos, recogida de valoraciones tras la visita, o
-            integración con campañas de captación. Son funciones que aportan valor, pero
-            no deberían ser el motivo principal por el que elegir un chatbot — primero
-            tiene que cumplir lo básico, y bien.
+            integración con campañas de captación. Aportan valor, pero primero el chatbot
+            tiene que cumplir lo básico.
           </P>
 
           <H2>Preguntas que debes hacer antes de contratar</H2>
           <P>
-            Antes de firmar con cualquier proveedor, hay un puñado de preguntas que te
-            van a ahorrar disgustos — y que, además, te van a ayudar a distinguir
-            rápidamente entre una solución seria y una que solo suena bien en la
-            presentación comercial.
+            Antes de firmar con cualquier proveedor, hazle estas preguntas. Sirven para
+            distinguir una solución seria de una que solo suena bien en la presentación
+            comercial.
           </P>
           <P>
             ¿Puedo probarlo con casos reales de mi clínica antes de comprometerme? ¿Cómo
@@ -231,16 +215,10 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
             </InternalLink>{" "}
             si en algún momento decido cambiar de proveedor?
           </P>
-          <P>
-            Las respuestas a estas preguntas suelen revelar, mucho mejor que cualquier
-            folleto, si estás ante una solución pensada para clínicas reales o ante un
-            producto genérico con una capa de marketing encima.
-          </P>
 
           <H2>Señales de que un chatbot no es el adecuado para tu clínica</H2>
           <P>
-            Hay señales de alerta que conviene detectar cuanto antes — idealmente, antes
-            de firmar nada, pero también durante los primeros días de uso.
+            Conviene detectarlas antes de firmar o, como tarde, en los primeros días de uso.
           </P>
           <P>
             Si las respuestas suenan claramente a guion genérico y no reflejan la
@@ -252,36 +230,29 @@ export default function MejorChatbotWhatsappClinicaEsteticaPage() {
             con claridad qué pasa con la conversación de un paciente cuando el chatbot «no
             sabe qué responder», es una señal de que ese escenario no se ha pensado.
           </P>
-          <P>
-            Recuerda lo que está en juego: un lead que espera respuesta puede acabar
-            reservando en otra clínica. Un chatbot que no resuelve esto desde el primer mensaje no está cumpliendo su
-            función principal, por muchas funciones extra que tenga.
-          </P>
 
           <H2>Cómo probar un chatbot antes de comprometerte</H2>
           <P>
-            La mejor forma de saber si un chatbot funciona para tu clínica no es leer su
-            web, sino verlo funcionar con casos reales — o lo más parecido posible a
-            ellos. Pide una demo configurada con tratamientos y precios similares a los
+            La mejor forma de saber si un chatbot funciona para tu clínica es verlo trabajar
+            con casos reales, o lo más parecido posible. Pide una demo configurada con tratamientos y precios similares a los
             tuyos, y haz tú mismo las preguntas que más te hacen tus pacientes en el día a
             día: «¿cuánto cuesta?», «¿tenéis hueco esta semana?», «¿duele el tratamiento
             X?».
           </P>
           <P>
-            Fíjate en cómo responde cuando la pregunta es ambigua o cuando no tiene la
-            información exacta — ahí se nota la diferencia entre un sistema bien pensado y
-            uno que solo funciona en condiciones perfectas. Y, si es posible, pide un
+            Fíjate sobre todo en cómo responde cuando la pregunta es ambigua o cuando no tiene
+            la información exacta. Y, si es posible, pide un
             periodo de prueba real conectado a tu WhatsApp, con un grupo reducido de
             conversaciones, antes de pasar a producción con todo el volumen de tu clínica.
           </P>
           <P>
-            Si quieres ver cómo sería esto aplicado a tu clínica en concreto — con tus
-            tratamientos, tus horarios y tu forma de comunicarte — en{" "}
+            Si quieres ver cómo sería esto aplicado a tu clínica, con tus tratamientos y tus
+            horarios, en{" "}
             <InternalLink href="/blog/chatbot-whatsapp-para-clinicas-esteticas">
               chatbot de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
             explicamos cómo se configura un sistema así desde cero y qué necesitas para
-            ponerlo en marcha sin complicaciones.
+            ponerlo en marcha.
           </P>
         </article>
 

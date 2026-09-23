@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Necesito un CRM si ya tengo software de gestión de citas?",
-    a: "Depende de si tu problema está en la agenda o en los leads. El software de citas resuelve lo que ocurre después de que el cliente ha reservado: confirmaciones, recordatorios, historial. El CRM resuelve lo que ocurre antes: capturar el lead, cualificarlo, hacer seguimiento si no ha respondido. Si recibes muchas consultas al mes por WhatsApp o formulario y no llevas un control ordenado, un CRM te evitará perder oportunidades que ahora ni siquiera sabes que estás perdiendo.",
+    a: "Depende de si tu problema está en la agenda o en los leads. El software de citas resuelve lo que ocurre después de que el cliente ha reservado: confirmaciones, recordatorios, historial. El CRM resuelve lo que ocurre antes: capturar el lead, cualificarlo, hacer seguimiento si no ha respondido. Si recibes muchas consultas al mes por WhatsApp o formulario y no llevas un control ordenado, un CRM es lo que te falta para no depender de la memoria del equipo.",
   },
   {
     q: "¿Cuánto cuesta un CRM para una clínica estética?",
@@ -123,24 +123,11 @@ export default function CrmClinicasArticlePage() {
 
           {/* Intro */}
           <P>
-            La mayoría de clínicas estéticas gestionan sus leads de la misma forma: un
-            mensaje de Instagram por aquí, una consulta de WhatsApp por allá, un email que
-            llega mientras la recepcionista está con otro paciente, y una nota en la agenda
-            que alguien apuntó a mano. No hay un sistema centralizado. No hay un registro
-            de quién ha respondido y quién no. No hay forma de saber cuántos leads se pierden
-            cada semana porque nadie hizo seguimiento a tiempo.
-          </P>
-          <P>
-            El problema no es que el equipo trabaje mal — es que sin una herramienta que
-            centralice esa información, perder leads es inevitable. Un lead que espera
-            respuesta sigue mirando otras clínicas, y eso ocurre especialmente de noche, cuando buena parte de las consultas llega
-            fuera del horario de atención y nadie está disponible para contestar.
-          </P>
-          <P>
-            En este artículo vas a entender qué es exactamente un CRM, en qué se diferencia
-            de un software de gestión de citas, qué señales indican que tu clínica ya lo
-            necesita, qué funcionalidades no pueden faltar — y qué añade la IA a lo que ya
-            hace un CRM.
+            Un CRM para clínicas estéticas es la herramienta que reúne en un solo sitio a tus
+            leads y pacientes, con el estado de cada uno. Sirve para convertir consultas en
+            primeras citas y para que quien ya ha venido vuelva. Lo necesitas cuando recibes
+            más consultas de las que puedes seguir a mano, o cuando el seguimiento depende de
+            que una persona concreta se acuerde.
           </P>
 
           <H2>¿Qué es un CRM y para qué sirve en una clínica estética?</H2>
@@ -164,7 +151,7 @@ export default function CrmClinicasArticlePage() {
               seguimiento de clientes que ya han venido
             </InternalLink>
             , detectar quiénes llevan meses sin aparecer y lanzar campañas
-            de reactivación antes de que se vayan definitivamente a la competencia.
+            de reactivación.
           </P>
           <P>
             Sin un CRM, esa información vive en distintos sitios — el móvil de la
@@ -176,8 +163,8 @@ export default function CrmClinicasArticlePage() {
           <P>
             Hay tres señales que indican que ya toca: recibes más consultas de las que puedes
             seguir a mano, no sabes qué porcentaje de leads acaba en cita, y el seguimiento
-            depende de que una persona concreta se acuerde. Si reconoces dos de las tres, el
-            CRM ya no es una mejora opcional.
+            depende de que una persona concreta se acuerde. Si reconoces dos de las tres, ya
+            lo necesitas.
           </P>
           <P>
             No todas las clínicas lo necesitan desde el primer día —{" "}
@@ -207,10 +194,9 @@ export default function CrmClinicasArticlePage() {
 
           <H3>El seguimiento depende de la memoria de una persona</H3>
           <P>
-            Si cuando la recepcionista está de vacaciones el seguimiento de leads se para,
-            tienes un problema de sistema, no de persona. Un CRM externaliza esa memoria
-            al software — cualquier persona del equipo puede ver el estado de cada lead y
-            continuar donde otro lo dejó.
+            Si cuando la recepcionista está de vacaciones el seguimiento de leads se para, lo
+            que falta es un sistema. Un CRM guarda esa memoria en el software: cualquier
+            persona del equipo puede ver el estado de cada lead y continuar donde otro lo dejó.
           </P>
 
           <H2>Qué debe tener un CRM para clínicas estéticas</H2>
@@ -221,7 +207,7 @@ export default function CrmClinicasArticlePage() {
             cubriendo el hueco a mano.
           </P>
           <P>
-            Aquí es donde se nota la diferencia entre un CRM sectorial y uno adaptado. Las{" "}
+            Entre un CRM sectorial y uno adaptado hay una diferencia práctica: las{" "}
             <InternalLink href="/blog/software-gestion-clinicas-esteticas">
               plataformas españolas pensadas para clínicas
             </InternalLink>{" "}
@@ -250,16 +236,15 @@ export default function CrmClinicasArticlePage() {
             La tercera es la automatización de seguimiento. Si un lead no responde en 24
             horas, el sistema puede enviar automáticamente un mensaje de seguimiento. Si
             un cliente lleva tres meses sin visita, el CRM puede lanzar una campaña de
-            reactivación. Sin automatización, esas acciones dependen de que alguien las
-            recuerde — y raramente ocurre.
+            reactivación.
           </P>
 
           <H2>CRM vs software de gestión de citas: cuál es la diferencia</H2>
           <P>
             La diferencia es el momento en que actúa cada uno: el software de citas resuelve lo
             que pasa <strong>después</strong> de que alguien ha reservado, y el CRM lo que pasa
-            <strong> antes</strong>. Es la confusión más habitual — muchas clínicas creen que su
-            herramienta de agenda ya cumple la función de un CRM, y no es así.
+            <strong> antes</strong>. Es la confusión más habitual: muchas clínicas creen que su
+            herramienta de agenda ya cumple la función de un CRM.
           </P>
           <P>
             El software de gestión de citas — Acuity o Calendly, por ejemplo — se ocupa de la
@@ -323,8 +308,7 @@ export default function CrmClinicasArticlePage() {
             <InternalLink href="/blog/tecnologia-para-clinicas-esteticas">
               Las tres piezas son complementarias
             </InternalLink>
-            , no excluyentes. La combinación que mejor
-            funciona es un CRM que gestione leads y seguimiento, conectado con un software de
+            . La combinación que mejor funciona es un CRM que gestione leads y seguimiento, conectado con un software de
             agenda que gestione las citas — de forma que cuando un lead pasa a paciente, la
             información fluya entre los dos sistemas sin tener que introducirla dos veces.
           </P>
@@ -332,9 +316,7 @@ export default function CrmClinicasArticlePage() {
           <H2>Qué añade la IA a lo que hace un CRM</H2>
           <P>
             La IA cubre lo que un CRM, por sí solo, no hace: responder al lead en segundos,
-            cualificarlo y dejar la conversación anotada, sin esperar a que nadie se
-            acuerde. Un CRM sin automatización es mejor que nada, pero sigue dependiendo de que
-            una persona ejecute cada acción a mano.
+            cualificarlo y dejar la conversación anotada.
           </P>
           <P>
             El caso más claro es el primer contacto. Cuando un lead llega fuera del horario de
@@ -345,20 +327,13 @@ export default function CrmClinicasArticlePage() {
           </P>
           <P>
             El segundo momento crítico es el seguimiento. Un lead que no ha respondido al
-            primer contacto no está necesariamente perdido — simplemente estaba ocupado,
-            o no era el momento. Un{" "}
+            primer contacto quizá solo estaba ocupado. Un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-esteticas">
               agente de WhatsApp para clínicas estéticas
             </InternalLink>{" "}
-            puede enviar un mensaje de seguimiento automático a las 24 o 48 horas, con un
-            tono natural, sin que el equipo tenga que acordarse de hacerlo.
-          </P>
-          <P>
-            El resultado es que el primer contacto y el seguimiento dejan de depender de que
-            alguien tenga un hueco libre, mientras el equipo se ocupa de los pacientes que ya
-            están en la clínica. Y como un cliente recurrente vuelve
-            muchas veces, evitar perder incluso dos leads al mes por falta de respuesta rápida
-            se nota en la facturación.
+            puede enviarle un mensaje de seguimiento automático a las 24 o 48 horas, con un
+            tono natural, mientras el equipo se ocupa de los pacientes que ya están en la
+            clínica.
           </P>
         </article>
 
