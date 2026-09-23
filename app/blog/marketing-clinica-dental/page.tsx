@@ -223,6 +223,13 @@ export default function MarketingClinicaDentalArticlePage() {
             reales de pacientes.
           </P>
           <P>
+            Antes de publicar casos o testimonios, un aviso: la publicidad sanitaria está
+            regulada en España —entre otras normas, por el Real Decreto 1907/1996, la normativa
+            de tu comunidad autónoma y el código deontológico de la profesión— y puede limitar
+            el uso de testimonios de pacientes y de imágenes de resultados. Verifica qué admite
+            la normativa aplicable a tu clínica antes de publicarlos.
+          </P>
+          <P>
             Lo que no suele funcionar son los descuentos agresivos publicados de forma
             aislada, sin contexto, o las cuentas que solo publican promociones. Generan
             seguidores poco comprometidos y, a menudo, perfiles que solo buscan precio.

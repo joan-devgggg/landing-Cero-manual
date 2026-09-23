@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: "¿Los pacientes notan que hablan con un sistema automatizado?",
-    a: "Depende de cómo esté configurado, pero lo que el paciente valora es recibir una respuesta rápida y útil, no quién se la da. Lo habitual es que el sistema resuelva las consultas repetitivas (horarios, precios, disponibilidad) y que el paciente pueda pasar a una persona del equipo en cualquier momento si lo pide o si el caso lo requiere.",
+    a: "Sí, porque el sistema se presenta como asistente virtual de la clínica: el Reglamento europeo de IA obliga a informar de que se está hablando con una IA. Lo que el paciente valora es recibir una respuesta rápida y útil. Lo habitual es que el sistema resuelva las consultas repetitivas (horarios, precios, disponibilidad) y que el paciente pueda pasar a una persona del equipo en cualquier momento si lo pide o si el caso lo requiere.",
   },
 ]
 

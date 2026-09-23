@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿El agente suena robótico?",
-    a: "No. Lo configuramos con el tono, el vocabulario y los tratamientos de tu clínica, así que la mayoría de tus clientes no notan que están hablando con una IA. Tú apruebas cómo habla antes de activarlo.",
+    a: "No. Lo configuramos con el tono, el vocabulario y los tratamientos de tu clínica, así que conversa con naturalidad y no como un bot de menús. Se presenta como el asistente virtual de tu clínica, como exige el Reglamento europeo de IA, y tú apruebas cómo habla antes de activarlo.",
   },
   {
     q: "¿Cuánto tarda en estar funcionando?",
@@ -151,7 +151,7 @@ export default function AgenteWhatsAppPage() {
             {
               icon: "MessageCircle",
               title: "Suena como tu clínica, no como un bot",
-              desc: "Configuramos el agente con tu tono, tus tratamientos y tus precios. Tus clientes no notan la diferencia — solo notan que por fin alguien responde.",
+              desc: "Configuramos el agente con tu tono, tus tratamientos y tus precios. La conversación fluye con naturalidad y tus clientes reciben respuesta al momento.",
             },
             {
               icon: "Filter",

@@ -182,7 +182,11 @@ export default function CuantoCuestaChatbotWhatsappClinicaPage() {
             Algunas soluciones cobran en función del número de conversaciones o mensajes
             gestionados al mes, mientras que otras ofrecen una cuota fija con volumen
             ilimitado. El nivel de soporte y mantenimiento —ajustes, mejoras continuas,
-            resolución de incidencias— también forma parte del precio.
+            resolución de incidencias— también forma parte del precio. Y hay un coste aparte
+            de la cuota del proveedor: Meta cobra los mensajes de plantilla que envía la
+            empresa —recordatorios, avisos, campañas— por mensaje entregado desde el 1 de
+            julio de 2025, con una tarifa que depende de la categoría del mensaje y del país.
+            Pregunta al proveedor si ese coste va incluido o se factura aparte.
           </P>
 
           <H2>Rangos de precio según el tipo de solución</H2>

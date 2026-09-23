@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Suena a máquina?",
-    a: "No. La voz, el tono y las respuestas se configuran con la información real de tu clínica — tratamientos, precios, horarios — para que la conversación se sienta natural de principio a fin.",
+    a: "No. La voz, el tono y las respuestas se configuran con la información real de tu clínica — tratamientos, precios, horarios — para que la conversación sea natural de principio a fin. Al descolgar se presenta como asistente virtual de la clínica, como exige el Reglamento europeo de IA.",
   },
   {
     q: "¿Puede agendar la cita directamente?",
@@ -115,7 +115,7 @@ export default function AgenteVozPage() {
               icon: "Mic",
               num: "02",
               title: "La IA responde con voz natural",
-              desc: "Conversa con el tono y la información real de tu clínica: tratamientos, precios, horarios. La persona al otro lado nota que la atienden bien, no que habla con una máquina.",
+              desc: "Conversa con el tono y la información real de tu clínica: tratamientos, precios, horarios. Se presenta como asistente virtual de la clínica y atiende con naturalidad, sin menús de «pulse 1».",
             },
             {
               icon: "CheckCircle",
@@ -162,7 +162,7 @@ export default function AgenteVozPage() {
             {
               icon: "Headphones",
               title: "Suena natural, no a contestador",
-              desc: "Configuramos la voz, el tono y las respuestas con la información real de tu clínica. La experiencia se siente humana de principio a fin.",
+              desc: "Configuramos la voz, el tono y las respuestas con la información real de tu clínica. La conversación fluye con naturalidad de principio a fin.",
             },
           ]}
         />

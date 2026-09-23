@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Un agente de voz con IA suena robótico o como una máquina?",
-    a: "No, si está bien configurado. Se entrena con la información real de tu clínica — horarios, servicios, tratamientos, tono — y mantiene una conversación natural, no un menú de opciones tipo «pulse 1 para citas». La mayoría de pacientes no notan que están hablando con un sistema: solo notan que, por fin, alguien contesta al teléfono.",
+    a: "No, si está bien configurado. Se entrena con la información real de tu clínica — horarios, servicios, tratamientos, tono — y mantiene una conversación natural, no un menú de opciones tipo «pulse 1 para citas». Al empezar la llamada se presenta como asistente virtual de la clínica —el Reglamento europeo de IA obliga a informar de que se habla con una IA—, y a partir de ahí lo que nota el paciente es que, por fin, alguien contesta al teléfono.",
   },
   {
     q: "¿Tengo que cambiar el número de teléfono de mi clínica?",

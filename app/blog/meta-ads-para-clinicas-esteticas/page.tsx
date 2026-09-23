@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "¿Qué hago si Meta bloquea mi anuncio?",
-    a: "Lo primero es revisar el copy y los creativos: la mayoría de bloqueos en clínicas estéticas vienen de palabras o imágenes que Meta interpreta como publicidad de salud con afirmaciones implícitas. Evita términos como «pacientes», «tratamientos», «antes y después» o cualquier frase que sugiera un resultado garantizado. Reformula el copy en torno a la experiencia y el cuidado personal, y vuelve a enviar el anuncio a revisión.",
+    a: "Lo primero es revisar el copy y los creativos con el criterio que aplica Meta, que no es una lista de palabras prohibidas: el anuncio no puede afirmar ni insinuar una característica personal del lector, como una condición de salud o física («¿tienes manchas?»), ni prometer resultados poco realistas, y las imágenes de antes/después están restringidas. Reformula el copy en torno al servicio y la experiencia, no al problema de quien lo lee. Si crees que el rechazo es un error, puedes pedir una nueva revisión desde el Administrador de anuncios. Y como las políticas cambian a menudo, consulta la versión vigente antes de relanzar.",
   },
   {
     q: "¿Qué CPL debería buscar mi clínica con Meta Ads?",
@@ -183,9 +183,12 @@ export default function MetaAdsArticlePage() {
             tiene un problema físico que tu tratamiento puede resolver.
           </P>
           <P>
-            Sus políticas sobre publicidad de salud, belleza y bienestar son estrictas y se
-            aplican de forma automática, así que no hay margen para interpretaciones: si el
-            sistema detecta el patrón, para el anuncio.
+            Sus políticas sobre publicidad de salud, belleza y bienestar son estrictas. La
+            primera revisión la hace un sistema automático, a veces con revisión humana, y si
+            crees que un rechazo es un error puedes pedir una nueva revisión desde el
+            Administrador de anuncios. Además, Meta cambia estas políticas con frecuencia:
+            lo que aquí se explica es orientativo y conviene consultar la versión vigente de
+            sus Normas de publicidad antes de lanzar una campaña.
           </P>
           <P>
             El problema es que muchas clínicas escriben el copy de sus anuncios exactamente
@@ -194,11 +197,13 @@ export default function MetaAdsArticlePage() {
             rechazo del anuncio.
           </P>
           <P>
-            Las palabras y frases que más frecuentemente causan bloqueos en clínicas
-            estéticas son: «pacientes», «tratamiento médico», «antes y después», cualquier
-            mención a una condición específica («manchas», «flacidez», «arrugas» en
-            contextos que impliquen problema personal), y frases que prometan un resultado
-            garantizado.
+            Lo que Meta vigila no es una lista de palabras, sino el criterio de su política de
+            atributos personales: el anuncio no puede afirmar ni insinuar que quien lo lee
+            tiene una condición de salud o una característica física concreta. «Manchas» o
+            «flacidez» no están prohibidas como palabras; el problema aparece cuando se dirigen
+            al lector («¿tienes manchas?»). A eso se suman las promesas de resultados poco
+            realistas o garantizados y las imágenes de antes/después, que sus políticas de
+            salud restringen.
           </P>
           <P>
             El bloqueo no siempre es inmediato — a veces el anuncio se aprueba y se rechaza
@@ -232,10 +237,11 @@ export default function MetaAdsArticlePage() {
           <P>
             «¿Cansada de tus manchas? Tenemos la solución» — implica problema personal
             dirigido al usuario. «Elimina la flacidez en 3 sesiones» — promete resultado
-            concreto. «Antes y después reales de nuestros tratamientos» — las imágenes de
-            antes/después están explícitamente prohibidas en este tipo de anuncios. «Para
-            pacientes con piel sensible» — el término «pacientes» activa los filtros de
-            publicidad médica.
+            concreto. «Antes y después reales de nuestros tratamientos» — las comparativas de
+            antes/después están restringidas en las políticas de salud de Meta, con especial
+            dureza en pérdida de peso y productos afines; antes de usarlas en estética, revisa
+            la política vigente. «Para pacientes con piel sensible» — insinúa una condición de
+            la piel de quien lo lee.
           </P>
           <P>
             La transición más sencilla es reescribir cada frase en positivo y en tercera
@@ -263,16 +269,24 @@ export default function MetaAdsArticlePage() {
               ],
               [
                 "«Antes y después reales de nuestros tratamientos»",
-                "Las imágenes de antes/después están explícitamente prohibidas",
-                "Testimonio en vídeo sobre la experiencia, sin comparativa visual",
+                "Las comparativas de antes/después están restringidas en las políticas de salud de Meta",
+                "Vídeo sobre la experiencia en la clínica, sin comparativa visual",
               ],
               [
                 "«Para pacientes con piel sensible»",
-                "«Pacientes» activa los filtros de publicidad médica",
+                "Insinúa una condición de la piel del lector",
                 "«Para quienes buscan una rutina facial más suave»",
               ],
             ]}
           />
+
+          <P>
+            Y un límite que no pone Meta, sino la ley: la publicidad sanitaria está regulada
+            en España —entre otras normas, por el Real Decreto 1907/1996 y por la normativa de
+            tu comunidad autónoma— y puede limitar el uso de testimonios de pacientes y de
+            imágenes de resultados. Antes de publicar un testimonio o una comparativa,
+            verifica qué admite la normativa aplicable a tu clínica.
+          </P>
 
           <H2>Cómo segmentar para llegar a tu cliente ideal</H2>
           <P>
@@ -281,6 +295,11 @@ export default function MetaAdsArticlePage() {
             personal, bienestar) y lookalike a partir de tus propios pacientes. Aplicadas
             juntas bajan el coste por lead y suben la calidad de los contactos; por separado
             rinden bastante menos.
+          </P>
+          <P>
+            Antes de las tres capas, un requisito: Meta exige que los anuncios de
+            procedimientos estéticos se dirijan solo a mayores de 18 años. Configura la edad
+            mínima en 18 en todos los conjuntos de anuncios.
           </P>
           <P>
             La primera es la segmentación geográfica. Limita la entrega a un radio de 5-15 km
@@ -308,6 +327,15 @@ export default function MetaAdsArticlePage() {
             listado de clientes reales, ese es el que subes como audiencia de origen. Filtra por
             quienes ya han pagado un tratamiento — una lista de curiosos que solo pidieron
             precio genera un lookalike igual de tibio que ellos.
+          </P>
+          <P>
+            Antes de subir esa lista, un aviso importante: pasar datos de tus pacientes a Meta
+            para crear una audiencia es una comunicación de datos personales a un tercero.
+            Necesita una base legal, que normalmente será el consentimiento, y que hayas
+            informado a esas personas de este uso. En una clínica, además, formar parte de tu
+            lista de pacientes puede revelar datos de salud. Revísalo con tu asesor o tu
+            delegado de protección de datos antes de hacerlo; si no tienes esa base legal, crea
+            el lookalike a partir de quienes ya interactúan con tu página o tus anuncios.
           </P>
 
           <H2>Presupuesto mínimo y qué esperar los primeros 30 días</H2>

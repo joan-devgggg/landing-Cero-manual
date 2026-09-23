@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "¿Mis pacientes notarán que están hablando con un bot?",
-    a: "Si está bien configurado, la mayoría no lo nota — o, si lo nota, no le importa porque ha recibido lo que necesitaba: una respuesta clara, al momento, sin esperas. Se entrena con el tono y la información real de tu clínica, así que la conversación suena cercana y natural, no a contestador automático. La diferencia con un chatbot de menús de hace unos años es justo esa: no obliga a elegir entre opciones numeradas, entiende lo que le escriben con sus propias palabras y responde en consecuencia. Y en el momento en que la consulta se sale de lo previsible o pide criterio clínico, pasa la conversación a una persona de tu equipo en lugar de improvisar.",
+    a: "Sí, y así debe ser: desde el 2 de agosto de 2026, el Reglamento europeo de IA obliga a informar de que se está hablando con una IA, así que el chatbot se presenta como asistente virtual de la clínica. Lo que no notarán es la rigidez de un bot de menús: reciben una respuesta clara, al momento, sin esperas. Se entrena con el tono y la información real de tu clínica, así que la conversación suena cercana y natural, no a contestador automático. La diferencia con un chatbot de menús de hace unos años es justo esa: no obliga a elegir entre opciones numeradas, entiende lo que le escriben con sus propias palabras y responde en consecuencia. Y en el momento en que la consulta se sale de lo previsible o pide criterio clínico, pasa la conversación a una persona de tu equipo en lugar de improvisar.",
   },
   {
     q: "¿Tengo que estar pendiente del WhatsApp para que funcione?",

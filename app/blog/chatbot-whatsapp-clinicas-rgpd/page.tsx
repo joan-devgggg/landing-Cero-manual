@@ -37,15 +37,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Es legal que un chatbot de WhatsApp gestione datos de pacientes?",
-    a: "Sí, siempre que se haga conforme al RGPD: informando a la persona de cómo se tratan sus datos, recogiendo su consentimiento cuando corresponda y limitando el tratamiento a la información necesaria para atender su consulta o agendar su cita. La tecnología en sí no es el problema — lo importante es cómo se configura y qué garantías ofrece el proveedor.",
+    a: "Sí, siempre que el tratamiento tenga base legal y se cumpla el resto del RGPD. Atender la consulta y gestionar la cita se apoya normalmente en el art. 6.1.b (medidas precontractuales o contrato); y como en una clínica la conversación puede incluir datos de salud, que el art. 9.1 prohíbe tratar salvo excepción, hace falta además una excepción del art. 9.2 —habitualmente la asistencia sanitaria (9.2.h) si la clínica es un centro sanitario, o el consentimiento explícito (9.2.a)—. A eso se suman informar a la persona, recoger solo lo necesario y tener contrato de encargado con el proveedor. La tecnología en sí no es el problema — lo importante es cómo se configura y qué garantías ofrece el proveedor.",
   },
   {
     q: "¿Necesito el consentimiento explícito del paciente para usar el chatbot?",
-    a: "Para responder a una consulta que el propio paciente inicia por WhatsApp, suele bastar con la información clara sobre el tratamiento de sus datos. Si el chatbot va a guardar datos de salud o usarlos con fines distintos a la atención solicitada —como marketing—, sí se necesita un consentimiento específico y separado para esos usos adicionales.",
+    a: "No necesariamente, y conviene separar dos cosas. Informar al paciente (art. 13 del RGPD) es obligatorio siempre, pero informar no legitima el tratamiento: para eso hace falta una base legal. Para atender la consulta y gestionar la cita, esa base suele ser el art. 6.1.b y, si hay datos de salud, una excepción del art. 9.2 —la asistencia sanitaria (9.2.h) en un centro sanitario o, si no aplica otra, el consentimiento explícito (9.2.a)—. El consentimiento es una de las vías, no un requisito general. Los recordatorios de una cita que el paciente ha pedido forman parte del propio servicio. Lo que sí exige consentimiento previo es el marketing por medios electrónicos, y eso lo regula la LSSI (art. 21), salvo la excepción para clientes con servicios similares. Cuál aplica en tu caso lo debe confirmar tu asesor o tu DPD.",
   },
   {
     q: "¿Qué pasa si el chatbot usa una IA de un proveedor externo?",
-    a: "Es habitual, y no supone un problema siempre que exista un contrato de encargado de tratamiento con ese proveedor, que garantice que los datos se tratan con las mismas garantías que exige el RGPD, no se usan para otros fines, y se aplican medidas de seguridad adecuadas. Antes de contratar cualquier solución, conviene pedir esta información por escrito.",
+    a: "Es habitual, y no supone un problema siempre que exista un contrato de encargado de tratamiento con ese proveedor, que garantice que los datos se tratan con las mismas garantías que exige el RGPD, no se usan para otros fines, y se aplican medidas de seguridad adecuadas. Si el proveedor trata los datos fuera del Espacio Económico Europeo —por ejemplo, en Estados Unidos—, además tiene que haber una garantía para esa transferencia internacional (capítulo V del RGPD): una decisión de adecuación o cláusulas contractuales tipo. Antes de contratar cualquier solución, conviene pedir esta información por escrito.",
   },
   {
     q: "¿Cuánto tiempo se pueden conservar las conversaciones del chatbot?",
@@ -132,6 +132,13 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
             la solución está bien configurada desde el principio.
           </P>
           <P>
+            <strong>Aviso:</strong> este artículo es informativo y no sustituye el
+            asesoramiento legal profesional. Cada clínica tiene su propia situación —si es o
+            no centro sanitario, qué datos trata, qué proveedores usa—, así que revisa tu caso
+            con tu asesor o con tu delegado de protección de datos antes de poner en marcha el
+            chatbot.
+          </P>
+          <P>
             En este artículo vas a entender si es legal usar un chatbot de WhatsApp en tu
             clínica, qué dice exactamente el RGPD sobre los datos de tus pacientes, cómo
             configurar el chatbot para cumplirlo, qué documentos necesitas tener
@@ -155,9 +162,10 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
             un software de gestión de pacientes o un sistema de citas online.
           </P>
           <P>
-            Dicho de otra forma: el chatbot no añade un riesgo nuevo por el hecho de ser
-            un chatbot. El riesgo —y la responsabilidad— es la misma que ya tienes con
-            cualquier canal donde se recogen datos de pacientes. La diferencia es que,
+            Dicho de otra forma: el chatbot no convierte en ilegal algo que antes era legal,
+            pero sí añade piezas que hay que revisar: un proveedor de IA que trata los datos
+            por cuenta de tu clínica, posibles transferencias fuera de la Unión Europea y, con
+            frecuencia, la necesidad de una evaluación de impacto. La diferencia es que,
             como WhatsApp es un canal que tus pacientes usan a diario y por el que te
             cuentan cosas personales,{" "}
             <InternalLink href="/blog/whatsapp-business-clinicas-esteticas">
@@ -168,10 +176,12 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
 
           <H2>Qué dice el RGPD sobre el tratamiento de datos de pacientes</H2>
           <P>
-            El RGPD clasifica los datos de salud como una categoría especial de datos,
-            que requiere un nivel de protección más alto que otros datos personales. Esto
-            no significa que no se puedan tratar —de hecho, una clínica trata datos de
-            salud constantemente— sino que hay que hacerlo con especial cuidado.
+            El RGPD clasifica los datos de salud como una categoría especial de datos, y su
+            art. 9.1 prohíbe tratarlos salvo que se dé alguna de las excepciones del art. 9.2.
+            Una clínica trata datos de salud constantemente precisamente porque se apoya en
+            una de esas excepciones —normalmente, la asistencia sanitaria—, no porque estos
+            datos solo pidan «más cuidado». Si el chatbot recoge o ve datos de salud, ese
+            tratamiento también necesita su excepción.
           </P>
 
           <H3>Principio de minimización de datos</H3>
@@ -186,20 +196,39 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
           <H3>Información clara sobre el tratamiento de datos</H3>
           <P>
             La persona que escribe por WhatsApp tiene derecho a saber quién trata sus
-            datos, con qué finalidad, durante cuánto tiempo y qué derechos tiene —acceso,
-            rectificación, supresión—. Esta información se suele ofrecer mediante un
-            enlace a la política de privacidad, de forma accesible desde la propia
-            conversación.
+            datos, con qué finalidad y base legal, durante cuánto tiempo y qué derechos
+            tiene: acceso, rectificación, supresión, oposición, limitación del tratamiento y
+            portabilidad, además del derecho a reclamar ante la Agencia Española de
+            Protección de Datos (AEPD), que es la autoridad de control en España (art. 13 del
+            RGPD). Se puede dar por capas —un resumen breve en la conversación y un enlace a la
+            política de privacidad completa—, como permite el art. 11 de la LOPDGDD. Ojo:
+            informar es obligatorio, pero no sustituye a la base legal.
           </P>
 
           <H3>Base legal para el tratamiento</H3>
           <P>
-            Cuando un paciente escribe voluntariamente para preguntar por un tratamiento o
-            pedir una cita, está iniciando una relación precontractual —esa es,
-            normalmente, la base legal que permite al chatbot responder y gestionar esos
-            datos. Si más adelante el chatbot va a usar esos datos para otros fines, como
-            enviar recordatorios o comunicaciones comerciales, hace falta una base legal
-            adicional —normalmente, el consentimiento explícito.
+            Con datos de salud, la base legal tiene dos capas, y hacen falta las dos. La
+            primera es la del art. 6: cuando un paciente escribe para preguntar por un
+            tratamiento o pedir una cita, está iniciando una relación precontractual, y
+            atenderle se apoya normalmente en el art. 6.1.b.
+          </P>
+          <P>
+            La segunda es una excepción del art. 9.2, porque sin ella el art. 9.1 prohíbe
+            tratar datos de salud. Las más habituales en una clínica son la asistencia
+            sanitaria (art. 9.2.h), que exige que el tratamiento lo hagan profesionales
+            sujetos a secreto profesional o bajo su responsabilidad (art. 9.3) y encaja cuando
+            la clínica es un centro sanitario; y el consentimiento explícito del paciente
+            (art. 9.2.a), cuando no aplica otra excepción. Cuál corresponde a tu clínica
+            depende de su actividad y conviene confirmarlo con tu asesor.
+          </P>
+          <P>
+            Los recordatorios de una cita que el propio paciente ha pedido forman parte de
+            la prestación del servicio y no necesitan un consentimiento aparte. Las
+            comunicaciones comerciales son otra cosa: enviarlas por WhatsApp, email o SMS
+            exige consentimiento previo según la LSSI (art. 21), salvo la excepción para
+            clientes que ya contrataron productos o servicios similares, que además deben
+            poder darse de baja con facilidad. Esa norma es distinta del art. 9 del RGPD y no
+            conviene mezclarlas.
           </P>
 
           <H2>Cómo configurar el chatbot para cumplir el RGPD</H2>
@@ -239,6 +268,27 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
             lo explicamos con detalle.
           </P>
 
+          <H3>Revisar las transferencias internacionales</H3>
+          <P>
+            Muchos proveedores de IA, de mensajería o de alojamiento procesan datos fuera del
+            Espacio Económico Europeo, sobre todo en Estados Unidos. Eso es una transferencia
+            internacional y el capítulo V del RGPD exige una garantía para hacerla: una
+            decisión de adecuación de la Comisión Europea —en el caso de Estados Unidos, el
+            Marco de Privacidad de Datos UE-EE. UU., solo si el proveedor está adherido— o
+            cláusulas contractuales tipo. Pide al proveedor del chatbot la lista de
+            subencargados, dónde tratan los datos y con qué garantía.
+          </P>
+
+          <H3>Que el chatbot se identifique como asistente de IA</H3>
+          <P>
+            Desde el 2 de agosto de 2026, el art. 50 del Reglamento europeo de Inteligencia
+            Artificial (Reglamento (UE) 2024/1689) obliga a que las personas sepan que están
+            interactuando con un sistema de IA, salvo que resulte evidente. En la práctica,
+            el chatbot debe presentarse como asistente virtual de la clínica desde el primer
+            mensaje. No resta naturalidad a la conversación y evita que el paciente se sienta
+            engañado.
+          </P>
+
           <H3>Definir plazos de conservación de las conversaciones</H3>
           <P>
             Establece durante cuánto tiempo se conservan las conversaciones y los datos
@@ -272,10 +322,29 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
 
           <H3>Registro de actividades de tratamiento</H3>
           <P>
-            Si tu clínica ya tiene un registro de actividades de tratamiento —obligatorio
-            en la mayoría de casos según el RGPD— hay que actualizarlo para incluir el
-            chatbot de WhatsApp como nuevo canal y, si corresponde, al proveedor que presta
-            ese servicio como encargado del tratamiento.
+            Para una clínica, el registro de actividades de tratamiento es obligatorio: la
+            exención del art. 30.5 del RGPD para organizaciones de menos de 250 personas no se
+            aplica cuando se tratan categorías especiales de datos, como los de salud. Hay que
+            actualizarlo para incluir el chatbot de WhatsApp como nuevo canal y al proveedor
+            que presta ese servicio como encargado del tratamiento.
+          </P>
+
+          <H3>Evaluación de impacto (EIPD)</H3>
+          <P>
+            El art. 35 del RGPD exige una evaluación de impacto cuando un tratamiento puede
+            suponer un alto riesgo para las personas. Tratar datos de salud con una tecnología
+            nueva, como un chatbot de IA, hace probable que haga falta. La AEPD publica una
+            lista orientativa de tratamientos que la requieren: revísala con tu asesor o tu
+            DPD antes de activar el chatbot. Si de la evaluación sale un riesgo alto que no se
+            puede reducir, hay que consultar a la AEPD antes de empezar (art. 36).
+          </P>
+
+          <H3>Delegado de protección de datos (DPD)</H3>
+          <P>
+            La LOPDGDD (art. 34.1.l) obliga a nombrar delegado de protección de datos a los
+            centros sanitarios legalmente obligados a mantener historias clínicas, salvo a
+            los profesionales sanitarios que ejercen a título individual. Si tu clínica está
+            en ese caso, su DPD debe participar en la puesta en marcha del chatbot.
           </P>
 
           <H3>Contrato de encargado de tratamiento con el proveedor</H3>
@@ -295,18 +364,24 @@ export default function ChatbotWhatsappClinicasRgpdPage() {
             Antes de poner en marcha tu chatbot de WhatsApp, repasa estos puntos:
           </P>
           <P>
-            El chatbot recoge solo los datos necesarios para atender la consulta o
-            agendar la cita. La política de privacidad de tu clínica incluye WhatsApp
+            Tienes identificada la base legal en sus dos capas: la del art. 6 y, si hay datos
+            de salud, la excepción del art. 9.2. El marketing por WhatsApp va aparte, con
+            consentimiento según la LSSI. El chatbot recoge solo los datos necesarios para
+            atender la consulta o agendar la cita y se presenta como asistente de IA. La
+            política de privacidad de tu clínica incluye WhatsApp
             como canal y menciona el tratamiento automatizado. La persona puede acceder
             fácilmente a la información sobre cómo se tratan sus datos desde la propia
             conversación. Existe un contrato de encargado de tratamiento con el proveedor
             del chatbot, si usa servicios externos de IA. Están definidos los plazos de
             conservación de las conversaciones y el procedimiento para eliminarlas. El
             registro de actividades de tratamiento de tu clínica incluye este nuevo canal.
+            Sabes dónde trata los datos el proveedor y con qué garantía, si es fuera de la UE.
+            Has valorado con tu asesor si necesitas una evaluación de impacto y, si tu clínica
+            es un centro sanitario obligado a llevar historias clínicas, tu DPD está al tanto.
           </P>
           <P>
-            Si tienes estos puntos cubiertos, tu chatbot de WhatsApp cumple con el RGPD
-            sin que tengas que renunciar a nada de lo que lo hace útil: responder al
+            Si tienes estos puntos cubiertos, tienes resuelto lo esencial para usar el
+            chatbot de WhatsApp conforme al RGPD sin que tengas que renunciar a nada de lo que lo hace útil: responder al
             instante, las 24 horas, también a las consultas que hoy llegan fuera de
             horario y se quedan sin atender. Si quieres ver con detalle qué puede hacer
             este tipo de agente por tu clínica, en{" "}

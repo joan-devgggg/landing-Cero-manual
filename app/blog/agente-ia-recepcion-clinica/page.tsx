@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "¿No suena robótico hablar con un agente IA en lugar de con una persona?",
-    a: "Si está bien configurado, no. El agente se entrena con el tono, el vocabulario y la información concreta de tu clínica, y mantiene conversaciones naturales en español, entendiendo variaciones en cómo se formulan las preguntas. La mayoría de pacientes simplemente notan que les responden rápido y bien — no que están hablando con un sistema.",
+    a: "Si está bien configurado, no. El agente se entrena con el tono, el vocabulario y la información concreta de tu clínica, y mantiene conversaciones naturales en español, entendiendo variaciones en cómo se formulan las preguntas. Se presenta como asistente virtual de la clínica, como exige el Reglamento europeo de IA, y lo que el paciente nota es que le responden rápido y bien.",
   },
   {
     q: "¿Qué pasa si un paciente plantea algo que el agente no puede resolver?",
