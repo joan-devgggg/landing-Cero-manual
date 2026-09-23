@@ -14,7 +14,9 @@ const PATH = "/blog/automatizar-whatsapp-clinica-dental"
 const DATES = articleDates("automatizar-whatsapp-clinica-dental")
 const TITLE = "Cómo automatizar WhatsApp en tu clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Automatizar WhatsApp en tu clínica dental permite responder leads, confirmar citas y reducir no-shows sin que el equipo esté pendiente del móvil."
+  "Cómo automatizar WhatsApp en tu clínica dental para responder consultas, confirmar citas y reducir no-shows sin estar pendiente del móvil."
+const ARTICLE_DESCRIPTION =
+  "Cómo automatizar WhatsApp en una clínica dental: qué conversaciones se pueden automatizar, qué hace falta para empezar y de qué depende el coste."
 const HEADLINE = "Cómo automatizar WhatsApp en tu clínica dental y dejar de perder leads"
 
 export const metadata: Metadata = {
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

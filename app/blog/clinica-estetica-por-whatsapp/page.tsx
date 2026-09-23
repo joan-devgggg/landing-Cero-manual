@@ -14,7 +14,9 @@ const PATH = "/blog/clinica-estetica-por-whatsapp"
 const DATES = articleDates("clinica-estetica-por-whatsapp")
 const TITLE = "Clínica estética por WhatsApp: guía completa | Cero Manual"
 const DESCRIPTION =
-  "Cada vez más pacientes contactan con clínicas estéticas por WhatsApp. Te explicamos cómo gestionarlo sin que el equipo esté pendiente del móvil todo el día."
+  "Cómo gestionar tu clínica estética por WhatsApp: consultas, citas y seguimiento sin que el equipo esté pendiente del móvil todo el día."
+const ARTICLE_DESCRIPTION =
+  "Cómo gestionar las consultas y citas de una clínica estética por WhatsApp: qué se puede automatizar, qué necesita a una persona y qué cambia en el día a día del equipo."
 const HEADLINE =
   "Clínica estética por WhatsApp: cómo gestionar consultas y citas sin volverte loco"
 
@@ -69,7 +71,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

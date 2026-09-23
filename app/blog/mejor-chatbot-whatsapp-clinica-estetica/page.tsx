@@ -14,7 +14,9 @@ const PATH = "/blog/mejor-chatbot-whatsapp-clinica-estetica"
 const DATES = articleDates("mejor-chatbot-whatsapp-clinica-estetica")
 const TITLE = "Mejor chatbot WhatsApp para clínica estética | Cero Manual"
 const DESCRIPTION =
-  "No todos los chatbots de WhatsApp son iguales. Te explicamos qué criterios usar para elegir el mejor para tu clínica estética. Reserva tu auditoría gratuita."
+  "Cómo elegir el mejor chatbot de WhatsApp para tu clínica estética: criterios, preguntas al proveedor y señales de alerta. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Criterios para elegir el mejor chatbot de WhatsApp para una clínica estética, funciones imprescindibles y opcionales, preguntas al proveedor y señales de alerta."
 const HEADLINE = "Cómo elegir el mejor chatbot de WhatsApp para tu clínica estética"
 
 export const metadata: Metadata = {
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

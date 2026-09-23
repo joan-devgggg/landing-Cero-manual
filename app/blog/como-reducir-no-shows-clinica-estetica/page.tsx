@@ -14,7 +14,9 @@ const PATH = "/blog/como-reducir-no-shows-clinica-estetica"
 const DATES = articleDates("como-reducir-no-shows-clinica-estetica")
 const TITLE = "Cómo reducir no-shows en tu clínica estética | Cero Manual"
 const DESCRIPTION =
-  "Un no-show en tu clínica estética es un hueco que ya no se llena. Te explicamos cómo reducirlos con recordatorios automáticos. Pide tu auditoría gratuita."
+  "Cómo reducir los no-shows de tu clínica estética con recordatorios automáticos y confirmación activa por WhatsApp. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Cómo reducir los no-shows en una clínica estética: cuánto cuestan con tus propios números, por qué ocurren y cómo funciona la confirmación activa por WhatsApp."
 const HEADLINE = "Cómo reducir los no-shows en tu clínica estética y dejar de perder ingresos"
 
 export const metadata: Metadata = {
@@ -60,7 +62,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

@@ -15,6 +15,8 @@ const DATES = articleDates("emails-recordatorio-pacientes-clinica")
 const TITLE = "Emails de recordatorio de cita: plantillas | Cero Manual"
 const DESCRIPTION =
   "Plantillas de email de recordatorio para clínicas listas para copiar. Y por qué a muchos pacientes les llega mejor el recordatorio por WhatsApp."
+const ARTICLE_DESCRIPTION =
+  "Plantillas de email de recordatorio de citas para clínicas, qué debe incluir cada mensaje, cuándo enviarlo y en qué casos conviene usar WhatsApp en su lugar."
 const HEADLINE =
   "Emails de recordatorio para pacientes: plantillas, consejos y cuándo usar WhatsApp en su lugar"
 
@@ -61,7 +63,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

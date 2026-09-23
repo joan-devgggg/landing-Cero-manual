@@ -14,7 +14,9 @@ const PATH = "/blog/inteligencia-artificial-clinicas-esteticas"
 const DATES = articleDates("inteligencia-artificial-clinicas-esteticas")
 const TITLE = "Inteligencia artificial en clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "La IA ya está transformando cómo las clínicas estéticas gestionan leads, citas y pacientes. Descubre qué puedes automatizar hoy y por dónde empezar."
+  "Qué puede automatizar hoy la inteligencia artificial en tu clínica estética —atención, citas, recordatorios y reactivación— y por dónde empezar."
+const ARTICLE_DESCRIPTION =
+  "Qué tareas de una clínica estética puede automatizar la inteligencia artificial —atención por WhatsApp, citas, recordatorios y reactivación— y en qué orden empezar."
 const HEADLINE =
   "Inteligencia artificial para clínicas estéticas: qué puedes automatizar hoy"
 
@@ -57,7 +59,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

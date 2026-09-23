@@ -13,7 +13,9 @@ const PATH = "/blog/chatbot-whatsapp-vs-recepcionista-clinica"
 const DATES = articleDates("chatbot-whatsapp-vs-recepcionista-clinica")
 const TITLE = "Chatbot de WhatsApp vs recepcionista clínica | Cero Manual"
 const DESCRIPTION =
-  "¿Chatbot de WhatsApp o recepcionista? Te explicamos en qué se complementan, cuándo tiene sentido automatizar y qué no puede hacer una IA. Consúltanos gratis."
+  "Chatbot de WhatsApp o recepcionista: qué hace mejor cada uno, en qué se complementan y cuándo tiene sentido automatizar en tu clínica."
+const ARTICLE_DESCRIPTION =
+  "Comparativa entre un chatbot de WhatsApp y una recepcionista en una clínica: qué hace mejor cada uno, cómo se complementan y en qué casos conviene automatizar."
 const HEADLINE = "Chatbot de WhatsApp vs recepcionista en tu clínica: comparativa honesta"
 
 export const metadata: Metadata = {
@@ -55,7 +57,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

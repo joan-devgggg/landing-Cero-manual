@@ -13,7 +13,9 @@ const PATH = "/blog/resenas-google-clinicas-dentales"
 const DATES = articleDates("resenas-google-clinicas-dentales")
 const TITLE = "Reseñas de Google para clínicas dentales | Cero Manual"
 const DESCRIPTION =
-  "Las reseñas de Google pesan cuando un paciente elige clínica dental. Te explicamos cómo conseguirlas en automático después de cada cita. Automatízalo hoy."
+  "Cómo conseguir más reseñas en Google para tu clínica dental: el momento de pedirlas, cómo automatizarlo y cómo responder a las negativas."
+const ARTICLE_DESCRIPTION =
+  "Cómo conseguir más reseñas de Google en una clínica dental: por qué los pacientes no las dejan, en qué momento pedirlas, cómo automatizarlo y cómo responder a las negativas."
 const HEADLINE =
   "Cómo conseguir más reseñas en Google para tu clínica dental (y que los nuevos pacientes te elijan)"
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

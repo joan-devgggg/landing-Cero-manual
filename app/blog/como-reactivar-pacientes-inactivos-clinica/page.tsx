@@ -14,7 +14,9 @@ const PATH = "/blog/como-reactivar-pacientes-inactivos-clinica"
 const DATES = articleDates("como-reactivar-pacientes-inactivos-clinica")
 const TITLE = "Reactivar pacientes inactivos: cómo hacerlo | Cero Manual"
 const DESCRIPTION =
-  "Tienes clientes que dejaron de venir. Te explicamos cómo reactivarlos con mensajes automáticos por WhatsApp y recuperar esos ingresos perdidos."
+  "Cómo reactivar pacientes inactivos en tu clínica con mensajes automáticos por WhatsApp, sin llamarles uno por uno. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Cómo reactivar pacientes inactivos en una clínica: cómo identificarlos, qué mensaje enviarles por WhatsApp y cómo calcular lo que vale recuperarlos."
 const HEADLINE = "Cómo reactivar pacientes inactivos en tu clínica (sin llamar uno por uno)"
 
 export const metadata: Metadata = {
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

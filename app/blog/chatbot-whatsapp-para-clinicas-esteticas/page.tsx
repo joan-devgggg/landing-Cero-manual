@@ -15,7 +15,9 @@ const PATH = "/blog/chatbot-whatsapp-para-clinicas-esteticas"
 const DATES = articleDates("chatbot-whatsapp-para-clinicas-esteticas")
 const TITLE = "Chatbot WhatsApp clínicas estéticas: qué es | Cero Manual"
 const DESCRIPTION =
-  "Un chatbot de WhatsApp responde consultas, agenda citas y cualifica leads de tu clínica estética las 24 horas. Descubre cómo funciona y qué cuesta ponerlo."
+  "Qué es un chatbot de WhatsApp para clínicas estéticas, qué hace (consultas, citas, cualificar leads) y de qué depende su coste. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Qué es un chatbot de WhatsApp para clínicas estéticas, en qué se diferencia de responder a mano con WhatsApp Business, qué tareas cubre y de qué depende su coste."
 const HEADLINE =
   "Chatbot de WhatsApp para clínicas estéticas: qué es y cómo funciona"
 
@@ -58,7 +60,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

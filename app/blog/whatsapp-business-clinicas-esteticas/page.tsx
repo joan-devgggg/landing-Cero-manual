@@ -14,6 +14,8 @@ const DATES = articleDates("whatsapp-business-clinicas-esteticas")
 const TITLE = "WhatsApp Business para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
   "WhatsApp Business para clínicas estéticas: cómo configurarlo bien, qué límites tiene usarlo a mano y cuándo tiene sentido automatizarlo con IA."
+const ARTICLE_DESCRIPTION =
+  "Cómo configurar WhatsApp Business en una clínica estética, sus límites cuando crece el volumen, la diferencia entre la app y la API y cuándo automatizarlo."
 const HEADLINE =
   "WhatsApp Business para clínicas estéticas: cómo configurarlo y cuándo automatizarlo"
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

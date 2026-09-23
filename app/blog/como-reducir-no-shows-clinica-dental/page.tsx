@@ -15,7 +15,9 @@ const PATH = "/blog/como-reducir-no-shows-clinica-dental"
 const DATES = articleDates("como-reducir-no-shows-clinica-dental")
 const TITLE = "Cómo reducir no-shows en tu clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Los no-shows vacían la agenda de tu clínica dental y ese hueco no se recupera. Descubre cinco estrategias probadas para reducirlos ya. Calcula tu pérdida real."
+  "Cinco estrategias para reducir los no-shows de tu clínica dental, empezando por los recordatorios por WhatsApp. Calcula tu pérdida real."
+const ARTICLE_DESCRIPTION =
+  "Cinco estrategias para reducir los no-shows en una clínica dental —recordatorios con confirmación, lista de espera y política de citas— y cómo calcular lo que se puede recuperar."
 const HEADLINE =
   "Cómo reducir los no-shows en tu clínica dental (y recuperar esos huecos de agenda)"
 
@@ -58,7 +60,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

@@ -14,7 +14,9 @@ const PATH = "/blog/como-reducir-cancelaciones-clinica-estetica"
 const DATES = articleDates("como-reducir-cancelaciones-clinica-estetica")
 const TITLE = "Reducir cancelaciones en tu clínica estética | Cero Manual"
 const DESCRIPTION =
-  "Las cancelaciones de última hora vacían tu agenda y no dan tiempo a rellenar el hueco. Te explicamos cómo reducirlas sin llamar a cada paciente."
+  "Cómo reducir las cancelaciones de última hora en tu clínica estética con confirmación activa, lista de espera y una política de cancelación clara."
+const ARTICLE_DESCRIPTION =
+  "Cómo reducir las cancelaciones de última hora en una clínica estética: confirmación activa, lista de espera y una política de cancelación comunicada de antemano."
 const HEADLINE = "Cómo reducir las cancelaciones de última hora en tu clínica estética"
 
 export const metadata: Metadata = {
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

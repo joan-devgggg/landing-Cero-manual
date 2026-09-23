@@ -13,7 +13,9 @@ const PATH = "/blog/programa-gestion-clinica-estetica"
 const DATES = articleDates("programa-gestion-clinica-estetica")
 const TITLE = "Programa de gestión para clínicas estéticas: cómo elegir el mejor | Cero Manual"
 const DESCRIPTION =
-  "Un buen programa de gestión para tu centro de estética ahorra horas cada semana. Te explicamos cómo elegirlo y qué evitar. Pide tu auditoría gratis."
+  "Cómo elegir un programa de gestión para tu clínica estética: qué debe incluir, errores habituales y preguntas antes de contratar. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Cómo elegir un programa de gestión para una clínica estética: funciones que debe incluir, errores habituales, preguntas antes de contratar y cuándo no es suficiente."
 const HEADLINE =
   "Programa de gestión para clínicas estéticas: cómo elegir el mejor y no arrepentirte"
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

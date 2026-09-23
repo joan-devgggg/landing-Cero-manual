@@ -14,7 +14,9 @@ const PATH = "/blog/chatbot-whatsapp-clinicas-rgpd"
 const DATES = articleDates("chatbot-whatsapp-clinicas-rgpd")
 const TITLE = "Chatbot de WhatsApp para clínicas y RGPD | Cero Manual"
 const DESCRIPTION =
-  "¿Es legal usar un chatbot de WhatsApp en tu clínica? Te explicamos cómo cumplir el RGPD con un agente de IA y qué tener en cuenta. Consúltanos sin coste."
+  "Cómo usar un chatbot de WhatsApp en tu clínica conforme al RGPD: base legal, datos de salud, proveedor de IA y documentos que necesitas."
+const ARTICLE_DESCRIPTION =
+  "Requisitos del RGPD y la LOPDGDD para usar un chatbot de WhatsApp en una clínica: base legal con datos de salud, información al paciente, encargado del tratamiento, transferencias, EIPD y DPD."
 const HEADLINE =
   "Chatbot de WhatsApp para clínicas y RGPD: cómo cumplir la ley sin complicaciones"
 
@@ -57,7 +59,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

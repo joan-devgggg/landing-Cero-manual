@@ -13,7 +13,9 @@ const PATH = "/blog/marketing-clinica-dental"
 const DATES = articleDates("marketing-clinica-dental")
 const TITLE = "Marketing para clínicas dentales: qué funciona | Cero Manual"
 const DESCRIPTION =
-  "El marketing para clínicas dentales ha cambiado. Te explicamos qué canales funcionan realmente y cómo automatizar la captación de pacientes."
+  "Qué canales de marketing funcionan para una clínica dental —Google, redes sociales y WhatsApp— y cómo automatizar la respuesta a los pacientes."
+const ARTICLE_DESCRIPTION =
+  "Canales de marketing para clínicas dentales: Google, redes sociales y WhatsApp, qué aporta cada uno y cómo automatizar la respuesta a los pacientes que llegan."
 const HEADLINE = "Marketing para clínicas dentales: qué funciona realmente"
 
 export const metadata: Metadata = {
@@ -63,7 +65,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

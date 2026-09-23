@@ -17,7 +17,9 @@ const PATH = "/blog/crm-para-clinicas-esteticas"
 const DATES = articleDates("crm-para-clinicas-esteticas")
 const TITLE = "CRM para clínicas estéticas: qué es y para qué | Cero Manual"
 const DESCRIPTION =
-  "Un CRM para clínicas estéticas centraliza leads, citas y seguimiento de pacientes. Te explicamos qué es, para qué sirve y cuándo lo necesitas."
+  "Qué es un CRM para clínicas estéticas, para qué sirve, en qué se diferencia del software de citas y cuándo lo necesitas. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Qué es un CRM para clínicas estéticas, qué funciones debe tener, en qué se diferencia de un software de citas y qué añade la IA al seguimiento de leads."
 const HEADLINE =
   "CRM para clínicas estéticas: qué es, para qué sirve y cuándo lo necesitas"
 
@@ -60,7 +62,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

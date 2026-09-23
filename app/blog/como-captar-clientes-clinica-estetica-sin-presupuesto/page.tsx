@@ -15,7 +15,9 @@ const DATES = articleDates("como-captar-clientes-clinica-estetica-sin-presupuest
 const TITLE =
   "Captar clientes en estética sin gastar más | Cero Manual"
 const DESCRIPTION =
-  "Antes de gastar más en publicidad, recupera los clientes que ya tienes. Cinco estrategias para captar más en tu centro de estética sin invertir un euro más."
+  "Cómo captar más clientes para tu clínica estética sin aumentar el presupuesto en publicidad: reseñas, referidos, respuesta rápida y más."
+const ARTICLE_DESCRIPTION =
+  "Estrategias para captar clientes en una clínica estética sin aumentar el presupuesto de publicidad: reseñas, referidos, respuesta rápida por WhatsApp y reactivación."
 const HEADLINE =
   "Cómo captar más clientes para tu clínica estética sin aumentar el presupuesto"
 
@@ -66,7 +68,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

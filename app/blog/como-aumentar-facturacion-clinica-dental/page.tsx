@@ -14,7 +14,9 @@ const PATH = "/blog/como-aumentar-facturacion-clinica-dental"
 const DATES = articleDates("como-aumentar-facturacion-clinica-dental")
 const TITLE = "Aumentar la facturación de tu clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Aumenta la facturación de tu clínica dental sin gastar más en publicidad: cuatro palancas que puedes activar esta semana. Pide tu auditoría gratuita."
+  "Cómo aumentar la facturación de tu clínica dental sin gastar más en publicidad: cuatro palancas que puedes activar esta semana. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Cuatro palancas para aumentar la facturación de una clínica dental sin captar más pacientes: reactivar a los inactivos, reducir no-shows, subir el ticket medio y automatizar."
 const HEADLINE =
   "Cómo aumentar la facturación de tu clínica dental sin necesidad de más pacientes"
 
@@ -61,7 +63,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

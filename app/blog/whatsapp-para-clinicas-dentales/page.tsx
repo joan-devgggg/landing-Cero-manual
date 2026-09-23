@@ -14,6 +14,8 @@ const DATES = articleDates("whatsapp-para-clinicas-dentales")
 const TITLE = "WhatsApp para clínicas dentales: cómo usarlo | Cero Manual"
 const DESCRIPTION =
   "Guía de WhatsApp para clínicas dentales: cómo usarlo para captar pacientes, confirmar citas y reactivar a los que llevan tiempo sin venir."
+const ARTICLE_DESCRIPTION =
+  "Cómo usar WhatsApp en una clínica dental para atender consultas, confirmar citas y reactivar pacientes, y cuándo conviene automatizarlo."
 const HEADLINE = "WhatsApp para clínicas dentales: cómo usarlo para captar y retener más pacientes"
 
 export const metadata: Metadata = {
@@ -55,7 +57,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

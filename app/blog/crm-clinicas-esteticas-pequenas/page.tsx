@@ -16,7 +16,9 @@ const PATH = "/blog/crm-clinicas-esteticas-pequenas"
 const DATES = articleDates("crm-clinicas-esteticas-pequenas")
 const TITLE = "CRM para centros de estética pequeños | Cero Manual"
 const DESCRIPTION =
-  "Una clínica estética pequeña no necesita un CRM complejo. Te explicamos qué funcionalidades son imprescindibles y cuál es el punto de entrada más fácil."
+  "Qué CRM necesita una clínica estética pequeña: funciones imprescindibles, errores al elegir y el punto de entrada más sencillo."
+const ARTICLE_DESCRIPTION =
+  "Qué CRM necesita una clínica estética pequeña: funciones imprescindibles, errores habituales al elegir, opciones con plan gratuito y cuándo pasar a algo más completo."
 const HEADLINE =
   "CRM para clínicas estéticas pequeñas: qué necesitas realmente y por dónde empezar"
 
@@ -59,7 +61,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

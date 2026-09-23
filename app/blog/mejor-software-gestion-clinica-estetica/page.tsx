@@ -16,7 +16,9 @@ const PATH = "/blog/mejor-software-gestion-clinica-estetica"
 const DATES = articleDates("mejor-software-gestion-clinica-estetica")
 const TITLE = "Mejor software para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "¿Cuál es el mejor software de gestión para tu clínica estética? Te explicamos qué criterios usar y cuándo tiene sentido añadir automatización con IA."
+  "Cómo elegir el mejor software de gestión para tu clínica estética: criterios, tipos de programa, precios publicados y cuándo añadir IA."
+const ARTICLE_DESCRIPTION =
+  "Criterios para elegir el mejor software de gestión para una clínica estética, tipos de programa, precios publicados de Flowww y Koibox y cuándo añadir automatización con IA."
 const HEADLINE =
   "Mejor software de gestión para clínicas estéticas: cómo elegir"
 
@@ -59,7 +61,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

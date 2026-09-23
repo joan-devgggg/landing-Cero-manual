@@ -14,7 +14,9 @@ const PATH = "/blog/cuanto-cuesta-chatbot-whatsapp-clinica"
 const DATES = articleDates("cuanto-cuesta-chatbot-whatsapp-clinica")
 const TITLE = "Precio de un chatbot de WhatsApp para clínicas | Cero Manual"
 const DESCRIPTION =
-  "El precio de un chatbot de WhatsApp para clínicas varía según funcionalidades. Te explicamos qué factores influyen en el coste y cuándo se amortiza."
+  "De qué depende el precio de un chatbot de WhatsApp para clínicas: tipo de solución, volumen, mensajes de Meta y cuándo se amortiza."
+const ARTICLE_DESCRIPTION =
+  "De qué depende el precio de un chatbot de WhatsApp para una clínica: tipo de solución, volumen de conversaciones, coste de los mensajes de Meta y cómo calcular cuándo se amortiza."
 const HEADLINE = "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? De qué depende el precio"
 
 export const metadata: Metadata = {
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

@@ -13,7 +13,9 @@ const PATH = "/blog/experiencia-paciente-clinica-estetica"
 const DATES = articleDates("experiencia-paciente-clinica-estetica")
 const TITLE = "Experiencia del paciente en clínica estética | Cero Manual"
 const DESCRIPTION =
-  "La experiencia del paciente decide si vuelve o no. Te explicamos cómo mejorarla en cada punto de contacto sin cargar de trabajo al equipo. Descubre cómo."
+  "Cómo mejorar la experiencia del paciente en tu clínica estética antes, durante y después de la cita, sin cargar de trabajo al equipo."
+const ARTICLE_DESCRIPTION =
+  "Cómo mejorar la experiencia del paciente en una clínica estética en cada fase —antes, durante y después de la cita— y qué parte se puede automatizar."
 const HEADLINE = "Cómo mejorar la experiencia del paciente en tu clínica estética (y que vuelvan solos)"
 
 export const metadata: Metadata = {
@@ -63,7 +65,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

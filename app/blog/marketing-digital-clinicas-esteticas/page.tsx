@@ -17,7 +17,9 @@ const PATH = "/blog/marketing-digital-clinicas-esteticas"
 const DATES = articleDates("marketing-digital-clinicas-esteticas")
 const TITLE = "Marketing digital para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "El marketing digital para clínicas estéticas va más allá de Instagram. Te explicamos los canales que realmente funcionan y por dónde empezar."
+  "Qué canales de marketing digital funcionan para una clínica estética —Instagram, Google y WhatsApp— y cómo combinarlos sin perder leads."
+const ARTICLE_DESCRIPTION =
+  "Canales de marketing digital para clínicas estéticas: qué aporta Instagram, Google, los portales de reserva, los referidos y WhatsApp, y cómo combinarlos."
 const HEADLINE =
   "Marketing digital para clínicas estéticas: qué funciona realmente y qué es perder el tiempo"
 
@@ -64,7 +66,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

@@ -13,7 +13,9 @@ const PATH = "/blog/software-gestion-citas-clinica-estetica"
 const DATES = articleDates("software-gestion-citas-clinica-estetica")
 const TITLE = "Software de citas para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "¿Buscas un software de gestión de citas para tu clínica estética? Te explicamos qué necesitas, qué opciones existen y cuándo automatizar con IA."
+  "Qué necesita un software de gestión de citas para tu clínica estética, qué tipos hay y cuándo complementarlo con IA. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Qué es un software de gestión de citas para clínicas estéticas, qué funciones debe tener, qué tipos hay, sus límites y cuándo complementarlo con IA."
 const HEADLINE =
   "Software de gestión de citas para clínicas estéticas: qué necesitas realmente"
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

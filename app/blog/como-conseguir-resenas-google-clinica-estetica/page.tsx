@@ -14,7 +14,9 @@ const PATH = "/blog/como-conseguir-resenas-google-clinica-estetica"
 const DATES = articleDates("como-conseguir-resenas-google-clinica-estetica")
 const TITLE = "Reseñas de Google para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "Las reseñas de Google influyen en la decisión de quien busca centro de estética. Te explicamos cómo conseguirlas sin pedirlas a mano. Automatízalo esta semana."
+  "Cómo conseguir más reseñas en Google para tu clínica estética: cuándo pedirlas, cómo automatizarlo y qué hacer con las negativas."
+const ARTICLE_DESCRIPTION =
+  "Cómo conseguir más reseñas de Google en una clínica estética: por qué los clientes no las dejan, cuándo pedirlas, cómo automatizar la petición y cómo responder a las negativas."
 const HEADLINE =
   "Cómo conseguir más reseñas en Google para tu clínica estética (sin pedirlas una por una)"
 
@@ -57,7 +59,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

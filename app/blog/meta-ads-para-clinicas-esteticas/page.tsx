@@ -15,7 +15,9 @@ const PATH = "/blog/meta-ads-para-clinicas-esteticas"
 const DATES = articleDates("meta-ads-para-clinicas-esteticas")
 const TITLE = "Meta Ads para clínicas estéticas sin bloqueos | Cero Manual"
 const DESCRIPTION =
-  "Aprende a hacer Meta Ads para clínicas estéticas sin errores: copy permitido, segmentación, presupuesto y cómo evitar el bloqueo. Empieza por esta guía."
+  "Meta Ads para clínicas estéticas: qué copy aprueba Meta, cómo segmentar, qué presupuesto fijar y qué esperar del primer mes."
+const ARTICLE_DESCRIPTION =
+  "Cómo hacer campañas de Meta Ads para clínicas estéticas: criterios de las políticas de Meta sobre el copy, segmentación, presupuesto inicial y coste por lead."
 const HEADLINE =
   "Meta Ads para clínicas estéticas: cómo conseguir leads sin que Meta te bloquee"
 
@@ -58,7 +60,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

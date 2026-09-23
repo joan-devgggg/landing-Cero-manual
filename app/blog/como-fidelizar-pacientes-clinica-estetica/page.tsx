@@ -14,6 +14,8 @@ const DATES = articleDates("como-fidelizar-pacientes-clinica-estetica")
 const TITLE = "Fidelizar pacientes en tu clínica estética | Cero Manual"
 const DESCRIPTION =
   "Cómo fidelizar pacientes en tu clínica estética: seguimiento post-cita, mensajes por WhatsApp y automatización para que vuelvan sin tener que llamarles."
+const ARTICLE_DESCRIPTION =
+  "Cómo fidelizar pacientes en una clínica estética: seguimiento después del tratamiento, detectar a quien deja de venir y automatizar los mensajes por WhatsApp."
 const HEADLINE =
   "Cómo fidelizar pacientes en tu clínica estética (y que vuelvan sin que tengas que llamarles)"
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

@@ -13,7 +13,9 @@ const PATH = "/blog/tecnologia-para-clinicas-esteticas"
 const DATES = articleDates("tecnologia-para-clinicas-esteticas")
 const TITLE = "Tecnología para clínicas estéticas | Cero Manual"
 const DESCRIPTION =
-  "La tecnología está transformando cómo las clínicas estéticas captan y retienen pacientes. Te explicamos qué herramientas usar y por dónde empezar."
+  "Qué tecnología necesita tu clínica estética para captar y retener pacientes —agenda, CRM, WhatsApp e IA— y en qué orden implantarla."
+const ARTICLE_DESCRIPTION =
+  "Herramientas tecnológicas para clínicas estéticas —agenda online, CRM, WhatsApp e IA—, para qué sirve cada una y en qué orden conviene implantarlas."
 const HEADLINE =
   "Tecnología para clínicas estéticas: qué herramientas usar y por dónde empezar"
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

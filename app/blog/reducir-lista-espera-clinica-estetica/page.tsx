@@ -14,7 +14,9 @@ const PATH = "/blog/reducir-lista-espera-clinica-estetica"
 const DATES = articleDates("reducir-lista-espera-clinica-estetica")
 const TITLE = "Reducir la lista de espera en clínica estética | Cero Manual"
 const DESCRIPTION =
-  "Una lista de espera larga hace perder pacientes. Te explicamos cómo gestionarla mejor y convertir cancelaciones en citas nuevas automáticamente."
+  "Cómo reducir la lista de espera de tu clínica estética: aprovechar cancelaciones, avisar antes y ordenar la lista para no perder pacientes."
+const ARTICLE_DESCRIPTION =
+  "Cómo reducir la lista de espera de una clínica estética: convertir cancelaciones en citas, avisar a tiempo a los pacientes en espera y ordenar la lista."
 const HEADLINE = "Cómo reducir la lista de espera en tu clínica estética sin perder pacientes"
 
 export const metadata: Metadata = {
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

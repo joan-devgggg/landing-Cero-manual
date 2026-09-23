@@ -13,7 +13,9 @@ const PATH = "/blog/aumentar-ticket-medio-clinica-dental"
 const DATES = articleDates("aumentar-ticket-medio-clinica-dental")
 const TITLE = "Aumentar el ticket medio en clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Aumentar el ticket medio de tu clínica dental es más fácil que captar nuevos pacientes. Te explicamos cómo hacerlo sin presionar a tus pacientes."
+  "Cómo aumentar el ticket medio de tu clínica dental sin presionar al paciente: seguimiento de presupuestos y mensajes post-cita por WhatsApp."
+const ARTICLE_DESCRIPTION =
+  "Cómo subir el ticket medio de una clínica dental con los pacientes que ya tiene: seguimiento de presupuestos, mensajes después de la cita y el papel de WhatsApp."
 const HEADLINE =
   "Cómo aumentar el ticket medio en tu clínica dental (sin presionar a tus pacientes)"
 
@@ -54,7 +56,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: { "@type": "Person", name: "Joan - Cero Manual" },
   datePublished: DATES.published,
   dateModified: DATES.modified,

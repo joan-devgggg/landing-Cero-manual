@@ -13,7 +13,9 @@ const PATH = "/blog/recordatorios-citas-whatsapp-clinica"
 const DATES = articleDates("recordatorios-citas-whatsapp-clinica")
 const TITLE = "Recordatorios de cita por WhatsApp en clínicas | Cero Manual"
 const DESCRIPTION =
-  "WhatsApp es el canal que mejor funciona para recordar citas. Te explicamos qué debe incluir el mensaje, cuándo enviarlo y cómo automatizarlo en tu clínica."
+  "Cómo configurar recordatorios de citas por WhatsApp en tu clínica: qué debe incluir el mensaje, cuándo enviarlo y cómo automatizarlo."
+const ARTICLE_DESCRIPTION =
+  "Cómo configurar recordatorios de citas por WhatsApp en una clínica: qué debe incluir el mensaje, cuándo enviarlo, cómo pedir confirmación y cómo automatizarlo."
 const HEADLINE =
   "Recordatorios de citas por WhatsApp para clínicas: cómo configurarlos para que funcionen solos"
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

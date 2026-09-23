@@ -13,7 +13,9 @@ const PATH = "/blog/coste-real-no-shows-clinica-dental"
 const DATES = articleDates("coste-real-no-shows-clinica-dental")
 const TITLE = "Coste real de los no-shows en clínica dental | Cero Manual"
 const DESCRIPTION =
-  "Los no-shows en clínicas dentales cuestan más de lo que parece. Te explicamos cómo calcular tu pérdida real y qué puedes hacer para reducirla."
+  "Cuánto te cuestan de verdad los no-shows en tu clínica dental y cómo calcularlo con tus propios números. Usa la calculadora gratuita."
+const ARTICLE_DESCRIPTION =
+  "Cómo calcular el coste real de los no-shows en una clínica dental con los datos propios de la clínica, qué costes se suman y cuáles no, y cómo reducirlos."
 const HEADLINE =
   "El coste real de los no-shows en tu clínica dental (y cómo calcularlo con tus propios números)"
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

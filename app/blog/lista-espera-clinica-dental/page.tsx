@@ -13,7 +13,9 @@ const PATH = "/blog/lista-espera-clinica-dental"
 const DATES = articleDates("lista-espera-clinica-dental")
 const TITLE = "Lista de espera para clínicas dentales | Cero Manual"
 const DESCRIPTION =
-  "Una lista de espera bien gestionada convierte cancelaciones en citas nuevas automáticamente. Te explicamos cómo crearla y gestionarla sin esfuerzo."
+  "Cómo crear una lista de espera en tu clínica dental que convierta cancelaciones en citas nuevas, y cómo avisar a los pacientes automáticamente."
+const ARTICLE_DESCRIPTION =
+  "Cómo crear y gestionar una lista de espera en una clínica dental: qué datos recoger, cómo priorizar a los pacientes y cómo avisarles cuando se libera un hueco."
 const HEADLINE =
   "Cómo crear una lista de espera efectiva en tu clínica dental y no perder ni una cita"
 
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

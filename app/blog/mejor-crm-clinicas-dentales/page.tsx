@@ -15,7 +15,9 @@ const PATH = "/blog/mejor-crm-clinicas-dentales"
 const DATES = articleDates("mejor-crm-clinicas-dentales")
 const TITLE = "Mejor CRM para clínicas dentales | Cero Manual"
 const DESCRIPTION =
-  "¿Buscas el mejor CRM para tu clínica dental? Te explicamos qué funcionalidades necesitas y cómo elegir el que mejor encaja contigo. Reserva tu auditoría."
+  "Cómo elegir el mejor CRM para tu clínica dental: funciones que necesitas, de qué depende el coste y qué errores evitar. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Cómo elegir un CRM para una clínica dental: funciones necesarias, diferencias con el software de gestión, de qué depende el coste y errores habituales."
 const HEADLINE = "Mejor CRM para clínicas dentales: qué buscar y cómo elegir"
 
 export const metadata: Metadata = {
@@ -57,7 +59,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

@@ -14,7 +14,9 @@ const PATH = "/blog/que-es-un-agente-de-voz-ia-para-clinicas"
 const DATES = articleDates("que-es-un-agente-de-voz-ia-para-clinicas")
 const TITLE = "Agente de voz IA para clínicas: guía completa | Cero Manual"
 const DESCRIPTION =
-  "Un agente de voz con IA contesta cada llamada de tu clínica, agenda citas y resuelve dudas, incluso a las 3 de la mañana. Descubre cómo funciona."
+  "Qué es un agente de voz con IA para clínicas: contesta llamadas, agenda citas y resuelve dudas a cualquier hora. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Qué es un agente de voz con IA para clínicas, en qué se diferencia de un contestador automático, para qué clínicas tiene sentido y de qué depende su coste."
 const HEADLINE = "Qué es un agente de voz con IA y cómo puede transformar tu clínica"
 
 export const metadata: Metadata = {
@@ -56,7 +58,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

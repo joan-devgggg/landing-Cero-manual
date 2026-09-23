@@ -13,7 +13,9 @@ const PATH = "/blog/automatizacion-clinicas-dentales"
 const DATES = articleDates("automatizacion-clinicas-dentales")
 const TITLE = "Automatización para clínicas dentales | Cero Manual"
 const DESCRIPTION =
-  "La automatización en clínicas dentales reduce no-shows, recupera pacientes inactivos y responde leads 24/7. Descubre por dónde empezar. Reserva tu auditoría."
+  "Qué puedes automatizar en tu clínica dental (confirmaciones, recordatorios, recall y consultas por WhatsApp) y por dónde empezar. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Qué tareas de una clínica dental se pueden automatizar —confirmación de citas, recordatorios, recall de revisiones y consultas por WhatsApp— y en qué orden conviene empezar."
 const HEADLINE =
   "Automatización para clínicas dentales: qué puedes automatizar hoy y por dónde empezar"
 
@@ -64,7 +66,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

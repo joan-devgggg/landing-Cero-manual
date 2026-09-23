@@ -13,7 +13,9 @@ const PATH = "/blog/agente-ia-recepcion-clinica"
 const DATES = articleDates("agente-ia-recepcion-clinica")
 const TITLE = "Agente IA para la recepción de tu clínica | Cero Manual"
 const DESCRIPTION =
-  "Un agente IA en la recepción de tu clínica responde llamadas, agenda citas y atiende WhatsApp 24/7 sin contratar a nadie más. Reserva tu auditoría gratuita."
+  "Qué es un agente IA para la recepción de tu clínica: atiende llamadas y WhatsApp, agenda citas y de qué depende su coste. Pide tu auditoría gratuita."
+const ARTICLE_DESCRIPTION =
+  "Qué es un agente de IA para la recepción de una clínica, qué tareas asume (llamadas, WhatsApp, citas), en qué se diferencia de una recepcionista y de qué depende su coste."
 const HEADLINE = "Agente IA para la recepción de tu clínica: qué es, qué hace y cuánto cuesta"
 
 export const metadata: Metadata = {
@@ -55,7 +57,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",

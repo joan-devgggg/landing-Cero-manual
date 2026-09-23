@@ -18,6 +18,8 @@ const DATES = articleDates("software-gestion-clinicas-esteticas")
 const TITLE = "Software de gestión para clínicas estéticas: qué necesitas realmente | Cero Manual"
 const DESCRIPTION =
   "Qué software de gestión para clínicas estéticas necesitas de verdad según el tamaño y el momento de tu clínica, y por dónde empezar sin pagar herramientas de más."
+const ARTICLE_DESCRIPTION =
+  "Qué software de gestión necesita una clínica estética según su tamaño: tipos de herramienta, diferencias entre agenda y CRM, precios publicados y cuándo añadir automatización."
 const HEADLINE =
   "Software de gestión para clínicas estéticas: qué necesitas realmente y por dónde empezar"
 
@@ -64,7 +66,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: HEADLINE,
-  description: DESCRIPTION,
+  description: ARTICLE_DESCRIPTION,
   author: {
     "@type": "Person",
     name: "Joan - Cero Manual",
