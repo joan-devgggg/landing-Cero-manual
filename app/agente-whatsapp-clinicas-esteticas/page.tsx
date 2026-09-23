@@ -172,7 +172,7 @@ export default function AgenteWhatsAppPage() {
           articles={[
             {
               slug: "chatbot-whatsapp-para-clinicas-esteticas",
-              title: "Chatbot de WhatsApp para clínicas estéticas: qué es y por qué tu competencia ya lo tiene",
+              title: "Chatbot de WhatsApp para clínicas estéticas: qué es y cómo funciona",
             },
             {
               slug: "mejor-chatbot-whatsapp-clinica-estetica",
@@ -180,7 +180,7 @@ export default function AgenteWhatsAppPage() {
             },
             {
               slug: "cuanto-cuesta-chatbot-whatsapp-clinica",
-              title: "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? Guía de precios 2026",
+              title: "¿Cuánto cuesta un chatbot de WhatsApp para clínicas? De qué depende el precio",
             },
           ]}
         />

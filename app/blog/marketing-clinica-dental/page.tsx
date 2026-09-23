@@ -11,10 +11,10 @@ import { articleDates } from "@/lib/blog-dates"
 
 const PATH = "/blog/marketing-clinica-dental"
 const DATES = articleDates("marketing-clinica-dental")
-const TITLE = "Marketing para clínicas dentales en 2026 | Cero Manual"
+const TITLE = "Marketing para clínicas dentales: qué funciona | Cero Manual"
 const DESCRIPTION =
   "El marketing para clínicas dentales ha cambiado. Te explicamos qué canales funcionan realmente y cómo automatizar la captación de pacientes."
-const HEADLINE = "Marketing para clínicas dentales: qué funciona realmente en 2026"
+const HEADLINE = "Marketing para clínicas dentales: qué funciona realmente"
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tiempo se tarda en ver resultados con marketing dental?",
-    a: "En Google Ads y campañas de pago los primeros resultados pueden verse en 1-2 semanas, aunque la optimización seria lleva 1-2 meses. En SEO y redes sociales el horizonte es de 3-6 meses para notar un crecimiento sostenido. Lo que sí cambia desde el primer día es la velocidad de respuesta: si automatizas la primera respuesta a los leads, dejas de perder pacientes que ya estaban interesados, sin esperar a que el resto de canales maduren.",
+    a: "Depende del canal y de tu punto de partida. Google Ads y las campañas de pago empiezan a traer contactos en cuanto se activan, aunque afinarlas lleva más tiempo; en SEO y redes sociales el crecimiento es más lento y se nota a medio plazo. Lo que sí cambia desde el primer día es la velocidad de respuesta: si automatizas la primera respuesta a los leads, dejas de perder pacientes que ya estaban interesados, sin esperar a que el resto de canales maduren.",
   },
   {
     q: "¿Necesito un community manager para hacer marketing en mi clínica dental?",
@@ -144,7 +144,7 @@ export default function MarketingClinicaDentalArticlePage() {
           </P>
           <P>
             En este artículo vas a ver qué canales de marketing funcionan realmente para una
-            clínica dental en 2026, cómo se complementan entre sí, y cómo automatizar la parte
+            clínica dental hoy, cómo se complementan entre sí, y cómo automatizar la parte
             de captación y conversión sin perder el trato cercano que diferencia a una clínica
             de otra.
           </P>

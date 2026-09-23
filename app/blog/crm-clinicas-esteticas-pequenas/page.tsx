@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "¿Cuándo sabré que es momento de pasar a un CRM más completo?",
-    a: "La señal más clara es cuando empiezas a perder de vista el estado de los leads: alguien pregunta «¿qué pasó con el cliente que llamó la semana pasada?» y nadie lo sabe con certeza. Otra señal es cuando el volumen de consultas supera lo que una persona puede gestionar manualmente sin errores — habitualmente, a partir de 25-30 consultas mensuales. En ese punto, el coste de un CRM más completo se amortiza rápido frente al coste de los leads perdidos.",
+    a: "La señal más clara es cuando empiezas a perder de vista el estado de los leads: alguien pregunta «¿qué pasó con el cliente que llamó la semana pasada?» y nadie lo sabe con certeza. Otra señal es cuando el volumen de consultas supera lo que una persona puede seguir de memoria sin errores. En ese punto, el coste de un CRM más completo se amortiza rápido frente al coste de los leads perdidos.",
   },
 ]
 
@@ -230,8 +230,8 @@ export default function CrmClinicasEsteticasPequenasArticlePage() {
             algo más estructurado.
           </P>
           <P>
-            Otra señal habitual es el crecimiento del volumen de consultas. Cuando se supera
-            la barrera de las 25-30 consultas mensuales, el seguimiento manual empieza a
+            Otra señal habitual es el crecimiento del volumen de consultas. Cuando el volumen
+            supera lo que una persona puede seguir de memoria, el seguimiento manual empieza a
             fallar de forma sistemática — no por falta de organización del equipo, sino porque
             ya no es humanamente posible recordar el estado de cada conversación sin ayuda de
             una herramienta.

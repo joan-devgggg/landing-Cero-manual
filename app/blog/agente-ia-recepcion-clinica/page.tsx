@@ -215,7 +215,7 @@ export default function AgenteIaRecepcionClinicaArticlePage() {
             que se reciben mientras el equipo está con otro paciente.
           </P>
 
-          <H2>Cuánto cuesta y cuándo se amortiza</H2>
+          <H2>De qué depende el coste y cuándo se amortiza</H2>
           <P>
             El coste de un agente IA de recepción es muy inferior al de contratar a una
             persona adicional, y no implica gastos de nómina, vacaciones ni bajas. En la

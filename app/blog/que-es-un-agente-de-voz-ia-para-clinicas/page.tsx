@@ -261,7 +261,7 @@ export default function AgenteVozArticlePage() {
             citas a las que el paciente no se presenta.
           </P>
 
-          <H2>Cuánto cuesta y cuándo se amortiza</H2>
+          <H2>De qué depende el coste y cuándo se amortiza</H2>
           <P>
             La pregunta correcta no es «¿cuánto cuesta tener un agente de voz?», sino
             «¿cuánto me está costando ya no tenerlo?». Cada llamada que nadie contesta es,

@@ -17,7 +17,7 @@ const TITLE = "Chatbot WhatsApp clínicas estéticas: qué es | Cero Manual"
 const DESCRIPTION =
   "Un chatbot de WhatsApp responde consultas, agenda citas y cualifica leads de tu clínica estética las 24 horas. Descubre cómo funciona y qué cuesta ponerlo."
 const HEADLINE =
-  "Chatbot de WhatsApp para clínicas estéticas: qué es y por qué tu competencia ya lo tiene"
+  "Chatbot de WhatsApp para clínicas estéticas: qué es y cómo funciona"
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -305,7 +305,7 @@ export default function ChatbotWhatsappArticlePage() {
             como siempre, sin interrupciones.
           </P>
 
-          <H2>Cuánto cuesta y qué retorno puedes esperar</H2>
+          <H2>De qué depende el coste y qué retorno esperar</H2>
           <P>
             Un agente con IA en WhatsApp tiene una cuota mensual por encima de la de un bot de
             menús. Para saber si te compensa, haz la cuenta con tus números: cuántas consultas

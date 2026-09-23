@@ -318,8 +318,7 @@ export default function ClinicaEsteticaWhatsappPage() {
           <P>
             El segundo cambio es en la carga del equipo: las preguntas rutinarias dejan de
             llegar. Tu recepcionista deja de tener que mirar el móvil cada cinco minutos y
-            puede concentrarse en la atención directa al paciente. En clínicas con tráfico
-            habitual, el ahorro suele ser de una a tres horas diarias.
+            puede concentrarse en la atención directa al paciente.
           </P>
           <P>
             El tercero, menos visible pero igual de importante, es la consistencia: todos

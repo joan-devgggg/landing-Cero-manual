@@ -137,8 +137,7 @@ export default function ResenasgoogleArticlePage() {
             </InternalLink>{" "}
             tienen menos
             reseñas de las que merecen. No porque sus clientes no estén contentos — sino porque
-            nadie les pide que las dejen en el momento adecuado, y el momento pasa. Tres días
-            después de la cita, la disposición a dejar una reseña cae drásticamente.
+            nadie les pide que las dejen en el momento adecuado, y el momento pasa.
           </P>
           <P>
             En este artículo vas a ver por qué las reseñas importan tanto, por qué tus
