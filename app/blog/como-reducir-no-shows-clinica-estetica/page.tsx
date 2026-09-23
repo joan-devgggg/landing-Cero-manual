@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "¿Por qué los pacientes de estética no avisan cuando no van a venir?",
-    a: "En la mayoría de los casos no es mala intención: simplemente se olvidan, porque la cita se reservó hace semanas y no ha vuelto a aparecer en su cabeza hasta que ya es tarde. También influye que cancelar suele requerir llamar por teléfono, algo que mucha gente evita por pereza o por no «molestar» — así que, en lugar de avisar, simplemente no aparecen.",
+    a: "Lo más habitual es el olvido: la cita se reservó hace semanas y no ha vuelto a aparecer en su cabeza hasta que ya es tarde. También influye que cancelar suele requerir llamar por teléfono, algo que mucha gente evita por pereza o por no «molestar», así que no aparecen sin avisar.",
   },
   {
     q: "¿Es suficiente con enviar un SMS o un email de recordatorio?",
@@ -123,21 +123,15 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
 
           {/* Intro */}
           <P>
-            En cualquier negocio con agenda, los huecos que se quedan vacíos sin previo
-            aviso duelen. Pero en una clínica estética duelen especialmente, porque el
-            ticket medio suele ser alto y cada sesión — un tratamiento facial, depilación
-            láser, medicina estética — bloquea tiempo de cabina y de profesional. Un hueco
-            que no se llena no se recupera.
+            Para reducir los no-shows en tu clínica estética, envía un recordatorio
+            automático por WhatsApp que pida confirmación activa: que el paciente responda
+            que sí viene o avise con tiempo si no puede. Así sabes qué citas están en riesgo
+            y puedes ofrecer el hueco a otro paciente antes de que se quede vacío.
           </P>
           <P>
-            Cuando esto pasa varias veces a la semana, las pérdidas se acumulan rápido —
-            y muchas clínicas ni siquiera llevan la cuenta de cuánto les está costando
-            realmente.
-          </P>
-          <P>
-            En este artículo vamos a ver cuánto cuesta un no-show en una clínica
-            estética, por qué pasa tan a menudo, y cómo un sistema de recordatorios
-            automáticos por WhatsApp puede reducirlos.
+            En una clínica estética cada hueco vacío pesa, porque el ticket medio suele ser
+            alto y cada sesión — un tratamiento facial, depilación láser, medicina estética —
+            bloquea tiempo de cabina y de profesional.
           </P>
 
           <H2>¿Cuánto te cuesta un no-show en una clínica estética?</H2>
@@ -168,10 +162,9 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
 
           <H2>Por qué los pacientes de estética no avisan cuando no van a venir</H2>
           <P>
-            La causa más habitual no es la mala fe, sino el olvido. Muchas citas de
-            estética se reservan con semanas de antelación, y para cuando llega el día,
-            la persona simplemente no se ha acordado — entre el trabajo, la rutina diaria
-            y mil cosas más, esa cita ha quedado enterrada en el calendario.
+            La causa más habitual es el olvido. Muchas citas de estética se reservan con
+            semanas de antelación, y para cuando llega el día, entre el trabajo y la rutina,
+            esa cita ha quedado enterrada en el calendario.
           </P>
           <P>
             A esto se suma otro factor:{" "}
@@ -180,15 +173,13 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
             </InternalLink>{" "}
             o
             escribir un mensaje explicando por qué no van a poder venir, algo que mucha
-            gente prefiere evitar. Es más fácil simplemente no aparecer que tener esa
-            conversación. El resultado es el mismo para la clínica: un hueco vacío y
-            ningún aviso con el que reaccionar a tiempo.
+            gente prefiere evitar. Es más fácil no aparecer que tener esa conversación.
           </P>
 
           <H2>La solución: confirmación activa por WhatsApp</H2>
           <H3>Por qué un recordatorio pasivo no basta</H3>
           <P>
-            La mayoría de clínicas ya avisa de alguna forma: una llamada el día antes, un
+            Es habitual que la clínica ya avise de alguna forma: una llamada el día antes, un
             SMS, un mensaje de «te recordamos tu cita». El problema es que ninguno de estos
             avisos pide nada. La llamada que nadie coge se queda en una llamada perdida, y
             el mensaje se lee y se olvida.
@@ -201,12 +192,11 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
             alerta, y llega con tiempo para actuar.
           </P>
           <P>
-            La forma más efectiva de reducir los no-shows no es simplemente «recordar»
-            la cita, sino pedir una confirmación activa — que el propio paciente
-            responda diciendo que sí va a venir, o que avise con tiempo si no puede.
+            Por eso funciona pedir una confirmación activa: que el propio paciente responda
+            diciendo que sí va a venir, o que avise con tiempo si no puede.
           </P>
           <P>
-            WhatsApp es, con diferencia, el canal que mejor funciona para esto. Es la
+            WhatsApp es el canal que mejor encaja para esto. Es la
             aplicación en la que tus pacientes ya conversan cada día, así que el aviso no
             se queda enterrado como pasa a menudo con{" "}
             <InternalLink href="/blog/emails-recordatorio-pacientes-clinica">
@@ -223,7 +213,7 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
 
           <H2>Cómo implementar recordatorios automáticos en tu clínica</H2>
           <P>
-            La implementación es más sencilla de lo que parece. Un sistema conectado al
+            Un sistema conectado al
             número de WhatsApp Business de tu clínica{" "}
             <InternalLink href="/blog/recordatorios-citas-whatsapp-clinica">
               envía automáticamente un recordatorio por WhatsApp
@@ -234,15 +224,14 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
             paciente — por ejemplo, a alguien en lista de espera.
           </P>
           <P>
-            Una secuencia que funciona bien es sencilla: un mensaje de confirmación entre
+            Una secuencia que funciona bien: un mensaje de confirmación entre
             48 y 24 horas antes de la cita, un segundo recordatorio unas 2 horas antes para
             los olvidos de última hora y, si el paciente cancela, un aviso automático a la
             lista de espera para ofrecer ese hueco.
           </P>
           <P>
-            Si además el paciente no responde en absoluto, el sistema puede enviar un
-            segundo recordatorio más cercano a la fecha, reduciendo aún más el riesgo de
-            que se quede en el limbo. Todo esto ocurre sin que nadie del equipo tenga que
+            Si el paciente no responde al primero, ese segundo recordatorio reduce el riesgo
+            de que la cita se quede en el limbo. Todo esto ocurre sin que nadie del equipo tenga que
             estar pendiente de enviar mensajes uno a uno. Puedes ver el detalle de cómo
             se configura en{" "}
             <InternalLink href="/recordatorios-automaticos-citas">
@@ -261,8 +250,7 @@ export default function ComoReducirNoShowsClinicaEsteticaArticlePage() {
           <P>
             Para verlo claro, anota tu tasa de no-shows antes de empezar y compárala con la
             de los meses siguientes. Cada cita que se mantiene o se rellena a tiempo es
-            facturación que antes se quedaba sobre la mesa — sin necesidad de captar un
-            solo paciente nuevo, simplemente aprovechando mejor la agenda que ya tienes.
+            facturación que antes se perdía, sin captar a ningún paciente nuevo.
           </P>
         </article>
 

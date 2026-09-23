@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "¿Cómo evito que WhatsApp se convierta en una carga para mi equipo?",
-    a: "El problema no es WhatsApp en sí, sino la cantidad de mensajes repetitivos: preguntas sobre precios, horarios, confirmaciones de cita. Automatizar esas respuestas —dejando que tu equipo se centre en las conversaciones que realmente requieren su criterio— es lo que evita que WhatsApp se convierta en una fuente constante de interrupciones.",
+    a: "Lo que carga al equipo es la cantidad de mensajes repetitivos: preguntas sobre precios, horarios, confirmaciones de cita. Automatizar esas respuestas —dejando que tu equipo se centre en las conversaciones que realmente requieren su criterio— es lo que evita que WhatsApp se convierta en una fuente constante de interrupciones.",
   },
   {
     q: "¿Es seguro automatizar WhatsApp para temas relacionados con la salud de los pacientes?",
@@ -118,22 +118,17 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
 
           {/* Intro */}
           <P>
-            Si tuvieras que elegir un solo canal para comunicarte con tus pacientes, lo más
-            probable es que ya lo estés usando: WhatsApp. Es donde los pacientes preguntan
-            precios, confirman citas, piden cambios de horario y, cada vez más, donde esperan
-            que su clínica dental les responda.
+            En una clínica dental, WhatsApp sirve para captar pacientes nuevos respondiendo
+            rápido a su primer mensaje, para reducir no-shows con confirmaciones activas antes
+            de cada cita y para reactivar a los pacientes que llevan tiempo sin venir. Cuando
+            el volumen de mensajes desborda al equipo, esas tareas se pueden automatizar por
+            partes.
           </P>
           <P>
-            El problema no es WhatsApp, sino la gestión manual. Cuando cada mensaje depende de
-            que alguien del equipo lo lea, lo responda y lo siga, es fácil que algunos se
-            queden sin contestar, que las confirmaciones de cita se hagan tarde o que los
-            pacientes que llevan tiempo sin venir simplemente se olviden.
-          </P>
-          <P>
-            En este artículo vas a ver por qué WhatsApp encaja tan bien con los pacientes
-            dentales, cómo usarlo para captar pacientes nuevos, reducir no-shows y reactivar a
-            los que dejaron de venir —y cuándo tiene sentido empezar a automatizar parte de esa
-            gestión.
+            WhatsApp es donde los pacientes preguntan precios, confirman citas, piden cambios
+            de horario y esperan que su clínica dental les responda. Cuando cada mensaje
+            depende de que alguien del equipo lo lea, lo responda y lo siga, es fácil que
+            algunos se queden sin contestar o que las confirmaciones de cita se hagan tarde.
           </P>
 
           <H2>Por qué WhatsApp encaja tan bien con los pacientes dentales</H2>
@@ -144,13 +139,12 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
             un amigo —y espera una respuesta con esa misma rapidez.
           </P>
           <P>
-            Esto convierte a WhatsApp en el canal donde se resuelven la mayoría de las
-            interacciones cotidianas de una clínica dental: preguntas sobre precios y
-            tratamientos, confirmación de citas, cambios de horario y seguimiento después de
-            una visita. Es, en la práctica, la centralita de la clínica.
+            Por eso en WhatsApp se resuelven muchas de las interacciones cotidianas de una
+            clínica dental: preguntas sobre precios y tratamientos, confirmación de citas,
+            cambios de horario y seguimiento después de una visita.
           </P>
           <P>
-            El reto es que ese volumen de mensajes —especialmente si la clínica recibe{" "}
+            Ese volumen de mensajes —especialmente si la clínica recibe{" "}
             <InternalLink href="/blog/automatizar-whatsapp-clinica-dental">
               consultas también por la noche o el fin de semana
             </InternalLink>
@@ -166,19 +160,18 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
             más allá de la web o las reseñas.
           </P>
           <P>
-            Una respuesta rápida, clara y cercana en ese primer mensaje —que resuelva la duda
+            Una respuesta rápida y clara en ese primer mensaje —que resuelva la duda
             principal (precio, disponibilidad, ubicación) y proponga directamente un siguiente
             paso, como una cita o una valoración— es lo que convierte un contacto curioso en
             un paciente que reserva.
           </P>
           <P>
-            El problema es que, si esa primera respuesta tarda en llegar, es fácil que ese lead
-            se enfríe o escriba a otra clínica. Por eso un{" "}
+            Si esa primera respuesta tarda en llegar, es fácil que ese lead se enfríe o escriba
+            a otra clínica. Un{" "}
             <InternalLink href="/agente-whatsapp-clinicas-dentales">
               agente de WhatsApp para clínicas dentales
             </InternalLink>{" "}
-            que responda al instante, a cualquier hora, puede marcar la diferencia entre captar
-            ese paciente o que escriba a la siguiente clínica de la lista.
+            le responde al instante, a cualquier hora.
           </P>
 
           <H2>Confirmación de citas y reducción de no-shows por WhatsApp</H2>
@@ -197,15 +190,13 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
           </P>
           <P>
             Y si un paciente no responde o cancela, ese aviso temprano da a tu equipo margen
-            para ofrecer ese hueco a otro paciente en lista de espera, en lugar de descubrir el
-            hueco vacío cuando ya es demasiado tarde para llenarlo.
+            para ofrecer ese hueco a otro paciente en lista de espera.
           </P>
 
           <H2>Reactivación de pacientes inactivos por WhatsApp</H2>
           <P>
-            Toda clínica dental tiene una base de pacientes que, en algún momento, dejaron de
-            venir. No porque estuvieran descontentos, sino porque la revisión o la limpieza
-            pendiente simplemente se quedó en el olvido. Cada uno de esos pacientes ya confió
+            Toda clínica dental tiene pacientes que dejaron de venir porque la revisión o la
+            limpieza pendiente se quedó en el olvido. Cada uno de esos pacientes ya confió
             en la clínica y, con el recordatorio adecuado, puede volver.
           </P>
           <P>
@@ -214,13 +205,10 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
             </InternalLink>{" "}
             —recordando que toca revisión, sin tono
             comercial agresivo, y con la opción de agendar directamente desde el chat— suele
-            ser suficiente para que una parte de esos pacientes vuelva. No hace falta una
-            campaña de descuentos: muchas veces basta con el recordatorio.
+            ser suficiente para que una parte de esos pacientes vuelva.
           </P>
           <P>
-            Hacerlo de forma manual, paciente por paciente, es la razón por la que casi nunca
-            se hace de forma sistemática. Pero es uno de los ingresos más fáciles de recuperar,
-            porque ese paciente ya conoce tu clínica y ya confió en ella antes.
+            Hecho a mano, paciente por paciente, casi nunca se hace de forma sistemática.
           </P>
 
           <H2>Cuándo automatizar WhatsApp en tu clínica dental</H2>
@@ -241,9 +229,7 @@ export default function WhatsappParaClinicasDentalesArticlePage() {
               agente de WhatsApp para clínicas dentales
             </InternalLink>{" "}
             no sustituye a tu equipo: libera su tiempo de las tareas repetitivas para que se
-            dedique a lo que realmente necesita trato humano, mientras WhatsApp deja de ser una
-            fuente de mensajes pendientes y se convierte en un canal que trabaja para la
-            clínica las 24 horas.
+            dedique a lo que realmente necesita trato humano.
           </P>
         </article>
 

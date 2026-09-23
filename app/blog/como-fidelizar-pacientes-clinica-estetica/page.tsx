@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "¿No es invasivo escribir a un paciente que no ha pedido cita?",
-    a: "Depende de cómo lo hagas. Un mensaje de seguimiento genuino — preguntando cómo le fue tras un tratamiento, recordándole que toca revisión o avisando de una novedad que le interesa — se percibe como atención, no como spam. La clave está en el contenido y en la frecuencia: mensajes útiles y espaciados, no recordatorios constantes de \"vuelve a comprar\".",
+    a: "Depende de cómo lo hagas. Un mensaje de seguimiento genuino — preguntando cómo le fue tras un tratamiento, recordándole que toca revisión o avisando de una novedad que le interesa — se percibe como atención. Lo que molesta son los recordatorios constantes de \"vuelve a comprar\": los mensajes tienen que ser útiles y espaciados.",
   },
   {
     q: "¿Cuánto tiempo tengo que dedicar a la fidelización si la automatizo?",
@@ -119,23 +119,17 @@ export default function FidelizarPacientesArticlePage() {
 
           {/* Intro */}
           <P>
-            Conseguir que vuelva un paciente que ya te conoce cuesta mucho menos que
-            convencer a uno nuevo. Y sin embargo, la mayoría de clínicas estéticas
-            invierten casi todo su tiempo y presupuesto en captación — anuncios, promociones,
-            ofertas de bienvenida — y prácticamente nada en cuidar a quien ya ha confiado en
-            ellas.
+            Para fidelizar pacientes en tu clínica estética hace falta un seguimiento que no
+            dependa de la memoria del equipo: un mensaje en las 24-48 horas posteriores al
+            tratamiento, un recordatorio por WhatsApp cuando toca mantenimiento o revisión y
+            un aviso de reactivación a quien lleva tiempo sin venir. Si lo automatizas, cada
+            paciente recibe su mensaje en el momento justo sin que nadie tenga que llamarle.
           </P>
           <P>
-            El resultado es una clínica que funciona como un cubo agujereado: entran
+            Sin ese seguimiento, la clínica funciona como un cubo agujereado: entran
             pacientes nuevos por un lado mientras los de siempre se enfrían y dejan de volver
             por el otro, sin que nadie se dé cuenta hasta que la agenda empieza a notarse más
             vacía.
-          </P>
-          <P>
-            En este artículo vas a ver por qué la fidelización es la palanca más rentable que
-            tiene tu clínica, qué errores hacen que un paciente no vuelva sin que lo
-            notes, y cómo automatizar el seguimiento para que tus pacientes se sientan
-            cuidados sin que tengas que dedicarle tiempo cada semana.
           </P>
 
           <H2>Por qué la fidelización es más rentable que la captación</H2>
@@ -158,21 +152,19 @@ export default function FidelizarPacientesArticlePage() {
             <InternalLink href="/blog/como-reactivar-pacientes-inactivos-clinica">
               cada paciente que se enfría y deja de volver
             </InternalLink>{" "}
-            no es solo una cita menos:
-            es todo ese valor potencial que se queda sobre la mesa, y que tu clínica
-            tendrá que reemplazar pagando otra vez todo lo que cuesta captar a alguien nuevo.
+            se lleva todo ese valor potencial, que tu clínica tendrá que reemplazar
+            captando a alguien nuevo.
           </P>
 
           <H2>Los errores más comunes que hacen que un paciente no vuelva</H2>
           <P>
-            La mayoría de pacientes no dejan de venir porque estén descontentos. Dejan de
-            venir porque, simplemente, nadie les recuerda que toca volver — y la vida diaria
-            se encarga del resto.
+            Muchos pacientes no dejan de venir porque estén descontentos: dejan de venir
+            porque nadie les recuerda que toca volver, y la vida diaria se encarga del resto.
           </P>
           <P>
             El error más habitual es no tener ningún sistema de seguimiento: el paciente sale
             de la consulta, y la siguiente vez que sabes de él es si vuelve a escribir por su
-            cuenta. Si no lo hace, simplemente desaparece de tu radar, sin que nadie en tu
+            cuenta. Si no lo hace, desaparece de tu radar, sin que nadie en tu
             equipo lo note hasta meses después.
           </P>
           <P>
@@ -197,14 +189,14 @@ export default function FidelizarPacientesArticlePage() {
           <P>
             Un simple mensaje preguntando cómo se encuentra tras el tratamiento, recordando
             los cuidados posteriores o resolviendo dudas habituales, hace que el paciente
-            perciba que le importa a la clínica, no solo su pago. Y ese gesto, repetido de
-            forma consistente con cada paciente, es lo que construye la confianza que después
-            se traduce en que vuelva sin pensarlo quien lo necesite.
+            perciba que la clínica se preocupa por él. Repetido con cada paciente, ese gesto
+            construye la confianza que después hace que vuelva sin pensarlo quien lo
+            necesite.
           </P>
           <P>
-            El problema es que, hecho a mano, este seguimiento depende de que alguien del
-            equipo se acuerde de escribir a cada paciente, cada vez, en el momento adecuado —
-            algo que, con la agenda llena, casi nunca ocurre de forma sistemática.
+            Hecho a mano, este seguimiento depende de que alguien del equipo se acuerde de
+            escribir a cada paciente en el momento adecuado, y con la agenda llena casi nunca
+            ocurre de forma sistemática.
           </P>
 
           <H2>Cómo usar WhatsApp para mantener el contacto sin ser invasivo</H2>
@@ -218,11 +210,10 @@ export default function FidelizarPacientesArticlePage() {
             enterrado en una bandeja de entrada, WhatsApp es el sitio donde mandarlo.
           </P>
           <P>
-            La clave para que no resulte invasivo está en el contenido y en la frecuencia.
-            Un mensaje de seguimiento tras el tratamiento, un recordatorio cuando toca
+            Que no resulte invasivo depende del contenido y de la frecuencia. Un mensaje de seguimiento tras el tratamiento, un recordatorio cuando toca
             mantenimiento, o un aviso sobre una novedad relevante para ese paciente en
             concreto se reciben como atención. Lo que se percibe como invasivo son los
-            mensajes genéricos, repetitivos o puramente comerciales, enviados sin tener en
+            mensajes genéricos o puramente comerciales, enviados sin tener en
             cuenta el historial de cada persona.
           </P>
           <P>
@@ -236,19 +227,15 @@ export default function FidelizarPacientesArticlePage() {
 
           <H2>Automatiza la fidelización para que funcione sola</H2>
           <P>
-            La diferencia entre una clínica que fideliza y una que no, casi nunca está en las
-            ganas de cuidar a sus pacientes — está en si existe o no un sistema que se
-            encargue de hacerlo, pase lo que pase en el día a día. Con la agenda llena y un
-            equipo centrado en atender a quien tiene delante, es prácticamente imposible que
-            el seguimiento se haga de forma manual y constante.
+            Lo que separa a una clínica que fideliza de una que no suele ser que exista un
+            sistema que se encargue del seguimiento, pase lo que pase en el día a día.
           </P>
           <P>
             Automatizar la fidelización significa que cada paciente recibe su mensaje de
             seguimiento, su recordatorio de mantenimiento o su aviso de reactivación en el
             momento justo, sin que nadie de tu equipo tenga que acordarse ni dedicarle
-            tiempo. Y como el paciente puede contestar a cualquier hora, también con la
-            clínica cerrada, que la conversación siga sin esperar al día siguiente marca la
-            diferencia entre un paciente que vuelve y uno que se olvida de tu clínica.
+            tiempo. Y si el paciente contesta con la clínica cerrada, la conversación sigue
+            sin esperar al día siguiente.
           </P>
           <P>
             Si quieres ver cómo se aplicaría esto a los pacientes que ya tienes en tu base de
