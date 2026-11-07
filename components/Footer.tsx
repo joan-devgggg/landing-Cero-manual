@@ -125,6 +125,18 @@ export default function Footer() {
           <p className="text-xs" style={{ color: "#C0BAB3", fontFamily: "var(--font-dm-sans)" }}>
             © 2026 Cero Manual · Automatizaciones con IA para clínicas estéticas
           </p>
+          <p className="text-xs" style={{ color: "#8A8580", fontFamily: "var(--font-dm-sans)" }}>
+            Ahora trabajamos desde{" "}
+            <a
+              href="https://www.myelevateweb.com/"
+              className="underline underline-offset-2 transition-colors duration-200"
+              style={{ color: "#8A8580" }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#1A1A1A")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#8A8580")}
+            >
+              Elevate Web
+            </a>
+          </p>
           <p className="text-xs" style={{ color: "#C0BAB3", fontFamily: "var(--font-dm-sans)" }}>
             @cero.manual
           </p>
